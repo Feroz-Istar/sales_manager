@@ -1,0 +1,105 @@
+.salesken_container{
+	padding-top:5.5rem;
+	padding-left:30px !important;
+	padding-right:30px !important;
+	
+}
+
+/* start of navbar css*/
+nav.navbar{
+	height:60px;
+}
+.appicon.img-thumbnail{
+	height:50px;
+	width:50px;
+}
+.linkicon{
+	height:15px;
+	width:15px;
+}
+
+.nav-item.active{
+	border-bottom: 4px solid #ed4d67;
+	font-weight: bold;
+}
+
+ul.navbar-nav{
+	border-left: 1.5px solid #cccccc;
+}
+/*End of navbar css*/
+
+.datepicker,
+.table-condensed {
+   height:322px;
+   width:302px;
+   background-color: #f9f9f9;
+}
+
+.datepicker { font-size: 15px; } /* or whatever other font size you want */
+.table-condensed >thead>tr>th.dow{
+	color: #999999 !important;
+	  font-weight: bold;
+	
+}
+.activeClass{
+   	background: #dddddd; 
+   	font-weight: 600;
+  }
+ .table-condensed     {border-collapse: separate;  border-spacing: 10px 8px;}
+
+
+/* Start of font sizes */
+
+.f-12{
+  font-size: 0.75rem !important;
+}
+
+.f-13{
+  font-size: 0.8125rem !important;
+}
+
+.f-14{
+  font-size: 0.875rem !important;
+}
+
+.f-15{
+  font-size: 	0.9375rem !important;
+}
+
+.f-16{
+  font-size: 1rem !important;
+}
+
+.f-17{
+  font-size: 1.0625rem !important;
+}
+
+.f-18{
+  font-size: 1.125rem !important;
+}
+
+.f-19{
+  font-size: 1.1875rem !important;
+}
+
+.f-20{
+  font-size: 1.25rem !important;
+}
+
+.f-21{
+  font-size: 1.3125rem !important;
+}
+
+.f-22{
+  font-size: 1.375rem !important;
+}
+
+.f-23{
+  font-size:  1.4375rem !important;
+}
+.f-24{
+  font-size: 1.5rem !important;
+}
+
+
+/* End of Font sizes */
