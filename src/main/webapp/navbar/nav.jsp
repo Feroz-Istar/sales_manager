@@ -3,16 +3,18 @@
 String url = request.getRequestURL().toString();
 String baseURL = url.substring(0, url.length() - request.getRequestURI().length()) + request.getContextPath() + "/";
 %>
-<nav class="navbar navbar-expand-lg navbar-light bg-white">
+<nav class="salesken navbar navbar-expand-lg navbar-light bg-white p-0 m-0">
+ <a class="navbar-brand f-15 p-0 pr-4 pt-2 mb-2" href="#">
+    <img class="appicon img-thumbnail p-0 mr-1 border-0" src="<%=baseURL %>assets/image/app.png" />Salesken</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-    <a class="navbar-brand f-15" href="#">
-    <img class="appicon img-thumbnail mr-1 border-0" src="<%=baseURL %>assets/image/app.png" />Salesken</a>
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 pl-4">
+    
+    <ul class="navbar-nav mr-auto ">
       <li class="nav-item active">
-        <a class="nav-link f-14" href="#"><img class="linkicon" src="<%=baseURL %>assets/image/home.png" /> Dashboard <span class="sr-only">(current)</span></a>
+        <a class="nav-link d-flex align-items-center f-14" href="#"><img class="linkicon mr-1 " src="<%=baseURL %>assets/image/home.png" />      <h4 class="my-0 f-14">Dashboard</h4>
+</a>
       </li>
       <li class="nav-item">
         <a class="nav-link f-14" href="#"><img class="linkicon" src="<%=baseURL %>assets/image/task.png" /> Task Details </a>
