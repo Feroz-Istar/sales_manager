@@ -29,11 +29,11 @@ String baseURL = url.substring(0, url.length() - request.getRequestURI().length(
         <a class="nav-link f-14" href="#"><img class="linkicon" src="<%=baseURL %>assets/image/lead.png" /> Leads <span class="sr-only">(current)</span></a>
       </li>
     </ul>
-<div class="dropdown dropleft  mr-3">
+<div class="dropdown   mr-3">
       <a href="#" id="imageDropdown" data-toggle="dropdown">
         <img  class="linkicon" src="<%=baseURL %>assets/image/notification.png" >
       </a>
-     <div class="dropdown-menu" role="menu" aria-labelledby="imageDropdown" style="width: 20rem;max-height:350px;overflow-y:auto;">
+     <div class="dropdown-menu dropdown-menu-lg-right" role="menu" aria-labelledby="imageDropdown" style="width: 20rem;max-height:350px;overflow-y:auto;">
      <%for(int i=0;i<10;i++){ %>
     <div class="card border-0 mb-3">
   <div class="card-header">Header</div>
@@ -47,7 +47,7 @@ String baseURL = url.substring(0, url.length() - request.getRequestURI().length(
     </div>
     
     
-    <div class="dropdown dropleft mr-5">
+    <div class="dropdown  mr-5">
       <a href="#" class="d-flex " id="imageDropdown1" data-toggle="dropdown"  aria-expanded="false" aria-haspopup="true">
         <img  class="user_profile_img rounded-circle mr-2 " src="https://www.instituteofphotography.in/wp-content/uploads/2015/05/dummy-profile-pic.jpg" >
       	<div class="d-flex flex-column">
@@ -58,7 +58,7 @@ String baseURL = url.substring(0, url.length() - request.getRequestURI().length(
                <span class="caret"></span>
       
       </a>
-     <div class="dropdown-menu" role="menu" aria-labelledby="imageDropdown1" style="width: 20rem;max-height:350px;overflow-y:auto;">
+     <div class="dropdown-menu dropdown-menu-lg-right" role="menu" aria-labelledby="imageDropdown1" style="width: 20rem;max-height:350px;overflow-y:auto;">
      <%for(int i=0;i<10;i++){ %>
     <div class="card border-0 mb-3">
   <div class="card-header">Header</div>
