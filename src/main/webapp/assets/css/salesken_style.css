@@ -9,43 +9,51 @@ body{
 }
 
 /* start of navbar css*/
-.navbar-brand{
-	border-right: 1.5px solid #cccccc;
-	 border-collapse: separate;
-  border-spacing: 15px;
-}
-.appicon.img-thumbnail{
-	height:35px;
-	width:35px;
+
+.salesken.navbar-nav > li {
+  float: left;
+  position: relative;
 }
 
+.appicon{
+	height:30px;
+	width:30px;
+}
+
+ .user_profile_img{
+  width: 45px;
+  height: 45px;
+}
 @media (min-width: 992px){
     .navbar li {
         margin-left : .5em;
         margin-right : .5em;
     }
-    ul.navbar-nav{
-            margin-left : .5em;
-    
-    }
+  .navbar-light .navbar-nav .active a::after {
+  border-bottom: 4px solid #ed4d67;
+  bottom: -10px;
+  content: " ";
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+.salesken>.navbar-brand {
+	border-right: 2px solid #cccccc;
+	            margin-left : .5em;
+	
 }
 
-.linkicon{
+
 
 }
-.salesken.navbar-light{
-	/* min-height:60px; */
+
+.salesken.navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+  height: 50px;
+  line-height: 50px;
 }
-.salesken.navbar-light .navbar-nav .nav-link{
-	color:#444444 !important;
-}
-.nav-item.active{
-	border-bottom: 4px solid #ed4d67;
-	font-weight: bold;
-}
-.nav-item.active>a>h4{
-	font-weight: bold;
-}
+
 
 /*End of navbar css*/
 
