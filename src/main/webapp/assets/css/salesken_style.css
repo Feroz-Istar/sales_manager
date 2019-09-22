@@ -1,134 +1,169 @@
-.salesken_container{
-	padding-top:5.5rem;
-	padding-left:30px !important;
-	padding-right:30px !important;
-	
+@import
+	url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	font-family: Roboto, 'Lato' !important;
 }
-body{
+
+.menu_icon {
+	position: relative;
+	top: -2px;
+	width: 18px;
+	height: 15.5px;
+}
+
+.salesken_container {
+	padding-top: 5.5rem;
+	padding-left: 30px !important;
+	padding-right: 30px !important;
+}
+
+body {
 	background: #eeeeee !important;
 }
-
 /* start of navbar css*/
-
-.salesken.navbar-nav > li {
-  float: left;
-  position: relative;
+.appicon {
+	height: 30px;
+	width: 30px;
 }
-
-.appicon{
-	height:30px;
-	width:30px;
+.salesken >li.active{
+	font-weight: bold;
 }
-
- .user_profile_img{
-  width: 45px;
-  height: 45px;
-}
-@media (min-width: 992px){
-    .navbar li {
-        margin-left : .5em;
-        margin-right : .5em;
-    }
-  .navbar-light .navbar-nav .active a::after {
-  border-bottom: 4px solid #ed4d67;
-  bottom: -10px;
-  content: " ";
-  left: 0;
-  position: absolute;
-  right: 0;
-}
-.salesken>.navbar-brand {
-	border-right: 2px solid #cccccc;
-	            margin-left : .5em;
-	
-}
-
-
-
+@media ( min-width : 992px) {
+	.salesken.navbar-light .navbar-nav .active a::after {
+		border-bottom: 4px solid #ed4d67;
+		bottom: -10px;
+		content: " ";
+		left: 0;
+		position: absolute;
+		right: 0;
+	}
+	.salesken.navbar-nav>li {
+		position: relative;
+	}
+	.salesken>.navbar-brand {
+		border-right: 2px solid #cccccc;
+		margin-left: .5em;
+	}
+	.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .8rem !important;
+    padding-left: .8rem !important;
 }
 
 .salesken.navbar-nav .nav-link {
   padding-top: 0;
   padding-bottom: 0;
-  height: 50px;
-  line-height: 50px;
+  height: 40px;
+  line-height: 40px;
 }
-
-
+}
 /*End of navbar css*/
-
-.datepicker,
-.table-condensed {
-   height:322px;
-   width:302px;
-   background-color: #f9f9f9;
+.datepicker, .table-condensed {
+	height: 322px;
+	width: 302px;
+	background-color: #f9f9f9;
 }
 
-.datepicker { font-size: 15px; } /* or whatever other font size you want */
-.table-condensed >thead>tr>th.dow{
+.datepicker {
+	font-size: 15px;
+} /* or whatever other font size you want */
+.table-condensed>thead>tr>th.dow {
 	color: #999999 !important;
-	  font-weight: bold;
-	
+	font-weight: bold;
 }
-.activeClass{
-   	background: #dddddd; 
-   	font-weight: 600;
-  }
- .table-condensed     {border-collapse: separate;  border-spacing: 10px 8px;}
 
+.activeClass {
+	background: #dddddd;
+	font-weight: 600;
+}
+
+.table-condensed {
+	border-collapse: separate;
+	border-spacing: 10px 8px;
+}
 
 /* Start of font sizes */
-
-.f-12{
-  font-size: 0.75rem !important;
+.f-12 {
+	font-size: 0.75rem !important;
 }
 
-.f-13{
-  font-size: 0.8125rem !important;
+.f-13 {
+	font-size: 0.8125rem !important;
 }
 
-.f-14{
-  font-size: 0.875rem !important;
+.f-14 {
+	font-size: 0.875rem !important;
 }
 
-.f-15{
-  font-size: 	0.9375rem !important;
+.f-15 {
+	font-size: 0.9375rem !important;
 }
 
-.f-16{
-  font-size: 1rem !important;
+.f-16 {
+	font-size: 1rem !important;
 }
 
-.f-17{
-  font-size: 1.0625rem !important;
+.f-17 {
+	font-size: 1.0625rem !important;
 }
 
-.f-18{
-  font-size: 1.125rem !important;
+.f-18 {
+	font-size: 1.125rem !important;
 }
 
-.f-19{
-  font-size: 1.1875rem !important;
+.f-19 {
+	font-size: 1.1875rem !important;
 }
 
-.f-20{
-  font-size: 1.25rem !important;
+.f-20 {
+	font-size: 1.25rem !important;
 }
 
-.f-21{
-  font-size: 1.3125rem !important;
+.f-21 {
+	font-size: 1.3125rem !important;
 }
 
-.f-22{
-  font-size: 1.375rem !important;
+.f-22 {
+	font-size: 1.375rem !important;
 }
 
-.f-23{
-  font-size:  1.4375rem !important;
-}
-.f-24{
-  font-size: 1.5rem !important;
+.f-23 {
+	font-size: 1.4375rem !important;
 }
 
+.f-24 {
+	font-size: 1.5rem !important;
+}
 
 /* End of Font sizes */
+
+/*
+Modifying the scroll bar across the whole application
+*/
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	width: 5px;
+	height: 5px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #999999 !important;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #d1d1d1 !important;
+	border: 1px solid #ebebeb !important;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #b30000;
+}
