@@ -96,6 +96,13 @@ body {
 			font-weight: bold;
 }
 
+.saleken.nav-tabs>li>.nav-link{
+	padding: 0px !important;
+	padding-bottom:5px !important;
+	margin-right:30px !important;
+	
+}
+
 .saleken.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
 }
 
@@ -142,6 +149,10 @@ body {
 		font-size: 12px;
 	
 }
+.table-condensed>thead>tr>th.datepicker-switch,.table-condensed>thead>tr>th.prev,.table-condensed>thead>tr>th.next {
+	color: #999999 !important;
+	font-weight: bold;
+	}
 .table-condensed tbody tr td {
   font-size: 12px;
 }
@@ -153,6 +164,10 @@ body {
 .table-condensed {
 	border-collapse: separate;
 	border-spacing: 10px 8px;
+}
+
+.custom_dash_padding{
+	padding: 9px 29px;
 }
 
 /* start of buttons  */
@@ -315,8 +330,16 @@ color:	#999999 !important;
 	color:	#444444 !important;
 	
 }
+
+.bblack{
+	color:#4d4f5c !important;;
+}
+
 .cursor-pointer{
   cursor: pointer;
+}
+.cream_white{
+	background: #f9f9f9 !important;
 }
 
 @media only screen and (max-width: 767px) {

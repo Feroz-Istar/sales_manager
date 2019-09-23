@@ -39,9 +39,9 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row">
-			<div class="col-md-3 pr-0 ">
-				<ul class="saleken nav nav-tabs f-14 pt-3 px-3" id="myTab"
+		<div class="row mb-5">
+			<div class="col-md-3 pr-0 left_container pl-0 bg-white">
+				<ul class="saleken nav nav-tabs f-14 custom_dash_padding pt-3 pb-0" id="myTab"
 					role="tablist" style="background: #f9f9f9">
 					<li class="nav-item"><a class="nav-link active border-left-0"
 						id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -55,14 +55,14 @@
 					style="background: #f9f9f9">
 					<div class="tab-pane fade show active " id="home" role="tabpanel"
 						aria-labelledby="home-tab">
-						<div class="w-100" style="padding: 11px 22px;">
+						<div class="w-100 " style="padding: 0px 40px;">
 							<div id="datepicker"></div>
 
 						</div>
-						<hr>
-						<div class="task-item-container bg-white p-3">
+						<hr class="p-0 m-0">
+						<div class="task-item-container bg-white  custom_dash_padding">
 							<div class="d-flex flex-row align-items-center pt-2 pb-4">
-								<div class="font-weight-bold mr-3">To-Do List</div>
+								<div class="font-weight-bold mr-3 bblack f-18">To-Do List</div>
 								<button
 									class="btn rounded-circle shadow d-flex justify-content-center align-items-center"
 									style="height: 30px; width: 30px; background: white;">
@@ -73,12 +73,12 @@
 								for (int j = 0; j < 4; j++) {
 							%>
 							<div class="taskitem pt-3 pb-3">
-								<div class="d-flex flex-row align-items-center mb-1 ">
-									<div class="font-weight-bold f-14">Meeting with Sales
+								<div class="d-flex flex-row align-items-center mb-2 ">
+									<div class="font-weight-bold f-14 bblack">Meeting with Sales
 										Team</div>
-									<i class="fas fa-ellipsis-v ml-auto f-12"></i>
+									<i class="fas fa-ellipsis-v ml-auto f-12 brown-grey"></i>
 								</div>
-								<div class="f-12  mb-1">11:00 AM</div>
+								<div class="f-12  mb-1 bblack mb-2">11:00 AM</div>
 								<div class="d-flex flex-row  mb-1">
 									<%
 										for (int i = 0; i < 3; i++) {
@@ -145,7 +145,7 @@
 
 				</div>
 			</div>
-			<div class="col-md-6 p-0 m-0">
+			<div class="col-md-6 p-0 m-0 center_container ">
 
 				<div id="carouselExampleIndicators" class="carousel slide mb-4"
 					data-ride="carousel">
@@ -476,7 +476,7 @@
 						
 						</div>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer cream_white">
 						<div class="d-flex justify-content-end">
 						<div class="theme_color f-14 font-weight-bold cursor-pointer"> 04   More<i class="fas fa-chevron-circle-right theme_color ml-2"></i></div>
 						</div>
@@ -494,7 +494,7 @@
 						<div class="f-16 brownish-grey mb-4">Infogen Consulting Pvt. Ltd</div>
 						<div><button type="button" class="btn join_btn f-12 mr-2">RESOLVE</button></div>
 					</div>
-					<div class="card-footer">
+					<div class="card-footer cream_white">
 						<div class="d-flex justify-content-end">
 						<div class="theme_color f-14 font-weight-bold cursor-pointer"> 04   More<i class="fas fa-chevron-circle-right theme_color ml-2"></i></div>
 						</div>
@@ -526,25 +526,25 @@
 					<div class="card-body">
 						<div class="row mb-2">
 						<div class="col-md-6 d-flex col-6">
-						<img class="hw-24 mr-2"  src="<%=baseURL%>assets/image/task.svg">
+						<img class="hw-24 mr-1"  src="<%=baseURL%>assets/image/task.svg">
 						<div class="f-16 brownish-grey " style="line-height: 28px;">Call Task</div>
 						
 						</div>
 						<div class="col-md-6 d-flex col-6">
-						<img class="hw-24 mr-2"  src="<%=baseURL%>assets/image/alarm.svg">
+						<img class="hw-24 mr-1"  src="<%=baseURL%>assets/image/alarm.svg">
 						<div class="f-16 brownish-grey" style="line-height: 28px;">12:30 PM</div>
 						</div>
 						</div>
 						
-						<h5 class="card-title f-18">Accenture Consulting Inc.</h5>
+						<h5 class="card-title f-18 mb-2">Accenture Consulting Inc.</h5>
 						<div class="f-16 brownish-grey">Robert Wolken</div>
 						<div class="f-12 brown-grey ">Manager</div>
 
 					</div>
-					<div class="card-footer pb-2">
+					<div class="card-footer pb-2 cream_white">
 						<p class="brownish-grey f-16 ">Louella sent an request for Meeting!</p>
-						<button type="button" class="btn join_btn f-12 mr-2">ACCEPT</button>
-						<button type="button" class="btn listen_btn f-12">REJECT</button>
+						<button type="button" class="btn join_btn f-12 mr-2 mb-3">ACCEPT</button>
+						<button type="button" class="btn listen_btn f-12 mb-3">REJECT</button>
 					</div>
 				</div>
 				
@@ -571,7 +571,9 @@
 			});
 			
 		       $(".carousel").carousel('pause');
-
+		       var newHeight = $(".center_container").height();
+				 console.log(newHeight)
+			        $(".left_container").height(newHeight);
 			
 /* 			$('#carouselExampleIndicators').carousel('pause');
  */			
