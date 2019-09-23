@@ -2,7 +2,7 @@
 	url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 body {
-	font-family: Roboto, 'Lato' !important;
+	font-family: Roboto !important;
 }
 
 .menu_icon {
@@ -26,7 +26,7 @@ border-top: 0 !important;
 }
 
 .card-separation{
-border-left: 1px dotted #d4d4d4;
+border-left: 2px dashed #d4d4d4;
 }
 
 .signalimgsize{
@@ -188,6 +188,10 @@ body {
   font-weight: bold;
       border-radius: 0px !important;
 }
+
+.button_border{
+	 border: solid 1px #dddddd;
+}
 /* end of buttons  */
 
 /* start of sizing  */
@@ -330,9 +334,14 @@ color:	#999999 !important;
 	color:	#444444 !important;
 	
 }
-
+.black{
+	color:#222222;
+	}
 .bblack{
-	color:#4d4f5c !important;;
+	color:#4d4f5c !important;
+}
+.light_gray{
+	color:#707070 !important;
 }
 
 .cursor-pointer{

@@ -6,7 +6,7 @@
 %>
 
 
-<nav class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0">
+<nav class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
     <a class="navbar-brand f-15 p-0 pr-3" href="#"> <img
 		class="appicon img-thumbnail p-0 mr-1 border-0"
 		src="<%=baseURL%>assets/image/app.png" /><span>Sales<span
@@ -116,16 +116,16 @@
 					src="<%=baseURL%>assets/image/dashboard.svg" />Dashboard <span
 					class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/task.svg" />Task
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/task.svg" style="width:24px;height: 24px !important;" />Task
 					Details<span class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/pipeline.svg" />Pipeline<span
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/pipeline.svg" style="height: 24px !important;"/>Pipeline<span
 					class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/report.svg" />Reports<span
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/report.svg" style="width:24px;height: 24px !important;"/>Reports<span
 					class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/leads.svg" />Leads<span
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/leads.svg" style="height: 24px !important;" />Leads<span
 					class="sr-only">(current)</span></a></li>
 
         </ul>

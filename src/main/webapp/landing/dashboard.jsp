@@ -147,7 +147,7 @@
 			</div>
 			<div class="col-md-6 p-0 m-0 center_container ">
 
-				<div id="carouselExampleIndicators" class="carousel slide mb-4"
+				<div id="carouselExampleIndicators" class="carousel slide mb-2"
 					data-ride="carousel">
 					<ol class="carousel-indicators">
 						<li data-target="#carouselExampleIndicators" data-slide-to="0"
@@ -155,7 +155,7 @@
 						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 					</ol>
-					<div class="carousel-inner">
+					<div class="carousel-inner shadow">
 
 						<%
 							for (int i = 0; i < 4; i++) {
@@ -166,19 +166,19 @@
 						%>
 						<div class="carousel-item <%=isActive%>">
 
-							<div class="card" style="min-height: 194px;">
+							<div class="card saleskenCard" style="min-height: 194px;">
 								<div class="card-body">
-									<div class="row align-items-center" style="min-height: 194px;">
+									<div class="row align-items-center ml-5 mr-5" style="min-height: 104px;">
 										<div class="col-md-4">
-											<div class="f-42 font-weight-bold">4</div>
-											<div class="f-14 font-weight-bold">Not asking for next
+											<div class="f-42 font-weight-bold greyish-brown">04</div>
+											<div class="f-14 font-weight-bold greyish-brown">Not asking for next
 												steps</div>
 										</div>
 										<img class="col-md-2 signalimgsize"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 										<div class="col-md-4 card-separation">
-											<div class="f-42 font-weight-bold">12</div>
-											<div class="f-14 font-weight-bold">Responded positively
+											<div class="f-42 font-weight-bold greyish-brown">12</div>
+											<div class="f-14 font-weight-bold greyish-brown">Responded positively
 												in the end of a call</div>
 										</div>
 										<img class="col-md-2 signalimgsize"
@@ -206,19 +206,33 @@
 				</div>
 
 
-
-
-
-
-				<div id="carouselExampleIndicators" class="carousel slide mb-3"
-					data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleIndicators" data-slide-to="0"
-							class="active"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner">
+				<div class="card shadow mb-2" style="min-height: 322px;">
+					<div class="card-body">
+						<div class="row mb-3">
+							<div
+								class="card-title col-md-6 font-weight-bold f-18 greyish-brown">Pipeline
+								- 01</div>
+							<div class="col-md-6 d-flex justify-content-end">
+								<button type="button"
+									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
+									<i class="fas fa-chevron-left brown-grey" disabled></i>
+								</button>
+								<button type="button"
+									class="btn  button_border h-29 d-flex justify-content-center align-items-center">
+									<i class="fas fa-chevron-right theme_color"></i>
+								</button>
+							</div>
+						</div>
+						<div id="pipeline_carousel" class="carousel slide"
+							data-ride="carousel">
+							<ol class="carousel-indicators mb-0">
+								<li data-target="#pipeline_carousel" data-slide-to="0"
+									class="active"></li>
+								<li data-target="#pipeline_carousel" data-slide-to="1"></li>
+								<li data-target="#pipeline_carousel" data-slide-to="2"></li>
+							</ol>
+							
+							<div class="carousel-inner ">
 
 						<%
 							for (int i = 0; i < 3; i++) {
@@ -227,50 +241,35 @@
 									isActive = "active";
 						%>
 						<div class="carousel-item <%=isActive%>">
-							<div class="card" style="min-height: 322px;">
-								<div class="card-body">
-									<div class="row mb-3">
-										<div class="col-md-6 font-weight-bold f-18">Pipeline -
-											01</div>
-										<div class="col-md-6 d-flex justify-content-end">
-											<button type="button"
-												class="btn btn-outline-secondary h-29 d-flex justify-content-center align-items-center mr-2 ">
-												<i class="fas fa-chevron-left"></i>
-											</button>
-											<button type="button"
-												class="btn btn-outline-danger h-29 d-flex justify-content-center align-items-center">
-												<i class="fas fa-chevron-right"></i>
-											</button>
-										</div>
-									</div>
+							
+									
 
 									<div class="row mb-2">
-										<div class="col font-weight-bold f-16 brownish-grey">Stage
-											- 01</div>
+										<div class="col font-weight-bold f-16 brownish-grey">Stage 01</div>
 									</div>
 
 									<div class="row mb-4">
 										<div class="col-md-3 col-6">
 											<div class="font-weight-bold f-30">
-												<i class="fas fa-dollar-sign"></i> <span class="theme_color">
+												<i class="fas fa-dollar-sign light_gray"></i> <span class="theme_color">
 													7245</span>
 											</div>
 											<div class="f-14 brownish-grey">Deal Value</div>
 										</div>
 										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30">
+											<div class="font-weight-bold f-30 greyish-brown">
 												<i class="far fa-flag"></i> 65%
 											</div>
 											<div class="f-14 brownish-grey">Confident</div>
 										</div>
 										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30">
+											<div class="font-weight-bold f-30 greyish-brown">
 												<i class="fas fa-trophy"></i> 25%
 											</div>
 											<div class="f-14 brownish-grey">Won Leads</div>
 										</div>
 										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30">
+											<div class="font-weight-bold f-30 greyish-brown">
 												<i class="far fa-thumbs-down"></i> 75%
 											</div>
 											<div class="f-14 brownish-grey">Lost Leads</div>
@@ -279,36 +278,33 @@
 
 									<div class="row mb-3">
 										<div class="col-md-6">
-											<div class="f-14 font-weight-bold">Strong Playbook</div>
+											<div class="f-14 font-weight-bold black mb-2">Strong Playbook</div>
 											<div class="f-14 brownish-grey">Objection, Price,
 												Qualification, Introduction, Product Features, Value
 												Proposition,</div>
 										</div>
 										<div class="col-md-6">
-											<div class="f-14 font-weight-bold">Weak Playbook</div>
+											<div class="f-14 font-weight-bold black mb-2">Weak Playbook</div>
 											<div class="f-14 brownish-grey">Need Investigation,
 												Competitor Mapping, Feature Mapping.</div>
 										</div>
 									</div>
 
 								</div>
-							</div>
-						</div>
+							
 						<%
 							}
 						%>
 					</div>
-					<!--   <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a> -->
+						</div>
+					</div>
 				</div>
 
-				<div class="card mb-3" style="min-height: 245px;">
+
+
+
+
+				<div class="card shadow mb-2" style="min-height: 245px;">
 					<div class="card-body">
 						<div class="row mb-3">
 							<div class="col-md-6 font-weight-bold f-18">
@@ -316,12 +312,12 @@
 							</div>
 							<div class="col-md-6 d-flex justify-content-end">
 								<button type="button"
-									class="btn btn-secondary h-29 d-flex justify-content-center align-items-center mr-2 ">
-									<i class="fas fa-chevron-left"></i>
+									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
+									<i class="fas fa-chevron-left brown-grey" disabled></i>
 								</button>
 								<button type="button"
-									class="btn btn-outline-danger h-29 d-flex justify-content-center align-items-center">
-									<i class="fas fa-chevron-right"></i>
+									class="btn  button_border h-29 d-flex justify-content-center align-items-center">
+									<i class="fas fa-chevron-right theme_color"></i>
 								</button>
 							</div>
 						</div>
@@ -330,33 +326,33 @@
 								<div class="row mb-4">
 									<div class="col-md-3 col-6">
 										<div class="font-weight-bold f-20">
-											<i class="fas fa-dollar-sign"></i> <span class="theme_color">
+											<i class="fas fa-dollar-sign light_gray"></i> <span class="theme_color">
 												345</span>
 										</div>
 										<div class="f-14 brownish-grey">Deal Value</div>
 									</div>
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20">65%</div>
+										<div class="font-weight-bold f-20 black">65%</div>
 										<div class="f-14 brownish-grey">Confident</div>
 									</div>
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20">25%</div>
+										<div class="font-weight-bold f-20 black">25%</div>
 										<div class="f-14 brownish-grey">Won Leads</div>
 									</div>
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20">75%</div>
+										<div class="font-weight-bold f-20 black">75%</div>
 										<div class="f-14 brownish-grey">Lost Leads</div>
 									</div>
 								</div>
 								<div class="row mb-3">
 									<div class="col-md-6">
-										<div class="f-14 font-weight-bold">Strong Playbook</div>
+										<div class="f-14 font-weight-bold mb-2">Strong Playbook</div>
 										<div class="f-14 brownish-grey">Objection, Price,
 											Qualification, Introduction, Product Features, Value
 											Proposition,</div>
 									</div>
 									<div class="col-md-6">
-										<div class="f-14 font-weight-bold">Weak Playbook</div>
+										<div class="f-14 font-weight-bold mb-2">Weak Playbook</div>
 										<div class="f-14 brownish-grey">Need Investigation,
 											Competitor Mapping, Feature Mapping.</div>
 									</div>
@@ -373,18 +369,18 @@
 					</div>
 				</div>
 
-				<div class="card" style="min-height: 505px;">
+				<div class="card shadow" style="min-height: 505px;">
 					<div class="card-body agent">
 						<div class="row mb-3">
 							<div class="col-md-6 font-weight-bold f-18">Bottom 5 Agents</div>
 							<div class="col-md-6 d-flex justify-content-end">
 								<button type="button"
-									class="btn btn-secondary h-29 d-flex justify-content-center align-items-center mr-2 ">
-									<i class="fas fa-chevron-left"></i>
+									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
+									<i class="fas fa-chevron-left brown-grey" disabled></i>
 								</button>
 								<button type="button"
-									class="btn btn-outline-danger h-29 d-flex justify-content-center align-items-center">
-									<i class="fas fa-chevron-right"></i>
+									class="btn  button_border h-29 d-flex justify-content-center align-items-center">
+									<i class="fas fa-chevron-right theme_color"></i>
 								</button>
 							</div>
 						</div>
@@ -435,7 +431,7 @@
 			</div>
 			<div class="col-md-3">
 
-				<div class="card mb-3" style="height: 313px;">
+				<div class="card mb-3 shadow" style="height: 313px;">
 					<div class="card-body">
 						<div class="d-flex">
 							<div
@@ -486,7 +482,7 @@
 
 
 
-				<div class="card mb-3" style="height: 292px;">
+				<div class="card mb-3 shadow" style="height: 292px;">
 					<div class="card-body">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3">June 12, 2019</h6>
 						<p class="card-text greyish-brown f-14">Product Price in too expensive, and agents are not supportive and they are not providing information !</p>
@@ -503,7 +499,7 @@
 				
 				
 				
-				<div class="card mb-3" style="height: 179px;">
+				<div class="card mb-3 shadow" style="height: 179px;">
 					<div class="card-body">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3">10:30 AM</h6>
 						<div class="row align-items-center mb-3">
@@ -522,7 +518,7 @@
 					
 				</div>
 				
-				<div class="card mb-3" style="height: 255px;">
+				<div class="card mb-3 shadow" style="height: 255px;">
 					<div class="card-body">
 						<div class="row mb-2">
 						<div class="col-md-6 d-flex col-6">
@@ -575,8 +571,8 @@
 				 console.log(newHeight)
 			        $(".left_container").height(newHeight);
 			
-/* 			$('#carouselExampleIndicators').carousel('pause');
- */			
+			$('.carousel').carousel('pause');
+ 		
 			var active_dates = ["21/9/2019","25/9/2019"];
 
 			 $('#datepicker').datepicker({
