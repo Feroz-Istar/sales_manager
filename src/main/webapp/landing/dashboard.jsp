@@ -39,6 +39,27 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
+	<div class="row pb-3">
+		<div class="col-md-6 col-6 p-0 m-0">
+		<h1 class="display-1 black f-20">Dashboard</h1>
+		
+		</div>
+		<div class="col-md-6 col-6 d-flex justify-content-end">
+		<div class="dropdown">
+  <button style="width: 108px;height: 30px;" class="btn theme_bg dropdown-toggle text-white font-weight-bold f-12" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       <span class="sr-only">Toggle Dropdown</span>
+    New Task &nbsp; &nbsp; &nbsp;
+  </button>
+  <div class="dropdown-menu  dropdown-menu-right dropdown-menu-lg-left" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Action</a>
+    <a class="dropdown-item" href="#">Another action</a>
+    <a class="dropdown-item" href="#">Something else here</a>
+  </div>
+</div>
+		
+		</div>
+		
+	</div>
 		<div class="row mb-5">
 			<div class="col-md-3 pr-0 left_container pl-0 bg-white">
 				<ul class="saleken nav nav-tabs f-14 custom_dash_padding pt-3 pb-0" id="myTab"

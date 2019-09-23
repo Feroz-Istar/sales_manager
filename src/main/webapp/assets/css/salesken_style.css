@@ -14,8 +14,8 @@ body {
 
 .salesken_container {
 	padding-top: 5.5rem;
-	padding-left: 30px !important;
-	padding-right: 30px !important;
+	padding-left: 60px !important;
+	padding-right: 60px !important;
 }
 .border-left-0{
 border-left: 0 !important;	
@@ -320,7 +320,10 @@ Modifying the scroll bar across the whole application
 .theme_color{
 	color:#ed4d67 !important;
 }
-
+.theme_bg{
+		background: #ed4d67 !important;;
+	
+}
 .brownish-grey{
 color: #666666 !important;
 }
