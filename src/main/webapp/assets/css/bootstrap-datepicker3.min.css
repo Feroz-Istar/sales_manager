@@ -10,9 +10,13 @@
 }
 
 .datepicker-inline {
-	width: 220px
 }
-
+.datepicker-inline {
+    width: 100%;
+}
+.datepicker table {
+    width: 100%;
+}
 .datepicker-rtl {
 	direction: rtl
 }

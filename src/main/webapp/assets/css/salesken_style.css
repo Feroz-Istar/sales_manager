@@ -120,8 +120,6 @@ body {
 }
 /*End of navbar css*/
 .datepicker, .table-condensed {
-	height: 322px;
-	width: 280px;
 	background-color: #f9f9f9;
 }
 

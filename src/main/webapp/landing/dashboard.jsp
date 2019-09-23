@@ -55,7 +55,10 @@
 						style="background:  #f9f9f9	">
 						<div class="tab-pane fade show active " id="home" role="tabpanel"
 							aria-labelledby="home-tab">
-							<div id="datepicker"></div>
+							<div class="w-100" style=" padding: 11px 22px; ">
+							<div id="datepicker"  ></div>
+							
+							</div>
 							<hr>
 							<div class="task-item-container bg-white p-3">
 									<div class="d-flex flex-row align-items-center pt-2 pb-4">
@@ -151,19 +154,19 @@
 				</div>
 				
 				<div class="row mb-4">
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-30"> <i class="fas fa-dollar-sign"></i> <span class="theme_color"> 7245</span></div>
 						<div class="f-14 brownish-grey">Deal Value</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-30"><i class="far fa-flag"></i> 65%</div>
 						<div class="f-14 brownish-grey">Confident</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-30"><i class="fas fa-trophy"></i> 25%</div>
 						<div class="f-14 brownish-grey">Won Leads</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-30"><i class="far fa-thumbs-down"></i> 75%</div>
 						<div class="f-14 brownish-grey">Lost Leads</div>
 					</div>
@@ -195,7 +198,7 @@
   </a> -->
 </div>
 				
-				<div class="card mb-3" style="height: 245px;">
+				<div class="card mb-3" style="min-height: 245px;">
 				  <div class="card-body">
 				  <div class="row mb-3">
 				<div class="col-md-6 font-weight-bold f-18">Team 01 - 	<span class="brown-grey">10 user</span></div>
@@ -211,19 +214,19 @@
 				<div class="row">
 				<div class="col-md-8">
 				<div class="row mb-4">
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-20"> <i class="fas fa-dollar-sign"></i> <span class="theme_color"> 345</span></div>
 						<div class="f-14 brownish-grey">Deal Value</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-20"> 65%</div>
 						<div class="f-14 brownish-grey">Confident</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-20">25%</div>
 						<div class="f-14 brownish-grey">Won Leads</div>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 col-6">
 						<div class="font-weight-bold f-20"> 75%</div>
 						<div class="f-14 brownish-grey">Lost Leads</div>
 					</div>
@@ -250,7 +253,7 @@
 				</div>
 				</div>
 				
-				<div class="card" style="height: 505px;">
+				<div class="card" style="min-height: 505px;">
 				  <div class="card-body agent">
 				  <div class="row mb-3">
 				<div class="col-md-6 font-weight-bold f-18">Bottom 5 Agents</div>
@@ -270,7 +273,7 @@
 					}
 					%>
 				<div class="row align-items-center separation-bottom py-4" style="background: <%=color %>">
-					<div class="col-md-4">
+					<div class="col-md-4 col-6">
 						<div class="d-flex flex-row">
 							<img class="mr-2" style="height:40px;width:40px"src="<%=baseURL%>assets/image/37.jpg"/>
 							<div>
@@ -279,7 +282,7 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-md-8">
+					<div class="col-md-8 col-6">
 						<div class="row">
 							<div class="col-md-4 f-14">
 						<strong>12%</strong> - Lead Wins
@@ -320,6 +323,8 @@
 
 			});
 			
+			
+			
 /* 			$('#carouselExampleIndicators').carousel('pause');
  */			
 			var active_dates = ["21/9/2019","25/9/2019"];
@@ -329,6 +334,9 @@
 				updateViewDate:true,
 				weekStart:1,
 				 beforeShowDay: function(date){
+					 var newHeight = $("#datepicker").width();
+					 console.log(newHeight)
+				        $(".table-condensed").height(newHeight);
 			         var d = date;
 			         var curr_date = d.getDate();
 			         var curr_month = d.getMonth() + 1; //Months are zero based
