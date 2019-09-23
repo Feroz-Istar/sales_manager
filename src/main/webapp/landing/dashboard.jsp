@@ -76,7 +76,7 @@
 					style="background: #f9f9f9">
 					<div class="tab-pane fade show active " id="home" role="tabpanel"
 						aria-labelledby="home-tab">
-						<div class="w-100 " style="padding: 0px 40px;">
+						<div class="w-100 pl-2 pr-2" >
 							<div id="datepicker"></div>
 
 						</div>
@@ -166,7 +166,7 @@
 
 				</div>
 			</div>
-			<div class="col-md-6 p-0 m-0 center_container ">
+			<div class="col-md-6 p-0 m-0 center_container mb-3 ">
 
 				<div id="carouselExampleIndicators" class="carousel slide mb-2"
 					data-ride="carousel">
@@ -450,9 +450,9 @@
 
 
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 p-0 pl-md-3 pr-md-3">
 
-				<div class="card mb-3 shadow" style="height: 313px;">
+				<div class="card mb-3 shadow" style="min-height: 313px;">
 					<div class="card-body">
 						<div class="d-flex">
 							<div
@@ -503,7 +503,7 @@
 
 
 
-				<div class="card mb-3 shadow" style="height: 292px;">
+				<div class="card mb-3 shadow" style="min-height: 292px;">
 					<div class="card-body">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3">June 12, 2019</h6>
 						<p class="card-text greyish-brown f-14">Product Price in too expensive, and agents are not supportive and they are not providing information !</p>
@@ -520,8 +520,8 @@
 				
 				
 				
-				<div class="card mb-3 shadow" style="height: 179px;">
-					<div class="card-body">
+				<div class="card mb-3 shadow" style="min-height: 179px;">
+					<div class="card-body mr-md-3">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3">10:30 AM</h6>
 						<div class="row align-items-center mb-3">
 							<div class="col-md-9 col-6">
@@ -539,7 +539,7 @@
 					
 				</div>
 				
-				<div class="card mb-3 shadow" style="height: 255px;">
+				<div class="card mb-3 shadow" style="min-height: 255px;">
 					<div class="card-body">
 						<div class="row mb-2">
 						<div class="col-md-6 d-flex col-6">

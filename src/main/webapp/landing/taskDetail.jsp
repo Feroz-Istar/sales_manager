@@ -30,23 +30,20 @@
 	<main role="main">
 	<div class="container-fluid salesken_container">
 		<div class="row grey-white-bg align-items-center py-3">
-			<div class="col-md-1 f-20 font-weight-bold border-right-separation">Task
+		<div class="col-md-6 col-12 d-flex"> 
+		<div>Task
 				Details</div>
-			<div class="col-md-6">
-				<div class="d-flex flex-row f-12 brown-grey align-items-center">
-					<div class="pr-2">Task Detail</div>
+							<div class="pr-2">Task Detail</div>
 					<i class="fas fa-chevron-circle-right pr-2"></i>
 					<div class="">Ongoing</div>
-				</div>
-			</div>
-			<div class="col-md-5 row ">
-			<div class="col-md-12 p-0 row justify-content-end align-items-center">
-				<div class="col-md-4">
-					<input type="text" class="form-control search-style f-14"
+		
+		</div>
+			<div class="col-md-6 col-12 d-flex justify-content-md-end"> 
+			
+			<input type="text" class="form-control search-style mr-3 f-14"
 						id="search" aria-describedby="search" placeholder="Search">
-				</div>
-				<div class="col-md-2 ml-4 dropdown">
-					<button class="btn btn-style px-2 f-12 dropdown-toggle"
+							<div class="dropdown">
+						<button class="btn btn-style px-2 f-12 dropdown-toggle"
 						type="button" id="dropdownMenuButton" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
 					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -54,10 +51,11 @@
 							class="dropdown-item" href="#">Another action</a> <a
 							class="dropdown-item" href="#">Something else here</a>
 					</div>
-				</div>
+						</div>
+						
 			</div>
-			</div>
-		</div>
+	
+	</div>
 
 		<div class="row bg-white pt-3">
 			<nav class="ml-3">

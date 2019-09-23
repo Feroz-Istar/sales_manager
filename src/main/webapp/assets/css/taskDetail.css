@@ -18,10 +18,23 @@
 .btn-style:hover{
 	color: #ffffff !important;	
 }
-.search-style{
+
+@media ( min-width : 992px) {
+	.search-style{
 		height:30px !important;
-		min-width: 250px;
+		width: 250px;
 		border-radius: 0;
+}
+	
+}
+
+@media ( max-width : 600px) {
+	.search-style{
+		height:30px !important;
+		width: 120px;
+		border-radius: 0;
+}
+	
 }
 
 .very-light-pink-grey-bg{
