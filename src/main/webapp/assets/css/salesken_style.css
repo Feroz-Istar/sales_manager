@@ -245,3 +245,15 @@ color: #666666 !important;
 .brown-grey{
 color:	#999999 !important;
 }
+
+.cursor-pointer{
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+    .navbar-nav.flex-row > .dropdown .dropdown-menu {
+        left: 50% !important;
+        margin-left: -80px; /* (Half Menu Width in margin left) */
+        top: 100%;
+    }
+}

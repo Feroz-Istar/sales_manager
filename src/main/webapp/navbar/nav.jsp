@@ -4,46 +4,21 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 %>
-<nav
-	class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0">
-	<a class="navbar-brand f-15 p-0 pr-3" href="#"> <img
+
+
+<nav class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0">
+    <a class="navbar-brand f-15 p-0 pr-3" href="#"> <img
 		class="appicon img-thumbnail p-0 mr-1 border-0"
 		src="<%=baseURL%>assets/image/app.png" /><span>Sales<span
 			style="color: red">ken</span></span></a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse"
-		data-target="#navbarsExampleDefault"
-		aria-controls="navbarsExampleDefault" aria-expanded="false"
-		aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	</button>
-
-	<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-		<ul class="salesken navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1"
-					src="<%=baseURL%>assets/image/dashboard.svg" />Dashboard <span
-					class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/task.svg" />Task
-					Details<span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/pipeline.svg" />Pipeline<span
-					class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/report.svg" />Reports<span
-					class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="#"><img
-					class="menu_icon mr-1" src="<%=baseURL%>assets/image/leads.svg" />Leads<span
-					class="sr-only">(current)</span></a></li>
-
-		</ul>
-
-
-		<div class="dropdown  mr-4  ml-auto">
-			<a href="#" id="imageDropdown" data-toggle="dropdown"> <img
-				class="linkicon" src="<%=baseURL%>assets/image/notification.png">
-			</a>
-			<div class="dropdown-menu dropdown-menu-lg-right" role="menu"
+    <div class="d-flex flex-row order-2 order-lg-3">
+        <ul class="navbar-nav flex-row align-items-center">
+         <li class="nav-item dropdown mr-2 ">
+                <a class="nav-link " data-display="static" aria-haspopup="true" aria-expanded="false" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                 <img
+				class="linkicon" src="<%=baseURL%>assets/image/notification.png"/>
+                </a>
+                	<div class="dropdown-menu dropdown-menu-lg-right position-absolute " role="menu"
 				aria-labelledby="imageDropdown" style="border: none !important;">
 				<div class="card" style="width: 300px;">
 
@@ -71,14 +46,10 @@
 
 				</div>
 			</div>
-		</div>
-
-
-	</div>
-	<div class="dropdown pr-4">
-
-
-		<div class="d-flex flex-row align-items-center"
+            </li>
+            <li class="nav-item dropdown mr-4">
+            
+            	<div class="d-flex flex-row align-items-center nav-link "
 			id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 			aria-expanded="false">
 			<img
@@ -95,7 +66,7 @@
 				<div class="f-12">Manager</div>
 			</div>
 		</div>
-		<div class="dropdown-menu dropdown-menu-lg-right border-0 p-0"
+		<div class="dropdown-menu dropdown-menu-lg-right position-absolute border-0 p-0"
 			aria-labelledby="dropdownMenuButton">
 
 
@@ -112,6 +83,7 @@
 								<div class="f-12">wade@gmail.com</div>
 							
 						</div>
+						</div>
 				</li>
 				<li class="list-group-item border-0 d-flex flex-row">
 					<img src="<%=baseURL%>assets/image/person.svg" class="pr-3"/>
@@ -127,6 +99,35 @@
 				</li>
 			</ul>
 		</div>
-	</div>
-</nav>
+            
+            </li>
+           
+              
+        </ul>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse order-3 order-lg-2" id="navbarNavDropdown">
+        <ul class="salesken navbar-nav mr-auto">
+           <li class="nav-item active"><a class="nav-link f-14" href="#"><img
+					class="menu_icon mr-1"
+					src="<%=baseURL%>assets/image/dashboard.svg" />Dashboard <span
+					class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link f-14" href="#"><img
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/task.svg" />Task
+					Details<span class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link f-14" href="#"><img
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/pipeline.svg" />Pipeline<span
+					class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link f-14" href="#"><img
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/report.svg" />Reports<span
+					class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link f-14" href="#"><img
+					class="menu_icon mr-1" src="<%=baseURL%>assets/image/leads.svg" />Leads<span
+					class="sr-only">(current)</span></a></li>
 
+        </ul>
+    </div>
+</nav>
