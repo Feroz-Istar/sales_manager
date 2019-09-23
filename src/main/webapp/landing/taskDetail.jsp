@@ -30,18 +30,29 @@
 	<main role="main">
 	<div class="container-fluid salesken_container">
 		<div class="row grey-white-bg align-items-center py-3">
-		<div class="col-md-6 col-12 d-flex"> 
-		<div>Task
+		<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
+		<div class="display-1 black f-20 border-right-separation pr-3 ">Task
 				Details</div>
-							<div class="pr-2">Task Detail</div>
-					<i class="fas fa-chevron-circle-right pr-2"></i>
-					<div class="">Ongoing</div>
+							<div class="pl-3 pr-2 f-12 brown-grey ">Task Detail</div>
+					<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
+					<div class=" f-12 brown-grey">Ongoing</div>
 		
 		</div>
 			<div class="col-md-6 col-12 d-flex justify-content-md-end"> 
 			
-			<input type="text" class="form-control search-style mr-3 f-14"
-						id="search" aria-describedby="search" placeholder="Search">
+			
+			<div class="input-group search-style ">
+                <input id="Search" class="form-control  border-secondary py-2 " type="search" placeholder="search" style="border-right: none !important;">
+                <div class="input-group-append">
+                    <button class="btn removefocus" type="button" style="border-top: 1px solid gray;
+    border-right: 1px solid gray;
+    border-bottom: 1px solid gray;">
+                        <i class="fa fa-search "></i>
+                    </button>
+                </div>
+            </div>
+			<!-- <input type="text" class="form-control search-style mr-3 f-14"
+						id="search" aria-describedby="search" placeholder="Search"> -->
 							<div class="dropdown">
 						<button class="btn btn-style px-2 f-12 dropdown-toggle"
 						type="button" id="dropdownMenuButton" data-toggle="dropdown"
@@ -285,6 +296,11 @@
 									<div class="col-md-2 custom-taskborder custom-taskselect d-flex pr-0 mr-2">
 										<input class="f-14 border-0 w-100" placeholder="Calendar">
 										<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
+										
+										
+										
+										<input  id ="aa" type="text" class="form-control" value="02-16-2012">
+										
 									</div>								        							
         							<select
 										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
