@@ -14,7 +14,7 @@
     <div class="d-flex flex-row order-2 order-lg-3">
         <ul class="navbar-nav flex-row align-items-center">
          <li class="nav-item dropdown mr-2 ">
-                <a class="nav-link " data-display="static" aria-haspopup="true" aria-expanded="false" id="navbarDropdownMenuLink" data-toggle="dropdown">
+                <a class="nav-link p-0 " data-display="static" aria-haspopup="true" aria-expanded="false" id="navbarDropdownMenuLink" data-toggle="dropdown">
                  <img
 				class="linkicon" src="<%=baseURL%>assets/image/notification.png"/>
                 </a>
@@ -49,7 +49,7 @@
             </li>
             <li class="nav-item dropdown mr-4">
             
-            	<div class="d-flex flex-row align-items-center nav-link "
+            	<div class="d-flex flex-row align-items-center nav-link p-0"
 			id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 			aria-expanded="false">
 			<img
