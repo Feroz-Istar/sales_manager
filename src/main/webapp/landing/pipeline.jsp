@@ -104,7 +104,7 @@
 					isactive = "active";
 				}
 		    %>
-		      <div class="tab-pane fade show pl-lg-3 <%=isactive %>" id="stage-<%=i%>" role="tabpanel" aria-labelledby="stage-<%=i%>-tab">
+		      <div class="tab-pane fade show pl-0 <%=isactive %>" id="stage-<%=i%>" role="tabpanel" aria-labelledby="stage-<%=i%>-tab">
 		      		<div class="row align-items-center py-4 shadow-bottom">
 		      			<div class="col-md-2 col-4">
 		      				<div class="f-24 font-weight-bold blue-black">$ 8562</div>
@@ -181,39 +181,22 @@
 		      				<div class="row">
 		      					<div class="col-md-11">
 		      						<div class="row position-relative">
-		      						<div class="line" style="width: 74%;
-    height: 2px;
-    background: #eeeeee
-
-;
-    position: absolute;
-    top: 11px;
-    left: 39px;"></div>
-		      							<div class="col-md-3 d-flex">
-		      								<div class="text-center">
-		      									<i class="fas fa-check-circle lead-identifier"></i>
+		      						<div class="line"></div>
+		      							<div class="col-md-3 text-center">
+		      									<i class="fas fa-check-circle  lead-identifier"></i>
 	      										<div class="brownish-grey f-14">Need</div>
-		      								</div>
-	      									<div class=""></div>
 		      							</div>
-										<div class="col-md-3 d-flex">
-		      								<div class="text-center">
-		      									<i class="fas fa-check-circle lead-identifier"></i>
+										<div class="col-md-3 text-center">
+		      									<i class="fas fa-check-circle  lead-identifier"></i>
 	      										<div class="brownish-grey f-14">Budget</div>
-		      								</div>
-	      									<div class=""></div>
-		      							</div><div class="col-md-3 d-flex">
-		      								<div class="text-center">
-		      									<i class="fas fa-check-circle lead-identifier"></i>
+		      							</div>	
+		      							<div class="col-md-3 text-center">
+		      									<i class="fas fa-check-circle  lead-identifier"></i>
 	      										<div class="brownish-grey f-14">Authorized </div>
-		      								</div>
-	      									<div class=""></div>
-		      							</div><div class="col-md-3 d-flex">
-		      								<div class="text-center">
+		      							</div>
+		      							<div class="col-md-3 text-center">
 		      									<i class="fas fa-times-circle pastel-red"></i>
 	      										<div class="brownish-grey f-14">Urgency</div>
-		      								</div>
-	      									<div class=""></div>
 		      							</div>
 		      							
 		      							
@@ -221,7 +204,7 @@
 									</div>
 		      					</div>
 		      					<div class="col-md-1 align-self-center ">
-		      						<i class="fas fa-ellipsis-v f-12"></i>
+		      						<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 		      					</div>
 		      					
 		      				</div>
