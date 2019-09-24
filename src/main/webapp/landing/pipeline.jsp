@@ -253,6 +253,8 @@
 		<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 	<script>
 	$( document ).ready(function() {
+		$('.salesken.navbar-nav>li').removeClass('active');
+		$($('.salesken.navbar-nav>li')[2]).addClass('active')
 		$('.page').Pagination({ // id to initial draw and use pagination
             size: 87, // size of list input
             pageShow: 5, // 5 page-item per page

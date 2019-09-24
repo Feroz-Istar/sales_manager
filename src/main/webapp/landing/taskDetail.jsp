@@ -35,7 +35,7 @@
 				Details</div>
 							<div class="pl-3 pr-2 f-12 brown-grey ">Task Detail</div>
 					<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-					<div class=" f-12 brown-grey">Ongoing</div>
+					<div class=" f-12 brown-grey " id="breadcrumb">Ongoing</div>
 		
 		</div>
 			<div class="col-md-6 col-12 d-flex justify-content-md-end"> 
@@ -91,22 +91,22 @@
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 								
 									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
 										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
 										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
 										id="activities">
 										<option>Filter by Activities</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
 										id="status">
 										<option>Filter by Status</option>
 										<option>Default select</option>
@@ -114,7 +114,7 @@
 	
 									<button
 										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
-										<i class="fas fa-filter f-14 "></i>
+										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
 							</div>
@@ -141,11 +141,11 @@
 											<div class="col-md-9">
 												<div class="d-flex flex-row mb-1">
 													<div
-														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$500</div>
+														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$ 500</div>
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 font-weight-bold mb-1">Globex
+												<div class="f-16 font-weight-bold mb-1 bblack">Globex
 													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
@@ -195,11 +195,11 @@
 												<div class="row align-items-center py-2">
 													<div class="col-md-2">
 														<div class="f-14 brownish-grey">Contact Person</div>
-														<div class="f-16 font-weight-bold">Rosemary Garcia</div>
+														<div class="f-16 font-weight-bold bblack ">Rosemary Garcia</div>
 													</div>
 													<div class="col-md-2">
 														<div class="f-14 brownish-grey">Agent</div>
-														<div class="f-16 font-weight-bold">Marry Vasquez</div>
+														<div class="f-16 font-weight-bold bblack ">Marry Vasquez</div>
 													</div>
 													<div class="col-md-5"></div>
 													<div class="col-md-3 d-flex justify-content-end">
@@ -213,19 +213,19 @@
 													<div class="row">
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Task Type</div>
-															<div class="f-16 font-weight-bold">Call</div>
+															<div class="f-16 font-weight-bold bblack ">Call</div>
 														</div>
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Initiated At</div>
-															<div class="f-16 font-weight-bold">11:00 AM	</div>
+															<div class="f-16 font-weight-bold bblack ">11:00 AM	</div>
 														</div>
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Deal Value</div>
-															<div class="f-16 font-weight-bold">$500</div>
+															<div class="f-16 font-weight-bold bblack ">$500</div>
 														</div>
 														<div class="col-md-3">
 															<div class="brownish-grey f-14">Pipeline Detail </div>
-															<div class="f-16 font-weight-bold">Stage 02</div>
+															<div class="f-16 font-weight-bold bblack ">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -544,6 +544,14 @@
 				</div>
 </div>
 </div>
+<script>
+$('.salesken.navbar-nav>li').removeClass('active');
+$($('.salesken.navbar-nav>li')[1]).addClass('active')
+$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+	  var target = $(e.target).html(); // activated tab
+	  $('#breadcrumb').html(target);
+	});
+</script>
 
 
 	

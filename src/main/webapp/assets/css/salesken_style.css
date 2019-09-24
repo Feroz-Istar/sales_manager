@@ -25,6 +25,11 @@ border-top: 0 !important;
 
 }
 
+.fw-50{
+  font-weight: 500 !important;	
+}
+
+
 body {
 	background: #eeeeee !important;
 }
