@@ -118,7 +118,7 @@
 			<li class="nav-item"><a class="nav-link f-14" href="taskDetail.jsp"><img
 					class="menu_icon mr-1" src="<%=baseURL%>assets/image/task.svg" style="width:24px;height: 24px !important;" />Task
 					Details<span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="#"><img
+			<li class="nav-item"><a class="nav-link f-14" href="pipeline.jsp"><img
 					class="menu_icon mr-1" src="<%=baseURL%>assets/image/pipeline.svg" style="height: 24px !important;"/>Pipeline<span
 					class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14" href="#"><img
