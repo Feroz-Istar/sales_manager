@@ -283,7 +283,48 @@
 
 
 					<div class="tab-pane fade" id="time_analysis" role="tabpanel"
-						aria-labelledby="time_analysis-tab">...time_analysis</div>
+						aria-labelledby="time_analysis-tab">
+						<div class="card shadow">
+							<div class="card-body">
+								<div class="d-flex">
+								<%for(int i=0;i<5;i++){ %>
+									<div class="mr-4">
+										<div class="f-14 greyish-brown mb-1">Pipeline Stage 01</div>
+										<div class="d-flex">
+											
+												<button class="hw-40 rounded-circle tea border-0"
+													style="z-index: 1; border: 2px solid white !important;">
+													<i class="fas fa-phone-alt  text-white f-12"></i>
+												</button>
+											
+											<button class="hw-40 rounded-circle tea border-0"
+													style="z-index: 1; border: 2px solid white !important;">
+													<i class="fas fa-phone-alt  text-white f-12"></i>
+												</button>
+										</div>
+									</div>
+									<%} %>
+								</div>
+
+							</div>
+
+						</div>
+						<div class="row" style="min-height:300px">
+							<div class="col border-right-separation" >10%</div>
+							<div class="col border-right-separation" >20%</div>
+							<div class="col border-right-separation">30%</div>
+							<div class="col border-right-separation">40%</div>
+							<div class="col border-right-separation">50%</div>
+							<div class="col border-right-separation">60%</div>
+							<div class="col border-right-separation">70%</div>
+							<div class="col border-right-separation">80%</div>
+							<div class="col border-right-separation">90%</div>
+							<div class="col border-right-separation">100%</div>
+						</div>
+
+
+
+					</div>
 				</div>
 			</div>
 		</div>
