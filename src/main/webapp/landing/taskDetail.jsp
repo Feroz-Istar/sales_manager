@@ -41,8 +41,8 @@
 			<div class="col-md-6 col-12 d-flex justify-content-md-end"> 
 			
 			
-			<div class="input-group search-style ">
-                <input id="Search" class="form-control  border-secondary py-2 " type="search" placeholder="search" style="border-right: none !important;">
+			<div class="input-group search-style parent-class removefocus">
+                <input id="" class="form-control  border-secondary py-2 removefocus" type="search" placeholder="search" style="border-right: none !important;">
                 <div class="input-group-append">
                     <button class="btn removefocus" type="button" style="border-top: 1px solid gray;
     border-right: 1px solid gray;
