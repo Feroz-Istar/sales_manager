@@ -58,7 +58,7 @@
 						data-toggle="tab" href="#time_analysis" role="tab"
 						aria-controls="contact" aria-selected="false">Time Analysis</a></li>
 				</ul>
-				<div class="tab-content" id="reportTabContent">
+				<div class="tab-content" id="reportTabContent" style="min-height:600px;">
 					<div class="tab-pane fade show active" id="task" role="tabpanel"
 						aria-labelledby="task-tab">
 						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
@@ -234,8 +234,55 @@
 						
 						</div>
 					<div class="tab-pane fade" id="customer" role="tabpanel"
-						aria-labelledby="customer-tab">...</div>
-						<div class="tab-pane fade" id="time_analysis" role="tabpanel"
+						aria-labelledby="customer-tab">
+
+						<div class="row bg-white bottom-separation-solid py-3">
+							<div class="col-md-12 col-12 brown-grey align-self-center">
+								<strong class="greyish-brown">25</strong> &nbsp; Results Found
+							</div>
+						</div>
+						<hr class="p-0 m-0">
+
+						<div class="row  border-bottom-dashed-separation mr-md-2">
+						
+							<%for(int i=0;i<4;i++){ %>
+							<div class="col-md-3 col_bordering p-0 m-0 d-md-flex align-items-center" style="min-height:200px;">
+							<div class=" w-100 d-flex">
+								<div class="col-md-6 p-0 m-0 text-center	">
+								<div><div class=" f-42"> 05</div>
+								<div class="greyish-brown f-14 font-weight-bold">Objection</div>
+								</div>
+								</div>
+								<div class="col-md-6  p-0 m-0  ">
+								<img src="http://localhost:8081/salesken_v2/assets/image/Group 3614.svg" width="93.8" height="87.2">
+								</div>
+								</div>
+							</div>
+							<%} %>
+							
+						</div>
+
+					</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					<div class="tab-pane fade" id="time_analysis" role="tabpanel"
 						aria-labelledby="time_analysis-tab">...time_analysis</div>
 				</div>
 			</div>

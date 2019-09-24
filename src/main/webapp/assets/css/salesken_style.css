@@ -329,6 +329,10 @@ color:	#999999 !important;
     border-bottom: 1px solid #cccccc;
 }
 
+.border-bottom-dashed-separation {
+    border-bottom: 2px dashed #cccccc;
+}
+
 .border-right-separation {
     border-right: 1px dotted #cccccc;
 }
