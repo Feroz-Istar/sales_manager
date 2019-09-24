@@ -1,0 +1,87 @@
+
+.card-separation{
+border-left: 2px dashed #d4d4d4;
+}
+
+.signalimgsize{
+height: 80px;
+width: 80px;
+}
+
+.ml_10{
+	margin-left:-11px;
+}
+.imgsize{
+	height:30px;
+	width:30px;
+}
+.checksize{
+		height:18px;
+	width:18px;
+}
+.carousel-indicators > li {
+  border-radius: 50%;
+  height:10px;
+	width:10px;
+	    padding:2px;
+    background-color: #ffffff;
+        background-clip:content-box;
+    border:2px solid #cccccc;
+        margin-top: 8px;
+    
+}
+.h-29{
+	height:29px;
+	width:29px;
+}
+
+.carousel-indicators .active {
+    width: 10px;
+    height: 10px;
+    background-color: ed4d67;
+    background-clip:content-box;
+    border:2px solid #ed4d67;
+    margin-top: 8px;
+}
+.separation-bottom{
+	border-bottom: 1px solid #cccccc;	
+}
+
+.datepicker, .table-condensed {
+	background-color: #f9f9f9;
+}
+
+
+.datepicker {
+	font-size: 12px;
+} 
+
+
+
+.table-condensed>thead>tr>th.dow {
+	color: #999999 !important;
+	font-weight: bold;
+		font-size: 12px;
+	
+}
+.table-condensed>thead>tr>th.datepicker-switch,.table-condensed>thead>tr>th.prev,.table-condensed>thead>tr>th.next {
+	color: #999999 !important;
+	font-weight: bold;
+	}
+.table-condensed tbody tr td {
+  font-size: 12px;
+}
+.activeClass {
+	background: #dddddd;
+	font-weight: 600;
+}
+
+.table-condensed {
+	border-collapse: separate;
+	border-spacing: 10px 8px;
+}
+
+.custom_dash_padding{
+	padding: 9px 29px;
+}
+

@@ -39,15 +39,25 @@ input[type="search"]::-webkit-search-cancel-button {
 	color: #ffffff !important;	
 }
 
-@media ( min-width : 992px) {
-	.search-style{
-		height:30px !important;
-		width: 250px !important;
-		border-radius: 0 !important;
-}
-	
+.border_except_left{
+	border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
 }
 
+
+
+
+
+ @media ( min-width : 992px) {
+	.search_height{
+		height:30px !important;
+}
+	.search_width{
+		width:250px;
+	}
+}
+/*
 @media ( max-width : 600px) {
 	.search-style{
 		height:30px !important;
@@ -55,7 +65,7 @@ input[type="search"]::-webkit-search-cancel-button {
 		border-radius: 0;
 }
 	
-}
+} */
 
 .very-light-pink-grey-bg{
 	background-color: #f9f9f9 !important;

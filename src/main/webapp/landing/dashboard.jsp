@@ -28,6 +28,8 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/dashboard.css">
+
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
@@ -76,7 +78,7 @@
 					style="background: #f9f9f9">
 					<div class="tab-pane fade show active " id="home" role="tabpanel"
 						aria-labelledby="home-tab">
-						<div class="w-100 pl-2 pr-2" >
+						<div class="w-100 pl-2 pr-2 pr-md-4 pl-md-4" >
 							<div id="datepicker"></div>
 
 						</div>

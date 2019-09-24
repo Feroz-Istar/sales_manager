@@ -41,13 +41,11 @@
 			<div class="col-md-6 col-12 d-flex justify-content-md-end"> 
 			
 			
-			<div class="input-group search-style parent-class removefocus">
-                <input id="" class="form-control  border-secondary py-2 removefocus" type="search" placeholder="search" style="border-right: none !important;">
+			<div class="input-group  pl-2 pr-2 search_width">
+                <input id="" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
                 <div class="input-group-append">
-                    <button class="btn removefocus" type="button" style="border-top: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;">
-                        <i class="fa fa-search "></i>
+                    <button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="    " >
+                        <i class="fa fa-search f-12 brown-grey"></i>
                     </button>
                 </div>
             </div>
@@ -57,7 +55,7 @@
 						<button class="btn btn-style px-2 f-12 dropdown-toggle"
 						type="button" id="dropdownMenuButton" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left " aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="#">Action</a> <a
 							class="dropdown-item" href="#">Another action</a> <a
 							class="dropdown-item" href="#">Something else here</a>
