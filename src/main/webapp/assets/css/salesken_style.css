@@ -315,5 +315,34 @@ color:	#999999 !important;
     border-color: #dee2e6 #dee2e6 #fff;
 }
 
-/* end of tab styling */
 
+.mytab-content {
+	position: relative;
+	z-index: 2;
+	padding: 25px;
+	border-radius: 0 4px 4px 4px;
+	background: white;
+}
+
+/* end of tab styling */
+.border-bottom-separation {
+    border-bottom: 1px solid #cccccc;
+}
+
+.border-right-separation {
+    border-right: 1px dotted #cccccc;
+}
+
+
+ @media ( min-width : 992px) {
+	.search_height{
+		height:30px !important;
+}
+	.search_width{
+		width:250px;
+	}
+	.custom-taskselect{
+	width: 185px;
+ 	 height: 30px;
+}
+}
