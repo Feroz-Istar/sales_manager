@@ -282,3 +282,33 @@ color:	#999999 !important;
         top: 100%;
     }
 }
+
+/* start of tab styling */
+
+
+.nav-mytabs a {
+    position: relative;
+    top: 8px;
+    border-right: 1px solid #eeeeee;
+    border-radius: 2px 2px 0 0;
+    background: #f9f9f9;
+    color: black;
+    opacity: 0.9;
+    transition: all 0.1s ease-in-out;
+    font-weight: normal;
+}
+
+.nav-mytabs a.active, .nav-mytabs a:hover {
+    opacity: 1;
+    top: 0;
+    font-weight: bold !important;
+    background: white;
+}
+
+
+.nav-mytabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #dee2e6 #dee2e6 #fff;
+}
+
+/* end of tab styling */
+

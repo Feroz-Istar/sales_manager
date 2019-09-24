@@ -29,7 +29,7 @@
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row grey-white-bg align-items-center py-3">
+		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation">
 		<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
 		<div class="display-1 black f-20 border-right-separation pr-3 ">Task
 				Details</div>
@@ -65,62 +65,58 @@
 			</div>
 	
 	</div>
+<div class="row">
+<div class="col-md-12 bg-white">
 
-		<div class="row bg-white pt-3">
-			<nav class="ml-3">
-				<div class="nav nav-tasktabs" id="nav-tabs" role="tablist">
-					<a class="nav-item nav-link show active" id="nav-ongoing-tab"
+<nav>
+  <div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs" role="tablist">
+  	<a class="nav-item nav-link show active" id="nav-ongoing-tab"
 						data-toggle="tab" href="#nav-ongoing" role="tab"
 						aria-controls="nav-ongoing" aria-selected="true">Ongoing</a> <a
 						class="nav-item nav-link" id="nav-upcoming-tab" data-toggle="tab"
 						href="#nav-upcoming" role="tab" aria-controls="nav-upcoming"
 						aria-selected="false">Upcoming</a> <a class="nav-item nav-link"
 						id="nav-completed-tab" data-toggle="tab" href="#nav-completed"
-						role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>
-				</div>
-			</nav>
-
-		</div>
-		<div class="row bg-white">
-			<div class="col-md-12">
-				<div class="tab-content mt-2" id="nav-tasktabsContent">
+						role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>  </div>
+</nav>
+<div class="tab-content mt-2 mytab-content" id="nav-tasktabsContent">
 					<div class="tab-pane fade show active" id="nav-ongoing"
 						role="tabpanel" aria-labelledby="nav-ongoing-tab">
 						<!-- start of ongoing tab content -->
 
-						<div class="row align-items-center py-3 border-bottom-separation">
-							<div class="col-md-3 f-16">
-								<strong>03</strong> Results Found
+						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 f-16 brown-grey">
+								<strong class="greyish-brown mr-2">03</strong> Results Found
 							</div>
-							<div class="col-md-9 row p-0">
-								<div class="col-md-12 row p-0 justify-content-end" >
+							<div class="col-md-9 d-md-flex justify-content-end  ">
+								
 									<select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
 										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
 									</select> <select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
 										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
 									</select> <select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
 										id="activities">
 										<option>Filter by Activities</option>
 										<option>Default select</option>
 									</select> <select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
+										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder"
 										id="status">
 										<option>Filter by Status</option>
 										<option>Default select</option>
 									</select>
 	
 									<button
-										class="btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
+										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
 										<i class="fas fa-filter f-14 "></i>
 									</button>
-								</div>
+								
 							</div>
 						</div>
 
@@ -546,8 +542,12 @@
 					<div class="tab-pane fade" id="nav-completed" role="tabpanel"
 						aria-labelledby="nav-completed-tab">ardfgrgeregggg</div>
 				</div>
-			</div>
-		</div>
+</div>
+</div>
+
+
+	
+ 
 	</div>
 	</main>
 </body>

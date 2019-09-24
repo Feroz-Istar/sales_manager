@@ -9,6 +9,7 @@
 .removefocus:focus{
 	 outline: none !important;
    box-shadow: none !important;
+   border-color: #cccccc !important;
 }
 input[type="search"]::-webkit-search-cancel-button {
 
@@ -56,6 +57,10 @@ input[type="search"]::-webkit-search-cancel-button {
 	.search_width{
 		width:250px;
 	}
+	.custom-taskselect{
+	min-width: 185px;
+ 	 height: 30px;
+}
 }
 /*
 @media ( max-width : 600px) {
@@ -71,10 +76,7 @@ input[type="search"]::-webkit-search-cancel-button {
 	background-color: #f9f9f9 !important;
 }
 
-.custom-taskselect{
-	min-width: 185px;
- 	 height: 30px;
-}
+
 
 .custom-taskborder{
 	border: 1px solid #cccccc;
@@ -106,6 +108,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 .border-bottom-separation{
 	border-bottom: 1px solid #cccccc;
+	
 }
 
 
@@ -150,7 +153,7 @@ li
 	position: relative;
 	top: 8px;
 	background-color: #f9f9f9;
-	color: black;
+	color: #999999;
 	opacity: 0.5;
 	transition: all 0.1s ease-in-out;
 	font-weight: normal;
@@ -165,6 +168,9 @@ li
 	top: 0;
 	font-weight: bold !important;
 	background-color: #fff;
+	color: #444444 !important;
+
+	
 }
 
 .taskabs-content {
@@ -225,4 +231,10 @@ li
 
 /* end of vertical tab */
 
-
+.mytab-content {
+	position: relative;
+	z-index: 2;
+	padding: 25px;
+	border-radius: 0 4px 4px 4px;
+	background: white;
+}
