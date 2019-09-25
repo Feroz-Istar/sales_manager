@@ -32,7 +32,6 @@
 		width: 250px !important;
 		border-radius: 0 !important;
 }
-	
 }
 
 @media ( max-width : 600px) {
@@ -41,7 +40,6 @@
 		width: 120px;
 		border-radius: 0;
 }
-	
 }
 
 .bottom-separation-solid{
@@ -67,4 +65,17 @@
 }
 .very-light-pink-grey-bg{
 	background-color: #f9f9f9 !important;
+}
+
+.border_except_left{
+	border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
+}
+
+.removefocus:focus{
+	 outline: none !important;
+   box-shadow: none !important;
+   border-color: #cccccc !important;
 }

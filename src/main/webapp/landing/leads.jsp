@@ -37,8 +37,17 @@
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end">
-				<input type="text" class="form-control search-style mr-2 f-14"
-						id="search" aria-describedby="search" placeholder="Search">
+				<div class="input-group  pl-2 pr-2 search_width">
+					<input id=""
+						class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+					<div class="input-group-append">
+						<button
+							class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
+							type="button" style="">
+							<i class="fa fa-search f-12 brown-grey"></i>
+						</button>
+					</div>
+				</div>
 				<button class="btn btn-style f-12">UPLOAD NEW</button>
 			</div>
 		</div>
