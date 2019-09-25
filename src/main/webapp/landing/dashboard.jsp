@@ -404,7 +404,7 @@
 							<div class="col-md-6 d-flex justify-content-end">
 								<button type="button"
 									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
-									<i class="fas fa-chevron-left brown-grey" disabled></i>
+									<i class="fal fa-forward"></i>	
 								</button>
 								<button type="button"
 									class="btn  button_border h-29 d-flex justify-content-center align-items-center">

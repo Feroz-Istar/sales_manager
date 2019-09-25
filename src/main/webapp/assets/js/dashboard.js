@@ -1,4 +1,4 @@
-	$(document).ready(function() {
+$(document).ready(function() {
 		
 		/* start of rating bar js code */
 		
@@ -34,6 +34,8 @@
 		var active_dates = ["21/9/2019", "25/9/2019"];
 		
 		/*calendar initialization start */
+		
+		
 		$('#datepicker').datepicker({
 			todayHighlight: true,
 			updateViewDate: true,
@@ -67,6 +69,8 @@
 		$('#datepicker').on('changeDate', function() {
 			console.log($('#datepicker').datepicker('getFormattedDate'));
 			window.location.href = window.location.pathname + "?var=" + $('#datepicker').datepicker('getFormattedDate');
+		/*	 var redirectWindow = window.open( window.location.pathname + "?var=" + $('#datepicker').datepicker('getFormattedDate'), '_blank');
+			    redirectWindow.location;*/
 		});
 		
 		
