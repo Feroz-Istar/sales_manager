@@ -15,6 +15,8 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	String usertabs[]={"All Users","Sales Team","Product Team","Tech Team"};
+	
+	
 %>
 <link rel="icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="<%=baseURL%>favicon.ico"
@@ -309,18 +311,45 @@
 							</div>
 
 						</div>
-						<div class="row" style="min-height:300px">
-							<div class="col border-right-separation" >10%</div>
-							<div class="col border-right-separation" >20%</div>
-							<div class="col border-right-separation">30%</div>
-							<div class="col border-right-separation">40%</div>
-							<div class="col border-right-separation">50%</div>
-							<div class="col border-right-separation">60%</div>
-							<div class="col border-right-separation">70%</div>
-							<div class="col border-right-separation">80%</div>
-							<div class="col border-right-separation">90%</div>
-							<div class="col border-right-separation">100%</div>
+						
+						<div class="row py-4">
+						<div class="col-md-6">
+						<h5 class="mb-1 f-20 black">Title</h5>
+						
 						</div>
+						<div class="col-md-6  d-flex justify-content-end">
+						<select class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="deal_value">
+										<option>Filter by Team</option>
+										<option>Default select</option>
+									</select>
+						</div>
+						</div>
+						
+						
+						<div class="row reportrow position-relative" style="min-height:300px">
+						<%for(int i=0;i<10;i++){ %>
+							<div class="col  p-0 m-0 reportcol" >
+							<div class="greyish-brown f-30 border-bottom-dashed-separation "><%=i+1 %>0%</div>
+
+								<div class="list-group border-right-dashed-separation pt-4 pl-2 pr-2" style="min-height:250px">
+									<a href="#"
+										class="list-group-item list-group-item-action active">
+										<div class="d-flex w-100 justify-content-between ">
+											<h5 class="mb-1 f-12">List group item heading</h5>
+										</div>
+										
+									</a> 
+									
+									
+								</div>
+
+
+
+
+							</div>
+							<%} %>
+							<i class="far fa-flag flag_pos"></i>
+<i class="fas fa-trophy trpohy_pos"></i>						</div>
 
 
 
@@ -335,7 +364,6 @@
 
 
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript" src="http://botmonster.com/jquery-bootpag/jquery.bootpag.js"></script>
 	
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
@@ -347,6 +375,8 @@
 	
 	<script>
 	$( document ).ready(function() {
+		
+		$($('.reportcol>.border-right-dashed-separation').last()).addClass('border-0');
 		$('.salesken.navbar-nav>li').removeClass('active');
 		$($('.salesken.navbar-nav>li')[3]).addClass('active');
 		$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {

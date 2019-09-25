@@ -342,6 +342,12 @@ color:	#999999 !important;
     border-right: 1px dotted #cccccc;
 }
 
+.border-right-dashed-separation {
+    border-right: 2px dashed #cccccc;
+}
+
+
+
 
 .col_bordering{
 	    border-right: 2px dashed #cccccc;
@@ -357,6 +363,25 @@ color:	#999999 !important;
  border-bottom: none !important;
 }
 
+.flag_pos{
+	position: absolute;
+    left: 0;
+    top: 33px;
+    font-size:24px;
+}
+.trpohy_pos{
+	position: absolute;
+    right: 0;
+    top: 33px;
+    font-size: 24px;
+}
+
+.reportcol:first-child{
+	margin-left:35px !important;
+}
+.reportcol:last-of-type{
+	margin-right:35px !important;
+}
  @media ( min-width : 992px) {
 	.search_height{
 		height:30px !important;
