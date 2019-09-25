@@ -78,12 +78,30 @@
 										<option>Filter by Source type</option>
 										<option>Default select</option>
 									</select> 
-									<div class="dropdown">
+									<div class="istar-dropdown mr-2 custom-taskborder ">
 										<button
-											class="mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
-											id="activity">
-											
+											class="istar-dropdown-arrow dropdown-toggle"
+											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+											<span class="sr-only">Toggle Dropdown</span>
+    										Filter by Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
 										</button>
+										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Call Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+										    Email Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+										    Webinar Task
+										    </button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Presentation
+										    </button>
+										  </div>
+										
 									</div>
 									<button
 										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
@@ -367,7 +385,7 @@
 									<input type="text" id="pipeline_datepicker" class="form-control border-0  f-14 custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon" onclick="showCalendar()">
 										<img
-											src="http://localhost:8080/salesken_v2//assets/image/calendar.svg" class="pr-1">
+											src="<%=baseURL%>assets/image/calendar.svg" class="pr-1">
 									</div>
 								</div>
 								

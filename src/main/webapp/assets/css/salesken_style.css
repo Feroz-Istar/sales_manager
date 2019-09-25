@@ -137,7 +137,46 @@ body {
 /* end of dropdown with icons */
 
 /* start of dropdown with task icons */
-
+.istar-dropdown-arrow{
+    display: block;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    min-width: 185px;
+    height: 28px;
+    font-size: 14px;
+    text-align: start;
+    color: #999999;
+    background-color: #fff;
+    background-clip: padding-box;
+ 	border: none;
+    padding: 0px 0px 0px 7px;
+}
+.istar-dropdown-task-menu{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15) !important;
+    background: #ffffff;
+    border-radius: 6px !important;
+    min-width: 159px !important;
+    margin-top: 0.5rem !important;
+}
+.istar-dropdown-task-menu>.dropdown-item{
+	height: 50px !important;
+	font-size: 14px !important;
+    color: #999999 !important;
+    display: flex;
+    align-items: center;
+    padding: 0 20px !important;
+}
+.istar-dropdown-task-menu>.dropdown-item:hover{
+	 background: #eeeeee !important;
+     color: #222222 !important;
+     font-weight: bold !important;
+	}
+	
+.istar-dropdown-task-menu>.dropdown-item>.task-dropdown{
+	height:25px !important;
+	width:25px !important;
+	margin-right: 0.5rem !important;
+}
 /* end of dropdown with task icons */
 
 /* start of searchbar  */
