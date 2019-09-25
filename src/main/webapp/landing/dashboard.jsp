@@ -31,6 +31,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/dashboard.css">
 
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/jquery.rateyo.css">
 
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
@@ -437,9 +438,9 @@
 								<div class="d-flex flex-row">
 									<img class="mr-2" style="height: 40px; width: 40px"
 										src="<%=baseURL%>assets/image/37.jpg" />
-									<div>
+									<div class="d-flex flex-column">
 										<div class="f-14">Stanley Howard</div>
-										<div class="f-12">rating bar</div>
+										<div class="p-0" id="rateYo"></div>
 									</div>
 								</div>
 							</div>
@@ -598,6 +599,7 @@
 	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
+	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -605,7 +607,18 @@
 				alert($('selector').index(this));
 
 			});
-			
+			  $("#rateYo").rateYo({
+				    rating: 3.2,
+				    spacing: "0px",
+				        starWidth: "18px",
+				        readOnly: false,
+				        ratedFill: "#f79c0d",
+				        normalFill: "#dddddd",
+
+				    	'starSvg': '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">     <defs>         <style>             .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}      </style>         <clipPath id="clip-path">             <path d="M0 0h24v24H0z" class="cls-1"/>         </clipPath>     </defs>     <g id="Component" class="cls-2">         <path id="Rectangle_936" d="M0 0h24v24H0z" class="cls-1" data-name="Rectangle 936"/>         <path id="Path_59" d="M965.57 1814.81a.846.846 0 0 1-.461-.136l-4.78-3.1-4.78 3.1a.848.848 0 0 1-1.277-.942l1.5-5.3-4.467-3.776a.848.848 0 0 1 .487-1.494l5.359-.385 2.412-5.276a.848.848 0 0 1 1.543 0l2.412 5.276 5.359.385a.848.848 0 0 1 .487 1.494l-4.468 3.776 1.5 5.3a.848.848 0 0 1-.816 1.078zm-5.241-5.092a.847.847 0 0 1 .461.136l3.353 2.172-1.034-3.664a.848.848 0 0 1 .269-.878l3.294-2.785-3.783-.272a.848.848 0 0 1-.711-.493l-1.849-4.046-1.849 4.046a.848.848 0 0 1-.711.493l-3.783.272 3.294 2.785a.848.848 0 0 1 .269.878l-1.034 3.664 3.353-2.172a.847.847 0 0 1 .461-.136z" class="cls-3" data-name="Path 59" transform="translate(-948 -1794)"/>     </g> </svg> '
+
+
+				  });
 		       $(".carousel").carousel('pause');
 		       var newHeight = $(".center_container").height();
 				 console.log(newHeight)
