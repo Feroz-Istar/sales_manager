@@ -179,6 +179,33 @@ body {
 }
 /* end of dropdown with task icons */
 
+/* start of result found  */
+
+.number-of-results{
+	color: #444444 !important;
+	margin-right:0.5rem !important;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.text-result-found{
+	font-size: 1rem !important;
+	color: #999999 !important;
+}
+
+.custom-result-selects{
+	height: 30px !important;
+	min-width: 185px !important;
+	border: 1px solid #cccccc;
+    border-radius: 0;
+    font-size: 14px;
+    color: #999999 !important;
+    margin-right: 0.5rem !important;
+    background: url(/assets/new_images/icons/dropdown-down.png) no-repeat right;
+}
+
+/* end of result found  */
+
 /* start of searchbar  */
 
 .border-right-separation{

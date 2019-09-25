@@ -85,28 +85,28 @@
 						<!-- start of ongoing tab content -->
 
 						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
-							<div class="col-md-3 f-16 brown-grey">
-								<strong class="greyish-brown mr-2">03</strong> Results Found
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">03</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 								
 									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class=" form-control custom-result-selects"
 										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class=" form-control custom-result-selects"
 										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class=" form-control custom-result-selects"
 										id="activities">
 										<option>Filter by Activities</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class=" form-control custom-result-selects"
 										id="status">
 										<option>Filter by Status</option>
 										<option>Default select</option>
