@@ -98,9 +98,13 @@ body {
 
 /* start of dropdown with icons */
 
+.istar-dropdown{
+  position: relative;
+}
 .dropdown-icon-btn {
     color: #222222;
     height: 24px;
+    width: 24px;
     border: none;
     border-radius: 50%;
     outline: none !important;

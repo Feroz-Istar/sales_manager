@@ -319,8 +319,8 @@
 										</div>
 									</div>
 									<div class="col-md-1">
-										<div class="dropdown">
-											<button class="dropdown-icon-btn dropleft" type="button" id="dropdownMenuButton"
+										<div class="istar-dropdown dropleft">
+											<button class="dropdown-icon-btn " type="button" id="dropdownMenuButton"
 		                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
 		                                            aria-expanded="false">
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>

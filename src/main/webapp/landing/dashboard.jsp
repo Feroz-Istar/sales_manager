@@ -98,8 +98,8 @@
 							<div class="taskitem pt-3 pb-3">
 								<div class="d-flex flex-row align-items-center mb-2 ">
 									<div class="font-weight-bold f-14 bblack">Meeting with Sales Team</div> 
-										<div class=" ml-auto dropdown f-12 brown-grey">
-											<button class="dropdown-icon-btn dropleft" type="button" id="dropdownMenuButton" data-display="static" 
+										<div class=" ml-auto istar-dropdown dropleft f-12 brown-grey">
+											<button class="dropdown-icon-btn " type="button" id="dropdownMenuButton" data-display="static" 
 												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
