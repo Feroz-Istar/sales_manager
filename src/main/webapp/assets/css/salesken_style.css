@@ -136,10 +136,21 @@ body {
 
 /* end of dropdown with icons */
 
+/* start of dropdown with task icons */
+
+/* end of dropdown with task icons */
+
 /* start of searchbar  */
 
 .border-right-separation{
 	border-right: 1px dotted #cccccc;
+}
+
+.border_except_left{
+	border-top: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    border-bottom: 1px solid #cccccc;
+    border-radius: 0;
 }
 
 .removefocus:focus{
