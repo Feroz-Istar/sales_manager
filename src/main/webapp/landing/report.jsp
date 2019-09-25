@@ -64,17 +64,39 @@
 					<div class="tab-pane fade show active" id="task" role="tabpanel"
 						aria-labelledby="task-tab">
 						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
-							<div class="col-md-3 f-16 brown-grey">
-								<strong class="greyish-brown mr-2">03</strong> Results Found
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">04</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
-								
-									 <select class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="activities">
-										<option>Filter by Activities</option>
-										<option>Default select</option>
-									</select> 
-	
-									<button class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center mr-3">
+									
+									<div class="istar-dropdown-task">
+										<button
+											class="istar-dropdown-arrow dropdown-toggle"
+											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+											<span class="sr-only">Toggle Dropdown</span>
+    										Filter by Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										</button>
+										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Call Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+										    Email Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+										    Webinar Task
+										    </button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Presentation
+										    </button>
+										  </div>
+										
+									</div> 
+									
+									<button
+										class=" filter-btn">
 										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
@@ -107,32 +129,45 @@
 					<div class="tab-pane fade" id="users" role="tabpanel"
 						aria-labelledby="users-tab">
 						
-						<div class="row bg-white bottom-separation-solid py-3">
-			<div class="col-md-6 col-12 brown-grey align-self-center">
-				<strong class="greyish-brown">25</strong> &nbsp; Results Found
-			</div>
-			<div class="col-md-6 col-12 d-lg-flex justify-content-lg-end">
-				<div class="input-group date custom-taskborder mr-2 custom-taskselect">
-					<input type="text" id="pipeline_datepicker" class="form-control border-0  f-14 custom-dateselect" value="12-02-2012">
-					<div class="input-group-addon" onclick="showCalendar()">
-						<img src="http://localhost:8081/salesken_v2//assets/image/calendar.svg" class="pr-1">
-					</div>
-				</div>
-				<select class="form-control mr-2 custom-taskselect f-14 custom-taskborder" id="activities">
-					<option>Filter by Activities</option>
-					<option>Default select</option>
-				</select> <select class="form-control mr-2 custom-taskselect f-14 custom-taskborder" id="deal_value">
-					<option>Filter by Deal Value</option>
-					<option>Default select</option>
-				</select> <select class="form-control mr-2 custom-taskselect f-14 custom-taskborder" id="stages">
-					<option>Filter by Stages</option>
-					<option>Default select</option>
-				</select>
-				<button class="btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
-					<i class="fas fa-filter f-14 "></i>
-				</button>
-			</div>
-		</div>
+						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">04</strong> Results Found
+							</div>
+							<div class="col-md-9 d-md-flex justify-content-end  ">
+									
+									<div class="istar-dropdown-task">
+										<button
+											class="istar-dropdown-arrow dropdown-toggle"
+											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+											<span class="sr-only">Toggle Dropdown</span>
+    										Filter by Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										</button>
+										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Call Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+										    Email Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+										    Webinar Task
+										    </button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Presentation
+										    </button>
+										  </div>
+										
+									</div> 
+									
+									<button
+										class=" filter-btn">
+										<i class="fas fa-filter f-14 brown-grey"></i>
+									</button>
+								
+							</div>
+						</div>
 			<div class="row very-light-pink-grey-bg" >
 		  <div class="col-md-2 col-12 pr-0">
 		    <div class="nav flex-column nav-pills" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
@@ -238,10 +273,11 @@
 					<div class="tab-pane fade" id="customer" role="tabpanel"
 						aria-labelledby="customer-tab">
 
-						<div class="row bg-white bottom-separation-solid py-3">
-							<div class="col-md-12 col-12 brown-grey align-self-center">
-								<strong class="greyish-brown">25</strong> &nbsp; Results Found
+						<div class="row align-items-center border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">04</strong> Results Found
 							</div>
+							
 						</div>
 						<hr class="p-0 m-0">
 
@@ -256,7 +292,7 @@
 								</div>
 								</div>
 								<div class="col-md-6  p-0 m-0  ">
-								<img src="http://localhost:8081/salesken_v2/assets/image/Group 3614.svg" width="93.8" height="87.2">
+								<img src="<%=baseURL%>assets/image/Group 3614.svg" width="93.8" height="87.2">
 								</div>
 								</div>
 							</div>

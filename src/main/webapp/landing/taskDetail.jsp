@@ -21,9 +21,8 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/taskDetail.css">
-<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
-<script src="<%=baseURL%>assets/js/popper.min.js"></script>
-<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+<link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
+	rel="stylesheet">
 </head>
 <body>
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
@@ -79,7 +78,7 @@
 						id="nav-completed-tab" data-toggle="tab" href="#nav-completed"
 						role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>  </div>
 </nav>
-<div class="tab-content mt-2 mytab-content" id="nav-tasktabsContent">
+				<div class="tab-content mytab-content" id="nav-tasktabsContent">
 					<div class="tab-pane fade show active" id="nav-ongoing"
 						role="tabpanel" aria-labelledby="nav-ongoing-tab">
 						<!-- start of ongoing tab content -->
@@ -91,29 +90,50 @@
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 								
 									<select
-										class=" form-control custom-result-selects"
+										class="  custom-result-selects"
 										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
 									</select> <select
-										class=" form-control custom-result-selects"
+										class="  custom-result-selects"
 										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
-									</select> <select
-										class=" form-control custom-result-selects"
-										id="activities">
-										<option>Filter by Activities</option>
-										<option>Default select</option>
-									</select> <select
-										class=" form-control custom-result-selects"
+									</select> 	
+									<div class="istar-dropdown-task">
+										<button
+											class="istar-dropdown-arrow dropdown-toggle"
+											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+											<span class="sr-only">Toggle Dropdown</span>
+    										Filter by Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										</button>
+										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Call Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+										    Email Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+										    Webinar Task
+										    </button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Presentation
+										    </button>
+										  </div>
+										
+									</div> 
+									<select
+										class="  custom-result-selects"
 										id="status">
 										<option>Filter by Status</option>
 										<option>Default select</option>
 									</select>
 	
 									<button
-										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
+										class=" filter-btn">
 										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
@@ -279,45 +299,64 @@
 					<div class="tab-pane fade" id="nav-upcoming" role="tabpanel"
 						aria-labelledby="nav-upcoming-tab">
 					
-						<!-- start of upcoming tab-content -->	
+						<!-- start of upcoming tab-content-->	
 						
-						<div class="row align-items-center py-3 border-bottom-separation">
-							<div class="col-md-3 f-16">
-								<strong>04</strong> Results Found
+						
+						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">04</strong> Results Found
 							</div>
-							<div class="col-md-9 row p-0">
-								<div class="col-md-12 row p-0 justify-content-end" >
-									<div class="col-md-2 custom-taskborder custom-taskselect d-flex pr-0 mr-2">
-										<input class="f-14 border-0 w-100" placeholder="Calendar">
-										<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
-										
-										
-										
-										<input  id ="aa" type="text" class="form-control" value="02-16-2012">
-										
-									</div>								        							
-        							<select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
+							<div class="col-md-9 d-md-flex justify-content-end  ">
+									<div class="input-group date custom-calendar">
+										<input type="text" id="upcoming_datepicker" class="form-control  custom-dateselect"
+											value="12-02-2012">
+										<div class="input-group-addon" onclick="showCalendar()">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1">
+										</div>
+									</div>	
+									<select
+										class="  custom-result-selects"
 										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
-									</select> <select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
-										id="activities">
-										<option>Filter by Activities</option>
-										<option>Default select</option>
-									</select> <select
-										class="col-md-2 form-control mr-2 custom-taskselect f-14 custom-taskborder"
+									</select> 	
+									<div class="istar-dropdown mr-2 custom-taskborder ">
+										<button
+											class="istar-dropdown-arrow dropdown-toggle"
+											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+											<span class="sr-only">Toggle Dropdown</span>
+    										Filter by Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										</button>
+										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Call Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+										    Email Task</button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+										    Webinar Task
+										    </button>
+										    <button class="dropdown-item" type="button">
+										    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+										    Presentation
+										    </button>
+										  </div>
+										
+									</div> 
+									<select
+										class="  custom-result-selects"
 										id="status">
 										<option>Filter by Status</option>
 										<option>Default select</option>
 									</select>
 	
 									<button
-										class="btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
-										<i class="fas fa-filter f-14 "></i>
+										class=" filter-btn">
+										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
-								</div>
+								
 							</div>
 						</div>
 
@@ -544,6 +583,10 @@
 				</div>
 </div>
 </div>
+<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+<script src="<%=baseURL%>assets/js/popper.min.js"></script>
+<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 <script>
 $('.salesken.navbar-nav>li').removeClass('active');
 $($('.salesken.navbar-nav>li')[1]).addClass('active')
@@ -551,8 +594,18 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 	  var target = $(e.target).html(); // activated tab
 	  $('#breadcrumb').html(target);
 	});
-</script>
 
+</script>
+<script>
+	$( document ).ready(function() {
+		$('#upcoming_datepicker').datepicker({autoclose:true})
+		});
+	
+	function showCalendar(){
+		$('#upcoming_datepicker').datepicker('show')
+	}
+	
+	</script>
 
 	
  

@@ -57,40 +57,40 @@
 			</div>
 		</div>
 
-		<div class="row bg-white bottom-separation-solid py-3">
-			<div class="col-md-6 col-12 brown-grey align-self-center">
-				<strong class="greyish-brown">25</strong> &nbsp; Results Found
-			</div>
-			<div class="col-md-6 col-12 d-lg-flex justify-content-lg-end">
-				<div class="input-group date custom-taskborder mr-2 custom-taskselect">
-					<input type="text" id="pipeline_datepicker" class="form-control border-0  f-14 custom-dateselect"
-						value="12-02-2012">
-					<div class="input-group-addon" onclick="showCalendar()">
-						<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
-					</div>
-				</div>
-				<select
-					class="form-control mr-2 custom-taskselect f-14 custom-taskborder"
-					id="activities">
-					<option>Filter by Activities</option>
-					<option>Default select</option>
-				</select> <select
-					class="form-control mr-2 custom-taskselect f-14 custom-taskborder"
-					id="deal_value">
-					<option>Filter by Deal Value</option>
-					<option>Default select</option>
-				</select> <select
-					class="form-control mr-2 custom-taskselect f-14 custom-taskborder"
-					id="stages">
-					<option>Filter by Stages</option>
-					<option>Default select</option>
-				</select>
-				<button
-					class="btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
-					<i class="fas fa-filter f-14 "></i>
-				</button>
-			</div>
-		</div>
+		
+			<div class="row align-items-center bg-white border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">04</strong> Results Found
+							</div>
+							<div class="col-md-9 d-md-flex justify-content-end  ">
+									<div class="input-group date custom-calendar">
+										<input type="text" id="pipeline_datepicker" class="form-control  custom-dateselect"
+											value="12-02-2012">
+										<div class="input-group-addon" onclick="showCalendar()">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+										</div>
+									</div>	
+									<select
+										class="custom-result-selects"
+										id="deal_value">
+										<option>Filter by Deal Value</option>
+										<option>Default select</option>
+									</select> 	
+								
+									<select
+										class="  custom-result-selects"
+										id="status">
+										<option>Filter by Status</option>
+										<option>Default select</option>
+									</select>
+	
+									<button
+										class=" filter-btn">
+										<i class="fas fa-filter f-14 brown-grey"></i>
+									</button>
+								
+							</div>
+						</div>
 		
 		<div class="row very-light-pink-grey-bg" >
 		  <div class="col-md-2 col-12 pr-0">

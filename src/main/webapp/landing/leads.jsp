@@ -67,18 +67,20 @@
 				  <div class="tab-pane fade show active" id="nav-target" role="tabpanel" aria-labelledby="nav-target-tab">
 				  		<!-- start of target content -->
 				  		
-				  		<div class="row align-items-center  border-bottom-separation py-3">
-							<div class="col-md-3 f-16 brown-grey">
-								<strong class="greyish-brown mr-2">500</strong> Results Found
+				  		<div class="row align-items-center bg-white border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">504</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
-								 <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										
+									<select
+										class="custom-result-selects"
 										id="source">
-										<option>Filter by Source type</option>
+										<option>Filter by Source Type</option>
 										<option>Default select</option>
-									</select> 
-									<div class="istar-dropdown mr-2 custom-taskborder ">
+									</select> 	
+								
+									<div class="istar-dropdown-task mr-2 custom-taskborder ">
 										<button
 											class="istar-dropdown-arrow dropdown-toggle"
 											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
@@ -103,8 +105,9 @@
 										  </div>
 										
 									</div>
+	
 									<button
-										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
+										class=" filter-btn">
 										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
@@ -212,41 +215,38 @@
 				  
 				  	<!-- start of qualified tab content-->
 				  	
-				  		<div class="row align-items-center  border-bottom-separation py-3">
-							<div class="col-md-3 f-16 brown-grey">
-								<strong class="greyish-brown mr-2">500</strong> Results Found
+				  		<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">03</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
-								<div class="input-group date custom-taskborder mr-2 custom-taskselect ">
-									<input type="text" id="pipeline_datepicker" class="form-control border-0  f-14 custom-dateselect" value="12-02-2012">
-									<div class="input-group-addon" onclick="showCalendar()">
-										<img
-											src="http://localhost:8080/salesken_v2//assets/image/calendar.svg" class="pr-1">
-									</div>
-								</div>
-
+									<div class="input-group date custom-calendar">
+										<input type="text" id="lead_qualified_datepicker" class="form-control  custom-dateselect"
+											value="12-02-2012">
+										<div class="input-group-addon" onclick="showqualifiedCalendar()">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+										</div>
+									</div>	
 									<select
-										class="form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="deal_value">
+										class="  custom-result-selects"
+										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
-									</select> 
-									
-									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
-										id="stage">
+									</select> <select
+										class="  custom-result-selects"
+										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
-									</select>
-									
+									</select> 	
 									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class="  custom-result-selects"
 										id="source">
-										<option>Filter by Source type</option>
+										<option>Filter by Source Type</option>
 										<option>Default select</option>
 									</select> 
 	
 									<button
-										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
+										class=" filter-btn">
 										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
@@ -376,47 +376,44 @@
 				  
 				  	<!-- start of lost leads tab content-->
 				  	
-				  		<div class="row align-items-center  border-bottom-separation py-3">
-							<div class="col-md-3 f-16 brown-grey">
-								<strong class="greyish-brown mr-2">500</strong> Results Found
+				  		<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">03</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
-								<div class="input-group date custom-taskborder mr-2 custom-taskselect ">
-									<input type="text" id="pipeline_datepicker" class="form-control border-0  f-14 custom-dateselect" value="12-02-2012">
-									<div class="input-group-addon" onclick="showCalendar()">
-										<img
-											src="<%=baseURL%>assets/image/calendar.svg" class="pr-1">
-									</div>
-								</div>
-								
+									<div class="input-group date custom-calendar">
+										<input type="text" id="lead_lost_datepicker" class="form-control  custom-dateselect"
+											value="12-02-2012">
+										<div class="input-group-addon" onclick="showlostCalendar()">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+										</div>
+									</div>	
 									<select
-										class="form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="causes">
+										class="  custom-result-selects"
+										id="causes">
 										<option>Filter by Causes</option>
 										<option>Default select</option>
-									</select> 
-
+									</select>
 									<select
-										class="form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="deal_value">
+										class="  custom-result-selects"
+										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
-									</select> 
-									
-									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
-										id="stage">
+									</select> <select
+										class="  custom-result-selects"
+										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
-									</select>
-									
+									</select> 	
 									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class="  custom-result-selects"
 										id="source">
-										<option>Filter by Source type</option>
+										<option>Filter by Source Type</option>
 										<option>Default select</option>
 									</select> 
 	
 									<button
-										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
+										class=" filter-btn">
 										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
@@ -534,47 +531,44 @@
 				  	
 				  	<!-- start of won leads content -->
 				  		
-				  				<div class="row align-items-center  border-bottom-separation py-3">
-							<div class="col-md-3 f-16 brown-grey">
-								<strong class="greyish-brown mr-2">500</strong> Results Found
+				  				<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							<div class="col-md-3 text-result-found	">
+								<strong class="number-of-results">03</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
-								<div class="input-group date custom-taskborder mr-2 custom-taskselect ">
-									<input type="text" id="pipeline_datepicker" class="form-control border-0  f-14 custom-dateselect" value="12-02-2012">
-									<div class="input-group-addon" onclick="showCalendar()">
-										<img
-											src="http://localhost:8080/salesken_v2//assets/image/calendar.svg" class="pr-1">
-									</div>
-								</div>
-								
+									<div class="input-group date custom-calendar">
+										<input type="text" id="lead_won_datepicker" class="form-control  custom-dateselect"
+											value="12-02-2012">
+										<div class="input-group-addon" onclick="showwonCalendar()">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+										</div>
+									</div>	
 									<select
-										class="form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="causes">
+										class="  custom-result-selects"
+										id="causes">
 										<option>Filter by Causes</option>
 										<option>Default select</option>
-									</select> 
-
+									</select>
 									<select
-										class="form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="deal_value">
+										class="  custom-result-selects"
+										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
-									</select> 
-									
-									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
-										id="stage">
+									</select> <select
+										class="  custom-result-selects"
+										id="stages">
 										<option>Filter by Stages</option>
 										<option>Default select</option>
-									</select>
-									
+									</select> 	
 									<select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+										class="  custom-result-selects"
 										id="source">
-										<option>Filter by Source type</option>
+										<option>Filter by Source Type</option>
 										<option>Default select</option>
 									</select> 
 	
 									<button
-										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
+										class=" filter-btn">
 										<i class="fas fa-filter f-14 brown-grey"></i>
 									</button>
 								
@@ -727,14 +721,21 @@
     	}, function(obj){ // callback function, you can use it to re-draw table or something
             	console.log(obj)
     	});
-		$('#pipeline_datepicker').datepicker({autoclose:true});
+		$('#lead_qualified_datepicker').datepicker({autoclose:true});
+		$('#lead_lost_datepicker').datepicker({autoclose:true});
+		$('#lead_won_datepicker').datepicker({autoclose:true});
 		
-		function showCalendar(){
-			$('#pipeline_datepicker').datepicker('show')
-		}
 		
 	});
-	
+	function showqualifiedCalendar(){
+		$('#lead_qualified_datepicker').datepicker('show');
+	}
+	function showlostCalendar(){
+		$('#lead_lost_datepicker').datepicker('show');
+	}
+	function showwonCalendar(){
+		$('#lead_won_datepicker').datepicker('show');
+	}
 	</script>
 </body>
 </html>
