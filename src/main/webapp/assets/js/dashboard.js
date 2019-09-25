@@ -40,8 +40,7 @@
 			weekStart: 1,
 			beforeShowDay: function(date) {
 				var newHeight = $("#datepicker").width();
-				console.log(newHeight)
-				$(".table-condensed").height(newHeight);
+				$(".table-condensed").height(newHeight);// setting height equal to width of the calendar.
 				var d = date;
 				var curr_date = d.getDate();
 				var curr_month = d.getMonth() + 1; //Months are zero based
@@ -58,7 +57,7 @@
 		/*calendar initialization end */
 
 		/*dashboard page contains a div with id incoming_date which is used for setting date on calendar. 
-		 * on date change of calendar the new date will come in url and set in incoming_date div data attribute input_date.
+		 * on date change of calendar the new date will be added in url as url parameter named var and set in incoming_date div data attribute input_date.
 		 * if no date is provide in url it will set current date in incoming_date div data attribute input_date.
 		 * */
 		$("#datepicker").datepicker("update", $('#incoming_date').data('input_date'));
