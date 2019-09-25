@@ -42,7 +42,7 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
-	<div class="row pb-3">
+	<div class="row pb-3" id="incoming_date" data-input_date="<%= incomingDate%>">
 		<div class="col-md-6 col-6 p-0 m-0">
 		<h1 class="display-1 black f-20">Dashboard</h1>
 		

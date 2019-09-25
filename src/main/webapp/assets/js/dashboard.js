@@ -52,7 +52,7 @@
 			          return;
 			      }
 			}); 
-			 $("#datepicker").datepicker("update", '<%=incomingDate%>');
+			 $("#datepicker").datepicker("update", $('#incoming_date').data('input_date'));
 
 							$('#datepicker')
 									.on(
