@@ -77,13 +77,14 @@
 										id="source">
 										<option>Filter by Source type</option>
 										<option>Default select</option>
-									</select> <select
-										class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
-										id="activity">
-										<option>Filter by Activities</option>
-										<option>Default select</option>
-									</select>
-	
+									</select> 
+									<div class="dropdown">
+										<button
+											class="mr-2 custom-taskselect f-14 custom-taskborder brown-grey"
+											id="activity">
+											
+										</button>
+									</div>
 									<button
 										class=" btn custom-taskbutton custom-taskborder d-flex justify-content-center align-items-center">
 										<i class="fas fa-filter f-14 brown-grey"></i>
@@ -269,12 +270,12 @@
 									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-3 col ">
+							<div class="col-md-2 col ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-3 col-12 ">
+							<div class="col-md-4 col-12 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Agent<i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
@@ -301,12 +302,12 @@
 									<i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-3 col d-flex align-items-center">
+							<div class="col-md-2 col d-flex align-items-center">
 								<img class="hw-24 pr-2" src="<%=baseURL%>assets/image/calltask.svg">
 								<div class="f-14 greyish-brown pr-2">Call - </div>
 								<div class="f-12 brown-grey">June 15, 2019   02:45 PM</div>
 							</div>
-							<div class="col-md-3 col-12 ">
+							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="d-flex">
@@ -318,7 +319,26 @@
 										</div>
 									</div>
 									<div class="col-md-1">
-										<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+										<div class="dropdown">
+											<button class="dropdown-icon-btn dropleft" type="button" id="dropdownMenuButton"
+		                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
+		                                            aria-expanded="false">
+												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+	                                            aria-labelledby="dropdownMenuButton">
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt=""
+	                                                    srcset="" class="mr-2"> Won</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
+	                                                    alt="" srcset="" class="mr-2">Lose</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt=""
+	                                                    srcset="" class="mr-2">Edit</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
+	                                                    alt="" srcset="" class="mr-2">Delete</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/details.png"
+	                                                    alt="" srcset="" class="mr-2">Details</button>
+	                                        </div>
+	                                    </div>
 									</div>
 								</div>
 							</div>
@@ -454,12 +474,12 @@
 									<i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-3 col d-flex align-items-center">
+							<div class="col-md-2 col d-flex align-items-center">
 								<img class="hw-24 pr-2" src="<%=baseURL%>assets/image/calltask.svg">
 								<div class="f-14 greyish-brown pr-2">Call - </div>
 								<div class="f-12 brown-grey">June 15, 2019   02:45 PM</div>
 							</div>
-							<div class="col-md-3 col-12 ">
+							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="d-flex">
@@ -471,7 +491,11 @@
 										</div>
 									</div>
 									<div class="col-md-1">
-										<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+										<button class="btn" type="button" id="dropdownMenuButton" data-display="static" 
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+										</button>
+										
 									</div>
 								</div>
 							</div>
@@ -625,22 +649,22 @@
 										</div>
 									</div>
 									<div class="col-md-1">
-									<button class="dropdown-icon-btn" type="button" id="dropdownMenuButton"
-                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
-                                            aria-expanded="false">
-										<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+										<button class="dropdown-icon-btn dropleft" type="button" id="dropdownMenuButton"
+	                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
+	                                            aria-expanded="false">
+											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 										</button>
 										<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
                                             aria-labelledby="dropdownMenuButton">
-                                            <button class="dropdown-item" href="#"><img src="/assets/new_images/icons/won.png" alt=""
+                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt=""
                                                     srcset="" class="mr-2"> Won</button>
-                                            <button class="dropdown-item" href="#"><img src="/assets/new_images/icons/question.png"
+                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
                                                     alt="" srcset="" class="mr-2">Lose</button>
-                                            <button class="dropdown-item" href="#"><img src="/assets/new_images/icons/edit.png" alt=""
+                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt=""
                                                     srcset="" class="mr-2">Edit</button>
-                                            <button class="dropdown-item" href="#"><img src="/assets/new_images/icons/delete.png"
+                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
                                                     alt="" srcset="" class="mr-2">Delete</button>
-                                            <button class="dropdown-item" href="#"><img src="/assets/new_images/icons/details.png"
+                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/details.png"
                                                     alt="" srcset="" class="mr-2">Details</button>
                                         </div>
 										

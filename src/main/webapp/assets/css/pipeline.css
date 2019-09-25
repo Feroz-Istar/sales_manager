@@ -69,26 +69,10 @@
 	color: #43425d;
 }
 
-.border_except_left{
-	border-top: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc;
-    border-radius: 0;
-}
-
-.removefocus:focus{
-	 outline: none !important;
-   box-shadow: none !important;
-   border-color: #cccccc !important;
-}
 
 
 
-
-
-
-
-
+/* exclusive to pipeline----------- */
 
 .pastel-red{
 	color: #e84c4c;
@@ -99,7 +83,7 @@
 
 
  .line {
-       width: 72%;
+    width: 72%;
     height: 1px;
     border: 1px dashed #eeeeee;
     position: absolute;

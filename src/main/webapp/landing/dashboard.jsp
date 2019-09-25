@@ -97,9 +97,26 @@
 							%>
 							<div class="taskitem pt-3 pb-3">
 								<div class="d-flex flex-row align-items-center mb-2 ">
-									<div class="font-weight-bold f-14 bblack">Meeting with Sales
-										Team</div>
-									<i class="fas fa-ellipsis-v ml-auto f-12 brown-grey"></i>
+									<div class="font-weight-bold f-14 bblack">Meeting with Sales Team</div> 
+										<div class=" ml-auto dropdown f-12 brown-grey">
+											<button class="dropdown-icon-btn dropleft" type="button" id="dropdownMenuButton" data-display="static" 
+												data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu" aria-labelledby="dropdownMenuButton">
+		                                           <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt=""
+		                                                   srcset="" class="mr-2"> Won</button>
+		                                           <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
+		                                                   alt="" srcset="" class="mr-2">Lose</button>
+		                                           <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt=""
+		                                                   srcset="" class="mr-2">Edit</button>
+		                                           <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
+		                                                   alt="" srcset="" class="mr-2">Delete</button>
+		                                           <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/details.png"
+		                                                   alt="" srcset="" class="mr-2">Details</button>
+		                                   	</div>
+										</div>
+									
 								</div>
 								<div class="f-12  mb-1 bblack mb-2">11:00 AM</div>
 								<div class="d-flex flex-row  mb-1">
