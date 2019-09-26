@@ -104,7 +104,7 @@ body {
 /* end of modal */
 
 
-html{
+html,body{
 	height:100%;
 }
 
@@ -170,7 +170,7 @@ html{
 } 
 .appicon {
 	height: 30px;
-	width: 30px;
+	width: 113px;
 }
 .salesken >li.active{
 	font-weight: bold;
@@ -590,6 +590,10 @@ width:24px;
 
 .f-30 {
 	font-size: 1.875rem  !important;
+}
+
+.f-38{
+	font-size:2.375rem !important;
 }
 .f-42{
 	font-size:2.625rem !important;

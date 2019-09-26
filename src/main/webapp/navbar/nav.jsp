@@ -9,8 +9,7 @@
 <nav class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
     <a class="navbar-brand f-15 p-0 pr-3" href="#"> <img
 		class="appicon img-thumbnail p-0 mr-1 border-0"
-		src="<%=baseURL%>assets/image/app.png" /><span>Sales<span
-			style="color: red">ken</span></span></a>
+		src="<%=baseURL%>assets/image/nav_icon.png" /></a>
     <div class="d-flex flex-row order-2 order-lg-3">
         <ul class="navbar-nav flex-row align-items-center">
          <li class="nav-item dropdown mr-2 ">
