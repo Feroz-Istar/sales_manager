@@ -37,6 +37,14 @@
 
 </head>
 <body>
+	
+	<div class="loader-div d-none">
+	<div class="inner-circle-div d-flex align-items-center justify-content-center">
+	   <div class="spinner-border  text-danger">
+	       <span class="sr-only">Loading...</span>
+	   </div>
+	</div>
+   </div>
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 
 	<main role="main">
@@ -689,5 +697,7 @@
 	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
 
 	<script src="<%=baseURL%>assets/js/dashboard.js"></script>
+
+	
 </body>
 </html>

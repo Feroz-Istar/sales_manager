@@ -52,6 +52,34 @@ body {
 	color: #ffffff !important;	
 }
 
+.modal-submit-btn{
+  width: 140px;
+  height: 40px;
+  background-color: #ed4d67;
+  border-radius: 0;
+  color: #fff;
+}
+.modal-submit-btn:hover{
+	color: #fff;	
+}
+
+html{
+	height:100%;
+}
+
+
+.inner-circle-div{
+      height:100%;
+   }
+   .loader-div{
+    height:100%;
+       width:100%;
+       opacity:0.8;
+       background:#f9f9f9;
+       position:fixed;
+       z-index: 20;
+   }
+
 /* start of square buttons with icon only */
 
 .istar-btn-icon{

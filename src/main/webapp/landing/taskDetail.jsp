@@ -26,7 +26,7 @@
 </head>
 <body>
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
-	<main role="main">
+	<main role="main">	
 	<div class="container-fluid salesken_container">
 		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation">
 		<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
@@ -76,20 +76,20 @@
 			</div>
 	
 	</div>
-<div class="row">
-<div class="col-md-12 bg-white">
+	<div class="row">
+	<div class="col-md-12 bg-white">
 
-<nav>
-  <div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs" role="tablist">
-  	<a class="nav-item nav-link show active" id="nav-ongoing-tab"
-						data-toggle="tab" href="#nav-ongoing" role="tab"
-						aria-controls="nav-ongoing" aria-selected="true">Ongoing</a> <a
-						class="nav-item nav-link" id="nav-upcoming-tab" data-toggle="tab"
-						href="#nav-upcoming" role="tab" aria-controls="nav-upcoming"
-						aria-selected="false">Upcoming</a> <a class="nav-item nav-link"
-						id="nav-completed-tab" data-toggle="tab" href="#nav-completed"
-						role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>  </div>
-</nav>
+				<nav>
+				  <div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs" role="tablist">
+				  	<a class="nav-item nav-link show active" id="nav-ongoing-tab"
+										data-toggle="tab" href="#nav-ongoing" role="tab"
+										aria-controls="nav-ongoing" aria-selected="true">Ongoing</a> <a
+										class="nav-item nav-link" id="nav-upcoming-tab" data-toggle="tab"
+										href="#nav-upcoming" role="tab" aria-controls="nav-upcoming"
+										aria-selected="false">Upcoming</a> <a class="nav-item nav-link"
+										id="nav-completed-tab" data-toggle="tab" href="#nav-completed"
+										role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>  </div>
+				</nav>
 				<div class="tab-content mytab-content" id="nav-tasktabsContent">
 					<div class="tab-pane fade show active" id="nav-ongoing"
 						role="tabpanel" aria-labelledby="nav-ongoing-tab">
@@ -454,68 +454,7 @@
 												</div>
 												</div>
 
-												<!-- Task Reschedule Modal -->
-												<div class="modal fade" id="rescheduleCenter" tabindex="-1" role="dialog" aria-labelledby="rescheduleCenterTitle"
-													aria-hidden="true">
-													<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-														<div class="modal-content rounded-0">
-															<div class="row shadow-sm p-3">
-																<div class="col-md-11 modal-title f-18 font-weight-bold" id="exampleModalLongTitle">Reschedule Task</div>
-																<button type="button" class="col-md-1 close" data-dismiss="modal" aria-label="Close">
-																	<span aria-hidden="true">&times;</span>
-																</button>
-															</div>
-															<div class="modal-body">
-																<div class="f-18 font-weight-bold">Opentech Pvt. Ltd.</div>
-																<div class="row  py-3 dotted-bottom-separation">
-																	<div class="col-md-4 border-right-separation">
-																		<div class="f-14 brownish-grey">Contact Person</div>
-																		<div class="f-16 font-weight-bold">Deann Harper</div>
-																	</div>
-																	<div class="col-md-4 border-right-separation">
-																		<div class="f-14 brownish-grey">Agent</div>
-																		<div class="f-16 font-weight-bold">Bradley Obrien</div>
-																	</div>
-																	<div class="col-md-4 ">
-																		<div class="f-14 brownish-grey">Date & Time</div>
-																		<div class="f-16 font-weight-bold">June 12, 19 &nbsp;&nbsp;&nbsp; 11:00 AM</div>
-																	</div>
-																</div>
-																<div class="row py-3">
-																	<div class="col-md-6">
-																		<div class="f-14 font-weight-bold pb-1">Date</div>
-																		<div class="custom-taskborder custom-taskselect d-flex mr-2">
-																			<input class="f-14 border-0 w-100 pl-2" placeholder="Select Here">
-																			<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
-																		</div>	
-																	</div>
-																	<div class="col-md-6">
-																		<div class="f-14 font-weight-bold pb-1">Time	</div>
-																		<div class="custom-taskborder custom-taskselect d-flex mr-2">
-																			<input class="f-14 border-0 w-100 pl-2" placeholder="Select Here">
-																			<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
-																		</div>	
-																	</div>
-																</div>
-																<div class="row py-3">
-																	<div class="col-md-12">
-																		<div class="f-14 font-weight-bold pb-1">Reason</div>
-																		<textarea class="w-100" rows="5" ></textarea>
-																	</div>
-																</div>
-															</div>
-															
-															<div class="row justify-content-end">
-																<div class="col-4">
-																	<button class="btn theme_color font-weight-bold f-14 mr-2">Reset</button>
-																	<button class="btn btn-style font-weight-bold f-14">Submit</button>
-																</div>
-															</div>
-														</div>
-													</div>
-												</div>
 												
-												<!-- end of Task reschedule modal -->
 
 
 												<div class="dotted-bottom-separation py-4">
@@ -595,6 +534,71 @@
 				</div>
 </div>
 </div>
+
+	<!--start of Task Reschedule modal -->
+			<div class="modal fade" id="rescheduleCenter" tabindex="-1" role="dialog" aria-labelledby="rescheduleCenterTitle"
+				aria-hidden="true">
+				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+					<div class="modal-content rounded-0">
+						<div class="d-flex shadow-sm py-3">
+							<div class="col-md-11 modal-title f-18 font-weight-bold" id="rescheduleCenterTitle">Reschedule Task</div>
+							<button type="button" class="col-md-1 close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">×</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div class="f-18 font-weight-bold">Opentech Pvt. Ltd.</div>
+							<div class="row  py-3 dotted-bottom-separation">
+								<div class="col-md-4 border-right-separation">
+									<div class="f-14 brownish-grey">Contact Person</div>
+									<div class="f-16 font-weight-bold">Deann Harper</div>
+								</div>
+								<div class="col-md-4 border-right-separation">
+									<div class="f-14 brownish-grey">Agent</div>
+									<div class="f-16 font-weight-bold">Bradley Obrien</div>
+								</div>
+								<div class="col-md-4 ">
+									<div class="f-14 brownish-grey">Date & Time</div>
+									<div class="f-16 font-weight-bold">June 12, 19 &nbsp;&nbsp;&nbsp; 11:00 AM</div>
+								</div>
+							</div>
+							<div class="row py-3">
+								<div class="col-md-6">
+									<div class="f-14 font-weight-bold pb-1">Date</div>
+									<div class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
+										<input class="f-14 border-0 w-100 pl-2" placeholder="Select here">
+										<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
+									</div>	
+								</div>
+								<div class="col-md-6">
+									<div class="f-14 font-weight-bold pb-1">Time	</div>
+									<div class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
+										<input class="f-14 border-0 w-100 pl-2" placeholder="Select here">
+										<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
+									</div>	
+								</div>
+							</div>
+							<div class="row py-3">
+								<div class="col-md-12">
+									<div class="f-14 font-weight-bold pb-1">Reason</div>
+									<textarea class="w-100" rows="5" ></textarea>
+								</div>
+							</div>
+						</div>
+						
+						<div class="d-flex pb-3 justify-content-end">
+							<div class="col-4 text-right">
+								<button class="btn theme_color font-weight-bold f-14 mr-2">Reset</button>
+								<button class="btn modal-submit-btn font-weight-bold f-14">Submit</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	<!--end of Task Reschedule modal -->
+
+
+
 <script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 <script src="<%=baseURL%>assets/js/popper.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
@@ -623,5 +627,11 @@ $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
  
 	</div>
 	</main>
+	
+
+	
 </body>
+
+
+
 </html>
