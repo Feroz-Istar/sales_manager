@@ -762,24 +762,71 @@
 			</div>
 	      <div class="modal-body">
 	        <div class="row pb-4">
-		        <div class="col-md-12">
+		        <div class="col-md-12 istar-dropdown">
 			      <div class="f-14 font-weight-bold pb-1">Lead Name</div>
-	      			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="eventType">
-				      <option>Select here</option>
-				      <option>Lead 1</option>
-				      <option>Lead 2</option>
-				    </select>  	
+	      			<button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
+						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
+						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
+					</button> 	
+					<div class="dropdown-menu lead-dropdown-menu" aria-labelledby="dropdownMenuButton">
+					    <div class="py-3 dropdown-item">
+					    <div class="input-group custom-modal-input">
+			                <input id="" class="form-control brown-grey search_modal_height border-0 removefocus f-14 " type="search" placeholder="Search" style="border-right: none !important;">
+			                <div class="input-group-append">
+			                    <button class="btn removefocus border-0  d-flex justify-content-center align-self-center" type="button" style="    ">
+			                        <i class="fa fa-search f-16 brown-grey"></i>
+			                    </button>
+			                </div>
+			            </div>
+					   	
+					    </div>
+					   
+					    <%for(int i=0;i<10;i++){ 
+					    	String bgcolor="bg-white";
+					    	if(i%2==0){
+					    		bgcolor="cream_white";
+					    	}
+					    %>
+					    <div class="dropdown-item py-2 border-bottom-separation <%=bgcolor %>" >
+					    	<div class="row">
+					    		<div class="col-md-5 f-14 font-weight-bold black">Vehement Capital Partners</div>
+					    		<div class="col-md-4 f-14 greyish-brown text-center">Miriam Franklin</div>
+					    		<div class="col-md-3 f-14 greyish-brown text-right">+91 445 546 6456</div>
+					    	</div>
+					    </div>
+					    <%} %>
+					    
+					</div>
 				</div>
+				
 	        </div>
 	        
 	        <div class="row pb-4">
-	        	<div class="col-md-6">
+	        	<div class="col-md-6 istar-dropdown">
 	       			<div class="f-14 font-weight-bold pb-1">Task Type</div>
-	       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="taskType">
-				      <option>Select here</option>
-				      <option>Type 1</option>
-				      <option>Type 2</option>
-				    </select>
+	       			
+				    
+					<button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
+						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
+						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
+					</button>
+					 <div class="dropdown-menu dropdown-menu-right task-dropdown-menu">
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    Call Task</button>
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+					    Email Task</button>
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+					    Webinar Task
+					    </button>
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    Presentation
+					    </button>
+					  </div>
+					
 	       		</div>
 	       		<div class="col-md-6">
 	       			<div class="f-14 font-weight-bold pb-1">Task By</div>

@@ -3,7 +3,11 @@
 	.eventmodalsize{
 		width:650px;
 	}
+	
 }
+.search_modal_height{
+	height:30px;
+	}
 .card-separation{
 border-left: 2px dashed #d4d4d4;
 }

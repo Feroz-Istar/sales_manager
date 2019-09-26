@@ -102,7 +102,7 @@
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 								
 									<select
-										class="  custom-result-selects"
+										class=" custom-modal-input custom-result-selects"
 										id="deal_value">
 										<option>Filter by Deal Value</option>
 										<option>Default select</option>
