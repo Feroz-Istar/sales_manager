@@ -1,8 +1,7 @@
 
 @media (min-width: 600px) {
 	.eventmodalsize{
-		min-height:610px; 
-		min-width:650px;
+		width:650px;
 	}
 }
 .card-separation{
