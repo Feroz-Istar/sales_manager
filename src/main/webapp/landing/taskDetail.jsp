@@ -220,7 +220,7 @@
 												    <div class="col-md-4 f-18 font-weight-bold greyish-brown">
 												      Globex Corporation. Inc.
 												    </div>
-												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color">
+												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer">
 												     View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
 												 </div>
@@ -434,7 +434,7 @@
 												    <div class="col-md-4 f-18 font-weight-bold greyish-brown">
 												      Opentech Pvt. Ltd.
 												    </div>
-												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color">
+												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer">
 												     View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
 												 </div>
@@ -541,7 +541,7 @@
 				<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
 					<div class="modal-content rounded-0">
 						<div class="d-flex shadow-sm py-3">
-							<div class="col-md-11 modal-title f-18 font-weight-bold" id="rescheduleCenterTitle">Reschedule Task</div>
+							<div class="col-md-11 modal-title greyish-brown f-18 font-weight-bold" id="rescheduleCenterTitle">Reschedule Task</div>
 							<button type="button" class="col-md-1 close" data-dismiss="modal" aria-label="Close">
 								<span aria-hidden="true">×</span>
 							</button>
@@ -566,14 +566,14 @@
 								<div class="col-md-6">
 									<div class="f-14 font-weight-bold pb-1">Date</div>
 									<div class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
-										<input class="f-14 border-0 w-100 pl-2" placeholder="Select here">
+										<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
 										<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 									</div>	
 								</div>
 								<div class="col-md-6">
 									<div class="f-14 font-weight-bold pb-1">Time	</div>
 									<div class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
-										<input class="f-14 border-0 w-100 pl-2" placeholder="Select here">
+										<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
 										<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
 									</div>	
 								</div>
@@ -581,7 +581,7 @@
 							<div class="row py-3">
 								<div class="col-md-12">
 									<div class="f-14 font-weight-bold pb-1">Reason</div>
-									<textarea class="w-100" rows="5" ></textarea>
+									<textarea class="w-100 custom-modal-textarea" rows="5" ></textarea>
 								</div>
 							</div>
 						</div>

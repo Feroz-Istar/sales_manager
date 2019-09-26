@@ -39,6 +39,8 @@ body {
     box-shadow: 0 0 0 0;
 }
 
+
+
 .btn-style{
 	height:30px !important;
 	background-color:#ed4d67;
@@ -52,6 +54,9 @@ body {
 	color: #ffffff !important;	
 }
 
+
+
+/* start of modal */
 .modal-submit-btn{
   width: 140px;
   height: 40px;
@@ -62,6 +67,36 @@ body {
 .modal-submit-btn:hover{
 	color: #fff;	
 }
+.custom-modal-input{
+	height: 35px !important;
+	border: 1px solid #cccccc;
+    border-radius: 0;
+    font-size: 14px;
+    color: #999999 !important;
+    margin-right: 0.5rem !important;
+   	background: #ffffff;
+}
+.custom-modal-input:focus{
+	outline: none !important;
+    box-shadow: 0 0 0 0;
+    border-color: #cccccc;
+}
+
+.custom-modal-textarea{
+	border: 1px solid #cccccc;
+    border-radius: 0;
+    font-size: 14px;
+    color: #999999 !important;
+    margin-right: 0.5rem !important;
+   	background: #ffffff;
+}
+.custom-modal-textarea:focus{
+	outline: none !important;
+    box-shadow: 0 0 0 0;
+    border-color: #cccccc;
+}
+/* end of modal */
+
 
 html{
 	height:100%;

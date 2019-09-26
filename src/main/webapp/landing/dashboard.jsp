@@ -126,8 +126,8 @@
 								</button>
 								
 								<div class="dropdown-menu dropdown-menu-left istar-dropdown-menu m-0" aria-labelledby="todoMenuButton">
-                                     <a class="dropdown-item" href="#">Create an Event</a>
-                                     <a class="dropdown-item" href="#">Schedule Task</a>
+                                     <button class="dropdown-item" data-toggle="modal" data-target="#createEventModalCenter">Create an Event</button>
+                                     <button class="dropdown-item">Schedule Task</button>
                                 </div>
 								
 							</div>
@@ -684,6 +684,72 @@
 		</div>
 		<!-- End of row main dashboard row divided into three column -->
 
+	<!-- start of create event modal -->
+		<div class="modal fade" id="createEventModalCenter" tabindex="-1" role="dialog" aria-labelledby="createEventModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog  modal-dialog-centered" role="document">
+		    <div class="modal-content rounded-0 px-3 eventmodalsize">
+		    	<div class="row shadow-sm p-3" > 
+					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="createEventModalCenterTitle">Create an Event</div>
+					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+		      <div class="modal-body">
+		       	<div class="row pb-4">
+		       		<div class="col-md-6">
+		       			<div class="f-14 font-weight-bold pb-1">Add Title</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="eventTitle" aria-describedby="eventTitle" placeholder="Type here">
+		       		</div>
+		       		<div class="col-md-6">
+		       			<div class="f-14 font-weight-bold pb-1">Type</div>
+		       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="eventType">
+					      <option>Select here</option>
+					      <option>Type 1</option>
+					      <option>Type 2</option>
+					    </select>
+		       		</div>
+		       	</div>
+		       	<div class="row pb-4">
+					<div class="col-md-6">
+						<div class="f-14 font-weight-bold pb-1">Date</div>
+						<div class="custom-modal-input w-100 d-flex mr-2">
+							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
+							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
+						</div>	
+					</div>
+					<div class="col-md-6">
+						<div class="f-14 font-weight-bold pb-1">Time	</div>
+						<div class="custom-modal-input w-100 d-flex mr-2">
+							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
+							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
+						</div>	
+					</div>
+				</div>
+				<div class="row pb-4">
+					<div class="col-md-12">
+						<div class="f-14 font-weight-bold pb-1">Add Guest</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="addGuest" aria-describedby="addGuest" placeholder="Select here">
+					</div>
+				</div>
+				
+				<div class="row pb-4">
+					<div class="col-md-12">
+						<div class="f-14 font-weight-bold pb-1">Description</div>
+						<textarea class="custom-modal-textarea w-100" id="eventdescription" rows="6"></textarea>
+					</div>
+				</div>
+				
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
+		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal">CREATE</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- end of create event modal -->
+	
+	
 
 	</div>
 	</main>
