@@ -193,7 +193,26 @@
 										</div>
 									</div>
 									<div class="col-md-1">
-										<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+										<div class="istar-dropdown dropleft">
+											<button class="dropdown-icon-btn " type="button" id="dropdownMenuButton"
+		                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
+		                                            aria-expanded="false">
+												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+											</button>
+											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+	                                            aria-labelledby="dropdownMenuButton">
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt=""
+	                                                    srcset="" class="mr-2"> Won</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
+	                                                    alt="" srcset="" class="mr-2">Lose</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt=""
+	                                                    srcset="" class="mr-2">Edit</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
+	                                                    alt="" srcset="" class="mr-2">Delete</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/details.png"
+	                                                    alt="" srcset="" class="mr-2">Details</button>
+	                                        </div>
+	                                    </div>
 									</div>
 								</div>
 							</div>
@@ -347,7 +366,8 @@
 	                                            aria-labelledby="dropdownMenuButton">
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt=""
 	                                                    srcset="" class="mr-2"> Won</button>
-	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
+	                                            <button class="dropdown-item"data-toggle="modal" data-target="#lostLeadModalCenter">
+	                                            		<img src="<%=baseURL%>assets/image/lost.svg"
 	                                                    alt="" srcset="" class="mr-2">Lose</button>
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt=""
 	                                                    srcset="" class="mr-2">Edit</button>
@@ -701,6 +721,56 @@
 			</div>
 		</div>
 		
+		<!-- start of lost lead modal -->
+		
+		<div class="modal fade" id="lostLeadModalCenter" tabindex="-1" role="dialog" aria-labelledby="lostLeadModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		    <div class="modal-content rounded-0 px-3 lostleadmodalsize">
+		      <div class="row shadow-sm p-3" > 
+					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="lostLeadModalCenterTitle">Lost Lead</div>
+					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+		      <div class="modal-body">
+		       
+		       <div class="row pb-4">
+		       		<div class="col-md-12 f-18 font-weight-bold greyish-brown">
+		       			Zencorporation Pot. Ltd.
+		       		</div>
+		       </div>
+		       
+		       <div class="row pb-4">
+		       		<div class="col-md-4 border-right-separation">
+		       			<div class="f-14 brownish-grey">Contact Person</div>
+		       			<div class="f-16 font-weight-bold black">Miriam Franklin</div>
+		       		</div>
+		       		<div class="col-md-4 border-right-separation">
+		       			<div class="f-14 brownish-grey">Recent Task</div>
+		       			<div class="f-16 font-weight-bold black">Call</div>
+		       		</div>
+		       		<div class="col-md-4 ">
+		       			<div class="f-14 brownish-grey">Deal Value </div>
+		       			<div class="f-16 font-weight-bold black">$ 208</div>
+		       		</div>
+		       </div>
+		       
+		       <div class="row pt-4">
+		       		<div class="col-md-12">
+		       			<textarea class="custom-modal-textarea f-14 brown-grey w-100 p-2" id="reason" rows="6" placeholder="Type Reason"></textarea>
+		       		</div>
+		       </div>
+		       
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
+		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal">SUBMIT</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		
+		<!-- end of lost lead modal -->
 		
 	</div>
 	</main>
