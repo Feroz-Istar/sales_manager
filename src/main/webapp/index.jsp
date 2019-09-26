@@ -32,7 +32,7 @@
 	<div class="container-fluid   h-100">
 		<div class="row h-100  ">
 			<div class="col-md-5 d-flex justify-content-end h-100 align-items-center">
-				<div class="card  px-4 mx-4 border-0 " style="box-shadow: 15px 0 5px -5px #eeeeee;width: 32rem;" >
+				<div class="card  px-4 mx-4 border-0 " style="box-shadow: 15px 0 5px -5px #eeeeee;width: 28rem;" >
 					<div class="card-body  ">
 					      <div style="text-align:center">
 					
@@ -41,7 +41,7 @@
 							<i class="fas fa-check text-white f-16"></i>
 						</button>
 						</div>
-						<p class="brownish-grey f-14 text-center mb-0">Great! Password has been
+						<p class="brownish-grey f-14 text-center mb-0 font-weight-bold">Great! Password has been
 							generated ! </p>
 						<p class="brown-grey f-14 text-center">You can now login to Salesken</p>
 						
@@ -51,21 +51,21 @@
 
 						<form style="">
 							<div class="form-group mb-4">
-								<label class="f-14" for="exampleInputEmail1" style="color:#262626!important;">Email address</label> 
+								<label class="f-14 font-weight-bold" for="exampleInputEmail1" style="color:#262626!important;">Email </label> 
 								<input
-									type="email" class="form-control f-14" id="exampleInputEmail1"
+									type="email" class="form-control f-14 rounded-0" id="exampleInputEmail1"
 									aria-describedby="emailHelp" placeholder="Email" style="  width: 287.5px;
 									height: 50px;color:#95989a!important;">
 							
 							</div>
 							<div class="form-group mb-4">
-								<label class="f-14" for="exampleInputPassword1" style="color:#262626!important;">Password</label> <input
-									type="password" class="form-control f-14" id="exampleInputPassword1"
+								<label class="f-14 font-weight-bold" for="exampleInputPassword1" style="color:#262626!important;">Password</label> <input
+									type="password" class="form-control f-14 rounded-0" id="exampleInputPassword1"
 									placeholder="Password" style="  width: 287.5px;height: 50px;color:#95989a!important;">
 							</div>
 							
-							<button type="submit" class="btn f-14 text-center w-100 font-weight-bold p-0 mb-4" style="  width: 287.5px !important;background:#ed4d67; height:40px;color:white;">Login</button>
-							<button type="button" class="btn f-14  text-left w-100 font-weight-bold p-0 theme_color" style="height:40px;">Forgot Password ?</button>
+							<button type="submit" class="btn f-14 text-center w-100 font-weight-bold p-0 rounded-0 mb-4" style="  width: 287.5px !important;background:#ed4d67; height:40px;color:white;">LOGIN</button>
+							<button type="button" class="btn f-14  text-left w-100 font-weight-bold p-0 theme_color " style="height:40px;">Forgot Password ?</button>
 						
 						
 						</form>
@@ -77,8 +77,8 @@
 				<div>
 				<h1 class="display-4 f-24 mb-2">See What Works, What Doesn’t &</h1>
 
-				<h1 class="display-3 f-38 mb-5">Help your Reps Sell Better</h1>
-				<p class="brown-grey f-16 mb-5" style="max-width:300px;"">Lorem ipsum dolor sit amet,
+				<h1 class="display-3 f-38 mb-5 font-weight-bold">Help your Reps Sell Better</h1>
+				<p class="brown-grey f-16 mb-5" style="max-width:433px;"">Lorem ipsum dolor sit amet,
 					consectetur adipiscing elit. Nulla sit amet nibh lobortis, vehicula
 					lorem at.</p>
 				<img class="login_background" alt="login_background"
