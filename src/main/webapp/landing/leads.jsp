@@ -48,7 +48,7 @@
 						</button>
 					</div>
 				</div>
-				<button class="btn btn-style f-12">UPLOAD NEW</button>
+				<button class="btn btn-style f-12" data-toggle="modal" data-target="#addLeadModalCenter">UPLOAD NEW</button>
 			</div>
 		</div>
 		
@@ -771,6 +771,82 @@
 		</div>
 		
 		<!-- end of lost lead modal -->
+		
+		
+		<!-- start of add lead modal -->
+		<div class="modal fade" id="addLeadModalCenter" tabindex="-1" role="dialog" aria-labelledby="addLeadModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		    <div class="modal-content rounded-0 px-3">
+		        
+					<div class="modal-title" id="lostLeadModalCenterTitle">
+						<div class="row shadow-bottom py-2">
+							<div class="col-md-11 leadmodal">
+								<ul class="nav nav-pills" id="pills-tab" role="tablist">
+								  <li class="nav-item">
+								    <a class="nav-link px-0 active" id="pills-upload-tab" data-toggle="pill" href="#pills-upload" role="tab" aria-controls="pills-upload" aria-selected="true">
+								    	<div class="d-flex align-items-center flex-row bd-highlight">
+											<div class="bd-highlight pr-2 d-flex align-items-center">
+												<div class="circle">01</div>
+											</div>
+											<div class="bd-highlight pr-2 align-self-center">Upload Lead List</div>
+											<div class="bd-highlight d-flex pr-2">
+												<img src="<%=baseURL%>assets/image/arrow_right.svg">
+											</div>
+										</div>
+								    </a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link px-0" id="pills-preview-tab" data-toggle="pill" href="#pills-preview" role="tab" aria-controls="pills-preview" aria-selected="false">
+								    	<div class="d-flex align-items-center flex-row bd-highlight">
+											<div class="bd-highlight pr-2 d-flex align-items-center">
+												<div class="circle">02</div>
+											</div>
+											<div class="bd-highlight pr-2 align-self-center">Preview</div>
+											
+										</div>
+								    </a>
+								  </li>
+								</ul>
+							</div>
+							<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						
+						<div class="tab-content" id="pills-tabContent">
+						  <div class="tab-pane fade show active" id="pills-upload" role="tabpanel" aria-labelledby="pills-upload-tab">
+						  	<!-- start of upload lead content -->
+						  	<div class="row justify-content-center">
+							    <div class="col-md-9 my-5 cream_white" style="border: 1px dashed #cccccc;">
+							    	<div class="d-flex flex-row">
+							    		<div class="col-md-3">
+							    			<img class="">
+							    		</div>
+							    		<div class="col-md-9"></div>
+							    	</div>
+							    </div>
+							  </div>
+						  	<hr class="mt-0">
+						  	<div class="row pb-2 justify-content-end">
+							   <div class="col-4 text-right">
+							      <button class="btn modal-submit-btn">CONTINUE</button>
+							   </div>
+							</div>
+						  	<!-- end of upload lead content -->
+						  </div>
+						  
+						  
+						  
+						  <div class="tab-pane fade" id="pills-preview" role="tabpanel" aria-labelledby="pills-preview-tab">...</div>
+						</div>
+						
+					</div>
+					
+				
+		    </div>
+		  </div>
+		</div>
+		<!-- end of add lead modal -->
 		
 	</div>
 	</main>

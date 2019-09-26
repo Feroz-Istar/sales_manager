@@ -74,3 +74,25 @@
 	background-color: #f9f9f9 !important;
 }
 
+.leadmodal>.nav-pills .nav-link.active{
+	color:#444444;
+	font-weight:bold;
+	background: #fff;
+	font-size: 18px;
+}
+.leadmodal>.nav-pills .nav-link{
+	color: #999999;
+	font-weight: normal;
+	background: #fff;
+	font-size: 16px;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 14px;
+    color: #fff;
+    line-height: 30px;
+    text-align: center;
+    background: #eb384f;
+}
