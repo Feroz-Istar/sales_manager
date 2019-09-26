@@ -48,18 +48,30 @@
                     </button>
                 </div>
             </div>
-			<!-- <input type="text" class="form-control search-style mr-3 f-14"
-						id="search" aria-describedby="search" placeholder="Search"> -->
-							<div class="dropdown">
-						<button class="btn btn-style px-2 f-12 dropdown-toggle"
-						type="button" id="dropdownMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
-					<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left " aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a> <a
-							class="dropdown-item" href="#">Another action</a> <a
-							class="dropdown-item" href="#">Something else here</a>
+			
+			<div class="istar-dropdown-task">
+				<button class="btn btn-style px-2 f-12 dropdown-toggle"
+				type="button" id="newTaskMenuButton" data-toggle="dropdown"
+				aria-haspopup="true" aria-expanded="false">NEW TASK</button>
+				
+					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
+								    <button class="dropdown-item" type="button">
+								    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+								    Call Task</button>
+								    <button class="dropdown-item" type="button">
+								    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+								    Email Task</button>
+								    <button class="dropdown-item" type="button">
+								    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+								    Webinar Task
+								    </button>
+								    <button class="dropdown-item" type="button">
+								    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+								    Presentation
+								    </button>
 					</div>
-						</div>
+				
+			</div>
 						
 			</div>
 	

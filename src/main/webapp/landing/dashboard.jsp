@@ -51,23 +51,28 @@
 
 			</div>
 			<div class="col-md-6 col-6 d-flex justify-content-end">
-				<div class="dropdown">
-					<button style="width: 108px; height: 30px;"
-						class="btn theme_bg dropdown-toggle text-white font-weight-bold f-12"
-						type="button" id="dropdownMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">
-						<span class="sr-only">Toggle Dropdown</span> New Task &nbsp;
-						&nbsp; &nbsp;
-					</button>
-					<div
-						class="dropdown-menu  dropdown-menu-right dropdown-menu-lg-left"
-						aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="#">Action</a> <a
-							class="dropdown-item" href="#">Another action</a> <a
-							class="dropdown-item" href="#">Something else here</a>
+				<div class="istar-dropdown-task">
+					 <button class="btn btn-style px-2 f-12 dropdown-toggle"
+						type="button" id="newTaskMenuButton" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
+					
+					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    Call Task</button>
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+					    Email Task</button>
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+					    Webinar Task
+					    </button>
+					    <button class="dropdown-item" type="button">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    Presentation
+					    </button>
 					</div>
 				</div>
-
 			</div>
 
 		</div>
@@ -100,14 +105,23 @@
 
 						</div>
 						<hr class="p-0 m-0">
+						
+						
 						<div class="task-item-container bg-white  custom_dash_padding">
-							<div class="d-flex flex-row align-items-center pt-2 pb-4">
+						
+							<div class="d-flex flex-row align-items-center pt-2 pb-2 istar-dropdown">
 								<div class="font-weight-bold mr-3 bblack f-18">To-Do List</div>
 								<button
 									class="btn rounded-circle shadow d-flex justify-content-center align-items-center"
-									style="height: 30px; width: 30px; background: white;">
+									style="height: 30px; width: 30px; background: white;" id="todoMenuButton" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="fas fa-plus theme_color"></i>
 								</button>
+								
+								<div class="dropdown-menu dropdown-menu-left istar-dropdown-menu m-0" aria-labelledby="todoMenuButton">
+                                     <a class="dropdown-item" href="#">Create an Event</a>
+                                     <a class="dropdown-item" href="#">Schedule Task</a>
+                                </div>
+								
 							</div>
 							<!-- Start of creation to do items card -->
 							<%
@@ -127,14 +141,7 @@
 										<div
 											class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 											aria-labelledby="dropdownMenuButton">
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/won.svg" alt="" srcset=""
-													class="mr-2"> Won
-											</button>
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/lost.svg" alt=""
-													srcset="" class="mr-2">Lose
-											</button>
+											
 											<button class="dropdown-item" href="#">
 												<img src="<%=baseURL%>assets/image/edit.svg" alt=""
 													srcset="" class="mr-2">Edit
@@ -143,10 +150,7 @@
 												<img src="<%=baseURL%>assets/image/delete.svg" alt=""
 													srcset="" class="mr-2">Delete
 											</button>
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/details.png" alt=""
-													srcset="" class="mr-2">Details
-											</button>
+											
 										</div>
 									</div>
 
@@ -299,14 +303,12 @@
 								class="card-title col-md-6 font-weight-bold f-18 greyish-brown">Pipeline
 								- 01</div>
 							<div class="col-md-6 d-flex justify-content-end">
-								<button type="button"
-									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
-									<i class="fas fa-chevron-left brown-grey" disabled></i>
-								</button>
-								<button type="button"
-									class="btn  button_border h-29 d-flex justify-content-center align-items-center">
-									<i class="fas fa-chevron-right theme_color"></i>
-								</button>
+								<button type="button" class="istar-btn-icon istar-square">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="istar-btn-icon istar-square active ml-2">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
 							</div>
 						</div>
 						<div id="pipeline_carousel" class="carousel slide"
@@ -402,14 +404,12 @@
 								Team 01 - <span class="brown-grey">10 user</span>
 							</div>
 							<div class="col-md-6 d-flex justify-content-end">
-								<button type="button"
-									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
-									<i class="fal fa-forward"></i>	
-								</button>
-								<button type="button"
-									class="btn  button_border h-29 d-flex justify-content-center align-items-center">
-									<i class="fas fa-chevron-right theme_color"></i>
-								</button>
+								<button type="button" class="istar-btn-icon istar-square">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="istar-btn-icon istar-square active ml-2">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
 							</div>
 						</div>
 						<div class="row">
@@ -468,14 +468,12 @@
 						<div class="row mb-3">
 							<div class="col-md-6 font-weight-bold f-18">Bottom 5 Agents</div>
 							<div class="col-md-6 d-flex justify-content-end">
-								<button type="button"
-									class="btn button_border  h-29 d-flex justify-content-center align-items-center mr-2 ">
-									<i class="fas fa-chevron-left brown-grey" disabled></i>
-								</button>
-								<button type="button"
-									class="btn  button_border h-29 d-flex justify-content-center align-items-center">
-									<i class="fas fa-chevron-right theme_color"></i>
-								</button>
+								<button type="button" class="istar-btn-icon istar-square">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button type="button" class="istar-btn-icon istar-square active ml-2">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
 							</div>
 						</div>
 						<%
