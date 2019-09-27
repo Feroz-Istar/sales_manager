@@ -79,6 +79,10 @@
 .shadow-bottom{
 	box-shadow: 0 4px 2px -2px #cccccc;
 }
+.time-img-size{
+	width: 84.1px;
+ 	 height: 78.2px;
+}
 .dotted-bottom-separation{
 	border-bottom: 1px dotted #cccccc
 }

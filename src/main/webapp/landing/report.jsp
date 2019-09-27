@@ -9,7 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
-<title>Salesken Dashboard</title>
+<title>Salesken - Reports</title>
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
@@ -184,12 +184,12 @@
 		    </div>
 		    		  <div class="col-md-10 col-12 bg-white">
 		    		    <div class="tab-content" id="piplelinestage-tabContent">
-		    <%for(int i =0;i<usertabs.length;i++){ 
-		    	String isactive = "";
-				if (i == 0) {
-					isactive = "active";
-				}
-		    %>
+					    <%for(int i =0;i<usertabs.length;i++){ 
+					    	String isactive = "";
+							if (i == 0) {
+								isactive = "active";
+							}
+					    %>
 		    		      <div class="tab-pane fade show pl-0 <%=isactive %>" id="<%=usertabs[i].trim()%>" role="tabpanel" aria-labelledby="<%=usertabs[i].trim()%>-tab">
 		   					 <div class="row align-items-center py-4 shadow-bottom">
 		      			<div class="col-md-2 col-4">
@@ -197,54 +197,96 @@
 		      				<div class="f-14 brown-grey">Deal Value</div>
 		      			</div>
 		      			<div class="col-md-2 col-4">
-		      				<div class="f-24 font-weight-bold blue-black">85% </div>
-		      				<div class="f-14 brown-grey">Confident</div>
+		      				<div class="f-24 font-weight-bold blue-black">689</div>
+		      				<div class="f-14 brown-grey">Won Leads</div>
+		      			</div>
+		      			<div class="col-md-2 col-4">
+		      				<div class="f-24 font-weight-bold blue-black">234</div>
+		      				<div class="f-14 brown-grey">Lost Leads</div>
+		      			</div>
+		      			<div class="col-md-2 col-4">
+		      				<div class="f-24 font-weight-bold blue-black">85%</div>
+		      				<div class="f-14 brown-grey">Confident </div>
 		      			</div>
 		      			<div class="col-md-2 col-4">
 		      				<div class="f-24 font-weight-bold blue-black">65%</div>
 		      				<div class="f-14 brown-grey">Tentative </div>
 		      			</div>
-		      			<div class="col-md-6 col-12">
-		      				<div class="d-flex">
-		      					<div class="col-md-6">
-		      						<div class="f-14 font-weight-bold black mb-1">Strong Playbook</div>
-		      						<div class="f-14 brownish-grey">Objection,  Qualification <i class="fas fa-info-circle soft-blue"></i></div>
-		      					</div>
-		      					<div class="col-md-6">
-		      						<div class="f-14 font-weight-bold black mb-1">Weak Playbook</div>
-		      						<div class="f-14 brownish-grey">Need Investigation <i class="fas fa-info-circle soft-blue"></i></div>
-		      					</div>
-		      				</div>
-		      			</div>
 		      		</div>
 		    <div class="row align-items-center bottom-separation-solid py-4">
-		      			<div class="col-md-2 col p-0">
+		      			<div class="col-md-2 col ">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Agent Name	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-		      			<div class="col-md-2 col p-0">
+		      			<div class="col-md-2 col ">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Achieved & Pipeline Value	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-		      			<div class="col-md-2 col p-0">
+		      			<div class="col-md-2 col ">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Won & Lost Leads	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-						<div class="col-md-2 col justify-content-lg-start p-0">
+						<div class="col-md-2 col justify-content-lg-start ">
 							<button class="btn p-0 black f-14 font-weight-bold">
 								Week <i class="fas fa-sort brown-grey ml-2"></i>
 							</button>
 						</div>
 						
-						<div class="col-md-2 col justify-content-lg-start p-0">
+						<div class="col-md-2 col justify-content-lg-start">
 							<button class="btn p-0 black f-14 font-weight-bold">
-								Strong <i class="fas fa-sort brown-grey ml-2"></i>
+								Strong
 							</button>
 						</div>
+						
 						</div>
+						
+						<%for(int j=0; j<10; j++){ %>
+						<div class="row  align-items-center bottom-separation-solid py-4 ">
+							<div class="col-md-2">
+								<div class="row">
+									<div class="col-md-2 mr-2">
+										<img src="<%=baseURL%>assets/image/37.jpg" class=" hw-40 rounded-circle"/>
+									</div>
+									<div class="col-md-9">
+										<div class="f-14 greyish-brown">Stanley Howard</div>
+										<div class="f-12 brown-grey">ID - 00089</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="row align-items-center">
+									<i class="fal fa-check-circle col-md-1 soft-blue"></i>
+									<div class="col-md-3 pr-0 greyish-brown f-14 border-right-separation"> $ 240 </div>
+									<img class="menu_icon col-md-2 px-0 greyish-brown" src="<%=baseURL%>assets/image/report_green.svg" style="width:12px;height: 12px !important;">
+									<div class="col-md-4 greyish-brown pl-0 f-14">$ 4589 </div>
+								</div>
+							</div>
+							<div class="col-md-2">
+								<div class="row align-items-center">
+									<div class="col-md-1 tea-color f-14">45</div>
+									<div class="col-md-1 p-0 greyish-brown f-14 text-center">/</div>
+									<div class="col-md-1 p-0 pastel-red f-14">20</div>
+								</div>
+							</div>
+							<div class="col-md-2 f-14 brownish-grey">
+							Introduction, Price..
+							<i class="fal fa-info-circle soft-blue"></i>
+							</div>
+							<div class="col-md-2 f-14 brownish-grey">
+							Need Investigation
+							<i class="fal fa-info-circle soft-blue"></i>
+							</div>
+							<div class="col-md-2 col text-right">
+								<button class="btn">
+									<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+								</button>
+							</div>
+						</div>
+						
+						<%} %>
 						
 						<div class="row py-3 justify-content-end">
 							<div class="col-md-3">

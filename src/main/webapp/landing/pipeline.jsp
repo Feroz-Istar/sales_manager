@@ -131,11 +131,11 @@
 		      				<div class="d-flex">
 		      					<div class="col-md-6">
 		      						<div class="f-14 font-weight-bold black mb-1">Strong Playbook</div>
-		      						<div class="f-14 brownish-grey">Objection,  Qualification <i class="fas fa-info-circle soft-blue"></i></div>
+		      						<div class="f-14 brownish-grey">Objection,  Qualification <i class="fal fa-info-circle soft-blue"></i></div>
 		      					</div>
 		      					<div class="col-md-6">
 		      						<div class="f-14 font-weight-bold black mb-1">Weak Playbook</div>
-		      						<div class="f-14 brownish-grey">Need Investigation <i class="fas fa-info-circle soft-blue"></i></div>
+		      						<div class="f-14 brownish-grey">Need Investigation <i class="fal fa-info-circle soft-blue"></i></div>
 		      					</div>
 		      				</div>
 		      			</div>
@@ -192,15 +192,15 @@
 		      						<div class="row position-relative">
 		      						<div class="line"></div>
 		      							<div class="col-md-3 text-center">
-		      									<i class="fas fa-check-circle  lead-identifier"></i>
+		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Need</div>
 		      							</div>
 										<div class="col-md-3 text-center">
-		      									<i class="fas fa-check-circle  lead-identifier"></i>
+		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Budget</div>
 		      							</div>	
 		      							<div class="col-md-3 text-center">
-		      									<i class="fas fa-check-circle  lead-identifier"></i>
+		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Authorized </div>
 		      							</div>
 		      							<div class="col-md-3 text-center">

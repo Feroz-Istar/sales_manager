@@ -479,7 +479,7 @@
 												</div>
 												
 												<div class="d-flex flex-column justify-content-center align-items-center py-4">
-													<img src="<%=baseURL%>assets/image/Group 3614.svg" class="mb-1">
+													<img src="<%=baseURL%>assets/image/timer.svg" class="mb-1 time-img-size">
 													<div class="f-16 font-weight-bold mb-1">Few minutes left !</div>
 													<div class="f-12 brownish-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 												</div>

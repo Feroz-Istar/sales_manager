@@ -61,6 +61,16 @@ body {
 .very-light-pink-bg{
 	background: #eeeeee;
 }
+.blue-black{
+	color: #43425d;
+}
+.soft-blue{
+	color: #6297f6 !important;
+}
+.bottom-separation-solid{
+	border-bottom: 2px solid #ebebeb;
+}
+
 /* start of modal */
 .modal-submit-btn{
   width: 140px;
@@ -410,7 +420,8 @@ html,body{
 
 .filter-btn:focus{
 	outline: none !important;
-    box-shadow: 0 0 0 0.1rem #999999;
+    box-shadow: 0 0 0 0.1rem #fff;
+    color: #ed4d67;
 }
 
 .filtericon{
@@ -662,6 +673,14 @@ color:	#999999 !important;
 .light_gray{
 	color:#707070 !important;
 }
+
+.pastel-red{
+	color: #e84c4c;
+}
+.tea-color{
+	color: #37ac6c !important;
+}
+
 
 .cursor-pointer{
   cursor: pointer;

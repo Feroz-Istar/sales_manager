@@ -57,30 +57,17 @@
 	background-color: #f9f9f9 !important;
 }
 
-.soft-blue{
-	color: #6297f6 !important;
-}
+
 
 .shadow-bottom{
 	box-shadow: 0 4px 2px -2px #cccccc;
 }
 
-.blue-black{
-	color: #43425d;
-}
 
 
 
 
 /* exclusive to pipeline----------- */
-
-.pastel-red{
-	color: #e84c4c;
-}
-.lead-identifier{
-	color: #37ac6c !important;
-}
-
 
  .line {
     width: 72%;
