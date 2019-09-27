@@ -776,10 +776,10 @@
 		<!-- start of add lead modal -->
 		<div class="modal fade" id="addLeadModalCenter" tabindex="-1" role="dialog" aria-labelledby="addLeadModalCenterTitle" aria-hidden="true">
 		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-		    <div class="modal-content rounded-0 px-3">
+		    <div class="modal-content rounded-0 px-3 addleadmodalsize">
 		        
 					<div class="modal-title" id="lostLeadModalCenterTitle">
-						<div class="row shadow-bottom py-2">
+						<div class="row shadow-bottom py-3 ">
 							<div class="col-md-11 leadmodal">
 								<ul class="nav nav-pills" id="pills-tab" role="tablist">
 								  <li class="nav-item">
@@ -817,19 +817,23 @@
 						  <div class="tab-pane fade show active" id="pills-upload" role="tabpanel" aria-labelledby="pills-upload-tab">
 						  	<!-- start of upload lead content -->
 						  	<div class="row justify-content-center">
-							    <div class="col-md-9 my-5 cream_white" style="border: 1px dashed #cccccc;">
-							    	<div class="d-flex flex-row">
-							    		<div class="col-md-3">
-							    			<img class="">
+							    <div class="col-md-9 my-5 cream_white upload-lead-box" style="border: 1px dashed #cccccc;">
+							    	<div class="d-flex flex-row align-items-center text-center upload-lead-box">
+							    		<div class="col-md-5">
+							    			<img src="<%=baseURL%>assets/image/Group 3614.svg" class="doc-image-size">
 							    		</div>
-							    		<div class="col-md-9"></div>
+							    		<div class="col-md-6">
+							    			<div class="f-16 font-weight-bold greyish-brown">Drag or Drop a Documents</div>
+							    			<div class="f-14 brown-grey">We support only excel file up to 100 mb.</div>
+							    			<div class="f-16 font-weight-bold theme_color">Browse</div>
+							    		</div>
 							    	</div>
 							    </div>
 							  </div>
 						  	<hr class="mt-0">
-						  	<div class="row pb-2 justify-content-end">
+						  	<div class="row pb-3 justify-content-end ">
 							   <div class="col-4 text-right">
-							      <button class="btn modal-submit-btn">CONTINUE</button>
+							      <button class="btn modal-submit-btn f-14 font-weight-bold">CONTINUE</button>
 							   </div>
 							</div>
 						  	<!-- end of upload lead content -->

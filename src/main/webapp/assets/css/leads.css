@@ -2,7 +2,13 @@
 	.lostleadmodalsize{
 		width:650px;
 	}
-	
+	.addleadmodalsize{
+		width:1062px;
+	}
+	.upload-lead-box{
+		
+	  	height: 258.6px;
+	}
 }
 
 .border-right-separation{
@@ -47,6 +53,8 @@
 		width: 120px;
 		border-radius: 0;
 }
+
+
 }
 
 .bottom-separation-solid{
@@ -95,4 +103,8 @@
     line-height: 30px;
     text-align: center;
     background: #eb384f;
+}
+.doc-image-size{
+	height: 115px;
+	width: 107px;
 }
