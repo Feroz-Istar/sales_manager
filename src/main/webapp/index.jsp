@@ -23,6 +23,7 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/login.css">
 
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
@@ -31,43 +32,51 @@
 	<main role="main" class="h-100">
 	<div class="container-fluid   h-100">
 		<div class="row h-100  ">
-			<div class="col-md-5 d-flex justify-content-end h-100 align-items-center">
-				<div class="card  px-4 mx-4 border-0 " style="box-shadow: 15px 0 5px -5px #eeeeee;width: 28rem;" >
+			<div
+				class="col-md-5 d-flex justify-content-end h-100 align-items-center">
+				<div class="card  px-4 mx-4 border-0  shadow_right"
+					style="width: 28rem;">
 					<div class="card-body  ">
-					      <div style="text-align:center">
-					
-						<button class="rounded-circle tea border-0 mb-4"
-							style="z-index: 1; width: 35px; height: 35px;">
-							<i class="fas fa-check text-white f-16"></i>
-						</button>
+						<div style="text-align: center">
+
+							<button class="rounded-circle tea border-0 mb-4 tick_icon">
+								<i class="fas fa-check text-white f-16"></i>
+							</button>
 						</div>
-						<p class="brownish-grey f-14 text-center mb-0 font-weight-bold">Great! Password has been
-							generated ! </p>
-						<p class="brown-grey f-14 text-center">You can now login to Salesken</p>
-						
-						<img class="my-3 text-center" alt="saleskenlogo" src="<%=baseURL%>assets/image/saleskenlogo.svg" style="height:54px; width:184px; ">
-						<div class="my-3" style="border-top:1px solid #eeeeee;"></div>
+						<p class="brownish-grey f-14 text-center mb-0 font-weight-bold">Great!
+							Password has been generated !</p>
+						<p class="brown-grey f-14 text-center">You can now login to
+							Salesken</p>
+
+						<img class="my-3 text-center saleskenlogo" alt="saleskenlogo"
+							src="<%=baseURL%>assets/image/saleskenlogo.svg">
+						<div class="my-3 border_top"></div>
 
 
 						<form style="">
 							<div class="form-group mb-4">
-								<label class="f-14 font-weight-bold" for="exampleInputEmail1" style="color:#262626!important;">Email </label> 
-								<input
-									type="email" class="form-control f-14 rounded-0" id="exampleInputEmail1"
-									aria-describedby="emailHelp" placeholder="Email" style="  width: 287.5px;
-									height: 50px;color:#95989a!important;">
-							
+								<label class="f-14 font-weight-bold label_color"
+									for="exampleInputEmail1">Email </label> <input type="email"
+									class="form-control f-14 rounded-0 input_wh"
+									id="exampleInputEmail1" aria-describedby="emailHelp"
+									placeholder="Email">
+
 							</div>
 							<div class="form-group mb-4">
-								<label class="f-14 font-weight-bold" for="exampleInputPassword1" style="color:#262626!important;">Password</label> <input
-									type="password" class="form-control f-14 rounded-0" id="exampleInputPassword1"
-									placeholder="Password" style="  width: 287.5px;height: 50px;color:#95989a!important;">
+								<label class="f-14 font-weight-bold label_color"
+									for="exampleInputPassword1">Password</label> <input
+									type="password" class="form-control f-14 rounded-0 input_wh"
+									id="exampleInputPassword1" placeholder="Password">
 							</div>
-							
-							<button type="submit" class="btn f-14 text-center w-100 font-weight-bold p-0 rounded-0 mb-4" style="  width: 287.5px !important;background:#ed4d67; height:40px;color:white;">LOGIN</button>
-							<button type="button" class="btn f-14  text-left w-100 font-weight-bold p-0 theme_color " style="height:40px;">Forgot Password ?</button>
-						
-						
+
+							<button type="button"
+								class="btn f-14 text-center w-100 font-weight-bold p-0 rounded-0 mb-4 login_button"
+								style="">LOGIN</button>
+							<button type="button"
+								class="btn f-14  text-left w-100 font-weight-bold p-0 theme_color "
+								style="height: 40px;">Forgot Password ?</button>
+
+
 						</form>
 
 					</div>
@@ -75,15 +84,16 @@
 			</div>
 			<div class="col-md-7   h-100 d-flex align-items-center">
 				<div>
-				<h1 class="display-4 f-24 mb-2">See What Works, What Doesn’t &</h1>
+					<h1 class="display-4 f-24 mb-2">See What Works, What Doesn’t &</h1>
 
-				<h1 class="display-3 f-38 mb-5 font-weight-bold">Help your Reps Sell Better</h1>
-				<p class="brown-grey f-16 mb-5" style="max-width:433px;"">Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. Nulla sit amet nibh lobortis, vehicula
-					lorem at.</p>
-				<img class="login_background" alt="login_background"
-					src="<%=baseURL%>assets/image/login_background.svg" />
-					</div>
+					<h1 class="display-3 f-38 mb-5 font-weight-bold">Help your
+						Reps Sell Better</h1>
+					<p class="brown-grey f-16 mb-5" style="max-width: 433px;"">Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+						nibh lobortis, vehicula lorem at.</p>
+					<img class="login_background" alt="login_background"
+						src="<%=baseURL%>assets/image/login_background.svg" />
+				</div>
 			</div>
 		</div>
 
@@ -104,6 +114,14 @@
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 
+	<script>
+		$(document).ready(function() {
+			console.log("ready!");
 
+			$('.login_button').click(function() {
+				window.location.href = location.href + 'landing/dashboard.jsp'
+			});
+		});
+	</script>
 </body>
 </html>
