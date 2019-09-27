@@ -4,12 +4,41 @@
 	}
 	.addleadmodalsize{
 		width:1062px;
+		height:600px;
 	}
 	.upload-lead-box{
 		
 	  	height: 258.6px;
 	}
 }
+
+.leadpreview.table {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.leadpreview.table thead {
+    flex: 0 0 auto;
+    color:#222222;
+    font-size: 14px;
+    
+}
+
+.leadpreview.table tbody {
+    flex: 1 1 auto;
+    display: block;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height:340px;
+}
+
+.leadpreview.table tr {
+    width: 100%;
+    display: table;
+    table-layout: fixed;
+}
+
 
 .border-right-separation{
 	border-right: 1px dotted #cccccc;
@@ -88,6 +117,12 @@
 	background: #fff;
 	font-size: 18px;
 }
+.leadmodal>.nav-pills .nav-link.active .circle{
+	background:#eb384f !important;
+	color: #ffffff !important;;
+	
+}
+
 .leadmodal>.nav-pills .nav-link{
 	color: #999999;
 	font-weight: normal;
@@ -99,10 +134,10 @@
     height: 30px;
     border-radius: 50%;
     font-size: 14px;
-    color: #fff;
+    color: #999999;
     line-height: 30px;
     text-align: center;
-    background: #eb384f;
+    background: #eeeeee;
 }
 .doc-image-size{
 	height: 115px;
