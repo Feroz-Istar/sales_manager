@@ -408,7 +408,7 @@
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
-	
+	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script>
 	$( document ).ready(function() {
 		

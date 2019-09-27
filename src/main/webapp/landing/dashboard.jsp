@@ -94,12 +94,14 @@
 				<!-- start of To do list & Notes Tabs -->
 				<ul class="saleken nav nav-tabs f-14 custom_dash_padding pt-3 pb-0"
 					id="myTab" role="tablist" style="background: #f9f9f9">
-					<li class="nav-item"><a class="nav-link active border-left-0"
-						id="home-tab" data-toggle="tab" href="#home" role="tab"
-						aria-controls="home" aria-selected="true">To-Do List</a></li>
-					<li class="nav-item "><a class="nav-link border-left-0"
-						id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-						aria-controls="profile" aria-selected="false">Notes</a></li>
+					<li class="nav-item">
+						<a class="nav-link active border-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
+						aria-controls="home" aria-selected="true">To-Do List</a>
+					</li>
+					<li class="nav-item ">
+						<a class="nav-link border-left-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+						aria-controls="profile" aria-selected="false">Notes</a>
+					</li>
 
 				</ul>
 				<div class="tab-content " id="myTabContent"
@@ -876,7 +878,7 @@
 	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
 
 	<script src="<%=baseURL%>assets/js/dashboard.js"></script>
-
+	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	
 </body>
 </html>

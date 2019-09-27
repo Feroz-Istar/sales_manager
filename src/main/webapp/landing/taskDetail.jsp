@@ -55,7 +55,7 @@
 				aria-haspopup="true" aria-expanded="false">NEW TASK</button>
 				
 					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
-								    <button class="dropdown-item" type="button">
+								    <button class="dropdown-item" type="button" onclick="window.location.href = 'createTask.jsp'">
 								    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
 								    Call Task</button>
 								    <button class="dropdown-item" type="button">
@@ -603,6 +603,7 @@
 <script src="<%=baseURL%>assets/js/popper.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
+<script src="<%=baseURL%>assets/js/salesken.js"></script>
 <script>
 $('.salesken.navbar-nav>li').removeClass('active');
 $($('.salesken.navbar-nav>li')[1]).addClass('active')

@@ -983,6 +983,7 @@
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
+	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script
 		src="<%=baseURL%>assets/js/dropzone.min.js"></script>
 	<script src="<%=baseURL%>assets/js/alertify.min.js"></script>
