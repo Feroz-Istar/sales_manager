@@ -266,6 +266,7 @@
 <script src="<%=baseURL%>assets/js/popper.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
+<script src="<%=baseURL%>assets/js/createTask.js"></script>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
 <script>
 $( document ).ready(function() {
