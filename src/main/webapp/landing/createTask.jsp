@@ -252,8 +252,8 @@
 			
 				<div class="row align-items-center h-100" id="page_empty">
 					<div class="col-md-12 text-center">
-						<img src="<%=baseURL%>assets/image/Group 3614.svg" class="pb-2"/>
-						<div class="f-20 font-weight-bold black" class="pb-2">Start the process </div>
+						<img src="<%=baseURL%>assets/image/21.svg" class="pb-2"/>
+						<div class="f-16 font-weight-bold black" class="pb-2">Start the process </div>
 						<div class="f-12 brownish-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 					</div>
 				</div>
