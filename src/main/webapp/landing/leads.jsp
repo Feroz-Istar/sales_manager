@@ -858,14 +858,14 @@
 												<div class="bd-highlight pr-2 d-flex align-items-center">
 													<div class="circle">01</div>
 												</div>
-												<div class="bd-highlight pr-2 align-self-center">Upload
+												<div class="bd-highlight pr-2 align-self-center tabtitle">Upload
 													Lead List</div>
 												<div class="bd-highlight d-flex pr-2">
 													<img src="<%=baseURL%>assets/image/arrow_right.svg">
 												</div>
 											</div>
 									</a></li>
-									<li class="nav-item"><a class="nav-link px-0"
+									<li class="nav-item "><a class="nav-link disabled px-0"
 										id="pills-preview-tab" data-toggle="pill"
 										href="#pills-preview" role="tab" aria-controls="pills-preview"
 										aria-selected="false">
@@ -873,7 +873,7 @@
 												<div class="bd-highlight pr-2 d-flex align-items-center">
 													<div class="circle">02</div>
 												</div>
-												<div class="bd-highlight pr-2 align-self-center">Preview</div>
+												<div class="bd-highlight pr-2 align-self-center tabtitle">Preview</div>
 
 											</div>
 									</a></li>
@@ -963,8 +963,10 @@
 					</div>
 
 					<div class="modal-footer">
+						<button class="btn modal-submit-btn modal-prev-btn f-14 font-weight-bold my-2 mr-auto " style="display:none" >Prev</button>
+						<button class="btn leadsubmit f-14 modal-submit-btn font-weight-bold my-2  " style="display:none" >Submit</button>
 
-						<button class="btn modal-submit-btn f-14 font-weight-bold my-2">CONTINUE</button>
+						<button class="btn modal-submit-btn f-14 font-weight-bold my-2 continue" disabled>CONTINUE</button>
 
 					</div>
 
@@ -985,72 +987,8 @@
 		src="<%=baseURL%>assets/js/dropzone.min.js"></script>
 	<script src="<%=baseURL%>assets/js/alertify.min.js"></script>
 
-	<script>
-	var filename="";
-	$( document ).ready(function() {
-		Dropzone.autoDiscover = false;
-
-		var myDropzone = new Dropzone(".dropzonediv", 
-				{ 
-			maxFiles:1,
-			init: function() {
-			      this.on("maxfilesexceeded", function(file) {
-			            this.removeAllFiles();
-			            this.addFile(file);
-			      })},
-			acceptedFiles: ".xlsx, .xls, .csv",
-			url: "/fileUploadServlet",
-		    previewsContainer: "#previews", // Define the container to display the previews
-		    previewTemplate: '<div class="preview"><img class="mb-4" data-dz-thumbnail height="60" width="60"/>  <div class="filename"></div></div>     ',
-		    clickable: ".browse",
-		     addRemoveLinks: true,
-		     error: function (file, response) {
-	        	    file.previewElement.remove();
-	        	    alertify.error('Error message');
-
-
-		        // file.previewElement.classList.add("dz-error");
-		         },
-		         success: function (file, response, data) {
-		        	 $('.doc-image-size').hide();		        	 
-		        	    file.previewElement.querySelector("img").src = '/assets/image/CSV.png';
-		        	    file.previewElement.querySelector(".filename").innerHTML=file.name
-		         },
-		          removedfile: function (file) {
-		        	    file.previewElement.remove();
-			        	 $('.doc-image-size').show();
-
-		        	} 
-
-			
-				});
-
-
-		$('.salesken.navbar-nav>li').removeClass('active');
-		$($('.salesken.navbar-nav>li')[4]).addClass('active')
-		$('.page').Pagination({ // id to initial draw and use pagination
-            size: 87, // size of list input
-            pageShow: 5, // 5 page-item per page
-            page: 1, // current page (default)
-            limit: 10, // current limit show perpage (default)
-    	}, function(obj){ // callback function, you can use it to re-draw table or something
-            	console.log(obj)
-    	});
-		$('#lead_qualified_datepicker').datepicker({autoclose:true});
-		$('#lead_lost_datepicker').datepicker({autoclose:true});
-		$('#lead_won_datepicker').datepicker({autoclose:true});
-		
-		
-	});
-	function showqualifiedCalendar(){
-		$('#lead_qualified_datepicker').datepicker('show');
-	}
-	function showlostCalendar(){
-		$('#lead_lost_datepicker').datepicker('show');
-	}
-	function showwonCalendar(){
-		$('#lead_won_datepicker').datepicker('show');
-	}
+	<script src="<%=baseURL%>assets/js/lead.js">
+	
 	</script>
 </body>
 </html>
