@@ -925,10 +925,10 @@
 								<table class="table table-striped leadpreview">
 									<thead>
 										<tr>
-											<th scope="col">Lead Name</th>
-											<th scope="col">Email ID</th>
-											<th scope="col">Contact No.</th>
-											<th scope="col"></th>
+											<th scope="col" class="black f-14 font-weight-bold">Lead Name</th>
+											<th scope="col" class="black f-14 font-weight-bold">Email ID</th>
+											<th scope="col" class="black f-14 font-weight-bold">Contact No.</th>
+											<th scope="col" ></th>
 										</tr>
 									</thead>
 									<tbody>

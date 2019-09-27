@@ -12,6 +12,10 @@
 	}
 }
 
+.dz-remove{
+	color:#ed4d67 !important;
+}
+
 .leadpreview.table {
     display: flex;
     flex-flow: column;
@@ -22,7 +26,13 @@
     flex: 0 0 auto;
     color:#222222;
     font-size: 14px;
-    
+    padding-top:20px;
+    border:0;
+}
+
+.leadpreview.table thead tr th{
+   
+    border:0 !important;
 }
 
 .leadpreview.table tbody {
