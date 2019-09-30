@@ -95,11 +95,11 @@
 				<ul class="saleken nav nav-tabs f-14 custom_dash_padding pt-3 pb-0"
 					id="myTab" role="tablist" style="background: #f9f9f9">
 					<li class="nav-item">
-						<a class="nav-link active border-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
+						<a class="nav-link active border-istar-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
 						aria-controls="home" aria-selected="true">To-Do List</a>
 					</li>
 					<li class="nav-item ">
-						<a class="nav-link border-left-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+						<a class="nav-link border-istar-left-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
 						aria-controls="profile" aria-selected="false">Notes</a>
 					</li>
 
@@ -871,9 +871,8 @@
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
-	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
+ 	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
+ 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
 

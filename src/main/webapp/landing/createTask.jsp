@@ -44,13 +44,13 @@
 				<div  id="dialer"> 
 				<ul class="saleken nav nav-tabs f-16 custom_dash_padding pl-3 pt-3 pb-0" id="pills-tab" role="tablist" >
 				  <li class="nav-item">
-				    <a class="nav-link active border-left-0" id="dialer-tab" data-toggle="pill" href="#dialer" role="tab" aria-controls="dialer" aria-selected="true">Dialer</a>
+				    <a class="nav-link active border-istar-left-0" id="dialer-tab" data-toggle="pill" href="#dialer" role="tab" aria-controls="dialer" aria-selected="true">Dialer</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link border-left-0" id="recent-tab" data-toggle="pill" href="#recent" role="tab" aria-controls="recent" aria-selected="false">Recent</a>
+				    <a class="nav-link border-istar-left-0" id="recent-tab" data-toggle="pill" href="#recent" role="tab" aria-controls="recent" aria-selected="false">Recent</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link border-left-0" id="leads-tab" data-toggle="pill" href="#leads" role="tab" aria-controls="leads" aria-selected="false">Leads</a>
+				    <a class="nav-link border-istar-left-0" id="leads-tab" data-toggle="pill" href="#leads" role="tab" aria-controls="leads" aria-selected="false">Leads</a>
 				  </li>
 				</ul>
 				

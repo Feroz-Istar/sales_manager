@@ -69,7 +69,7 @@
 			aria-labelledby="dropdownMenuButton">
 
 
-			<ul class="list-group dropdown-item w-100 p-0">
+			<ul class="list-group dropdown-item profile_dropdown w-100 p-0">
 				<li class="list-group-item  border-0">
 					<div class="d-flex flex-row align-items-center">
 						<img
