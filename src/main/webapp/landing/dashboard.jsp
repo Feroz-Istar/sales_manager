@@ -580,7 +580,7 @@
 						</div>
 
 						<div class="d-flex">
-							<button type="button" class="btn join_btn f-12 mr-2">JOIN
+							<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2">JOIN
 								NOW</button>
 							<button type="button" class="btn listen_btn f-12">LISTEN</button>
 
@@ -610,7 +610,7 @@
 						<div class="f-16 brownish-grey mb-4">Infogen Consulting Pvt.
 							Ltd</div>
 						<div>
-							<button type="button" class="btn join_btn f-12 mr-2">RESOLVE</button>
+							<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2">RESOLVE</button>
 						</div>
 					</div>
 					<div class="card-footer cream_white">
@@ -641,7 +641,7 @@
 
 
 						<div>
-							<button type="button" class="btn join_btn f-12 mr-2">CHAT
+							<button type="button" class="btn join_btn  istar-btn-hover f-12 mr-2">CHAT
 								NOW</button>
 						</div>
 					</div>
@@ -673,7 +673,7 @@
 					<div class="card-footer pb-2 cream_white">
 						<p class="brownish-grey f-16 ">Louella sent an request for
 							Meeting!</p>
-						<button type="button" class="btn join_btn f-12 mr-2 mb-3">ACCEPT</button>
+						<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2 mb-3">ACCEPT</button>
 						<button type="button" class="btn listen_btn f-12 mb-3">REJECT</button>
 					</div>
 				</div>

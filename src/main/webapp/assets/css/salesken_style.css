@@ -930,9 +930,16 @@ Modifying the scroll bar across the whole application
 .istar-btn-primary:hover{
     background: #bf263f !important;
         color:#ffffff !important;
-    
 }
 
+.istar-btn-hover:hover{
+    background: #bf263f !important;
+        color:#ffffff !important;
+}
+
+.istar-btn-hover:active{
+    background: #f7657d !important;
+}
 /* start of istar */
   .istar-form-control{
  

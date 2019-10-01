@@ -235,7 +235,7 @@
 													</div>
 													<div class="col-md-5"></div>
 													<div class="col-md-3 d-flex justify-content-end">
-														<button class="btn btn-join f-12 font-weight-bold mr-2">JOIN NOW</button>
+														<button class="btn btn-join f-12 font-weight-bold mr-2 istar-btn-hover">JOIN NOW</button>
 														<button class="btn btn-listen f-12 font-weight-bold">LISTEN</button>
 													</div>
 												</div>
