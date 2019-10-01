@@ -9,7 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
-<title>Salesken Dashboard</title>
+<title>Salesken Login</title>
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
@@ -56,21 +56,21 @@
 						<form style="">
 							<div class="form-group mb-4">
 								<label class="f-14 font-weight-bold label_color"
-									for="exampleInputEmail1">Email </label> <input type="email"
-									class="form-control f-14 rounded-0 input_wh"
-									id="exampleInputEmail1" aria-describedby="emailHelp"
+									for="email">Email </label> <input type="email"
+									class="form-control f-14 rounded-0 input_wh" name="email"
+									id="email" aria-describedby="emailHelp"
 									placeholder="Email">
 
 							</div>
 							<div class="form-group mb-4">
 								<label class="f-14 font-weight-bold label_color"
-									for="exampleInputPassword1">Password</label> <input
+									for="password">Password</label> <input
 									type="password" class="form-control f-14 rounded-0 input_wh"
-									id="exampleInputPassword1" placeholder="Password">
+									id="password" placeholder="Password">
 							</div>
 
 							<button type="button"
-								class="btn f-14 text-center w-100 font-weight-bold p-0 rounded-0 mb-4 login_button"
+								class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0 mb-4 login_button"
 								style="">LOGIN</button>
 							<button type="button"
 								class="btn f-14  text-left w-100 font-weight-bold p-0 theme_color "
@@ -118,9 +118,34 @@
 		$(document).ready(function() {
 			console.log("ready!");
 
-			$('.login_button').click(function() {
-				window.location.href = location.href + 'landing/dashboard.jsp'
-			});
+			/*
+				
+				$.post("http://192.168.0.141:8081/javacore/api/global/authenticate",{ email: "John", password: "2pm" },function(data){
+					 console.log(data);
+				}, "json");
+
+				//window.location.href = location.href + 'landing/dashboard.jsp'
+			
+			 */
+			 $('.login_button').click(function() {
+				 
+				 window.location.href = location.href + 'landing/dashboard.jsp';
+				 
+				/*  $.ajax({
+			    contentType: 'application/json',
+			    data: { email: $('#email').val(), password: $('#password').val() },
+			    dataType: 'json',
+			    success: function(data){
+			        console.log(data)
+			    },
+			    error: function(){
+			    	  console.log("Device control failed");
+			    },
+			    processData: false,
+			    type: 'POST',
+			    url: 'http://192.168.0.141:8081/javacore/api/global/authenticate'
+			}); */
+			 });
 		});
 	</script>
 </body>

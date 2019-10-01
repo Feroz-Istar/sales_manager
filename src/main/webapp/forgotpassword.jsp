@@ -75,7 +75,7 @@
 					</div>
 
 
-					<button type="submit" class="btn istar-btn-primary">GENERATE
+					<button type="submit" class="btn istar-btn-primary f-14  font-weight-bold rounded-0 ">GENERATE
 						PASSWORD</button>
 				</form>
 
