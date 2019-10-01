@@ -37,7 +37,7 @@
 				<div class=" f-12 brown-grey " id="breadcrumb">Call Task</div>
 			</div>
 			<div class="col-md-1">
-				<button class="btn listen_btn f-12">
+				<button class="btn listen_btn f-12" data-toggle="modal" data-target="#contactModalCenter">
 					Contacts
 				</button>
 			</div>
@@ -290,7 +290,57 @@
 			
 		</div>
 		
-		
+		<!-- start of contact modal -->
+		<div class="modal fade" id="contactModalCenter" tabindex="-1" role="dialog" aria-labelledby="contactModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+		    <div class="modal-content rounded-0">
+		      <div class="modal-header  mx-3 px-0">
+		        <div class="modal-title greyish-brown f-18 font-weight-bold" id="contactModalCenterTitle">Lead List</div>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+		        <div class="row align-items-center  border-bottom-separation pb-3">
+					<div class="col-md-6 col-6 text-result-found	">
+						<strong class="number-of-results">03</strong> Results Found
+					</div>
+					<div class="col-md-6 col-6 d-md-flex justify-content-end  pr-0">
+						<div class="input-group  pl-2 pr-2 search_width">
+			                <input id="" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+			                <div class="input-group-append">
+			                    <button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="    " >
+			                        <i class="fa fa-search f-12 brown-grey"></i>
+			                    </button>
+			                </div>
+			            </div>					
+					</div>
+				</div>
+				
+				<div class=" h-400">
+				
+				<table class="table table-striped">
+				  <tbody>
+				  <%for(int i=0;i<10;i++){ %>
+				    <tr class="py-2">
+				      <td class=" align-middle	 f-14 greyish-brown"> Globex Corporation Inc.</td>
+				      <td class=" align-middle	 f-14 greyish-brown">Stanley Howard</td>
+				      <td class=" align-middle	f-14 greyish-brown">+91 445 546 6456</td>
+				      <td class="text-right">
+				      	<button class="btn">
+						<img src="<%=baseURL%>assets/image/call.svg" class="brown-grey hw-24">
+					</button>
+				      </td>
+				    </tr>
+				    <%} %>
+				  </tbody>
+				</table>
+			
+		     	</div>
+		    </div>
+		  </div>
+		</div>
+		<!-- end of contact modal -->
 <script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 <script src="<%=baseURL%>assets/js/popper.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
