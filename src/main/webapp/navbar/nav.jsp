@@ -7,7 +7,7 @@
 
 
 <nav class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
-    <a class="navbar-brand f-15 p-0 pr-3" href="#"> <img
+    <a class="navbar-brand f-15 p-0 pr-3" href="/landing/dashboard.jsp"> <img
 		class="appicon img-thumbnail p-0 mr-1 border-0"
 		src="<%=baseURL%>assets/image/nav_icon.png" /></a>
     <div class="d-flex flex-row order-2 order-lg-3">
@@ -70,7 +70,7 @@
 
 
 			<ul class="list-group dropdown-item profile_dropdown w-100 p-0">
-				<li class="list-group-item  border-0">
+				<li class="list-group-item  border-0 cursor-pointer">
 					<div class="d-flex flex-row align-items-center">
 						<img
 							src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg"
@@ -84,15 +84,15 @@
 						</div>
 						</div>
 				</li>
-				<li class="list-group-item border-0 d-flex flex-row">
+				<li class="list-group-item border-0 d-flex flex-row cursor-pointer">
 					<img src="<%=baseURL%>assets/image/person.svg" class="pr-3"/>
 					<div>Switch to Manager</div>
 				</li>
-				<li class="list-group-item border-0 d-flex flex-row">
+				<li class="list-group-item border-0 d-flex flex-row cursor-pointer">
 					<img src="<%=baseURL%>assets/image/setting.svg" class="pr-3"/>
 					<div>My Account</div>
 				</li>
-				<li class="list-group-item border-0 d-flex flex-row">
+				<li class="list-group-item border-0 d-flex flex-row cursor-pointer">
 					<img src="<%=baseURL%>assets/image/signout.svg" class="pr-3"/>
 					<div>Sign Out</div>
 				</li>
