@@ -244,7 +244,7 @@
 						</div>
 						
 						<%for(int j=0; j<10; j++){ %>
-						<div class="row  align-items-center bottom-separation-solid py-4 ">
+						<div class="row  align-items-center bottom-separation-solid py-4 "  onclick="window.location.href = 'userDetail.jsp'">
 							<div class="col-md-2">
 								<div class="row">
 									<div class="col-md-2 mr-2">

@@ -220,7 +220,7 @@
 												    <div class="col-md-4 f-18 font-weight-bold greyish-brown">
 												      Globex Corporation. Inc.
 												    </div>
-												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer">
+												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer" onclick="window.location.href = 'leadDetail.jsp'">
 												     View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
 												 </div>
@@ -434,7 +434,7 @@
 												    <div class="col-md-4 f-18 font-weight-bold greyish-brown">
 												      Opentech Pvt. Ltd.
 												    </div>
-												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer">
+												    <div class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"  onclick="window.location.href = 'leadDetail.jsp'">
 												     View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
 												 </div>
