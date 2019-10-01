@@ -65,7 +65,7 @@
 						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
 					
 					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
-					    <button class="dropdown-item" type="button">
+					    <button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
 					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
 					    Call Task</button>
 					    <button class="dropdown-item" type="button">

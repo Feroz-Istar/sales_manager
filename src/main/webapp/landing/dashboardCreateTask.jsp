@@ -28,19 +28,24 @@
 
 <main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation" >
+		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation justify-content-between" >
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
-				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer" onclick="window.location.href = 'taskDetail.jsp'"></i>
+				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer" onclick="window.location.href = 'dashboard.jsp'"></i>
 				<div class="display-1 black f-20 border-right-separation pr-3 ">Call Task</div>
-				<div class="pl-3 pr-2 f-12 brown-grey ">Task Detail</div>
+				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey " id="breadcrumb">Call Task</div>
+			</div>
+			<div class="col-md-1">
+				<button class="btn listen_btn f-12">
+					Contacts
+				</button>
 			</div>
 		</div>
 		
 		
 		<div class="row bg-white">
-			<div class="col-md-3 cream_white calltabsize" >
+			<div class="col-md-3 cream_white dashboardcalltabsize" >
 			<!--  start of call dialer -->
 				<div  id="calldialer"> 
 					<ul class="saleken nav nav-tabs f-16 custom_dash_padding pl-3 pt-3 pb-0" id="pills-tab" role="tablist" >
@@ -73,11 +78,11 @@
 					  			<div class="f-24 font-weight-bold bblack">1</div>
 					  			<div class="f-12 brown-grey">&nbsp;</div>
 					  		</button>
-					  		<button class="col-md-3 col-3 btn">
+					  		<button class="col-md-3  col-3 btn">
 					  			<div class="f-24 font-weight-bold bblack">2</div>
 					  			<div class="f-12 brown-grey">ABC</div>
 					  		</button>
-					  		<button class="col-md-2 col-2 btn">
+					  		<button class="col-md-2  col-2 btn">
 					  			<div class="f-24 font-weight-bold bblack">3</div>
 					  			<div class="f-12 brown-grey">DEF</div>
 					  		</button>
@@ -111,7 +116,7 @@
 					  		</button>
 					  	</div>
 					  	<div class="row justify-content-center">
-					  		<button class="col-md-2 col-2 btn">
+					  		<button class="col-md-2 col-2  btn">
 					  			<div class="f-24 font-weight-bold bblack">*</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
@@ -129,8 +134,31 @@
 					  			<i class="fas fa-phone-alt f-22 text-white"></i>
 					  		</button>
 					  	</div>
-					  <!-- end of dialer content -->
+					  	<hr>
+					  	<div class="row align-items-center py-2 px-0 mx-0">
+				  			<div class="col-md-10 col-10 p-0">
+				  				<div class="f-18 font-weight-bold bblack">Today’s Call History</div>
+				  			</div>
+				  			<button class="btn col-md-2 col-2 p-0 text-right">
+				  				<img src="<%=baseURL%>assets/image/calendar.svg" class="brown-grey hw-24">
+				  			</button>
+				  		</div>
 					  	
+					  	<div class="h-500">
+					  	<%for(int i=0; i<5; i++){ %>
+					  	<div class="row align-items-center py-3 px-0 mx-0 bottom-dashed-separation">
+				  			<div class="col-md-10 col-10 p-0">
+				  				<div class="f-14 bblack">+91 989 898 8789</div>
+				  				<div class="f-12 brown-grey">05:10 Min</div>
+				  			</div>
+				  			<button class="btn col-md-2 col-2 p-0 text-right">
+				  				<img src="<%=baseURL%>assets/image/callOutgoing.svg" class="brown-grey hw-24"/>
+				  			</button>
+				  		</div>
+				  		<%} %>
+				  		</div>
+						<!-- end of dialer content -->
+						
 					  </div>
 					  
 					  
@@ -147,8 +175,8 @@
 					  		</div>
 					  	</div>
 					  	
-					  	<div class="h-500">
-					  	<%for(int i=0; i<5; i++){ %>
+					  	<div class="h-800">
+					  	<%for(int i=0; i<10; i++){ %>
 					  	<div class="row align-items-center py-3 px-0 mx-0 bottom-dashed-separation">
 				  			<div class="col-md-10 col-10 p-0">
 				  				<div class="f-14 bblack">+91 989 898 8789</div>
@@ -178,11 +206,13 @@
 					  		</div>
 					  	</div>
 					  	
-					  	<div class="h-500">
-					  	<%for(int i=0; i<5; i++){ %>
+					  	
+					  	
+					  	<div class="h-800">
+					  	<%for(int i=0; i<10; i++){ %>
 					  	<div class="row align-items-center py-3 px-0 mx-0  bottom-dashed-separation">
 				  			<div class="col-md-10 col-10 p-0">
-				  				<div class="f-14 bblack">+91 989 898 8789</div>
+				  				<div class="f-14 greyish-brown">+91 989 898 8789</div>
 				  				<div class="f-12 brown-grey">05:10 Min</div>
 				  			</div>
 				  			<button class="btn col-md-2 col-2 p-0 text-right">

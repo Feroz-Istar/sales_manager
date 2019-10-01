@@ -17,6 +17,10 @@
 .calltabsize{
 	height: 625px;
 }
+.dashboardcalltabsize{
+	height: 1095px;
+	
+}
 .shadow-left{
 	box-shadow: -6px 0px 7px -2px #cccccc;
 }
@@ -39,6 +43,10 @@
 .h-500{
 	overflow-y:auto; 
 	height: 500px;
+}
+.h-800{
+	overflow-y:auto; 
+	height: 800px;
 }
 .bottom-dashed-separation{
 	border-bottom: 1px dashed #cccccc;
