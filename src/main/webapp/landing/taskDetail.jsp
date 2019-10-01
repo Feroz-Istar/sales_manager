@@ -169,7 +169,7 @@
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center mh-100">
+										<div class="row align-items-center minh-100">
 											<div class="col-md-9">
 												<div class="d-flex flex-row mb-1">
 													<div
@@ -184,9 +184,9 @@
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg"
-														class="rounded-circle task-icon" /> <img
+														class="rounded-circle hw-30 task-icon" /> <img
 														src="<%=baseURL%>assets/image/37.jpg"
-														class="rounded-circle task-image" />
+														class="rounded-circle hw-40 task-image" />
 												</div>
 											</div>
 										</div>
@@ -270,22 +270,22 @@
 											<div class="col-md-1 p-0">
 												<ul class="list-group shadow ">
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Notes</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Cues</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">CRM</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Chat</div>
 													</li>
@@ -389,7 +389,7 @@
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center mh-100">
+										<div class="row align-items-center minh-100">
 											<div class="col-md-9">
 												<div class="f-16 greyish-brown mb-1">11:00 AM</div>
 												<div class="f-16 font-weight-bold mb-1">Opentech Pvt. Ltd.</div>
@@ -398,9 +398,9 @@
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg"
-														class="rounded-circle task-icon" /> <img
+														class="rounded-circle hw-30 task-icon" /> <img
 														src="<%=baseURL%>assets/image/37.jpg"
-														class="rounded-circle task-image" />
+														class="rounded-circle hw-40 task-image" />
 												</div>
 											</div>
 										</div>
@@ -491,22 +491,22 @@
 											<div class="col-md-1 p-0">
 												<ul class="list-group shadow ">
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Notes</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Cues</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">CRM</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center mh-100">
+														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Chat</div>
 													</li>
