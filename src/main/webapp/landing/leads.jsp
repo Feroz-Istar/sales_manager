@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/alertify.css">
 
 </head>
-<body>
+<body data-base-url="<%=baseURL%>">
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
 	<div class="container-fluid salesken_container">

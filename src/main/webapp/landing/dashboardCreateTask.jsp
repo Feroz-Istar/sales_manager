@@ -23,7 +23,7 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 </head>
-<body>
+<body data-base-url="<%=baseURL%>">
 <jsp:include page="../navbar/nav.jsp"></jsp:include>
 
 <main role="main">

@@ -36,7 +36,7 @@
 	rel="stylesheet">
 
 </head>
-<body>
+<body data-base-url="<%=baseURL%>">
 	
 	<div class="loader-div d-none">
 	<div class="inner-circle-div d-flex align-items-center justify-content-center">
@@ -538,6 +538,38 @@
 			<div class="col-md-3 p-0 pl-md-3 pr-md-3">
 
 
+				<!-- Start of ongoing task list 
+				initially it will be hidden   
+				We will display this container on click of view more click
+				-->
+
+				<div class="ongoing_task_container position-relative"
+					style="display: none;">
+					<div class="row">
+						<div class="col">
+
+							<div class="d-flex mb-3 border-top-task_list ">
+								<div class="mr-auto pt-4 greyish-brown f-16 font-weight-bold">Task
+									List</div>
+								<button type="button"
+									class="close task very-light-pink-bg pt-4 removefocus"
+									aria-label="Close" style="">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+					<div class="ongoing_task_content"></div>
+				</div>
+				<!-- End of ongoing task list (view more click on ongoing task card) -->
+
+
+				<div class="third_main_container">
 				<!-- Start of Associate Join now/Listen card-->
 				<div class="card mb-3 shadow" style="min-height: 313px;">
 					<div class="card-body">
@@ -546,8 +578,8 @@
 								class="mr-auto  bd-highlight theme_color f-20 font-weight-bold">$
 								250</div>
 							<div class=" bd-highlight">
-								<span class="badge badge-danger"
-									style="width: 80px; height: 25px; border-radius: 14px; line-height: 20px; background: #e84c4c !important;">Angry</span>
+								<span class="badge badge-danger istar_badge"
+									>Angry</span>
 							</div>
 						</div>
 						<h5 class="card-title f-18">Accenture Consulting Inc.</h5>
@@ -587,7 +619,7 @@
 						</div>
 					</div>
 					<div class="card-footer cream_white">
-						<div class="d-flex justify-content-end">
+						<div class="d-flex justify-content-end view_more_ongoing_task">
 							<div class="theme_color f-14 font-weight-bold cursor-pointer">
 								04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 							</div>
@@ -610,7 +642,7 @@
 						<div class="f-16 brownish-grey mb-4">Infogen Consulting Pvt.
 							Ltd</div>
 						<div>
-							<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2">RESOLVE</button>
+							<button  class="btn join_btn istar-btn-hover f-12 mr-2"  data-toggle="modal" data-target="#resolvecardmodal">RESOLVE</button>
 						</div>
 					</div>
 					<div class="card-footer cream_white">
@@ -680,6 +712,7 @@
 				<!-- End of accepting incoming call by Associate card-->
 
 
+			</div>
 			</div>
 			<!-- End of right container/third column of dashboard  -->
 
@@ -866,6 +899,36 @@
 	
 	<!-- end of schedule task modal -->
 
+<!-- start of resolve card modal -->
+
+<div class="modal fade" id="resolvecardmodal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered " role="document">
+    <div class="modal-content rounded-0 px-3 ">
+      <div class="row shadow-sm p-3"> 
+					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="createresolveModalCenterTitle">Objection</div>
+					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+      <div class="modal-body">
+		<p class="greyish-brown f-14">Product Price in too expensive, and agents are not supportive and they are not providing information !</p> 
+		<h4 class="greyish-brown f-18 mb-0 font-weight-bold">Martin Franklin</h4>
+		<p class="brownish-grey f-16">Infogen Consulting Pvt. Ltd</p> 
+		<div class="form-group">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type Here"></textarea>
+  </div>
+		     
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn theme_color bg-transparent font-weight-bold" data-dismiss="modal">Reset</button>
+        <button type="button" class="btn  istar-btn-primary" style="width: 140px;">RESOLVE</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- end of resolve card modal -->
 	</div>
 	</main>
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>

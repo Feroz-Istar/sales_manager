@@ -113,6 +113,7 @@
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -128,23 +129,29 @@
 			
 			 */
 			 $('.login_button').click(function() {
+				 //window.location.href = location.href + 'landing/dashboard.jsp';
+				 var obj = { email: $('#email').val(), password: $('#password').val() };
 				 
-				 window.location.href = location.href + 'landing/dashboard.jsp';
-				 
-				/*  $.ajax({
+				  $.ajax({
 			    contentType: 'application/json',
-			    data: { email: $('#email').val(), password: $('#password').val() },
+			    data: JSON.stringify(obj),
 			    dataType: 'json',
-			    success: function(data){
-			        console.log(data)
+			    success: function(data,textStatus,request){
+			       /*  console.log(data);
+			        console.log(textStatus); */
+			        console.log(request.getResponseHeader('Authorization').replace('Bearer ',''));
+			        console.log(SHA256(request.getResponseHeader('Authorization').replace('Bearer ','')));
+
+			        console.log(request);
+
 			    },
 			    error: function(){
 			    	  console.log("Device control failed");
 			    },
 			    processData: false,
 			    type: 'POST',
-			    url: 'http://192.168.0.141:8081/javacore/api/global/authenticate'
-			}); */
+			    url: 'http://192.168.0.140:8081/javacore/api/global/authenticate'
+			}); 
 			 });
 		});
 	</script>

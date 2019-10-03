@@ -93,4 +93,7 @@ width: 80px;
 .custom_dash_padding{
 	padding: 9px 29px;
 }
-
+.istar_badge{
+	width: 80px; height: 25px; border-radius: 14px; line-height: 20px; background: #e84c4c !important;
+	
+}

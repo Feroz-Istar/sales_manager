@@ -768,6 +768,12 @@ Modifying the scroll bar across the whole application
 	border-color: #ed4d67;
 	
 }
+
+.border-top-task_list{
+	border-top: 1px solid #dddddd;
+
+	
+}
 /* end of border */
 .cursor-pointer {
 	cursor: pointer;
@@ -921,8 +927,7 @@ Modifying the scroll bar across the whole application
 
 .istar-btn-primary{
     height: 40px;
-    padding-left:35px;
-    padding-right:35px; 
+   
     font-weight: bold;
     color:#ffffff;
     font-size: 14px;

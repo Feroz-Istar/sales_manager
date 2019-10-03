@@ -30,7 +30,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 </head>
-<body>
+<body data-base-url="<%=baseURL%>">
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
 	<div class="container-fluid salesken_container">
