@@ -568,11 +568,38 @@
 				</div>
 				<!-- End of ongoing task list (view more click on ongoing task card) -->
 
+				<!-- Start of resolve task list 
+				initially it will be hidden   
+				We will display this container on click of view more click
+				-->
+				<div class="task_resolve_container position-relative"
+					style="display: none;">
+					<div class="row">
+						<div class="col">
+
+							<div class="d-flex mb-3 border-top-task_list ">
+								<div class="mr-auto pt-4 greyish-brown f-16 font-weight-bold">RESOLVE</div>
+								<button type="button"
+									class="close resolve_task very-light-pink-bg pt-4 removefocus"
+									aria-label="Close" style="">
+									<span aria-hidden="true">&times;</span>
+								</button>
+							</div>
+
+
+
+						</div>
+
+					</div>
+
+					<div class="task_resolve_content"></div>
+				</div>
+				<!-- End of ongoing task list (view more click on ongoing task card) -->
 
 				<div class="third_main_container">
 				<!-- Start of Associate Join now/Listen card-->
-				<div class="card mb-3 shadow" style="min-height: 313px;">
-					<div class="card-body">
+				<div class="card mb-3 shadow " style="min-height: 313px;">
+					<div class="card-body ongoingtaskcard cursor-pointer">
 						<div class="d-flex">
 							<div
 								class="mr-auto  bd-highlight theme_color f-20 font-weight-bold">$
@@ -642,12 +669,12 @@
 						<div class="f-16 brownish-grey mb-4">Infogen Consulting Pvt.
 							Ltd</div>
 						<div>
-							<button  class="btn join_btn istar-btn-hover f-12 mr-2"  data-toggle="modal" data-target="#resolvecardmodal">RESOLVE</button>
+							<button  class="btn join_btn istar-btn-hover f-12 mr-2 resolvecardmodal" href="/modals/resolvetask.jsp">RESOLVE</button>
 						</div>
 					</div>
 					<div class="card-footer cream_white">
 						<div class="d-flex justify-content-end">
-							<div class="theme_color f-14 font-weight-bold cursor-pointer">
+							<div class="theme_color f-14 font-weight-bold cursor-pointer view_more_resolve_task">
 								04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 							</div>
 						</div>
@@ -911,12 +938,7 @@
 					</button>
 				</div>
       <div class="modal-body">
-		<p class="greyish-brown f-14">Product Price in too expensive, and agents are not supportive and they are not providing information !</p> 
-		<h4 class="greyish-brown f-18 mb-0 font-weight-bold">Martin Franklin</h4>
-		<p class="brownish-grey f-16">Infogen Consulting Pvt. Ltd</p> 
-		<div class="form-group">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Type Here"></textarea>
-  </div>
+		
 		     
       </div>
       <div class="modal-footer">

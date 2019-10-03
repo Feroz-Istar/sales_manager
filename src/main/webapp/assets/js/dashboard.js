@@ -1,4 +1,10 @@
 $(document).ready(function() {
+	
+		/*attaching resolve click to load modal body dynamically for each task resolve card*/
+		loadResolveModal();
+
+		/*ongoingtaskcard is class present in each card of  view more to display list of ongoing task card*/
+		loadOngoingTaskDetail();
 		
 		/* start of rating bar js code */
 		
@@ -77,7 +83,6 @@ $(document).ready(function() {
 		
 		/* click on view more to display list of ongoing task card */
 		$('.view_more_ongoing_task').click(function (){
-			console.log('clicked')
 			var new_card='<div class="card mb-3 shadow cursor-pointer ongoingtaskcard" style="min-height: 263px;"> <div class="card-body"> <div class="d-flex"> <div class="mr-auto bd-highlight theme_color f-20 font-weight-bold">$ 250</div> <div class=" bd-highlight"> <span class="badge badge-danger istar_badge" >Angry</span> </div> </div> <h5 class="card-title f-18">Accenture Consulting Inc.</h5> <div class="f-16 brownish-grey">Robert Wolken</div> <div class="f-12 brown-grey mb-2">Manager</div> <div class="dotted-1 mb-2"></div> <div class="d-flex align-items-center mb-2"> <div class="mr-auto "> <div class="d-flex flex-column"> <div class="brown-grey f-12">Call Task by</div> <div class="brownish-grey f-16">Marry Vasquez</div> </div> </div> <div class=" bd-highlight"> <div class="img-wrapper position-relative"> <img class="hw-66 rounded-circle img-responsive" src="/assets/image/layer.png" /> <div class="img-overlay" style="position: absolute; left: -19px; top: 28%;"> <button class="hw-30 rounded-circle tea border-0" style="z-index: 1; border: 2px solid white !important;"> <i class="fas fa-phone-alt text-white f-12"></i> </button> </div> </div> </div> </div> <div class="d-flex"> <button type="button" class="btn join_btn istar-btn-hover f-12 mr-2">JOIN NOW</button> <button type="button" class="btn listen_btn f-12">LISTEN</button> </div> </div></div>';
 			$('.ongoing_task_content').html(new_card);
 			$('.ongoing_task_content').append(new_card);
@@ -86,7 +91,8 @@ $(document).ready(function() {
 
 			$('.third_main_container').hide();
 			$('.ongoing_task_container').show();
-			
+			loadOngoingTaskDetail();
+
 		});
 		
 		
@@ -97,13 +103,35 @@ $(document).ready(function() {
 			$('.ongoing_task_container').hide();
 		});
 		
-		/*ongoingtaskcard is class present in each card of  view more to display list of ongoing task card*/
-		$('.ongoingtaskcard').click(function (){
+		
+		
+		
+		
+		/* click on view more to display list of resolve task card */
+		$('.view_more_resolve_task').click(function (){
+			var new_card='<div class="card mb-3 shadow resolvetaskcard" style="min-height: 292px;"> <div class="card-body"> <h6 class="card-subtitle mb-2 text-muted f-12 pt-3">June 12, 2019</h6> <p class="card-text greyish-brown f-14">Product Price in too expensive, and agents are not supportive and they are not providing information !</p> <div class="f-18 greyish-brown mb-2">Martin Franklin</div> <div class="f-16 brownish-grey mb-4">Infogen Consulting Pvt. Ltd</div> <div> <button class="btn resolvecardmodal join_btn istar-btn-hover f-12 mr-2" href="/modals/resolvetask.jsp">RESOLVE</button> </div> </div> </div>';
+			$('.task_resolve_content').html(new_card);
+			$('.task_resolve_content').append(new_card);
+			$('.task_resolve_content').append(new_card);
+			$('.task_resolve_content').append(new_card);
+			$('.third_main_container').hide();
+			$('.task_resolve_container').show();
+			/*reattaching resolve click to load modal body dynamically for each task resolve card*/
+			loadResolveModal();
+
+		});
+		
+		/* click to hide view more list of resolve task card. show dashboard view of one ongoing card, resolve card  */
+		$('.close.resolve_task').click(function (){
+			$('.third_main_container').show();
+			$('.task_resolve_container').hide();
+		});
+		
+		/*resolvetaskcard is class present in each card of  view more to display list of resolve task card*/
+		$('.resolvetaskcard').click(function (){
 			
 			
 		});
-		
-		
 		/*setting pie chart default color which is visible in team card of dashboard*/
 		Highcharts.setOptions({
 			colors: ['#57b280', '#6297f6', '#f5a82e', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
@@ -182,3 +210,21 @@ $(document).ready(function() {
 			}]
 		});
 	});
+
+function loadResolveModal(){
+	$('.resolvecardmodal').unbind().click(function (e){
+		  e.preventDefault();
+
+		  $('#resolvecardmodal').modal('show').find('.modal-body').load($(this).attr('href'));
+	});
+}
+
+function loadOngoingTaskDetail(){
+	$('.ongoingtaskcard').unbind().click(function (){
+		//window.location.href = location.href + 'landing/task_lead_detail.jsp'
+		
+		window.location.replace("task_lead_detail.jsp");
+
+	});
+}
+
