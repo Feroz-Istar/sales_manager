@@ -1068,5 +1068,14 @@ padding-right:40px;
 
 /* end of  task detail vertical tab */
 
+.task-icon{
+	z-index: 1;
+    border: 2px solid #ffffff;
+}
+
+.task-image{
+    margin-left: -13px;
+}
+
 
 
