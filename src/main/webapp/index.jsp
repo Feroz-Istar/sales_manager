@@ -140,9 +140,9 @@
 			       /*  console.log(data);
 			        console.log(textStatus); */
 			        console.log(request.getResponseHeader('Authorization').replace('Bearer ',''));
-			        console.log(SHA256(request.getResponseHeader('Authorization').replace('Bearer ','')));
 
 			        console.log(request);
+					window.location.replace("landing/dashboard.jsp");
 
 			    },
 			    error: function(){

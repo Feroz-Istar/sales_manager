@@ -37,7 +37,7 @@
 				<div class="display-1 black f-20 border-right-separation pr-3 ">Leads</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey">Leads</div>
+				<div class=" f-12 brown-grey" id="breadcrumb">Leads</div>
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end">
@@ -990,6 +990,14 @@
 
 	<script src="<%=baseURL%>assets/js/lead.js">
 	
+	</script>
+	<script>
+	$( document ).ready(function() {
+	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+		  var target = $(e.target).html(); // activated tab
+		  $('#breadcrumb').html(target);
+		});
+	});
 	</script>
 </body>
 </html>
