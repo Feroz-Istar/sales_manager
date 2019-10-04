@@ -19,6 +19,8 @@
 	SimpleDateFormat incoming = new SimpleDateFormat("dd-MM-yyyy");
 	String incomingDate = request.getParameter("var") != null ? request.getParameter("var")
 			: sdf.format(new Date());
+	String today_date= sdf.format(new Date());
+	
 %>
 <link rel="icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="<%=baseURL%>favicon.ico"
@@ -34,6 +36,7 @@
 
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/wickedpicker.min.css">
 
 </head>
 <body data-base-url="<%=baseURL%>">
@@ -775,14 +778,14 @@
 					<div class="col-md-6">
 						<div class="f-14 font-weight-bold pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
+							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="event_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
 						<div class="f-14 font-weight-bold pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
+							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker" type="text" name="timepicker"  placeholder="Select here">
 							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
 						</div>	
 					</div>
@@ -903,14 +906,14 @@
 					<div class="col-md-6">
 						<div class="f-14 font-weight-bold pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
+							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
 						<div class="f-14 font-weight-bold pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
+							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_time">
 							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
 						</div>	
 					</div>
@@ -963,6 +966,7 @@
 
 	<script src="<%=baseURL%>assets/js/dashboard.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
+		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
 	
 </body>
 </html>
