@@ -67,15 +67,4 @@
 
 
 
-/* exclusive to pipeline----------- */
-
- .line {
-    width: 72%;
-    height: 1px;
-    border: 1px dashed #eeeeee;
-    position: absolute;
-    top: 11px;
-    left: 93px;
-    }
-    
     

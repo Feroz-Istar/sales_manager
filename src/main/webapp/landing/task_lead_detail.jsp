@@ -240,7 +240,7 @@
 												<div class="row mt-2 ml-3 border-top-task_list">
 													<div class="col-md-4 p-0 m-0" style="	border-right: 1px solid #cccccc;">
 													<%for(int j=0;j<10;j++){ %>
-													<div class="d-flex flex-row  p-3" style="border-bottom: 1px dashed #cccccc;">
+													<div class="d-flex flex-row  p-3 audioitem" style="border-bottom: 1px dashed #cccccc;">
 														<div class="mr-auto">
 														<p class="mb-0 light_gray f-12">06 Mint</p>
 														<p class="mb-0 bblack f-16">Introduction</p>
@@ -317,7 +317,7 @@
 																<h3 class="black f-16 mb-4">Transcript</h3>
 																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
-																<div class="d-flex flex-column pr-5 mr-5 mb-4 audioitem">
+																<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
 																	<p class="f-16 bblack">
 																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
 																		Vargas
@@ -403,7 +403,95 @@
 
 
 					<div class="tab-pane fade" id="leadDetails" role="tabpanel"
-						aria-labelledby="agentDetails-tab">.Lead..</div>
+						aria-labelledby="agentDetails-tab">
+
+						<div class="row align-items-center py-4 shadow-bottom">
+							<div class="col-md-2 col-4">
+								<div class="f-24 font-weight-bold blue-black">$ 8562</div>
+								<div class="f-14 brown-grey">Deal Value</div>
+							</div>
+							<div class="col-md-2 col-4">
+								<div class="f-24 font-weight-bold blue-black">85%</div>
+								<div class="f-14 brown-grey">Confident</div>
+							</div>
+							<div class="col-md-2 col-4">
+								<div class="f-24 font-weight-bold blue-black">65%</div>
+								<div class="f-14 brown-grey">Tentative</div>
+							</div>
+							<div class="col-md-2 col-4">
+								<div class="f-24 font-weight-bold blue-black">Stage 02</div>
+								<div class="f-14 brown-grey">Current Stage</div>
+							</div>
+							<div class="col-md-4 col-12">
+								<div class="row position-relative">
+									<div class="line"></div>
+									<div class="col-md-3 text-center">
+										<i class="fas fa-check-circle  tea-color"></i>
+										<div class="brownish-grey f-14">Need</div>
+									</div>
+									<div class="col-md-3 text-center">
+										<i class="fas fa-check-circle  tea-color"></i>
+										<div class="brownish-grey f-14">Budget</div>
+									</div>
+									<div class="col-md-3 text-center">
+										<i class="fas fa-check-circle  tea-color"></i>
+										<div class="brownish-grey f-14">Authorized</div>
+									</div>
+									<div class="col-md-3 text-center">
+										<i class="fas fa-times-circle pastel-red"></i>
+										<div class="brownish-grey f-14">Urgency</div>
+									</div>
+
+
+
+								</div>
+							</div>
+						</div>
+						
+						<div class="row">
+							<div class="col-md-8">
+								<div class="d-flex">
+								 <div class="mr-auto  black f-16">Information</div>
+  								<div class="p-2 bd-highlight f-22"><i class="fal fa-edit"></i></div>
+								</div>
+								<div class="d-flex mb-3">
+									<div class="d-flex flex-column ">
+										<div class="mr-5 black f-14 font-weight-bold">Robert
+											Wolken</div>
+									<div class="brownish-grey f-14 ">CEO</div>
+									</div>
+									<div class="d-flex flex-column ">
+									<div class="black f-14 font-weight-bold">Johnni Owens</div>
+									<div class="brownish-grey f-14 ">Manager</div>
+
+									</div>
+								</div>
+								<h4 class="black f-14 mb-2 font-weight-bold">About Company</h4>
+								<p class="blue-black f-14 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+								<p class="black f-14 font-weight-bold mb-2">Contact Us</p>
+								<p class="blue-black f-14 mb-1">+91 989 989 8787    &nbsp; &nbsp; |&nbsp;&nbsp;       080 6565 5656 23</p>
+								<p class="blue-black f-14 ">www.openthech.com</p>
+								<p class="blue-black f-14 " style="max-width:200px;">2nd Floor “Makam Plaza” 63/1 Above Kotak Bank, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560055</p>								
+							
+							
+							</div>
+							<div class="col-md-4">
+							<%for(int k=0;k<2;k++){ %>
+							
+							<h4 class="black f-16 mb-3">Objections </h4>
+							<%for(int l=0;l<2;l++){ %>
+							<div class="signal_description border_bottom_1_dashed mb-3">
+							
+							<p class=" brown-grey f-12 mb-2">June 22, 2019</p>
+							<p class="blue-black f-14 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+							</div>
+							<%} }%>
+							</div>
+						
+						</div>
+
+
+					</div>
 				</div>
 			</div>
 		</div>

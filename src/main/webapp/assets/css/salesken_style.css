@@ -805,6 +805,12 @@ Modifying the scroll bar across the whole application
 
 	
 }
+
+.border_bottom_1_dashed{
+		border-bottom: 1px dashed #cccccc;
+	
+}
+
 /* end of border */
 .cursor-pointer {
 	cursor: pointer;
@@ -1203,5 +1209,28 @@ width:100%;}
 
 
 .audioitem.active{
-	
+	 transform:scale(1) !important;
+	 -webkit-transform:scale(1) !important; /* Safari and Chrome */
+    -moz-transform:scale(1) !important;/* Firefox */
+    -ms-transform:sscale(1) !important; /* IE 9 */
+    -o-transform:scale(1) !important; /* Opera */
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
 }
+
+
+
+
+
+/* exclusive to pipeline----------- */
+
+ .line {
+    width: 72%;
+    height: 1px;
+    border: 1px dashed #eeeeee;
+    position: absolute;
+    top: 11px;
+    left: 93px;
+    }
+    
+    
+    
