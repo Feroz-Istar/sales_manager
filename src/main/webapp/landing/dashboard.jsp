@@ -37,7 +37,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/wickedpicker.min.css">
-
+  <link href="<%=baseURL%>assets/css/summernote-bs4.css" rel="stylesheet">
 </head>
 <body data-base-url="<%=baseURL%>">
 	
@@ -196,7 +196,9 @@
 					<!-- Start of Notes tab content -->
 					<div class="tab-pane fade bg-white p-3" id="profile"
 						role="tabpanel" aria-labelledby="profile-tab">
-
+						    <div id="summernote"></div>
+						
+<!-- 
 						<div class="row">
 							<div class="col-md-6 d-flex">
 								<input type="checkbox" name="select_all" value="Bike"
@@ -233,7 +235,7 @@
 							<li>Lorem ipsum dolor sit amet</li>
 							<li>Suspendisse sit amet sem ac tellus</li>
 							<li>Nulla malesuada justo sed diam.</li>
-						</ul>
+						</ul> -->
 
 					</div>
 					<!-- End of Notes tab content -->
@@ -967,6 +969,7 @@
 	<script src="<%=baseURL%>assets/js/dashboard.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
+	    <script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
 	
 </body>
 </html>

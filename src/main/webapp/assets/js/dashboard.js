@@ -230,8 +230,21 @@ function loadOngoingTaskDetail(){
 	});
 }
 function modalFormSetup(){
-	
-	
+	 $('#summernote').summernote({
+	        placeholder: 'Hello bootstrap 4',
+	        tabsize: 2,
+	        height: 800,
+	        callbacks: {
+	            onChange: function(contents, $editable) {
+	            	localStorage.setItem("notes", $('#summernote').summernote('code'))	            	
+	            
+	            }
+	        }
+	      });
+
+	 if(localStorage.getItem('notes'))
+	 $('#summernote').summernote('code', localStorage.getItem('notes'));
+
 	var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time 
 			twentyFour: false, //Display 24 hour format, defaults to false 
 			upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS 

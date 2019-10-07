@@ -190,7 +190,7 @@
 																	aria-controls="whatsright" aria-selected="false">Whats
 																	Right?</a> <a class="nav-item nav-link minw-150"
 																	id="all-tab" data-toggle="tab" href="#all" role="tab"
-																	aria-controls="all" aria-selected="false">all</a>
+																	aria-controls="all" aria-selected="false">All</a>
 															</div>
 														</nav>
 														<div class="tab-content mytab-content"
@@ -207,7 +207,7 @@
 
 												</div>
 
-												<div class="row pt-2 pl-3">
+												<div class="row pt-2 pl-3 mb-5">
 													<div class="col d-flex flex-row justify-content-center">
 
 														<div class="d-flex flex-row align-items-center mr-5">
@@ -240,7 +240,7 @@
 												<div class="row mt-2 pl-3 border-top-task_list">
 													<div class="col-md-4 p-0 m-0" style="	border-right: 1px solid #cccccc;">
 													<%for(int j=0;j<10;j++){ %>
-													<div class="d-flex flex-row  p-2" style="border-bottom: 1px dashed #cccccc;">
+													<div class="d-flex flex-row  p-3" style="border-bottom: 1px dashed #cccccc;">
 														<div class="mr-auto">
 														<p class="mb-0 light_gray f-12">06 Mint</p>
 														<p class="mb-0 bblack f-16">Introduction</p>
@@ -254,7 +254,76 @@
 													<%} %>
 													
 													</div>
-													<div class="col-md-8"></div>
+													<div class="col-md-8 p-0">
+
+
+														<div id="carouselExampleIndicators"
+															class="carousel slide mb-2" data-ride="carousel">
+															<ol class="carousel-indicators">
+																<li data-target="#carouselExampleIndicators"
+																	data-slide-to="0" class="active"></li>
+																<li data-target="#carouselExampleIndicators"
+																	data-slide-to="1"></li>
+																<li data-target="#carouselExampleIndicators"
+																	data-slide-to="2"></li>
+															</ol>
+															<div class="carousel-inner ">
+
+																<%
+																	for (int h = 0; h < 4; h++) {
+																			String isActive = "";
+																			if (h == 0) {
+																				isActive = "active";
+																			}
+																%>
+																<div class="carousel-item  <%=isActive%>">
+
+																	
+																			<div class="row align-items-center ml-3 mr-3"
+																				style="min-height: 170px;">
+																				<div class="col">
+																				<div class="d-flex flex-row">
+																				
+																				<img class="hw-94 mr-5" src="http://localhost:8081/assets/image/Group 3614.svg">
+																				<div class="border-right-blue mr-3"></div>
+																				<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
+																				</div>
+																				</div>
+																			</div>
+																		
+
+
+																</div>
+																<%
+																	}
+																%>
+
+															</div>
+															<a class="carousel-control-prev"
+																href="#carouselExampleIndicators" role="button"
+																data-slide="prev"> <span
+																class="carousel-control-prev-icon" aria-hidden="true"></span>
+																<span class="sr-only">Previous</span>
+															</a> <a class="carousel-control-next"
+																href="#carouselExampleIndicators" role="button"
+																data-slide="next"> <span
+																class="carousel-control-next-icon" aria-hidden="true"></span>
+																<span class="sr-only">Next</span>
+															</a>
+														</div>
+														
+														<div class="row mt-2 pl-3 ">
+														<div class="col">
+															<h3 class="black f-16">Transcript</h3>
+															<div class="d-flex">
+															<p class="f-16 bblack"><small class="f-12 brown-grey">00:20.</small>      Jamie Vargas</p>
+															</div>
+														</div>
+														
+														</div>
+
+
+													</div>
 												</div>
 
 											</div>
