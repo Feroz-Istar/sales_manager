@@ -834,24 +834,28 @@
 		        <div class="col-md-12 istar-dropdown">
 			      <div class="f-14 font-weight-bold pb-1">Lead Name</div>
 
-							     <div class="form-group">
-    <label for="exampleFormControlSelect1">Example select</label>
-    <select class="form-control selectpicker" data-style="salesken" data-live-search="true" id="exampleFormControlSelect1">
+								<div class="form-group">
+									<select class="form-control selectpicker " data-style="removefocus" title="Select here"
+										data-live-search="true" id="exampleFormControlSelect1" >
 
-					<%for(int i=0;i<10;i++){ 
-					    	String bgcolor="bg-white";
-					    	if(i%2==0){
-					    		bgcolor="cream_white";
-					    	}
-					    %>
+										<%
+											for (int i = 0; i < 10; i++) {
+												String bgcolor = "bg-white";
+												if (i % 2 == 0) {
+													bgcolor = "cream_white";
+												}
+										%>
 										<option
-											data-content="<div class='row w-100 pt-2 pb-2 <%=bgcolor%>'>
+											data-content="<div class='row w-100 py-2 px-3 m-0'>
 											 <div class='col-md-4 f-14 font-weight-bold black text-center'>Vehement Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin <%=i%></div> 
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
-											Franklin</option>
-											<%} %>
+											Franklin
+											<%=i%></option>
+										<%
+											}
+										%>
 									</select>
 								</div>
 

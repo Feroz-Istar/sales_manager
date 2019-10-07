@@ -244,7 +244,15 @@ function modalFormSetup(){
 
 	 if(localStorage.getItem('notes'))
 	 $('#summernote').summernote('code', localStorage.getItem('notes'));
-		$('.selectpicker').selectpicker();
+		$('.selectpicker').selectpicker({
+			width : '100%',
+			sanitize : false,
+			showContent : false,
+			sanitizeFn: function (domNodes) {
+			    return DOMPurify.sanitize(domNodes)
+			  }
+			
+		});
 
 	var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time 
 			twentyFour: false, //Display 24 hour format, defaults to false 

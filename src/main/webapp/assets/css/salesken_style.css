@@ -528,6 +528,7 @@ input[type="search"]::-webkit-search-cancel-button {
 		min-width:150px;
 	
 }
+
 /* end of sizing */
 
 /* start of border */
@@ -1134,5 +1135,70 @@ padding-right:40px;
 }
 
 /*boostrap select plugin making width of options text 100% in schedule task dropdown dashboard page*/
+
+.bootstrap-select{
+	border:1px solid #cccccc !important;
+	border-radius: 0px;
+}
 .bootstrap-select .dropdown-menu li a span.text {
 width:100%;}
+
+.selectpicker~.dropdown-menu .dropdown-item.active {
+	background: #FDEDEF !important;
+}
+.selectpicker~.dropdown-menu .dropdown-item{
+		    padding: 0px !important;
+	
+}
+.selectpicker~.dropdown-menu li:nth-child(odd){
+	background:#f9f9f9;
+	border-bottom:1px solid #cccccc !important;
+    outline-color: transparent;
+
+}
+
+.selectpicker~.dropdown-menu li:nth-child(even){
+	background:#ffffff;
+		border-bottom:1px solid #cccccc !important;
+		    outline-color: transparent;
+		
+	
+}
+.selectpicker~.dropdown-menu li>a{
+			    outline-color: transparent;
+	
+}
+
+.selectpicker~.dropdown-menu>.bs-searchbox{
+	padding: 18px 30px 11px 30px!important;
+}
+.selectpicker~.dropdown-menu>.bs-searchbox>input:focus{
+	color: #495057;
+    background-color: #fff;
+   border-color: #ed4d67 !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.selectpicker~.dropdown-menu>.bs-searchbox>input
+{
+	background-image: url(/assets/image/search.svg);
+    background-repeat: no-repeat;
+    background-position: 98% 50%;
+	padding-right:25px;
+	border-radius:0px;
+}
+.bootstrap-select .removefocus.dropdown-toggle:focus{
+	outline: none !important;
+	outline-offset:0px !important;
+	   border-color: #ed4d67 !important;
+	   	 border-radius:0px !important;
+	   
+	
+}
+.selectpicker~.dropdown-menu .dropdown-item:active{
+	background-color:#f7657d;
+	 border-color: #f7657d !important;
+}
+
+
