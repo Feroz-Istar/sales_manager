@@ -237,7 +237,7 @@
 
 													</div>
 												</div>
-												<div class="row mt-2 pl-3 border-top-task_list">
+												<div class="row mt-2 ml-3 border-top-task_list">
 													<div class="col-md-4 p-0 m-0" style="	border-right: 1px solid #cccccc;">
 													<%for(int j=0;j<10;j++){ %>
 													<div class="d-flex flex-row  p-3" style="border-bottom: 1px dashed #cccccc;">
@@ -312,12 +312,12 @@
 															</a>
 														</div>
 														
-														<div class="row mt-2  " >
+														<div class="row mt-2   ml-3 pr-2" >
 															<div class="col">
 																<h3 class="black f-16 mb-4">Transcript</h3>
 																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
-																<div class="d-flex flex-column pr-5 mr-5 mb-4">
+																<div class="d-flex flex-column pr-5 mr-5 mb-4 audioitem">
 																	<p class="f-16 bblack">
 																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
 																		Vargas

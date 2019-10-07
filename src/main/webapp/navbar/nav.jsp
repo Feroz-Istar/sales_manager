@@ -92,7 +92,7 @@
 					<img src="<%=baseURL%>assets/image/setting.svg" class="pr-3"/>
 					<div>My Account</div>
 				</li>
-				<li class="list-group-item border-0 d-flex flex-row cursor-pointer">
+				<li class="list-group-item border-0 d-flex flex-row cursor-pointer signout">
 					<img src="<%=baseURL%>assets/image/signout.svg" class="pr-3"/>
 					<div>Sign Out</div>
 				</li>
