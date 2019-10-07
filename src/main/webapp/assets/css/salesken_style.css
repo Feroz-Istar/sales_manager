@@ -134,6 +134,12 @@ html, body {
 		rgba(0, 0, 0, .14), 0 3px 14px 2px rgba(0, 0, 0, .12);
 }
 
+
+.playaudio.active{
+	background:#ed4d67 !important;
+	border-radius:50%;
+}
+
 /* end of square buttons with icon only */
 
 /* start of navbar css*/
@@ -489,6 +495,11 @@ input[type="search"]::-webkit-search-cancel-button {
 .hw-40 {
 	height: 40px;
 	width: 40px;
+}
+
+.hw-45 {
+	height: 45px;
+	width: 45px;
 }
 
 .hw-66 {
@@ -1121,3 +1132,7 @@ padding-right:40px;
         margin-top: 8px;
     
 }
+
+/*boostrap select plugin making width of options text 100% in schedule task dropdown dashboard page*/
+.bootstrap-select .dropdown-menu li a span.text {
+width:100%;}

@@ -38,6 +38,8 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/wickedpicker.min.css">
   <link href="<%=baseURL%>assets/css/summernote-bs4.css" rel="stylesheet">
+    <link href="<%=baseURL%>assets/css/bootstrap-select.min.css" rel="stylesheet">
+  
 </head>
 <body data-base-url="<%=baseURL%>">
 	
@@ -831,7 +833,29 @@
 	        <div class="row pb-4">
 		        <div class="col-md-12 istar-dropdown">
 			      <div class="f-14 font-weight-bold pb-1">Lead Name</div>
-	      			<button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
+
+							     <div class="form-group">
+    <label for="exampleFormControlSelect1">Example select</label>
+    <select class="form-control selectpicker" data-style="salesken" data-live-search="true" id="exampleFormControlSelect1">
+
+					<%for(int i=0;i<10;i++){ 
+					    	String bgcolor="bg-white";
+					    	if(i%2==0){
+					    		bgcolor="cream_white";
+					    	}
+					    %>
+										<option
+											data-content="<div class='row w-100 pt-2 pb-2 <%=bgcolor%>'>
+											 <div class='col-md-4 f-14 font-weight-bold black text-center'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin</div> 
+											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											  </div>">Miriam
+											Franklin</option>
+											<%} %>
+									</select>
+								</div>
+
+								<%-- <button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
 						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
 						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
 					</button> 	
@@ -863,7 +887,7 @@
 					    </div>
 					    <%} %>
 					    
-					</div>
+					</div> --%>
 				</div>
 				
 	        </div>
@@ -970,6 +994,7 @@
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
 	    <script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
+		<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	
 </body>
 </html>

@@ -35,7 +35,7 @@
 <body data-base-url="<%=baseURL%>">
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
-	<div class="container-fluid salesken_container">
+	<div class="container-fluid salesken_container mb-5">
 		<div
 			class="row grey-white-bg align-items-center py-3 border-bottom-separation">
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
@@ -247,7 +247,7 @@
 														
 														
 														</div>
-														<div>	<button class="btn  mr-1">
+														<div>	<button class="btn  mr-1 hw-45 playaudio">
 															<i class="fas fa-forward"></i>
 														</button></div>
 													</div>
@@ -312,14 +312,43 @@
 															</a>
 														</div>
 														
-														<div class="row mt-2 pl-3 ">
-														<div class="col">
-															<h3 class="black f-16">Transcript</h3>
-															<div class="d-flex">
-															<p class="f-16 bblack"><small class="f-12 brown-grey">00:20.</small>      Jamie Vargas</p>
+														<div class="row mt-2  " >
+															<div class="col">
+																<h3 class="black f-16 mb-4">Transcript</h3>
+																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
+																<%for(int j=0;j<20;j++){ %>
+																<div class="d-flex flex-column pr-5 mr-5 mb-4">
+																	<p class="f-16 bblack">
+																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
+																		Vargas
+																	</p>
+																	<div class="card shadow" style="border-radius: 1.25rem !important;" >
+																		<div class="card-body">
+																			<p class="card-text">Some quick example text to
+																				build on the card title and make up the bulk of the
+																				card's content.</p>
+																		</div>
+																	</div>
+																</div>
+																
+																
+																<div class="d-flex flex-column pl-5 ml-5 mb-4">
+																	<p class="f-16 bblack align-self-end">
+																		<small class="f-12 brown-grey mr-2 ">00:20.</small> Jamie
+																		Vargas
+																	</p>
+																	<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
+																		<div class="card-body">
+																			<p class="card-text">Some quick example text to
+																				build on the card title and make up the bulk of the
+																				card's content.</p>
+																		</div>
+																	</div>
+																</div>
+																<%} %>
+																</div>
 															</div>
-														</div>
-														
+
 														</div>
 
 

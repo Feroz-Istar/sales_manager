@@ -244,6 +244,7 @@ function modalFormSetup(){
 
 	 if(localStorage.getItem('notes'))
 	 $('#summernote').summernote('code', localStorage.getItem('notes'));
+		$('.selectpicker').selectpicker();
 
 	var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time 
 			twentyFour: false, //Display 24 hour format, defaults to false 
