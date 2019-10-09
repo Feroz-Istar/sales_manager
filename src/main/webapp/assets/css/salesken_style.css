@@ -1222,7 +1222,10 @@ width:100%;}
 }
 
 
-
+#extra >li:focus{
+	outline: none;
+    border-left: 4px solid #ed4d67;
+}
 
 
 /* exclusive to pipeline----------- */
@@ -1235,6 +1238,5 @@ width:100%;}
     top: 11px;
     left: 93px;
     }
-    
     
     

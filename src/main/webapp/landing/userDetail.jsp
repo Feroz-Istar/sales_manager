@@ -300,21 +300,18 @@
 																%>
 																<div class="carousel-item  <%=isActive%>">
 
-																	
-																			<div class="row align-items-center ml-3 mr-3"
-																				style="min-height: 170px;">
-																				<div class="col">
-																				<div class="d-flex flex-row">
-																				
-																				<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
-																				<div class="border-right-blue mr-3"></div>
-																				<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
-																				</div>
-																				</div>
-																			</div>
+																	<div class="row align-items-center ml-3 mr-3"
+																		style="min-height: 170px;">
+																		<div class="col">
+																		<div class="d-flex flex-row">
 																		
-
-
+																		<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
+																		<div class="border-right-blue mr-3"></div>
+																		<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
+																		</div>
+																		</div>
+																	</div>
+																		
 																</div>
 																<%
 																	}
@@ -382,7 +379,7 @@
 
 
 											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100">
+												<ul class="list-group shadow d-flex flex-column h-100" id="extra">
 													<li
 														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
@@ -417,6 +414,8 @@
 								</div>
 							</div>
 						</div>
+						
+					
 						
 						
 						
