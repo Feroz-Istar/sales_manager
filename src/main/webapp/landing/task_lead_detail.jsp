@@ -9,7 +9,7 @@
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="">
-<title>Salesken Dashboard</title>
+<title>Lead Detail</title>
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
@@ -530,7 +530,10 @@
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 
 	<script>
-	
+	$( document ).ready(function() {
+		$('.salesken.navbar-nav>li').removeClass('active');
+		
+	});
 	</script>
 </body>
 </html>
