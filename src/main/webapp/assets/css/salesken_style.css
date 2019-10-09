@@ -313,6 +313,48 @@ html, body {
 }
 /* end of dropdown with task icons */
 
+
+
+/* start of filter button  dropdown */
+.istar-dropdown-filter {
+	position: relative;
+	
+}
+
+
+.istar-dropdown-filter-menu {
+	box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.15) !important;
+	background: #ffffff;
+	border-radius: 6px !important;
+	min-width: 346px !important;
+	margin-top: 0.5rem !important;
+}
+
+.istar-dropdown-filter-menu>.dropdown-item {
+	height: 50px !important;
+	font-size: 14px !important;
+	color: #999999 !important;
+	display: flex;
+	align-items: center;
+	padding: 0 20px !important;
+}
+
+.istar-dropdown-filter-menu>.dropdown-item:hover {
+	background: #eeeeee !important;
+	color: #222222 !important;
+	font-weight: bold !important;
+}
+
+.istar-dropdown-filter-menu>.dropdown-item>.task-dropdown {
+	height: 25px !important;
+	width: 25px !important;
+	margin-right: 0.5rem !important;
+}
+/* end of filter button dropdown */
+
+
+
+
 /* start of lead dropdown */
 .lead-dropdown-menu {
 	max-height: 310px !important;
@@ -393,14 +435,17 @@ html, body {
 	border: 1px solid #cccccc !important;
 	border-radius: 0;
 }
-
 .filter-btn:focus {
 	outline: none !important;
 	box-shadow: 0 0 0 0.1rem #fff;
-	color: #ed4d67;
+	background: #ed4d67;
 }
 
-.filtericon {
+.filter-btn:focus> .filtericon {
+	font-size: 14px;
+	color: #fff !important;
+}
+.filtericon{
 	font-size: 14px;
 	color: #999999 !important;
 }
@@ -1239,4 +1284,42 @@ width:100%;}
     left: 93px;
     }
     
-    
+/* start of checkbox */
+.istar-checkbox {
+    display: none;
+}
+.istar-checkbox:checked ~ .istar-checkbox-style {
+    border-color: transparent;
+    border: none;
+    background: #ed4d67;
+    animation: jelly 0.6s ease;
+}
+.istar-checkbox-style {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #999999;
+    vertical-align: middle;
+    transition: background 0.1s ease;
+    cursor: pointer;
+    margin: 0;
+}
+.istar-checkbox:checked ~ .istar-checkbox-style:after {
+    opacity: 1;
+    transform: rotate(45deg) scale(1);
+}
+
+.istar-checkbox-style:after {
+  	content: '';
+    position: absolute;
+    top: 1px;
+    left: 7px;
+    width: 7px;
+    height: 13px;
+    opacity: 0;
+    transform: rotate(45deg) scale(0);
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    transition: all 0.3s ease;
+    transition-delay: 0.15s;
+/* end of checkbox */

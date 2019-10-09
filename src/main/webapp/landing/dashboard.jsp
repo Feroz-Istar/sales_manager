@@ -833,8 +833,7 @@
 	        <div class="row pb-4">
 		        <div class="col-md-12 istar-dropdown">
 			      <div class="f-14 font-weight-bold pb-1">Lead Name</div>
-
-								<div class="form-group">
+							<div class="form-group">
 									<select class="form-control selectpicker " data-style="removefocus" title="Select here"
 										data-live-search="true" id="exampleFormControlSelect1" >
 

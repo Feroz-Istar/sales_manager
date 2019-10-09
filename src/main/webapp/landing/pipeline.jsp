@@ -22,7 +22,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/pipeline.css">
-
+<link href="<%=baseURL%>assets/css/bootstrap-select.min.css" rel="stylesheet">
 
 </head>
 <body data-base-url="<%=baseURL%>">
@@ -67,7 +67,7 @@
 										<input type="text" id="pipeline_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012">
 										<div class="input-group-addon" onclick="showCalendar()">
-											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1">
 										</div>
 									</div>	
 									<select
@@ -84,10 +84,79 @@
 										<option>Default select</option>
 									</select>
 	
-									<button
-										class=" filter-btn">
-										<i class="fas fa-filter f-14 brown-grey"></i>
-									</button>
+									
+									<div class="istar-dropdown-filter">
+										<button
+											class="filter-btn"
+											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+											<i class="fas fa-filter filtericon"></i>
+										</button>
+										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-filter-menu px-2">
+												<ul class="nav nav-tabs nav-mytabs" id="myTab" role="tablist">
+												  <li class="nav-item">
+												    <a class="nav-link active" id="individual-tab" data-toggle="tab" href="#individual" role="tab" aria-controls="individual" aria-selected="true">Individual</a>
+												  </li>
+												  <li class="nav-item">
+												    <a class="nav-link" id="team-tab" data-toggle="tab" href="#team" role="tab" aria-controls="team" aria-selected="false">Team</a>
+												  </li>
+												 
+												</ul>
+												<div class="tab-content" id="myTabContent">
+												  <div class="tab-pane fade show active p-2" id="individual" role="tabpanel" aria-labelledby="individual-tab">
+												  		<div class="input-group py-2">
+															<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class="" style="max-height:578px; overflow-y:auto;">
+														<%for(int i=0; i<20;i++){ %>
+														<div class="d-flex align-items-center pt-3">
+					                                        <input class="istar-checkbox" id="associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="associate-checkbox<%=i %>"></label>
+					                                        <img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+					                                        <div>
+					                                        	<div class="f-14 font-weight-bold greyish-brown">Robert Garcia</div>
+					                                        	<div class="f-12  brownish-grey">Team -02</div>
+					                                        </div>
+					                                    </div>
+					                                    <%} %>
+					                                    </div>
+					                                    
+					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold">Submit</button>		
+					                                 </div>
+					                                			                                 
+												  <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+												  		
+												  		<div class="input-group py-2">
+															<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class="" style="max-height:578px; overflow-y:auto;">
+														<%for(int j=0; j<20;j++){ %>
+														<div class="d-flex align-items-center pt-3">
+					                                        <input class="istar-checkbox" id="team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
+					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+					                                    </div>
+					                                    <%} %>
+					                                    </div>
+					                                    
+					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold">Submit</button>	
+												  		
+												  </div>
+												</div>
+										  </div>
+										
+									</div> 
 								
 							</div>
 						</div>
@@ -263,6 +332,7 @@
 	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 		<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 		<script src="<%=baseURL%>assets/js/salesken.js"></script>
+		<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script>
 	$( document ).ready(function() {
 		$('.salesken.navbar-nav>li').removeClass('active');
