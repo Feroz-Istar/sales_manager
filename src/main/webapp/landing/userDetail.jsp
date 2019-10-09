@@ -21,6 +21,8 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/jquery.rateyo.css">
+
 </head>
 <body data-base-url="<%=baseURL%>">
 
@@ -424,16 +426,173 @@
 						
 				  <div class="tab-pane fade" id="agentDetails" role="tabpanel" aria-labelledby="agentDetails-tab">
 				  	<!-- start of agent detail content -->		
-				  	<div class="row">		
-				  		<div class="col-md-2">		
-				  			<img src="<%=baseURL%>assets/image/11.png" class="hw-60" />		
+				  	<div class="row mt-4">				
+				  		<div class="col-md-6">	
+				  			<div class="d-flex">	
+				  				<img src="<%=baseURL%>assets/image/11.png" class="hw-60" />
+				  				<div class="ml-4">
+				  					<div class="f-16 font-weight-bold black">Stanley Howard</div>
+						  			<div class="d-flex align-items-center">		
+						  				<div class="p-0 rateYo mr-4" data-rating="3"></div>
+						  				<i class="far fa-thumbs-up mr-2 f-24 brown-grey"></i>
+						  				<div class="greyish-brown f-16 mr-1">12</div>
+						  				<div class="brown-grey f-14">Likes</div>
+						  			</div>	
+				  				</div>
+				  			</div>
 				  		</div>		
-				  		<div class="col-md-4">		
-				  			<div class="">Stanley Howard</div>		
-				  			<div class="">asdsadsa</div>		
+				  		<div class="col-md-6 text-right	">
+				  			<div class="d-flex align-items-center justify-content-end">
+					  			<img src="<%=baseURL%>assets/image/people.svg" class="mr-2" />
+					  			<div class="f-14 greyish-brown mr-4">Team North</div>
+					  			<img src="<%=baseURL%>assets/image/mail.svg" class="mr-2" />
+					  			<div class="f-14 greyish-brown mr-4">stanleyhoward@gmail.com</div>
+					  			<img src="<%=baseURL%>assets/image/call.svg" class="mr-2" />
+					  			<div class="f-14 greyish-brown mr-4">(741)-210-1851</div>
+					  			<img src="<%=baseURL%>assets/image/edit.svg"/>
+				  			</div>
 				  		</div>		
-				  		<div class="col-md-6 text-right">asdada</div>		
 				  	</div>		
+				  	
+				  	<div class="row py-3 border-bottom-dashed-separation ">
+				  		<div class="col-md-2 border-right-dashed-separation">
+				  			<div class="row">
+				  				<div class="col-md-3 align-self-center">
+				  					<img src="<%=baseURL%>assets/image/task.svg" class="hw-45" />
+				  				</div>
+				  				<div class="col-md-9">
+				  					<div class="f-24 blue-black font-weight-bold">40</div>
+									<div class="f-14 brown-grey font-weight-bold">Total Tasks </div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="col-md-2 border-right-dashed-separation">
+				  			<div class="row">
+				  				<div class="col-md-3 align-self-center">
+				  					<img src="<%=baseURL%>assets/image/donecircle.svg" class="hw-45" />
+				  				</div>
+				  				<div class="col-md-9">
+				  					<div class="f-24 blue-black font-weight-bold">24</div>
+									<div class="f-14 brown-grey font-weight-bold">Completed Tasks </div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="col-md-2 border-right-dashed-separation">
+				  			<div class="row">
+				  				<div class="col-md-3 align-self-center">
+				  					<img src="<%=baseURL%>assets/image/call.svg" class="hw-45" />
+				  				</div>
+				  				<div class="col-md-9">
+				  					<div class="f-24 blue-black font-weight-bold">34</div>
+									<div class="f-14 brown-grey font-weight-bold">Call Tasks </div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="col-md-2 border-right-dashed-separation">
+				  			<div class="row">
+				  				<div class="col-md-3 align-self-center">
+				  					<img src="<%=baseURL%>assets/image/mail.svg" class="hw-45" />
+				  				</div>
+				  				<div class="col-md-9">
+				  					<div class="f-24 blue-black font-weight-bold">12</div>
+									<div class="f-14 brown-grey font-weight-bold">Email Tasks </div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="col-md-2 border-right-dashed-separation">
+				  			<div class="row">
+				  				<div class="col-md-3 align-self-center">
+				  					<img src="<%=baseURL%>assets/image/desktop.svg" class="hw-45" />
+				  				</div>
+				  				<div class="col-md-9">
+				  					<div class="f-24 blue-black font-weight-bold">12</div>
+									<div class="f-14 brown-grey font-weight-bold">Webinar Tasks </div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  		<div class="col-md-2">
+				  			<div class="row">
+				  				<div class="col-md-3 align-self-center">
+				  					<i class="fas fa-video f-30 brown-grey"></i>
+				  				</div>
+				  				<div class="col-md-9">
+				  					<div class="f-24 blue-black font-weight-bold">03</div>
+									<div class="f-14 brown-grey font-weight-bold">Presentation Tasks </div>
+				  				</div>
+				  			</div>
+				  		</div>
+				  	</div>
+				  	
+				  	<div class="row ">
+				  		<div class="col-md-9">
+				  			<div class="row py-3">
+				  				<div class="col-md-3">
+				  					<div class="f-24 blue-black font-weight-bold">$ 2345</div>
+									<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
+				  				</div>
+				  				<div class="col-md-3">
+				  					<div class="f-24 blue-black font-weight-bold">45</div>
+									<div class="f-14 brown-grey font-weight-bold">Won Leads</div>
+				  				</div>
+				  				<div class="col-md-3">
+				  					<div class="f-24 blue-black font-weight-bold">04</div>
+									<div class="f-14 brown-grey font-weight-bold">Lost Leads</div>
+				  				</div>
+				  				<div class="col-md-3">
+				  					<div class="f-24 blue-black font-weight-bold">30</div>
+									<div class="f-14 brown-grey font-weight-bold">Activities Per Lead Won</div>
+				  				</div>
+				  			</div>
+				  			<div class="row border-bottom-dashed-separation py-3">
+				  				<div class="col-md-6">
+		      						<div class="f-14 font-weight-bold black mb-1">Strong Playbook</div>
+		      						<div class="f-14 brownish-grey">Objection,  Qualification <i class="fal fa-info-circle soft-blue"></i></div>
+		      					</div>
+		      					<div class="col-md-6">
+		      						<div class="f-14 font-weight-bold black mb-1">Weak Playbook</div>
+		      						<div class="f-14 brownish-grey">Need Investigation <i class="fal fa-info-circle soft-blue"></i></div>
+		      					</div>
+				  			</div>
+				  			<div class="row py-3">
+				  				<div class="col-md-6">Disposition</div>
+				  			</div>
+				  			
+				  			<div class="row">
+		  					<table class="table table-striped pt-3">
+								  <thead>
+								    <tr>
+								      <th class="f-14" scope="col">Lead Names</th>
+								      <th class="f-14" scope="col">Follow-Ups </th>
+								      <th class="f-14" scope="col">Talk Ratio</th>
+								      <th class="f-14" scope="col">Connected Call</th>
+								    </tr>
+								  </thead>
+								  <tbody>
+								  
+								  <%for(int i=0;i<10;i++){ %>
+								    <tr>
+								      <td class="py-4">Massive Dynamic Pvt. Ltd.</td>
+								      <td class="py-4">45</td>
+								      <td class="py-4">20%</td>
+								      <td class="py-4">03</td>
+								    </tr>
+								    <%}%>
+								   </tbody>
+							  </table>
+				  			</div>
+				  		</div>
+				  			
+				  		<div class="col-md-3 cream_white p-3 ">
+				  			<div class="f-16 font-weight-bold black">Comments</div>
+				  			
+				  			<%for(int i=0;i<3;i++){ %>
+				  			<div class="f-12 pt-4 brown-grey">June 22, 2019</div>
+				  			<div class="f-14 greyish-brown font-weight-bold mb-2">Lawrence Lynch</div>
+				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-4">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
+				  			<%} %>
+				  		</div>				  		
+				  	</div>				  	
+				 
 				  	<!-- end of agent detail content -->
 				  
 				  </div>
@@ -451,9 +610,29 @@
 <script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
+<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
+
 <script>
 	$( document ).ready(function() {
 		$('#task_datepicker').datepicker({autoclose:true});
+		$('.salesken.navbar-nav>li').removeClass('active');
+
+		/* start of rating bar js code */
+		$(".rateYo").each(function(index) {
+			console.log(typeof $(this).attr('data-rating'))
+			$(this).rateYo({
+				rating: $(this).attr('data-rating'),
+				spacing: "0px",
+				    starWidth: "18px",
+				    readOnly: true,
+				    ratedFill: "#f79c0d",
+				    normalFill: "#dddddd",
+				'starSvg': '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">     <defs>         <style>             .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}      </style>         <clipPath id="clip-path">             <path d="M0 0h24v24H0z" class="cls-1"/>         </clipPath>     </defs>     <g id="Component" class="cls-2">         <path id="Rectangle_936" d="M0 0h24v24H0z" class="cls-1" data-name="Rectangle 936"/>         <path id="Path_59" d="M965.57 1814.81a.846.846 0 0 1-.461-.136l-4.78-3.1-4.78 3.1a.848.848 0 0 1-1.277-.942l1.5-5.3-4.467-3.776a.848.848 0 0 1 .487-1.494l5.359-.385 2.412-5.276a.848.848 0 0 1 1.543 0l2.412 5.276 5.359.385a.848.848 0 0 1 .487 1.494l-4.468 3.776 1.5 5.3a.848.848 0 0 1-.816 1.078zm-5.241-5.092a.847.847 0 0 1 .461.136l3.353 2.172-1.034-3.664a.848.848 0 0 1 .269-.878l3.294-2.785-3.783-.272a.848.848 0 0 1-.711-.493l-1.849-4.046-1.849 4.046a.848.848 0 0 1-.711.493l-3.783.272 3.294 2.785a.848.848 0 0 1 .269.878l-1.034 3.664 3.353-2.172a.847.847 0 0 1 .461-.136z" class="cls-3" data-name="Path 59" transform="translate(-948 -1794)"/>     </g> </svg> '
+			});
+		});
+		/* end of rating bar js code */
+		
+		
 	});
 	function showCalendar(){
 		$('#task_datepicker').datepicker('show')
