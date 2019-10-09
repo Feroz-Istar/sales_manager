@@ -85,14 +85,15 @@
 									</select>
 	
 									
-									<div class="istar-dropdown-filter">
+									<div class="dropdown dropleft" id="filterbutton">
 										<button
 											class="filter-btn"
 											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 											<i class="fas fa-filter filtericon"></i>
 										</button>
-										 <div class="dropdown-menu dropdown-menu-right istar-dropdown-filter-menu px-2">
-												<ul class="nav nav-tabs nav-mytabs" id="myTab" role="tablist">
+										 <div class="dropdown-menu  dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
+													
+												<ul class="nav nav-tabs nav-mytabs filtertabs" id="myTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="individual-tab" data-toggle="tab" href="#individual" role="tab" aria-controls="individual" aria-selected="true">Individual</a>
 												  </li>
@@ -103,7 +104,7 @@
 												</ul>
 												<div class="tab-content" id="myTabContent">
 												  <div class="tab-pane fade show active p-2" id="individual" role="tabpanel" aria-labelledby="individual-tab">
-												  		<div class="input-group py-2">
+												  		<div class="input-group py-3">
 															<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
@@ -112,26 +113,29 @@
 															</div>
 														</div>
 														
-														<div class="" style="max-height:578px; overflow-y:auto;">
+														<div class=" mb-5"  style="height:230px; overflow-x: hidden; overflow-y:auto;">
+														
 														<%for(int i=0; i<20;i++){ %>
-														<div class="d-flex align-items-center pt-3">
-					                                        <input class="istar-checkbox" id="associate-checkbox<%=i %>" type="checkbox">
+					                                    <div class="d-flex align-items-center pt-3">
+					                                    
+					                                    
+									<input class="istar-checkbox agentcheckbox" data-id="<%=i %>" id="associate-checkbox<%=i %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="associate-checkbox<%=i %>"></label>
-					                                        <img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-					                                        <div>
+											<img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown">Robert Garcia</div>
 					                                        	<div class="f-12  brownish-grey">Team -02</div>
 					                                        </div>
-					                                    </div>
-					                                    <%} %>
+										</div>
+										<%} %>
 					                                    </div>
 					                                    
-					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold">Submit</button>		
+					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold agentsubmit">Submit</button>		
 					                                 </div>
 					                                			                                 
 												  <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
 												  		
-												  		<div class="input-group py-2">
+												  		<div class="input-group py-4">
 															<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
@@ -140,17 +144,17 @@
 															</div>
 														</div>
 														
-														<div class="" style="max-height:578px; overflow-y:auto;">
+														<div class="mb-5" style="height:230px; overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
-					                                        <input class="istar-checkbox" id="team-checkbox<%=j %>" type="checkbox">
+					                                        <input class="istar-checkbox teamcheckbox" data-id="<%=j %>" id="team-checkbox<%=j %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
 					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
 					                                    </div>
 					                                    <%} %>
 					                                    </div>
 					                                    
-					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold">Submit</button>	
+					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold teamsubmit">Submit</button>	
 												  		
 												  </div>
 												</div>
@@ -350,8 +354,44 @@
 	</script>
 	<script>
 	$( document ).ready(function() {
-		$('#pipeline_datepicker').datepicker({autoclose:true})
+		$('#pipeline_datepicker').datepicker({autoclose:true});
+		
+		$('.teamsubmit').click(function (){
+			var myarray=[];
+			$('.teamcheckbox:checked').each(function () { 
+				if(this.checked){
+					myarray.push($(this).data('id'));
+				}
+				
+			});
+			alert('team submit ids are '+myarray.join(','));
+			$("body").trigger("click")
+
 		});
+		
+		$('.agentsubmit').click(function(){
+			var myarray=[];
+			$('.agentcheckbox:checked').each(function () { 
+				if(this.checked){
+					myarray.push($(this).data('id'));
+				}
+				
+			});
+			alert('agent submit ids are '+myarray.join(','));
+			$("body").trigger("click")
+
+
+
+		});
+		$('.dropdown-menu').on('click.bs.dropdown', function (e) {
+		     e.stopPropagation(); 
+		});
+			 $('.dropdown-menu > ul > li > a').on('click', function(event){
+			  event.stopPropagation();
+			  $(this).tab('show')
+			 });
+		});
+	
 	
 	function showCalendar(){
 		$('#pipeline_datepicker').datepicker('show')
