@@ -170,7 +170,7 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}
 		      			%>
-		      		<div class="row py-4 bottom-separation-solid align-items-center <%=bgcolor%>" onclick="window.location.href = 'leadDetail.jsp'">
+		      		<div class="row py-4 bottom-separation-solid align-items-center <%=bgcolor%>" onclick="window.location.href = 'task_lead_detail.jsp'">
 		      			<div class="col-md-2">
 		      				<div class="f-14 black font-weight-bold">Accenture Consulting Inc.</div>
 		      				<div class="f-14 brownish-grey font-weight-bold">$ 290</div>

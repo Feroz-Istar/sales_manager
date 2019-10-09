@@ -835,6 +835,7 @@ Modifying the scroll bar across the whole application
 	opacity: 0.9;
 	transition: all 0.1s ease-in-out;
 	font-weight: normal;
+	text-align: center;
 }
 
 .nav-mytabs a.active, .nav-mytabs a:hover {

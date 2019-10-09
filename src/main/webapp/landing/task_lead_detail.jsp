@@ -92,9 +92,9 @@
 										<div class="row align-items-center minh-100">
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
-													<img src="http://localhost:8081/assets/image/calltask.svg"
+													<img src="<%=baseURL%>assets/image/calltask.svg"
 														class="rounded-circle hw-30 task-icon"> <img
-														src="http://localhost:8081/assets/image/37.jpg"
+														src="<%=baseURL%>assets/image/37.jpg"
 														class="rounded-circle hw-40 task-image">
 												</div>
 											</div>
@@ -230,7 +230,7 @@
 														<div class="d-flex flex-row align-items-center">
 															<img src="<%=baseURL%>assets/image/layer.png"
 																class="rounded-circle hw-60 task-image-right"> <img
-																src="http://localhost:8081/assets/image/calltask.svg"
+																src="<%=baseURL%>assets/image/calltask.svg"
 																class="rounded-circle hw-40 task-icon">
 
 														</div>
@@ -284,7 +284,7 @@
 																				<div class="col">
 																				<div class="d-flex flex-row">
 																				
-																				<img class="hw-94 mr-5" src="http://localhost:8081/assets/image/Group 3614.svg">
+																				<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
 																				<div class="border-right-blue mr-3"></div>
 																				<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
 																				</div>
@@ -451,8 +451,10 @@
 						<div class="row">
 							<div class="col-md-8">
 								<div class="d-flex">
-								 <div class="mr-auto  black f-16">Information</div>
-  								<div class="p-2 bd-highlight f-22"><i class="fal fa-edit"></i></div>
+								 <div class="mr-auto  black f-16 font-weight-bold">Information</div>
+  								<div class="p-2 bd-highlight f-22">
+  									<img src="<%=baseURL%>assets/image/edit.svg" class="">
+								</div>
 								</div>
 								<div class="d-flex mb-3">
 									<div class="d-flex flex-column ">
@@ -471,9 +473,23 @@
 								<p class="black f-14 font-weight-bold mb-2">Contact Us</p>
 								<p class="blue-black f-14 mb-1">+91 989 989 8787    &nbsp; &nbsp; |&nbsp;&nbsp;       080 6565 5656 23</p>
 								<p class="blue-black f-14 ">www.openthech.com</p>
-								<p class="blue-black f-14 " style="max-width:200px;">2nd Floor “Makam Plaza” 63/1 Above Kotak Bank, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560055</p>								
-							
-							
+								<p class="blue-black f-14" style="max-width:200px;">2nd Floor “Makam Plaza” 63/1 Above Kotak Bank, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560055</p>								
+								
+								<div class="border-bottom-dashed-separation mb-3"></div>
+								
+								<div class="d-flex">
+								 	<div class="mr-auto  black f-16 font-weight-bold">CRM Fields</div>
+  									<div class="p-2 bd-highlight f-22">
+  										<img src="<%=baseURL%>assets/image/edit.svg" class="">
+									</div>
+								</div>
+								
+								<%for(int m=0;m<2;m++){ %>
+								<div class="d-flex flex-column mb-3">
+									<div class="f-14 font-weight-bold black">Question <%= (m+1) %></div>
+									<div class="f-14 blue-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</div>
+								</div>
+								<%} %>
 							</div>
 							<div class="col-md-4">
 							<%for(int k=0;k<2;k++){ %>
