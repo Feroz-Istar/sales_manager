@@ -442,7 +442,10 @@
 										<option>Default select</option>
 									</select>
 	
-									<jsp:include page="../popover/agentteamfilter.jsp"></jsp:include>
+									<button
+										class=" filter-btn">
+										<i class="fas fa-filter f-14 brown-grey"></i>
+									</button>
 								
 							</div>
 						</div>
