@@ -91,7 +91,7 @@
 											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 											<i class="fas fa-filter filtericon"></i>
 										</button>
-										 <div class="dropdown-menu  dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
+										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
 													
 												<ul class="nav nav-tabs nav-mytabs filtertabs" id="myTab" role="tablist">
 												  <li class="nav-item">
@@ -130,7 +130,7 @@
 										<%} %>
 					                                    </div>
 					                                    
-					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold agentsubmit">Submit</button>		
+					                                     		
 					                                 </div>
 					                                			                                 
 												  <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
@@ -154,9 +154,10 @@
 					                                    <%} %>
 					                                    </div>
 					                                    
-					                                     <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold teamsubmit">Submit</button>	
+					                                     	
 												  		
 												  </div>
+												  <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold agentteamsubmit">Submit</button>
 												</div>
 										  </div>
 										
@@ -356,37 +357,32 @@
 	$( document ).ready(function() {
 		$('#pipeline_datepicker').datepicker({autoclose:true});
 		
-		$('.teamsubmit').click(function (){
-			var myarray=[];
-			$('.teamcheckbox:checked').each(function () { 
-				if(this.checked){
-					myarray.push($(this).data('id'));
-				}
-				
-			});
-			alert('team submit ids are '+myarray.join(','));
-			$("body").trigger("click")
-
-		});
-		
-		$('.agentsubmit').click(function(){
-			var myarray=[];
+	
+		$('.agentteamsubmit').click(function(){
+			var agentarray=[];
 			$('.agentcheckbox:checked').each(function () { 
 				if(this.checked){
-					myarray.push($(this).data('id'));
+					agentarray.push($(this).data('id'));
 				}
 				
 			});
-			alert('agent submit ids are '+myarray.join(','));
+			var teamarray=[];
+			$('.teamcheckbox:checked').each(function () { 
+				if(this.checked){
+					teamarray.push($(this).data('id'));
+				}
+				
+			});
+			alert('agent submit ids are '+agentarray.join(',')+" team submit are "+teamarray.join(','));
 			$("body").trigger("click")
 
 
 
 		});
-		$('.dropdown-menu').on('click.bs.dropdown', function (e) {
+		$('.filter-menu').on('click.bs.dropdown', function (e) {
 		     e.stopPropagation(); 
 		});
-			 $('.dropdown-menu > ul > li > a').on('click', function(event){
+			 $('.filter-menu > ul > li > a').on('click', function(event){
 			  event.stopPropagation();
 			  $(this).tab('show')
 			 });
