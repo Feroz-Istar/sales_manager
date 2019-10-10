@@ -124,9 +124,10 @@
 
 								</div>
 
-								<button class=" filter-btn">
-									<i class="fas fa-filter f-14 brown-grey"></i>
-								</button>
+								<button class="targetpopup filter-btn"
+											id="activity"> 
+											<i class="fas fa-filter filtericon"></i>
+										</button>
 
 							</div>
 						</div>
@@ -293,10 +294,10 @@
 									<option>Default select</option>
 								</select>
 
-								<button class=" filter-btn">
-									<i class="fas fa-filter f-14 brown-grey"></i>
+								<button class="qualifiedpopup filter-btn"
+									id="activity"> 
+									<i class="fas fa-filter filtericon"></i>
 								</button>
-
 							</div>
 						</div>
 
@@ -470,10 +471,11 @@
 									<option>Default select</option>
 								</select>
 
-								<button class=" filter-btn">
-									<i class="fas fa-filter f-14 brown-grey"></i>
+								<button
+									class="lostpopup filter-btn"
+									id="activity"> 
+									<i class="fas fa-filter filtericon"></i>
 								</button>
-
 							</div>
 						</div>
 
@@ -624,10 +626,10 @@
 									<option>Default select</option>
 								</select>
 
-								<button class=" filter-btn">
-									<i class="fas fa-filter f-14 brown-grey"></i>
+								<button class="wonpopup filter-btn"
+									id="activity"> 
+									<i class="fas fa-filter filtericon"></i>
 								</button>
-
 							</div>
 						</div>
 
@@ -996,8 +998,28 @@
 	$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
 		  var target = $(e.target).html(); // activated tab
 		  $('#breadcrumb').html(target);
+		    $('.targetpopup').popover('hide');
+		    $('.qualifiedpopup').popover('hide');
+		    $('.lostpopup').popover('hide');
+		    $('.wonpopup').popover('hide');
+
+		    
 		});
 	});
+	</script>
+	<script>
+	
+
+	$( document ).ready(function() {
+	
+		
+		
+		
+
+	});
+	
+
+	
 	</script>
 </body>
 </html>

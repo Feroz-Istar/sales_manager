@@ -80,7 +80,7 @@
 	<div class="col-md-12 bg-white">
 
 				<nav>
-				  <div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs" role="tablist">
+				  <div class="nav nav-tabs nav-mytabs taskdetailtab pt-2" id="nav-tabs" role="tablist">
 				  	<a class="nav-item nav-link show active" id="nav-ongoing-tab"
 										data-toggle="tab" href="#nav-ongoing" role="tab"
 										aria-controls="nav-ongoing" aria-selected="true">Ongoing</a> <a
@@ -1053,7 +1053,7 @@
 <script>
 $('.salesken.navbar-nav>li').removeClass('active');
 $($('.salesken.navbar-nav>li')[1]).addClass('active')
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+$('.taskdetailtab  a').on('shown.bs.tab', function (e) {
 	  var target = $(e.target).html(); // activated tab
 	  $('#breadcrumb').html(target);
 
