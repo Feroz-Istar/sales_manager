@@ -93,7 +93,7 @@
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs" id="myTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="myTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="individual-tab" data-toggle="tab" href="#individual" role="tab" aria-controls="individual" aria-selected="true">Individual</a>
 												  </li>
@@ -103,8 +103,8 @@
 												 
 												</ul>
 												<div class="tab-content" id="myTabContent">
-												  <div class="tab-pane fade show active p-2" id="individual" role="tabpanel" aria-labelledby="individual-tab">
-												  		<div class="input-group py-3">
+												  <div class="tab-pane fade show active px-4 py-3" id="individual" role="tabpanel" aria-labelledby="individual-tab">
+												  		<div class="input-group py-2">
 															<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
@@ -113,7 +113,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-5"  style="height:230px; overflow-x: hidden; overflow-y:auto;">
+														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -133,9 +133,9 @@
 					                                     		
 					                                 </div>
 					                                			                                 
-												  <div class="tab-pane fade" id="team" role="tabpanel" aria-labelledby="team-tab">
+												  <div class="tab-pane fade px-4 py-3" id="team" role="tabpanel" aria-labelledby="team-tab">
 												  		
-												  		<div class="input-group py-4">
+												  		<div class="input-group py-2">
 															<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
@@ -144,7 +144,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-5" style="height:230px; overflow-x: hidden; overflow-y:auto;">
+														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox teamcheckbox" data-id="<%=j %>" id="team-checkbox<%=j %>" type="checkbox">
@@ -157,7 +157,9 @@
 					                                     	
 												  		
 												  </div>
-												  <button class="btn w-100 rounded-0 theme_bg text-white f-14 font-weight-bold agentteamsubmit">Submit</button>
+												</div>
+												 <div class="w-100 text-center">
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold agentteamsubmit mb-3 text-center px-3" style="min-width:200px;">Submit</button>
 												</div>
 										  </div>
 										
