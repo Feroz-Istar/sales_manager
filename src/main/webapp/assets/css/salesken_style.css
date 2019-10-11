@@ -1007,7 +1007,7 @@ Modifying the scroll bar across the whole application
 #piplelinestage-tab>.active {
 	background: #ffffff !important;
 	color: #444444 !important;
-	font-weight: bold;
+	font-weight: 500;
 	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
 	border-radius: 0;
 	z-index: 4;

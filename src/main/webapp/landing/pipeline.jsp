@@ -248,18 +248,18 @@
 		      			%>
 		      		<div class="row py-4 bottom-separation-solid align-items-center <%=bgcolor%>" onclick="window.location.href = 'task_lead_detail.jsp'">
 		      			<div class="col-md-2">
-		      				<div class="f-14 black font-weight-bold">Accenture Consulting Inc.</div>
-		      				<div class="f-14 brownish-grey font-weight-bold">$ 290</div>
+		      				<div class="f-14 black fw-500">Accenture Consulting Inc.</div>
+		      				<div class="f-14 brownish-grey fw-500">$ 290</div>
 		      			</div>
 		      			
 		      			<div class="col-md-2">
-		      				<div class="f-14 black font-weight-bold">Robert Wolken</div>
-		      				<div class="f-14 brownish-grey font-weight-bold">Manager</div>
+		      				<div class="f-14 black fw-500">Robert Wolken</div>
+		      				<div class="f-14 brownish-grey fw-500">Manager</div>
 		      			</div>
 		      			
 		      			<div class="col-md-2">
-		      				<div class="f-14 black font-weight-bold">Info@accenture.com</div>
-		      				<div class="f-14 brownish-grey font-weight-bold">+91 888 898 8989</div>
+		      				<div class="f-14 black fw-500">Info@accenture.com</div>
+		      				<div class="f-14 brownish-grey fw-500">+91 888 898 8989</div>
 		      			</div>
 		      			
 		      			<div class="col-md-6">
