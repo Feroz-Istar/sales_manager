@@ -805,15 +805,15 @@
 						<div class="row pb-4">
 							<div class="col-md-4 border-right-separation">
 								<div class="f-14 brownish-grey">Contact Person</div>
-								<div class="f-16 font-weight-bold black">Miriam Franklin</div>
+								<div class="f-16 fw-500 black">Miriam Franklin</div>
 							</div>
 							<div class="col-md-4 border-right-separation">
 								<div class="f-14 brownish-grey">Recent Task</div>
-								<div class="f-16 font-weight-bold black">Call</div>
+								<div class="f-16 fw-500 black">Call</div>
 							</div>
 							<div class="col-md-4 ">
 								<div class="f-14 brownish-grey">Deal Value</div>
-								<div class="f-16 font-weight-bold black">$ 208</div>
+								<div class="f-16 fw-500 black">$ 208</div>
 							</div>
 						</div>
 
@@ -904,7 +904,7 @@
 													class="doc-image-size">
 											</div>
 											<div class="col-md-6">
-												<div class="f-16 font-weight-bold greyish-brown">Drag
+												<div class="f-16 fw-500 greyish-brown">Drag
 													or Drop a Documents</div>
 												<div class="f-14 brown-grey">We support only excel
 													file up to 100 mb.</div>

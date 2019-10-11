@@ -31,10 +31,10 @@
 		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation" >
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
 				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer" onclick="window.location.href = 'taskDetail.jsp'"></i>
-				<div class="display-1 black f-20 border-right-separation pr-3 ">Call Task</div>
+				<div class="display-1 black f-20 fw-500 border-right-separation pr-3 ">Call Task</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Task Detail</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey " id="breadcrumb">Call Task</div>
+				<div class=" f-12 brown-grey fw-500" id="breadcrumb">Call Task</div>
 			</div>
 		</div>
 		
@@ -70,57 +70,57 @@
 					  	
 				  		<div class="row justify-content-center pt-4">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">1</div>
+					  			<div class="f-24 fw-500 bblack">1</div>
 					  			<div class="f-12 brown-grey">&nbsp;</div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">2</div>
-					  			<div class="f-12 brown-grey">ABC</div>
+					  			<div class="f-24 fw-500 bblack">2</div>
+					  			<div class="f-12 brown-grey fw-300">ABC</div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">3</div>
-					  			<div class="f-12 brown-grey">DEF</div>
+					  			<div class="f-24 fw-500 bblack">3</div>
+					  			<div class="f-12 brown-grey fw-300">DEF</div>
 					  		</button>
 					  	</div>
 					  	<div class="row justify-content-center">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">4</div>
-					  			<div class="f-12 brown-grey">GHI</div>
+					  			<div class="f-24 fw-500 bblack">4</div>
+					  			<div class="f-12 brown-grey fw-300">GHI</div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">5</div>
-					  			<div class="f-12 brown-grey">JKL</div>
+					  			<div class="f-24 fw-500 bblack">5</div>
+					  			<div class="f-12 brown-grey fw-300">JKL</div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">6</div>
-					  			<div class="f-12 brown-grey">MNO</div>
+					  			<div class="f-24 fw-500 bblack">6</div>
+					  			<div class="f-12 brown-grey fw-300">MNO</div>
 					  		</button>
 					  	</div>
 					  	<div class="row justify-content-center">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">7</div>
-					  			<div class="f-12 brown-grey">PQRS</div>
+					  			<div class="f-24 fw-500 bblack">7</div>
+					  			<div class="f-12 brown-grey fw-300">PQRS</div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">8</div>
-					  			<div class="f-12 brown-grey">TUV</div>
+					  			<div class="f-24 fw-500 bblack">8</div>
+					  			<div class="f-12 brown-grey fw-300">TUV</div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">9</div>
-					  			<div class="f-12 brown-grey">WXYZ</div>
+					  			<div class="f-24 fw-500 bblack">9</div>
+					  			<div class="f-12 brown-grey fw-300	">WXYZ</div>
 					  		</button>
 					  	</div>
 					  	<div class="row justify-content-center">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">*</div>
+					  			<div class="f-24 fw-500 bblack">*</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">0</div>
+					  			<div class="f-24 fw-500 bblack">0</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">#</div>
+					  			<div class="f-24 fw-500 bblack">#</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
 					  	</div>
@@ -203,7 +203,7 @@
 					<div class="row py-4 justify-content-around">
 						<div class="col-md-10">
 							<div class="f-14 brown-grey ">Dialing ...</div>
-							<div class="f-20 font-weight-bold black">+91 445 546 9890</div>	
+							<div class="f-20  fw-500 black">+91 445 546 9890</div>	
 						</div>
 						<div class="col-md-2 d-flex justify-content-end">
 							<button class="btn d-flex justify-content-center align-items-center call-icon red-gradient m-0" onclick="endCall()">
@@ -252,7 +252,7 @@
 				<div class="row align-items-center h-100" id="page_empty">
 					<div class="col-md-12 text-center">
 						<img src="<%=baseURL%>assets/image/21.svg" class="pb-2"/>
-						<div class="f-16 font-weight-bold black" class="pb-2">Start the process </div>
+						<div class="f-16  fw-500 black" class="pb-2">Start the process </div>
 						<div class="f-12 brownish-grey">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 					</div>
 				</div>
