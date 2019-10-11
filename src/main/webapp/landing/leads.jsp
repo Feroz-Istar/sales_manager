@@ -185,7 +185,7 @@
 						<div
 							class="row align-items-center bottom-separation-solid py-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 font-weight-bold black">Vehement Capital
+								<div class="f-14 fw-500 black">Vehement Capital
 									Partners</div>
 								<div class="f-14 brownish-grey">Miriam Franklin</div>
 							</div>
@@ -357,7 +357,7 @@
 						<div
 							class="row align-items-center bottom-separation-solid py-4  <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 font-weight-bold black">Zencorporation
+								<div class="f-14 fw-500 black">Zencorporation
 									Pot. Ltd.</div>
 								<div class="f-14 brownish-grey">Miriam Franklin</div>
 							</div>
@@ -538,7 +538,7 @@
 						<div
 							class="row align-items-center bottom-separation-solid py-4  <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 font-weight-bold black">Vehement Capital
+								<div class="f-14 fw-500 black">Vehement Capital
 									Partners.</div>
 								<div class="f-14 brownish-grey">Miriam Franklin</div>
 							</div>
@@ -692,7 +692,7 @@
 						<div
 							class="row align-items-center bottom-separation-solid py-4  <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 font-weight-bold black">Vehement Capital
+								<div class="f-14 fw-500 black">Vehement Capital
 									Partners.</div>
 								<div class="f-14 brownish-grey">Miriam Franklin</div>
 							</div>
