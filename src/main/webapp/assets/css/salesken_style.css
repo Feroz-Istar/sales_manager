@@ -155,7 +155,16 @@ html, body {
 .salesken>li.active {
 	font-weight: bold;
 }
+.salesken>li.active svg>path,.salesken>li.active svg>g>path,.salesken>li.active svg>g>g>path{
+	fill:#444444 ;
+}
+.salesken>li svg>path,.salesken>li svg>g>path{
+		fill:#999;
+}
 
+.salesken>li svg>g>.cls-1{
+	fill:none !important;
+}
 .saleken.nav-tabs>li>.active {
 	border-bottom: 4px solid #ed4d67;
 	background-color: transparent !important;
