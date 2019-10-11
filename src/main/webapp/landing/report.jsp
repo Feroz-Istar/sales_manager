@@ -329,12 +329,12 @@
 							<div class="col-md-3 col_bordering p-0 m-0 d-md-flex align-items-center" style="min-height:200px;">
 							<div class=" w-100 d-flex">
 								<div class="col-md-6 p-0 m-0 text-center	">
-								<div><div class=" f-42"> 05</div>
-								<div class="greyish-brown f-14 font-weight-bold">Objection</div>
+								<div><div class="font-weight-bold f-42"> 05</div>
+								<div class="greyish-brown f-14 fw-500">Objection</div>
 								</div>
 								</div>
 								<div class="col-md-6  p-0 m-0  ">
-								<img src="<%=baseURL%>assets/image/Group 3614.svg" width="93.8" height="87.2">
+								<img src="<%=baseURL%>assets/image/objection.svg" width="93.8" height="87.2">
 								</div>
 								</div>
 							</div>
