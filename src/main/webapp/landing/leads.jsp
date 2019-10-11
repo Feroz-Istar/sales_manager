@@ -34,7 +34,7 @@
 		<div
 			class="row grey-white-bg bottom-separation-solid align-items-center py-3">
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
-				<div class="display-1 black f-20 border-right-separation pr-3 ">Leads</div>
+				<div class="display-1 black f-20 border-right-separation pr-3 fw-500 ">Leads</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey" id="breadcrumb">Leads</div>

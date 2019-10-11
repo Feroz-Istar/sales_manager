@@ -62,6 +62,8 @@ width: 80px;
 	}
 .table-condensed tbody tr td {
   font-size: 12px;
+  	color: #444444;
+  
 }
 .activeClass {
 	background: #dddddd;

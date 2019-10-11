@@ -251,66 +251,7 @@
 
 			<!-- start of center container/second column of dashboard  -->
 			<div class="col-md-6 p-0 m-0 center_container mb-3 ">
-				<!-- Start of Signal and its count card -->
-				<div id="carouselExampleIndicators" class="carousel slide mb-2"
-					data-ride="carousel">
-					<ol class="carousel-indicators">
-						<li data-target="#carouselExampleIndicators" data-slide-to="0"
-							class="active"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-					</ol>
-					<div class="carousel-inner shadow">
-
-						<%
-							for (int i = 0; i < 4; i++) {
-								String isActive = "";
-								if (i == 0) {
-									isActive = "active";
-								}
-						%>
-						<div class="carousel-item <%=isActive%>">
-
-							<div class="card saleskenCard" style="min-height: 194px;">
-								<div class="card-body">
-									<div class="row align-items-center px-3"
-										style="min-height: 104px;">
-										<div class="col-md-4">
-											<div class="f-42 font-weight-bold greyish-brown">04</div>
-											<div class="f-14 fw-500 greyish-brown">Not
-												asking for next steps</div>
-										</div>
-										<img class="col-md-2 signalimgsize"
-											src="<%=baseURL%>assets/image/Group 3614.svg" />
-										<div class="col-md-4 card-separation">
-											<div class="f-42 font-weight-bold greyish-brown">12</div>
-											<div class="f-14 fw-500 greyish-brown">Responded
-												positively in the end of a call</div>
-										</div>
-										<img class="col-md-2 signalimgsize"
-											src="<%=baseURL%>assets/image/Group 3614.svg" />
-									</div>
-								</div>
-							</div>
-
-
-						</div>
-						<%
-							}
-						%>
-
-					</div>
-					<a class="carousel-control-prev" href="#carouselExampleIndicators"
-						role="button" data-slide="prev"> <span
-						class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-						class="sr-only">Previous</span>
-					</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
-						role="button" data-slide="next"> <span
-						class="carousel-control-next-icon" aria-hidden="true"></span> <span
-						class="sr-only">Next</span>
-					</a>
-				</div>
-				<!-- End of Signal and its count card -->
+			
 
 				<!-- Start of Pipeline and Stages card-->
 				<div class="card shadow mb-2" style="min-height: 322px;">
@@ -433,22 +374,22 @@
 							<div class="col-md-8">
 								<div class="row mb-4">
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20">
+										<div class="font-weight-bold f-30">
 											<i class="fas fa-dollar-sign light_gray"></i> <span
 												class="theme_color"> 345</span>
 										</div>
 										<div class="f-14 brownish-grey">Deal Value</div>
 									</div>
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20 black">65%</div>
+										<div class="font-weight-bold f-30 black">65%</div>
 										<div class="f-14 brownish-grey">Confident</div>
 									</div>
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20 black">25%</div>
+										<div class="font-weight-bold f-30 black">25%</div>
 										<div class="f-14 brownish-grey">Won Leads</div>
 									</div>
 									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-20 black">75%</div>
+										<div class="font-weight-bold f-30 black">75%</div>
 										<div class="f-14 brownish-grey">Lost Leads</div>
 									</div>
 								</div>
@@ -478,6 +419,70 @@
 				</div>
 				<!-- End of Teams card-->
 
+
+
+	<!-- Start of Signal and its count card -->
+				<div id="carouselExampleIndicators" class="carousel slide mb-2"
+					data-ride="carousel">
+					<ol class="carousel-indicators">
+						<li data-target="#carouselExampleIndicators" data-slide-to="0"
+							class="active"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+					</ol>
+					<div class="carousel-inner shadow">
+
+						<%
+							for (int i = 0; i < 4; i++) {
+								String isActive = "";
+								if (i == 0) {
+									isActive = "active";
+								}
+						%>
+						<div class="carousel-item <%=isActive%>">
+
+							<div class="card saleskenCard" style="min-height: 194px;">
+								<div class="card-body">
+									<div class="row align-items-center px-3"
+										style="min-height: 104px;">
+										<div class="col-md-4">
+											<div class="font-weight-bold f-30">
+												04
+											</div>
+											<div class="f-14 fw-500 greyish-brown">Not
+												asking for next steps</div>
+										</div>
+										<img class="col-md-2 signalimgsize"
+											src="<%=baseURL%>assets/image/Group 3614.svg" />
+										<div class="col-md-4 card-separation">
+											<div class="f-30 font-weight-bold greyish-brown">12</div>
+											<div class="f-14 fw-500 greyish-brown">Responded
+												positively in the end of a call</div>
+										</div>
+										<img class="col-md-2 signalimgsize"
+											src="<%=baseURL%>assets/image/Group 3614.svg" />
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+						<%
+							}
+						%>
+
+					</div>
+					<a class="carousel-control-prev" href="#carouselExampleIndicators"
+						role="button" data-slide="prev"> <span
+						class="carousel-control-prev-icon" aria-hidden="true"></span> <span
+						class="sr-only">Previous</span>
+					</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
+						role="button" data-slide="next"> <span
+						class="carousel-control-next-icon" aria-hidden="true"></span> <span
+						class="sr-only">Next</span>
+					</a>
+				</div>
+				<!-- End of Signal and its count card -->
 				<!-- Start of Top/Bottom 5 Agent card-->
 
 				<div class="card shadow" style="min-height: 505px;">
@@ -514,15 +519,16 @@
 							</div>
 							<div class="col-md-8 col-6">
 								<div class="row">
+								<div class="col-md-4 f-14">
+										<strong>$ 20</strong> - Deal Value
+									</div>
 									<div class="col-md-4 f-14">
 										<strong>12%</strong> - Lead Wins
 									</div>
 									<div class="col-md-4 f-14">
 										<strong>15%</strong> - Utilisation
 									</div>
-									<div class="col-md-4 f-14">
-										<strong>$ 20</strong> - Deal Value
-									</div>
+									
 								</div>
 							</div>
 
