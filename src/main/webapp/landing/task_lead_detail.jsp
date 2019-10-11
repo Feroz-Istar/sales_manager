@@ -41,11 +41,11 @@
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
 				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer"
 					onclick="window.location.href = 'report.jsp'"></i>
-				<div class="display-1 black f-20 border-right-separation pr-3 ">Accenture
+				<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Accenture
 					Consulting Inc.</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Path</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey " id="breadcrumb">Current Page</div>
+				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Current Page</div>
 			</div>
 		</div>
 		<div class="row bg-white pl-3">
