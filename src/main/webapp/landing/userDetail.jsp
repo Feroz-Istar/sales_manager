@@ -130,13 +130,13 @@
 
 										<div class="row align-items-center minh-100">
 											<div class="col-md-10">
-												<div class="d-flex flex-row mb-1">
+												<div class="d-flex flex-row ">
 													<div
 														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$ 500</div>
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 font-weight-bold mb-1 bblack">Globex
+												<div class="f-16  fw-500 black">Globex
 													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
@@ -185,15 +185,15 @@
 												<div class="row pt-2 pl-3">
 													<div class="col-md-3 border-right-dashed-separation">
 														<p class="brownish-grey f-14 mb-0">Initiated At</p>
-														<p class="black f-16 mb-0">11:00 AM</p>
+														<p class="black  fw-500 f-16 mb-0">11:00 AM</p>
 													</div>
 													<div class="col-md-3 border-right-dashed-separation">
 														<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-														<p class="black f-16 mb-0">Stage 02</p>
+														<p class="black fw-500 f-16 mb-0">Stage 02</p>
 													</div>
 													<div class="col-md-3">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
-														<p class="black f-16 mb-0">Robert Wolken</p>
+														<p class="black fw-500 f-16 mb-0">Robert Wolken</p>
 													</div>
 
 												</div>
@@ -307,7 +307,7 @@
 																		
 																		<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
 																		<div class="border-right-blue mr-3"></div>
-																		<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
+																		<p class="greyish-brown f-16 fw-500  align-self-center">Customers who responded positively in the end of a call</p>
 																		</div>
 																		</div>
 																	</div>
@@ -333,11 +333,11 @@
 														
 														<div class="row mt-2   ml-3 pr-2" >
 															<div class="col">
-																<h3 class="black f-16 mb-4">Transcript</h3>
+																<h3 class="black fw-500 f-16 mb-4">Transcript</h3>
 																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
 																<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
-																	<p class="f-16 bblack">
+																	<p class="f-14 bblack">
 																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
 																		Vargas
 																	</p>
@@ -352,7 +352,7 @@
 																
 																
 																<div class="d-flex flex-column pl-5 ml-5 mb-4">
-																	<p class="f-16 bblack align-self-end">
+																	<p class="f-14 bblack align-self-end">
 																		<small class="f-12 brown-grey mr-2 ">00:20.</small> Jamie
 																		Vargas
 																	</p>
@@ -430,11 +430,11 @@
 				  			<div class="d-flex">	
 				  				<img src="<%=baseURL%>assets/image/11.png" class="hw-60" />
 				  				<div class="ml-4">
-				  					<div class="f-16 font-weight-bold black">Stanley Howard</div>
+				  					<div class="f-16  fw-500 black">Stanley Howard</div>
 						  			<div class="d-flex align-items-center">		
 						  				<div class="p-0 rateYo mr-4" data-rating="3"></div>
 						  				<i class="far fa-thumbs-up mr-2 f-24 brown-grey"></i>
-						  				<div class="greyish-brown f-16 mr-1">12</div>
+						  				<div class="greyish-brown  fw-500 f-16 mr-1">12</div>
 						  				<div class="brown-grey f-14">Likes</div>
 						  			</div>	
 				  				</div>
@@ -461,7 +461,7 @@
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">40</div>
-									<div class="f-14 brown-grey font-weight-bold">Total Tasks </div>
+									<div class="f-14 brown-grey ">Total Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -472,7 +472,7 @@
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">24</div>
-									<div class="f-14 brown-grey font-weight-bold">Completed Tasks </div>
+									<div class="f-14 brown-grey ">Completed Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -483,7 +483,7 @@
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">34</div>
-									<div class="f-14 brown-grey font-weight-bold">Call Tasks </div>
+									<div class="f-14 brown-grey">Call Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -494,7 +494,7 @@
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">12</div>
-									<div class="f-14 brown-grey font-weight-bold">Email Tasks </div>
+									<div class="f-14 brown-grey">Email Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -505,7 +505,7 @@
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">12</div>
-									<div class="f-14 brown-grey font-weight-bold">Webinar Tasks </div>
+									<div class="f-14 brown-grey ">Webinar Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -516,7 +516,7 @@
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">03</div>
-									<div class="f-14 brown-grey font-weight-bold">Presentation Tasks </div>
+									<div class="f-14 brown-grey">Presentation Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -527,19 +527,19 @@
 				  			<div class="row py-3">
 				  				<div class="col-md-3">
 				  					<div class="f-24 blue-black font-weight-bold">$ 2345</div>
-									<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
+									<div class="f-14 brown-grey">Deal Value</div>
 				  				</div>
 				  				<div class="col-md-3">
 				  					<div class="f-24 blue-black font-weight-bold">45</div>
-									<div class="f-14 brown-grey font-weight-bold">Won Leads</div>
+									<div class="f-14 brown-grey">Won Leads</div>
 				  				</div>
 				  				<div class="col-md-3">
 				  					<div class="f-24 blue-black font-weight-bold">04</div>
-									<div class="f-14 brown-grey font-weight-bold">Lost Leads</div>
+									<div class="f-14 brown-grey">Lost Leads</div>
 				  				</div>
 				  				<div class="col-md-3">
 				  					<div class="f-24 blue-black font-weight-bold">30</div>
-									<div class="f-14 brown-grey font-weight-bold">Activities Per Lead Won</div>
+									<div class="f-14 brown-grey">Activities Per Lead Won</div>
 				  				</div>
 				  			</div>
 				  			<div class="row border-bottom-dashed-separation py-3">
@@ -553,7 +553,7 @@
 		      					</div>
 				  			</div>
 				  			<div class="row py-3">
-				  				<div class="col-md-6">Disposition</div>
+				  				<div class="col-md-6 fw-500">Disposition</div>
 				  			</div>
 				  			
 				  			<div class="row">
@@ -570,10 +570,10 @@
 								  
 								  <%for(int i=0;i<10;i++){ %>
 								    <tr>
-								      <td class="py-4">Massive Dynamic Pvt. Ltd.</td>
-								      <td class="py-4">45</td>
-								      <td class="py-4">20%</td>
-								      <td class="py-4">03</td>
+								      <td class="f-14 py-4">Massive Dynamic Pvt. Ltd.</td>
+								      <td class="f-14 py-4">45</td>
+								      <td class="f-14 py-4">20%</td>
+								      <td class="f-14 py-4">03</td>
 								    </tr>
 								    <%}%>
 								   </tbody>
@@ -582,11 +582,11 @@
 				  		</div>
 				  			
 				  		<div class="col-md-3 cream_white p-3 ">
-				  			<div class="f-16 font-weight-bold black">Comments</div>
+				  			<div class="f-16 fw-500 black">Comments</div>
 				  			
 				  			<%for(int i=0;i<3;i++){ %>
 				  			<div class="f-12 pt-4 brown-grey">June 22, 2019</div>
-				  			<div class="f-14 greyish-brown font-weight-bold mb-2">Lawrence Lynch</div>
+				  			<div class="f-14 greyish-brown fw-500 mb-2">Lawrence Lynch</div>
 				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-4">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
 				  			<%} %>
 				  		</div>				  		
