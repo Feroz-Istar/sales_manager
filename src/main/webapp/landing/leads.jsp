@@ -37,7 +37,7 @@
 				<div class="display-1 black f-20 border-right-separation pr-3 fw-500 ">Leads</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey" id="breadcrumb">Leads</div>
+				<div class=" f-12 brown-grey fw-500" id="breadcrumb">Leads</div>
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end">
