@@ -258,7 +258,7 @@ html, body {
 .istar-dropdown-menu>.dropdown-item:hover {
 	background-color: #eeeeee;
 	font-size: 14px !important;
-	font-weight: bold !important;
+	font-weight: 500 !important;
 	color: #222222 !important;
 }
 
@@ -312,7 +312,7 @@ html, body {
 .istar-dropdown-task-menu>.dropdown-item:hover {
 	background: #eeeeee !important;
 	color: #222222 !important;
-	font-weight: bold !important;
+	font-weight: 500 !important;
 }
 
 .istar-dropdown-task-menu>.dropdown-item>.task-dropdown {

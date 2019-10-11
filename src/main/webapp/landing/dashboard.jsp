@@ -852,7 +852,7 @@
 										%>
 										<option
 											data-content="<div class='row w-100 py-2 px-3 m-0'>
-											 <div class='col-md-4 f-14 font-weight-bold black text-center'>Vehement Capital Partners</div> 
+											 <div class='col-md-4 f-14 fw-500 black text-center'>Vehement Capital Partners</div> 
 											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin <%=i%></div> 
 											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
 											  </div>">Miriam
