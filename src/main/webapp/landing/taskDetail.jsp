@@ -999,27 +999,27 @@
 							<div class="row  py-3 dotted-bottom-separation">
 								<div class="col-md-4 border-right-separation">
 									<div class="f-14 brownish-grey">Contact Person</div>
-									<div class="f-16 font-weight-bold">Deann Harper</div>
+									<div class="f-16 fw-500">Deann Harper</div>
 								</div>
 								<div class="col-md-4 border-right-separation">
 									<div class="f-14 brownish-grey">Agent</div>
-									<div class="f-16 font-weight-bold">Bradley Obrien</div>
+									<div class="f-16 fw-500">Bradley Obrien</div>
 								</div>
 								<div class="col-md-4 ">
 									<div class="f-14 brownish-grey">Date & Time</div>
-									<div class="f-16 font-weight-bold">June 12, 19 &nbsp;&nbsp;&nbsp; 11:00 AM</div>
+									<div class="f-16 fw-500">June 12, 19 &nbsp;&nbsp;&nbsp; 11:00 AM</div>
 								</div>
 							</div>
 							<div class="row py-3">
 								<div class="col-md-6">
-									<div class="f-14 font-weight-bold pb-1">Date</div>
+									<div class="f-14 fw-500 pb-1">Date</div>
 									<div class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
 										<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
 										<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 									</div>	
 								</div>
 								<div class="col-md-6">
-									<div class="f-14 font-weight-bold pb-1">Time	</div>
+									<div class="f-14 fw-500 pb-1">Time	</div>
 									<div class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
 										<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here">
 										<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
@@ -1028,7 +1028,7 @@
 							</div>
 							<div class="row py-3">
 								<div class="col-md-12">
-									<div class="f-14 font-weight-bold pb-1">Reason</div>
+									<div class="f-14 fw-500 pb-1">Reason</div>
 									<textarea class="w-100 custom-modal-textarea" rows="5" ></textarea>
 								</div>
 							</div>
