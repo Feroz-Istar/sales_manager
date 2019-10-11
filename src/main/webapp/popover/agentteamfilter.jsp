@@ -35,7 +35,7 @@
 							                                    <label class="istar-checkbox-style" for="associate-checkbox<%=i %>"></label>
 									<img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 								  <div>
-							                                    	<div class="f-14 font-weight-bold greyish-brown">Robert Garcia</div>
+							                                    	<div class="f-14 fw-500 greyish-brown">Robert Garcia</div>
 							                                    	<div class="f-12  brownish-grey">Team -<%=i %></div>
 							                                    </div>
 								</div>
