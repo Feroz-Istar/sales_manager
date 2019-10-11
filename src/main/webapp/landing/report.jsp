@@ -106,13 +106,13 @@
 						<%for(int i=0;i<12;i++){ %>
 							<div class="col-md-3 d-flex align-items-center col_bordering" style="min-height:200px;">
 								<div class="row  w-100">
-								<div class="col-md-6 p-0 m-0 text-center">
-								<div><div class=" f-42" > 04</div>
-								<div class="greyish-brown f-14 font-weight-bold"> Not asking for next steps</div>
+								<div class="col-md-9 m-0">
+								<div><div class="font-weight-bold f-42" > 04</div>
+								<div class="greyish-brown f-14 fw-500"> Not asking for next steps</div>
 								</div>
 								</div>
-								<div class="col-md-6  p-0 m-0 text-center">
-								<img src="<%=baseURL%>assets/image/Group 3614.svg" width="76" height="76"/ >
+								<div class="col-md-3  p-0 m-0 text-center">
+								<img src="<%=baseURL%>assets/image/Group 3614.svg" width="76" height="76" >
 								</div>
 								</div>
 								
