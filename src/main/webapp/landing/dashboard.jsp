@@ -772,11 +772,11 @@
 		      <div class="modal-body">
 		       	<div class="row pb-4">
 		       		<div class="col-md-6">
-		       			<div class="f-14 font-weight-bold pb-1">Add Title</div>
+		       			<div class="f-14 fw-500 pb-1">Add Title</div>
 		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="eventTitle" aria-describedby="eventTitle" placeholder="Type here">
 		       		</div>
 		       		<div class="col-md-6">
-		       			<div class="f-14 font-weight-bold pb-1">Type</div>
+		       			<div class="f-14 fw-500 pb-1">Type</div>
 		       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="eventType">
 					      <option>Select here</option>
 					      <option>Type 1</option>
@@ -786,14 +786,14 @@
 		       	</div>
 		       	<div class="row pb-4">
 					<div class="col-md-6">
-						<div class="f-14 font-weight-bold pb-1">Date</div>
+						<div class="f-14 fw-500 pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="event_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
-						<div class="f-14 font-weight-bold pb-1">Time	</div>
+						<div class="f-14 fw-500 pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker" type="text" name="timepicker"  placeholder="Select here">
 							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
@@ -802,14 +802,14 @@
 				</div>
 				<div class="row pb-4">
 					<div class="col-md-12">
-						<div class="f-14 font-weight-bold pb-1">Add Guest</div>
+						<div class="f-14 fw-500 pb-1">Add Guest</div>
 		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="addGuest" aria-describedby="addGuest" placeholder="Select here">
 					</div>
 				</div>
 				
 				<div class="row pb-4">
 					<div class="col-md-12">
-						<div class="f-14 font-weight-bold pb-1">Description</div>
+						<div class="f-14 fw-500 pb-1">Description</div>
 						<textarea class="custom-modal-textarea w-100" id="eventdescription" rows="6"></textarea>
 					</div>
 				</div>
@@ -838,7 +838,7 @@
 	      <div class="modal-body">
 	        <div class="row pb-4">
 		        <div class="col-md-12 istar-dropdown">
-			      <div class="f-14 font-weight-bold pb-1">Lead Name</div>
+			      <div class="f-14 fw-500 pb-1">Lead Name</div>
 							<div class="form-group">
 									<select class="form-control selectpicker " data-style="removefocus" title="Select here"
 										data-live-search="true" id="exampleFormControlSelect1" >
@@ -903,7 +903,7 @@
 	        
 	        <div class="row pb-4">
 	        	<div class="col-md-6 istar-dropdown">
-	       			<div class="f-14 font-weight-bold pb-1">Task Type</div>
+	       			<div class="f-14 fw-500 pb-1">Task Type</div>
 	       			
 				    
 					<button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
@@ -929,7 +929,7 @@
 					
 	       		</div>
 	       		<div class="col-md-6">
-	       			<div class="f-14 font-weight-bold pb-1">Task By</div>
+	       			<div class="f-14 fw-500 pb-1">Task By</div>
 	       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="taskActor">
 				      <option>Me</option>
 				      <option>Type 1</option>
@@ -939,14 +939,14 @@
 	        </div>
 	        <div class="row pb-4">
 					<div class="col-md-6">
-						<div class="f-14 font-weight-bold pb-1">Date</div>
+						<div class="f-14 fw-500 pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
-						<div class="f-14 font-weight-bold pb-1">Time	</div>
+						<div class="f-14 fw-500 pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_time">
 							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
