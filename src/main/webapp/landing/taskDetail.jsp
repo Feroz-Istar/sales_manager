@@ -246,13 +246,13 @@
 
 										<div class="row align-items-center minh-100">
 											<div class="col-md-9">
-												<div class="d-flex flex-row mb-1">
+												<div class="d-flex flex-row ">
 													<div
 														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$ 500</div>
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 font-weight-bold mb-1 bblack">Globex
+												<div class="f-16 fw-500  black">Globex
 													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
@@ -302,11 +302,11 @@
 												<div class="row align-items-center py-2">
 													<div class="col-md-2">
 														<div class="f-14 brownish-grey">Contact Person</div>
-														<div class="f-16 font-weight-bold bblack ">Rosemary Garcia</div>
+														<div class="f-16 fw-500 black ">Rosemary Garcia</div>
 													</div>
 													<div class="col-md-2">
 														<div class="f-14 brownish-grey">Agent</div>
-														<div class="f-16 font-weight-bold bblack ">Marry Vasquez</div>
+														<div class="f-16 fw-500 black ">Marry Vasquez</div>
 													</div>
 													<div class="col-md-5"></div>
 													<div class="col-md-3 d-flex justify-content-end">
@@ -320,19 +320,19 @@
 													<div class="row">
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Task Type</div>
-															<div class="f-16 font-weight-bold bblack ">Call</div>
+															<div class="f-16  fw-500 black ">Call</div>
 														</div>
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Initiated At</div>
-															<div class="f-16 font-weight-bold bblack ">11:00 AM	</div>
+															<div class="f-16  fw-500 black ">11:00 AM	</div>
 														</div>
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Deal Value</div>
-															<div class="f-16 font-weight-bold bblack ">$500</div>
+															<div class="f-16  fw-500 black ">$500</div>
 														</div>
 														<div class="col-md-3">
 															<div class="brownish-grey f-14">Pipeline Detail </div>
-															<div class="f-16 font-weight-bold bblack ">Stage 02</div>
+															<div class="f-16  fw-500 black ">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -469,8 +469,8 @@
 
 										<div class="row align-items-center minh-100">
 											<div class="col-md-9">
-												<div class="f-16 greyish-brown mb-1">11:00 AM</div>
-												<div class="f-16 font-weight-bold mb-1">Opentech Pvt. Ltd.</div>
+												<div class="f-16 greyish-brown ">11:00 AM</div>
+												<div class="f-16 fw-500 black">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
 											</div>
 											<div class="col-md-3">
@@ -519,11 +519,11 @@
 												<div class="row align-items-center py-2">
 													<div class="col-md-2">
 														<div class="f-14 brownish-grey">Contact Person</div>
-														<div class="f-16 font-weight-bold">Deann Harper</div>
+														<div class="f-16 fw-500 black">Deann Harper</div>
 													</div>
 													<div class="col-md-2">
 														<div class="f-14 brownish-grey">Agent</div>
-														<div class="f-16 font-weight-bold">Bradley Obrien</div>
+														<div class="f-16  fw-500 black">Bradley Obrien</div>
 													</div>
 													<div class="col-md-5"></div>
 													<div class="col-md-3 d-flex justify-content-end">
@@ -539,19 +539,19 @@
 													<div class="row">
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Task Type</div>
-															<div class="f-16 font-weight-bold">Call</div>
+															<div class="f-16  fw-500 black">Call</div>
 														</div>
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Timing</div>
-															<div class="f-16 font-weight-bold">11:00 AM	</div>
+															<div class="f-16  fw-500 black">11:00 AM	</div>
 														</div>
 														<div class="col-md-3 border-right-separation">
 															<div class="brownish-grey f-14">Deal Value</div>
-															<div class="f-16 font-weight-bold">$500</div>
+															<div class="f-16  fw-500 black">$500</div>
 														</div>
 														<div class="col-md-3">
 															<div class="brownish-grey f-14">Pipeline Detail </div>
-															<div class="f-16 font-weight-bold">Stage 02</div>
+															<div class="f-16  fw-500 black">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -689,13 +689,13 @@
 
 										<div class="row align-items-center minh-100">
 											<div class="col-md-10">
-												<div class="d-flex flex-row mb-1">
+												<div class="d-flex flex-row">
 													<div
 														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$ 500</div>
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 font-weight-bold mb-1 bblack">Globex
+												<div class="f-16  fw-500 black">Globex
 													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
@@ -730,10 +730,9 @@
 										aria-labelledby="v-pills-<%=i%>-tabs">
 											<div class="row h-100">
 											<div class="col-md-11">
-												<div class="row pt-2 pl-3 justify-content-between">
+												<div class="row pt-2 pl-3 mt-3 justify-content-between">
 													<div class="col-9">
-														<p class="greyish-brown f-18 font-weight-bold">Call
-															Task</p>
+														<p class="greyish-brown f-18 mb-2 font-weight-bold">Globex Corporation Inc.</p>
 													</div>
 													<div class="col-3">
 														<div class="d-flex justify-content-end">
@@ -750,11 +749,11 @@
 													
 													<div class="col-md-3 ">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
-														<p class="black f-16 mb-0">Robert Wolken</p>
+														<p class="black f-16 fw-500 mb-0">Robert Wolken</p>
 													</div>
 													<div class="col-md-3 ">
 														<p class="brownish-grey f-14 mb-0">Agent</p>
-														<p class="black f-16 mb-0">Marilyn Fowler</p>
+														<p class="black f-16 fw-500 mb-0">Marilyn Fowler</p>
 													</div>
 
 												</div>
@@ -868,7 +867,7 @@
 																		
 																		<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
 																		<div class="border-right-blue mr-3"></div>
-																		<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
+																		<p class="greyish-brown f-16  fw-500  align-self-center">Customers who responded positively in the end of a call</p>
 																		</div>
 																		</div>
 																	</div>
@@ -894,11 +893,11 @@
 														
 														<div class="row mt-2   ml-3 pr-2" >
 															<div class="col">
-																<h3 class="black f-16 mb-4">Transcript</h3>
+																<h3 class="black fw-500 f-16 mb-4">Transcript</h3>
 																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
 																<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
-																	<p class="f-16 bblack">
+																	<p class="f-14 bblack">
 																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
 																		Vargas
 																	</p>
@@ -913,7 +912,7 @@
 																
 																
 																<div class="d-flex flex-column pl-5 ml-5 mb-4">
-																	<p class="f-16 bblack align-self-end">
+																	<p class="f-14 bblack align-self-end">
 																		<small class="f-12 brown-grey mr-2 ">00:20.</small> Jamie
 																		Vargas
 																	</p>
