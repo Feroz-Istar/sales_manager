@@ -99,8 +99,8 @@
 												</div>
 											</div>
 											<div class="col-md-9">
-												<p class="soft-blue f-12 mb-1">Confident</p>
-												<h1 class="black f-16 font-weight-bold">Marry Vasquez</h1>
+												<p class="soft-blue f-12 font-weight-bold mb-1">Confident</p>
+												<h1 class="black f-16 fw-500 mb-1">Marry Vasquez</h1>
 												<p class="brown-grey f-12 d-flex align-items-center mb-1">
 													<i class="tangerine fas fa-circle mr-1"
 														style="font-size: 8px;"></i>Ongoing
@@ -158,15 +158,15 @@
 												<div class="row pt-2 pl-3">
 													<div class="col-md-3 border-right-dashed-separation">
 														<p class="brownish-grey f-14 mb-0">Initiated At</p>
-														<p class="black f-16 mb-0">11:00 AM</p>
+														<p class="black f-16 fw-500 mb-0">11:00 AM</p>
 													</div>
 													<div class="col-md-3 border-right-dashed-separation">
 														<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-														<p class="black f-16 mb-0">Stage 02</p>
+														<p class="black f-16 fw-500 mb-0">Stage 02</p>
 													</div>
 													<div class="col-md-3">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
-														<p class="black f-16 mb-0">Robert Wolken</p>
+														<p class="black f-16 fw-500 mb-0">Robert Wolken</p>
 													</div>
 													<div class="col-md-3 text-right">
 														<button type="button" class="btn btn-outline-dark">LEAVE
@@ -286,7 +286,7 @@
 																				
 																				<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
 																				<div class="border-right-blue mr-3"></div>
-																				<p class="greyish-brown f-16 font-weight-bold  align-self-center">Customers who responded positively in the end of a call</p>
+																				<p class="greyish-brown f-16 fw-500  align-self-center">Customers who responded positively in the end of a call</p>
 																				</div>
 																				</div>
 																			</div>
@@ -314,11 +314,11 @@
 														
 														<div class="row mt-2   ml-3 pr-2" >
 															<div class="col">
-																<h3 class="black f-16 mb-4">Transcript</h3>
+																<h3 class="black fw-500 f-16 mb-4">Transcript</h3>
 																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
 																<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
-																	<p class="f-16 bblack">
+																	<p class="f-14 bblack">
 																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
 																		Vargas
 																	</p>
@@ -333,7 +333,7 @@
 																
 																
 																<div class="d-flex flex-column pl-5 ml-5 mb-4">
-																	<p class="f-16 bblack align-self-end">
+																	<p class="f-14 bblack align-self-end">
 																		<small class="f-12 brown-grey mr-2 ">00:20.</small> Jamie
 																		Vargas
 																	</p>
@@ -451,7 +451,7 @@
 						<div class="row">
 							<div class="col-md-8">
 								<div class="d-flex">
-								 <div class="mr-auto  black f-16 font-weight-bold">Information</div>
+								 <div class="mr-auto  black f-16 fw-500">Information</div>
   								<div class="p-2 bd-highlight f-22">
   									<img src="<%=baseURL%>assets/image/edit.svg" class="">
 								</div>
@@ -478,7 +478,7 @@
 								<div class="border-bottom-dashed-separation mb-3"></div>
 								
 								<div class="d-flex">
-								 	<div class="mr-auto  black f-16 font-weight-bold">CRM Fields</div>
+								 	<div class="mr-auto  black f-16 fw-500">CRM Fields</div>
   									<div class="p-2 bd-highlight f-22">
   										<img src="<%=baseURL%>assets/image/edit.svg" class="">
 									</div>
@@ -494,7 +494,7 @@
 							<div class="col-md-4">
 							<%for(int k=0;k<2;k++){ %>
 							
-							<h4 class="black f-16 mb-3">Objections </h4>
+							<h4 class="black fw-500 f-16 mb-3">Objections </h4>
 							<%for(int l=0;l<2;l++){ %>
 							<div class="signal_description border_bottom_1_dashed mb-3">
 							
