@@ -894,7 +894,7 @@ Modifying the scroll bar across the whole application
 	border-right: 1px solid #eeeeee;
 	border-radius: 2px 2px 0 0;
 	background: #f9f9f9;
-	color: black;
+	color: #999999;
 	opacity: 0.9;
 	transition: all 0.1s ease-in-out;
 	font-weight: normal;
@@ -904,8 +904,10 @@ Modifying the scroll bar across the whole application
 .nav-mytabs a.active, .nav-mytabs a:hover {
 	opacity: 1;
 	top: 0;
-	font-weight: bold !important;
+	font-weight: 500 !important;
 	background: white;
+	color:#444444  !important;
+	border-radius: 0 !important;
 }
 
 .mytab-content {
