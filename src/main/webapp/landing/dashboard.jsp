@@ -60,7 +60,7 @@
 		<div class="row pb-3" id="incoming_date"
 			data-input_date="<%=incomingDate%>">
 			<div class="col-md-6 col-6 p-0 m-0">
-				<h1 class="display-1 black f-20">Dashboard</h1>
+				<h1 class="display-1 black f-20 fw-500">Dashboard</h1>
 
 			</div>
 			<div class="col-md-6 col-6 d-flex justify-content-end">
@@ -101,7 +101,7 @@
 					id="myTab" role="tablist" style="background: #f9f9f9">
 					<li class="nav-item">
 						<a class="nav-link active border-istar-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
-						aria-controls="home" aria-selected="true">To-Do List</a>
+						aria-controls="home" aria-selected="true">To - Do List</a>
 					</li>
 					<li class="nav-item ">
 						<a class="nav-link border-istar-left-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
@@ -125,7 +125,7 @@
 						<div class="task-item-container bg-white  custom_dash_padding">
 						
 							<div class="d-flex flex-row align-items-center pt-2 pb-2 istar-dropdown">
-								<div class="font-weight-bold mr-3 bblack f-18">To-Do List</div>
+								<div class="mr-3 bblack f-18 fw-500">To-Do List</div>
 								<button
 									class="btn rounded-circle shadow d-flex justify-content-center align-items-center"
 									style="height: 30px; width: 30px; background: white;" id="todoMenuButton" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -273,18 +273,18 @@
 
 							<div class="card saleskenCard" style="min-height: 194px;">
 								<div class="card-body">
-									<div class="row align-items-center ml-5 mr-5"
+									<div class="row align-items-center px-3"
 										style="min-height: 104px;">
 										<div class="col-md-4">
 											<div class="f-42 font-weight-bold greyish-brown">04</div>
-											<div class="f-14 font-weight-bold greyish-brown">Not
+											<div class="f-14 fw-500 greyish-brown">Not
 												asking for next steps</div>
 										</div>
 										<img class="col-md-2 signalimgsize"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 										<div class="col-md-4 card-separation">
 											<div class="f-42 font-weight-bold greyish-brown">12</div>
-											<div class="f-14 font-weight-bold greyish-brown">Responded
+											<div class="f-14 fw-500 greyish-brown">Responded
 												positively in the end of a call</div>
 										</div>
 										<img class="col-md-2 signalimgsize"
@@ -315,7 +315,7 @@
 				<!-- Start of Pipeline and Stages card-->
 				<div class="card shadow mb-2" style="min-height: 322px;">
 					<div class="card-body">
-						<div class="row mb-3">
+						<div class="row px-3 mb-3 pt-2">
 							<div
 								class="card-title col-md-6 font-weight-bold f-18 greyish-brown">Pipeline
 								- 01</div>
@@ -349,12 +349,12 @@
 
 
 
-									<div class="row mb-2">
-										<div class="col font-weight-bold f-16 brownish-grey">Stage
+									<div class="row mb-2 px-3">
+										<div class="col fw-500 f-16 brownish-grey">Stage
 											01</div>
 									</div>
 
-									<div class="row mb-4">
+									<div class="row mb-4 px-3">
 										<div class="col-md-3 col-6">
 											<div class="font-weight-bold f-30">
 												<i class="fas fa-dollar-sign light_gray"></i> <span
@@ -382,7 +382,7 @@
 										</div>
 									</div>
 
-									<div class="row mb-3">
+									<div class="row mb-3 px-3">
 										<div class="col-md-6">
 											<div class="f-14 font-weight-bold black mb-2">Strong
 												Playbook</div>
@@ -416,9 +416,9 @@
 
 				<div class="card shadow mb-2" style="min-height: 245px;">
 					<div class="card-body">
-						<div class="row mb-3">
+						<div class="row mb-3 px-3 pt-2">
 							<div class="col-md-6 font-weight-bold f-18">
-								Team 01 - <span class="brown-grey">10 user</span>
+								Team 01&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
 							</div>
 							<div class="col-md-6 d-flex justify-content-end">
 								<button type="button" class="istar-btn-icon istar-square">
@@ -429,7 +429,7 @@
                                 </button>
 							</div>
 						</div>
-						<div class="row">
+						<div class="row px-3">
 							<div class="col-md-8">
 								<div class="row mb-4">
 									<div class="col-md-3 col-6">
@@ -482,7 +482,7 @@
 
 				<div class="card shadow" style="min-height: 505px;">
 					<div class="card-body agent">
-						<div class="row mb-3">
+						<div class="row mb-3 px-3 pt-2">
 							<div class="col-md-6 font-weight-bold f-18">Bottom 5 Agents</div>
 							<div class="col-md-6 d-flex justify-content-end">
 								<button type="button" class="istar-btn-icon istar-square">
@@ -500,7 +500,7 @@
 									color = "#f9f9f9";
 								}
 						%>
-						<div class="row align-items-center separation-bottom py-4"
+						<div class="row align-items-center separation-bottom py-4 px-3"
 							style="background: <%=color%>">
 							<div class="col-md-4 col-6">
 								<div class="d-flex flex-row">
@@ -616,7 +616,7 @@
 									>Angry</span>
 							</div>
 						</div>
-						<h5 class="card-title f-18">Accenture Consulting Inc.</h5>
+						<h5 class="card-title f-18 font-weight-bold">Accenture Consulting Inc.</h5>
 						<div class="f-16 brownish-grey">Robert Wolken</div>
 						<div class="f-12 brown-grey mb-2">Manager</div>
 						<div class="dotted-1 mb-2"></div>
@@ -667,7 +667,7 @@
 				<!-- Start of issue resolve card-->
 				<div class="card mb-3 shadow" style="min-height: 292px;">
 					<div class="card-body">
-						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3">June 12,
+						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">June 12,
 							2019</h6>
 						<p class="card-text greyish-brown f-14">Product Price in too
 							expensive, and agents are not supportive and they are not
@@ -692,7 +692,7 @@
 				<!-- Start of chat now card-->
 				<div class="card mb-3 shadow" style="min-height: 179px;">
 					<div class="card-body mr-md-3">
-						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3">10:30 AM</h6>
+						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">10:30 AM</h6>
 						<div class="row align-items-center mb-3">
 							<div class="col-md-9 col-6">
 								<p class="card-text greyish-brown f-14">Hello Sir, The

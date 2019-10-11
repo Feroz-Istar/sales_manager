@@ -159,7 +159,7 @@ html, body {
 .saleken.nav-tabs>li>.active {
 	border-bottom: 4px solid #ed4d67;
 	background-color: transparent !important;
-	font-weight: bold;
+	font-weight: 500!important;
 }
 
 .saleken.nav-tabs>li>.nav-link {
@@ -658,6 +658,15 @@ input[type="search"]::-webkit-search-cancel-button {
 	font-size: 2.8125rem !important;
 }
 
+.fw-500{
+	font-weight: 500!important;
+}
+.fw-900{
+	font-weight: 900!important;
+}
+.fw-300{
+	font-weight: 300!important;
+}
 /* End of Font sizes */
 
 /*
