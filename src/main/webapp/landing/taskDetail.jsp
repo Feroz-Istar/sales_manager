@@ -343,7 +343,7 @@
 											
 											
 											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100">
+												<ul class="list-group shadow d-flex flex-column h-100 taskpopup">
 													<li
 														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
@@ -567,7 +567,7 @@
 											
 											
 											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100">
+												<ul class="list-group shadow d-flex flex-column h-100 taskpopup">
 													<li
 														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
@@ -738,7 +738,7 @@
 														<div class="d-flex justify-content-end">
 															<img src="<%=baseURL%>assets/image/heart.svg" class="mr-2">
 														<img src="<%=baseURL%>assets/image/message.svg" class="mr-2">
-														<img src="<%=baseURL%>assets/image/reply.svg" class="mr-2">
+														<img src="<%=baseURL%>assets/image/reply.svg" class="taskshare mr-2">
 														<div class="f-14 font-weight-bold theme_color cursor-pointer align-self-center" onclick="window.location.href = 'task_lead_detail.jsp'">
 												    		 View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
@@ -939,7 +939,7 @@
 
 
 											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100">
+												<ul class="list-group shadow d-flex flex-column h-100 taskpopup">
 													<li
 														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
 														<img src="<%=baseURL%>assets/image/calltask.svg" />

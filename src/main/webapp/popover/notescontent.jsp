@@ -1,7 +1,7 @@
-<div style="min-width: 248px; padding-left: .75rem; padding-right:.75rem">
+<div style="min-width: 500px	; padding-left: .75rem; padding-right:.75rem">
 	<div class="row justify-content-between pt-2">
 	  <div class="col-md-10 greyish-brown font-weight-bold f-18">Note</div>
-	  <button type="button" class="col-md-2 col-1 close" data-dismiss="modal" aria-label="Close">
+	  <button type="button"" class="col-md-2 col-1 close closenotes" data-dismiss="modal" aria-label="Close">
 		<span aria-hidden="true">&times;</span>
 	  </button>
 	</div>

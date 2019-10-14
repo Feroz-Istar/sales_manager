@@ -15,13 +15,13 @@
 <div style="min-width: 248px; padding-left: .75rem; padding-right:.75rem">
 	<div class="row justify-content-between pt-2">
 	  <div class="col-md-10 greyish-brown font-weight-bold f-18">Chat</div>
-	  <button type="button" class="col-md-2 col-1 close" data-dismiss="modal" aria-label="Close">
+	  <button type="button" 	class="col-md-2 col-1 close closechat" data-dismiss="modal" aria-label="Close">
 		<span aria-hidden="true">&times;</span>
 	  </button>
 	</div>
 	<hr>
 	<div class="row ">
-		<div class="col-md-9 d-flex">
+		<div class="col-md-10 d-flex">
 			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png">
 			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png">
 			

@@ -379,7 +379,7 @@
 
 
 											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100">
+												<ul class="list-group shadow d-flex flex-column h-100 taskpopup">
 													<li
 														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
 														<img src="<%=baseURL%>assets/image/calltask.svg" />

@@ -1359,7 +1359,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .popover {
-	border-radius: 10px;;
+	border-radius: 10px;
+	 max-width: 600px;
+  width: auto;
 }
 
 .popover-body {
@@ -1374,3 +1376,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 /*End of popover styling*/
+.taskpopup>li.active{
+	border-left: 3px solid red;
+	background-color: white !important;;
+    border-color: red !important;;
+    border-top:   1px solid rgba(0,0,0,.125)!important;
+    border-right: 0 !important;
+    border-bottom:     1px solid rgba(0,0,0,.125)!important;
+	
+}
+
+
+
+
