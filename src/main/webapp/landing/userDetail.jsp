@@ -379,24 +379,24 @@
 
 
 											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100" id="extra">
+												<ul class="list-group shadow d-flex flex-column h-100">
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Notes</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="cuespopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Cues</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="crmpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">CRM</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="chatpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Chat</div>
 													</li>

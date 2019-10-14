@@ -362,22 +362,22 @@
 											<div class="col-md-1 p-0">
 												<ul class="list-group shadow d-flex flex-column h-100">
 													<li
-														class="notespopup list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
+														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Notes</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="cuespopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Cues</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="crmpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">CRM</div>
 													</li>
 													<li
-														class="list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
+														class="chatpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
 														<img src="<%=baseURL%>assets/image/calltask.svg" />
 														<div class="f-12 pt-1 greyish-brown">Chat</div>
 													</li>
@@ -528,94 +528,19 @@
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
+	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 
 	<script>
-	var agentarray=[];
-	var teamarray=[];
+
 
 	$( document ).ready(function() {
 		$('.salesken.navbar-nav>li').removeClass('active');
 		
 		
-		$('.notespopup').popover({
-		    html: true,
-		    sanitize: false,
-
-		    trigger: 'manual',
-		    content: function() {
-		      return $.ajax({url: '../popover/test.jsp',
-		                     dataType: 'html',
-		                     async: false}).responseText;
-		    }
-		  }).click(function(e) {
-		    $(this).popover('toggle');
-		  });
 		
-		$('.notespopup').on('shown.bs.popover', function () {
-			  // do something…
-			  if(agentarray.length>0 || teamarray.length>0){
-				  console.log('we have selected checkbox'+agentarray.join(',')+teamarray.join(','));
-				  if(teamarray.length>0){
-				  $('.teamcheckbox').each(function () { 
-						for(var i=0;i<teamarray.length;i++){
-							if($(this).data('id')===teamarray[i]){
-								$(this).prop('checked', true);
-							}
-						}
-						
-					});
-				  }
-				  if(agentarray.length>0){
-
-					  $('.agentcheckbox').each(function () { 
-							for(var i=0;i<agentarray.length;i++){
-								if($(this).data('id')===agentarray[i]){
-									$(this).prop('checked', true);
-								}
-							}
-							
-						});
-				  }
-				  
-			  }
-			  
-			attachfilter();
-			})
-		
-
 	});
 	
 
-	function attachfilter(){
-		 $('.agentteamsubmit').click(function(){
-			 agentarray=[];
-			teamarray=[];
-				$('.agentcheckbox:checked').each(function () { 
-					if(this.checked){
-						agentarray.push($(this).data('id'));
-					}
-					
-				});
-				$('.teamcheckbox:checked').each(function () { 
-					if(this.checked){
-						teamarray.push($(this).data('id'));
-					}
-					
-				});
-				alert('agent submit ids are '+agentarray.join(',')+" team submit are "+teamarray.join(','));
-		        $('.notespopup').popover('hide');
-
-
-
-			});
-			$('.filter-menu').on('click.bs.dropdown', function (e) {
-			     e.stopPropagation(); 
-			});
-				 $('.filter-menu > ul > li > a').on('click', function(event){
-				  event.stopPropagation();
-				  $(this).tab('show')
-				 });
-	}
 	</script>
 </body>
 </html>
