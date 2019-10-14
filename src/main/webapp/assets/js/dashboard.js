@@ -2,6 +2,9 @@ $(document).ready(function() {
 
 	modalFormSetup();
 	
+	
+	
+	
 		/*attaching resolve click to load modal body dynamically for each task resolve card*/
 		loadResolveModal();
 
@@ -222,6 +225,8 @@ function loadResolveModal(){
 }
 
 function loadOngoingTaskDetail(){
+	
+	
 	$('.ongoingtaskcard').unbind().click(function (){
 		//window.location.href = location.href + 'landing/task_lead_detail.jsp'
 		
@@ -272,5 +277,17 @@ function modalFormSetup(){
 	$('#event_date').datepicker({autoclose:true})
 	$('#schedule_task_time').wickedpicker(options);
 	$('#schedule_task_date').datepicker({autoclose:true})
+}
+
+function scheduleEvent(){
+	$('.sales_ken_popover').popover('hide')
+	$('#createEventModalCenter').modal('show')
+	
+	
+}
+
+function scheduleTask(){
+	$('.sales_ken_popover').popover('hide')
+	$('#scheduleTaskModalCenter').modal('show')
 }
 

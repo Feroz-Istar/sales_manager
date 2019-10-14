@@ -6,8 +6,11 @@ $( document ).ready(function() {
     });
     
     
-   
-		 
+    $( ".sales_ken_popover" ).each(function() {
+    	$(this).popover({
+    	sanitize:false,html:true
+    	});
+    }); 
 		 
 });
 

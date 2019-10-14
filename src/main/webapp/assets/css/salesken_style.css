@@ -155,10 +155,11 @@ html, body {
 .salesken>li.active {
 	font-weight: bold;
 }
+
 .salesken>li.active svg>path,.salesken>li.active svg>g>path,.salesken>li.active svg>g>g>path{
 	fill:#444444 ;
 }
-.salesken>li svg>path,.salesken>li svg>g>path{
+.salesken>li svg>path,.salesken>li svg>g>path,.salesken>li svg>g>g>path{
 		fill:#999;
 }
 

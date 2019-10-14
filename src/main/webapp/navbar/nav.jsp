@@ -145,17 +145,7 @@
 						width="24" height="24" viewBox="0 0 24 24">
     <defs>
         <style>
-.cls-1 {
-	fill: none
-}
 
-.cls-2 {
-	clip-path: url(#clip-path)
-}
-
-.cls-3 {
-	fill: #999
-}
 </style>
         <clipPath id="clip-path">
             <path d="M0 0h24v24H0z" class="cls-1" />
@@ -199,17 +189,7 @@
 						style="width: 24px; height: 24px !important;">
     <defs>
         <style>
-.cls-1 {
-	fill: none
-}
 
-.cls-2 {
-	clip-path: url(#clip-path)
-}
-
-.cls-3 {
-	fill: #999
-}
 </style>
         <clipPath id="clip-path">
             <path d="M0 0h24.03v24H0z" class="cls-1" />

@@ -127,15 +127,10 @@
 							<div class="d-flex flex-row align-items-center pt-2 pb-2 istar-dropdown">
 								<div class="mr-3 bblack f-18 fw-500">To-Do List</div>
 								<button
-									class="btn rounded-circle shadow d-flex justify-content-center align-items-center"
-									style="height: 30px; width: 30px; background: white;" id="todoMenuButton" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									class="btn rounded-circle shadow d-flex justify-content-center align-items-center sales_ken_popover"
+									style="height: 30px; width: 30px; background: white;"  data-toggle="popover"  data-placement="bottom"  data-content='<ul class="popover_content list-group  py-2 bg-white" style="">   <li class="list-group-item border-0 f-14 cursor-pointer rounded-0" id="create_event" onclick="scheduleEvent()">Create an Event</li>   <li class="list-group-item border-0 f-14 cursor-pointer rounded-0" id="schedule_task" onclick="scheduleTask()">Schedule Task</li> </ul>'>
 									<i class="fas fa-plus theme_color"></i>
 								</button>
-								
-								<div class="dropdown-menu dropdown-menu-left istar-dropdown-menu m-0" aria-labelledby="todoMenuButton">
-                                     <button class="dropdown-item" data-toggle="modal" data-target="#createEventModalCenter">Create an Event</button>
-                                     <button class="dropdown-item" data-toggle="modal" data-target="#scheduleTaskModalCenter">Schedule Task</button>
-                                </div>
 								
 							</div>
 							<!-- Start of creation to do items card -->
