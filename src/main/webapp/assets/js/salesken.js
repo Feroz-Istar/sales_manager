@@ -206,6 +206,9 @@ $( document ).ready(function() {
 	
 	$('.taskshare').on('shown.bs.popover', function () {
 		  // do something…
+		if('.taskcomment:visible'){
+			$('.taskcomment	').popover('hide');
+		}
 		$('.agentsubmit').click(function(e){
 			var agentarray=[];
 			$('.agentcheckbox:checked').each(function () { 
@@ -226,7 +229,38 @@ $( document ).ready(function() {
 	/*end of task share popover*/
 
 	
-
+	$('.taskcomment').popover({
+	    html: true,
+	    sanitize: false,
+	    container: 'body',
+	    placement: 'bottom',
+	    trigger: 'manual',
+	    content: function() {
+	      return $.ajax({url: '../popover/taskcomment.jsp',
+	                     dataType: 'html',
+	                     async: false}).responseText;
+	    }
+	  }).click(function(e) {
+	    $(this).popover('toggle');
+	  });
+	
+	
+	$('.taskcomment').on('shown.bs.popover', function () {
+		  // do something…
+		if('.taskshare:visible'){
+			$('.taskshare').popover('hide');
+		}
+		$('.closecomment').click(function(){
+			$('.taskcomment').popover('hide');
+		})
+		
+		$('.submitcomment').click(function(){
+			$('.taskcomment').popover('hide');
+		})
+	})
+		
+		
+	
 	
 });
 

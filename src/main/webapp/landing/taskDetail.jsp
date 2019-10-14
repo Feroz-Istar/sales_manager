@@ -736,9 +736,9 @@
 													</div>
 													<div class="col-3">
 														<div class="d-flex justify-content-end">
-															<img src="<%=baseURL%>assets/image/heart.svg" class="mr-2">
-														<img src="<%=baseURL%>assets/image/message.svg" class="mr-2">
-														<img src="<%=baseURL%>assets/image/reply.svg" class="taskshare mr-2">
+															<img src="<%=baseURL%>assets/image/heart.svg" class="cursor-pointer mr-2">
+														<img src="<%=baseURL%>assets/image/message.svg" class="cursor-pointer taskcomment mr-2">
+														<img src="<%=baseURL%>assets/image/reply.svg" class="cursor-pointer taskshare mr-2">
 														<div class="f-14 font-weight-bold theme_color cursor-pointer align-self-center" onclick="window.location.href = 'task_lead_detail.jsp'">
 												    		 View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
