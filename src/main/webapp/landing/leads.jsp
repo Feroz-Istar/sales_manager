@@ -225,15 +225,9 @@
 											<div
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 												aria-labelledby="dropdownMenuButton">
-												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/won.svg" alt=""
-														srcset="" class="mr-2"> Won
-												</button>
-												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/lost.svg" alt=""
-														srcset="" class="mr-2">Lose
-												</button>
-												<button class="dropdown-item" href="#">
+												
+												<button class="dropdown-item" data-toggle="modal"
+													data-target="#editLeadModalCenter">
 													<img src="<%=baseURL%>assets/image/edit.svg" alt=""
 														srcset="" class="mr-2">Edit
 												</button>
@@ -241,7 +235,7 @@
 													<img src="<%=baseURL%>assets/image/delete.svg" alt=""
 														srcset="" class="mr-2">Delete
 												</button>
-												<button class="dropdown-item" href="#">
+												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
 													<img src="<%=baseURL%>assets/image/details.png" alt=""
 														srcset="" class="mr-2">Details
 												</button>
@@ -401,7 +395,8 @@
 											<div
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 												aria-labelledby="dropdownMenuButton">
-												<button class="dropdown-item" href="#">
+												<button class="dropdown-item"  data-toggle="modal"
+													data-target="#wonLeadModalCenter">
 													<img src="<%=baseURL%>assets/image/won.svg" alt=""
 														srcset="" class="mr-2"> Won
 												</button>
@@ -410,7 +405,8 @@
 													<img src="<%=baseURL%>assets/image/lost.svg" alt=""
 														srcset="" class="mr-2">Lose
 												</button>
-												<button class="dropdown-item" href="#">
+												<button class="dropdown-item" data-toggle="modal"
+													data-target="#editLeadModalCenter">
 													<img src="<%=baseURL%>assets/image/edit.svg" alt=""
 														srcset="" class="mr-2">Edit
 												</button>
@@ -418,7 +414,7 @@
 													<img src="<%=baseURL%>assets/image/delete.svg" alt=""
 														srcset="" class="mr-2">Delete
 												</button>
-												<button class="dropdown-item" href="#">
+												<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
 													<img src="<%=baseURL%>assets/image/details.png" alt=""
 														srcset="" class="mr-2">Details
 												</button>
@@ -518,12 +514,12 @@
 									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-3 col ">
+							<div class="col-md-2 col ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-3 col-12 ">
+							<div class="col-md-4 col-12 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Agent<i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
@@ -572,11 +568,30 @@
 										</div>
 									</div>
 									<div class="col-md-1">
-										<button class="btn" type="button" id="dropdownMenuButton"
-											data-display="static" data-toggle="dropdown"
-											aria-haspopup="true" aria-expanded="false">
+										<button class="dropdown-icon-btn dropleft" type="button"
+											id="dropdownMenuButton" data-display="static"
+											data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
 											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 										</button>
+										<div
+											class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+											aria-labelledby="dropdownMenuButton">
+											
+											<button class="dropdown-item" data-toggle="modal"
+													data-target="#editLeadModalCenter">
+												<img src="<%=baseURL%>assets/image/edit.svg" alt=""
+													srcset="" class="mr-2">Edit
+											</button>
+											<button class="dropdown-item" href="#">
+												<img src="<%=baseURL%>assets/image/delete.svg" alt=""
+													srcset="" class="mr-2">Delete
+											</button>
+											<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
+												<img src="<%=baseURL%>assets/image/details.png" alt=""
+													srcset="" class="mr-2">Details
+											</button>
+										</div>
 
 									</div>
 								</div>
@@ -672,12 +687,12 @@
 									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-3 col ">
+							<div class="col-md-2 col ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-3 col-12 ">
+							<div class="col-md-4 col-12 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Agent<i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
@@ -706,13 +721,13 @@
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-3 col d-flex align-items-center">
+							<div class="col-md-2 col d-flex align-items-center">
 								<img class="hw-24 pr-2"
 									src="<%=baseURL%>assets/image/calltask.svg">
 								<div class="f-14 greyish-brown pr-2">Call -</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
-							<div class="col-md-3 col-12 ">
+							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="d-flex">
@@ -735,15 +750,9 @@
 										<div
 											class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 											aria-labelledby="dropdownMenuButton">
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/won.svg" alt="" srcset=""
-													class="mr-2"> Won
-											</button>
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/lost.svg" alt=""
-													srcset="" class="mr-2">Lose
-											</button>
-											<button class="dropdown-item" href="#">
+											
+											<button class="dropdown-item" data-toggle="modal"
+													data-target="#editLeadModalCenter">
 												<img src="<%=baseURL%>assets/image/edit.svg" alt=""
 													srcset="" class="mr-2">Edit
 											</button>
@@ -751,7 +760,7 @@
 												<img src="<%=baseURL%>assets/image/delete.svg" alt=""
 													srcset="" class="mr-2">Delete
 											</button>
-											<button class="dropdown-item" href="#">
+											<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
 												<img src="<%=baseURL%>assets/image/details.png" alt=""
 													srcset="" class="mr-2">Details
 											</button>
@@ -977,6 +986,139 @@
 			</div>
 		</div>
 		<!-- end of add lead modal -->
+
+		<!-- start of won lead modal -->
+
+		<div class="modal fade" id="wonLeadModalCenter" tabindex="-1"
+			role="dialog" aria-labelledby="wonLeadModalCenterTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered"
+				role="document">
+				<div class="modal-content rounded-0 px-3 lostleadmodalsize">
+					<div class="row shadow-sm p-3">
+						<div
+							class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold"
+							id="wonLeadModalCenterTitle">Won Lead</div>
+						<button type="button" class="col-md-1 col-1 close"
+							data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+
+						<div class="row pb-4">
+							<div class="col-md-12 f-18 font-weight-bold greyish-brown">
+								Zencorporation Pot. Ltd.</div>
+						</div>
+
+						<div class="row pb-4">
+							<div class="col-md-4 border-right-separation">
+								<div class="f-14 brownish-grey">Contact Person</div>
+								<div class="f-16 fw-500 black">Miriam Franklin</div>
+							</div>
+							<div class="col-md-4 border-right-separation">
+								<div class="f-14 brownish-grey">Recent Task</div>
+								<div class="f-16 fw-500 black">Call</div>
+							</div>
+							<div class="col-md-4 ">
+								<div class="f-14 brownish-grey">Deal Value</div>
+								<div class="f-16 fw-500 black">$ 208</div>
+							</div>
+						</div>
+
+						<div class="row pt-4">
+							<div class="col-md-12">
+								<textarea
+									class="custom-modal-textarea f-14 brown-grey w-100 p-2"
+									id="reason" rows="6" placeholder="Type Reason"></textarea>
+							</div>
+						</div>
+
+					</div>
+					<div class="modal-footer">
+						<button type="button"
+							class="btn theme_color f-14 font-weight-bold">Reset</button>
+						<button type="button"
+							class="btn modal-submit-btn f-14 font-weight-bold"
+							data-dismiss="modal">SUBMIT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- end of won lead modal -->
+		
+		
+		<!-- start of edit lead modal -->
+		<div class="modal fade" id="editLeadModalCenter" tabindex="-1" role="dialog" aria-labelledby="editLeadModalCenterTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		    <div class="modal-content rounded-0 px-3 eventmodalsize">
+		    	<div class="row shadow-sm p-3" > 
+					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="editLeadModalCenterTitle">Edit Lead</div>
+					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+		      <div class="modal-body">
+		       	<div class="row pb-4">
+		       		<div class="col-md-6">
+		       			<div class="f-14 fw-500 pb-1">Company Name</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="company_name" aria-describedby="company_name" placeholder="Type here">
+		       		</div>
+		       		<div class="col-md-6">
+		       			<div class="f-14 fw-500 pb-1">Lead Source</div>
+		       			<select class="form-control custom-modal-input w-100 f-14 brown-grey" id="leadSource">
+					      <option>Select here</option>
+					      <option>Online</option>
+					      <option>Marketing</option>
+					      <option>Offline</option>
+					    </select>
+		       		</div>
+		       	</div>
+		    	 <div class="row pb-4">
+		       		<div class="col-md-6">
+		       			<div class="f-14 fw-500 pb-1">City</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="city" aria-describedby="city" placeholder="Type here">
+		       		</div>
+		       		<div class="col-md-6">
+		       			<div class="f-14 fw-500 pb-1">State</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="state" aria-describedby="state" placeholder="Type here">
+		       		</div>
+		       	</div>
+		       	
+		       	<div class="row pb-4">
+		       		<div class="col-md-6">
+		       			<div class="f-14 fw-500 pb-1">Country</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="country" aria-describedby="country" placeholder="Type here">
+		       		</div>
+		       		<div class="col-md-6">
+		       			<div class="f-14 fw-500 pb-1">Website</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="website" aria-describedby="website" placeholder="Type here">
+		       		</div>
+		       	</div>
+				<div class="row pb-4">
+					<div class="col-md-12">
+						<div class="f-14 fw-500 pb-1">About Company</div>
+						<textarea class="custom-modal-textarea w-100" id="aboutcompany" rows="6"></textarea>
+					</div>
+				</div>
+				
+				<div class="row pb-4">
+					<div class="col-md-12">
+						<div class="f-14 fw-500 pb-1">Address</div>
+						<textarea class="custom-modal-textarea w-100" id="address" rows="6"></textarea>
+					</div>
+				</div>
+				
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
+		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal">UPDATE</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	<!-- end of edit lead modal -->
 
 	</div>
 	</main>
