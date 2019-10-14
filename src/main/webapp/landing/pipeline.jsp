@@ -246,7 +246,7 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}
 		      			%>
-		      		<div class="row py-4 bottom-separation-solid align-items-center <%=bgcolor%>" onclick="window.location.href = 'task_lead_detail.jsp'">
+		      		<div class="row py-4 bottom-separation-solid align-items-center <%=bgcolor%>" >
 		      			<div class="col-md-2">
 		      				<div class="f-14 black fw-500">Accenture Consulting Inc.</div>
 		      				<div class="f-14 brownish-grey fw-500">$ 290</div>
@@ -305,7 +305,7 @@
 	                                                    srcset="" class="mr-2">Edit</button>
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
 	                                                    alt="" srcset="" class="mr-2">Delete</button>
-	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/details.png"
+	                                            <button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'"><img src="<%=baseURL%>assets/image/details.png"
 	                                                    alt="" srcset="" class="mr-2">Details</button>
 	                                        </div>
 	                                    </div>
