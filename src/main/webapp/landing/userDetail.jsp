@@ -179,7 +179,7 @@
 													<div class="col-2 text-right">
 														<img src="<%=baseURL%>assets/image/heart.svg" class="mr-2">
 														<img src="<%=baseURL%>assets/image/message.svg" class="mr-2">
-														<img src="<%=baseURL%>assets/image/reply.svg">
+														<img src="<%=baseURL%>assets/image/reply.svg" class="taskshare mr-2">
 													</div>
 												</div>
 												<div class="row pt-2 pl-3">
