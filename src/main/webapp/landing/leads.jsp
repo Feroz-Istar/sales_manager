@@ -63,7 +63,7 @@
 		</div>
 
 
-		<div class="row">
+		<div class="row mb-5">
 			<div class="col-md-12 bg-white ">
 				<ul class="nav nav-tabs nav-mytabs  pt-2 mx-4" id="reportTab" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active" id="nav-target-tab"
@@ -249,14 +249,13 @@
 						</div>
 						<%} %>
 
-						<div class="row py-3 justify-content-end">
-							<div class="col-md-3">
+						<div class="row py-4 pb-5 px-4 ">
+							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination"></ul>
+									<ul class="salesken pagination mb-0"></ul>
 								</div>
 							</div>
 						</div>
-
 						<!-- end of target content -->
 					</div>
 
@@ -427,10 +426,10 @@
 							</div>
 						</div>
 						<%} %>
-						<div class="row py-3 justify-content-end">
-							<div class="col-md-3">
+						<div class="row py-4 pb-5 px-4 ">
+							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination"></ul>
+									<ul class="salesken pagination mb-0"></ul>
 								</div>
 							</div>
 						</div>
@@ -600,10 +599,10 @@
 							</div>
 						</div>
 						<%} %>
-						<div class="row py-3 justify-content-end">
-							<div class="col-md-3">
+						<div class="row py-4 pb-5 px-4 ">
+							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination"></ul>
+									<ul class="salesken pagination mb-0"></ul>
 								</div>
 							</div>
 						</div>
@@ -773,10 +772,10 @@
 							</div>
 						</div>
 						<%} %>
-						<div class="row py-3 justify-content-end">
-							<div class="col-md-3">
+					<div class="row py-4 pb-5 px-4 ">
+							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination"></ul>
+									<ul class="salesken pagination mb-0"></ul>
 								</div>
 							</div>
 						</div>
