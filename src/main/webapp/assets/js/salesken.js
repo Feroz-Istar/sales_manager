@@ -36,8 +36,8 @@ $( document ).ready(function() {
 	
 	$('.notespopup').on('show.bs.popover', function () {
 		 $(this).addClass('active');
-		if($('.cuespopup').hasClass('active')){
-			$('.cuespopup').popover('hide');
+		if($('.cuespopover').hasClass('active')){
+			$('.cuespopover').popover('hide');
 		}
 		if($('.chatpopover').hasClass('active')){
 			$('.chatpopover').popover('hide');

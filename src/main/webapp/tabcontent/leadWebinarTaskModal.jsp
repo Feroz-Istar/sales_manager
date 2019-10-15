@@ -8,7 +8,7 @@
 		<div class="col-md-11">
 			<div class="row pt-2 pl-3">
 				<div class="col">
-					<p class="greyish-brown f-18 font-weight-bold">Call
+					<p class="greyish-brown f-18 font-weight-bold">Webinar
 						Task</p>
 				</div>
 			</div>
@@ -243,4 +243,4 @@
 					style="height: calc(100% - 80px);"></li>
 			</ul>
 		</div>
-</div>
+</div>	<script src="<%=baseURL%>assets/js/salesken.js"></script>

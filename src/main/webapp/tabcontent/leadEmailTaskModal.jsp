@@ -194,4 +194,5 @@
 			  
 			  
 			  
+<script src="<%=baseURL%>assets/js/salesken.js"></script>
 			

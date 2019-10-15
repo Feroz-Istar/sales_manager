@@ -139,10 +139,8 @@
 									%>
 									<div class="tab-pane h-100 fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
-										aria-labelledby="v-pills-<%=i%>-tabs" data-task_type="call">
+										aria-labelledby="v-pills-<%=i%>-tabs">
 										
-										<jsp:include page="webinartaskmodal.jsp"></jsp:include>
-
 									</div>
 									<%
 										}
@@ -317,48 +315,33 @@
 
 	$( document ).ready(function() {
 		$('.salesken.navbar-nav>li').removeClass('active');
-		/* 
-		$('#taskdetail-tab-list>li>a').on('shown.bs.tab', function (e) {
-			alert('dsd')
-			$('#taskdetail-tab-list>.tab-pane').empty();
-			var url=window.location.href;
-
-	    	var selectedTab = $(this).attr('href').replace('#','');
-	    	//console.log(selectedTab)
-
-		}); */
-		/* $('#taskdetail-tab-list > div').click( function(e) {
-	        $('#taskdetail-tab-listContent ').data('task_type',$(this).data('task_type'));
-	        console.log($('#taskdetail-tab-listContent').data('task_type'));
-	        if($('#taskdetail-tab-listContent').data('task_type')==='call'){
-	        	$( '#taskdetail-tab-listContent > div' ).prepend(function() {
-		      	      return $.ajax({url: 'calltaskmodal.jsp',
-   	                     dataType: 'html',
-   	                     async: false}).responseText;
-   	    			});
-	        	
-	        	
-	        }
-	        if($('#taskdetail-tab-listContent > div').data('task_type')==='email'){
-	        	$( '#taskdetail-tab-listContent > div' ).remove();
-	        	
-	        	$( '#taskdetail-tab-listContent > div' ).prepend(function() {
-		      	      return $.ajax({url: 'emailtaskmodal.jsp',
- 	                     dataType: 'html',
- 	                     async: false}).responseText;
- 	    			});
-	        	
-	        }
-	        if($('#taskdetail-tab-listContent > div').data('task_type')==='webinar'){
-	        	console.log('open call')
-	        }
-	    }); */
+			    
+	    $.get(location.origin+'/tabcontent/leadCallTaskModal.jsp', function( data ) {
+        
+			var tabid= $('#taskdetail-tab-list>.nav-link').attr('href').replace('#','')
+        	$('#'+tabid).html(data);
+    		});
 	    
-	    $('#taskdetail-tab-list>.nav-link').on('shown.bs.tab', function (e) {
+	    $('#taskdetail-tab-list>.nav-link').on('show.bs.tab', function (e) {
 	    	var tabid= $(e.target).attr('href').replace('#','');
-	    	  console.log(location.origin+'/landing/webinartaskmodal.jsp') // newly activated tab
-				
-	    	$.get( location.origin+'/landing/webinartaskmodal.jsp', function( data ) {
+	    	 // newly activated tab
+			var url=location.origin;
+			
+	    	switch($(e.target).data('task_type')){
+	    	case 'call':
+		    	  url=url+ '/tabcontent/leadCallTaskModal.jsp';
+		    	  break;
+	    	case 'email':
+	    		url=url+ '/tabcontent/leadEmailTaskModal.jsp';
+		    	  break;
+	    	case 'webinar':
+	    		url=url+ '/tabcontent/leadWebinarTaskModal.jsp';
+		    	  break;
+		    default: url=url+ '/tabcontent/leadCallTaskModal.jsp';
+	    			 break;
+	    	}
+	    	
+	    	$.get(url, function( data ) {
 	        	//console.log(data);
 	        	//console.log(selectedTab);
 
@@ -366,11 +349,22 @@
 	    		//  alert( "Load was performed." );
 	    		});
 	    	  console.log($(e.target).data('task_type')) // newly activated tab
-	    	  
+		    
+	    	  //close share n comment popover on tab change
+	    	  if('.taskshare:visible'){
+	  			$('.taskshare').popover('hide');
+	  			}
+	    	  if('.taskcomment:visible'){
+		  			$('.taskcomment').popover('hide');
+		  			}
 	    	})
+	    	
+	    	
+	    	
 		
 	});
 	
+
 
 	</script>
 </body>
