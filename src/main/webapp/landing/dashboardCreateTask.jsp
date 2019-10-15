@@ -28,13 +28,13 @@
 
 <main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation justify-content-between" >
+		<div class="row grey-white-bg align-items-center py-3 theme_solid_border_bottom justify-content-between px-4" >
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
-				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer" onclick="window.location.href = 'dashboard.jsp'"></i>
-				<div class="display-1 black f-20 border-right-separation pr-3 ">Call Task</div>
+				<i class="fas fa-arrow-left black f-20 pr-4 cursor-pointer" onclick="window.location.href = 'dashboard.jsp'"></i>
+				<div class="display-1 black f-20 border-right-separation pr-3 fw-500 ">Call Task</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey " id="breadcrumb">Call Task</div>
+				<div class=" f-12 brown-grey fw-500  " id="breadcrumb">Call Task</div>
 			</div>
 			<div class="col-md-1">
 				<button class="btn listen_btn f-12" data-toggle="modal" data-target="#contactModalCenter">
@@ -45,10 +45,10 @@
 		
 		
 		<div class="row bg-white">
-			<div class="col-md-3 cream_white dashboardcalltabsize" >
+			<div class="col-md-3 cream_white dashboardcalltabsize p-0 " >
 			<!--  start of call dialer -->
-				<div  id="calldialer"> 
-					<ul class="saleken nav nav-tabs f-16 custom_dash_padding pl-3 pt-3 pb-0" id="pills-tab" role="tablist" >
+				<div  id="calldialer" class="" > 
+					<ul class="saleken nav nav-tabs f-16 pl-5 pt-3 " id="pills-tab" role="tablist" >
 					  <li class="nav-item">
 					    <a class="nav-link active border-istar-left-0" id="dialer-tab" data-toggle="pill" href="#dialer" role="tab" aria-controls="dialer" aria-selected="true">Dialer</a>
 					  </li>
@@ -64,78 +64,78 @@
 					  <div class="tab-pane fade show active" id="dialer" role="tabpanel" aria-labelledby="dialer-tab">
 					  <!-- start of dialer content -->
 					  	
-					  	<div class="row pt-4 ">
+					  	<div class="row pt-4 mx-4">
 					  		<input disabled type="text" class="col-md-10 col-10 form-control f-16 font-weight-bold border-0 cream_white text-center removefocus" id="exampleFormControlInput1"/>
 					  		<button class="col-md-2 col-2 btn">
 					  			<i class="fas fa-backspace very-light-pink f-14"></i>
 					  		</button>	
 					  	</div>
 					  
-					  	<hr class="m-0">
+					  	<hr class="mx-5 mb-0">
 					  	
-				  		<div class="row justify-content-center pt-4">
+				  		<div class="row justify-content-centerrow mx-0 justify-content-center pt-4">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">1</div>
+					  			<div class="f-24  bblack fw-500">1</div>
 					  			<div class="f-12 brown-grey">&nbsp;</div>
 					  		</button>
 					  		<button class="col-md-3  col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">2</div>
-					  			<div class="f-12 brown-grey">ABC</div>
+					  			<div class="f-24 bblack fw-500">2</div>
+					  			<div class="f-12 brown-grey fw-300">ABC</div>
 					  		</button>
 					  		<button class="col-md-2  col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">3</div>
-					  			<div class="f-12 brown-grey">DEF</div>
+					  			<div class="f-24 bblack fw-500">3</div>
+					  			<div class="f-12 brown-grey fw-300">DEF</div>
 					  		</button>
 					  	</div>
-					  	<div class="row justify-content-center">
+					  	<div class="row justify-content-center mx-0">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">4</div>
-					  			<div class="f-12 brown-grey">GHI</div>
+					  			<div class="f-24 bblack fw-500">4</div>
+					  			<div class="f-12 brown-grey fw-300">GHI</div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">5</div>
-					  			<div class="f-12 brown-grey">JKL</div>
+					  			<div class="f-24  bblack fw-500">5</div>
+					  			<div class="f-12 brown-grey fw-300">JKL</div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">6</div>
-					  			<div class="f-12 brown-grey">MNO</div>
+					  			<div class="f-24 bblack fw-500">6</div>
+					  			<div class="f-12 brown-grey fw-300">MNO</div>
 					  		</button>
 					  	</div>
-					  	<div class="row justify-content-center">
+					  	<div class="row justify-content-center mx-0">
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">7</div>
-					  			<div class="f-12 brown-grey">PQRS</div>
+					  			<div class="f-24  bblack fw-500">7</div>
+					  			<div class="f-12 brown-grey fw-300">PQRS</div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">8</div>
-					  			<div class="f-12 brown-grey">TUV</div>
+					  			<div class="f-24  bblack fw-500">8</div>
+					  			<div class="f-12 brown-grey fw-300">TUV</div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">9</div>
-					  			<div class="f-12 brown-grey">WXYZ</div>
+					  			<div class="f-24 bblack fw-500">9</div>
+					  			<div class="f-12 brown-grey fw-300">WXYZ</div>
 					  		</button>
 					  	</div>
-					  	<div class="row justify-content-center">
+					  	<div class="row justify-content-center mx-0">
 					  		<button class="col-md-2 col-2  btn">
-					  			<div class="f-24 font-weight-bold bblack">*</div>
+					  			<div class="f-24  bblack fw-500">*</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
 					  		<button class="col-md-3 col-3 btn">
-					  			<div class="f-24 font-weight-bold bblack">0</div>
+					  			<div class="f-24 fw-500 bblack">0</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
 					  		<button class="col-md-2 col-2 btn">
-					  			<div class="f-24 font-weight-bold bblack">#</div>
+					  			<div class="f-24 fw-500 bblack">#</div>
 					  			<div class="f-12 brown-grey"></div>
 					  		</button>
 					  	</div>
-					  	<div class="row justify-content-center pt-4">
+					  	<div class="row justify-content-center pt-4 mx-0">
 					  		<button class="btn d-flex justify-content-center align-items-center call-icon green-gradient" onclick="makeCall()">
 					  			<i class="fas fa-phone-alt f-22 text-white"></i>
 					  		</button>
 					  	</div>
-					  	<hr>
-					  	<div class="row align-items-center py-2 px-0 mx-0">
+					  
+					  <%-- 	<div class="row align-items-center py-2 px-0 mx-0">
 				  			<div class="col-md-10 col-10 p-0">
 				  				<div class="f-18 font-weight-bold bblack">Today’s Call History</div>
 				  			</div>
@@ -156,13 +156,13 @@
 				  			</button>
 				  		</div>
 				  		<%} %>
-				  		</div>
+				  		</div> --%>
 						<!-- end of dialer content -->
 						
 					  </div>
 					  
 					  
-					  <div class="tab-pane fade px-3" id="recent" role="tabpanel" aria-labelledby="recent-tab">
+					  <div class="tab-pane fade px-5" id="recent" role="tabpanel" aria-labelledby="recent-tab">
 					  	<!-- start of recent content -->
 					  	<div class="row py-4  justify-content-center">
 					  		<div class="col-md-12 text-center">
@@ -191,7 +191,7 @@
 					  	<!-- end of recent content -->
 					  </div>
 					  
-					  <div class="tab-pane fade px-3" id="leads" role="tabpanel" aria-labelledby="leads-tab">
+					  <div class="tab-pane fade px-5" id="leads" role="tabpanel" aria-labelledby="leads-tab">
 					  <!-- start of leads content -->
 					  <div class="row py-4  justify-content-center">
 					  		<div class="col-md-12 text-center">
@@ -242,7 +242,7 @@
 						</div>
 					</div>
 				
-				<hr class="m-0">
+				<hr class="mx-0">
 				
 				
 				<div class="row justify-content-between pt-2">
@@ -339,6 +339,7 @@
 		     	</div>
 		    </div>
 		  </div>
+		</div>
 		</div>
 		<!-- end of contact modal -->
 <script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>

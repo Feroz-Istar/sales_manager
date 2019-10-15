@@ -16,7 +16,7 @@
 	height: 625px;
 }
 .dashboardcalltabsize{
-	height: 1095px;
+	min-height: 800px;
 	
 }
 .shadow-left{
