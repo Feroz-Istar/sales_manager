@@ -39,7 +39,12 @@
 				<div class=" f-12 brown-grey  fw-500" id="breadcrumb">Current Page</div>
 			</div>
 		</div>
-		
+		<div class="row rounded-0 alert alert-success mb-0 font-italic align-items-center d-none" role="alert">
+		 <span class="font-weight-bold f-14 mr-2 tea-color">Won Lead: </span> <div class="f-12 brownish-grey">A simple success alert—check it out!</div>
+		</div>
+		<div class="row rounded-0 alert alert-danger mb-0 font-italic align-items-center d-none" role="alert">
+		 <span class="font-weight-bold f-14 mr-2 theme_color">Lost Lead: </span> <div class="f-12 brownish-grey">A simple success alert—check it out!</div>
+		</div>
 		<div class="row bg-white pl-3">
 			<div class="col-md-12">
 				<ul class="nav nav-tabs nav-mytabs pt-2" id="myTab" role="tablist">

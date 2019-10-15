@@ -20,7 +20,8 @@
 	String incomingDate = request.getParameter("var") != null ? request.getParameter("var")
 			: sdf.format(new Date());
 	String today_date= sdf.format(new Date());
-	
+	int size=0;
+
 %>
 <link rel="icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
 <link rel="shortcut icon" href="<%=baseURL%>favicon.ico"
@@ -135,12 +136,10 @@
 							</div>
 							<!-- Start of creation to do items card -->
 							<%
-								int size=0;
-								if(size>0){
-								for (int j = 0; j < size; j++) {
+								for (int j = 0; j < 4; j++) {
 									
 							%>
-							<div class="taskitem pt-3 pb-3">
+							<div class="taskitem pt-3 pb-3 " style="display:none">
 								<div class="d-flex flex-row align-items-center mb-2 ">
 									<div class="font-weight-bold f-14 bblack">Meeting with
 										Sales Team</div>
@@ -185,19 +184,21 @@
 								</div>
 							</div>
 							<%
-									}}else{
+									}
 							%>
 							
-								<!-- start of no-data for todo list -->							
+								<!-- start of no-data for todo list -->	
+								<div class="no-event">						
 								<div class="w-100 mt-4 pt-4 text-center">
 									<img src="<%=baseURL%>assets/image/08.svg" alt=""
 													srcset="" class="mr-2 mb-3">
 								</div>
 								<div class="fw-500 f-16 greyish-brown mb-2 text-center">Track your tasks</div>
 								<div class="fw-500 f-12 brownish-grey  text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>	
+								</div>
 								<!-- end of no-data for todo list -->							
 								
-							<%} %>
+							
 							
 							<!-- End of creation to do items card -->
 
@@ -248,7 +249,16 @@
 							<li>Suspendisse sit amet sem ac tellus</li>
 							<li>Nulla malesuada justo sed diam.</li>
 						</ul> -->
-
+								<!-- start of no-data for notes list -->	
+								<div class="no-notes text-center cursor-pointer" onclick="opennotes()">						
+									<div class="w-100 mt-4 pt-4">
+										<img src="<%=baseURL%>assets/image/make_notes.svg" alt=""
+														srcset="" class="mr-2 mb-4">
+									</div>
+									<div class="fw-500 f-16 greyish-brown mt-2 mb-2">Keep your notes</div>
+									<div class="fw-500 f-12 brownish-grey ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+									</div>	
+								<!-- end of no-data for notes list -->	
 					</div>
 					<!-- End of Notes tab content -->
 
@@ -827,7 +837,7 @@
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
-		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal">CREATE</button>
+		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal" onclick="showList()">CREATE</button>
 		      </div>
 		    </div>
 		  </div>

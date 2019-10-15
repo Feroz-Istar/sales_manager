@@ -214,6 +214,9 @@ $(document).ready(function() {
 				}
 			}]
 		});
+		
+		
+		
 	});
 
 function loadResolveModal(){
@@ -235,6 +238,9 @@ function loadOngoingTaskDetail(){
 	});
 }
 function modalFormSetup(){
+	
+
+	 if(localStorage.getItem('notes')){
 	 $('#summernote').summernote({
 	        placeholder: 'Hello bootstrap 4',
 	        tabsize: 2,
@@ -246,9 +252,12 @@ function modalFormSetup(){
 	            }
 	        }
 	      });
-
-	 if(localStorage.getItem('notes'))
 	 $('#summernote').summernote('code', localStorage.getItem('notes'));
+		$('.no-notes').hide();
+
+	 }else{
+		 $('no-notes').show();
+	 }
 		$('.selectpicker').selectpicker({
 			width : '100%',
 			sanitize : false,
@@ -289,5 +298,25 @@ function scheduleEvent(){
 function scheduleTask(){
 	$('.sales_ken_popover').popover('hide')
 	$('#scheduleTaskModalCenter').modal('show')
+}
+
+function opennotes(){
+	$('.no-notes').hide();
+	$('#summernote').summernote({
+        placeholder: 'Hello bootstrap 4',
+        tabsize: 2,
+        height: 800,
+        callbacks: {
+            onChange: function(contents, $editable) {
+            	localStorage.setItem("notes", $('#summernote').summernote('code'))	            	
+            
+            }
+        }
+      });
+}
+
+function showList(){
+	$('.taskitem').show();
+	$('.no-event').hide();
 }
 
