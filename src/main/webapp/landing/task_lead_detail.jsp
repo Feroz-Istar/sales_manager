@@ -357,6 +357,18 @@
 	    	  if('.taskcomment:visible'){
 		  			$('.taskcomment').popover('hide');
 		  			}
+	    	  	if($('.notespopup').hasClass('active')){
+	  				$('.notespopup').popover('hide');
+		  		}
+		  		if($('.crmpopover').hasClass('active')){
+		  			$('.crmpopover').popover('hide');
+		  		}
+		  		if($('.cuespopover').hasClass('active')){
+		  			$('.cuespopover').popover('hide');
+		  		}
+		  		if($('.chatpopover').hasClass('active')){
+				 	$('.chatpopover').popover('hide');
+		  		}
 	    	})
 	    	
 	    	
