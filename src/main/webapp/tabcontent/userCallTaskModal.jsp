@@ -216,22 +216,22 @@
 												<ul class="list-group shadow d-flex flex-column h-100 taskpopup">
 													<li
 														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
-														<img src="<%=baseURL%>assets/image/calltask.svg" />
+														<img src="<%=baseURL%>assets/image/notes.svg" />
 														<div class="f-12 pt-1 greyish-brown">Notes</div>
 													</li>
 													<li
 														class="cuespopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/calltask.svg" />
+														<img src="<%=baseURL%>assets/image/cues.svg" />
 														<div class="f-12 pt-1 greyish-brown">Cues</div>
 													</li>
 													<li
 														class="crmpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/calltask.svg" />
+														<img src="<%=baseURL%>assets/image/crm.svg" />
 														<div class="f-12 pt-1 greyish-brown">CRM</div>
 													</li>
 													<li
 														class="chatpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/calltask.svg" />
+														<img src="<%=baseURL%>assets/image/presentation.svg" />
 														<div class="f-12 pt-1 greyish-brown">Chat</div>
 													</li>
 													<li
