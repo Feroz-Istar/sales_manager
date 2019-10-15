@@ -97,7 +97,7 @@
 			<!-- Start of left container/first column of dashboard  -->
 			<div class="col-md-3 pr-0 left_container pl-0 bg-white">
 				<!-- start of To do list & Notes Tabs -->
-				<ul class="saleken nav nav-tabs f-14 custom_dash_padding pt-3 pb-0"
+				<ul class="saleken nav nav-tabs f-14 pt-3 pb-0 px-4"
 					id="myTab" role="tablist" style="background: #f9f9f9">
 					<li class="nav-item">
 						<a class="nav-link active border-istar-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -122,7 +122,7 @@
 						<hr class="p-0 m-0">
 						
 						
-						<div class="task-item-container bg-white  custom_dash_padding">
+						<div class="task-item-container bg-white  px-4">
 						
 							<div class="d-flex flex-row align-items-center pt-2 pb-2 istar-dropdown">
 								<div class="mr-3 bblack f-18 fw-500">To-Do List</div>
