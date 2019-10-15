@@ -52,7 +52,42 @@
 	</div>
    </div>
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
-
+	<div class="row">
+	<div class="col-md-2 d-flex justify-content-end" style="position: relative;
+	    left: 1053px;
+	    top: 194px;
+	    z-index: 1;">
+			<button type="button" class="istar-btn-icon istar-square">
+                 <i class="fas fa-chevron-left"></i>
+             </button>
+             <button type="button" class="istar-btn-icon istar-square active ml-2">
+                 <i class="fas fa-chevron-right"></i>
+             </button>
+	</div>
+	
+	<div class="col-md-2 d-flex justify-content-end" style="position: relative;
+	    left: 739px;
+    	top: 523px;
+	    z-index: 1;">
+			<button type="button" class="istar-btn-icon istar-square">
+                 <i class="fas fa-chevron-left"></i>
+             </button>
+             <button type="button" class="istar-btn-icon istar-square active ml-2">
+                 <i class="fas fa-chevron-right"></i>
+             </button>
+	</div>
+		<div class="col-md-2 d-flex justify-content-end" style="position: relative;
+	   	left: 422px;
+   	 	top: 1026px;
+	    z-index: 1;">
+			<button type="button" class="istar-btn-icon istar-square">
+                 <i class="fas fa-chevron-left"></i>
+             </button>
+             <button type="button" class="istar-btn-icon istar-square active ml-2">
+                 <i class="fas fa-chevron-right"></i>
+             </button>
+	</div>
+	</div>
 	<main role="main">
 	<div class="container-fluid salesken_container">
 
@@ -274,20 +309,15 @@
 			
 
 				<!-- Start of Pipeline and Stages card-->
+				
+				
 				<div class="card shadow mb-2" style="min-height: 322px;">
 					<div class="card-body">
 						<div class="row px-3 mb-3 pt-2">
 							<div
 								class="card-title col-md-6 font-weight-bold f-18 greyish-brown">Pipeline
 								- 01</div>
-							<div class="col-md-6 d-flex justify-content-end">
-								<button type="button" class="istar-btn-icon istar-square">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                                <button type="button" class="istar-btn-icon istar-square active ml-2">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-							</div>
+							
 						</div>
 						<div id="pipeline_carousel" class="carousel slide"
 							data-ride="carousel">
@@ -368,6 +398,7 @@
 						</div>
 					</div>
 				</div>
+				
 				<!-- End of Pipeline and Stages card-->
 
 
@@ -381,14 +412,7 @@
 							<div class="col-md-6 font-weight-bold f-18">
 								Team 01&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
 							</div>
-							<div class="col-md-6 d-flex justify-content-end">
-								<button type="button" class="istar-btn-icon istar-square">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                                <button type="button" class="istar-btn-icon istar-square active ml-2">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-							</div>
+							
 						</div>
 						<div class="row px-3">
 							<div class="col-md-8">
@@ -509,14 +533,7 @@
 					<div class="card-body agent">
 						<div class="row mb-3 px-3 pt-2">
 							<div class="col-md-6 font-weight-bold f-18">Bottom 5 Agents</div>
-							<div class="col-md-6 d-flex justify-content-end">
-								<button type="button" class="istar-btn-icon istar-square">
-                                    <i class="fas fa-chevron-left"></i>
-                                </button>
-                                <button type="button" class="istar-btn-icon istar-square active ml-2">
-                                    <i class="fas fa-chevron-right"></i>
-                                </button>
-							</div>
+							
 						</div>
 						<%
 							for (int k = 0; k < 5; k++) {
@@ -1006,6 +1023,7 @@
     </div>
   </div>
 </div>
+
 
 
 <!-- end of resolve card modal -->
