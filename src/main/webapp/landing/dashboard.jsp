@@ -135,7 +135,10 @@
 							</div>
 							<!-- Start of creation to do items card -->
 							<%
-								for (int j = 0; j < 4; j++) {
+								int size=0;
+								if(size>0){
+								for (int j = 0; j < size; j++) {
+									
 							%>
 							<div class="taskitem pt-3 pb-3">
 								<div class="d-flex flex-row align-items-center mb-2 ">
@@ -182,8 +185,20 @@
 								</div>
 							</div>
 							<%
-								}
+									}}else{
 							%>
+							
+								<!-- start of no-data for todo list -->							
+								<div class="w-100 mt-4 pt-4 text-center">
+									<img src="<%=baseURL%>assets/image/08.svg" alt=""
+													srcset="" class="mr-2 mb-3">
+								</div>
+								<div class="fw-500 f-16 greyish-brown mb-2 text-center">Track your tasks</div>
+								<div class="fw-500 f-12 brownish-grey  text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>	
+								<!-- end of no-data for todo list -->							
+								
+							<%} %>
+							
 							<!-- End of creation to do items card -->
 
 						</div>
