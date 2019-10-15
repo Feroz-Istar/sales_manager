@@ -31,16 +31,19 @@
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
 	<div class="container-fluid salesken_container">
+	
+	
+	
 		<div
-			class="row grey-white-bg bottom-separation-solid align-items-center py-3">
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
+			class="row grey-white-bg theme_solid_border_bottom align-items-center py-3 px-4">
+			<div class="col-md-6 col-12 d-flex align-items-center">
 				<div class="display-1 black f-20 border-right-separation pr-3 fw-500 ">Leads</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey fw-500" id="breadcrumb">Leads</div>
 
 			</div>
-			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end">
+			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end ">
 				<div class="input-group  pl-2 pr-2 search_width">
 					<input id=""
 						class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
@@ -61,30 +64,29 @@
 
 
 		<div class="row">
-			<div class="col-md-12 bg-white">
-				<nav>
-					<div class="nav nav-tabs nav-mytabs pt-2" id="nav-tab"
-						role="tablist">
-						<a class="nav-item nav-link active" id="nav-target-tab"
+			<div class="col-md-12 bg-white ">
+				<ul class="nav nav-tabs nav-mytabs  pt-2 mx-4" id="reportTab" role="tablist">
+					<li class="nav-item"><a class="nav-item nav-link active" id="nav-target-tab"
 							data-toggle="tab" href="#nav-target" role="tab"
-							aria-controls="nav-target" aria-selected="true">Target</a> <a
+							aria-controls="nav-target" aria-selected="true">Target</a></li>
+					<li class="nav-item"><a
 							class="nav-item nav-link" id="nav-qualified-tab"
 							data-toggle="tab" href="#nav-qualified" role="tab"
-							aria-controls="nav-qualified" aria-selected="false">Qualified</a>
-						<a class="nav-item nav-link" id="nav-lost-tab" data-toggle="tab"
+							aria-controls="nav-qualified" aria-selected="false">Qualified</a></li>
+					<li class="nav-item"><a class="nav-item nav-link" id="nav-lost-tab" data-toggle="tab"
 							href="#nav-lost" role="tab" aria-controls="nav-lost"
-							aria-selected="false">Lost Leads</a> <a class="nav-item nav-link"
+							aria-selected="false">Lost Leads</a></li>
+						<li class="nav-item"><a class="nav-item nav-link"
 							id="nav-win-tab" data-toggle="tab" href="#nav-win" role="tab"
-							aria-controls="nav-win" aria-selected="false">Won Leads</a>
-					</div>
-				</nav>
+							aria-controls="nav-win" aria-selected="false">Won Leads</a></li>
+				</ul>
 				<div class="tab-content p-0 mytab-content" id="nav-tabContent">
 					<div class="tab-pane fade show active" id="nav-target"
 						role="tabpanel" aria-labelledby="nav-target-tab">
 						<!-- start of target content -->
 
 						<div
-							class="row align-items-center bg-white border-bottom-separation  pt-3 pb-3">
+							class="row align-items-center bg-white   theme_solid_border_bottom pt-3 pb-3 px-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">504</strong> Results Found
 							</div>
@@ -132,7 +134,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom">
+						<div class="row pl-0 py-4 shadow-bottom theme_dotted_border_bottom px-4 ">
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">280</div>
 								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
@@ -148,7 +150,7 @@
 							</div>
 						</div>
 
-						<div class="row align-items-center bottom-separation-solid py-4">
+						<div class="row align-items-center theme_solid_border_bottom py-4 px-4">
 							<div class="col-md-2 col">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
@@ -183,7 +185,7 @@
 			      			}
 						%>
 						<div
-							class="row align-items-center bottom-separation-solid py-4 <%=bgcolor%>">
+							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
 								<div class="f-14 fw-500 black">Vehement Capital
 									Partners</div>
@@ -264,7 +266,7 @@
 						<!-- start of qualified tab content-->
 
 						<div
-							class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							class="row align-items-center  border-bottom-separation  py-3 px-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
@@ -295,7 +297,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom">
+						<div class="row pl-2 py-4 shadow-bottom px-4">
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">120</div>
 								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
@@ -315,7 +317,7 @@
 							</div>
 						</div>
 
-						<div class="row align-items-center bottom-separation-solid py-4">
+						<div class="row align-items-center theme_solid_border_bottom py-4 px-4">
 							<div class="col-md-2 col">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
@@ -349,7 +351,7 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}%>
 						<div
-							class="row align-items-center bottom-separation-solid py-4  <%=bgcolor%>">
+							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
 								<div class="f-14 fw-500 black">Zencorporation
 									Pot. Ltd.</div>
@@ -441,7 +443,7 @@
 						<!-- start of lost leads tab content-->
 
 						<div
-							class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							class="row align-items-center  border-bottom-separation  py-3 px-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
@@ -475,7 +477,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom">
+						<div class="row pl-2 py-4 shadow-bottom px-4">
 
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">$ 8562</div>
@@ -498,7 +500,7 @@
 
 						</div>
 
-						<div class="row align-items-center bottom-separation-solid py-4">
+						<div class="row align-items-center theme_solid_border_bottom py-4  px-4">
 							<div class="col-md-2 col">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
@@ -532,7 +534,7 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}%>
 						<div
-							class="row align-items-center bottom-separation-solid py-4  <%=bgcolor%>">
+							class="row align-items-center theme_solid_border_bottom py-4  px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
 								<div class="f-14 fw-500 black">Vehement Capital
 									Partners.</div>
@@ -615,7 +617,7 @@
 						<!-- start of won leads content -->
 
 						<div
-							class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+							class="row align-items-center  border-bottom-separation  py-3 px-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
@@ -648,7 +650,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom">
+						<div class="row pl-2 py-4 shadow-bottom px-4">
 
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">$ 2345</div>
@@ -671,7 +673,7 @@
 
 						</div>
 
-						<div class="row align-items-center bottom-separation-solid py-4">
+						<div class="row align-items-center theme_solid_border_bottom py-4 px-4">
 							<div class="col-md-2 col">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
@@ -705,7 +707,7 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}%>
 						<div
-							class="row align-items-center bottom-separation-solid py-4  <%=bgcolor%>">
+							class="row align-items-center theme_solid_border_bottom py-4 px-4  <%=bgcolor%>">
 							<div class="col-md-2 col">
 								<div class="f-14 fw-500 black">Vehement Capital
 									Partners.</div>

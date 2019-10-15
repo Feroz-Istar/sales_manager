@@ -30,7 +30,7 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row grey-white-bg bottom-separation-solid align-items-center py-3">
+		<div class="row grey-white-bg theme_solid_border_bottom align-items-center py-3 px-4">
 			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
 				<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Pipeline</div>
 				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
@@ -58,7 +58,7 @@
 		</div>
 
 		
-			<div class="row align-items-center bg-white border-bottom-separation  pt-3 pb-3">
+			<div class="row align-items-center bg-white theme_solid_border_bottom  py-3 px-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -168,20 +168,20 @@
 							</div>
 						</div>
 		
-		<div class="row very-light-pink-grey-bg" >
-		  <div class="col-md-2 col-12 pr-0">
-		    <div class="nav flex-column nav-pills" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
+		<div class="row very-light-pink-grey-bg pl-4" >
+		  <div class="col-md-2 col-12 pr-0 tabcol flex-grow-1 border-right">
+		    <div class="nav flex-column nav-pills h-100" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
 		    <%for(int i =0;i<5;i++){ 
 		    	String isactive = "";
 				if (i == 0) {
 					isactive = "active";
 				}
 		    %>
-		      <a class="nav-link <%=isactive %>" id="stage-<%=i%>-tab" data-toggle="pill" href="#stage-<%=i%>" role="tab" aria-controls="stage-<%=i%>" aria-selected="true">Stage 0<%=i+1	%></a>
+		      <a class="nav-link py-3  <%=isactive %>" id="stage-<%=i%>-tab" data-toggle="pill" href="#stage-<%=i%>" role="tab" aria-controls="stage-<%=i%>" aria-selected="true">Stage 0<%=i+1	%></a>
 		     <%} %>
 		     </div>
 		  </div>
-		  <div class="col-md-10 col-12 bg-white">
+		  <div class="col-md-10 col-12 bg-white tabcontentcol">
 		    <div class="tab-content" id="piplelinestage-tabContent">
 		    <%for(int i =0;i<5;i++){ 
 		    	String isactive = "";
@@ -190,7 +190,7 @@
 				}
 		    %>
 		      <div class="tab-pane fade show pl-0 <%=isactive %>" id="stage-<%=i%>" role="tabpanel" aria-labelledby="stage-<%=i%>-tab">
-		      		<div class="row align-items-center py-4 shadow-bottom">
+		      		<div class="row align-items-center py-4 pl-4 theme_dotted_border_bottom shadow-bottom">
 		      			<div class="col-md-2 col-4">
 		      				<div class="f-24 font-weight-bold blue-black">$ 8562</div>
 		      				<div class="f-14 brown-grey">Deal Value</div>
@@ -217,7 +217,7 @@
 		      			</div>
 		      		</div>
 		      		
-		      		<div class="row align-items-center bottom-separation-solid py-4">
+		      		<div class="row align-items-center theme_solid_border_bottom py-4 pl-4">
 		      			<div class="col-md-2 col">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Lead Name	<i class="fas fa-sort brown-grey ml-2"></i>
@@ -233,8 +233,8 @@
 		      					Contact Details	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-						<div class="col-md-6 col justify-content-lg-start">
-							<button class="btn p-0 black f-14 font-weight-bold">
+						<div class="col-md-6 col justify-content-lg-start pl-5">
+							<button class="btn p-0 black f-14 font-weight-bold pl-3">
 								Deal Journey <i class="fas fa-sort brown-grey ml-2"></i>
 							</button>
 						</div>
@@ -246,7 +246,7 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}
 		      			%>
-		      		<div class="row py-4 bottom-separation-solid align-items-center <%=bgcolor%>" >
+		      		<div class="row py-4 theme_solid_border_bottom align-items-center pl-4 <%=bgcolor%>" >
 		      			<div class="col-md-2">
 		      				<div class="f-14 black fw-500">Accenture Consulting Inc.</div>
 		      				<div class="f-14 brownish-grey fw-500">$ 290</div>
@@ -263,7 +263,7 @@
 		      			</div>
 		      			
 		      			<div class="col-md-6">
-		      				<div class="row align-items-center">
+		      				<div class="row align-items-center pr-3">
 		      					<div class="col-md-11">
 		      						<div class="row position-relative">
 		      						<div class="line"></div>
@@ -317,9 +317,9 @@
 		      		<%} %>
 
 						<div class="row py-3 justify-content-end">
-							<div class="col-md-3">
+							<div class="col-md-3 pl-5">
 								<div class="page">
-									<ul class="salesken pagination"></ul>
+									<ul class="salesken pagination mb-0"></ul>
 								</div>
 							</div>
 						</div>
@@ -358,6 +358,8 @@
 	<script>
 	$( document ).ready(function() {
 		$('#pipeline_datepicker').datepicker({autoclose:true});
+		
+		
 		
 	
 		

@@ -596,15 +596,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 /* end of sizing */
 
-/* start of border */
-.dotted-1 {
-	border: 1px dashed #eeeeee !important;
-}
 
-.bottom-separation-solid {
-	border-bottom: 2px solid #ebebeb;
-}
-/* end of border */
 
 /* Start of font sizes */
 .f-12 {
@@ -822,7 +814,13 @@ Modifying the scroll bar across the whole application
 .nav-mytabs .nav-link:focus, .nav-tabs .nav-link:hover {
 	border-color: #dee2e6 #dee2e6 #fff;
 }
+.dotted-1 {
+	border: 1px dashed #eeeeee !important;
+}
 
+.bottom-separation-solid {
+	border-bottom: 2px solid #ebebeb;
+}
 .border-bottom-separation {
 	border-bottom: 1px solid #cccccc;
 }
@@ -890,6 +888,28 @@ Modifying the scroll bar across the whole application
 .border_bottom_1_dashed {
 	border-bottom: 1px dashed #cccccc;
 }
+
+.theme_solid_border_bottom {
+	border-bottom: 1px solid #dddddd;
+}
+.theme_dashed_border_bottom {
+	border-bottom: 1px dashed #cccccc;
+}
+.theme_dotted_border_bottom {
+	border-bottom: 1px dotted #cccccc;
+}
+.theme_solid_border {
+	border: 1px solid #cccccc;
+}
+.theme_dashed_border {
+	border: 1px dashed #cccccc;
+}
+.theme_dotted_border{
+	border: 1px dotted #cccccc;
+}
+
+
+
 
 /* end of border */
 .cursor-pointer {
@@ -981,7 +1001,7 @@ Modifying the scroll bar across the whole application
 	border-radius: 10px;
 	color: #999999;
 	font-size: 14px;
-	font-weight: bold;
+	font-weight: 400;
 }
 
 .salesken.pagination>.page-item.active .page-link {
@@ -1010,21 +1030,29 @@ Modifying the scroll bar across the whole application
 	font-size: 13px;
 	background: transparent;
 	min-width: 133px;
+	border-bottom:1px solid #f2f2f2;
+	border-radius:0px;
 }
-
+@media only screen and (min-width: 768px) {
+#piplelinestage-tab>.active {
+	min-width: 276px;
+	
+	
+	}
+}
 #piplelinestage-tab>.active {
 	background: #ffffff !important;
 	color: #444444 !important;
 	font-weight: 500;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+	box-shadow: -6px 8px 20px 0px rgba(0,0,0,.15);
 	border-radius: 0;
-	z-index: 4;
 	/* transition : all 0.3s ease-in-out; */
 	transform: scale(1) !important;
 	-webkit-transform: scale(1) !important; /* Safari and Chrome */
 	-moz-transform: scale(1) !important; /* Firefox */
 	-ms-transform: sscale(1) !important; /* IE 9 */
 	-o-transform: scale(1) !important; /* Opera */
+	    border-bottom: 0 !important;
 }
 
 #piplelinestage-tab>.nav-link:hover {
@@ -1293,7 +1321,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	border: 1px dashed #eeeeee;
 	position: absolute;
 	top: 11px;
-	left: 93px;
+	left: 89px;
 }
 
 /* start of checkbox */
