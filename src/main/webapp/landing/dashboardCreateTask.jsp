@@ -36,11 +36,6 @@
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey fw-500  " id="breadcrumb">Call Task</div>
 			</div>
-			<div class="col-md-1">
-				<button class="btn listen_btn f-12" data-toggle="modal" data-target="#contactModalCenter">
-					Contacts
-				</button>
-			</div>
 		</div>
 		
 		

@@ -830,7 +830,7 @@ Modifying the scroll bar across the whole application
 }
 
 .border-bottom-dashed-separation {
-	border-bottom: 2px dashed #cccccc;
+	border-bottom: 2px dashed #dddddd;
 }
 
 .border-right-separation {
@@ -870,6 +870,9 @@ Modifying the scroll bar across the whole application
 .border-right-separation {
 	border-right: 1px dotted #cccccc;
 }
+.border-right-dashed-separation {
+	border-right: 1px dashed #cccccc;
+}
 
 .border-istar-left-0 {
 	border-left: 0 !important;
@@ -889,23 +892,29 @@ Modifying the scroll bar across the whole application
 	border-bottom: 1px dashed #cccccc;
 }
 
+
+
 .theme_solid_border_bottom {
 	border-bottom: 1px solid #dddddd;
 }
+.theme_light_gray_border_bottom {
+	border-bottom: 1px solid #f2f2f2;
+}
+
 .theme_dashed_border_bottom {
-	border-bottom: 1px dashed #cccccc;
+	border-bottom: 1px dashed #dddddd;
 }
 .theme_dotted_border_bottom {
-	border-bottom: 1px dotted #cccccc;
+	border-bottom: 1px dotted #dddddd;
 }
 .theme_solid_border {
-	border: 1px solid #cccccc;
+	border: 1px solid #dddddd;
 }
 .theme_dashed_border {
-	border: 1px dashed #cccccc;
+	border: 1px dashed #dddddd;
 }
 .theme_dotted_border{
-	border: 1px dotted #cccccc;
+	border: 1px dotted #dddddd;
 }
 
 

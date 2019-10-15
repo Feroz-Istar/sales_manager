@@ -4,8 +4,8 @@
 			+ request.getContextPath() + "/";
 	%>
 	<div class="row h-100">
-											<div class="col-md-11">
-												<div class="row p-2 justify-content-between">
+											<div class="col-md-11 p-0">
+												<div class="row p-2 pt-3 justify-content-between mx-4">
 													<div class="col-9">
 														<p class="greyish-brown f-18 mb-2 font-weight-bold">Globex Corporation Inc.</p>
 													</div>
@@ -20,9 +20,9 @@
 														</div>
 													</div>
 												</div>
-												<div class="row pl-2">
+												<div class="row pl-2  mx-4">
 													
-													<div class="col-md-3 ">
+													<div class="col-md-3">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
 														<p class="black f-16 fw-500 mb-0">Robert Wolken</p>
 													</div>
@@ -32,10 +32,10 @@
 													</div>
 
 												</div>
-												<div class="row pt-2 pl-3">
-													<div class="col">
+												<div class="row pt-2  mx-4">
+													<div class="col ">
 														<nav>
-															<div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs"
+															<div class="nav nav-tabs nav-mytabs pt-2 ml-2" id="nav-tabs"
 																role="tablist">
 																<a class="nav-item nav-link show active minw-150"
 																	id="whatswrong-tab" data-toggle="tab"
