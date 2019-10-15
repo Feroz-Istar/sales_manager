@@ -437,26 +437,15 @@
 	    		});
 	    	  console.log($(e.target).data('task_type')) // newly activated tab
 		    
-	    	  //close share n comment popover on tab change
-	    	  if('.taskshare:visible'){
-	  			$('.taskshare').popover('hide');
-	  			}
-	    	  if('.taskcomment:visible'){
-		  			$('.taskcomment').popover('hide');
-		  			}
-	    	  	if($('.notespopup').hasClass('active')){
-	  				$('.notespopup').popover('hide');
-		  		}
-		  		if($('.crmpopover').hasClass('active')){
-		  			$('.crmpopover').popover('hide');
-		  		}
-		  		if($('.cuespopover').hasClass('active')){
-		  			$('.cuespopover').popover('hide');
-		  		}
-		  		if($('.chatpopover').hasClass('active')){
-				 	$('.chatpopover').popover('hide');
-		  		}
-	    	})
+	    	  //close popover on tab change
+	    	 
+	    	  $('.popover').popover('hide');
+
+	    	});
+	    
+	    $('.nav-tabs>.nav-item').on('show.bs.tab', function (e) {
+	    	  $('.popover').popover('hide');
+  		});
 	});
 	function showCalendar(){
 		$('#task_datepicker').datepicker('show')

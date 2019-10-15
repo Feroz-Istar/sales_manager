@@ -372,7 +372,9 @@
 	    	})
 	    	
 	    	
-	    	
+	    	$('.nav-tabs>.nav-item').on('show.bs.tab', function (e) {
+		    	  $('.popover').popover('hide');
+	  		});
 		
 	});
 	

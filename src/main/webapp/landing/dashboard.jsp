@@ -81,7 +81,7 @@
 					    Webinar Task
 					    </button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/presentation.svg" class="task-dropdown">
 					    Presentation
 					    </button>
 					</div>
@@ -917,7 +917,7 @@
 					    Webinar Task
 					    </button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/presentation.svg" class="task-dropdown">
 					    Presentation
 					    </button>
 					  </div>
