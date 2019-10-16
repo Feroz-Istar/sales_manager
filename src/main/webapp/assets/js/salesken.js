@@ -12,144 +12,22 @@ $( document ).ready(function() {
     	});
     }); 
     
-    /* start of notes popover */
-	$('.notespopup').popover({
-	    html: true,
-	    sanitize: false,
-	    container: 'body',
-	    trigger: 'manual',
-	    content: function() {
-	      return $.ajax({url: '../popover/notescontent.jsp',
-	                     dataType: 'html',
-	                     async: false}).responseText;
-	    }
-	  }).click(function(e) {
-		    $('.popover').popover('hide');
-	    $(this).popover('show');
-	    
-	  });
-
+    /* start of task notes,cues,crm,chat dropdown */
+    $.get( "../popover/notescontent.jsp", function( data ) {
+  	  $( ".notespopupdropdown" ).html( data );
+  	});
+    $.get( "../popover/cuescontent.jsp", function( data ) {
+  	  $( ".cuespopoverdropdown" ).html( data );
+  	});
+  $.get( "../popover/crmcontent.jsp", function( data ) {
+  	  $( ".crmpopoverdropdown" ).html( data );
+  	});
+  $.get( "../popover/chatcontent.jsp", function( data ) {
+  	  $( ".chatpopoverdropdown" ).html( data );
+  	});
 	
-	$('.notespopup').on('hidden.bs.popover', function () {
-		  $(this).removeClass('active');
-		})
+	/* End of task notes,cues,crm,chat dropdown */
 	
-	
-	$('.notespopup').on('show.bs.popover', function () {
-		 $(this).addClass('active');
-	});
-		
-	$('.notespopup').on('shown.bs.popover	', function () {
-		  // do something...
-		$('.closenotes').click(function () {
-			console.log('clicked');
-		  $('.notespopup').removeClass('active');
-		  $('.notespopup').popover('hide');
-		})
-	})
-	
-	
-	/* end of notes popover */
-	
-	/* start of cues popover */
-	$('.cuespopover').popover({
-	    html: true,
-	    sanitize: false,
-	    container: 'body',
-	    trigger: 'manual',
-	    content: function() {
-	      return $.ajax({url: '../popover/cuescontent.jsp',
-	                     dataType: 'html',
-	                     async: false}).responseText;
-	    }
-	  }).click(function(e) {
-		  $('.popover').popover('hide');
-		    $(this).popover('show');	  });
-	$('.cuespopover').on('hidden.bs.popover', function () {
-		  $(this).removeClass('active');
-		})
-	
-	
-	$('.cuespopover').on('show.bs.popover', function () {
-		 $(this).addClass('active');
-	});
-		
-	$('.cuespopover').on('shown.bs.popover	', function () {
-		  // do something...
-		$('.closecues').click(function () {
-			console.log('clicked');
-		  $('.cuespopover').removeClass('active');
-		  $('.cuespopover').popover('hide');
-		})
-	})
-	/* end of cues popover */
-	
-	/* start of crm popover */
-	$('.crmpopover').popover({
-	    html: true,
-	    sanitize: false,
-	    container: 'body',
-	    trigger: 'manual',
-	    content: function() {
-	      return $.ajax({url: '../popover/crmcontent.jsp',
-	                     dataType: 'html',
-	                     async: false}).responseText;
-	    }
-	  }).click(function(e) {
-		  $('.popover').popover('hide');
-		    $(this).popover('show');	  });
-	$('.crmpopover').on('hidden.bs.popover', function () {
-		  $(this).removeClass('active');
-		})
-	
-	
-	$('.crmpopover').on('show.bs.popover', function () {
-		 $(this).addClass('active');
-	});
-		
-	$('.crmpopover').on('shown.bs.popover	', function () {
-		  // do something...
-		$('.closecrm').click(function () {
-			console.log('clicked');
-		  $('.crmpopover').removeClass('active');
-		  $('.crmpopover').popover('hide');
-		})
-	})
-	/* end of crm popover */
-	
-	/* start of chat popover */
-	$('.chatpopover').popover({
-	    html: true,
-	    sanitize: false,
-	    container: 'body',
-	    trigger: 'manual',
-	    content: function() {
-	      return $.ajax({url: '../popover/chatcontent.jsp',
-	                     dataType: 'html',
-	                     async: false}).responseText;
-	    }
-	  }).click(function(e) {
-		  $('.popover').popover('hide');
-		    $(this).popover('show');	  });
-	
-	$('.chatpopover').on('hidden.bs.popover', function () {
-		  $(this).removeClass('active');
-		})
-	
-	
-	$('.chatpopover').on('show.bs.popover', function () {
-		 $(this).addClass('active');
-	});
-		
-	$('.chatpopover').on('shown.bs.popover	', function () {
-		  // do something...
-		$('.closechat').click(function () {
-			console.log('clicked');
-		  $('.chatpopover').removeClass('active');
-		  $('.chatpopover').popover('hide');
-		})
-	})
-	/* end of chat popover */
 	
 	
 	/*start of task share popover*/

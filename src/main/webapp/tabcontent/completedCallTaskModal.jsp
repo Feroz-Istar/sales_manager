@@ -101,7 +101,7 @@
 												</div>
 												<div class="row pt-4 px-2  mx-4 "> 
 												<div class="col">
-												<div class="theme_dotted_border_bottom"></div>	
+												<div class="theme_solid_border_top_2px"></div>	
 												</div></div>
 												<div class="row  m-0">
 												<div class="col">
@@ -115,8 +115,9 @@
 													
 													%>
 													
-													
-													<div class="row p-0 m-0 py-3 audioitem <%=isactive %> " style="border-bottom: 1px dashed #cccccc;">
+													<div class="row p-0 m-0 audioitem <%=isactive %>">
+													<div class="col-md-11 offset-md-1 p-0 ">
+													<div class="row p-0 m-0 py-3 ml-2 audioitemrow mr-2  "  style="border-bottom: 1px dashed #cccccc;">
 														<div class="col-md-6 text-center">
 														<div class="d-flex flex-column">
 															<p class="mb-0 light_gray f-12">06 Mint</p>
@@ -130,8 +131,10 @@
 														</button>
 															</div>
 														</div>
+														
 													</div>
-													
+													</div>
+													</div>
 													<%} %>
 													
 													</div>
@@ -242,31 +245,60 @@
 
 
 
-											<div class="col-md-1 p-0">
-												<ul class="list-group shadow d-flex flex-column h-100 taskpopup">
-													<li
-														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100" >
-														<img src="<%=baseURL%>assets/image/notes.svg" />
-														<div class="f-12 pt-1 greyish-brown">Notes</div>
+												<div class="col-md-1 p-0">
+												<ul
+													class="list-group shadow d-flex flex-column h-100 taskpopup">
+													<li class="  dropleft  list-group-item p-0">
+														<div
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<div class="f-12 pt-1 greyish-brown">Notes</div>
+															<div class="dropdown-menu notespopupdropdown pt-0"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="cuespopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/cues.svg" />
-														<div class="f-12 pt-1 greyish-brown">Cues</div>
+													<li class=" dropleft list-group-item p-0 ">
+														<div
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<div class="f-12 pt-1 greyish-brown">Cues</div>
+															<div class="dropdown-menu cuespopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="crmpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/crm.svg" />
-														<div class="f-12 pt-1 greyish-brown">CRM</div>
+													<li class="dropleft list-group-item p-0">
+														<div
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<div class="f-12 pt-1 greyish-brown">CRM</div>
+															<div class="dropdown-menu crmpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="chatpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/presentation.svg" />
-														<div class="f-12 pt-1 greyish-brown">Chat</div>
+													<li class="dropleft list-group-item  p-0 ">
+														<div
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<div class="f-12 pt-1 greyish-brown">Chat</div>
+															<div class="dropdown-menu chatpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
+
+
 													<li
 														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
 														style="height: calc(100% - 80px);"></li>
+
+
 												</ul>
 											</div>
 										</div>

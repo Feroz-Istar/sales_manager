@@ -37,8 +37,8 @@
 	<main role="main">
 	<div class="container-fluid salesken_container mb-5">
 		<div
-			class="row grey-white-bg align-items-center py-3 border-bottom-separation">
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
+			class="row grey-white-bg align-items-center py-3 theme_solid_border_bottom pl-5">
+			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0 px-0">
 				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer"
 					onclick="window.location.href = 'report.jsp'"></i>
 				<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Accenture
@@ -48,32 +48,27 @@
 				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Current Page</div>
 			</div>
 		</div>
-		<div class="row bg-white pl-3">
-			<div class="col-md-12">
-				<ul class="nav nav-tabs nav-mytabs pt-2 " id="myTab" role="tablist">
-					<li class="nav-item"><a class="nav-link active"
-						id="taskDetails-tab" data-toggle="tab" href="#taskDetails"
-						role="tab" aria-controls="taskDetails" aria-selected="true">Task
-							Details</a></li>
-					<li class="nav-item"><a class="nav-link" id="leadDetails-tab"
-						data-toggle="tab" href="#leadDetails" role="tab"
-						aria-controls="leadDetails" aria-selected="false">Lead Details</a>
-					</li>
-				</ul>
-				<div class="tab-content" id="myTabContent">
-					<div class="tab-pane fade show active" id="taskDetails"
-						role="tabpanel" aria-labelledby="taskDetails-tab">
-						<!-- start of task detail content -->
+		<div class="row mb-5">
+			<div class="col-md-12 bg-white p-0 ">
+				<ul class="nav nav-tabs nav-mytabs  pt-2 px-5" id="agent-details" role="tablist">
+					<li class="nav-item"><a class="nav-item nav-link active" id="agent-detail-tab" data-toggle="tab" href="#agent-detail" role="tab" aria-controls="nav-target" aria-selected="true">Agent Detail</a></li>
+					<li class="nav-item"><a class="nav-item nav-link" id="lead-detail-tab" data-toggle="tab" href="#lead-detail" role="tab" aria-controls="nav-qualified" aria-selected="false">Lead Detail</a></li>
+						</ul>
+				<div class="tab-content p-0 mytab-content" id="agent-details-tabContent">
+					<div class="tab-pane fade show active" id="agent-detail" role="tabpanel" aria-labelledby="agent-detail-tab">
+						<!-- start of target content -->
+
+							<!-- start of task detail content -->
 						<div
-							class="row align-items-center  border-bottom-separation  pt-3 pb-3">
-							<div class="col-md-12 text-result-found	">
+							class="row align-items-center theme_solid_border_bottom py-3 px-5 m-0">
+							<div class="col-md-12 text-result-found	pl-0">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 
 						</div>
 
-						<div class="row very-light-pink-grey-bg">
-							<div class="col-md-3 pr-0">
+						<div class="row very-light-pink-grey-bg m-0">
+							<div class="col-md-3 pl-4 pr-0 m-0">
 								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
 									role="tablist" aria-orientation="vertical">
 									<%
@@ -91,7 +86,7 @@
 											}
 											
 									%>
-									<div class="nav-link <%=isactive%> border-bottom-separation"
+									<div class="nav-link rounded-0 <%=isactive%> theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true" data-task_type="<%=tasktype%>">
@@ -152,14 +147,14 @@
 
 
 						<!-- end of task detail -->
+						<!-- end of target content -->
 					</div>
 
+					<div class="tab-pane fade" id="lead-detail" role="tabpanel" aria-labelledby="lead-detail-tab">
 
-					<div class="tab-pane fade" id="leadDetails" role="tabpanel"
-						aria-labelledby="agentDetails-tab">
-
-						<div class="row align-items-center py-4 shadow-bottom">
-							<div class="col-md-2 col-4">
+						<!-- start of lead details tab -->
+						<div class="row align-items-center py-4 shadow-bottom m-0 pt-2 px-5 theme_dotted_border_bottom">
+							<div class="col-md-2 col-4 px-0">
 								<div class="f-24 font-weight-bold blue-black">$ 8562</div>
 								<div class="f-14 brown-grey">Deal Value</div>
 							</div>
@@ -201,11 +196,11 @@
 							</div>
 						</div>
 						
-						<div class="row">
-							<div class="col-md-8">
-								<div class="d-flex">
+						<div class="row m-0">
+							<div class="col-md-8 minh-650 pl-5 pt-4">
+								<div class="d-flex  align-items-center mb-3">
 								 <div class="mr-auto  black f-16 fw-500">Information</div>
-  								<div class="p-2 bd-highlight f-22">
+  								<div class=" bd-highlight f-16">
   									<img src="<%=baseURL%>assets/image/edit.svg" class="">
 								</div>
 								</div>
@@ -228,11 +223,11 @@
 								<p class="blue-black f-14 ">www.openthech.com</p>
 								<p class="blue-black f-14" style="max-width:200px;">2nd Floor “Makam Plaza” 63/1 Above Kotak Bank, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560055</p>								
 								
-								<div class="border-bottom-dashed-separation mb-3"></div>
+								<div class="theme_dashed_border_bottom mb-4 mt-5"></div>
 								
-								<div class="d-flex">
+								<div class="d-flex align-items-center">
 								 	<div class="mr-auto  black f-16 fw-500">CRM Fields</div>
-  									<div class="p-2 bd-highlight f-22">
+  									<div class=" bd-highlight f-16">
   										<img src="<%=baseURL%>assets/image/edit.svg" class="">
 									</div>
 								</div>
@@ -244,12 +239,12 @@
 								</div>
 								<%} %>
 							</div>
-							<div class="col-md-4">
+							<div class="col-md-4 pl-4 pt-4 theme_solid_border_left  very-light-pink-grey-bg">
 							<%for(int k=0;k<2;k++){ %>
 							
-							<h4 class="black fw-500 f-16 mb-3">Objections </h4>
+							<h4 class="black fw-500 f-16 mb-3 pl-3">Objections </h4>
 							<%for(int l=0;l<2;l++){ %>
-							<div class="signal_description border_bottom_1_dashed mb-3">
+							<div class="mx-3 signal_description border_bottom_1_dashed mb-3 py-3">
 							
 							<p class=" brown-grey f-12 mb-2">June 22, 2019</p>
 							<p class="blue-black f-14 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
@@ -258,10 +253,12 @@
 							</div>
 						
 						</div>
-
-
+						<!-- End of lead details tab -->
 					</div>
+					
+					
 				</div>
+
 			</div>
 		</div>
 		
@@ -351,29 +348,11 @@
 	    	  console.log($(e.target).data('task_type')) // newly activated tab
 		    
 	    	  //close share n comment popover on tab change
-	    	  if('.taskshare:visible'){
-	  			$('.taskshare').popover('hide');
-	  			}
-	    	  if('.taskcomment:visible'){
-		  			$('.taskcomment').popover('hide');
-		  			}
-	    	  	if($('.notespopup').hasClass('active')){
-	  				$('.notespopup').popover('hide');
-		  		}
-		  		if($('.crmpopover').hasClass('active')){
-		  			$('.crmpopover').popover('hide');
-		  		}
-		  		if($('.cuespopover').hasClass('active')){
-		  			$('.cuespopover').popover('hide');
-		  		}
-		  		if($('.chatpopover').hasClass('active')){
-				 	$('.chatpopover').popover('hide');
-		  		}
+	    	
 	    	})
 	    	
 	    	
 	    	$('.nav-tabs>.nav-item').on('show.bs.tab', function (e) {
-		    	  $('.popover').popover('hide');
 	  		});
 		
 	});

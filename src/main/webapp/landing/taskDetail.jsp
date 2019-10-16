@@ -214,15 +214,17 @@
 												<div class=" mb-2"
 													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
 
-													<%for(int i=0; i<20;i++){ %>
+													<%
+														for (int i = 0; i < 20; i++) {
+													%>
 													<div class="d-flex align-items-center pt-3">
 
 
 														<input class="istar-checkbox agentcheckbox"
-															data-id="<%=i %>" id="associate-checkbox<%=i %>"
+															data-id="<%=i%>" id="associate-checkbox<%=i%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style"
-															for="associate-checkbox<%=i %>"></label> <img
+															for="associate-checkbox<%=i%>"></label> <img
 															src="<%=baseURL%>/assets/image/11.png"
 															class="rounded-circle ml-3 mr-2 hw-40">
 														<div>
@@ -231,7 +233,9 @@
 															<div class="f-12  brownish-grey">Team -02</div>
 														</div>
 													</div>
-													<%} %>
+													<%
+														}
+													%>
 												</div>
 
 
@@ -256,16 +260,20 @@
 
 												<div class="mb-2"
 													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-													<%for(int j=0; j<20;j++){ %>
+													<%
+														for (int j = 0; j < 20; j++) {
+													%>
 													<div class="d-flex align-items-center pt-3">
 														<input class="istar-checkbox teamcheckbox"
-															data-id="<%=j %>" id="team-checkbox<%=j %>"
+															data-id="<%=j%>" id="team-checkbox<%=j%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
 														<div class="f-12 ml-2 brownish-grey">
 															Team -0<%=j%></div>
 													</div>
-													<%} %>
+													<%
+														}
+													%>
 												</div>
 
 
@@ -296,7 +304,8 @@
 												isactive = "active";
 											}
 									%>
-									<div class="nav-link rounded-0 <%=isactive%> theme_solid_border_bottom"
+									<div
+										class="nav-link rounded-0 <%=isactive%> theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
@@ -346,10 +355,11 @@
 									<div class="tab-pane fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
-										<div class="row">
+										<div class="row minh-650">
 											<div class="col-md-11">
 
-												<div class="theme_dotted_border_bottom  shadow-bottom  py-4 mx-4">
+												<div
+													class="theme_dotted_border_bottom  shadow-bottom  py-4 mx-4">
 													<div class="row justify-content-between">
 														<div class="col-md-4 f-18 font-weight-bold greyish-brown">
 															Globex Corporation. Inc.</div>
@@ -408,29 +418,57 @@
 											<div class="col-md-1 p-0">
 												<ul
 													class="list-group shadow d-flex flex-column h-100 taskpopup">
-													<li
-														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/notes.svg" />
-														<div class="f-12 pt-1 greyish-brown">Notes</div>
+													<li class="  dropleft  list-group-item p-0">
+														<div
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-100 "
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<div class="f-12 pt-1 greyish-brown">Notes</div>
+															<div class="dropdown-menu notespopupdropdown pt-0"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="cuespopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/cues.svg" />
-														<div class="f-12 pt-1 greyish-brown">Cues</div>
+													<li class=" dropleft list-group-item p-0 ">
+														<div
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<div class="f-12 pt-1 greyish-brown">Cues</div>
+															<div class="dropdown-menu cuespopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="crmpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/crm.svg" />
-														<div class="f-12 pt-1 greyish-brown">CRM</div>
+													<li class="dropleft list-group-item p-0">
+														<div
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<div class="f-12 pt-1 greyish-brown">CRM</div>
+															<div class="dropdown-menu crmpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="chatpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/presentation.svg" />
-														<div class="f-12 pt-1 greyish-brown">Chat</div>
+													<li class="dropleft list-group-item  p-0 ">
+														<div
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<div class="f-12 pt-1 greyish-brown">Chat</div>
+															<div class="dropdown-menu chatpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
+
+
 													<li
 														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
 														style="height: calc(100% - 80px);"></li>
+
+
 												</ul>
 											</div>
 										</div>
@@ -516,8 +554,10 @@
 
 						<div class="row very-light-pink-grey-bg m-0">
 							<div class="col-md-3 pr-0">
-								<div class="nav flex-column nav-pills pl-4 theme_light_gray_border_bottom" id="taskdetail-tab-list"
-									role="tablist" aria-orientation="vertical">
+								<div
+									class="nav flex-column nav-pills pl-4 theme_light_gray_border_bottom"
+									id="taskdetail-tab-list" role="tablist"
+									aria-orientation="vertical">
 									<%
 										for (int i = 4; i < 7; i++) {
 											String isactive = "";
@@ -568,10 +608,11 @@
 									<div class="tab-pane fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
-										<div class="row">
+										<div class="row ">
 											<div class="col-md-11">
 
-												<div class="shadow-bottom  theme_dotted_border_bottom py-4 mx-4">
+												<div
+													class="shadow-bottom  theme_dotted_border_bottom py-4 mx-4">
 													<div class="row justify-content-between ">
 														<div class="col-md-4 f-18 font-weight-bold greyish-brown">
 															Opentech Pvt. Ltd.</div>
@@ -637,32 +678,60 @@
 
 
 
-											<div class="col-md-1 p-0">
+												<div class="col-md-1 p-0">
 												<ul
 													class="list-group shadow d-flex flex-column h-100 taskpopup">
-													<li
-														class="notespopup  list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/notes.svg" />
-														<div class="f-12 pt-1 greyish-brown">Notes</div>
+													<li class="  dropleft  list-group-item p-0">
+														<div
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<div class="f-12 pt-1 greyish-brown">Notes</div>
+															<div class="dropdown-menu notespopupdropdown pt-0"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="cuespopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/cues.svg" />
-														<div class="f-12 pt-1 greyish-brown">Cues</div>
+													<li class=" dropleft list-group-item p-0 ">
+														<div
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<div class="f-12 pt-1 greyish-brown">Cues</div>
+															<div class="dropdown-menu cuespopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="crmpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/crm.svg" />
-														<div class="f-12 pt-1 greyish-brown">CRM</div>
+													<li class="dropleft list-group-item p-0">
+														<div
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<div class="f-12 pt-1 greyish-brown">CRM</div>
+															<div class="dropdown-menu crmpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
-													<li
-														class="chatpopover list-group-item d-flex flex-column justify-content-center align-items-center minh-100">
-														<img src="<%=baseURL%>assets/image/presentation.svg" />
-														<div class="f-12 pt-1 greyish-brown">Chat</div>
+													<li class="dropleft list-group-item  p-0 ">
+														<div
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<div class="f-12 pt-1 greyish-brown">Chat</div>
+															<div class="dropdown-menu chatpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
 													</li>
+
+
 													<li
 														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
 														style="height: calc(100% - 80px);"></li>
+
+
 												</ul>
 											</div>
 										</div>
@@ -743,21 +812,22 @@
 
 						<div class="row very-light-pink-grey-bg m-0">
 							<div class="col-md-3 pr-0 taskmodal ">
-								<div class="nav flex-column nav-pills pl-4 " id="taskdetail-tab-list"
-									role="tablist" aria-orientation="vertical">
+								<div class="nav flex-column nav-pills pl-4 "
+									id="taskdetail-tab-list" role="tablist"
+									aria-orientation="vertical">
 									<%
-									for (int i = 8; i < 12; i++) {
-										String isactive = "";
-										String tasktype="call";
-										if (i == 8) {
-											isactive = "active";
-										}
-										if (i ==9) {
-											tasktype = "email";
-										}
-										if (i == 10) {
-											tasktype = "webinar";
-										}
+										for (int i = 8; i < 12; i++) {
+											String isactive = "";
+											String tasktype = "call";
+											if (i == 8) {
+												isactive = "active";
+											}
+											if (i == 9) {
+												tasktype = "email";
+											}
+											if (i == 10) {
+												tasktype = "webinar";
+											}
 									%>
 									<div class="nav-link <%=isactive%> theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
@@ -801,10 +871,9 @@
 									<%
 										for (int i = 8; i < 12; i++) {
 											String isactive = "";
-											if (i == 8	) {
+											if (i == 8) {
 												isactive = "active";
 											}
-										
 									%>
 									<div class="tab-pane fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
@@ -904,83 +973,116 @@
 		<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 		<script src="<%=baseURL%>assets/js/salesken.js"></script>
 		<script>
-$('.salesken.navbar-nav>li').removeClass('active');
-$($('.salesken.navbar-nav>li')[1]).addClass('active')
-$('.taskdetailtab  a').on('shown.bs.tab', function (e) {
-	  var target = $(e.target).html(); // activated tab
-	  $('#breadcrumb').html(target);
+			$('.salesken.navbar-nav>li').removeClass('active');
+			$($('.salesken.navbar-nav>li')[1]).addClass('active')
+			$('.taskdetailtab  a').on('shown.bs.tab', function(e) {
+				var target = $(e.target).html(); // activated tab
+				$('#breadcrumb').html(target);
 
-	});
-
-</script>
+			});
+		</script>
 		<script>
-	$( document ).ready(function() {
-		$('#upcoming_datepicker').datepicker({autoclose:true})
-		$('#completed_datepicker').datepicker({autoclose:true})
+			$(document)
+					.ready(
+							function() {
+								$('#upcoming_datepicker').datepicker({
+									autoclose : true
+								})
+								$('#completed_datepicker').datepicker({
+									autoclose : true
+								})
 
-	   $.get(location.origin+'/tabcontent/completedCallTaskModal.jsp', function( data ) {
-        
-			var tabid= $('.taskmodal>#taskdetail-tab-list>.nav-link').attr('href').replace('#','')
-        	$('#'+tabid).html(data);
-    		});
-	    
-	    $('.taskmodal>#taskdetail-tab-list>.nav-link').on('show.bs.tab', function (e) {
-	    	var tabid= $(e.target).attr('href').replace('#','');
-	    	 // newly activated tab
-			var url=location.origin;
+								$
+										.get(
+												location.origin
+														+ '/tabcontent/completedCallTaskModal.jsp',
+												function(data) {
+
+													var tabid = $(
+															'.taskmodal>#taskdetail-tab-list>.nav-link')
+															.attr('href')
+															.replace('#', '')
+													$('#' + tabid).html(data);
+												});
+
+								$('.taskmodal>#taskdetail-tab-list>.nav-link')
+										.on(
+												'show.bs.tab',
+												function(e) {
+													var tabid = $(e.target)
+															.attr('href')
+															.replace('#', '');
+													// newly activated tab
+													var url = location.origin;
+
+													switch ($(e.target).data(
+															'task_type')) {
+													case 'call':
+														url = url
+																+ '/tabcontent/completedCallTaskModal.jsp';
+														break;
+													case 'email':
+														url = url
+																+ '/tabcontent/completedEmailTaskModal.jsp';
+														break;
+													case 'webinar':
+														url = url
+																+ '/tabcontent/completedWebinarTaskModal.jsp';
+														break;
+													default:
+														url = url
+																+ '/tabcontent/completedCallTaskModal.jsp';
+														break;
+													}
+
+													$.get(url, function(data) {
+														//console.log(data);
+														//console.log(selectedTab);
+
+														$('#' + tabid).html(
+																data);
+														//  alert( "Load was performed." );
+													});
+													console.log($(e.target)
+															.data('task_type')) // newly activated tab
+
+													//close share n comment popover on tab change
+													if ('.taskshare:visible') {
+														$('.taskshare')
+																.popover('hide');
+													}
+													if ('.taskcomment:visible') {
+														$('.taskcomment')
+																.popover('hide');
+													}
+													$('.popover').popover(
+															'hide');
+												})
+
+								$('#taskdetail-tab-list>.nav-link').on(
+										'show.bs.tab', function(e) {
+											$('.popover').popover('hide');
+
+										})
+								$('#nav-tabs>.nav-link').on('show.bs.tab',
+										function(e) {
+											$('.popover').popover('hide');
+
+										})
+
+							});
+
+			function showCalendar() {
+				$('#upcoming_datepicker').datepicker('show')
+			}
+			function showcompletedCalendar() {
+				$('#completed_datepicker').datepicker('show')
+			}
 			
-	    	switch($(e.target).data('task_type')){
-	    	case 'call':
-		    	url=url+ '/tabcontent/completedCallTaskModal.jsp';
-		    	break;
-	    	case 'email':
-	    		url=url+ '/tabcontent/completedEmailTaskModal.jsp';
-		    	break;
-	    	case 'webinar':
-	    		url=url+ '/tabcontent/completedWebinarTaskModal.jsp';
-		    	break;
-		    default: 
-		    	url=url+ '/tabcontent/completedCallTaskModal.jsp';
-	    		break;
-	    	}
-	    	
-	    	$.get(url, function( data ) {
-	        	//console.log(data);
-	        	//console.log(selectedTab);
-
-	        	$('#'+tabid).html(data);
-	    		//  alert( "Load was performed." );
-	    		});
-	    	  console.log($(e.target).data('task_type')) // newly activated tab
-		    
-	    	  //close share n comment popover on tab change
-	    	  if('.taskshare:visible'){
-	  			$('.taskshare').popover('hide');
-	  			}
-	    	  if('.taskcomment:visible'){
-		  			$('.taskcomment').popover('hide');
-		  			}
-	    	  $('.popover').popover('hide');
-	    	})
-	    	 
-	    	$('#taskdetail-tab-list>.nav-link').on('show.bs.tab', function (e) {
-		    	  $('.popover').popover('hide');
-
-	    	})
-		$('#nav-tabs>.nav-link').on('show.bs.tab', function (e) {
-		    	  $('.popover').popover('hide');
-
-	    	})
-		
-		});
-	
-	function showCalendar(){
-		$('#upcoming_datepicker').datepicker('show')
-	}
-	function showcompletedCalendar(){
-		$('#completed_datepicker').datepicker('show')
-	}
-	</script>
+			$('.dropdown-menu').click(function(e) {
+			    e.stopPropagation();
+			});
+		</script>
 
 
 

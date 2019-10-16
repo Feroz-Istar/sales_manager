@@ -597,7 +597,9 @@ input[type="search"]::-webkit-search-cancel-button {
 .minh-100 {
 	min-height: 100px;
 }
-
+.minh-650 {
+	min-height:650px;
+}
 .minw-150 {
 	min-width: 150px;
 }
@@ -931,7 +933,9 @@ Modifying the scroll bar across the whole application
 .theme_solid_border_right_2px {
 	border-right: 2px solid #dddddd;
 }
-
+.theme_solid_border_left{
+	border-left: 1px solid #dddddd;
+}
 
 
 /* end of border */
@@ -1331,7 +1335,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-moz-transform: scale(1) !important; /* Firefox */
 	-ms-transform: sscale(1) !important; /* IE 9 */
 	-o-transform: scale(1) !important; /* Opera */
- box-shadow: 8px 4px 20px 0 rgba(0, 0, 0, 0.13);}
+ box-shadow: 8px 4px 20px 0 rgba(0, 0, 0, 0.13);
+ 
+ }
+ .audioitem.active .audioitemrow{
+  border-bottom: 0 !important;
+ 
+ }
 
 .audioitem.active .playaudio{
 	background:#ed4d67 !important;
@@ -1416,8 +1426,8 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .popover {
-	border-radius: 10px;
-	 max-width: 600px;
+	border-radius: 10px;	
+	 max-width: 500px;
   width: auto;
 }
 
@@ -1442,11 +1452,21 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-bottom:     1px solid rgba(0,0,0,.125)!important;
 	
 }
+.taskpopup>li.show{
+	border-left: 3px solid red;
+	background-color: white !important;;
+    border-color: red !important;;
+    border-top:   1px solid rgba(0,0,0,.125)!important;
+    border-right: 0 !important;
+    border-bottom:     1px solid rgba(0,0,0,.125)!important;
+}
 
 button:focus {
     outline: none !important;
 }
 
-
+.notesdropdown,.cuesdropdown,.crmdropdown,.chatdropdown{
+	cursor:pointer;
+}
 
 
