@@ -44,26 +44,28 @@
 		
 		</div>
 	</div>
-		<div class="row bg-white pl-3">
-			<div class="col-md-12">
-				<ul class="nav nav-tabs nav-mytabs  pt-2" id="reportTab" role="tablist">
-					<li class="nav-item"><a class="nav-link active" id="task-tab"
-						data-toggle="tab" href="#task" role="tab" aria-controls="home"
-						aria-selected="true">Task</a></li>
-					<li class="nav-item"><a class="nav-link" id="users-tab"
-						data-toggle="tab" href="#users" role="tab"
-						aria-controls="profile" aria-selected="false">Users</a></li>
-					<li class="nav-item"><a class="nav-link" id="customer-tab"
-						data-toggle="tab" href="#customer" role="tab"
-						aria-controls="contact" aria-selected="false">Customer</a></li>
-						<li class="nav-item"><a class="nav-link" id="time_analysis-tab"
-						data-toggle="tab" href="#time_analysis" role="tab"
-						aria-controls="contact" aria-selected="false">Time Analysis</a></li>
+		<div class="row mb-5">
+			<div class="col-md-12 bg-white ">
+				<ul class="nav nav-tabs nav-mytabs  pt-2 mx-4" id="reportTab" role="tablist">
+					<li class="nav-item"><a class="nav-item nav-link active" id="task-tab"
+							data-toggle="tab" href="#task" role="tab"
+							aria-controls="task" aria-selected="true">Task</a></li>
+					<li class="nav-item"><a
+							class="nav-item nav-link" id="users-tab"
+							data-toggle="tab" href="#users" role="tab"
+							aria-controls="users" aria-selected="false">Users</a></li>
+					<li class="nav-item"><a class="nav-item nav-link" id="customer-tab" data-toggle="tab"
+							href="#customer" role="tab" aria-controls="customer"
+							aria-selected="false">Customer</a></li>
+						<li class="nav-item"><a class="nav-item nav-link"
+							id="time_analysis-tab" data-toggle="tab" href="#time_analysis" role="tab"
+							aria-controls="time_analysis" aria-selected="false">Time Analysis</a></li>
 				</ul>
-				<div class="tab-content" id="reportTabContent" style="min-height:600px;">
-					<div class="tab-pane fade show active" id="task" role="tabpanel"
-						aria-labelledby="task-tab">
-						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+				<div class="tab-content p-0 mytab-content" id="nav-tabContent">
+					<div class="tab-pane fade show active" id="task"
+						role="tabpanel" aria-labelledby="task-tab">
+						<!-- start of Task tab  content -->
+<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -120,15 +122,15 @@
 							</div>
 						<%} %>
 						</div>
-						
-						
-						</div>
-						
-						
-						
+						<!-- end of Task tab  content -->
+					</div>
+
 					<div class="tab-pane fade" id="users" role="tabpanel"
 						aria-labelledby="users-tab">
-						
+
+						<!-- start of user tab content-->
+
+							
 						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
@@ -308,14 +310,15 @@
 		    
 			</div>		
 		
-		
-		
-						
-						</div>
+						<!-- end of user tab content -->
+
+					</div>
 					<div class="tab-pane fade" id="customer" role="tabpanel"
 						aria-labelledby="customer-tab">
 
-						<div class="row align-items-center border-bottom-separation  pt-3 pb-3">
+						<!-- start of customer tab content-->
+
+					<div class="row align-items-center border-bottom-separation  pt-3 pb-3">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -341,29 +344,14 @@
 							<%} %>
 							
 						</div>
+						<!-- end of customer tab content -->
 
 					</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 					<div class="tab-pane fade" id="time_analysis" role="tabpanel"
 						aria-labelledby="time_analysis-tab">
+
+						<!-- start of time analysis tab content -->
+
 						<div class="card shadow">
 							<div class="card-body">
 								<div class="d-flex">
@@ -418,7 +406,6 @@
 										
 									</a> 
 									
-									
 								</div>
 
 
@@ -431,13 +418,13 @@
 
 
 
+						<!-- end of won leads content -->
+
 					</div>
 				</div>
+
 			</div>
 		</div>
-	
-	
-	</div>
 	</main>
 
 
