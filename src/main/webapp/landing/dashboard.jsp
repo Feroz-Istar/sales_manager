@@ -274,174 +274,11 @@
 			
 
 				<!-- Start of Pipeline and Stages card-->
-				
-				
-				<div class="card shadow mb-2" style="min-height: 322px;">
-					<div class="card-body pt-0">
-					<div class="col-md-2 istar-btn-icon-position">
-							<button type="button" class="istar-btn-icon istar-square">
-				                 <i class="fas fa-chevron-left"></i>
-				             </button>
-				             <button type="button" class="istar-btn-icon istar-square active ml-2">
-				                 <i class="fas fa-chevron-right"></i>
-				             </button>
-					</div>
-						<div class="row px-3 mb-3">
-							<div
-								class="card-title col-md-6 font-weight-bold f-18 greyish-brown">Pipeline
-								- 01</div>
-							
-						</div>
-						<div id="pipeline_carousel" class="carousel slide"
-							data-ride="carousel">
-							<ol class="carousel-indicators mb-0">
-								<li data-target="#pipeline_carousel" data-slide-to="0"
-									class="active"></li>
-								<li data-target="#pipeline_carousel" data-slide-to="1"></li>
-								<li data-target="#pipeline_carousel" data-slide-to="2"></li>
-							</ol>
-
-							<div class="carousel-inner ">
-
-								<%
-									for (int i = 0; i < 3; i++) {
-										String isActive = "";
-										if (i == 0)
-											isActive = "active";
-								%>
-								<div class="carousel-item <%=isActive%>">
-
-
-
-									<div class="row mb-2 px-3">
-										<div class="col fw-500 f-16 brownish-grey">Stage
-											01</div>
-									</div>
-
-									<div class="row mb-4 px-3">
-										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30">
-												<i class="fas fa-dollar-sign light_gray"></i> <span
-													class="theme_color"> 7245</span>
-											</div>
-											<div class="f-14 brownish-grey">Deal Value</div>
-										</div>
-										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30 greyish-brown">
-												<i class="far fa-flag"></i> 65%
-											</div>
-											<div class="f-14 brownish-grey">Confident</div>
-										</div>
-										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30 greyish-brown">
-												<i class="fas fa-trophy"></i> 25%
-											</div>
-											<div class="f-14 brownish-grey">Won Leads</div>
-										</div>
-										<div class="col-md-3 col-6">
-											<div class="font-weight-bold f-30 greyish-brown">
-												<i class="far fa-thumbs-down"></i> 75%
-											</div>
-											<div class="f-14 brownish-grey">Lost Leads</div>
-										</div>
-									</div>
-
-									<div class="row mb-3 px-3">
-										<div class="col-md-6">
-											<div class="f-14 font-weight-bold black mb-2">Strong
-												Playbook</div>
-											<div class="f-14 brownish-grey">Objection, Price,
-												Qualification, Introduction, Product Features, Value
-												Proposition,</div>
-										</div>
-										<div class="col-md-6">
-											<div class="f-14 font-weight-bold black mb-2">Weak
-												Playbook</div>
-											<div class="f-14 brownish-grey">Need Investigation,
-												Competitor Mapping, Feature Mapping.</div>
-										</div>
-									</div>
-
-								</div>
-
-								<%
-									}
-								%>
-							</div>
-						</div>
-					</div>
-				</div>
-				
+					<div class="pipeline-card"></div>
 				<!-- End of Pipeline and Stages card-->
 
-
-
-
 				<!-- Start of Teams card-->
-
-				<div class="card shadow mb-2" style="min-height: 245px;">
-					<div class="card-body pt-0">
-					<div class="col-md-2 istar-btn-icon-position">
-							<button type="button" class="istar-btn-icon istar-square">
-				                 <i class="fas fa-chevron-left"></i>
-				             </button>
-				             <button type="button" class="istar-btn-icon istar-square active ml-2">
-				                 <i class="fas fa-chevron-right"></i>
-				             </button>
-					</div>
-						<div class="row mb-3 px-3">
-							<div class="col-md-6 font-weight-bold f-18">
-								Team 01&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
-							</div>
-							
-						</div>
-						<div class="row px-3">
-							<div class="col-md-8">
-								<div class="row mb-4">
-									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-30">
-											<i class="fas fa-dollar-sign light_gray"></i> <span
-												class="theme_color"> 345</span>
-										</div>
-										<div class="f-14 brownish-grey">Deal Value</div>
-									</div>
-									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-30 black">65%</div>
-										<div class="f-14 brownish-grey">Confident</div>
-									</div>
-									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-30 black">25%</div>
-										<div class="f-14 brownish-grey">Won Leads</div>
-									</div>
-									<div class="col-md-3 col-6">
-										<div class="font-weight-bold f-30 black">75%</div>
-										<div class="f-14 brownish-grey">Lost Leads</div>
-									</div>
-								</div>
-								<div class="row mb-3">
-									<div class="col-md-6">
-										<div class="f-14 font-weight-bold mb-2">Strong Playbook</div>
-										<div class="f-14 brownish-grey">Objection, Price,
-											Qualification, Introduction, Product Features, Value
-											Proposition,</div>
-									</div>
-									<div class="col-md-6">
-										<div class="f-14 font-weight-bold mb-2">Weak Playbook</div>
-										<div class="f-14 brownish-grey">Need Investigation,
-											Competitor Mapping, Feature Mapping.</div>
-									</div>
-								</div>
-
-							</div>
-							<div class="col-md-4">
-
-								<div id="container" style="height: 170px;"></div>
-							</div>
-						</div>
-
-
-					</div>
-				</div>
+					<div class="team-card"></div>
 				<!-- End of Teams card-->
 
 
@@ -509,63 +346,8 @@
 				</div>
 				<!-- End of Signal and its count card -->
 				<!-- Start of Top/Bottom 5 Agent card-->
-
-				<div class="card shadow" style="min-height: 505px;">
-					<div class="card-body agent pt-0">
-					<div class="col-md-2 istar-btn-icon-position">
-						<button type="button" class="istar-btn-icon istar-square">
-			                 <i class="fas fa-chevron-left"></i>
-			             </button>
-			             <button type="button" class="istar-btn-icon istar-square active ml-2">
-			                 <i class="fas fa-chevron-right"></i>
-			             </button>
-					</div>
-						<div class="row mb-3 px-3">
-							<div class="col-md-6 font-weight-bold f-18">Bottom 5 Agents</div>
-							
-						</div>
-						<%
-							for (int k = 0; k < 5; k++) {
-								String color = "#ffffff";
-								if (k % 2 == 0) {
-									color = "#f9f9f9";
-								}
-						%>
-						<div class="row align-items-center separation-bottom py-4 px-3"
-							style="background: <%=color%>">
-							<div class="col-md-4 col-6">
-								<div class="d-flex flex-row">
-									<img class="mr-2" style="height: 40px; width: 40px"
-										src="<%=baseURL%>assets/image/37.jpg" />
-									<div class="d-flex flex-column">
-										<div class="f-14">Stanley Howard</div>
-										<div class="p-0 rateYo" data-rating="<%=k%>"></div>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-8 col-6">
-								<div class="row">
-								<div class="col-md-4 f-14">
-										<strong>$ 20</strong> - Deal Value
-									</div>
-									<div class="col-md-4 f-14">
-										<strong>12%</strong> - Lead Wins
-									</div>
-									<div class="col-md-4 f-14">
-										<strong>15%</strong> - Utilisation
-									</div>
-									
-								</div>
-							</div>
-
-						</div>
-						<%
-							}
-						%>
-
-
-					</div>
-				</div>
+					<div class="top-bottom-agent-card"></div>
+				
 				<!-- End of Top/Bottom 5 Agent card-->
 
 
@@ -1031,6 +813,7 @@
 		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
 	    <script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
 		<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
+	<script src="<%=baseURL%>assets/js/saleskencarousal.js"></script>
 	
 </body>
 </html>
