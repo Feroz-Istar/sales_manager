@@ -4,7 +4,7 @@
 			+ request.getContextPath() + "/";
 	%>
 
-				<div class="row justify-content-between p-2">
+				<div class="row justify-content-between p-2 pt-4 mx-2">
 					<div class="col-md-6 greyish-brown f-18 font-weight-bold">Globex Corporation Inc.</div>
 					<div class="col-3">
 					<div class="d-flex justify-content-end">
@@ -15,7 +15,7 @@
 					</div>
 				</div>
 				</div>
-			<div class="row p-3 border-bottom-separation shadow-sm">
+			<div class="row p-2  mx-2 border-bottom-separation shadow-sm">
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Initiated At</p>
 					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
@@ -36,8 +36,7 @@
 			
 			<div class="accordion" id="accordionExample"  style="height:400px; overflow-x:hidden; overflow-y: auto">
 			<%for(int i=0;i<10;i++){ %>
-			<div class=" border-bottom-separation">
-			  <div class="row py-2 px-3 " id="headingOne">
+			  <div class="row py-2 mx-2" id="headingOne">
 			        <button class="btn w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
 			          <div class="row align-items-center">
 			          	<div class="col-md-3">
@@ -59,7 +58,6 @@
 			          	</div>
 			          </div>
 			        </button>
-			  </div>
 			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 			      <div class="card-body f-14 brownish-grey">
 			        Hello Sir, Welcome, we are reaching you..
@@ -76,7 +74,7 @@
 			    <%} %>
 			  </div>
 			  
-			  <div class="row mx-4">
+			  <div class="row mx-2 pt-3 mb-5">
 			  
 			  <div class="col-md-6 p-0">
 					<div id="carouselExampleIndicators"

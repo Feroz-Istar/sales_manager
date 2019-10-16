@@ -4,14 +4,14 @@
 			+ request.getContextPath() + "/";
 	%>
 
-	<div class="row h-100">
-		<div class="col-md-11">
-			<div class="row pt-2 pl-3">
+	<div class="row h-100  ">
+		<div class="col-md-11 p-0">
+			<div class="row p-2 pt-4  mx-4">
 				<div class="col">
 					<p class="greyish-brown f-18 font-weight-bold">Globex Corporation Inc.</p>
 				</div>
 			</div>
-			<div class="row pt-2 pl-3">
+			<div class="row pl-2  mx-4">
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Initiated At</p>
 					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
@@ -31,7 +31,7 @@
 				</div>
 
 			</div>
-			<div class="row pt-2 pl-3">
+			<div class="row pl-2  mx-4">
 				<div class="col">
 					<nav>
 						<div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs"
@@ -110,11 +110,16 @@
 				<%} %>
 				
 				</div>
-				<div class="col-md-8 p-0">
+				<div class="col-md-8 ">
+				<div class="row  mr-4 pt-4">
+				<div class="col">
+<video class="w-100"  controls>
+  <source src="https://www.radiantmediaplayer.com/media/bbb-360p.mp4" type="video/mp4">
 
+</video></div></div>
 
 					<div id="carouselExampleIndicators"
-						class="carousel slide mb-2" data-ride="carousel">
+						class="carousel slide mb-2 pt-4" data-ride="carousel">
 						<ol class="carousel-indicators">
 							<li data-target="#carouselExampleIndicators"
 								data-slide-to="0" class="active"></li>

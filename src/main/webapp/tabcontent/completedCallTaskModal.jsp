@@ -5,7 +5,7 @@
 	%>
 	<div class="row h-100">
 											<div class="col-md-11 p-0">
-												<div class="row p-2 pt-3 justify-content-between mx-4">
+												<div class="row p-2 pt-4 justify-content-between mx-4">
 													<div class="col-9">
 														<p class="greyish-brown f-18 mb-2 font-weight-bold">Globex Corporation Inc.</p>
 													</div>
@@ -20,7 +20,8 @@
 														</div>
 													</div>
 												</div>
-												<div class="row pl-2  mx-4">
+												
+												<div class="row  px-2  mx-4 ">
 													
 													<div class="col-md-3">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
@@ -32,10 +33,14 @@
 													</div>
 
 												</div>
+												<div class="row pt-4 shadow-bottom  px-2  mx-4 "> 
+												<div class="col">
+												<div class="theme_dotted_border_bottom "></div>	
+												</div></div>
 												<div class="row pt-2  mx-4">
 													<div class="col ">
 														<nav>
-															<div class="nav nav-tabs nav-mytabs pt-2 ml-2" id="nav-tabs"
+															<div class="nav nav-tabs nav-mytabs pt-2 mx-2" id="nav-tabs"
 																role="tablist">
 																<a class="nav-item nav-link show active minw-150"
 																	id="whatswrong-tab" data-toggle="tab"
@@ -94,28 +99,47 @@
 
 													</div>
 												</div>
-												<div class="row mt-2 ml-3 border-top-task_list">
-													<div class="col-md-4 p-0 m-0" style="	border-right: 1px solid #cccccc;">
-													<%for(int j=0;j<10;j++){ %>
-													<div class="d-flex flex-row  p-3 audioitem" style="border-bottom: 1px dashed #cccccc;">
-														<div class="mr-auto">
-														<p class="mb-0 light_gray f-12">06 Mint</p>
+												<div class="row pt-4 px-2  mx-4 "> 
+												<div class="col">
+												<div class="theme_dotted_border_bottom"></div>	
+												</div></div>
+												<div class="row  m-0">
+												<div class="col">
+													<div class="row   theme_solid_border_2px">
+													<div class="col-md-4 p-0 m-0 theme_solid_border_right_2px" >
+													<%for(int j=0;j<10;j++){ 
+														String isactive="";
+														if(j==0){
+															isactive = "active";
+														}
+													
+													%>
+													
+													
+													<div class="row p-0 m-0 py-3 audioitem <%=isactive %> " style="border-bottom: 1px dashed #cccccc;">
+														<div class="col-md-6 text-center">
+														<div class="d-flex flex-column">
+															<p class="mb-0 light_gray f-12">06 Mint</p>
 														<p class="mb-0 bblack f-16">Introduction</p>
-														
-														
 														</div>
-														<div>	<button class="btn  mr-1 hw-45 playaudio">
+														</div>
+														<div class="col-md-6 ">
+															<div class="d-flex justify-content-end pr-3">
+															<button class="btn  mr-1 hw-45 playaudio rounded-circle">
 															<i class="fas fa-play"></i>
-														</button></div>
+														</button>
+															</div>
+														</div>
 													</div>
+													
 													<%} %>
 													
 													</div>
 													<div class="col-md-8 p-0">
 
-
+														<div class="row   mx-2"><div class="col">
 														<div id="carouselExampleIndicators"
-															class="carousel slide mb-2" data-ride="carousel">
+															class="carousel slide mb-2 theme_solid_border_bottom mx-4" data-ride="carousel">
 															<ol class="carousel-indicators">
 																<li data-target="#carouselExampleIndicators"
 																	data-slide-to="0" class="active"></li>
@@ -133,9 +157,10 @@
 																				isActive = "active";
 																			}
 																%>
+															
 																<div class="carousel-item  <%=isActive%>">
-
-																	<div class="row align-items-center ml-3 mr-3"
+																	
+																		<div class="row align-items-center  ml-3 mr-3"
 																		style="min-height: 170px;">
 																		<div class="col">
 																		<div class="d-flex flex-row">
@@ -146,12 +171,12 @@
 																		</div>
 																		</div>
 																	</div>
-																		
-																</div>
+																	</div>
+
 																<%
 																	}
 																%>
-
+															
 															</div>
 															<a class="carousel-control-prev"
 																href="#carouselExampleIndicators" role="button"
@@ -165,10 +190,11 @@
 																<span class="sr-only">Next</span>
 															</a>
 														</div>
-														
-														<div class="row mt-2   ml-3 pr-2" >
+														</div>
+														</div>
+														<div class="row mx-4 px-2 pt-4" >
 															<div class="col">
-																<h3 class="black fw-500 f-16 mb-4">Transcript</h3>
+																<h3 class="black fw-500 f-16 mb-5">Transcript</h3>
 																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
 																<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
@@ -208,6 +234,9 @@
 
 													</div>
 												</div>
+												</div>
+												</div>
+
 
 											</div>
 

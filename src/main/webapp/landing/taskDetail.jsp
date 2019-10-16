@@ -88,8 +88,8 @@
 			</div>
 
 		</div>
-		<div class="row">
-			<div class="col-md-12 bg-white p-0">
+		<div class="row  mb-5">
+			<div class="col-md-12 bg-white p-0 ">
 
 				<!-- <nav>
 				  <div class="nav nav-tabs nav-mytabs taskdetailtab pt-2 pl-4" id="nav-tabs" role="tablist">
@@ -349,7 +349,7 @@
 										<div class="row">
 											<div class="col-md-11">
 
-												<div class="theme_dotted_border_bottom py-4 mx-4">
+												<div class="theme_dotted_border_bottom  shadow-bottom  py-4 mx-4">
 													<div class="row justify-content-between">
 														<div class="col-md-4 f-18 font-weight-bold greyish-brown">
 															Globex Corporation. Inc.</div>
@@ -602,17 +602,17 @@
 
 
 
-												<div class="theme_light_gray_border_bottom py-4 mx-4">
+												<div class="theme_dashed_border_bottom py-4 mx-4">
 													<div class="row">
-														<div class="col-md-3 border-right-separation">
+														<div class="col-md-3 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black">Call</div>
 														</div>
-														<div class="col-md-3 border-right-separation">
+														<div class="col-md-3 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Timing</div>
 															<div class="f-16  fw-500 black">11:00 AM</div>
 														</div>
-														<div class="col-md-3 border-right-separation">
+														<div class="col-md-3 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Deal Value</div>
 															<div class="f-16  fw-500 black">$500</div>
 														</div>
