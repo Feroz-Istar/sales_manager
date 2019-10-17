@@ -133,8 +133,69 @@ $(document).ready(function() {
 			
 		});
 		
+		/*start of validation*/
+
+		$("#createTaskFrom").validate({
+			rules: {
+				eventTitle: {
+					required: true,
+					minlength: 5,
+				},
+				
+				eventdescription: {
+					minlength: 5,
+				},
+				eventType: {
+				      required: true,
+				      min: 1, //validates minimum value the element has to have
+				    }
+			},
+			messages: {
+				eventTitle: {
+					required: "Please provide a name title for the event",
+					minlength: "Title should be more than 5 letters"
+				},
+				eventdescription: "Description should be more than 5 characters",
+				eventType:{
+					min: "Please select a type for the event",
+				}
+		    }
+		});
+		
+		$("#create").on("click", function() {
+			var istitlevalid =$("#eventTitle").valid();
+			var istypevalid =$("#eventType").valid();
+			var isdescriptionvalid = $("#eventdescription").valid();
+			
+			if(istitlevalid && istypevalid && isdescriptionvalid){
+				$("#createEventModalCenter").modal('hide');
+			}
+		});
 		
 		
+		$("#scheduletaskform").validate({
+			rules: {
+				taskActor: {
+				      required: true,
+				      min: 1, //validates minimum value the element has to have
+				    }
+			}	,
+			messages:{
+				taskActor: {
+					min: "Please select an associate for task",
+
+				}
+			}
+		})
+		
+		$("#schedule").on("click", function() {
+		    var istaskactor = $("#taskActor").valid();
+		    if(istaskactor){
+		    	$("#scheduleTaskModalCenter").modal('hide');
+		    }
+		});
+		
+		/*end of validation*/
 		
 		
 		

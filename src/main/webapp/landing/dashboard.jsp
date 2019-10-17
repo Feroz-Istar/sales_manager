@@ -578,17 +578,19 @@
 					</button>
 				</div>
 		      <div class="modal-body">
+		      	<form action="" id="createTaskFrom">
+		      	<fieldset>
 		       	<div class="row pb-4">
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">Add Title</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="eventTitle" aria-describedby="eventTitle" placeholder="Type here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" name="eventTitle" id="eventTitle" aria-describedby="eventTitle" placeholder="Type here"/>
 		       		</div>
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">Type</div>
-		       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="eventType">
-					      <option>Select here</option>
-					      <option>Type 1</option>
-					      <option>Type 2</option>
+		       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey"  name="eventType" id="eventType">
+					      <option value="0">Select Here</option>
+					      <option value="1">Type 1</option>
+					      <option value="2">Type 2</option>
 					    </select>
 		       		</div>
 		       	</div>
@@ -596,14 +598,14 @@
 					<div class="col-md-6">
 						<div class="f-14 fw-500 pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="event_date" value="<%=today_date%>">
+							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="event_date" name="event_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
 						<div class="f-14 fw-500 pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker" type="text" name="timepicker"  placeholder="Select here">
+							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker" type="text" name="timepicker" id="timepicker" placeholder="Select here">
 							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
 						</div>	
 					</div>
@@ -611,21 +613,22 @@
 				<div class="row pb-4">
 					<div class="col-md-12">
 						<div class="f-14 fw-500 pb-1">Add Guest</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="addGuest" aria-describedby="addGuest" placeholder="Select here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="addGuest" name="addGuest" aria-describedby="addGuest" placeholder="Select here">
 					</div>
 				</div>
 				
 				<div class="row pb-4">
 					<div class="col-md-12">
 						<div class="f-14 fw-500 pb-1">Description</div>
-						<textarea class="custom-modal-textarea w-100" id="eventdescription" rows="6"></textarea>
+						<textarea class="custom-modal-textarea w-100" id="eventdescription" name="eventdescription" rows="6"></textarea>
 					</div>
 				</div>
-				
+				</fieldset>
+				</form>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
-		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal" onclick="showList()">CREATE</button>
+		        <button type="submit" class="btn theme_color f-14 font-weight-bold" >Reset</button>
+		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold"  id="create" onclick="showList()">CREATE</button>
 		      </div>
 		    </div>
 		  </div>
@@ -644,11 +647,13 @@
 				</button>
 			</div>
 	      <div class="modal-body">
+	      <form id="scheduletaskform">
+	      <fieldset>
 	        <div class="row pb-4">
 		        <div class="col-md-12 istar-dropdown">
 			      <div class="f-14 fw-500 pb-1">Lead Name</div>
 							<div class="form-group">
-									<select class="form-control selectpicker " data-style="removefocus" title="Select here"
+									<select class="form-control selectpicker" id="leadname" data-style="removefocus" title="Select here"
 										data-live-search="true" id="exampleFormControlSelect1" >
 
 										<%
@@ -718,7 +723,7 @@
 						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
 						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
 					</button>
-					 <div class="dropdown-menu dropdown-menu-right task-dropdown-menu">
+					 <div class="dropdown-menu dropdown-menu-right task-dropdown-menu" id="scheduleTaskType">
 					    <button class="dropdown-item" type="button">
 					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
 					    Call Task</button>
@@ -738,10 +743,10 @@
 	       		</div>
 	       		<div class="col-md-6">
 	       			<div class="f-14 fw-500 pb-1">Task By</div>
-	       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="taskActor">
-				      <option>Me</option>
-				      <option>Type 1</option>
-				      <option>Type 2</option>
+	       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="taskActor" name="taskActor">
+				      <option value="0">Me</option>
+				      <option value="1">Type 1</option>
+				      <option value="2">Type 2</option>
 				    </select>
 	       		</div>
 	        </div>
@@ -761,10 +766,12 @@
 						</div>	
 					</div>
 				</div>
+				</fieldset>
+				</form>
 	      </div>
 	      <div class="modal-footer">
-	         <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
-		     <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal">SCHEDULE</button>
+	         <button type="button" class="btn theme_color f-14 font-weight-bold">Reset</button>
+		     <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" id="schedule">SCHEDULE</button>
 	      </div>
 	    </div>
 	  </div>
@@ -810,10 +817,11 @@
 
 	<script src="<%=baseURL%>assets/js/dashboard.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
-		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
-	    <script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
-		<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
+	<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
+    <script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
+	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script src="<%=baseURL%>assets/js/saleskencarousal.js"></script>
+	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
 	
 </body>
 </html>
