@@ -4,12 +4,17 @@ $(document).ready(function() {
 	
 	$.get(location.origin+"/dashboardcard/pipelineCard.jsp", function( data ) {
 		  $( ".pipeline-card" ).html( data );
+		  lefttocenterheight();
+
 		});
 	$.get(location.origin+"/dashboardcard/teamCard.jsp", function( data ) {
 		  $( ".team-card" ).html( data );
+		  lefttocenterheight();
+
 		});
 	$.get(location.origin+"/dashboardcard/topBottomAgents.jsp", function( data ) {
 		  $( ".top-bottom-agent-card" ).html( data );
+		  lefttocenterheight();
 		});
 	
 	
@@ -25,12 +30,7 @@ $(document).ready(function() {
 		$(".carousel").carousel('pause');
 		
 		
-		/*here we are setting first column of dashboard height equal to second column of dashboard*/
-		var newHeight = $(".center_container").height();
-		console.log(newHeight)
-		$(".left_container").height(newHeight);
-		/*End of setting first column of dashboard height equal to second column of dashboard*/
-
+		
 		
 		$('.carousel').carousel('pause');
 		
@@ -240,4 +240,14 @@ function showList(){
 	$('.taskitem').show();
 	$('.no-event').hide();
 }
+/*here we are setting first column of dashboard height equal to second column of dashboard*/
+
+function lefttocenterheight(){
+	var newHeight = $(".center_container").height();
+	console.log(newHeight)
+	$(".left_container").height(newHeight);
+
+}
+/*End of setting first column of dashboard height equal to second column of dashboard*/
+
 
