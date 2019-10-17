@@ -68,7 +68,7 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 pl-4 pr-0 m-0">
+							<div class="col-md-3 pl-4 pr-0 m-0 border-right">
 								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
 									role="tablist" aria-orientation="vertical">
 									<%
@@ -86,7 +86,7 @@
 											}
 											
 									%>
-									<div class="nav-link rounded-0 <%=isactive%> theme_solid_border_bottom"
+									<div class="nav-link rounded-0 pl-4 <%=isactive%> theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true" data-task_type="<%=tasktype%>">

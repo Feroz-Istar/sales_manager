@@ -76,7 +76,7 @@
 									<option>Filter by Stages</option>
 									<option>Default select</option>
 								</select> 	
-								<div class="istar-dropdown mr-2 custom-taskborder ">
+								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
 									<button
 										class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 

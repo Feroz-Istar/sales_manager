@@ -56,7 +56,7 @@
 					</div>
 				</div>
 
-				<div class="istar-dropdown-task">
+				<div class="istar-dropdown-task select_focus">
 					<button class="btn btn-style px-2 f-12 dropdown-toggle"
 						type="button" id="newTaskMenuButton" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
@@ -139,7 +139,7 @@
 									<option>Filter by Stages</option>
 									<option>Default select</option>
 								</select>
-								<div class="istar-dropdown-task">
+								<div class="istar-dropdown-task select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -293,8 +293,8 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0 ">
-							<div class="col-md-3 pr-0">
-								<div class="nav flex-column nav-pills pl-4"
+							<div class="col-md-3 pr-0 border-right">
+								<div class="nav flex-column nav-pills"
 									id="taskdetail-tab-list" role="tablist"
 									aria-orientation="vertical">
 									<%
@@ -311,8 +311,8 @@
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center minh-100">
-											<div class="col-md-9">
+										<div class="row align-items-center minh-100 px-4">
+											<div class="col-md-9 p-0">
 												<div class="d-flex flex-row ">
 													<div
 														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$
@@ -356,7 +356,7 @@
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
 										<div class="row minh-650">
-											<div class="col-md-11">
+											<div class="col-md-10">
 
 												<div
 													class="theme_dotted_border_bottom  shadow-bottom  py-4 mx-4">
@@ -415,12 +415,12 @@
 
 
 
-											<div class="col-md-1 p-0">
+											<div class="col-md-2 pr-0">
 												<ul
-													class="list-group shadow d-flex flex-column h-100 taskpopup">
-													<li class="  dropleft  list-group-item p-0">
+													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
+													<li class="  dropleft  list-group-item p-0 py-3">
 														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-100 "
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/notes.svg" />
@@ -429,9 +429,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class=" dropleft list-group-item p-0 ">
+													<li class=" dropleft list-group-item p-0 py-3">
 														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/cues.svg" />
@@ -440,9 +440,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class="dropleft list-group-item p-0">
+													<li class="dropleft list-group-item p-0 py-3">
 														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/crm.svg" />
@@ -451,9 +451,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class="dropleft list-group-item  p-0 ">
+													<li class="dropleft list-group-item  p-0 py-3 ">
 														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/presentation.svg" />
@@ -511,7 +511,7 @@
 									<option>Filter by Stages</option>
 									<option>Default select</option>
 								</select>
-								<div class="istar-dropdown mr-2 custom-taskborder ">
+								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -553,9 +553,9 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 pr-0">
+							<div class="col-md-3 pr-0 border-right">
 								<div
-									class="nav flex-column nav-pills pl-4 theme_light_gray_border_bottom"
+									class="nav flex-column nav-pills theme_light_gray_border_bottom"
 									id="taskdetail-tab-list" role="tablist"
 									aria-orientation="vertical">
 									<%
@@ -565,14 +565,14 @@
 												isactive = "active";
 											}
 									%>
-									<div class="nav-link <%=isactive%> theme_solid_border_bottom"
+									<div class="nav-link <%=isactive%> rounded-0 theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center minh-100">
-											<div class="col-md-9">
+										<div class="row align-items-center minh-100 px-4">
+											<div class="col-md-9 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
 												<div class="f-16 fw-500 black">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
@@ -609,7 +609,7 @@
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
 										<div class="row ">
-											<div class="col-md-11">
+											<div class="col-md-10">
 
 												<div
 													class="shadow-bottom  theme_dotted_border_bottom py-4 mx-4">
@@ -678,12 +678,12 @@
 
 
 
-												<div class="col-md-1 p-0">
+													<div class="col-md-2 pr-0">
 												<ul
-													class="list-group shadow d-flex flex-column h-100 taskpopup">
-													<li class="  dropleft  list-group-item p-0">
+													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
+													<li class="  dropleft  list-group-item p-0 py-3">
 														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/notes.svg" />
@@ -692,9 +692,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class=" dropleft list-group-item p-0 ">
+													<li class=" dropleft list-group-item p-0 py-3">
 														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/cues.svg" />
@@ -703,9 +703,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class="dropleft list-group-item p-0">
+													<li class="dropleft list-group-item p-0 py-3">
 														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/crm.svg" />
@@ -714,9 +714,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class="dropleft list-group-item  p-0 ">
+													<li class="dropleft list-group-item  p-0 py-3 ">
 														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/presentation.svg" />
@@ -771,7 +771,7 @@
 									<option>Filter by Stages</option>
 									<option>Default select</option>
 								</select>
-								<div class="istar-dropdown mr-2 custom-taskborder ">
+								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -811,8 +811,8 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 pr-0 taskmodal ">
-								<div class="nav flex-column nav-pills pl-4 "
+							<div class="col-md-3 pr-0 border-right taskmodal ">
+								<div class="nav flex-column nav-pills "
 									id="taskdetail-tab-list" role="tablist"
 									aria-orientation="vertical">
 									<%
@@ -836,8 +836,8 @@
 										data-task_type="<%=tasktype%>">
 
 
-										<div class="row align-items-center minh-100">
-											<div class="col-md-10">
+										<div class="row align-items-center minh-100 px-4">
+											<div class="col-md-10 pl-0">
 												<div class="d-flex flex-row">
 													<div
 														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$

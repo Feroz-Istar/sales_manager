@@ -288,10 +288,7 @@ html, body {
 	margin-right: 0.5rem !important;
 }
 
-.istar-dropdown-arrow:focus {
-	outline: 0;
-	box-shadow: 0 0 0 0.1rem #999999 !important;
-}
+
 
 .istar-dropdown-arrow {
 	display: block;
@@ -593,7 +590,9 @@ input[type="search"]::-webkit-search-cancel-button {
 	height: 24px;
 	width: 24px;
 }
-
+.minh-50 {
+	min-height: 50px;
+}
 .minh-100 {
 	min-height: 100px;
 }
@@ -1203,8 +1202,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 #taskdetail-tab-list>.active {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+	box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.1) !important;
 	border-radius: 0;
+	border-bottom:none;
 	z-index: 4;
 	/* transition : all 0.3s ease-in-out; */
 	transform: scale(1) !important;
@@ -1452,13 +1452,11 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-bottom:     1px solid rgba(0,0,0,.125)!important;
 	
 }
-.taskpopup>li.show{
+.taskpopup>li.show>div{
 	border-left: 3px solid red;
 	background-color: white !important;;
     border-color: red !important;;
-    border-top:   1px solid rgba(0,0,0,.125)!important;
-    border-right: 0 !important;
-    border-bottom:     1px solid rgba(0,0,0,.125)!important;
+   
 }
 
 button:focus {
@@ -1469,4 +1467,21 @@ button:focus {
 	cursor:pointer;
 }
 
-
+ .custom-result-selects:focus{
+ outline: none !important;
+    border-color: #ed4d67 !important;
+    box-shadow: none !important;
+    border:1px solid #ed4d67 !important;
+ }
+.select_focus:focus{
+	outline: none !important;
+    border-color: #ed4d67 !important;
+    box-shadow: none !important;
+    border:1px solid #ed4d67 !important;
+}
+.select_focus.show{
+	outline: none !important;
+    border-color: #ed4d67 !important;
+    box-shadow: none !important;
+    border:1px solid #ed4d67 !important;
+}

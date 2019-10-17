@@ -384,7 +384,7 @@
 						
 						</div>
 						<div class="col-md-6  d-flex justify-content-end">
-						<select class=" form-control mr-2 custom-taskselect f-14 custom-taskborder brown-grey" id="deal_value">
+						<select class=" form-control mr-2 custom-taskselect f-14   custom-result-selects custom-taskborder brown-grey" id="deal_value">
 										<option>Filter by Team</option>
 										<option>Default select</option>
 									</select>

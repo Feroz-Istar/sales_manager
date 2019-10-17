@@ -50,7 +50,7 @@
 						</button>
 					</div>
 				</div>
-				<select class="form-control f-14 custom-taskselect custom-taskborder" id="pipeline">
+				<select class="form-control f-14 custom-taskselect custom-result-selects custom-taskborder" id="pipeline">
 					<option>Select Pipeline</option>
 					<option>Default select</option>
 				</select>

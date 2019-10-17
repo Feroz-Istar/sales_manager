@@ -57,15 +57,15 @@
 							<div class="form-group mb-4">
 								<label class="f-14 font-weight-bold label_color"
 									for="email">Email </label> <input type="email"
-									class="form-control f-14 rounded-0 input_wh" name="email"
+									class="form-control f-14 rounded-0 input_wh istar-form-control" name="email"
 									id="email" aria-describedby="emailHelp"
 									placeholder="Email">
 
 							</div>
 							<div class="form-group mb-4">
-								<label class="f-14 font-weight-bold label_color"
+								<label class="f-14 font-weight-bold label_color "
 									for="password">Password</label> <input
-									type="password" class="form-control f-14 rounded-0 input_wh"
+									type="password" class="form-control f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
 							</div>
 

@@ -97,8 +97,8 @@
 									<option>Default select</option>
 								</select>
 
-								<div class="istar-dropdown-task mr-2 custom-taskborder ">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+								<div class="istar-dropdown-task mr-2 custom-taskborder select_focus">
+									<button class="istar-dropdown-arrow dropdown-toggle "
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by
@@ -443,10 +443,10 @@
 
 						<div
 							class="row align-items-center  border-bottom-separation  py-3 px-4">
-							<div class="col-md-3 text-result-found	">
+							<div class="col-md-2 text-result-found	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
+							<div class="col-md-10 d-md-flex justify-content-end p-0 ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_lost_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">

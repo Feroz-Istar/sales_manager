@@ -4,7 +4,7 @@
 			+ request.getContextPath() + "/";
 	%>
 	<div class="row h-100">
-											<div class="col-md-11 p-0">
+											<div class="col-md-10 p-0">
 												<div class="row p-2 pt-4 justify-content-between mx-4">
 													<div class="col-9">
 														<p class="greyish-brown f-18 mb-2 font-weight-bold">Globex Corporation Inc.</p>
@@ -245,12 +245,12 @@
 
 
 
-												<div class="col-md-1 p-0">
+												<div class="col-md-2 pr-0">
 												<ul
-													class="list-group shadow d-flex flex-column h-100 taskpopup">
-													<li class="  dropleft  list-group-item p-0">
+													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
+													<li class="  dropleft  list-group-item p-0 py-3">
 														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/notes.svg" />
@@ -259,9 +259,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class=" dropleft list-group-item p-0 ">
+													<li class=" dropleft list-group-item p-0 py-3">
 														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/cues.svg" />
@@ -270,9 +270,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class="dropleft list-group-item p-0">
+													<li class="dropleft list-group-item p-0 py-3">
 														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/crm.svg" />
@@ -281,9 +281,9 @@
 																aria-labelledby="dropdownMenuButton"></div>
 														</div>
 													</li>
-													<li class="dropleft list-group-item  p-0 ">
+													<li class="dropleft list-group-item  p-0 py-3 ">
 														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-100"
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
 															<img src="<%=baseURL%>assets/image/presentation.svg" />
