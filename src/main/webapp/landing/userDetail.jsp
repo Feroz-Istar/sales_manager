@@ -376,7 +376,34 @@
 				</div>
 			</div>
 		</div>
-
+<!-- start of leave task modal -->
+		<div class="modal fade" id="leaveTaskModal" tabindex="-1" role="dialog" aria-labelledby="leaveTaskModalTitle" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="d-flex pt-3 justify-content-end">
+		        <div class="col-md-1	">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+		        </div>
+		      </div>
+		      <div class="modal-body">
+		        
+		        <div class="row  pt-4 justify-content-center">
+		        	<div class="font-weight-bold greyish-brown f-18">Do you wanna exit this task?</div>
+		        </div>
+		        <div class="row p-4 justify-content-center">
+		        	<div class="bblack f-14">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn theme_color bg-transparent font-weight-bold" data-dismiss="modal">Cancel</button>
+        		<button type="button" class="btn rounded-0 istar-btn-primary" data-dismiss="modal" style="width: 140px;">LEAVE</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<!-- end of leave task modal -->
 
 </div>
 </main>

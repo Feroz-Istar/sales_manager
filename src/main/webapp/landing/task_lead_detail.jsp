@@ -286,7 +286,7 @@
 		      </div>
 		      <div class="modal-footer">
 		        <button type="button" class="btn theme_color bg-transparent font-weight-bold" data-dismiss="modal">Cancel</button>
-        		<button type="button" class="btn rounded-0 istar-btn-primary" style="width: 140px;">LEAVE</button>
+        		<button type="button" class="btn rounded-0 istar-btn-primary" data-dismiss="modal" style="width: 140px;">LEAVE</button>
 		      </div>
 		    </div>
 		  </div>

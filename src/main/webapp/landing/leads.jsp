@@ -807,7 +807,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-
+					<form id="lostleadmodal">
 						<div class="row pb-4">
 							<div class="col-md-12 f-18 font-weight-bold greyish-brown">
 								Zencorporation Pot. Ltd.</div>
@@ -832,17 +832,17 @@
 							<div class="col-md-12">
 								<textarea
 									class="custom-modal-textarea f-14 brown-grey w-100 p-2"
-									id="reason" rows="6" placeholder="Type Reason"></textarea>
+									id="reasonforlosing" name="reasonforlosing" rows="6" placeholder="Type Reason"></textarea>
 							</div>
 						</div>
-
+					</form>
 					</div>
 					<div class="modal-footer">
 						<button type="button"
 							class="btn theme_color f-14 font-weight-bold">Reset</button>
 						<button type="button"
 							class="btn modal-submit-btn f-14 font-weight-bold"
-							data-dismiss="modal">SUBMIT</button>
+							 id="lostleadsubmit">SUBMIT</button>
 					</div>
 				</div>
 			</div>
@@ -1007,7 +1007,7 @@
 						</button>
 					</div>
 					<div class="modal-body">
-
+					<form id="wonleadmodal">
 						<div class="row pb-4">
 							<div class="col-md-12 f-18 font-weight-bold greyish-brown">
 								Zencorporation Pot. Ltd.</div>
@@ -1032,17 +1032,17 @@
 							<div class="col-md-12">
 								<textarea
 									class="custom-modal-textarea f-14 brown-grey w-100 p-2"
-									id="reason" rows="6" placeholder="Type Reason"></textarea>
+									id="reasonforwin" name="reasonforwin" rows="6" placeholder="Type Reason"></textarea>
 							</div>
 						</div>
-
+					</form>
 					</div>
 					<div class="modal-footer">
 						<button type="button"
 							class="btn theme_color f-14 font-weight-bold">Reset</button>
 						<button type="button"
 							class="btn modal-submit-btn f-14 font-weight-bold"
-							data-dismiss="modal">SUBMIT</button>
+							 id="wonleadsubmit">SUBMIT</button>
 					</div>
 				</div>
 			</div>
@@ -1062,60 +1062,61 @@
 					</button>
 				</div>
 		      <div class="modal-body">
+		      <form id="updateLeadForm">
 		       	<div class="row pb-4">
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">Company Name</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="company_name" aria-describedby="company_name" placeholder="Type here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="company_name" name="company_name" aria-describedby="company_name" placeholder="Type here">
 		       		</div>
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">Lead Source</div>
-		       			<select class="form-control custom-modal-input w-100 f-14 brown-grey" id="leadSource">
-					      <option>Select here</option>
-					      <option>Online</option>
-					      <option>Marketing</option>
-					      <option>Offline</option>
+		       			<select class="form-control custom-modal-input w-100 f-14 brown-grey" id="leadSource" name="leadSource" >
+					      <option value="0">Select here</option>
+					      <option value="online">Online</option>
+					      <option value="marketing">Marketing</option>
+					      <option value="offline">Offline</option>
 					    </select>
 		       		</div>
 		       	</div>
 		    	 <div class="row pb-4">
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">City</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="city" aria-describedby="city" placeholder="Type here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="city" name="city" aria-describedby="city" placeholder="Type here">
 		       		</div>
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">State</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="state" aria-describedby="state" placeholder="Type here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="state" name="state" aria-describedby="state" placeholder="Type here">
 		       		</div>
 		       	</div>
 		       	
 		       	<div class="row pb-4">
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">Country</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="country" aria-describedby="country" placeholder="Type here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="country" name="country" aria-describedby="country" placeholder="Type here">
 		       		</div>
 		       		<div class="col-md-6">
 		       			<div class="f-14 fw-500 pb-1">Website</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="website" aria-describedby="website" placeholder="Type here">
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="website" name="website" aria-describedby="website" placeholder="Type here">
 		       		</div>
 		       	</div>
 				<div class="row pb-4">
 					<div class="col-md-12">
 						<div class="f-14 fw-500 pb-1">About Company</div>
-						<textarea class="custom-modal-textarea w-100" id="aboutcompany" rows="6"></textarea>
+						<textarea class="custom-modal-textarea w-100" id="aboutcompany" name="aboutcompany" rows="6"></textarea>
 					</div>
 				</div>
 				
 				<div class="row pb-4">
 					<div class="col-md-12">
 						<div class="f-14 fw-500 pb-1">Address</div>
-						<textarea class="custom-modal-textarea w-100" id="address" rows="6"></textarea>
+						<textarea class="custom-modal-textarea w-100" id="address" name="address" rows="6"></textarea>
 					</div>
 				</div>
-				
+				</form>
 		      </div>
 		      <div class="modal-footer">
-		        <button type="button" class="btn theme_color f-14 font-weight-bold" >Reset</button>
-		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" data-dismiss="modal">UPDATE</button>
+		        <button type="button" class="btn theme_color f-14 font-weight-bold">Reset</button>
+		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" id="updateLead">UPDATE</button>
 		      </div>
 		    </div>
 		  </div>
@@ -1133,6 +1134,7 @@
 	<script
 		src="<%=baseURL%>assets/js/dropzone.min.js"></script>
 	<script src="<%=baseURL%>assets/js/alertify.min.js"></script>
+			  	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
 
 	<script src="<%=baseURL%>assets/js/lead.js">
 	

@@ -8,7 +8,64 @@ var lost_teams=[];
 var won_agents=[];
 var won_teams=[];
 $( document ).ready(function() {
+	/*start of validation*/
+	$("#lostleadmodal").validate({
+		rules: {
+			reasonforlosing:{
+				required: true	
+			},
+			
+		}
+	});
+	
+	$('#lostleadsubmit').click(function(){
+	    var isreasonforlosingvalid = $("#reasonforlosing").valid();
+	    if(isreasonforlosingvalid){
+	    	$('#lostLeadModalCenter').modal('hide');
+	    }
 
+	});	
+	
+	$("#wonleadmodal").validate({
+		rules: {
+			reasonforwin:{
+				required: true	
+			},
+			
+		}
+	});
+	
+	$('#wonleadsubmit').click(function(){
+	   var isreasonforwinvalid = $("#reasonforwin").valid();
+	   if(isreasonforwinvalid){
+		   $('#wonLeadModalCenter').modal('hide');
+	   }
+	});	
+	
+	$("#updateLeadForm").validate({
+		rules: {
+			company_name:{
+				required: true	
+			},
+			
+		},
+		messages:{
+			company_name: "Company name cannot be empty",
+		}
+	});
+	
+	$('#updateLead').click(function(){
+	    var iscompanynamevalid = $("#company_name").valid();
+	    var isleadSourcevalid = $("#leadSource").valid();
+	    
+	    if(iscompanynamevalid && isleadSourcevalid){
+	    	$('#editLeadModalCenter').modal('hide');
+	    }
+	});	
+	
+	/*end of validation*/
+	
+	
 	/*start of file upload dropzone code*/
 	Dropzone.autoDiscover = false;
 		var myDropzone = new Dropzone(".dropzonediv", 

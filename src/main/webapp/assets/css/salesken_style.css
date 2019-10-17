@@ -1497,3 +1497,8 @@ button:focus {
     box-shadow: none !important;
     border:1px solid #ed4d67 !important;
 }
+
+label.error {
+    color: #ed4d67;
+    font-size: 12px;
+}

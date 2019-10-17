@@ -420,7 +420,7 @@
 
 				<div class="third_main_container">
 				<!-- Start of Associate Join now/Listen card-->
-				<div class="card mb-3 shadow " style="min-height: 313px;">
+				<div class="card mb-3 rounded-0 shadow " style="min-height: 313px;">
 					<div class="card-body ongoingtaskcard cursor-pointer">
 						<div class="d-flex">
 							<div
@@ -480,7 +480,7 @@
 
 
 				<!-- Start of issue resolve card-->
-				<div class="card mb-3 shadow" style="min-height: 292px;">
+				<div class="card mb-3 rounded-0 shadow" style="min-height: 292px;">
 					<div class="card-body">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">June 12,
 							2019</h6>
@@ -505,7 +505,7 @@
 				<!-- End of issue resolve card-->
 
 				<!-- Start of chat now card-->
-				<div class="card mb-3 shadow" style="min-height: 179px;">
+				<div class="card mb-3 rounded-0 shadow" style="min-height: 179px;">
 					<div class="card-body mr-md-3">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">10:30 AM</h6>
 						<div class="row align-items-center mb-3">
@@ -530,7 +530,7 @@
 				</div>
 				<!-- End of chat now card-->
 				<!-- Start of accepting incoming call by Associate card-->
-				<div class="card mb-3 shadow" style="min-height: 255px;">
+				<div class="card mb-3 rounded-0 shadow" style="min-height: 255px;">
 					<div class="card-body">
 						<div class="row mb-2">
 							<div class="col-md-6 d-flex col-6">
