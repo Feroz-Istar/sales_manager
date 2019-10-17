@@ -25,6 +25,7 @@
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/dropzone.min.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/alertify.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
 </head>
 <body data-base-url="<%=baseURL%>">
@@ -443,7 +444,7 @@
 
 						<div
 							class="row align-items-center  border-bottom-separation  py-3 px-4">
-							<div class="col-md-2 text-result-found	">
+							<div class="col-md-2 text-result-found	font_text_result">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
 							<div class="col-md-10 d-md-flex justify-content-end p-0 ">
@@ -617,10 +618,10 @@
 
 						<div
 							class="row align-items-center  border-bottom-separation  py-3 px-4">
-							<div class="col-md-3 text-result-found	">
+							<div class="col-md-2 text-result-found font_text_result	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
+							<div class="col-md-10 d-md-flex justify-content-end p-0 ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_won_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">

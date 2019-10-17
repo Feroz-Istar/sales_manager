@@ -40,6 +40,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/wickedpicker.min.css">
   <link href="<%=baseURL%>assets/css/summernote-bs4.css" rel="stylesheet">
     <link href="<%=baseURL%>assets/css/bootstrap-select.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
   
 </head>
 <body data-base-url="<%=baseURL%>">

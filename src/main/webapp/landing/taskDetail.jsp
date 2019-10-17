@@ -23,6 +23,8 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/taskDetail.css">
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
+	<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
+	
 </head>
 <body data-base-url="<%=baseURL%>">
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
@@ -755,7 +757,7 @@
 						<!-- start of completed tab -->
 						<div
 							class="row align-items-center  theme_solid_border_bottom  py-3 m-0 px-4">
-							<div class="col-md-3 text-result-found	">
+							<div class="col-md-3 text-result-found	font_text_result">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">

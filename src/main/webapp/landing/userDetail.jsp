@@ -22,6 +22,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/jquery.rateyo.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
 </head>
 <body data-base-url="<%=baseURL%>">

@@ -424,9 +424,15 @@ html, body {
 	color: #999999 !important;
 }
 
+@media ( min-width : 1025px) {
+.custom-result-selects{
+		min-width: 185px !important;
+}
+	
+	}
+
 .custom-result-selects {
 	height: 30px !important;
-	min-width: 185px !important;
 	border: 1px solid #cccccc;
 	border-radius: 0;
 	font-size: 14px;
@@ -686,6 +692,12 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .fw-300 {
 	font-weight: 300 !important;
+}
+@media only screen and (max-width: 1024px) {
+
+.font_text_result{
+	font-size:0.8rem !important;
+}
 }
 /* End of Font sizes */
 
