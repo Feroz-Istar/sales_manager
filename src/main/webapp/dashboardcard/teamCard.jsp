@@ -3,7 +3,7 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	%>
-<div class="card shadow mb-2" style="min-height: 245px;">
+<div class="card shadow mb-2 rounded-0" style="min-height: 245px;">
 	<div class="card-body">
 		<div class="salesken_caurosel position-relative"  data-index="0" data-child="team-container">
 			<button type="button" class="istar-btn-icon istar-square previous" id="team-left" style="right: 50px; position: absolute;">

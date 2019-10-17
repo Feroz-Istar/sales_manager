@@ -303,7 +303,7 @@
 						%>
 						<div class="carousel-item <%=isActive%>">
 
-							<div class="card saleskenCard" style="min-height: 194px;">
+							<div class="card  rounded-0 saleskenCard" style="min-height: 194px;">
 								<div class="card-body">
 									<div class="row align-items-center px-3"
 										style="min-height: 104px;">

@@ -3,7 +3,7 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	%>
-<div class="card shadow" style="min-height: 505px;">
+<div class="card shadow rounded-0" style="min-height: 505px;">
 					<div class="card-body agent">
 					<div class="position-relative">
 						<button type="button" class="istar-btn-icon istar-square"  id="show-bottom" style="right: 50px; position: absolute;">
