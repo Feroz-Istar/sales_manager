@@ -1534,3 +1534,15 @@ label.error {
    
   }
 
+
+
+.form-control.is-invalid, .was-validated .form-control:invalid {
+    background: #fff5f6 !important;
+    color: #e84c4c !important;
+    
+}
+
+.form-control.is-valid, .was-validated .form-control:valid{
+	    background: #f0fdf6;
+	color:#57b280;
+}

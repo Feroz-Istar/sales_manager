@@ -828,7 +828,7 @@
 						<div class="row pt-4">
 							<div class="col-md-12">
 								<textarea
-									class="custom-modal-textarea f-14 brown-grey w-100 p-2"
+									class="form-control custom-modal-textarea f-14 brown-grey w-100 p-2"
 									id="reasonforlosing" name="reasonforlosing" rows="6" placeholder="Type Reason"></textarea>
 							</div>
 						</div>
@@ -1028,7 +1028,7 @@
 						<div class="row pt-4">
 							<div class="col-md-12">
 								<textarea
-									class="custom-modal-textarea f-14 brown-grey w-100 p-2"
+									class="form-control custom-modal-textarea f-14 brown-grey w-100 p-2"
 									id="reasonforwin" name="reasonforwin" rows="6" placeholder="Type Reason"></textarea>
 							</div>
 						</div>

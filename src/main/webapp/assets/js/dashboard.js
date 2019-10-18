@@ -1,5 +1,30 @@
 $(document).ready(function() {
-
+	jQuery.validator.setDefaults({
+	   /* highlight: function(element) {
+	        jQuery(element).closest('.form-control').addClass('is-invalid');
+	    },
+	    unhighlight: function(element) {
+	        jQuery(element).closest('.form-control').removeClass('is-invalid');
+	    },
+	    errorElement: 'span',
+	    errorClass: 'label label-danger',
+	    errorPlacement: function(error, element) {
+	        if(element.parent('.input-group').length) {
+	            error.insertAfter(element.parent());
+	        } else {
+	            error.insertAfter(element);
+	        }
+	    }*/
+		errorPlacement : function(error, element) {
+			error.addClass('invalid-feedback');
+		},
+		highlight : function(element, errorClass, validClass) {
+			$(element).addClass('is-invalid');
+		},
+		unhighlight : function(element, errorClass, validClass) {
+			$(element).removeClass('is-invalid').addClass('is-valid');
+		}
+	});
 	modalFormSetup();
 	
 	$.get(location.origin+"/dashboardcard/pipelineCard.jsp", function( data ) {
@@ -133,7 +158,7 @@ $(document).ready(function() {
 		});
 		
 		/*start of validation*/
-
+		
 		$("#createTaskFrom").validate({
 			rules: {
 				eventTitle: {
@@ -171,13 +196,26 @@ $(document).ready(function() {
 			}
 		});
 		
-		
+		$('#scheduletaskform').selectpicker({
+			width : '100%',
+			sanitize : false,
+			showContent : false,
+			liveSearch : true,
+			virtualScroll : '600'
+		});
 		$("#scheduletaskform").validate({
 			rules: {
 				taskActor: {
 				      required: true,
 				      min: 1, //validates minimum value the element has to have
-				    }
+				    },
+				    task_type : {
+						validators : {
+							notEmpty : {
+								message : 'Please select task type.'
+							}
+						}
+					}
 			}	,
 			messages:{
 				taskActor: {

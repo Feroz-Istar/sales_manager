@@ -102,7 +102,18 @@ $( document ).ready(function() {
 	})
 		
 
-
+jQuery.validator.setDefaults({
+		
+		errorPlacement : function(error, element) {
+			error.addClass('invalid-feedback');
+		},
+		highlight : function(element, errorClass, validClass) {
+			$(element).addClass('is-invalid');
+		},
+		unhighlight : function(element, errorClass, validClass) {
+			$(element).removeClass('is-invalid').addClass('is-valid');
+		}
+	});
 	
 });
 

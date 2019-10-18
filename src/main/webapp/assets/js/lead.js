@@ -9,6 +9,8 @@ var won_agents=[];
 var won_teams=[];
 $( document ).ready(function() {
 	/*start of validation*/
+	
+	
 	$("#lostleadmodal").validate({
 		rules: {
 			reasonforlosing:{
@@ -48,17 +50,13 @@ $( document ).ready(function() {
 				required: true	
 			},
 			
-		},
-		messages:{
-			company_name: "Company name cannot be empty",
 		}
 	});
 	
 	$('#updateLead').click(function(){
 	    var iscompanynamevalid = $("#company_name").valid();
-	    var isleadSourcevalid = $("#leadSource").valid();
 	    
-	    if(iscompanynamevalid && isleadSourcevalid){
+	    if(iscompanynamevalid){
 	    	$('#editLeadModalCenter').modal('hide');
 	    }
 	});	
