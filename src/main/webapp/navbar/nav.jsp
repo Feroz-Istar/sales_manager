@@ -9,7 +9,7 @@
 <nav
 	class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
 	<a class="navbar-brand f-15 p-0 pr-3" href="/landing/dashboard.jsp">
-		<img class="appicon img-thumbnail p-0 mr-1 border-0"
+		<img class="appicon img-thumbnail p-0 mr-1 border-0" alt="salesken_logo"
 		src="<%=baseURL%>assets/image/nav_icon.png" />
 	</a>
 	<div class="d-flex flex-row order-2 order-lg-3">
@@ -60,11 +60,11 @@
 					<div class="d-flex flex-column  ">
 						<div
 							class="f-14 font-weight-bold d-flex flex-row align-items-center">
-							<div class="mr-3">Wade walker</div>
+							<div class="mr-3 text-truncate-1">Wade walker</div>
 							<div class="dropdown-toggle"></div>
 
 						</div>
-						<div class="f-12">Manager</div>
+						<div class="f-12 text-truncate-1">Manager</div>
 					</div>
 				</div>
 				<div
@@ -76,29 +76,29 @@
 						<li class="list-group-item  border-0 cursor-pointer">
 							<div class="d-flex flex-row align-items-center">
 								<img
-									src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg"
+									src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg" alt="profile_img"
 									class="rounded-circle align-self-center mr-2"
 									style="height: 35px; width: 35px;" />
 								<div class="d-flex flex-column">
-									<div class="f-14 font-weight-bold">Wade walker</div>
-									<div class="f-12">wade@gmail.com</div>
+									<div class="f-14 font-weight-bold text-truncate-1">Wade walker</div>
+									<div class="f-12 text-truncate-1">wade@gmail.com</div>
 
 								</div>
 							</div>
 						</li>
 						<li
 							class="list-group-item border-0 d-flex flex-row cursor-pointer">
-							<img src="<%=baseURL%>assets/image/person.svg" class="pr-3" />
+							<img src="<%=baseURL%>assets/image/person.svg" alt="switch" class="pr-3" />
 							<div>Switch to Manager</div>
 						</li>
 						<li
 							class="list-group-item border-0 d-flex flex-row cursor-pointer">
-							<img src="<%=baseURL%>assets/image/setting.svg" class="pr-3" />
+							<img src="<%=baseURL%>assets/image/setting.svg" alt="setting" class="pr-3" />
 							<div>My Account</div>
 						</li>
 						<li
 							class="list-group-item border-0 d-flex flex-row cursor-pointer signout">
-							<img src="<%=baseURL%>assets/image/signout.svg" class="pr-3" />
+							<img src="<%=baseURL%>assets/image/signout.svg" alt="signout" class="pr-3" />
 							<div>Sign Out</div>
 						</li>
 					</ul>

@@ -64,7 +64,7 @@
 										<input type="text" id="pipeline_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012">
 										<div class="input-group-addon" onclick="showCalendar()">
-											<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 										</div>
 									</div>	
 									<select
@@ -118,10 +118,10 @@
 					                                    
 									<input class="istar-checkbox agentcheckbox" data-id="<%=i %>" id="associate-checkbox<%=i %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="associate-checkbox<%=i %>"></label>
-											<img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+											<img alt="user-img" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
-					                                        	<div class="f-14 font-weight-bold greyish-brown">Robert Garcia</div>
-					                                        	<div class="f-12  brownish-grey">Team -02</div>
+					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
 					                                        </div>
 										</div>
 										<%} %>
@@ -174,7 +174,7 @@
 					isactive = "active";
 				}
 		    %>
-		      <a class="nav-link py-3  <%=isactive %>" id="stage-<%=i%>-tab" data-toggle="pill" href="#stage-<%=i%>" role="tab" aria-controls="stage-<%=i%>" aria-selected="true">Stage 0<%=i+1	%></a>
+		      <a class="nav-link py-3  <%=isactive %> text-truncate" title="Stage 01" id="stage-<%=i%>-tab" data-toggle="pill" href="#stage-<%=i%>" role="tab" aria-controls="stage-<%=i%>" aria-selected="true">Stage 0<%=i+1	%></a>
 		     <%} %>
 		     </div>
 		  </div>
@@ -245,18 +245,18 @@
 		      			%>
 		      		<div class="row py-4 theme_solid_border_bottom align-items-center pl-4 <%=bgcolor%>" >
 		      			<div class="col-md-2">
-		      				<div class="f-14 black fw-500">Accenture Consulting Inc.</div>
+		      				<div class="f-14 black fw-500 text-truncate" title="Accenture Consulting Inc.">Accenture Consulting Inc.</div>
 		      				<div class="f-14 brownish-grey fw-500">$ 290</div>
 		      			</div>
 		      			
 		      			<div class="col-md-2">
-		      				<div class="f-14 black fw-500">Robert Wolken</div>
-		      				<div class="f-14 brownish-grey fw-500">Manager</div>
+		      				<div class="f-14 black fw-500 text-truncate" title="Robert Wolken">Robert Wolken</div>
+		      				<div class="f-14 brownish-grey fw-500 text-truncate" title="Manager">Manager</div>
 		      			</div>
 		      			
 		      			<div class="col-md-2">
-		      				<div class="f-14 black fw-500">Info@accenture.com</div>
-		      				<div class="f-14 brownish-grey fw-500">+91 888 898 8989</div>
+		      				<div class="f-14 black fw-500 text-break">Info@accenture.com</div>
+		      				<div class="f-14 brownish-grey fw-500 text-truncate" title="888">+91 888 898 8989</div>
 		      			</div>
 		      			
 		      			<div class="col-md-6">
@@ -294,16 +294,16 @@
 											</button>
 											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 	                                            aria-labelledby="dropdownMenuButton">
-	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt=""
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt="won"
 	                                                    srcset="" class="mr-2"> Won</button>
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
-	                                                    alt="" srcset="" class="mr-2">Lose</button>
-	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt=""
+	                                                    alt="lost" srcset="" class="mr-2">Lose</button>
+	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 	                                                    srcset="" class="mr-2">Edit</button>
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
-	                                                    alt="" srcset="" class="mr-2">Delete</button>
+	                                                    alt="delete" srcset="" class="mr-2">Delete</button>
 	                                            <button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'"><img src="<%=baseURL%>assets/image/details.png"
-	                                                    alt="" srcset="" class="mr-2">Details</button>
+	                                                    alt="details" srcset="" class="mr-2">Details</button>
 	                                        </div>
 	                                    </div>
 		      					</div>
@@ -313,10 +313,12 @@
 		      		</div>
 		      		<%} %>
 
-						<div class="row py-3 justify-content-end">
-							<div class="col-md-3 pl-5">
+						<div class="row py-3 ">
+							<div class="col-md-12 ">
+							<div class="d-flex justify-content-end pr-3">
 								<div class="page">
 									<ul class="salesken pagination mb-0"></ul>
+								</div>
 								</div>
 							</div>
 						</div>

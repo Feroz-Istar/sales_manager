@@ -34,10 +34,10 @@
 							style="background: <%=color%>">
 							<div class="col-md-4 col-6">
 								<div class="d-flex flex-row">
-									<img class="mr-2" style="height: 40px; width: 40px"
+									<img class="mr-2" style="height: 40px; width: 40px" alt="associate"
 										src="<%=baseURL%>assets/image/37.jpg" />
 									<div class="d-flex flex-column">
-										<div class="f-14">Stanley Howard</div>
+										<div class="f-14 text-truncate" title="Stanley Howar">Stanley Howard</div>
 										<div class="p-0 rateYo" data-rating="<%=k%>"></div>
 									</div>
 								</div>

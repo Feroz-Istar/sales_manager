@@ -22,7 +22,7 @@
 		<div class="pipeline-container <%=isshow %> " >
 		<div class="row px-3 mb-3">
 			<div
-				class="card-title col-md-6 font-weight-bold f-18 greyish-brown">Pipeline
+				class="card-title col-md-6 font-weight-bold f-18 greyish-brown text-truncate" title="Pipeline">Pipeline
 				- 0<%=j+1%></div>
 			
 		</div>
@@ -48,7 +48,7 @@
 
 
 					<div class="row mb-2 px-3">
-						<div class="col fw-500 f-16 brownish-grey">Stage
+						<div class="col fw-500 f-16 brownish-grey text-truncate" title="Pipeline">Stage
 							01</div>
 					</div>
 

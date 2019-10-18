@@ -19,11 +19,11 @@
 				</div>
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-					<p class="black f-16 fw-500 mb-0">Stage 02</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" title="Stage 02">Stage 02</p>
 				</div>
 				<div class="col-md-3">
 					<p class="brownish-grey f-14 mb-0">Contact Person</p>
-					<p class="black f-16 fw-500 mb-0">Robert Wolken</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" title="Robert Wolken">Robert Wolken</p>
 				</div>
 				<div class="col-md-3 text-right">
 					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#leaveTaskModal">LEAVE
@@ -100,7 +100,7 @@
 				<div class="d-flex flex-row  p-3 audioitem" style="border-bottom: 1px dashed #cccccc;">
 					<div class="mr-auto">
 					<p class="mb-0 light_gray f-12">06 Mint</p>
-					<p class="mb-0 bblack f-16">Introduction</p>
+					<p class="mb-0 bblack f-16 text-break">Introduction</p>
 					
 					
 					</div>
@@ -181,7 +181,7 @@
 								</p>
 								<div class="card shadow" style="border-radius: 1.25rem !important;" >
 									<div class="card-body">
-										<p class="card-text">Some quick example text to
+										<p class="card-text f-14">Some quick example text to
 											build on the card title and make up the bulk of the
 											card's content.</p>
 									</div>
@@ -196,7 +196,7 @@
 								</p>
 								<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
 									<div class="card-body">
-										<p class="card-text">Some quick example text to
+										<p class="card-text f-14">Some quick example text to
 											build on the card title and make up the bulk of the
 											card's content.</p>
 									</div>

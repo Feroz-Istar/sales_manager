@@ -73,17 +73,17 @@
 					
 					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
 					    <button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
-					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown">
 					    Call Task</button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown">
 					    Email Task</button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar" class="task-dropdown">
 					    Webinar Task
 					    </button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/presentation.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" class="task-dropdown">
 					    Presentation
 					    </button>
 					</div>
@@ -117,7 +117,7 @@
 					<div class="tab-pane fade show active " id="home" role="tabpanel"
 						aria-labelledby="home-tab">
 						<!-- Calendar container -->
-						<div class="w-100 pl-2 pr-2 pr-md-4 pl-md-4">
+						<div class="w-100 ">
 							<div id="datepicker"></div>
 
 						</div>
@@ -156,11 +156,11 @@
 											aria-labelledby="dropdownMenuButton">
 											
 											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/edit.svg" alt=""
+												<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 													srcset="" class="mr-2">Edit
 											</button>
 											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/delete.svg" alt=""
+												<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 													srcset="" class="mr-2">Delete
 											</button>
 											
@@ -178,10 +178,11 @@
 												}
 									%>
 									<img class="rounded-circle imgsize mr-1 <%=img_mar%>"
-										src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg">
+										 alt="associate-name" src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg">
 									<%
 										}
 									%>
+									
 								</div>
 							</div>
 							<%
@@ -191,11 +192,11 @@
 								<!-- start of no-data for todo list -->	
 								<div class="no-event">						
 								<div class="w-100 mt-4 pt-4 text-center">
-									<img src="<%=baseURL%>assets/image/08.svg" alt=""
+									<img src="<%=baseURL%>assets/image/08.svg" alt="no-event-data"
 													srcset="" class="mr-2 mb-3">
 								</div>
 								<div class="fw-500 f-16 greyish-brown mb-2 text-center">Track your tasks</div>
-								<div class="fw-500 f-12 brownish-grey  text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>	
+								<div class="fw-500 f-12 brownish-grey  mx-4 px-4 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>	
 								</div>
 								<!-- end of no-data for todo list -->							
 								
@@ -253,11 +254,11 @@
 								<!-- start of no-data for notes list -->	
 								<div class="no-notes text-center cursor-pointer" onclick="opennotes()">						
 									<div class="w-100 mt-4 pt-4">
-										<img src="<%=baseURL%>assets/image/make_notes.svg" alt=""
+										<img src="<%=baseURL%>assets/image/make_notes.svg" alt="no-notes"
 														srcset="" class="mr-2 mb-4">
 									</div>
 									<div class="fw-500 f-16 greyish-brown mt-2 mb-2">Keep your notes</div>
-									<div class="fw-500 f-12 brownish-grey ">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
+									<div class="fw-500 f-12 brownish-grey  mx-4 px-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 									</div>	
 								<!-- end of no-data for notes list -->	
 					</div>
@@ -315,14 +316,14 @@
 											<div class="f-14 fw-500 greyish-brown">Not
 												asking for next steps</div>
 										</div>
-										<img class="col-md-2 signalimgsize"
+										<img class="col-md-2 signalimgsize" alt="next-step-img"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 										<div class="col-md-4 card-separation">
 											<div class="f-30 font-weight-bold greyish-brown">12</div>
 											<div class="f-14 fw-500 greyish-brown">Responded
 												positively in the end of a call</div>
 										</div>
-										<img class="col-md-2 signalimgsize"
+										<img class="col-md-2 signalimgsize" alt="next-step-img"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 									</div>
 								</div>
@@ -431,8 +432,8 @@
 									>Angry</span>
 							</div>
 						</div>
-						<h5 class="card-title f-18 font-weight-bold">Accenture Consulting Inc.</h5>
-						<div class="f-16 brownish-grey">Robert Wolken</div>
+						<h5 class="card-title f-18 font-weight-bold text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
+						<div class="f-16 brownish-grey text-truncate" title="Accenture">Robert Wolken</div>
 						<div class="f-12 brown-grey mb-2">Manager</div>
 						<div class="dotted-1 mb-2"></div>
 
@@ -440,13 +441,13 @@
 							<div class="mr-auto  ">
 								<div class="d-flex flex-column">
 									<div class="brown-grey f-12">Call Task by</div>
-									<div class="brownish-grey f-16">Marry Vasquez</div>
+									<div class="brownish-grey f-16 text-truncate" title="Accenture">Marry Vasquez</div>
 								</div>
 
 							</div>
 							<div class=" bd-highlight">
 								<div class="img-wrapper position-relative">
-									<img class="hw-66 rounded-circle img-responsive"
+									<img class="hw-66 rounded-circle img-responsive" alt="lead-img"
 										src="<%=baseURL%>assets/image/layer.png" />
 									<div class="img-overlay"
 										style="position: absolute; left: -19px; top: 28%;">
@@ -484,11 +485,11 @@
 					<div class="card-body">
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">June 12,
 							2019</h6>
-						<p class="card-text greyish-brown f-14">Product Price in too
+						<p class="card-text greyish-brown f-14 text-truncate" title="Product Price in too expensive">Product Price in too
 							expensive, and agents are not supportive and they are not
 							providing information !</p>
-						<div class="f-18 greyish-brown mb-2">Martin Franklin</div>
-						<div class="f-16 brownish-grey mb-4">Infogen Consulting Pvt.
+						<div class="f-18 greyish-brown mb-2 text-truncate" title="Martin Franklin">Martin Franklin</div>
+						<div class="f-16 brownish-grey mb-4 text-truncate" title="Infogen Consulting Pvt.">Infogen Consulting Pvt.
 							Ltd</div>
 						<div>
 							<button  class="btn join_btn istar-btn-hover f-12 mr-2 resolvecardmodal" href="/modals/resolvetask.jsp">RESOLVE</button>
@@ -510,7 +511,8 @@
 						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">10:30 AM</h6>
 						<div class="row align-items-center mb-3">
 							<div class="col-md-9 col-6">
-								<p class="card-text greyish-brown f-14">Hello Sir, The
+								<p class="card-text greyish-brown f-14 text-trucate" title="Hello Sir, The
+									customer is asking about dis">Hello Sir, The
 									customer is asking about discount, please tell me….</p>
 							</div>
 							<div class="col-md-3 col-6">
@@ -534,20 +536,20 @@
 					<div class="card-body">
 						<div class="row mb-2">
 							<div class="col-md-6 d-flex col-6">
-								<img class="hw-24 mr-1" src="<%=baseURL%>assets/image/task.svg">
+								<img class="hw-24 mr-1" alt="task" src="<%=baseURL%>assets/image/task.svg">
 								<div class="f-16 brownish-grey " style="line-height: 28px;">Call
 									Task</div>
 
 							</div>
 							<div class="col-md-6 d-flex col-6">
-								<img class="hw-24 mr-1" src="<%=baseURL%>assets/image/alarm.svg">
+								<img class="hw-24 mr-1" src="<%=baseURL%>assets/image/alarm.svg" alt="alarm">
 								<div class="f-16 brownish-grey" style="line-height: 28px;">12:30
 									PM</div>
 							</div>
 						</div>
 
-						<h5 class="card-title f-18 mb-2">Accenture Consulting Inc.</h5>
-						<div class="f-16 brownish-grey">Robert Wolken</div>
+						<h5 class="card-title f-18 mb-2 text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
+						<div class="f-16 brownish-grey text-truncate" title="Robert Wolken">Robert Wolken</div>
 						<div class="f-12 brown-grey ">Manager</div>
 
 					</div>
@@ -600,14 +602,14 @@
 						<div class="f-14 fw-500 pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="event_date" name="event_date" value="<%=today_date%>">
-							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
+							<img src="<%=baseURL%>assets/image/calendar.svg" alt="" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
 						<div class="f-14 fw-500 pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker" type="text" name="timepicker" id="timepicker" placeholder="Select here">
-							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
+							<img src="<%=baseURL%>assets/image/alarm.svg" alt="" class="pr-2">	
 						</div>	
 					</div>
 				</div>
@@ -726,17 +728,17 @@
 					</button>
 					 <div class="dropdown-menu dropdown-menu-right task-dropdown-menu" id="scheduleTaskType">
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown">
 					    Call Task</button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown">
 					    Email Task</button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar" class="task-dropdown">
 					    Webinar Task
 					    </button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/presentation.svg" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" class="task-dropdown">
 					    Presentation
 					    </button>
 					  </div>
@@ -756,14 +758,14 @@
 						<div class="f-14 fw-500 pb-1">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
-							<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">	
+							<img src="<%=baseURL%>assets/image/calendar.svg" alt="date" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6">
 						<div class="f-14 fw-500 pb-1">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2">
 							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_time">
-							<img src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">	
+							<img src="<%=baseURL%>assets/image/alarm.svg" alt="alarm" class="pr-2">	
 						</div>	
 					</div>
 				</div>
@@ -821,7 +823,6 @@
 	<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
     <script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
-	<script src="<%=baseURL%>assets/js/saleskencarousal.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
 	
 </body>

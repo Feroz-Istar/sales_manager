@@ -2,13 +2,13 @@
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
-	%>
+%>
 
 	<div class="row h-100">
 		<div class="col-md-10">
 			<div class="row pt-2 pl-3">
 				<div class="col">
-					<p class="greyish-brown f-18 font-weight-bold">Globex Corporation Inc.</p>
+					<p class="greyish-brown f-18 font-weight-bold text-truncate" title="Globex Corporation Inc">Globex Corporation Inc.</p>
 				</div>
 			</div>
 			<div class="row pt-2 pl-3">
@@ -18,11 +18,11 @@
 				</div>
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-					<p class="black f-16 fw-500 mb-0">Stage 02</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation Inc">Stage 02</p>
 				</div>
 				<div class="col-md-3">
 					<p class="brownish-grey f-14 mb-0">Contact Person</p>
-					<p class="black f-16 fw-500 mb-0">Robert Wolken</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation Inc">Robert Wolken</p>
 				</div>
 				<div class="col-md-3 text-right">
 					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#leaveTaskModal">LEAVE
@@ -67,9 +67,9 @@
 				<div class="col d-flex flex-row justify-content-center">
 
 					<div class="d-flex flex-row align-items-center mr-5">
-						<img src="<%=baseURL%>assets/image/man.jpg"
+						<img src="<%=baseURL%>assets/image/man.jpg" alt="man"
 							class="rounded-circle hw-60 task-image-right"> <img
-							src="<%=baseURL%>assets/image/calltask.svg"
+							src="<%=baseURL%>assets/image/calltask.svg"  alt="call"
 							class="rounded-circle hw-40 task-icon">
 
 					</div>
@@ -84,8 +84,8 @@
 						<i class="fas fa-backward"></i>
 					</button>
 					<div class="d-flex flex-row align-items-center">
-						<img src="<%=baseURL%>assets/image/layer.png"
-							class="rounded-circle hw-60 task-image-right"> <img
+						<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
+							class="rounded-circle hw-60 task-image-right"> <img  alt="call"
 							src="<%=baseURL%>assets/image/calltask.svg"
 							class="rounded-circle hw-40 task-icon">
 
@@ -99,7 +99,7 @@
 				<div class="d-flex flex-row  p-3 audioitem" style="border-bottom: 1px dashed #cccccc;">
 					<div class="mr-auto">
 					<p class="mb-0 light_gray f-12">06 Mint</p>
-					<p class="mb-0 bblack f-16">Introduction</p>
+					<p class="mb-0 bblack f-16 text-break">Introduction</p>
 					
 					
 					</div>
@@ -140,7 +140,7 @@
 											<div class="col">
 											<div class="d-flex flex-row">
 											
-											<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
+											<img class="hw-94 mr-5"  alt="carousal-img" src="<%=baseURL%>assets/image/Group 3614.svg">
 											<div class="border-right-blue mr-3"></div>
 											<p class="greyish-brown f-16 fw-500  align-self-center">Customers who responded positively in the end of a call</p>
 											</div>
@@ -180,7 +180,7 @@
 								</p>
 								<div class="card shadow" style="border-radius: 1.25rem !important;" >
 									<div class="card-body">
-										<p class="card-text">Some quick example text to
+										<p class="card-text f-14">Some quick example text to
 											build on the card title and make up the bulk of the
 											card's content.</p>
 									</div>
@@ -195,7 +195,7 @@
 								</p>
 								<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
 									<div class="card-body">
-										<p class="card-text">Some quick example text to
+										<p class="card-text f-14">Some quick example text to
 											build on the card title and make up the bulk of the
 											card's content.</p>
 									</div>
@@ -223,7 +223,7 @@
 															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<img src="<%=baseURL%>assets/image/notes.svg"  alt="notes"/>
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
 															<div class="dropdown-menu notespopupdropdown pt-0"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -234,7 +234,7 @@
 															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
 															<div class="dropdown-menu cuespopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -245,7 +245,7 @@
 															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<img src="<%=baseURL%>assets/image/crm.svg"  alt="crm"/>
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 															<div class="dropdown-menu crmpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -256,7 +256,7 @@
 															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<img src="<%=baseURL%>assets/image/presentation.svg"  alt="chat"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
 															<div class="dropdown-menu chatpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>

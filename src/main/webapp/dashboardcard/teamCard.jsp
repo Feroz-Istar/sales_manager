@@ -19,7 +19,7 @@
 		}%>
 		<div class="team-container <%=isshow%>">
 		<div class="row mb-3 px-3">
-			<div class="col-md-6 font-weight-bold f-18">
+			<div class="col-md-6 font-weight-bold f-18 text-truncate" title="team">
 				Team 0<%=j+1 %>&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
 			</div>
 			

@@ -68,7 +68,7 @@
 									<input type="text" id="task_datepicker" class="form-control  custom-dateselect"
 										value="12-02-2012">
 									<div class="input-group-addon" onclick="showCalendar()">
-										<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1">
+										<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar">
 									</div>
 								</div>	
 								<select
@@ -86,17 +86,17 @@
 									</button>
 									 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 									    <button class="dropdown-item" type="button">
-									    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+									    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown" alt="call">
 									    Call Task</button>
 									    <button class="dropdown-item" type="button">
-									    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown">
+									    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown" alt="email">
 									    Email Task</button>
 									    <button class="dropdown-item" type="button">
-									    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown">
+									    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown" alt="webinar">
 									    Webinar Task
 									    </button>
 									    <button class="dropdown-item" type="button">
-									    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown">
+									    <img src="<%=baseURL%>assets/image/presentation.svg" class="task-dropdown" alt="presentation">
 									    Presentation
 									    </button>
 									  </div>
@@ -151,13 +151,14 @@
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16  fw-500 black">Globex
+												<div class="f-16  fw-500 black text-truncate" title="Globex
+													Corporation Inc.">Globex
 													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
 											<div class="col-md-2">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"
+													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 														class="rounded-circle hw-30" /> 
 												</div>
 											</div>
@@ -206,9 +207,9 @@
 				  	<div class="row mt-4">				
 				  		<div class="col-md-6">	
 				  			<div class="d-flex">	
-				  				<img src="<%=baseURL%>assets/image/11.png" class="hw-60" />
+				  				<img src="<%=baseURL%>assets/image/11.png" class="hw-60" alt="user-img"/>
 				  				<div class="ml-4">
-				  					<div class="f-16  fw-500 black">Stanley Howard</div>
+				  					<div class="f-16  fw-500 black text-truncate" title="Globex Corporation Inc.">Stanley Howard</div>
 						  			<div class="d-flex align-items-center">		
 						  				<div class="p-0 rateYo mr-4" data-rating="3"></div>
 						  				<i class="far fa-thumbs-up mr-2 f-24 brown-grey"></i>
@@ -220,11 +221,11 @@
 				  		</div>		
 				  		<div class="col-md-6 text-right	">
 				  			<div class="d-flex align-items-center justify-content-end">
-					  			<img src="<%=baseURL%>assets/image/people.svg" class="mr-2" />
-					  			<div class="f-14 greyish-brown mr-4">Team North</div>
-					  			<img src="<%=baseURL%>assets/image/mail.svg" class="mr-2" />
-					  			<div class="f-14 greyish-brown mr-4">stanleyhoward@gmail.com</div>
-					  			<img src="<%=baseURL%>assets/image/call.svg" class="mr-2" />
+					  			<img src="<%=baseURL%>assets/image/people.svg" class="mr-2" alt="team" />
+					  			<div class="f-14 greyish-brown mr-4 text-truncate" title="Team North">Team North</div>
+					  			<img src="<%=baseURL%>assets/image/mail.svg" class="mr-2" alt="email"/>
+					  			<div class="f-14 greyish-brown mr-4 text-truncate" title="stanleyhoward@gmail.com">stanleyhoward@gmail.com</div>
+					  			<img src="<%=baseURL%>assets/image/call.svg" class="mr-2" alt="phone"/>
 					  			<div class="f-14 greyish-brown mr-4">(741)-210-1851</div>
 					  			<img src="<%=baseURL%>assets/image/edit.svg"/>
 				  			</div>
@@ -235,7 +236,7 @@
 				  		<div class="col-md-2 border-right-dashed-separation">
 				  			<div class="row">
 				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/task.svg" class="hw-45" />
+				  					<img src="<%=baseURL%>assets/image/task.svg" class="hw-45" alt="task" />
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">40</div>
@@ -246,7 +247,7 @@
 				  		<div class="col-md-2 border-right-dashed-separation">
 				  			<div class="row">
 				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/donecircle.svg" class="hw-45" />
+				  					<img src="<%=baseURL%>assets/image/donecircle.svg" class="hw-45"  alt="done"/>
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">24</div>
@@ -257,7 +258,7 @@
 				  		<div class="col-md-2 border-right-dashed-separation">
 				  			<div class="row">
 				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/call.svg" class="hw-45" />
+				  					<img src="<%=baseURL%>assets/image/call.svg" class="hw-45"  alt="call"/>
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">34</div>
@@ -268,7 +269,7 @@
 				  		<div class="col-md-2 border-right-dashed-separation">
 				  			<div class="row">
 				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/mail.svg" class="hw-45" />
+				  					<img src="<%=baseURL%>assets/image/mail.svg" class="hw-45"  alt="mail"/>
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">12</div>
@@ -279,7 +280,7 @@
 				  		<div class="col-md-2 border-right-dashed-separation">
 				  			<div class="row">
 				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/desktop.svg" class="hw-45" />
+				  					<img src="<%=baseURL%>assets/image/desktop.svg" class="hw-45"  alt="desktop"/>
 				  				</div>
 				  				<div class="col-md-9">
 				  					<div class="f-24 blue-black font-weight-bold">12</div>
@@ -348,7 +349,7 @@
 								  
 								  <%for(int i=0;i<10;i++){ %>
 								    <tr>
-								      <td class="f-14 py-4">Massive Dynamic Pvt. Ltd.</td>
+								      <td class="f-14 py-4 text-truncate" title="Massive Dynamic Pvt. Ltd.">Massive Dynamic Pvt. Ltd.</td>
 								      <td class="f-14 py-4">45</td>
 								      <td class="f-14 py-4">20%</td>
 								      <td class="f-14 py-4">03</td>
@@ -364,8 +365,8 @@
 				  			
 				  			<%for(int i=0;i<3;i++){ %>
 				  			<div class="f-12 pt-4 brown-grey">June 22, 2019</div>
-				  			<div class="f-14 greyish-brown fw-500 mb-2">Lawrence Lynch</div>
-				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-4">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
+				  			<div class="f-14 greyish-brown fw-500 mb-2 text-truncate" title="Lawrence">Lawrence Lynch</div>
+				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-4 text-break">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
 				  			<%} %>
 				  		</div>				  		
 				  	</div>				  	
@@ -436,7 +437,7 @@
 		});
 		/* end of rating bar js code */
 		
-		 $.get(location.origin+'/tabcontent/leadCallTaskModal.jsp', function( data ) {
+		 $.get(location.origin+'/tabcontent/userCallTaskModal.jsp', function( data ) {
         
 			var tabid= $('#taskdetail-tab-list>.nav-link').attr('href').replace('#','')
         	$('#'+tabid).html(data);
@@ -452,12 +453,12 @@
 		    	  url=url+ '/tabcontent/userCallTaskModal.jsp';
 		    	  break;
 	    	case 'email':
-	    		url=url+ '/tabcontent/leadEmailTaskModal.jsp';
+	    		url=url+ '/tabcontent/userEmailTaskModal.jsp';
 		    	  break;
 	    	case 'webinar':
-	    		url=url+ '/tabcontent/leadWebinarTaskModal.jsp';
+	    		url=url+ '/tabcontent/userWebinarTaskModal.jsp';
 		    	  break;
-		    default: url=url+ '/tabcontent/leadCallTaskModal.jsp';
+		    default: url=url+ '/tabcontent/userCallTaskModal.jsp';
 	    			 break;
 	    	}
 	    	

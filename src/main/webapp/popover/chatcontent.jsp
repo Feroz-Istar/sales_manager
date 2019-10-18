@@ -22,8 +22,8 @@
 	<hr>
 	<div class="row ">
 		<div class="col-md-10 d-flex">
-			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png">
-			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png">
+			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png" alt="user">
+			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png" alt="user">
 			
 		</div>
 		<div class="col-md-2">
@@ -32,7 +32,7 @@
 			<button class="btn bg-white rounded-circle btn-size p-0 d-flex">
 				<i class="theme_color align-self-center fas fa-plus-circle"></i>
 			</button>	
-				<img class="hw-24 mr-3" src="<%=baseURL%>assets/image/person.svg">
+				<img class="hw-24 mr-3" src="<%=baseURL%>assets/image/person.svg" alt="add-person">
 			</div>
 	
 		</div>

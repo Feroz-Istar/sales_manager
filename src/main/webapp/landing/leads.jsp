@@ -102,19 +102,19 @@
 									<div
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/calltask.svg"
+											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 												class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/emailtask.svg"
+											<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg"
+											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
 												class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg"
+											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
 												class="task-dropdown"> Presentation
 										</button>
 									</div>
@@ -182,32 +182,32 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black">Vehement Capital
+								<div class="f-14 fw-500 black text-truncate" title="Vehement Capital">Vehement Capital
 									Partners</div>
-								<div class="f-14 brownish-grey">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col ">
-								<div class="f-14 brownish-grey">Web Form</div>
+								<div class="f-14 brownish-grey text-truncate" title="Web Form">Web Form</div>
 							</div>
 							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
-										<div class="d-flex">
-											<img class="rounded-circle imgsize-40"
+										<div class="row">
+											<img class="rounded-circle imgsize-40" alt="user-img"
 												src="<%=baseURL%>assets/image/11.png">
-											<div class="ml-3">
-												<div class="f-14 greyish-brown">Stanley Howard</div>
-												<div class="f-12 brown-grey">Team 01</div>
+											<div class="col-md-10">
+												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey text-truncate" title="Team 01">Team 01</div>
 											</div>
 										</div>
 									</div>
@@ -225,15 +225,15 @@
 												
 												<button class="dropdown-item" data-toggle="modal"
 													data-target="#editLeadModalCenter">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt=""
+													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 														srcset="" class="mr-2">Edit
 												</button>
 												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/delete.svg" alt=""
+													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 														srcset="" class="mr-2">Delete
 												</button>
 												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png" alt=""
+													<img src="<%=baseURL%>assets/image/details.png" alt="details"
 														srcset="" class="mr-2">Details
 												</button>
 											</div>
@@ -270,7 +270,7 @@
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon"
 										onclick="showqualifiedCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar"/>
 									</div>
 								</div>
 								<select class="  custom-result-selects" id="deal_value">
@@ -347,35 +347,36 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black">Zencorporation
+								<div class="f-14 fw-500 black text-truncate" title="Team 01">Zencorporation
 									Pot. Ltd.</div>
-								<div class="f-14 brownish-grey">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col d-flex align-items-center">
-								<img class="hw-24 pr-2"
+								<img class="hw-24 pr-2" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2">Call -</div>
+								<div class="f-14 greyish-brown pr-2  text-break">Call -</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
 							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
-										<div class="d-flex">
+										<div class="row">
 											<img class="rounded-circle imgsize-40"
-												src="<%=baseURL%>assets/image/11.png">
-											<div class="ml-3">
-												<div class="f-14 greyish-brown">Stanley Howard</div>
-												<div class="f-12 brown-grey">Pipeline - New Sales
+												src="<%=baseURL%>assets/image/11.png" alt="user">
+											<div class="col-md-10">
+												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey text-truncate" title="Pipeline - New Sales
+													Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
@@ -393,25 +394,25 @@
 												aria-labelledby="dropdownMenuButton">
 												<button class="dropdown-item"  data-toggle="modal"
 													data-target="#wonLeadModalCenter">
-													<img src="<%=baseURL%>assets/image/won.svg" alt=""
+													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
 														srcset="" class="mr-2"> Won
 												</button>
 												<button class="dropdown-item" data-toggle="modal"
 													data-target="#lostLeadModalCenter">
-													<img src="<%=baseURL%>assets/image/lost.svg" alt=""
+													<img src="<%=baseURL%>assets/image/lost.svg" alt="lost"
 														srcset="" class="mr-2">Lose
 												</button>
 												<button class="dropdown-item" data-toggle="modal"
 													data-target="#editLeadModalCenter">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt=""
+													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 														srcset="" class="mr-2">Edit
 												</button>
 												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/delete.svg" alt=""
+													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 														srcset="" class="mr-2">Delete
 												</button>
 												<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png" alt=""
+													<img src="<%=baseURL%>assets/image/details.png" alt="detail"
 														srcset="" class="mr-2">Details
 												</button>
 											</div>
@@ -438,10 +439,10 @@
 
 						<div
 							class="row align-items-center  theme_solid_border_bottom py-3 px-4">
-							<div class="col-md-2 text-result-found	font_text_result">
+							<div class="col-md-2 col-xl-3 text-result-found	font_text_result">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-10 d-md-flex justify-content-end p-0 ">
+							<div class="col-md-10 col-xl-9 d-md-flex justify-content-end p-0 ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_lost_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
@@ -530,35 +531,35 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4  px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black">Vehement Capital
+								<div class="f-14 fw-500 black text-truncate" title="Vehement Capital Partners.">Vehement Capital
 									Partners.</div>
-								<div class="f-14 brownish-grey">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col d-flex align-items-center">
-								<img class="hw-24 pr-2"
+								<img class="hw-24 pr-2" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2">Call -</div>
+								<div class="f-14 greyish-brown pr-2 text-break">Call -</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
 							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
-										<div class="d-flex">
-											<img class="rounded-circle imgsize-40"
+										<div class="row">
+											<img class="rounded-circle imgsize-40" alt="user-img"
 												src="<%=baseURL%>assets/image/11.png">
-											<div class="ml-3">
-												<div class="f-14 greyish-brown">Stanley Howard</div>
-												<div class="f-12 brown-grey">Pipeline - New Sales
+											<div class="col-md-10">
+												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey text-truncate" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
@@ -576,15 +577,15 @@
 											
 											<button class="dropdown-item" data-toggle="modal"
 													data-target="#editLeadModalCenter">
-												<img src="<%=baseURL%>assets/image/edit.svg" alt=""
+												<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 													srcset="" class="mr-2">Edit
 											</button>
 											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/delete.svg" alt=""
+												<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 													srcset="" class="mr-2">Delete
 											</button>
 											<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
-												<img src="<%=baseURL%>assets/image/details.png" alt=""
+												<img src="<%=baseURL%>assets/image/details.png" alt="details"
 													srcset="" class="mr-2">Details
 											</button>
 										</div>
@@ -620,7 +621,7 @@
 									<input type="text" id="lead_won_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon" onclick="showwonCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"/>
 									</div>
 								</div>
 								<select class="  custom-result-selects" id="causes">
@@ -703,35 +704,37 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4 px-4  <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black">Vehement Capital
+								<div class="f-14 fw-500 black text-truncate" title="Vehement Capital Partners.">Vehement Capital
 									Partners.</div>
-								<div class="f-14 brownish-grey">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col">
-								<div class="f-14 brownish-grey">
+								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col d-flex align-items-center">
-								<img class="hw-24 pr-2"
+							<div class="col-md-2 col ">
+							<div class="d-flex align-items-center">
+								<img class="hw-24 pr-2" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2">Call -</div>
+								<div class="f-14 greyish-brown pr-2 text-break">Call -</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
+								</div>
 							</div>
 							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
-										<div class="d-flex">
-											<img class="rounded-circle imgsize-40"
+										<div class="row">
+											<img class="rounded-circle imgsize-40"  alt="user-img"
 												src="<%=baseURL%>assets/image/11.png">
-											<div class="ml-3">
-												<div class="f-14 greyish-brown">Stanley Howard</div>
-												<div class="f-12 brown-grey">Pipeline - New Sales
+											<div class="col-md-10">
+												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey  text-truncate" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
@@ -749,15 +752,15 @@
 											
 											<button class="dropdown-item" data-toggle="modal"
 													data-target="#editLeadModalCenter">
-												<img src="<%=baseURL%>assets/image/edit.svg" alt=""
+												<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 													srcset="" class="mr-2">Edit
 											</button>
 											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/delete.svg" alt=""
+												<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 													srcset="" class="mr-2">Delete
 											</button>
 											<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
-												<img src="<%=baseURL%>assets/image/details.png" alt=""
+												<img src="<%=baseURL%>assets/image/details.png" alt="details"
 													srcset="" class="mr-2">Details
 											</button>
 										</div>
@@ -803,14 +806,14 @@
 					<div class="modal-body">
 					<form id="lostleadmodal">
 						<div class="row pb-4">
-							<div class="col-md-12 f-18 font-weight-bold greyish-brown">
+							<div class="col-md-12 f-18 font-weight-bold greyish-brown text-truncate" title="Zencorporation Pot. Ltd.">
 								Zencorporation Pot. Ltd.</div>
 						</div>
 
 						<div class="row pb-4">
 							<div class="col-md-4 border-right-separation">
 								<div class="f-14 brownish-grey">Contact Person</div>
-								<div class="f-16 fw-500 black">Miriam Franklin</div>
+								<div class="f-16 fw-500 black text-truncate" title="">Miriam Franklin</div>
 							</div>
 							<div class="col-md-4 border-right-separation">
 								<div class="f-14 brownish-grey">Recent Task</div>
@@ -868,7 +871,7 @@
 												<div class="bd-highlight pr-2 align-self-center tabtitle">Upload
 													Lead List</div>
 												<div class="bd-highlight d-flex pr-2">
-													<img src="<%=baseURL%>assets/image/arrow_right.svg">
+													<img src="<%=baseURL%>assets/image/arrow_right.svg" alt="arrow-right">
 												</div>
 											</div>
 									</a></li>
@@ -905,7 +908,7 @@
 										<div
 											class="d-flex flex-row align-items-center text-center upload-lead-box">
 											<div class="col-md-5" id="previews">
-												<img src="<%=baseURL%>assets/image/Group 3614.svg"
+												<img src="<%=baseURL%>assets/image/xlsdoc.svg" alt="xmlicon"
 													class="doc-image-size">
 											</div>
 											<div class="col-md-6">
@@ -1003,14 +1006,14 @@
 					<div class="modal-body">
 					<form id="wonleadmodal">
 						<div class="row pb-4">
-							<div class="col-md-12 f-18 font-weight-bold greyish-brown">
+							<div class="col-md-12 f-18 font-weight-bold greyish-brown text-truncate" title="">
 								Zencorporation Pot. Ltd.</div>
 						</div>
 
 						<div class="row pb-4">
 							<div class="col-md-4 border-right-separation">
 								<div class="f-14 brownish-grey">Contact Person</div>
-								<div class="f-16 fw-500 black">Miriam Franklin</div>
+								<div class="f-16 fw-500 black text-truncate" title="">Miriam Franklin</div>
 							</div>
 							<div class="col-md-4 border-right-separation">
 								<div class="f-14 brownish-grey">Recent Task</div>

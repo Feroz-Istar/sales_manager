@@ -98,15 +98,15 @@
 										<div class="row align-items-center minh-100">
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"
+													<img src="<%=baseURL%>assets/image/calltask.svg" alt="callicon"
 														class="rounded-circle hw-30 task-icon"> <img
-														src="<%=baseURL%>assets/image/37.jpg"
+														src="<%=baseURL%>assets/image/37.jpg" alt="user-img"
 														class="rounded-circle hw-40 task-image">
 												</div>
 											</div>
 											<div class="col-md-9">
 												<p class="soft-blue f-12 font-weight-bold mb-1">Confident</p>
-												<h1 class="black f-16 fw-500 mb-1">Marry Vasquez</h1>
+												<h1 class="black f-16 fw-500 mb-1 text-truncate" title="Robert Wolken">Marry Vasquez</h1>
 												<p class="brown-grey f-12 d-flex align-items-center mb-1">
 													<i class="tangerine fas fa-circle mr-1"
 														style="font-size: 8px;"></i>Ongoing
@@ -203,17 +203,17 @@
 								<div class="d-flex  align-items-center mb-3">
 								 <div class="mr-auto  black f-16 fw-500">Information</div>
   								<div class=" bd-highlight f-16">
-  									<img src="<%=baseURL%>assets/image/edit.svg" class="">
+  									<img src="<%=baseURL%>assets/image/edit.svg" class="" alt="edit">
 								</div>
 								</div>
 								<div class="d-flex mb-3">
 									<div class="d-flex flex-column ">
-										<div class="mr-5 black f-14 font-weight-bold">Robert
+										<div class="mr-5 black f-14 font-weight-bold text-truncate" title="Robert Wolken">Robert
 											Wolken</div>
 									<div class="brownish-grey f-14 ">CEO</div>
 									</div>
 									<div class="d-flex flex-column ">
-									<div class="black f-14 font-weight-bold">Johnni Owens</div>
+									<div class="black f-14 font-weight-bold text-truncate" title="Johnni Owen">Johnni Owens</div>
 									<div class="brownish-grey f-14 ">Manager</div>
 
 									</div>
@@ -230,7 +230,7 @@
 								<div class="d-flex align-items-center">
 								 	<div class="mr-auto  black f-16 fw-500">CRM Fields</div>
   									<div class=" bd-highlight f-16">
-  										<img src="<%=baseURL%>assets/image/edit.svg" class="">
+  										<img src="<%=baseURL%>assets/image/edit.svg" class="" alt="edit">
 									</div>
 								</div>
 								
@@ -249,7 +249,7 @@
 							<div class="mx-3 signal_description border_bottom_1_dashed mb-3 py-3">
 							
 							<p class=" brown-grey f-12 mb-2">June 22, 2019</p>
-							<p class="blue-black f-14 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+							<p class="blue-black f-14 text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 							</div>
 							<%} }%>
 							</div>

@@ -61,19 +61,19 @@
 						aria-labelledby="newTaskMenuButton">
 						<button class="dropdown-item" type="button"
 							onclick="window.location.href = 'dashboardCreateTask.jsp'">
-							<img src="<%=baseURL%>assets/image/calltask.svg"
+							<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 								class="task-dropdown"> Call Task
 						</button>
 						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/emailtask.svg"
+							<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
 								class="task-dropdown"> Email Task
 						</button>
 						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/webinartask.svg"
+							<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
 								class="task-dropdown"> Webinar Task
 						</button>
 						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/presentation.svg"
+							<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
 								class="task-dropdown"> Presentation
 						</button>
 					</div>
@@ -145,19 +145,19 @@
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="<%=baseURL%>assets/image/calltask.svg"
+											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 												class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/emailtask.svg"
+											<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg"
+											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
 												class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg"
+											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
 												class="task-dropdown"> Presentation
 										</button>
 									</div>
@@ -219,7 +219,7 @@
 															data-id="<%=i%>" id="associate-checkbox<%=i%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style"
-															for="associate-checkbox<%=i%>"></label> <img
+															for="associate-checkbox<%=i%>"></label> <img alt="user-img"
 															src="<%=baseURL%>/assets/image/11.png"
 															class="rounded-circle ml-3 mr-2 hw-40">
 														<div>
@@ -315,16 +315,16 @@
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 fw-500  black">Globex Corporation
+												<div class="f-16 fw-500  black text-truncate" title="Globex Corporation. Inc.">Globex Corporation
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"
+													<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon"
 														class="rounded-circle hw-30 task-icon" /> <img
 														src="<%=baseURL%>assets/image/37.jpg"
-														class="rounded-circle hw-40 task-image" />
+														class="rounded-circle hw-40 task-image" alt="task-image" />
 												</div>
 											</div>
 										</div>
@@ -356,7 +356,7 @@
 												<div
 													class="theme_dotted_border_bottom  shadow-bottom  py-4 mx-4">
 													<div class="row justify-content-between">
-														<div class="col-md-4 f-18 font-weight-bold greyish-brown">
+														<div class="col-md-6 f-18 font-weight-bold greyish-brown text-truncate" title="Globex Corporation. Inc.">
 															Globex Corporation. Inc.</div>
 														<div
 															class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
@@ -368,11 +368,11 @@
 													<div class="row align-items-center py-2">
 														<div class="col-md-2">
 															<div class="f-14 brownish-grey">Contact Person</div>
-															<div class="f-16 fw-500 black ">Rosemary Garcia</div>
+															<div class="f-16 fw-500 black  text-truncate" title="Rosemary Garcia">Rosemary Garcia</div>
 														</div>
 														<div class="col-md-2">
 															<div class="f-14 brownish-grey">Agent</div>
-															<div class="f-16 fw-500 black ">Marry Vasquez</div>
+															<div class="f-16 fw-500 black  text-truncate" title="Marry Vasquez">Marry Vasquez</div>
 														</div>
 														<div class="col-md-5"></div>
 														<div class="col-md-3 d-flex justify-content-end">
@@ -400,7 +400,7 @@
 														</div>
 														<div class="col-md-3">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
-															<div class="f-16  fw-500 black ">Stage 02</div>
+															<div class="f-16  fw-500 black text-truncate" title="Stage 02">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -418,7 +418,7 @@
 															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
 															<div class="dropdown-menu notespopupdropdown pt-0"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -429,7 +429,7 @@
 															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
 															<div class="dropdown-menu cuespopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -440,7 +440,7 @@
 															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 															<div class="dropdown-menu crmpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -451,7 +451,7 @@
 															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
 															<div class="dropdown-menu chatpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -499,7 +499,7 @@
 									<input type="text" id="upcoming_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon" onclick="showCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1">
+										<img src="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 									</div>
 								</div>
 								<select class="  custom-result-selects" id="stages">
@@ -517,19 +517,19 @@
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="<%=baseURL%>assets/image/calltask.svg"
+											<img src="<%=baseURL%>assets/image/calltask.svg"  alt="call"
 												class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/emailtask.svg"
+											<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg"
+											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
 												class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg"
+											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
 												class="task-dropdown"> Presentation
 										</button>
 									</div>
@@ -569,14 +569,14 @@
 										<div class="row align-items-center minh-100 px-4">
 											<div class="col-md-9 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
-												<div class="f-16 fw-500 black">Opentech Pvt. Ltd.</div>
+												<div class="f-16 fw-500 black text-truncate" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
 											</div>
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"
+													<img src="<%=baseURL%>assets/image/calltask.svg"  alt="task-icon"
 														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg"
+														src="<%=baseURL%>assets/image/37.jpg" alt="task-image"
 														class="rounded-circle hw-40 task-image" />
 												</div>
 											</div>
@@ -609,7 +609,7 @@
 												<div
 													class="shadow-bottom  theme_dotted_border_bottom py-4 mx-4">
 													<div class="row justify-content-between ">
-														<div class="col-md-4 f-18 font-weight-bold greyish-brown">
+														<div class="col-md-4 f-18 font-weight-bold greyish-brown text-truncate" title="Opentech Pvt. Ltd.">
 															Opentech Pvt. Ltd.</div>
 														<div
 															class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
@@ -621,11 +621,11 @@
 													<div class="row align-items-center py-2">
 														<div class="col-md-2">
 															<div class="f-14 brownish-grey">Contact Person</div>
-															<div class="f-16 fw-500 black">Deann Harper</div>
+															<div class="f-16 fw-500 black text-truncate" title="Deann Harper">Deann Harper</div>
 														</div>
 														<div class="col-md-2">
 															<div class="f-14 brownish-grey">Agent</div>
-															<div class="f-16  fw-500 black">Bradley Obrien</div>
+															<div class="f-16  fw-500 black text-truncate" title="Bradley Obrien">Bradley Obrien</div>
 														</div>
 														<div class="col-md-5"></div>
 														<div class="col-md-3 d-flex justify-content-end">
@@ -654,14 +654,14 @@
 														</div>
 														<div class="col-md-3">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
-															<div class="f-16  fw-500 black">Stage 02</div>
+															<div class="f-16  fw-500 black text-truncate" title="Stage 02">Stage 02</div>
 														</div>
 													</div>
 												</div>
 
 												<div
 													class="d-flex flex-column justify-content-center align-items-center py-4">
-													<img src="<%=baseURL%>assets/image/timer.svg"
+													<img src="<%=baseURL%>assets/image/timer.svg"  alt="clock"
 														class="mb-1 time-img-size">
 													<div class="f-16 font-weight-bold mb-1">Few minutes
 														left !</div>
@@ -681,7 +681,7 @@
 															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<img src="<%=baseURL%>assets/image/notes.svg"  alt="notes"/>
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
 															<div class="dropdown-menu notespopupdropdown pt-0"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -692,7 +692,7 @@
 															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
 															<div class="dropdown-menu cuespopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -703,7 +703,7 @@
 															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 															<div class="dropdown-menu crmpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -714,7 +714,7 @@
 															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" />
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
 															<div class="dropdown-menu chatpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -750,16 +750,16 @@
 						<!-- start of completed tab -->
 						<div
 							class="row align-items-center  theme_solid_border_bottom  py-3 m-0 px-4">
-							<div class="col-md-3 text-result-found	font_text_result">
+							<div class="col-md-2 text-result-found	font_text_result">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
+							<div class="col-md-10 d-md-flex justify-content-end  ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="completed_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon"
 										onclick="showcompletedCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1">
+										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar">
 									</div>
 								</div>
 								<select class="  custom-result-selects" id="stages">
@@ -777,19 +777,19 @@
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="<%=baseURL%>assets/image/calltask.svg"
+											<img src="<%=baseURL%>assets/image/calltask.svg"  alt="call"
 												class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/emailtask.svg"
+											<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg"
+											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
 												class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg"
+											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
 												class="task-dropdown"> Presentation
 										</button>
 									</div>
@@ -840,13 +840,13 @@
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16  fw-500 black">Globex Corporation
+												<div class="f-16  fw-500 black text-truncate" title="Globex Corporation">Globex Corporation
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
 											<div class="col-md-2">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"
+													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 														class="rounded-circle hw-30" />
 												</div>
 											</div>
@@ -927,7 +927,7 @@
 								<div
 									class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
 									<input class="f-14 border-0 removefocus w-100 pl-2"
-										placeholder="Select here"> <img
+										placeholder="Select here"> <img alt="calendar"
 										src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">
 								</div>
 							</div>
@@ -936,7 +936,7 @@
 								<div
 									class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
 									<input class="f-14 border-0 removefocus w-100 pl-2"
-										placeholder="Select here"> <img
+										placeholder="Select here"> <img alt="alarm"
 										src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">
 								</div>
 							</div>

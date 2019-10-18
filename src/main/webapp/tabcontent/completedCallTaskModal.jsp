@@ -7,13 +7,13 @@
 											<div class="col-md-10 p-0">
 												<div class="row p-2 pt-4 justify-content-between mx-4">
 													<div class="col-9">
-														<p class="greyish-brown f-18 mb-2 font-weight-bold">Globex Corporation Inc.</p>
+														<p class="greyish-brown f-18 mb-2 font-weight-bold text-truncate" title="Globex Corporation">Globex Corporation Inc.</p>
 													</div>
-													<div class="col-3">
+													<div class="col-3 p-0">
 														<div class="d-flex justify-content-end">
-															<img src="<%=baseURL%>assets/image/heart.svg" class="cursor-pointer mr-2">
-														<img src="<%=baseURL%>assets/image/message.svg" class="cursor-pointer taskcomment mr-2">
-														<img src="<%=baseURL%>assets/image/reply.svg" class="cursor-pointer taskshare mr-2">
+															<img src="<%=baseURL%>assets/image/heart.svg" class="cursor-pointer mr-2" alt="heart">
+														<img src="<%=baseURL%>assets/image/message.svg" class="cursor-pointer taskcomment mr-2" alt="message">
+														<img src="<%=baseURL%>assets/image/reply.svg" class="cursor-pointer taskshare mr-2" alt="reply">
 														<div class="f-14 font-weight-bold theme_color cursor-pointer align-self-center" onclick="window.location.href = 'task_lead_detail.jsp'">
 												    		 View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 												    </div>
@@ -25,11 +25,11 @@
 													
 													<div class="col-md-3">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
-														<p class="black f-16 fw-500 mb-0">Robert Wolken</p>
+														<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation">Robert Wolken</p>
 													</div>
 													<div class="col-md-3 ">
 														<p class="brownish-grey f-14 mb-0">Agent</p>
-														<p class="black f-16 fw-500 mb-0">Marilyn Fowler</p>
+														<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation">Marilyn Fowler</p>
 													</div>
 
 												</div>
@@ -73,9 +73,9 @@
 													<div class="col d-flex flex-row justify-content-center">
 
 														<div class="d-flex flex-row align-items-center mr-5">
-															<img src="<%=baseURL%>assets/image/man.jpg"
+															<img src="<%=baseURL%>assets/image/man.jpg" alt="person"
 																class="rounded-circle hw-60 task-image-right"> <img
-																src="<%=baseURL%>assets/image/calltask.svg"
+																src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 																class="rounded-circle hw-40 task-icon">
 
 														</div>
@@ -90,8 +90,8 @@
 															<i class="fas fa-forward"></i>
 														</button>
 														<div class="d-flex flex-row align-items-center">
-															<img src="<%=baseURL%>assets/image/layer.png"
-																class="rounded-circle hw-60 task-image-right"> <img
+															<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
+																class="rounded-circle hw-60 task-image-right"> <img alt="call"
 																src="<%=baseURL%>assets/image/calltask.svg"
 																class="rounded-circle hw-40 task-icon">
 
@@ -121,7 +121,7 @@
 														<div class="col-md-6 text-center">
 														<div class="d-flex flex-column">
 															<p class="mb-0 light_gray f-12">06 Mint</p>
-														<p class="mb-0 bblack f-16">Introduction</p>
+														<p class="mb-0 bblack f-16 text-break">Introduction</p>
 														</div>
 														</div>
 														<div class="col-md-6 ">
@@ -168,7 +168,7 @@
 																		<div class="col">
 																		<div class="d-flex flex-row">
 																		
-																		<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg">
+																		<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg" alt="carousal-img">
 																		<div class="border-right-blue mr-3"></div>
 																		<p class="greyish-brown f-16  fw-500  align-self-center">Customers who responded positively in the end of a call</p>
 																		</div>
@@ -207,7 +207,7 @@
 																	</p>
 																	<div class="card shadow" style="border-radius: 1.25rem !important;" >
 																		<div class="card-body">
-																			<p class="card-text">Some quick example text to
+																			<p class="card-text f-14">Some quick example text to
 																				build on the card title and make up the bulk of the
 																				card's content.</p>
 																		</div>
@@ -222,7 +222,7 @@
 																	</p>
 																	<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
 																		<div class="card-body">
-																			<p class="card-text">Some quick example text to
+																			<p class="card-text f-14">Some quick example text to
 																				build on the card title and make up the bulk of the
 																				card's content.</p>
 																		</div>
@@ -253,7 +253,7 @@
 															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/notes.svg" />
+															<img src="<%=baseURL%>assets/image/notes.svg"  alt="notes"/>
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
 															<div class="dropdown-menu notespopupdropdown pt-0"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -264,7 +264,7 @@
 															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" />
+															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
 															<div class="dropdown-menu cuespopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -275,7 +275,7 @@
 															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/crm.svg" />
+															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 															<div class="dropdown-menu crmpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>
@@ -286,7 +286,7 @@
 															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
 															data-toggle="dropdown" aria-haspopup="true"
 															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg" />
+															<img src="<%=baseURL%>assets/image/presentation.svg"  alt="chat"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
 															<div class="dropdown-menu chatpopoverdropdown"
 																aria-labelledby="dropdownMenuButton"></div>

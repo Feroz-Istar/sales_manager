@@ -33,10 +33,10 @@
                                 
 							<input class="istar-checkbox agentcheckbox" data-id="<%=i %>" id="associate-checkbox<%=i %>" type="checkbox">
 							                                    <label class="istar-checkbox-style" for="associate-checkbox<%=i %>"></label>
-									<img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+									<img src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40" alt="user-img">
 								  <div>
-							                                    	<div class="f-14 fw-500 greyish-brown">Robert Garcia</div>
-							                                    	<div class="f-12  brownish-grey">Team -<%=i %></div>
+							                                    	<div class="f-14 fw-500 greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+							                                    	<div class="f-12  brownish-grey text-truncate" title="team">Team -<%=i %></div>
 							                                    </div>
 								</div>
 								<%} %>
@@ -61,7 +61,7 @@
 					<div class="d-flex align-items-center pt-3">
                                     <input class="istar-checkbox teamcheckbox" data-id="<%=j %>" id="team-checkbox<%=j %>" type="checkbox">
                                     <label class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
-                                    <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+                                    <div class="f-12 ml-2 brownish-grey text-truncate" title="team">Team -0<%=j%></div>
                                 </div>
                                 <%} %>
                                 </div>
