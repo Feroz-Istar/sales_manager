@@ -1502,3 +1502,13 @@ label.error {
     color: #ed4d67;
     font-size: 12px;
 }
+
+.searchBox{
+	position: absolute;
+  right: 24px;
+  padding: 9px 0px;
+  pointer-events: none;
+  z-index:5;
+	}
+
+

@@ -24,7 +24,6 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 	<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
-	
 </head>
 <body data-base-url="<%=baseURL%>">
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
@@ -37,25 +36,19 @@
 					class="display-1 black f-20 border-right-separation pr-3  fw-500">Task
 					Details</div>
 				<div class="pl-3 pr-2 f-12 brown-grey">Task Detail</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
+				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey "></i>
 				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Ongoing</div>
 
 			</div>
 			<div class="col-md-6 col-12 d-flex justify-content-md-end">
 
 
-				<div class="input-group  pl-2 pr-2 search_width">
+				<div class="input-group position-relative pl-2 pr-2 search_width">
+				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
 					<input id=""
-						class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
-						style="border-right: none !important;">
-					<div class="input-group-append">
-						<button
-							class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-							type="button" style="">
-							<i class="fa fa-search f-12 brown-grey"></i>
-						</button>
-					</div>
+						style="padding-right:30px">
 				</div>
 
 				<div class="istar-dropdown-task select_focus">

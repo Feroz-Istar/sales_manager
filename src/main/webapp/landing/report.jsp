@@ -37,7 +37,7 @@
 	<main role="main">
 	<div class="container-fluid salesken_container">
 	
-	<div class="row bg-white align-items-center py-3 border-bottom-separation pl-3">
+	<div class="row bg-white align-items-center py-3 theme_solid_border_bottom pl-4">
 		<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0"> 
 		<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Reports</div>
 							<div class="pl-3 pr-2 f-12 brown-grey ">Report</div>
@@ -67,7 +67,7 @@
 					<div class="tab-pane fade show active" id="task"
 						role="tabpanel" aria-labelledby="task-tab">
 						<!-- start of Task tab  content -->
-<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+<div class="row align-items-center  theme_solid_border_bottom  py-3 pl-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -106,7 +106,7 @@
 								
 							</div>
 						</div>
-						<div class="row">
+						<div class="row px-4">
 						<%for(int i=0;i<12;i++){ %>
 							<div class="col-md-3 d-flex align-items-center col_bordering" style="min-height:200px;">
 								<div class="row  w-100">
@@ -133,7 +133,7 @@
 						<!-- start of user tab content-->
 
 							
-						<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
+						<div class="row align-items-center  theme_solid_border_bottom  py-3 pl-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -320,21 +320,21 @@
 
 						<!-- start of customer tab content-->
 
-					<div class="row align-items-center border-bottom-separation  pt-3 pb-3">
+					<div class="row align-items-center theme_solid_border_bottom py-3 pl-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 							
 						</div>
-						<hr class="p-0 m-0">
+						
 
 						<div class="row  border-bottom-dashed-separation mr-md-2">
 						
 							<%for(int i=0;i<4;i++){ %>
 							<div class="col-md-3 col_bordering p-0 m-0 d-md-flex align-items-center" style="min-height:200px;">
 							<div class=" w-100 d-flex">
-								<div class="col-md-6 p-0 m-0 text-center	">
-								<div><div class="font-weight-bold f-42"> 05</div>
+								<div class="col-md-6 pl-4">
+								<div class="col"><div class="font-weight-bold f-42"> 05</div>
 								<div class="greyish-brown f-14 fw-500">Objection</div>
 								</div>
 								</div>

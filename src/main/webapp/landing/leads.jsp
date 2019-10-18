@@ -45,18 +45,12 @@
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end ">
-				<div class="input-group  pl-2 pr-2 search_width">
+				<div class="input-group position-relative pl-2 pr-2 search_width">
+				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
 					<input id=""
-						class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
-						style="border-right: none !important;">
-					<div class="input-group-append">
-						<button
-							class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-							type="button" style="">
-							<i class="fa fa-search f-12 brown-grey"></i>
-						</button>
-					</div>
+						style="padding-right:30px">
 				</div>
 				<button class="btn btn-style f-12" data-toggle="modal"
 					data-target="#addLeadModalCenter">UPLOAD NEW</button>
@@ -266,7 +260,7 @@
 						<!-- start of qualified tab content-->
 
 						<div
-							class="row align-items-center  border-bottom-separation  py-3 px-4">
+							class="row align-items-center theme_solid_border_bottom py-3 px-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
@@ -297,7 +291,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom px-4">
+						<div class="row pl-2 py-4 theme_dotted_border_bottom shadow-bottom px-4">
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">120</div>
 								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
@@ -443,7 +437,7 @@
 						<!-- start of lost leads tab content-->
 
 						<div
-							class="row align-items-center  border-bottom-separation  py-3 px-4">
+							class="row align-items-center  theme_solid_border_bottom py-3 px-4">
 							<div class="col-md-2 text-result-found	font_text_result">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
@@ -477,7 +471,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom px-4">
+						<div class="row pl-2 py-4 shadow-bottom px-4 theme_dotted_border_bottom">
 
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">$ 8562</div>
@@ -617,7 +611,7 @@
 						<!-- start of won leads content -->
 
 						<div
-							class="row align-items-center  border-bottom-separation  py-3 px-4">
+							class="row align-items-center  theme_solid_border_bottom py-3 px-4">
 							<div class="col-md-2 text-result-found font_text_result	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
@@ -650,7 +644,7 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom px-4">
+						<div class="row pl-2 py-4 shadow-bottom px-4 theme_dotted_border_bottom shadow-bottom">
 
 							<div class="col-md-2">
 								<div class="f-24 blue-black font-weight-bold">$ 2345</div>

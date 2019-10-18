@@ -40,16 +40,12 @@
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end">
-				<div class="input-group  pl-2 pr-2 search_width">
+				<div class="input-group position-relative pl-2 pr-2 search_width">
+				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
 					<input id=""
-						class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
-					<div class="input-group-append">
-						<button
-							class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-							type="button" style="">
-							<i class="fa fa-search f-12 brown-grey"></i>
-						</button>
-					</div>
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						type="search" placeholder="Search"
+						style="padding-right:30px">
 				</div>
 				<select class="form-control f-14 custom-taskselect custom-result-selects custom-taskborder" id="pipeline">
 					<option>Select Pipeline</option>
