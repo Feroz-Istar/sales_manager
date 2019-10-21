@@ -117,8 +117,8 @@
 					<div class="tab-pane fade show active " id="home" role="tabpanel"
 						aria-labelledby="home-tab">
 						<!-- Calendar container -->
-						<div class="w-100 ">
-							<div id="datepicker"></div>
+						<div class="w-100 px-2 d-flex justify-content-center">
+							<div id="datepicker" class="d-flex justify-content-center"></div>
 
 						</div>
 						<hr class="p-0 m-0">

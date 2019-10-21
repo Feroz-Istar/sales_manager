@@ -73,6 +73,8 @@ $(document).ready(function() {
 			beforeShowDay: function(date) {
 				var newHeight = $("#datepicker").width();
 				$(".table-condensed").height(newHeight);// setting height equal to width of the calendar.
+				$("#datepicker").width($(".table-condensed").height())
+				
 				var d = date;
 				var curr_date = d.getDate();
 				var curr_month = d.getMonth() + 1; //Months are zero based
