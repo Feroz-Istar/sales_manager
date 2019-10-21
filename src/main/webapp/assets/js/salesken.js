@@ -53,7 +53,7 @@ $( document ).ready(function() {
 		if('.taskcomment:visible'){
 			$('.taskcomment	').popover('hide');
 		}
-		$('.agentsubmit').click(function(e){
+		/*$('.agentsubmit').click(function(e){
 			var agentarray=[];
 			$('.agentcheckbox:checked').each(function () { 
 				if(this.checked){
@@ -63,7 +63,7 @@ $( document ).ready(function() {
 			});
 		    $('.taskshare').popover('hide');
 
-		})
+		})*/
 		
 		
 	});
@@ -101,7 +101,7 @@ $( document ).ready(function() {
 		})
 	})
 		
-
+try{
 jQuery.validator.setDefaults({
 		
 		errorPlacement : function(error, element) {
@@ -114,6 +114,8 @@ jQuery.validator.setDefaults({
 			$(element).removeClass('is-invalid').addClass('is-valid');
 		}
 	});
-	
+}catch(error){
+	console.log(error)
+}
 });
 

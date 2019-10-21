@@ -358,11 +358,20 @@
 	$( document ).ready(function() {
 		$('#pipeline_datepicker').datepicker({autoclose:true});
 		
-		
-		
-	
-		
+		$('.dropdown-menu').click(function(e) {
+		    e.stopPropagation();
 		});
+		
+		$('.filtertabs>li>.nav-link').click(function(e) {
+			
+			$($(this).attr('href')+'-tab').tab('show')
+
+		});
+			$('.agentteamsubmit').click(function(e) {
+				$('#activity').dropdown('hide')	
+				
+			});
+	});
 	
 	
 	function showCalendar(){
