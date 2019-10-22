@@ -137,15 +137,39 @@
 						
 						
 						<div class="task-item-container bg-white  pl-20 pr-20 pt-40 pb-40">
-						
+							
 							<div class="d-flex flex-row align-items-center  istar-dropdown pb-10">
-								<div class="mr-3 bblack f-18 fw-500">To-Do List</div>
-								<button
+								<div class="pr-20 bblack f-18 fw-500">To-Do List</div>
+								<%-- <button
 									class="btn rounded-circle shadow d-flex justify-content-center align-items-center sales_ken_popover"
 									style="height: 30px; width: 30px; background: white;"  data-toggle="popover"  data-placement="bottom"  data-content='<ul class="popover_content list-group  py-2 bg-white" style="">   <li class="list-group-item border-0 f-14 cursor-pointer rounded-0" id="create_event" onclick="scheduleEvent()">Create an Event</li>   <li class="list-group-item border-0 f-14 cursor-pointer rounded-0" id="schedule_task" onclick="scheduleTask()">Schedule Task</li> </ul>'>
 									<i class="fas fa-plus theme_color"></i>
-								</button>
+								</button> --%>
+
+									<div class="istar-dropdown-task border-0">
+									<div class="d-flex" style="min-width: 60px;" id="todolist" data-toggle="dropdown" aria-haspopup="true"
+											aria-expanded="false">
+									
+										<button
+											class="btn rounded-circle shadow d-flex justify-content-center align-items-center "
+											style="height: 30px; width: 30px; background: white;"
+											>
+											<i class="fas fa-plus theme_color"></i>
+											
+										</button>
+										</div>
+										<div class="dropdown-menu   istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-left" style="min-width:150px;max-width:150px;"
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button" id="create_event" onclick="scheduleEvent()">Create
+												an Event</button>
+
+											<button class="dropdown-item" type="button"  id="schedule_task" onclick="scheduleTask()">Schedule
+												Task</button>
+
+										</div>
+									</div>
 								
+
 							</div>
 							<!-- Start of creation to do items card -->
 							<%
