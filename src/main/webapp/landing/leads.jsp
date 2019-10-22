@@ -166,7 +166,7 @@
 					                                    
 									<input class="istar-checkbox targetagentcheckbox" data-id="<%=i %>" id="target_associate-checkbox<%=i %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="target_associate-checkbox<%=i %>"></label>
-											<img alt="user-img" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+											<img alt="Agent Image" title="Agent Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
 					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
@@ -287,7 +287,7 @@
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="row">
-											<img class="rounded-circle imgsize-40" alt="user-img"
+											<img class="rounded-circle imgsize-40" alt="Lead Image" title="Lead Name"
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10">
 												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
@@ -404,7 +404,7 @@
 					                                    
 									<input class="istar-checkbox qualifiedagentcheckbox" data-id="<%=i %>" id="qualified_associate-checkbox<%=i %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="qualified_associate-checkbox<%=i %>"></label>
-											<img alt="user-img" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
 					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
@@ -531,7 +531,7 @@
 									<div class="col-md-11">
 										<div class="row">
 											<img class="rounded-circle imgsize-40"
-												src="<%=baseURL%>assets/image/11.png" alt="user">
+												src="<%=baseURL%>assets/image/11.png" alt="Lead Image" title="Lead Name">
 											<div class="col-md-10">
 												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
 												<div class="f-12 brown-grey text-truncate" title="Pipeline - New Sales
@@ -659,7 +659,7 @@
 					                                    
 									<input class="istar-checkbox lostagentcheckbox" data-id="<%=i %>" id="lost_associate-checkbox<%=i %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="lost_associate-checkbox<%=i %>"></label>
-											<img alt="user-img" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
 					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
@@ -788,7 +788,7 @@
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="row">
-											<img class="rounded-circle imgsize-40" alt="user-img"
+											<img class="rounded-circle imgsize-40" alt="Lead Image" title="Lead Name"
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10">
 												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
@@ -907,7 +907,7 @@
 					                                    
 									<input class="istar-checkbox wonagentcheckbox" data-id="<%=i %>" id="won_associate-checkbox<%=i %>" type="checkbox">
 					                                        <label class="istar-checkbox-style" for="won_associate-checkbox<%=i %>"></label>
-											<img alt="user-img" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
 					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
@@ -1038,7 +1038,7 @@
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="row">
-											<img class="rounded-circle imgsize-40"  alt="user-img"
+											<img class="rounded-circle imgsize-40"  alt="Lead Image" title="Lead Name"
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10">
 												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>

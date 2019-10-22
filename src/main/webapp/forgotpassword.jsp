@@ -40,7 +40,7 @@
 
 
 				<img class="img-fluid mb-5 mt-5 image-width-182 image-height-53"
-					alt="Responsive image"
+					alt="Responsive image" title="Salesken"
 					src="<%=baseURL%>assets/image/saleskenlogo.svg">
 
 

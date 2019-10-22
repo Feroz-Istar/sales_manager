@@ -110,7 +110,7 @@
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg" alt="callicon"
 														class="rounded-circle hw-30 task-icon"> <img
-														src="<%=baseURL%>assets/image/37.jpg" alt="user-img"
+														src="<%=baseURL%>assets/image/37.jpg" title="Agent Name" alt="user-img"
 														class="rounded-circle hw-40 task-image">
 												</div>
 											</div>

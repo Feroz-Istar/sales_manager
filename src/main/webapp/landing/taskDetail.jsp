@@ -333,7 +333,7 @@
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon"
 														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg"
+														src="<%=baseURL%>assets/image/37.jpg" title="Agent name"
 														class="rounded-circle hw-40 task-image" alt="task-image" />
 												</div>
 											</div>
@@ -586,7 +586,7 @@
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg"  alt="task-icon"
 														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg" alt="task-image"
+														src="<%=baseURL%>assets/image/37.jpg" alt="task-image" title="Agent Name"
 														class="rounded-circle hw-40 task-image" />
 												</div>
 											</div>

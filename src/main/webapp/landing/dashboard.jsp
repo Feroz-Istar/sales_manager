@@ -85,17 +85,17 @@
 					
 					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
 					    <button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
-					    <img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/calltask.svg" title="Call" alt="call" class="task-dropdown">
 					    Call Task</button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/emailtask.svg" title="Email" alt="email" class="task-dropdown">
 					    Email Task</button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/webinartask.svg" title="Webinar" alt="webinar" class="task-dropdown">
 					    Webinar Task
 					    </button>
 					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" class="task-dropdown">
+					    <img src="<%=baseURL%>assets/image/presentation.svg" title="Presentation" alt="presentation" class="task-dropdown">
 					    Presentation
 					    </button>
 					</div>
@@ -190,7 +190,7 @@
 												}
 									%>
 									<img class="rounded-circle imgsize mr-1 <%=img_mar%>"
-										 alt="associate-name" src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg">
+										 alt="associate-name" title="associate-name" src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg">
 									<%
 										}
 									%>
@@ -459,7 +459,7 @@
 							</div>
 							<div class=" bd-highlight">
 								<div class="img-wrapper position-relative">
-									<img class="hw-66 rounded-circle img-responsive" alt="lead-img"
+									<img class="hw-66 rounded-circle img-responsive" title="Lead Name" alt="lead-img"
 										src="<%=baseURL%>assets/image/layer.png" />
 									<div class="img-overlay"
 										style="position: absolute; left: -19px; top: 28%;">
@@ -528,7 +528,7 @@
 									customer is asking about discount, please tell me….</p>
 							</div>
 							<div class="col-md-3 col-6">
-								<img class="hw-60 " alt="user"
+								<img class="hw-60 " alt="user" title="UserName"
 									src="<%=baseURL%>assets/image/11.png">
 
 							</div>

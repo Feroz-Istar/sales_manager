@@ -48,7 +48,7 @@
 						<p class="brown-grey f-14 text-center">You can now login to
 							Salesken</p>
 
-						<img class="my-3 text-center saleskenlogo" alt="saleskenlogo"
+						<img class="my-3 text-center saleskenlogo" alt="saleskenlogo" title="Salesken"
 							src="<%=baseURL%>assets/image/saleskenlogo.svg">
 						<div class="my-3 border_top"></div>
 

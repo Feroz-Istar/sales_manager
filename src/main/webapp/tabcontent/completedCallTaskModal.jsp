@@ -73,7 +73,7 @@
 													<div class="col d-flex flex-row justify-content-center">
 
 														<div class="d-flex flex-row align-items-center mr-5">
-															<img src="<%=baseURL%>assets/image/man.jpg" alt="person"
+															<img src="<%=baseURL%>assets/image/man.jpg" alt="person" title="Lead Name"
 																class="rounded-circle hw-60 task-image-right"> <img
 																src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 																class="rounded-circle hw-40 task-icon">
@@ -90,8 +90,8 @@
 															<i class="fas fa-forward"></i>
 														</button>
 														<div class="d-flex flex-row align-items-center">
-															<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
-																class="rounded-circle hw-60 task-image-right"> <img alt="call"
+															<img src="<%=baseURL%>assets/image/layer.png" alt="layer" title="Agent Name"
+																class="rounded-circle hw-60 task-image-right"> <img alt="call"  
 																src="<%=baseURL%>assets/image/calltask.svg"
 																class="rounded-circle hw-40 task-icon">
 

@@ -41,7 +41,7 @@
 			          <div class="row align-items-center">
 			          	<div class="col-md-3">
 			          		<div class="d-flex">
-			          			<img src="<%=baseURL%>assets/image/37.jpg" class="hw-40 mr-3" alt="user-img">
+			          			<img src="<%=baseURL%>assets/image/37.jpg" title="Agent Name" class="hw-40 mr-3" alt="user-img">
 			          			<div class="text-left">
 			          				<div class="f-14 greyish-brown text-truncate" title="Carmen Collinsder">Carmen Collinsder</div>
 			          				<div class="f-12 brown-grey">11:30 AM</div>
@@ -51,7 +51,7 @@
 			          	<div class="col-md-9 text-left">
 			          		<div class="f-14 brownish-grey  text-truncate" title="Hello Sir...Lorem ipsum do">Hello Sir...Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
 			          		<div class="d-flex align-items-center mt-2">
-			          			<img src="<%=baseURL%>assets/image/21.svg" class="hw-40 mr-3" alt="doc">
+			          			<img src="<%=baseURL%>assets/image/21.svg" class="hw-40 mr-3"  title="Product Name" alt="doc">
 			          			<div class="f-14 brownish-grey fw-500  text-truncate" title="Product-Brochure.pd">Product-Brochure.pdf</div>
 			          			<div class="f-14 brown-grey ml-3">256kb</div>
 			          		</div>

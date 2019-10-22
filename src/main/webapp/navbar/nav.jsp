@@ -54,7 +54,7 @@
 					id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">
 					<img
-						src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg"
+						src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg" title="Wade walker" alt="User name"
 						class="rounded-circle align-self-center mr-2"
 						style="height: 45px; width: 45px;" />
 					<div class="d-flex flex-column  ">

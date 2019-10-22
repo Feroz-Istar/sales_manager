@@ -34,7 +34,7 @@
 							style="background: <%=color%>">
 							<div class="col-md-4 col-6">
 								<div class="d-flex flex-row">
-									<img class="mr-2" style="height: 40px; width: 40px" alt="associate"
+									<img class="mr-2" style="height: 40px; width: 40px" title="Stanley Howar" alt="associate"
 										src="<%=baseURL%>assets/image/37.jpg" />
 									<div class="d-flex flex-column">
 										<div class="f-14 text-truncate" title="Stanley Howar">Stanley Howard</div>
