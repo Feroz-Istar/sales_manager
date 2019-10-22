@@ -1269,6 +1269,23 @@ padding: 20px !important;
 .mb-20{
 	margin-bottom: 20px !important;
 }
+
+.pl-25{
+	padding-left: 25px !important;
+}
+.pr-25{
+	padding-right: 25px !important;
+}
+.pt-25{
+	padding-top: 25px !important;
+}
+.pb-25{
+	padding-bottom: 25px !important;
+}
+.p-25{
+padding: 25px !important;
+}
+
 .pl-30{
 	padding-left: 30px !important;
 }

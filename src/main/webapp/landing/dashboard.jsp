@@ -521,22 +521,22 @@
 
 
 				<!-- Start of issue resolve card-->
-				<div class="card mb-3 rounded-0 shadow" style="min-height: 292px;">
-					<div class="card-body">
-						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">June 12,
+				<div class="card rounded-0 shadow mb-20" >
+					<div class="card-body p-0 p-20">
+						<h6 class="card-subtitle m-0 text-muted f-12 pb-10 fw-300">June 12,
 							2019</h6>
-						<p class="card-text greyish-brown f-14 text-truncate" title="Product Price in too expensive">Product Price in too
+						<p class="card-text greyish-brown f-14 text-truncate mb-0" title="Product Price in too expensive">Product Price in too
 							expensive, and agents are not supportive and they are not
 							providing information !</p>
-						<div class="f-18 greyish-brown mb-2 text-truncate" title="Martin Franklin">Martin Franklin</div>
-						<div class="f-16 brownish-grey mb-4 text-truncate" title="Infogen Consulting Pvt.">Infogen Consulting Pvt.
+						<div class="f-18 pt-20 greyish-brown text-truncate" title="Martin Franklin">Martin Franklin</div>
+						<div class="f-16 brownish-grey text-truncate" title="Infogen Consulting Pvt.">Infogen Consulting Pvt.
 							Ltd</div>
-						<div>
-							<button  class="btn join_btn istar-btn-hover f-12 mr-2 resolvecardmodal" href="/modals/resolvetask.jsp">RESOLVE</button>
-						</div>
+						<div class="pt-25">
+														<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold resolvecardmodal" href="/modals/resolvetask.jsp">RESOLVE</button>
+												</div>
 					</div>
-					<div class="card-footer cream_white">
-						<div class="d-flex justify-content-end">
+					<div class="card-footer cream_white p-0 pt-10 pb-10">
+						<div class="d-flex justify-content-end pr-20">
 							<div class="theme_color f-14 font-weight-bold cursor-pointer view_more_resolve_task">
 								04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 							</div>
@@ -546,16 +546,16 @@
 				<!-- End of issue resolve card-->
 
 				<!-- Start of chat now card-->
-				<div class="card mb-3 rounded-0 shadow" style="min-height: 179px;">
-					<div class="card-body mr-md-3">
-						<h6 class="card-subtitle mb-2 text-muted f-12 pt-3 fw-300">10:30 AM</h6>
-						<div class="row align-items-center mb-3">
-							<div class="col-md-9 col-6">
+				<div class="card mb-3 rounded-0 shadow" >
+					<div class="card-body p-0 p-20">
+						<h6 class=" mb-0 text-muted f-12 fw-300 pb-10">10:30 AM</h6>
+						<div class="row align-items-center m-0 pb-15">
+							<div class="col-md-9 col-6 p-0 pr-10">
 								<p class="card-text greyish-brown f-14 text-trucate" title="Hello Sir, The
 									customer is asking about dis">Hello Sir, The
 									customer is asking about discount, please tell me….</p>
 							</div>
-							<div class="col-md-3 col-6">
+							<div class="col-md-3 col-6  p-0 pl-10">
 								<img class="hw-60 " alt="user" title="UserName"
 									src="<%=baseURL%>assets/image/11.png">
 
