@@ -572,29 +572,30 @@
 				</div>
 				<!-- End of chat now card-->
 				<!-- Start of accepting incoming call by Associate card-->
-				<div class="card mb-3 rounded-0 shadow" style="min-height: 255px;">
-					<div class="card-body">
-						<div class="row mb-2">
-							<div class="col-md-6 d-flex col-6">
+				<div class="card rounded-0 shadow ">
+					<div class="card-body p-20">
+					<div class="row m-0 pb-10">
+							<div class="col-md-6 p-0 d-flex col-6 ">
 								<img class="hw-24 mr-1" alt="task" src="<%=baseURL%>assets/image/task.svg">
 								<div class="f-16 brownish-grey " style="line-height: 28px;">Call
 									Task</div>
 
 							</div>
-							<div class="col-md-6 d-flex col-6">
+							<div class="col-md-6 p-0 d-flex col-6">
 								<img class="hw-24 mr-1" src="<%=baseURL%>assets/image/alarm.svg" alt="alarm">
 								<div class="f-16 brownish-grey" style="line-height: 28px;">12:30
 									PM</div>
 							</div>
-						</div>
-
-						<h5 class="card-title f-18 mb-2 text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
+							</div>
+							<h5 class="mb-0 f-18 text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
 						<div class="f-16 brownish-grey text-truncate" title="Robert Wolken">Robert Wolken</div>
 						<div class="f-12 brown-grey ">Manager</div>
+						</div>
 
-					</div>
-					<div class="card-footer pb-2 cream_white">
-						<p class="brownish-grey f-16 ">Louella sent an request for
+						
+
+					<div class="card-footer p-20 cream_white">
+						<p class="brownish-grey f-16 pb-25">Louella sent an request for
 							Meeting!</p>
 						<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2 mb-3">ACCEPT</button>
 						<button type="button" class="btn listen_btn f-12 mb-3">REJECT</button>
