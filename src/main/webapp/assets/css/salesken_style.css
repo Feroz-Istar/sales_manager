@@ -1264,6 +1264,11 @@ padding: 10px !important;
 .p-20{
 padding: 20px !important;
 }
+
+
+.mb-20{
+	margin-bottom: 20px !important;
+}
 .pl-30{
 	padding-left: 30px !important;
 }
@@ -1722,7 +1727,7 @@ border-color:#222222 !important;
 .small_outline_button:hover{
 background-color:#999999 !important;
 color:white;
-border:none;
+border-color:#999999 !important;
 }
 .small_outline_button:active{
 background-color:#444444 !important;

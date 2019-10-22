@@ -457,9 +457,9 @@
 
 				<div class="third_main_container">
 				<!-- Start of Associate Join now/Listen card-->
-				<div class="card mb-3 rounded-0 shadow " style="min-height: 313px;">
-					<div class="card-body ongoingtaskcard cursor-pointer">
-						<div class="d-flex">
+				<div class="card  rounded-0 shadow mb-20">
+					<div class="card-body ongoingtaskcard cursor-pointer p-0 p-20">
+						<div class="d-flex pb-10">
 							<div
 								class="mr-auto  bd-highlight theme_color f-20 font-weight-bold">$
 								250</div>
@@ -468,12 +468,12 @@
 									>Angry</span>
 							</div>
 						</div>
-						<h5 class="card-title f-18 font-weight-bold text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
+						<h5 class="card-title mb-0 f-18 font-weight-bold text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
 						<div class="f-16 brownish-grey text-truncate" title="Accenture">Robert Wolken</div>
-						<div class="f-12 brown-grey mb-2">Manager</div>
-						<div class="dotted-1 mb-2"></div>
+						<div class="f-12 brown-grey pb-10">Manager</div>
+						<div class="dotted-1 "></div>
 
-						<div class="d-flex align-items-center mb-2">
+						<div class="d-flex align-items-center pt-20">
 							<div class="mr-auto  ">
 								<div class="d-flex flex-column">
 									<div class="brown-grey f-12">Call Task by</div>
@@ -498,14 +498,18 @@
 						</div>
 
 						<div class="d-flex">
-							<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2">JOIN
-								NOW</button>
-							<button type="button" class="btn listen_btn f-12">LISTEN</button>
+							
+								
+								<div class=" pr-10">
+								<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold">JOIN NOW</button>
+								</div>
+								<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold">LISTEN</button>
+								
 
 						</div>
 					</div>
-					<div class="card-footer cream_white">
-						<div class="d-flex justify-content-end view_more_ongoing_task">
+					<div class="card-footer cream_white p-0 pt-10 pb-10">
+						<div class="d-flex justify-content-end view_more_ongoing_task pr-20">
 							<div class="theme_color f-14 font-weight-bold cursor-pointer">
 								04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 							</div>
