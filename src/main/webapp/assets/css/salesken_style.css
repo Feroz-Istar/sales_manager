@@ -609,6 +609,9 @@ input[type="search"]::-webkit-search-cancel-button {
 .minh-100 {
 	min-height: 100px;
 }
+.minh-200 {
+	min-height: 200px;
+}
 .minh-650 {
 	min-height:650px;
 }

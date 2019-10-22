@@ -118,7 +118,7 @@
 						</div>
 						<div class="row px-4">
 						<%for(int i=0;i<12;i++){ %>
-							<div class="col-md-3 d-flex align-items-center col_bordering" style="min-height:200px;">
+							<div class="col-md-3 d-flex align-items-center col_bordering minh-200" >
 								<div class="row  w-100">
 								<div class="col-md-9 m-0">
 								<div><div class="font-weight-bold f-42" > 04</div>
@@ -341,7 +341,7 @@
 						<div class="row  border-bottom-dashed-separation mr-md-2">
 						
 							<%for(int i=0;i<4;i++){ %>
-							<div class="col-md-3 col_bordering p-0 m-0 d-md-flex align-items-center" style="min-height:200px;">
+							<div class="col-md-3 col_bordering p-0 m-0 d-md-flex align-items-center objections cursor-pointer minh-200" >
 							<div class=" w-100 d-flex">
 								<div class="col-md-6 pl-4">
 								<div class="col"><div class="font-weight-bold f-42"> 05</div>
@@ -452,7 +452,9 @@
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script>
 	$( document ).ready(function() {
-		
+		$( ".objections" ).click(function() {
+			 location.href=location.protocol+'//'+location.host+'/landing/customerobjection.jsp';
+			});
 		$($('.reportcol>.border-right-dashed-separation').last()).addClass('border-0');
 		$('.salesken.navbar-nav>li').removeClass('active');
 		$($('.salesken.navbar-nav>li')[3]).addClass('active');
@@ -474,6 +476,8 @@
 	function showCalendar(){
 		$('#pipeline_datepicker').datepicker('show')
 	}
+	
+	
 	</script>
 </body>
 </html>
