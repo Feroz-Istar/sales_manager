@@ -27,6 +27,17 @@
 
 </head>
 <body data-base-url="<%=baseURL%>">
+
+<!-- start of circular progress bar for page loading -->
+	<div class="salesken_progress h-100 w-100 " style="display:none">
+		<div
+			class="d-flex align-items-center justify-content-center  h-100 w-100">
+			<div class="spinner-border text-danger" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+	</div>
+	<!-- end of circular progress bar for page loading -->
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 
 	<main role="main">

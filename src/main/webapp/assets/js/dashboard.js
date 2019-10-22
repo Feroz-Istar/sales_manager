@@ -1,4 +1,8 @@
 $(document).ready(function() {
+	
+	/*hiding page loader afer one seconds*/
+	
+
 	jQuery.validator.setDefaults({
 	   /* highlight: function(element) {
 	        jQuery(element).closest('.form-control').addClass('is-invalid');

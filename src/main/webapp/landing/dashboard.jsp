@@ -45,6 +45,18 @@
 </head>
 <body data-base-url="<%=baseURL%>">
 	
+	<!-- start of circular progress bar for page loading -->
+	<div class="salesken_progress h-100 w-100 " style="display:none">
+		<div
+			class="d-flex align-items-center justify-content-center  h-100 w-100">
+			<div class="spinner-border text-danger" role="status">
+				<span class="sr-only">Loading...</span>
+			</div>
+		</div>
+	</div>
+	<!-- end of circular progress bar for page loading -->
+
+
 	<div class="loader-div d-none">
 	<div class="inner-circle-div d-flex align-items-center justify-content-center">
 	   <div class="spinner-border  text-danger">
@@ -296,7 +308,7 @@
 					</ol>
 					<div class="carousel-inner shadow">
 
-						<%
+						<%	
 							for (int i = 0; i < 4; i++) {
 								String isActive = "";
 								if (i == 0) {

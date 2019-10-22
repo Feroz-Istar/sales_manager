@@ -1,4 +1,8 @@
 $( document ).ready(function() {
+	
+	$('.salesken_progress').show();
+	setTimeout(function(){ $('.salesken_progress').hide() }, 1000);
+	
     console.log( "ready!" );
     
     $('.signout').click(function(){
