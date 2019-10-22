@@ -26,6 +26,7 @@
 	href="<%=baseURL%>assets/css/dropzone.min.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/alertify.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
+<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
 
 </head>
 <body data-base-url="<%=baseURL%>">
@@ -136,18 +137,18 @@
 											id="target_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 											<i class="fas fa-filter filtericon"></i>
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="target_dropdown" style="width:350px">
-													
+										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="target_dropdown" style="width:350px">
+												
 												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="targetTab" role="tablist">
 												  <li class="nav-item">
-												    <a class="nav-link active" id="target_individual-tab" data-toggle="tab" href="#target_individual" role="tab" aria-controls="target_individual" aria-selected="true">Individual</a>
+												    <a class="nav-item nav-link active" id="target_individual-tab" data-toggle="tab" href="#target_individual" role="tab" aria-controls="target_individual" aria-selected="true">Individual</a>
 												  </li>
 												  <li class="nav-item">
-												    <a class="nav-link" id="target_team-tab" data-toggle="tab" href="#target_team" role="tab" aria-controls="target_team" aria-selected="false">Team</a>
+												    <a class="nav-item nav-link" id="target_team-tab" data-toggle="tab" href="#target_team" role="tab" aria-controls="target_team" aria-selected="false">Team</a>
 												  </li>
 												 
 												</ul>
-												<div class="tab-content" id="targetContent">
+												<div class="tab-content" id="targetTab-tabContent">
 												  <div class="tab-pane fade show active px-4 py-3" id="target_individual" role="tabpanel" aria-labelledby="target_individual-tab">
 												  		<div class="input-group py-2">
 															<input id="target_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">

@@ -73,11 +73,11 @@
 		<!-- Start of dashboard header div with dashboard title and New task -->
 		<div class="row pb-3" id="incoming_date"
 			data-input_date="<%=incomingDate%>">
-			<div class="col-md-6 col-6 p-0 m-0">
-				<h1 class="display-1 black f-20 fw-500">Dashboard</h1>
+			<div class="col-md-6 col-6 p-0 m-0 d-flex align-items-center">
+				<h1 class="display-1 black f-20 fw-500 mb-0">Dashboard</h1>
 
 			</div>
-			<div class="col-md-6 col-6 d-flex justify-content-end">
+			<div class="col-md-6 col-6 d-flex justify-content-end ">
 				<div class="istar-dropdown-task">
 					 <button class="btn btn-style px-2 f-12 dropdown-toggle"
 						type="button" id="newTaskMenuButton" data-toggle="dropdown"
@@ -111,7 +111,7 @@
 			<!-- Start of left container/first column of dashboard  -->
 			<div class="col-md-3 pr-0 left_container pl-0 bg-white">
 				<!-- start of To do list & Notes Tabs -->
-				<ul class="saleken nav nav-tabs f-14 pt-3 pb-0 px-4"
+				<ul class="saleken nav nav-tabs f-14  pb-0 pl-20 pt-30"
 					id="myTab" role="tablist" style="background: #f9f9f9">
 					<li class="nav-item">
 						<a class="nav-link active border-istar-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -136,9 +136,9 @@
 						<hr class="p-0 m-0">
 						
 						
-						<div class="task-item-container bg-white  px-4">
+						<div class="task-item-container bg-white  pl-20 pr-20 pt-40 pb-40">
 						
-							<div class="d-flex flex-row align-items-center pt-2 pb-2 istar-dropdown">
+							<div class="d-flex flex-row align-items-center  istar-dropdown pb-10">
 								<div class="mr-3 bblack f-18 fw-500">To-Do List</div>
 								<button
 									class="btn rounded-circle shadow d-flex justify-content-center align-items-center sales_ken_popover"
@@ -152,7 +152,7 @@
 								for (int j = 0; j < 4; j++) {
 									
 							%>
-							<div class="taskitem pt-3 pb-3 " style="display:none">
+							<div class="taskitem  pt-20 pb-20" style="display:none">
 								<div class="d-flex flex-row align-items-center mb-2 ">
 									<div class="font-weight-bold f-14 bblack">Meeting with
 										Sales Team</div>
