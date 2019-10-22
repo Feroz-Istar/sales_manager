@@ -609,65 +609,73 @@
 	<!-- start of create event modal -->
 		<div class="modal fade" id="createEventModalCenter" tabindex="-1" role="dialog" aria-labelledby="createEventModalCenterTitle" aria-hidden="true">
 		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-		    <div class="modal-content rounded-0 px-3 eventmodalsize">
-		    	<div class="row shadow-sm p-3" > 
-					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="createEventModalCenterTitle">Create an Event</div>
-					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
-					</button>
+		    <div class="modal-content rounded-0 pl-30 pr-30 eventmodalsize">
+		     <div class="modal-header pt-20 pb-20 px-0">
+		    	<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Create an Event</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
 				</div>
-		      <div class="modal-body">
+		      <div class="modal-body p-0">
 		      	<form action="" id="createTaskFrom">
 		      	<fieldset>
-		       	<div class="row pb-4">
-		       		<div class="col-md-6">
-		       			<div class="f-14 fw-500 pb-1">Add Title</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" name="eventTitle" id="eventTitle" aria-describedby="eventTitle" placeholder="Type here"/>
+		       	<div class="row pt-20 m-0">
+		       		<div class="col-md-6 p-0 pr-7_5">
+		       			<div class="f-14 fw-500 pb-10">Add Title</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="eventTitle" id="eventTitle" aria-describedby="eventTitle" placeholder="Type here"/>
 		       		</div>
-		       		<div class="col-md-6">
-		       			<div class="f-14 fw-500 pb-1">Type</div>
-		       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey"  name="eventType" id="eventType">
+		       		<div class="col-md-6 p-0 pl-7_5">
+		       			<div class="f-14 fw-500 pb-10">Type</div>
+		       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey istar-form-control"  name="eventType" id="eventType">
 					      <option value="0">Select Here</option>
 					      <option value="1">Type 1</option>
 					      <option value="2">Type 2</option>
 					    </select>
 		       		</div>
 		       	</div>
-		       	<div class="row pb-4">
-					<div class="col-md-6">
-						<div class="f-14 fw-500 pb-1">Date</div>
-						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="event_date" name="event_date" value="<%=today_date%>">
+		       	<div class="row m-0 pt-20">
+					<div class="col-md-6 p-0 pr-7_5">
+						<div class="f-14 fw-500 pb-10">Date</div>
+					<%-- 	<div class="custom-modal-input w-100 d-flex mr-2 border-0">
+							<input class="f-14  removefocus w-100 pl-2  istar-form-control " placeholder="Select here" id="event_date" name="event_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" alt="" class="pr-2">	
-						</div>	
+						</div>	 --%>
+						<div class="input-group position-relative  ">
+				<img src="<%=baseURL%>assets/image/calendar.svg" alt="" class=" event_date">
+					<input id="event_date" name="event_date" value="<%=today_date%>" class=" pl-2 f-14  removefocus w-100 istar-form-control h-35" placeholder="Select here" >
+				</div>
 					</div>
-					<div class="col-md-6">
-						<div class="f-14 fw-500 pb-1">Time	</div>
-						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker" type="text" name="timepicker" id="timepicker" placeholder="Select here">
+					<div class="col-md-6 p-0 pl-7_5">
+						<div class="f-14 fw-500 pb-10">Time	</div>
+						<%-- <div class="custom-modal-input w-100 d-flex mr-2 ">
+							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker istar-form-control " name="timepicker" id="timepicker" placeholder="Select here">
 							<img src="<%=baseURL%>assets/image/alarm.svg" alt="" class="pr-2">	
-						</div>	
+						</div>	 --%>
+				<div class="input-group position-relative  ">
+				<img src="<%=baseURL%>assets/image/alarm.svg" alt="" class="event_date">
+					<input id="timepicker" name="event_date"  class=" pl-2 f-14  removefocus timepicker w-100 istar-form-control h-35" type="text"  placeholder="Select here" >
+				</div>
 					</div>
 				</div>
-				<div class="row pb-4">
-					<div class="col-md-12">
-						<div class="f-14 fw-500 pb-1">Add Guest</div>
-		       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="addGuest" name="addGuest" aria-describedby="addGuest" placeholder="Select here">
+				<div class="row m-0 pt-20">
+					<div class="col-md-12 p-0">
+						<div class="f-14 fw-500 pb-10">Add Guest</div>
+		       			<input type="text" class="custom-modal-input w-100 form-control f-14 istar-form-control" id="addGuest" name="addGuest" aria-describedby="addGuest" placeholder="Select here">
 					</div>
 				</div>
 				
-				<div class="row pb-4">
-					<div class="col-md-12">
-						<div class="f-14 fw-500 pb-1">Description</div>
-						<textarea class="custom-modal-textarea w-100" id="eventdescription" name="eventdescription" rows="6"></textarea>
+				<div class="row m-0 pt-20 pb-40">
+					<div class="col-md-12 p-0">
+						<div class="f-14 fw-500 pb-10">Description</div>
+						<textarea class="custom-modal-textarea w-100 istar-form-control form-control" id="eventdescription " name="eventdescription" rows="6"></textarea>
 					</div>
 				</div>
 				</fieldset>
 				</form>
 		      </div>
-		      <div class="modal-footer">
+		      <div class="modal-footer p-0 pt-20 pb-20">
 		        <button type="submit" class="btn theme_color f-14 font-weight-bold" >Reset</button>
-		        <button type="button" class="btn modal-submit-btn f-14 font-weight-bold"  id="create" onclick="showList()">CREATE</button>
+		         <button type="button" class="btn big_button rounded-0 f-14 font-weight-bold"  id="create" onclick="showList()">CREATE</button>		        
 		      </div>
 		    </div>
 		  </div>
@@ -678,21 +686,21 @@
 	
 	<div class="modal fade" id="scheduleTaskModalCenter" tabindex="-1" role="dialog" aria-labelledby="scheduleTaskModalCenterTitle" aria-hidden="true">
 	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-	    <div class="modal-content eventmodalsize rounded-0 px-3">
-	      <div class="row shadow-sm p-3" > 
-				<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="scheduleTaskModalCenterTitle">Schedule Task</div>
-				<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
-					<span aria-hidden="true">&times;</span>
-				</button>
-			</div>
-	      <div class="modal-body">
-	      <form id="scheduletaskform">
+	    <div class="modal-content eventmodalsize rounded-0 pl-30 pr-30">
+	     <div class="modal-header pt-20 pb-20 px-0">
+		    	<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Schedule Task</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+				</div>
+	      <div class="modal-body  p-0">
+	      <form id="scheduletaskform" class="mb-0">
 	      <fieldset>
-	        <div class="row pb-4">
-		        <div class="col-md-12 istar-dropdown">
-			      <div class="f-14 fw-500 pb-1">Lead Name</div>
+	        <div class="row  pt-20 m-0">
+		        <div class="col-md-12 istar-dropdown p-0">
+			      <div class="f-14 fw-500 pb-10">Lead Name</div>
 							<div class="form-group">
-									<select class="form-control selectpicker" id="leadname" data-style="removefocus" title="Select here"
+									<select class="form-control selectpicker h-35" id="leadname" data-style="removefocus" title="Select here"
 										data-live-search="true" id="exampleFormControlSelect1" >
 
 										<%
@@ -716,49 +724,16 @@
 									</select>
 								</div>
 
-								<%-- <button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
-						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
-						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
-					</button> 	
-					<div class="dropdown-menu lead-dropdown-menu" aria-labelledby="dropdownMenuButton">
-					    <div class="py-3 dropdown-item">
-					    <div class="input-group custom-modal-input">
-			                <input id="" class="form-control brown-grey search_modal_height border-0 removefocus f-14 " type="search" placeholder="Search" style="border-right: none !important;">
-			                <div class="input-group-append">
-			                    <button class="btn removefocus border-0  d-flex justify-content-center align-self-center" type="button" style="    ">
-			                        <i class="fa fa-search f-16 brown-grey"></i>
-			                    </button>
-			                </div>
-			            </div>
-					   	
-					    </div>
-					   
-					    <%for(int i=0;i<10;i++){ 
-					    	String bgcolor="bg-white";
-					    	if(i%2==0){
-					    		bgcolor="cream_white";
-					    	}
-					    %>
-					    <div class="dropdown-item py-2 border-bottom-separation <%=bgcolor %>" >
-					    	<div class="row">
-					    		<div class="col-md-5 f-14 font-weight-bold black">Vehement Capital Partners</div>
-					    		<div class="col-md-4 f-14 greyish-brown text-center">Miriam Franklin</div>
-					    		<div class="col-md-3 f-14 greyish-brown text-right">+91 445 546 6456</div>
-					    	</div>
-					    </div>
-					    <%} %>
-					    
-					</div> --%>
 				</div>
 				
 	        </div>
 	        
-	        <div class="row pb-4">
-	        	<div class="col-md-6 istar-dropdown">
-	       			<div class="f-14 fw-500 pb-1">Task Type</div>
+	        <div class="row  pt-20 m-0">
+	        	<div class="col-md-6 istar-dropdown p-0 pr-7_5">
+	       			<div class="f-14 fw-500 pb-10">Task Type</div>
 	       			
 				    
-					<button class="custom-modal-input w-100 pl-2 d-flex" style="justify-content: space-between;"
+					<button class="custom-modal-input w-100 pl-2 d-flex h-35" style="justify-content: space-between;"
 						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
 						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
 					</button>
@@ -780,27 +755,27 @@
 					  </div>
 					
 	       		</div>
-	       		<div class="col-md-6">
-	       			<div class="f-14 fw-500 pb-1">Task By</div>
-	       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey" id="taskActor" name="taskActor">
+	       		<div class="col-md-6 p-0 pl-7_5">
+	       			<div class="f-14 fw-500 pb-10">Task By</div>
+	       			<select class="form-control custom-modal-input w-100 f-14 brwon-grey h-35" id="taskActor" name="taskActor">
 				      <option value="0">Me</option>
 				      <option value="1">Type 1</option>
 				      <option value="2">Type 2</option>
 				    </select>
 	       		</div>
 	        </div>
-	        <div class="row pb-4">
-					<div class="col-md-6">
-						<div class="f-14 fw-500 pb-1">Date</div>
-						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
+	        <div class="row  pt-20 m-0 pb-30">
+					<div class="col-md-6 p-0 pr-7_5">
+						<div class="f-14 fw-500 pb-10">Date</div>
+						<div class="custom-modal-input w-100 d-flex mr-2 h-35">
+							<input class="f-14 border-0 removefocus w-100 pl-2 " placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" alt="date" class="pr-2">	
 						</div>	
 					</div>
-					<div class="col-md-6">
-						<div class="f-14 fw-500 pb-1">Time	</div>
-						<div class="custom-modal-input w-100 d-flex mr-2">
-							<input class="f-14 border-0 removefocus w-100 pl-2" placeholder="Select here" id="schedule_task_time">
+					<div class="col-md-6 p-0 pl-7_5">
+						<div class="f-14 fw-500 pb-10">Time	</div>
+						<div class="custom-modal-input w-100 d-flex mr-2 h-35">
+							<input class="f-14 border-0 removefocus w-100 pl-2 " placeholder="Select here" id="schedule_task_time">
 							<img src="<%=baseURL%>assets/image/alarm.svg" alt="alarm" class="pr-2">	
 						</div>	
 					</div>
@@ -808,9 +783,11 @@
 				</fieldset>
 				</form>
 	      </div>
-	      <div class="modal-footer">
+	      <div class="modal-footer p-0 pt-20 pb-20">
 	         <button type="button" class="btn theme_color f-14 font-weight-bold">Reset</button>
-		     <button type="button" class="btn modal-submit-btn f-14 font-weight-bold" id="schedule">SCHEDULE</button>
+	         
+	          <button type="button" class="btn big_button modal-submit-btn rounded-0 f-14 font-weight-bold" id="schedule">SCHEDULE</button>
+	         
 	      </div>
 	    </div>
 	  </div>

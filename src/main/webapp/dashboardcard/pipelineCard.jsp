@@ -5,7 +5,7 @@
 	%>
 				
 <div class="card shadow mb-2 rounded-0" style="min-height: 322px;">
-	<div class="card-body">
+	<div class="card-body p-0">
 		<div class="salesken_caurosel position-relative" data-index="0" data-child="pipeline-container">
 	
 			<button type="button" class="istar-btn-icon istar-square previous" style="right: 50px; position: absolute;" id="pipeline-left">
@@ -19,16 +19,16 @@
 		if(j==0){
 			isshow="active";
 		}%>
-		<div class="pipeline-container <%=isshow %> " >
-		<div class="row px-3 mb-3">
+		<div class="pipeline-container <%=isshow %> " style="padding: 30px;" >
+		<div class="row m-0 pb-17">
 			<div
-				class="card-title col-md-6 font-weight-bold f-18 greyish-brown text-truncate" title="Pipeline">Pipeline
+				class="card-title col-md-6 p-0 m-0 font-weight-bold f-18 greyish-brown text-truncate" title="Pipeline">Pipeline
 				- 0<%=j+1%></div>
 			
 		</div>
 		<div id="pipeline_carousel" class="carousel slide"
 			data-ride="carousel">
-			<ol class="carousel-indicators mb-0">
+			<ol class="carousel-indicators mb-0" style="bottom: -31px;">
 				<li data-target="#pipeline_carousel" data-slide-to="0"
 					class="active"></li>
 				<li data-target="#pipeline_carousel" data-slide-to="1"></li>
@@ -47,32 +47,32 @@
 
 
 
-					<div class="row mb-2 px-3">
-						<div class="col fw-500 f-16 brownish-grey text-truncate" title="Pipeline">Stage
+					<div class="row m-0 ">
+						<div class="col fw-500 f-16 brownish-grey text-truncate p-0" title="Pipeline">Stage
 							01</div>
 					</div>
 
-					<div class="row mb-4 px-3">
-						<div class="col-md-3 col-6">
+					<div class="row m-0 pb-20">
+						<div class="col-md-3 col-6 p-0">
 							<div class="font-weight-bold f-30">
 								<i class="fas fa-dollar-sign light_gray"></i> <span
 									class="theme_color"> 7245</span>
 							</div>
 							<div class="f-14 brownish-grey">Deal Value</div>
 						</div>
-						<div class="col-md-3 col-6">
+						<div class="col-md-3 col-6 p-0">
 							<div class="font-weight-bold f-30 greyish-brown">
 								<i class="far fa-flag"></i> 65%
 							</div>
 							<div class="f-14 brownish-grey">Confident</div>
 						</div>
-						<div class="col-md-3 col-6">
+						<div class="col-md-3 col-6 p-0">
 							<div class="font-weight-bold f-30 greyish-brown">
 								<i class="fas fa-trophy"></i> 25%
 							</div>
 							<div class="f-14 brownish-grey">Won Leads</div>
 						</div>
-						<div class="col-md-3 col-6">
+						<div class="col-md-3 col-6 p-0">
 							<div class="font-weight-bold f-30 greyish-brown">
 								<i class="far fa-thumbs-down"></i> 75%
 							</div>
@@ -80,16 +80,16 @@
 						</div>
 					</div>
 
-					<div class="row mb-3 px-3">
-						<div class="col-md-6">
-							<div class="f-14 font-weight-bold black mb-2">Strong
+					<div class="row m-0 ">
+						<div class="col-md-6 p-0 pr-20">
+							<div class="f-14 font-weight-bold black ">Strong
 								Playbook</div>
 							<div class="f-14 brownish-grey">Objection, Price,
 								Qualification, Introduction, Product Features, Value
 								Proposition,</div>
 						</div>
-						<div class="col-md-6">
-							<div class="f-14 font-weight-bold black mb-2">Weak
+						<div class="col-md-6 p-0 pl-20">
+							<div class="f-14 font-weight-bold black ">Weak
 								Playbook</div>
 							<div class="f-14 brownish-grey">Need Investigation,
 								Competitor Mapping, Feature Mapping.</div>
