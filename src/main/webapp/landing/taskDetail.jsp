@@ -136,23 +136,68 @@
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0  ">
 
-								<select class=" custom-modal-input custom-result-selects mr-10"
+								<!-- <select class=" custom-modal-input custom-result-selects mr-10"
 									id="deal_value">
 									<option>Filter by Deal Value</option>
 									<option>Default select</option>
-								</select> <select class="  custom-result-selects mr-10" id="stages ">
-									<option>Filter by Stages</option>
-									<option>Default select</option>
-								</select>
-								<div class="istar-dropdown-task select_focus mr-10">
+								</select>  -->
+								
+									<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="activity" data-toggle="dropdown" aria-haspopup="true"
+										id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_deal">
+										<button class="dropdown-item" type="button"
+											>
+											 1000
+										</button>
+										<button class="dropdown-item" type="button">
+											 2000
+										</button>
+										
+									</div>
+
+								</div>
+								
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="ongoing_stage" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_stage">
+										<button class="dropdown-item" type="button"
+											>
+											 Stage 1
+										</button>
+										<button class="dropdown-item" type="button">
+											stage 2
+										</button>
+										
+									</div>
+
+								</div>
+									
+								
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by
+										Activities 
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
 											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
@@ -173,10 +218,26 @@
 									</div>
 
 								</div>
-								<select class="  custom-result-selects mr-10 " id="status">
-									<option>Filter by Status</option>
-									<option>Default select</option>
-								</select>
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="ongoing_status" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_status">
+										<button class="dropdown-item" type="button"
+											>
+											 Ongoing
+										</button>
+										<button class="dropdown-item" type="button">
+										Completed
+										</button>
+										
+									</div>
+
+								</div>
 
 								<div class="dropdown dropleft" id="filterbutton">
 									<button class="filter-btn" id="activity" data-toggle="dropdown"

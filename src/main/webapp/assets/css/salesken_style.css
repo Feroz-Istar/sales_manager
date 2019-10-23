@@ -306,6 +306,7 @@ html, body {
 	position: relative;
 	border: 1px solid #cccccc;
 	border-radius: 0;
+	line-height: 1.87;
 }
 
 .istar-dropdown-arrow {
@@ -1983,4 +1984,9 @@ pointer-events: none;
 
 .custom-dropdown-width {
     min-width: 185px !important;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
 }

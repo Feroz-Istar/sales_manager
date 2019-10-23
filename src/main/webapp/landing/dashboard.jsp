@@ -618,8 +618,7 @@
 		     <div class="modal-header pt-20 pb-20 px-0">
 		    	<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Create an Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">        </button>
 				</div>
 		      <div class="modal-body p-0">
 		      	<form action="" id="createTaskFrom">
