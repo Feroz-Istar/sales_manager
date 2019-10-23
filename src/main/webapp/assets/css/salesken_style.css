@@ -1980,3 +1980,7 @@ pointer-events: none;
       margin-left: -1px;
 }
 /*end of up arrow in dropdown*/
+
+.custom-dropdown-width {
+    min-width: 185px !important;
+}
