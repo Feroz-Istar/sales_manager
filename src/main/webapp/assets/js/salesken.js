@@ -1,5 +1,6 @@
 $( document ).ready(function() {
-	
+	  $('[data-toggle="tooltip"]').tooltip()
+
 	$('.salesken_progress').show();
 	setTimeout(function(){ $('.salesken_progress').hide() }, 1000);
 	
