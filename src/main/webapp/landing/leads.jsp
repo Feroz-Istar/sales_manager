@@ -98,11 +98,22 @@
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 
-								<select class="custom-result-selects" id="source">
-									<option>Filter by Source Type</option>
-									<option>Default select</option>
-								</select>
-
+									<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="targetSourceType" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Source Type
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+										
+										
+										
+										
 								<div class="istar-dropdown-task mr-2 custom-taskborder select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle "
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
@@ -267,9 +278,9 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black text-truncate" title="Vehement Capital">Vehement Capital
+								<div class="f-14 fw-500 black text-truncate d-inline" title="Vehement Capital" data-toggle="tooltip" data-placement="bottom">Vehement Capital
 									Partners</div>
-								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate d-table" title="Miriam Franklin"  data-toggle="tooltip" data-placement="bottom">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
 								<div class="f-14 brownish-grey text-break">
@@ -282,17 +293,17 @@
 								</div>
 							</div>
 							<div class="col-md-2 col ">
-								<div class="f-14 brownish-grey text-truncate" title="Web Form">Web Form</div>
+								<div class="f-14 brownish-grey text-truncate d-inline" title="Web Form" data-toggle="tooltip" data-placement="bottom">Web Form</div>
 							</div>
 							<div class="col-md-4 col-12 ">
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="row">
-											<img class="rounded-circle imgsize-40" alt="Lead Image" title="Lead Name"
+											<img class="rounded-circle imgsize-40" alt="Lead Image"
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10">
-												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
-												<div class="f-12 brown-grey text-truncate" title="Team 01">Team 01</div>
+												<div class="f-14 greyish-brown text-truncate d-inline" title="Stanley Howard"  data-toggle="tooltip" data-placement="bottom">Stanley Howard</div>
+												<div class="f-12 brown-grey text-truncate d-table" title="Team 01" data-toggle="tooltip" data-placement="bottom">Team 01</div>
 											</div>
 										</div>
 									</div>
@@ -353,21 +364,48 @@
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_qualified_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
-									<div class="input-group-addon"
+									<div class="input-group-addon px-1"
 										onclick="showqualifiedCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar"/>
+										<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"/>
 									</div>
 								</div>
-								<select class="  custom-result-selects" id="deal_value">
-									<option>Filter by Deal Value</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="stages">
-									<option>Filter by Stages</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="source">
-									<option>Filter by Source Type</option>
-									<option>Default select</option>
-								</select>
+									<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedDealValue" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Deal Value
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+									
+							 		<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedStage" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Stages
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedSourceType" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Source Type
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
 
 									<div class="dropdown dropleft" id="filterbutton">
 										<button
@@ -507,9 +545,9 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black text-truncate" title="Team 01">Zencorporation
+								<div class="f-14 fw-500 black text-truncate d-inline" title="Team 01" data-toggle="tooltip" data-placement="bottom">Zencorporation
 									Pot. Ltd.</div>
-								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
 								<div class="f-14 brownish-grey text-break">
@@ -532,10 +570,10 @@
 									<div class="col-md-11">
 										<div class="row">
 											<img class="rounded-circle imgsize-40"
-												src="<%=baseURL%>assets/image/11.png" alt="Lead Image" title="Lead Name">
+												src="<%=baseURL%>assets/image/11.png" alt="Lead Image" >
 											<div class="col-md-10">
-												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
-												<div class="f-12 brown-grey text-truncate" title="Pipeline - New Sales
+												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Pipeline - New Sales
 													Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
@@ -606,23 +644,61 @@
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_lost_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
-									<div class="input-group-addon" onclick="showlostCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"></i>
+									<div class="input-group-addon px-1" onclick="showlostCalendar()">
+										<img src="<%=baseURL%>/assets/image/calendar.svg">
 									</div>
 								</div>
-								<select class="  custom-result-selects" id="causes">
-									<option>Filter by Causes</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="deal_value">
-									<option>Filter by Deal Value</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="stages">
-									<option>Filter by Stages</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="source">
-									<option>Filter by Source Type</option>
-									<option>Default select</option>
-								</select>
+								
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostCauses" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Causes
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+								
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostDealValue" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Deal Value
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+									
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostStages" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Stages
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+								 <div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostSourceType" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Source Type
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
 
 								<div class="dropdown dropleft" id="filterbutton">
 										<button
@@ -765,9 +841,9 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4  px-4 <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black text-truncate" title="Vehement Capital Partners.">Vehement Capital
+								<div class="f-14 fw-500 black text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Vehement Capital Partners.">Vehement Capital
 									Partners.</div>
-								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
 								<div class="f-14 brownish-grey text-break">
@@ -789,39 +865,41 @@
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="row">
-											<img class="rounded-circle imgsize-40" alt="Lead Image" title="Lead Name"
+											<img class="rounded-circle imgsize-40" alt="Lead Image"
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10">
-												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
-												<div class="f-12 brown-grey text-truncate" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
+												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-1">
-										<button class="dropdown-icon-btn dropleft" type="button"
-											id="dropdownMenuButton" data-display="static"
-											data-toggle="dropdown" aria-haspopup="true"
-											aria-expanded="false">
-											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
-										</button>
-										<div
-											class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
-											aria-labelledby="dropdownMenuButton">
-											
-											<button class="dropdown-item" data-toggle="modal"
+										<div class="istar-dropdown dropleft">
+											<button class="dropdown-icon-btn " type="button"
+												id="dropdownMenuButton" data-display="static"
+												data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+											</button>
+											<div
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+												aria-labelledby="dropdownMenuButton">
+												
+												<button class="dropdown-item" data-toggle="modal"
 													data-target="#editLeadModalCenter">
-												<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-													srcset="" class="mr-2">Edit
-											</button>
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-													srcset="" class="mr-2">Delete
-											</button>
-											<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
-												<img src="<%=baseURL%>assets/image/details.png" alt="details"
-													srcset="" class="mr-2">Details
-											</button>
+													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
+														srcset="" class="mr-2">Edit
+												</button>
+												<button class="dropdown-item" href="#">
+													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
+														srcset="" class="mr-2">Delete
+												</button>
+												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
+													<img src="<%=baseURL%>assets/image/details.png" alt="details"
+														srcset="" class="mr-2">Details
+												</button>
+											</div>
 										</div>
 
 									</div>
@@ -854,23 +932,60 @@
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_won_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
-									<div class="input-group-addon" onclick="showwonCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"/>
+									<div class="input-group-addon px-1" onclick="showwonCalendar()">
+										<img src="<%=baseURL%>/assets/image/calendar.svg"/>
 									</div>
 								</div>
-								<select class="  custom-result-selects" id="causes">
-									<option>Filter by Causes</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="deal_value">
-									<option>Filter by Deal Value</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="stages">
-									<option>Filter by Stages</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="source">
-									<option>Filter by Source Type</option>
-									<option>Default select</option>
-								</select>
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonCauses" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Causes
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+								
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonDealValue" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Deal Value
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+									
+								<div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonStages" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Stages
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
+								 <div class="istar-dropdown-task border-0">
+										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonSourceType" 
+												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+											Filter by Source Type
+										</button>
+										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
+											aria-labelledby="todolist">
+											<button class="dropdown-item" type="button">Manual</button>
+											<button class="dropdown-item" type="button">Offline</button>
+											<button class="dropdown-item" type="button">Outbound</button>
+										</div>
+									</div>
 
 								<div class="dropdown dropleft" id="filterbutton">
 										<button
@@ -952,7 +1067,7 @@
 										
 									</div> 
 							</div>
-						</div>""
+						</div>
 
 						<div class="row pl-2 py-4 shadow-bottom px-4 theme_dotted_border_bottom shadow-bottom">
 
@@ -1013,9 +1128,9 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom py-4 px-4  <%=bgcolor%>">
 							<div class="col-md-2 col">
-								<div class="f-14 fw-500 black text-truncate" title="Vehement Capital Partners.">Vehement Capital
+								<div class="f-14 fw-500 black text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Vehement Capital Partners.">Vehement Capital
 									Partners.</div>
-								<div class="f-14 brownish-grey text-truncate" title="Miriam Franklin">Miriam Franklin</div>
+								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col">
 								<div class="f-14 brownish-grey text-break">
@@ -1039,39 +1154,41 @@
 								<div class="row  align-items-center">
 									<div class="col-md-11">
 										<div class="row">
-											<img class="rounded-circle imgsize-40"  alt="Lead Image" title="Lead Name"
+											<img class="rounded-circle imgsize-40"  alt="Lead Image" 
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10">
-												<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
-												<div class="f-12 brown-grey  text-truncate" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
+												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
+												<div class="f-12 brown-grey  text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
 									</div>
 									<div class="col-md-1">
-										<button class="dropdown-icon-btn dropleft" type="button"
-											id="dropdownMenuButton" data-display="static"
-											data-toggle="dropdown" aria-haspopup="true"
-											aria-expanded="false">
-											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
-										</button>
-										<div
-											class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
-											aria-labelledby="dropdownMenuButton">
-											
-											<button class="dropdown-item" data-toggle="modal"
+										<div class="istar-dropdown dropleft">
+											<button class="dropdown-icon-btn " type="button"
+												id="dropdownMenuButton" data-display="static"
+												data-toggle="dropdown" aria-haspopup="true"
+												aria-expanded="false">
+												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+											</button>
+											<div
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+												aria-labelledby="dropdownMenuButton">
+												
+												<button class="dropdown-item" data-toggle="modal"
 													data-target="#editLeadModalCenter">
-												<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-													srcset="" class="mr-2">Edit
-											</button>
-											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-													srcset="" class="mr-2">Delete
-											</button>
-											<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
-												<img src="<%=baseURL%>assets/image/details.png" alt="details"
-													srcset="" class="mr-2">Details
-											</button>
+													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
+														srcset="" class="mr-2">Edit
+												</button>
+												<button class="dropdown-item" href="#">
+													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
+														srcset="" class="mr-2">Delete
+												</button>
+												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
+													<img src="<%=baseURL%>assets/image/details.png" alt="details"
+														srcset="" class="mr-2">Details
+												</button>
+											</div>
 										</div>
 
 									</div>
