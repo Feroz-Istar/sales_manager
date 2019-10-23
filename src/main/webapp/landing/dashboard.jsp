@@ -316,7 +316,7 @@
 				<!-- End of Pipeline and Stages card-->
 
 				<!-- Start of Teams card-->
-					<div class="team-card"></div>
+					<div class="team-card pb-10"></div>
 				<!-- End of Teams card-->
 
 

@@ -3,13 +3,13 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	%>
-<div class="card shadow mb-2 rounded-0" style="min-height: 245px;">
-	<div class="card-body">
+<div class="card shadow p-0 rounded-0">
+	<div class="card-body p-0">
 		<div class="salesken_caurosel position-relative"  data-index="0" data-child="team-container">
-			<button type="button" class="istar-btn-icon istar-square previous" id="team-left" style="right: 50px; position: absolute;">
+			<button type="button" class="istar-btn-icon  previous p-0" id="team-left" >
                  <i class="fas fa-chevron-left"></i>
              </button>
-             <button type="button" class="istar-btn-icon istar-square active ml-2 next" id="team-right" style="right: 10px; position: absolute;">
+             <button type="button" class="istar-btn-icon  active next p-0" id="team-right" >
                  <i class="fas fa-chevron-right"></i>
              </button>
 	<%for(int j=0;j<10; j++){
@@ -17,54 +17,54 @@
 		if(j==0){
 			isshow="active";
 		}%>
-		<div class="team-container <%=isshow%>">
-		<div class="row mb-3 px-3">
-			<div class="col-md-6 font-weight-bold f-18 text-truncate" title="team">
+		<div class="team-container <%=isshow%> ">
+		<div class="row m-0 pt-30 pl-30 pr-30 pb-20">
+			<div class="col-md-6 p-0 m-0 font-weight-bold f-18 text-truncate" title="team">
 				Team 0<%=j+1 %>&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
 			</div>
 			
 		</div>
-		<div class="row px-3">
-			<div class="col-md-8">
-				<div class="row mb-4">
-					<div class="col-md-3 col-6">
+		<div class="row m-0 pl-30 pr-30 pb-30">
+			<div class="col-md-8 p-0">
+				<div class="row m-0">
+					<div class="col-md-3 p-0 col-6 pb-20">
 						<div class="font-weight-bold f-30">
 							<i class="fas fa-dollar-sign light_gray"></i> <span
 								class="theme_color"> 345</span>
 						</div>
 						<div class="f-14 brownish-grey">Deal Value</div>
 					</div>
-					<div class="col-md-3 col-6">
+					<div class="col-md-3 col-6 p-0 pb-20 pr-7_5 pl-7_5">
 						<div class="font-weight-bold f-30 black">65%</div>
 						<div class="f-14 brownish-grey">Confident</div>
 					</div>
-					<div class="col-md-3 col-6">
+					<div class="col-md-3 col-6 p-0 pb-20 pl-7_5 pr-7_5">
 						<div class="font-weight-bold f-30 black">25%</div>
 						<div class="f-14 brownish-grey">Won Leads</div>
 					</div>
-					<div class="col-md-3 col-6">
+					<div class="col-md-3 col-6 p-0 pb-20">
 						<div class="font-weight-bold f-30 black">75%</div>
 						<div class="f-14 brownish-grey">Lost Leads</div>
 					</div>
 				</div>
-				<div class="row mb-3">
-					<div class="col-md-6">
-						<div class="f-14 font-weight-bold mb-2">Strong Playbook</div>
+				<div class="row m-0">
+					<div class="col-md-6 p-0 pr-7_5">
+						<div class="f-14 font-weight-bold pb-5">Strong Playbook</div>
 						<div class="f-14 brownish-grey">Objection, Price,
 							Qualification, Introduction, Product Features, Value
 							Proposition,</div>
 					</div>
-					<div class="col-md-6">
-						<div class="f-14 font-weight-bold mb-2">Weak Playbook</div>
+					<div class="col-md-6 p-0 pl-7_5">
+						<div class="f-14 font-weight-bold pb-5">Weak Playbook</div>
 						<div class="f-14 brownish-grey">Need Investigation,
 							Competitor Mapping, Feature Mapping.</div>
 					</div>
 				</div>
 
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-4 p-0">
 
-				<div id="container<%=j %>" style="height: 170px;"></div>
+				<div id="container<%=j %>" class="w-100" style="height: 140px;"></div>
 			</div>
 		</div>
 		
@@ -126,7 +126,13 @@ for (i = 0; i < teamCount; i++){
 new Highcharts.Chart({
 	chart: {
 		renderTo: 'container'+i,
-		type: 'pie'
+		type: 'pie',
+	    margin: 0,
+	    spacingTop: 0,
+        spacingBottom: 0,
+        spacingLeft: 0,
+        spacingRight: 0
+
 	},
 	title: {
 		useHTML: true,

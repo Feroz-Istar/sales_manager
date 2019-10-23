@@ -8,10 +8,10 @@
 	<div class="card-body p-0">
 		<div class="salesken_caurosel position-relative" data-index="0" data-child="pipeline-container">
 	
-			<button type="button" class="istar-btn-icon istar-square previous" style="right: 50px; position: absolute;" id="pipeline-left">
+			<button type="button" class="istar-btn-icon istar-square previous"  id="pipeline-left">
                  <i class="fas fa-chevron-left"></i>
              </button>
-             <button type="button" class="istar-btn-icon istar-square active ml-2 next"  style="right: 10px; position: absolute;" id="pipeline-right">
+             <button type="button" class="istar-btn-icon istar-square active ml-2 next"  id="pipeline-right">
                  <i class="fas fa-chevron-right"></i>
              </button>
 	<%for(int j=0;j<10;j++){ 
