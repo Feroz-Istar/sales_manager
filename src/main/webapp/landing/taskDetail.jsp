@@ -239,14 +239,20 @@
 
 								</div>
 
-								<div class="dropdown dropleft" id="filterbutton">
-									<button class="filter-btn" id="activity" data-toggle="dropdown"
+								 <div class="istar-dropdown-task select_focus mr-10 dropdown" id="ongoing_filter">
+									<!-- <button class="filter-btn" id="activity" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
 										<i class="fas fa-filter filtericon"></i>
+									</button> -->
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="ongoing_filter" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by Deal Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4"
-										aria-labelledby="activity" style="width: 350px">
+										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="ongoing_filter" style="width: 350px">
 
 										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="myTab"
 											role="tablist">
@@ -354,6 +360,7 @@
 									</div>
 
 								</div>
+								
 
 							</div>
 						</div>
