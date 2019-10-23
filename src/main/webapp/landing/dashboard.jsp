@@ -694,7 +694,8 @@
 	     <div class="modal-header pt-20 pb-20 px-0">
 		    	<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Schedule Task</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">        </button>
+<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">   
+     </button>
 				</div>
 	      <div class="modal-body  p-0">
 	      <form id="scheduletaskform" class="mb-0">
@@ -805,9 +806,9 @@
     <div class="modal-content rounded-0 px-3 ">
       <div class="row shadow-sm p-3"> 
 					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="createresolveModalCenterTitle">Objection</div>
-					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">×</span>
-					</button>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">   
+     </button>
 				</div>
       <div class="modal-body">
 		
