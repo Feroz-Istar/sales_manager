@@ -28,6 +28,8 @@ body {
 	padding-top: 80px;
 	padding-left: 40px !important;
 	padding-right: 40px !important;
+	padding-bottom: 40px !important;
+	
 }
 
 .fw-50 {
@@ -67,7 +69,7 @@ body {
 	border-radius: 0;
 	font-size: 14px;
 	color: #999999 !important;
-	margin-right: 0.5rem !important;
+	
 	background: #ffffff;
 	text-align: left !important;
 }
@@ -458,7 +460,7 @@ html, body {
 	border-radius: 0;
 	font-size: 14px;
 	color: #999999 !important;
-	margin-right: 0.5rem !important;
+	
 	background: #ffffff;
 }
 
@@ -1295,6 +1297,28 @@ Modifying the scroll bar across the whole application
 	padding: 10px !important;
 }
 
+.pl-15 {
+	padding-left: 15px !important;
+}
+
+.pr-15 {
+	padding-right: 15px !important;
+}
+
+.pt-15 {
+	padding-top: 15px !important;
+}
+
+.pb-15 {
+	padding-bottom: 15px !important;
+}
+
+.p-15 {
+	padding: 15px !important;
+}
+
+
+
 .pl-20 {
 	padding-left: 20px !important;
 }
@@ -1371,6 +1395,13 @@ Modifying the scroll bar across the whole application
 	padding-top: 40px !important;
 }
 
+.pl-45 {
+	padding-left: 45px !important;
+}
+.pr-45 {
+	padding-right: 45px !important;
+}
+
 .pb-40 {
 	padding-bottom: 40px !important;
 }
@@ -1414,6 +1445,25 @@ Modifying the scroll bar across the whole application
 /* end of padding custom styles */
 
 /* start of margin style */
+.ml-10 {
+	margin-left: 10px !important;
+}
+
+.mr-10 {
+	margin-right: 10px !important;
+}
+
+.mt-10 {
+	margin-top: 10px !important;
+}
+
+.mb-10 {
+	margin-bottom: 10px !important;
+}
+
+.m-10 {
+	margin: 10px !important;
+}
 .ml-30 {
 	margin-left: 30px !important;
 }
@@ -1902,3 +1952,31 @@ label.error {
 	border-bottom-color: #fff;
 }
 /* end of tooltip styling */
+
+
+/*start of up arrow in dropdown*/
+.istar-dropdown-task-menu:after, .istar-dropdown-task-menu:before {
+bottom: 100%;
+left: 80%;
+border: solid transparent;
+content: " ";
+height: 0;
+width: 0;
+position: absolute;
+pointer-events: none;
+}
+
+.istar-dropdown-task-menu:after {
+    border-color: rgba(136, 183, 213, 0);
+    border-bottom-color: #fff;
+    border-width: 7px;
+
+
+}
+.istar-dropdown-task-menu:before {
+   border-color: rgba(194, 225, 245, 0);
+    border-bottom-color: #ccc;
+    border-width: 8px;
+      margin-left: -1px;
+}
+/*end of up arrow in dropdown*/

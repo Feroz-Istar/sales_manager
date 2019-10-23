@@ -8,7 +8,7 @@
 		<div class="col-md-10 p-0">
 			<div class="row p-2 pt-4  mx-4">
 				<div class="col">
-					<p class="greyish-brown f-18 font-weight-bold text-truncate" title="Globex Corporation Inc">Globex Corporation Inc.</p>
+					<p class="greyish-brown f-18 font-weight-bold text-truncate" data-toggle="tooltip" data-placement="bottom"  title="Globex Corporation Inc">Globex Corporation Inc.</p>
 				</div>
 			</div>
 			<div class="row pl-2  mx-4">
@@ -18,11 +18,11 @@
 				</div>
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" title="Stage 02">Stage 02</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</p>
 				</div>
 				<div class="col-md-3">
 					<p class="brownish-grey f-14 mb-0">Contact Person</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" title="Robert Wolken">Robert Wolken</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Robert Wolken">Robert Wolken</p>
 				</div>
 				<div class="col-md-3 text-right">
 					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#leaveTaskModal">LEAVE
@@ -67,7 +67,7 @@
 				<div class="col d-flex flex-row justify-content-center">
 
 					<div class="d-flex flex-row align-items-center mr-5">
-						<img src="<%=baseURL%>assets/image/man.jpg" alt="person" title="Lead Name"
+						<img src="<%=baseURL%>assets/image/man.jpg" alt="person" data-toggle="tooltip" data-placement="bottom" title="Lead Name"
 							class="rounded-circle hw-60 task-image-right"> <img  alt="phone"
 							src="<%=baseURL%>assets/image/calltask.svg"
 							class="rounded-circle hw-40 task-icon">
@@ -85,7 +85,7 @@
 					</button>
 					<div class="d-flex flex-row align-items-center">
 						<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
-							class="rounded-circle hw-60 task-image-right" title="Agent Name"> <img  alt="call"
+							class="rounded-circle hw-60 task-image-right" data-toggle="tooltip" data-placement="bottom" title="Agent Name"> <img  alt="call"
 							src="<%=baseURL%>assets/image/calltask.svg"
 							class="rounded-circle hw-40 task-icon">
 

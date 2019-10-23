@@ -5,7 +5,7 @@
 	%>
 
 				<div class="row justify-content-between p-2 pt-4 mx-2">
-					<div class="col-md-6 greyish-brown f-18 font-weight-bold text-truncate" title="Globex Corporation">Globex Corporation Inc.</div>
+					<div class="col-md-6 greyish-brown f-18 font-weight-bold text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Globex Corporation Inc.</div>
 					<div class="col-3">
 					<div class="d-flex justify-content-end">
 						<img src="<%=baseURL%>assets/image/heart.svg" alt="heart" class="cursor-pointer mr-3">
@@ -22,11 +22,11 @@
 				</div>
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation">Stage 02</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Stage 02</p>
 				</div>
 				<div class="col-md-3">
 					<p class="brownish-grey f-14 mb-0">Contact Person</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" title="Robert Wolken">Robert Wolken</p>
+					<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Robert Wolken">Robert Wolken</p>
 				</div>
 				
 
@@ -41,18 +41,18 @@
 			          <div class="row align-items-center">
 			          	<div class="col-md-3">
 			          		<div class="d-flex">
-			          			<img src="<%=baseURL%>assets/image/37.jpg" title="Agent Name" class="hw-40 mr-3" alt="user-img">
+			          			<img src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip" data-placement="bottom" title="Agent Name" class="hw-40 mr-3" alt="user-img">
 			          			<div class="text-left">
-			          				<div class="f-14 greyish-brown text-truncate" title="Carmen Collinsder">Carmen Collinsder</div>
+			          				<div class="f-14 greyish-brown text-truncate" data-toggle="tooltip" data-placement="bottom" title="Carmen Collinsder">Carmen Collinsder</div>
 			          				<div class="f-12 brown-grey">11:30 AM</div>
 			          			</div>
 			          		</div>
 			          	</div>
 			          	<div class="col-md-9 text-left">
-			          		<div class="f-14 brownish-grey  text-truncate" title="Hello Sir...Lorem ipsum do">Hello Sir...Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
+			          		<div class="f-14 brownish-grey  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Hello Sir...Lorem ipsum do">Hello Sir...Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
 			          		<div class="d-flex align-items-center mt-2">
-			          			<img src="<%=baseURL%>assets/image/21.svg" class="hw-40 mr-3"  title="Product Name" alt="doc">
-			          			<div class="f-14 brownish-grey fw-500  text-truncate" title="Product-Brochure.pd">Product-Brochure.pdf</div>
+			          			<img src="<%=baseURL%>assets/image/21.svg" class="hw-40 mr-3" data-toggle="tooltip" data-placement="bottom"  title="Product Name" alt="doc">
+			          			<div class="f-14 brownish-grey fw-500  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Product-Brochure.pd">Product-Brochure.pdf</div>
 			          			<div class="f-14 brown-grey ml-3">256kb</div>
 			          		</div>
 			          	</div>

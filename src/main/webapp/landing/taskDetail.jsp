@@ -40,23 +40,23 @@
 	<main role="main">
 	<div class="container-fluid salesken_container">
 		<div
-			class="row grey-white-bg align-items-center py-3 theme_solid_border_bottom px-4">
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
+			class="row grey-white-bg align-items-center  theme_solid_border_bottom  m-0 pl-40 pr-40 pt-10 pb-10">
+			<div class="col-md-6 col-12 d-flex align-items-center  p-0">
 				<div
-					class="display-1 black f-20 border-right-separation pr-3  fw-500">Task
+					class="display-1 black f-20 border-right-separation pr-20 fw-500">Task
 					Details</div>
-				<div class="pl-3 pr-2 f-12 brown-grey">Task Detail</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey "></i>
+				<div class=" f-12 brown-grey pl-20 ">Task Detail</div>
+				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 brown-grey "></i>
 				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Ongoing</div>
 
 			</div>
-			<div class="col-md-6 col-12 d-flex justify-content-md-end">
+			<div class="col-md-6 col-12 d-flex justify-content-md-end p-0">
 
 
-				<div class="input-group position-relative pl-2 pr-2 search_width">
+				<div class="input-group position-relative pr-10 search_width">
 				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
 					<input id=""
-						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						class="form-control  custom-taskborder brown-grey m-0 f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
@@ -93,7 +93,7 @@
 			</div>
 
 		</div>
-		<div class="row  mb-5">
+		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 ">
 
 				<!-- <nav>
@@ -110,9 +110,9 @@
 
 
 
-				<ul class="nav nav-tabs nav-mytabs  pt-2 pl-4" id="nav-tabs"
+				<ul class="nav nav-tabs nav-mytabs pl-40 pt-20 " id="nav-tabs"
 					role="tablist">
-					<li class="nav-item ml-3"><a
+					<li class="nav-item "><a
 						class="nav-item nav-link show active" id="nav-ongoing-tab"
 						data-toggle="tab" href="#nav-ongoing" role="tab"
 						aria-controls="nav-ongoing" aria-selected="true">Ongoing</a></li>
@@ -130,21 +130,21 @@
 						<!-- start of ongoing tab content -->
 
 						<div
-							class="row align-items-center  theme_solid_border_bottom  px-4 py-3 m-0">
-							<div class="col-md-3 text-result-found	">
+							class="row align-items-center  theme_solid_border_bottom pl-40 pr-40 pt-15 pb-15  m-0">
+							<div class="col-md-3 text-result-found p-0	">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
+							<div class="col-md-9 d-md-flex justify-content-end p-0  ">
 
-								<select class=" custom-modal-input custom-result-selects"
+								<select class=" custom-modal-input custom-result-selects mr-10"
 									id="deal_value">
 									<option>Filter by Deal Value</option>
 									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="stages">
+								</select> <select class="  custom-result-selects mr-10" id="stages ">
 									<option>Filter by Stages</option>
 									<option>Default select</option>
 								</select>
-								<div class="istar-dropdown-task select_focus">
+								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -173,7 +173,7 @@
 									</div>
 
 								</div>
-								<select class="  custom-result-selects" id="status">
+								<select class="  custom-result-selects mr-10 " id="status">
 									<option>Filter by Status</option>
 									<option>Default select</option>
 								</select>
@@ -298,7 +298,7 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0 ">
-							<div class="col-md-3 pr-0 border-right">
+							<div class="col-md-3 p-0 border-right pl-20">
 								<div class="nav flex-column nav-pills"
 									id="taskdetail-tab-list" role="tablist"
 									aria-orientation="vertical">
@@ -310,13 +310,13 @@
 											}
 									%>
 									<div
-										class="nav-link rounded-0 <%=isactive%> theme_solid_border_bottom"
+										class="nav-link rounded-0 p-0 <%=isactive%> theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center minh-100 px-4">
+										<div class="row align-items-center m-0 p-20">
 											<div class="col-md-9 p-0">
 												<div class="d-flex flex-row ">
 													<div
@@ -325,15 +325,15 @@
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 fw-500  black text-truncate" title="Globex Corporation. Inc.">Globex Corporation
+												<div class="f-16 fw-500  black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation. Inc.">Globex Corporation
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
-											<div class="col-md-3">
+											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon"
 														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg" title="Agent name"
+														src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip" data-placement="bottom" title="Agent name"
 														class="rounded-circle hw-40 task-image" alt="task-image" />
 												</div>
 											</div>
@@ -348,7 +348,7 @@
 							</div>
 
 
-							<div class="col-md-9 bg-white">
+							<div class="col-md-9 bg-white p-0">
 								<div class="tab-content" id="taskdetail-tab-listContent">
 									<%
 										for (int i = 0; i < 3; i++) {
@@ -360,57 +360,63 @@
 									<div class="tab-pane fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
-										<div class="row minh-650">
-											<div class="col-md-10">
+										<div class="row minh-650 m-0">
+											<div class="col-md-11 p-0 pl-45 pr-45">
 
 												<div
-													class="theme_dotted_border_bottom  shadow-bottom  py-4 mx-4">
-													<div class="row justify-content-between">
-														<div class="col-md-6 f-18 font-weight-bold greyish-brown text-truncate" title="Globex Corporation. Inc.">
-															Globex Corporation. Inc.</div>
+													class="theme_dotted_border_bottom pt-15 pb-20 shadow-bottom  ">
+													<div class="row  m-0 pb-10 align-items-center">
+														<div class="col-md-6 p-0 ">
+
+															<div
+																class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Globex Corporation. Inc.">Globex
+																Corporation. Inc.</div>
+														</div>
 														<div
-															class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
+															class="col-md-6 p-0 text-right"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
-															View More <i
-																class="fas fa-chevron-circle-right ml-1 pr-2"></i>
+															<div class="f-14 font-weight-bold  theme_color cursor-pointer" >View More <i
+																class="fas fa-chevron-circle-right ml-1 pr-2"></i></div>
 														</div>
 													</div>
-													<div class="row align-items-center py-2">
-														<div class="col-md-2">
+													<div class="row align-items-center m-0">
+														<div class="col-md-2 p-0">
 															<div class="f-14 brownish-grey">Contact Person</div>
-															<div class="f-16 fw-500 black  text-truncate" title="Rosemary Garcia">Rosemary Garcia</div>
+															<div class="f-16 fw-500 black  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Rosemary Garcia">Rosemary Garcia</div>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-2 p-0">
 															<div class="f-14 brownish-grey">Agent</div>
-															<div class="f-16 fw-500 black  text-truncate" title="Marry Vasquez">Marry Vasquez</div>
+															<div class="f-16 fw-500 black  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Marry Vasquez">Marry Vasquez</div>
 														</div>
-														<div class="col-md-5"></div>
-														<div class="col-md-3 d-flex justify-content-end">
+												
+														<div class="col-md-8 p-0 d-flex justify-content-end">
 															<button
-																class="btn btn-join f-12 font-weight-bold mr-2 istar-btn-hover">JOIN
+																class="btn btn-join f-12 font-weight-bold mr-10 istar-btn-hover">JOIN
 																NOW</button>
 															<button class="btn btn-listen f-12 font-weight-bold">LISTEN</button>
 														</div>
 													</div>
 												</div>
 
-												<div class="theme_dashed_border_bottom py-4 mx-4">
-													<div class="row">
-														<div class="col-md-3 border-right-dashed-separation ">
+												<div class="theme_dashed_border_bottom pb-30 pt-30">
+													<div class="row m-0">
+														<div class="col-md-3 p-0 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black ">Call</div>
 														</div>
-														<div class="col-md-3 border-right-dashed-separation ">
+														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Initiated At</div>
 															<div class="f-16  fw-500 black ">11:00 AM</div>
 														</div>
-														<div class="col-md-3 border-right-dashed-separation ">
+														<div class="col-md-3 p-0 border-right-dashed-separation pl-15 ">
 															<div class="brownish-grey f-14">Deal Value</div>
 															<div class="f-16  fw-500 black ">$500</div>
 														</div>
-														<div class="col-md-3">
+														<div class="col-md-3 p-0 pl-15">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
-															<div class="f-16  fw-500 black text-truncate" title="Stage 02">Stage 02</div>
+															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -420,58 +426,61 @@
 
 
 
-											<div class="col-md-2 pr-0">
+											<div class="col-md-1 p-0">
+												<div class=" dropleft" >
+													<button type="button"
+														class="btn btn-secondary dropdown-toggle"
+														data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false" style="display:none" id="taskcontentmenu">Dropleft</button>
+													<div class="dropdown-menu taskdropdownmenu" aria-labelledby="taskcontentmenu">
+														<!-- Dropdown menu links -->
+													</div>
+												</div>
 												<ul
-													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
-													<li class="  dropleft  list-group-item p-0 py-3">
+													class="list-group shadow d-flex flex-column h-100  taskpopup">
+													
+													
+													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															>
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
-															<div class="dropdown-menu notespopupdropdown pt-0"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class=" dropleft list-group-item p-0 py-3">
+													<li class=" cuesdropdown list-group-item p-0 py-3">
 														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															>
 															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
-															<div class="dropdown-menu cuespopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class="dropleft list-group-item p-0 py-3">
+													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															>
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
-															<div class="dropdown-menu crmpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class="dropleft list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															>
 															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
-															<div class="dropdown-menu chatpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
-														style="height: calc(100% - 80px);"></li>
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
+														></li>
 
 
 												</ul>
@@ -579,14 +588,14 @@
 										<div class="row align-items-center minh-100 px-4">
 											<div class="col-md-9 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
-												<div class="f-16 fw-500 black text-truncate" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
+												<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
 											</div>
 											<div class="col-md-3">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg"  alt="task-icon"
 														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg" alt="task-image" title="Agent Name"
+														src="<%=baseURL%>assets/image/37.jpg" alt="task-image" data-toggle="tooltip" data-placement="bottom" title="Agent Name"
 														class="rounded-circle hw-40 task-image" />
 												</div>
 											</div>
@@ -601,7 +610,7 @@
 							</div>
 
 
-							<div class="col-md-9 bg-white">
+							<div class="col-md-9 bg-white p-0">
 								<div class="tab-content" id="taskdetail-tab-listContent">
 									<%
 										for (int i = 4; i < 7; i++) {
@@ -614,12 +623,12 @@
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
 										<div class="row ">
-											<div class="col-md-10">
+											<div class="col-md-10 p-0">
 
 												<div
 													class="shadow-bottom  theme_dotted_border_bottom py-4 mx-4">
 													<div class="row justify-content-between ">
-														<div class="col-md-4 f-18 font-weight-bold greyish-brown text-truncate" title="Opentech Pvt. Ltd.">
+														<div class="col-md-4 f-18 font-weight-bold greyish-brown text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">
 															Opentech Pvt. Ltd.</div>
 														<div
 															class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
@@ -631,11 +640,11 @@
 													<div class="row align-items-center py-2">
 														<div class="col-md-2">
 															<div class="f-14 brownish-grey">Contact Person</div>
-															<div class="f-16 fw-500 black text-truncate" title="Deann Harper">Deann Harper</div>
+															<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Deann Harper">Deann Harper</div>
 														</div>
 														<div class="col-md-2">
 															<div class="f-14 brownish-grey">Agent</div>
-															<div class="f-16  fw-500 black text-truncate" title="Bradley Obrien">Bradley Obrien</div>
+															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Bradley Obrien">Bradley Obrien</div>
 														</div>
 														<div class="col-md-5"></div>
 														<div class="col-md-3 d-flex justify-content-end">
@@ -664,7 +673,7 @@
 														</div>
 														<div class="col-md-3">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
-															<div class="f-16  fw-500 black text-truncate" title="Stage 02">Stage 02</div>
+															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -850,7 +859,7 @@
 													<div
 														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16  fw-500 black text-truncate" title="Globex Corporation">Globex Corporation
+												<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Globex Corporation
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>

@@ -7,7 +7,7 @@
 											<div class="col-md-10 p-0">
 												<div class="row p-2 pt-4 justify-content-between mx-4">
 													<div class="col-9">
-														<p class="greyish-brown f-18 mb-2 font-weight-bold text-truncate" title="Globex Corporation">Globex Corporation Inc.</p>
+														<p class="greyish-brown f-18 mb-2 font-weight-bold text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Globex Corporation Inc.</p>
 													</div>
 													<div class="col-3 p-0">
 														<div class="d-flex justify-content-end">
@@ -25,11 +25,11 @@
 													
 													<div class="col-md-3">
 														<p class="brownish-grey f-14 mb-0">Contact Person</p>
-														<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation">Robert Wolken</p>
+														<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Robert Wolken</p>
 													</div>
 													<div class="col-md-3 ">
 														<p class="brownish-grey f-14 mb-0">Agent</p>
-														<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation">Marilyn Fowler</p>
+														<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Marilyn Fowler</p>
 													</div>
 
 												</div>
@@ -73,7 +73,7 @@
 													<div class="col d-flex flex-row justify-content-center">
 
 														<div class="d-flex flex-row align-items-center mr-5">
-															<img src="<%=baseURL%>assets/image/man.jpg" alt="person" title="Lead Name"
+															<img src="<%=baseURL%>assets/image/man.jpg" alt="person"  data-toggle="tooltip" data-placement="bottom"  title="Lead Name"
 																class="rounded-circle hw-60 task-image-right"> <img
 																src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 																class="rounded-circle hw-40 task-icon">
@@ -90,7 +90,7 @@
 															<i class="fas fa-forward"></i>
 														</button>
 														<div class="d-flex flex-row align-items-center">
-															<img src="<%=baseURL%>assets/image/layer.png" alt="layer" title="Agent Name"
+															<img src="<%=baseURL%>assets/image/layer.png" alt="layer" data-toggle="tooltip" data-placement="bottom" title="Agent Name"
 																class="rounded-circle hw-60 task-image-right"> <img alt="call"  
 																src="<%=baseURL%>assets/image/calltask.svg"
 																class="rounded-circle hw-40 task-icon">

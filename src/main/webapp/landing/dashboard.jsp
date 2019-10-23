@@ -107,7 +107,7 @@
 
 
 		<!-- Start of row in main dashboard. This row divided into three major UI column -->
-		<div class="row mb-5">
+		<div class="row ">
 			<!-- Start of left container/first column of dashboard  -->
 			<div class="col-md-3 pr-0 left_container pl-0 bg-white">
 				<!-- start of To do list & Notes Tabs -->

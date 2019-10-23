@@ -18,19 +18,63 @@ $( document ).ready(function() {
     }); 
     
     /* start of task notes,cues,crm,chat dropdown */
-    $.get( "../popover/notescontent.jsp", function( data ) {
-  	  $( ".notespopupdropdown" ).html( data );
-  	});
-    $.get( "../popover/cuescontent.jsp", function( data ) {
-  	  $( ".cuespopoverdropdown" ).html( data );
-  	});
-  $.get( "../popover/crmcontent.jsp", function( data ) {
-  	  $( ".crmpopoverdropdown" ).html( data );
-  	});
-  $.get( "../popover/chatcontent.jsp", function( data ) {
-  	  $( ".chatpopoverdropdown" ).html( data );
-  	});
-	
+   
+    $('.notesdropdown').click(function(){
+    	closeNotes();
+    	closeCues();
+    	closeCRM();
+    	closeChat();
+    	$(this).addClass('show');
+
+    	 $.get( "../popover/notescontent.jsp", function( data ) {
+    		 $( ".taskdropdownmenu" ).html( data );
+    	  	$('#taskcontentmenu').dropdown('show')	
+    	  	});
+    	
+    })
+    
+    $('.cuesdropdown').click(function(){
+    	closeNotes();
+    	closeCues();
+    	closeCRM();
+    	closeChat();
+	  	 $(this).addClass('show');
+
+    	 $.get( "../popover/cuescontent.jsp", function( data ) {
+    		 $( ".taskdropdownmenu" ).html( data );
+    	  	$('#taskcontentmenu').dropdown('show')	
+    	  	});
+    	
+    });
+    $('.crmdropdown').click(function(){
+    	closeNotes();
+    	closeCues();
+    	closeCRM();
+    	closeChat();
+    	$(this).addClass('show');
+
+   	 $.get( "../popover/crmcontent.jsp", function( data ) {
+   		 $( ".taskdropdownmenu" ).html( data );
+   	  	$('#taskcontentmenu').dropdown('show')	
+   	  	});
+   	
+   });
+   
+    $('.chatdropdown').click(function(){
+    	closeNotes();
+    	closeCues();
+    	closeCRM();
+    	closeChat();
+    	$(this).addClass('show');
+
+  	 $.get( "../popover/chatcontent.jsp", function( data ) {
+  		 $( ".taskdropdownmenu" ).html( data );
+  	  	$('#taskcontentmenu').dropdown('show')	
+  	  	});
+  	
+  });
+  
+    
 	/* End of task notes,cues,crm,chat dropdown */
 	
 	
@@ -123,4 +167,20 @@ jQuery.validator.setDefaults({
 	console.log(error)
 }
 });
+function closeNotes(){
+	$('.notesdropdown').removeClass('show');
+  	$('#taskcontentmenu').dropdown('hide')	
+}
+function closeCues(){
+	$('.cuesdropdown').removeClass('show');
+  	$('#taskcontentmenu').dropdown('hide')	
+}
+function closeCRM(){
+	$('.crmdropdown').removeClass('show');
+  	$('#taskcontentmenu').dropdown('hide')	
+}
 
+function closeChat(){
+	$('.chatdropdown').removeClass('show');
+  	$('#taskcontentmenu').dropdown('hide')	
+}
