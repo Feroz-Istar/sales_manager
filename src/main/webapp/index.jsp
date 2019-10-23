@@ -36,6 +36,7 @@
 				class="col-md-5 d-flex justify-content-end h-100 align-items-center">
 				<div class="card  pr-115 border-0  shadow_right">
 					<div class="card-body p-0 ">
+					<div class="pl-25 pr-25">
 						<div style="text-align: center" class="pb-10">
 
 							<button class="rounded-circle tea border-0 tick_icon">
@@ -46,7 +47,7 @@
 							Password has been generated !</p>
 						<p class="mb-0 brown-grey f-14 text-center pb-70">You can now login to
 							Salesken</p>
-
+</div>
 					
 							<img class=" text-center saleskenlogo" alt="salesken_logo"
 		src="<%=baseURL%>assets/image/nav_icon.png" />

@@ -29,8 +29,66 @@
 <body class="bg-white">
 	<!--------------------------------------------- Opening of container ------------------------------------------------------>
 	<div class="container h-100">
+<div class="row h-100  ">
+			<div
+				class="col-md-5 d-flex justify-content-end h-100 align-items-center">
+				<div class="card  pr-115 border-0  shadow_right">
+					<div class="card-body p-0 ">
+				
+					
+							<img class=" text-center saleskenlogo" alt="salesken_logo"
+		src="<%=baseURL%>assets/image/nav_icon.png" />
 
-		<!--  start of main row of page  -->
+
+						<form class="pt-30 pb-30">
+							<div class="form-group pb-30 mb-0">
+								<label class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+									for="email">Email address</label> <input type="email"
+									class="form-control f-14 rounded-0 input_wh istar-form-control" name="email"
+									id="email" aria-describedby="emailHelp"
+									placeholder="Email ">
+
+							</div>
+							<div class="form-group position-relative  pb-30 mb-0">
+								<label class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+									for="password">Password</label> <input
+									type="password" class="form-control f-14 rounded-0 input_wh istar-form-control"
+									id="password" placeholder="Password">
+										<button type="button" class="btn eye_icon confirm_password">
+							<i class="far fa-eye"></i>
+						</button>
+							</div>
+					<div class="form-group position-relative pb-40 mb-0">
+								<label class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+									for="password">Confirm Password</label> <input
+									type="password" class="form-control f-14 rounded-0 input_wh istar-form-control"
+									id="password" placeholder="Password">
+									<button type="button" class="btn eye_icon confirm_password">
+							<i class="far fa-eye"></i>
+						</button>
+							</div>
+							<button type="button"
+								class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  login_button"
+								style="">GENERATE PASSWORD</button>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-7   h-100 d-flex align-items-center">
+				<div>
+					<p class="black f-24 mb-0 pb-10">See What Works, What Doesn’t &</p>
+
+					<h1 class=" f-38 pb-30 mb-0	fw-900">Help your
+						Reps Sell Better</h1>
+					<p class="brown-grey f-16 mb-0 pb-90" style="max-width: 433px;"">Lorem
+						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+						nibh lobortis, vehicula lorem at.</p>
+					<img class="login_background" alt="login_background"
+						src="<%=baseURL%>assets/image/login_background.svg" />
+				</div>
+			</div>
+		</div>
+	<%-- 	<!--  start of main row of page  -->
 		<div class="row align-items-center h-100">
 
 
@@ -99,7 +157,7 @@
 			</div>
 			<!--  end of right column of row which contains login background image and heading  -->
 
-		</div>
+		</div> --%>
 		<!--  end of main row of page  -->
 
 	</div>
