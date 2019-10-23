@@ -446,7 +446,7 @@
 		});
 		/* end of rating bar js code */
 		
-		 $.get(location.origin+'/tabcontent/userCallTaskModal.jsp', function( data ) {
+		 $.get(location.origin+'/tabcontent/completedCallTaskModal.jsp', function( data ) {
         
 			var tabid= $('#taskdetail-tab-list>.nav-link').attr('href').replace('#','')
         	$('#'+tabid).html(data);
@@ -459,15 +459,15 @@
 			
 	    	switch($(e.target).data('task_type')){
 	    	case 'call':
-		    	  url=url+ '/tabcontent/userCallTaskModal.jsp';
+		    	  url=url+ '/tabcontent/completedCallTaskModal.jsp';
 		    	  break;
 	    	case 'email':
-	    		url=url+ '/tabcontent/userEmailTaskModal.jsp';
+	    		url=url+ '/tabcontent/completedEmailTaskModal.jsp';
 		    	  break;
 	    	case 'webinar':
-	    		url=url+ '/tabcontent/userWebinarTaskModal.jsp';
+	    		url=url+ '/tabcontent/completedWebinarTaskModal.jsp';
 		    	  break;
-		    default: url=url+ '/tabcontent/userCallTaskModal.jsp';
+		    default: url=url+ '/tabcontent/completedCallTaskModal.jsp';
 	    			 break;
 	    	}
 	    	
