@@ -101,7 +101,8 @@
 									<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="targetSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Source Type
+											<span class="sr-only">Toggle Dropdown</span>Filter by Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="targetSourceType">
@@ -119,7 +120,8 @@
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										Activities <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 									</button>
 									<div
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
@@ -146,7 +148,9 @@
 										<button
 											class="dropdown-icon-btn custom-result-selects text-left"
 											id="target_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											Filter by User
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="target_dropdown" style="width:350px">
@@ -320,8 +324,7 @@
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 												aria-labelledby="dropdownMenuButton">
 												
-												<button class="dropdown-item" data-toggle="modal"
-													data-target="#editLeadModalCenter">
+												<button class="dropdown-item" onclick="openEditModal()">
 													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 														srcset="" class="mr-2">Edit
 												</button>
@@ -373,7 +376,9 @@
 									<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedDealValue" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Deal Value
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="qualifiedDealValue">
@@ -386,7 +391,9 @@
 							 		<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedStage" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Stages
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="qualifiedStage">
@@ -398,7 +405,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Source Type
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="qualifiedSourceType">
@@ -412,7 +421,9 @@
 										<button
 											class="dropdown-icon-btn custom-result-selects text-left"
 											id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											Filter by User
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="qualified_dropdown" style="width:350px">
 													
@@ -591,18 +602,15 @@
 											<div
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 												aria-labelledby="dropdownMenuButton">
-												<button class="dropdown-item"  data-toggle="modal"
-													data-target="#wonLeadModalCenter">
+												<button class="dropdown-item"  onclick="openWonModal()">
 													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
 														srcset="" class="mr-2"> Won
 												</button>
-												<button class="dropdown-item" data-toggle="modal"
-													data-target="#lostLeadModalCenter">
+												<button class="dropdown-item"  onclick="openLostModal()">
 													<img src="<%=baseURL%>assets/image/lost.svg" alt="lost"
 														srcset="" class="mr-2">Lose
 												</button>
-												<button class="dropdown-item" data-toggle="modal"
-													data-target="#editLeadModalCenter">
+												<button class="dropdown-item" onclick="openEditModal()">
 													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 														srcset="" class="mr-2">Edit
 												</button>
@@ -653,7 +661,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostCauses" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Causes
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Causes <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="lostCauses">
@@ -666,7 +676,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostDealValue" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Deal Value
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="lostDealValue">
@@ -679,7 +691,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostStages" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Stages
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="lostStages">
@@ -691,7 +705,9 @@
 								 <div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Source Type
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="lostSourceType">
@@ -705,7 +721,9 @@
 										<button
 											class="dropdown-icon-btn custom-result-selects text-left"
 											id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											Filter by User
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="lost_dropdown" style="width:350px">
 													
@@ -887,8 +905,7 @@
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 												aria-labelledby="dropdownMenuButton">
 												
-												<button class="dropdown-item" data-toggle="modal"
-													data-target="#editLeadModalCenter">
+												<button class="dropdown-item" onclick="openEditModal()">
 													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 														srcset="" class="mr-2">Edit
 												</button>
@@ -940,7 +957,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonCauses" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Causes
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Causes <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="wonCauses">
@@ -953,7 +972,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonDealValue" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Deal Value
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="wonDealValue">
@@ -966,7 +987,9 @@
 								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonStages" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Stages
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="wonStages">
@@ -978,7 +1001,9 @@
 								 <div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											Filter by Source Type
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
 											aria-labelledby="wonSourceType">
@@ -993,9 +1018,11 @@
 										<button
 											class="dropdown-icon-btn custom-result-selects text-left"
 											id="won_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											Filter by User
+											<span class="sr-only">Toggle Dropdown</span> Filter by
+										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="won_dropdown" style="width:350px">
+										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="won_dropdown" style="width:350px">
 													
 												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="wonTab" role="tablist">
 												  <li class="nav-item">
@@ -1177,8 +1204,7 @@
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
 												aria-labelledby="dropdownMenuButton">
 												
-												<button class="dropdown-item" data-toggle="modal"
-													data-target="#editLeadModalCenter">
+												<button class="dropdown-item" onclick="openEditModal()">
 													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
 														srcset="" class="mr-2">Edit
 												</button>
@@ -1228,7 +1254,7 @@
 							id="lostLeadModalCenterTitle">Lost Lead</div>
 						<button type="button" class="col-md-1 col-1 close"
 							data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
+							<img src="<%=baseURL%>assets/image/close.svg" alt="close">
 						</button>
 					</div>
 					<div class="modal-body">
@@ -1319,7 +1345,7 @@
 							</div>
 							<button type="button" class="col-md-1 col-1 close"
 								data-dismiss="modal" aria-label="Close">
-								<span aria-hidden="true">&times;</span>
+								<img src="<%=baseURL%>assets/image/close.svg" alt="close">
 							</button>
 						</div>
 
@@ -1428,7 +1454,7 @@
 							id="wonLeadModalCenterTitle">Won Lead</div>
 						<button type="button" class="col-md-1 col-1 close"
 							data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
+							<img src="<%=baseURL%>assets/image/close.svg" alt="close">
 						</button>
 					</div>
 					<div class="modal-body">
@@ -1483,7 +1509,7 @@
 		    	<div class="row shadow-sm p-3" > 
 					<div class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold" id="editLeadModalCenterTitle">Edit Lead</div>
 					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">&times;</span>
+						<img src="<%=baseURL%>assets/image/close.svg" alt="close">
 					</button>
 				</div>
 		      <div class="modal-body">
@@ -1577,6 +1603,16 @@
 		    
 		});
 	});
+	
+	function openEditModal(){
+		$('#editLeadModalCenter').modal('show');
+	}
+	function openLostModal(){
+		$('#lostLeadModalCenter').modal('show');
+	}
+	function openWonModal(){
+		$('#wonLeadModalCenter').modal('show');
+	}
 	</script>
 	<script>
 	
