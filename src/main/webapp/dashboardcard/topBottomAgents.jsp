@@ -3,13 +3,13 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	%>
-<div class="card shadow rounded-0" style="min-height: 505px;">
-					<div class="card-body agent">
+<div class="card shadow rounded-0">
+					<div class="card-body p-0  agent" >
 					<div class="position-relative">
-						<button type="button" class="istar-btn-icon istar-square"  id="show-bottom" style="right: 50px; position: absolute;">
+						<button type="button" class="istar-btn-icon istar-square"  id="show-bottom" style="right: 68px;position: absolute;top: 28px;">
 			                 <i class="fas fa-chevron-left"></i>
 			             </button>
-			             <button type="button" class="istar-btn-icon istar-square active ml-2"   id="show-top" style="right: 10px; position: absolute;">
+			             <button type="button" class="istar-btn-icon istar-square active ml-2"   id="show-top" style="right: 31px;position: absolute;top: 28px;">
 			                 <i class="fas fa-chevron-right"></i>
 			             </button>
 					
@@ -18,11 +18,12 @@
 						if(j==1){
 							listType = "Top 5 Agents";
 						}%>
-					<div class="bottom-top">
-						<div class="row mb-3 px-3">
-							<div class="col-md-6 font-weight-bold f-18"><%=listType%></div>
+					<div class="bottom-top p-0 m-0 ">
+						<div class="row m-0 pt-30 pl-30 pr-30 pb-10">
+							<div class="col-md-6  p-0 font-weight-bold f-18"><%=listType%></div>
 							
-						</div>
+						</div> 
+						<div class="agent_container pb-30">
 						<%
 							for (int k = 0; k < 5; k++) {
 								String color = "#ffffff";
@@ -30,9 +31,9 @@
 									color = "#f9f9f9";
 								}
 						%>
-						<div class="row align-items-center separation-bottom py-4 px-3"
+						<div class="row align-items-center separation-bottom m-0 pt-20 pb-20 pl-30 pr-30"
 							style="background: <%=color%>">
-							<div class="col-md-4 col-6">
+							<div class="col-md-4 col-6 p-0	">
 								<div class="d-flex flex-row">
 									<img class="mr-2" style="height: 40px; width: 40px" title="Stanley Howar" alt="associate"
 										src="<%=baseURL%>assets/image/37.jpg" />
@@ -42,15 +43,15 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-md-8 col-6">
-								<div class="row">
-								<div class="col-md-4 f-14">
+							<div class="col-md-8 col-6 p-0">
+								<div class="row m-0 p-0">
+								<div class="col-md-4 f-14 p-0">
 										<strong>$ 20</strong> - Deal Value
-									</div>
-									<div class="col-md-4 f-14">
+									</div> 
+									<div class="col-md-4 f-14 p-0">
 										<strong>12%</strong> - Lead Wins
 									</div>
-									<div class="col-md-4 f-14">
+									<div class="col-md-4 f-14 p-0">
 										<strong>15%</strong> - Utilisation
 									</div>
 									
@@ -61,6 +62,7 @@
 						<%
 							}
 						%>
+						</div>
 					</div>
 					<%} %>
 					</div>

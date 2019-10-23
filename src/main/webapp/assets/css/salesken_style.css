@@ -112,8 +112,8 @@ html, body {
 
 /* start of square buttons with icon only */
 .istar-btn-icon {
-	width: 30px;
-	height: 30px;
+	width: 29px;
+	height: 29px;
 	background: #f9f9f9;
 	display: flex;
 	align-items: center;
@@ -1301,6 +1301,8 @@ padding: 25px !important;
 .p-30{
 padding: 30px !important;
 }
+
+
 
 .pl-40{
 	padding-left: 40px !important;
