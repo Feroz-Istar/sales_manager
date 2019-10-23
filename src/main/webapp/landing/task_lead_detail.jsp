@@ -325,7 +325,7 @@
 	$( document ).ready(function() {
 		$('.salesken.navbar-nav>li').removeClass('active');
 			    
-	    $.get(location.origin+'/tabcontent/leadCallTaskModal.jsp', function( data ) {
+	    $.get(location.origin+'/tabcontent/completedCallTaskModal.jsp', function( data ) {
         
 			var tabid= $('#taskdetail-tab-list>.nav-link').attr('href').replace('#','')
         	$('#'+tabid).html(data);
@@ -338,15 +338,15 @@
 			
 	    	switch($(e.target).data('task_type')){
 	    	case 'call':
-		    	  url=url+ '/tabcontent/leadCallTaskModal.jsp';
+		    	  url=url+ '/tabcontent/completedCallTaskModal.jsp';
 		    	  break;
 	    	case 'email':
-	    		url=url+ '/tabcontent/leadEmailTaskModal.jsp';
+	    		url=url+ '/tabcontent/completedEmailTaskModal.jsp';
 		    	  break;
 	    	case 'webinar':
-	    		url=url+ '/tabcontent/leadWebinarTaskModal.jsp';
+	    		url=url+ '/tabcontent/completedWebinarTaskModal.jsp';
 		    	  break;
-		    default: url=url+ '/tabcontent/leadCallTaskModal.jsp';
+		    default: url=url+ '/tabcontent/completedCallTaskModal.jsp';
 	    			 break;
 	    	}
 	    	
