@@ -98,13 +98,13 @@
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 
-									<div class="istar-dropdown-task border-0">
+									<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="targetSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Source Type
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="targetSourceType">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
@@ -144,10 +144,11 @@
 								</div>
 											<div class="dropdown dropleft" id="filterbutton">
 										<button
-											class="filter-btn"
+											class="dropdown-icon-btn custom-result-selects text-left"
 											id="target_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<i class="fas fa-filter filtericon"></i>
+											Filter by User
 										</button>
+										
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="target_dropdown" style="width:350px">
 												
 												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="targetTab" role="tablist">
@@ -369,38 +370,38 @@
 										<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"/>
 									</div>
 								</div>
-									<div class="istar-dropdown-task border-0">
+									<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedDealValue" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Deal Value
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="qualifiedDealValue">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
 									
-							 		<div class="istar-dropdown-task border-0">
+							 		<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedStage" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Stages
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="qualifiedStage">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Source Type
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="qualifiedSourceType">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
@@ -409,9 +410,9 @@
 
 									<div class="dropdown dropleft" id="filterbutton">
 										<button
-											class="filter-btn"
+											class="dropdown-icon-btn custom-result-selects text-left"
 											id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<i class="fas fa-filter filtericon"></i>
+											Filter by User
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="qualified_dropdown" style="width:350px">
 													
@@ -649,51 +650,51 @@
 									</div>
 								</div>
 								
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostCauses" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Causes
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="lostCauses">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
 								
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostDealValue" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Deal Value
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="lostDealValue">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
 									
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostStages" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Stages
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="lostStages">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
-								 <div class="istar-dropdown-task border-0">
+								 <div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Source Type
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="lostSourceType">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
@@ -702,9 +703,9 @@
 
 								<div class="dropdown dropleft" id="filterbutton">
 										<button
-											class="filter-btn"
+											class="dropdown-icon-btn custom-result-selects text-left"
 											id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<i class="fas fa-filter filtericon"></i>
+											Filter by User
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="lost_dropdown" style="width:350px">
 													
@@ -936,51 +937,51 @@
 										<img src="<%=baseURL%>/assets/image/calendar.svg"/>
 									</div>
 								</div>
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonCauses" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Causes
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="wonCauses">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
 								
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonDealValue" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Deal Value
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="wonDealValue">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
 									
-								<div class="istar-dropdown-task border-0">
+								<div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonStages" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Stages
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="wonStages">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
 										</div>
 									</div>
-								 <div class="istar-dropdown-task border-0">
+								 <div class="istar-dropdown-task border-0 mr-2">
 										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonSourceType" 
 												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 											Filter by Source Type
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="todolist">
+											aria-labelledby="wonSourceType">
 											<button class="dropdown-item" type="button">Manual</button>
 											<button class="dropdown-item" type="button">Offline</button>
 											<button class="dropdown-item" type="button">Outbound</button>
@@ -988,10 +989,11 @@
 									</div>
 
 								<div class="dropdown dropleft" id="filterbutton">
+										
 										<button
-											class="filter-btn"
+											class="dropdown-icon-btn custom-result-selects text-left"
 											id="won_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<i class="fas fa-filter filtericon"></i>
+											Filter by User
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="won_dropdown" style="width:350px">
 													
