@@ -63,7 +63,7 @@
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
-				<button class="btn btn-style f-12 ml-10" data-toggle="modal"
+				<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold ml-10" data-toggle="modal"
 					data-target="#addLeadModalCenter">UPLOAD NEW</button>
 			</div>
 		</div>
