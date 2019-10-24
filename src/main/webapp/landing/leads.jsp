@@ -47,31 +47,31 @@
 	
 	
 		<div
-			class="row grey-white-bg theme_solid_border_bottom align-items-center py-3 px-4">
-			<div class="col-md-6 col-12 d-flex align-items-center">
-				<div class="display-1 black f-20 border-right-separation pr-3 fw-500 ">Leads</div>
-				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
+			class="row grey-white-bg theme_solid_border_bottom align-items-center  m-0 pl-40 pr-40 pt-10 pb-10">
+			<div class="col-md-6 col-12 d-flex align-items-center p-0">
+				<div class="display-1 black f-20 border-right-separation fw-500 pr-20">Leads</div>
+				<div class="f-12 brown-grey pl-20">Dashboard</div>
+				<i class="fas fa-chevron-circle-right f-12 brown-grey pl-2 pr-2"></i>
 				<div class=" f-12 brown-grey fw-500" id="breadcrumb">Leads</div>
 
 			</div>
-			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end ">
-				<div class="input-group position-relative pl-2 pr-2 search_width">
+			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0">
+				<div class="input-group position-relative search_width ">
 				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
 					<input id=""
 						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
-				<button class="btn btn-style f-12" data-toggle="modal"
+				<button class="btn btn-style f-12 ml-10" data-toggle="modal"
 					data-target="#addLeadModalCenter">UPLOAD NEW</button>
 			</div>
 		</div>
 
 
-		<div class="row mb-5">
-			<div class="col-md-12 bg-white ">
-				<ul class="nav nav-tabs nav-mytabs  pt-2 mx-4" id="reportTab" role="tablist">
+		<div class="row m-0">
+			<div class="col-md-12 bg-white p-0 pt-10">
+				<ul class="nav nav-tabs nav-mytabs pl-40 pr-40" id="reportTab" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active" id="nav-target-tab"
 							data-toggle="tab" href="#nav-target" role="tab"
 							aria-controls="nav-target" aria-selected="true">Target</a></li>
@@ -92,11 +92,11 @@
 						<!-- start of target content -->
 
 						<div
-							class="row align-items-center bg-white   theme_solid_border_bottom pt-3 pb-3 px-4">
-							<div class="col-md-3 text-result-found	">
-								<strong class="number-of-results">504</strong> Results Found
+							class="row align-items-center bg-white m-0 theme_solid_border_bottom">
+							<div class="col-md-3 text-result-found p-0 pl-40 ">
+								<strong class="number-of-results ">504</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
+							<div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 
 									<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -232,46 +232,46 @@
 							</div>
 						</div>
 
-						<div class="row pl-0 py-4 shadow-bottom theme_dotted_border_bottom px-4 ">
-							<div class="col-md-2">
+						<div class="row shadow-bottom theme_dotted_border_bottom  pt-25 pb-25 m-0">
+							<div class="pl-40 pr-115 ">
 								<div class="f-24 blue-black font-weight-bold">280</div>
 								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
 							</div>
-							<div class="col-md-2">
+							<div class="pr-115">
 								<div class="f-24 blue-black font-weight-bold">156</div>
 								<div class="f-14 brown-grey font-weight-bold">Engaged lead</div>
 							</div>
-							<div class="col-md-2">
+							<div class="p-0">
 								<div class="f-24 blue-black font-weight-bold">30 Hrs</div>
 								<div class="f-14 brown-grey font-weight-bold">Average time
 									spent</div>
 							</div>
 						</div>
 
-						<div class="row align-items-center theme_solid_border_bottom py-4 px-4">
-							<div class="col-md-2 col">
+						<div class="row align-items-center theme_solid_border_bottom m-0  pl-40 pr-40 pt-25 pb-25">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
+									Company Name <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Email ID <i class="fas fa-sort brown-grey ml-2"></i>
+									Email ID <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
+									Contact No. <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col ">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Lead Source <i class="fas fa-sort brown-grey ml-2"></i>
+									Lead Source <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-4 col-12 ">
+							<div class="col-md-4 col-12 p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Agent<i class="fas fa-sort brown-grey ml-2"></i>
+									Agent<i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 						</div>
@@ -283,40 +283,40 @@
 			      			}
 						%>
 						<div
-							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
-							<div class="col-md-2 col">
+							class="row align-items-center theme_solid_border_bottom m-0 pl-40 pr-40 pt-25 pb-25 <%=bgcolor%>">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 fw-500 black text-truncate d-inline" title="Vehement Capital" data-toggle="tooltip" data-placement="bottom">Vehement Capital
 									Partners</div>
 								<div class="f-14 brownish-grey text-truncate d-table" title="Miriam Franklin"  data-toggle="tooltip" data-placement="bottom">Miriam Franklin</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col ">
+							<div class="col-md-2 col p-0 ">
 								<div class="f-14 brownish-grey text-truncate d-inline" title="Web Form" data-toggle="tooltip" data-placement="bottom">Web Form</div>
 							</div>
-							<div class="col-md-4 col-12 ">
-								<div class="row  align-items-center">
-									<div class="col-md-11">
-										<div class="row">
-											<img class="rounded-circle imgsize-40" alt="Lead Image"
+							<div class="col-md-4 col-12 p-0 ">
+								<div class="row m-0 align-items-center">
+									<div class="col-md-11  p-0">
+										<div class="row m-0">
+											<img class="rounded-circle imgsize-40 mr-10" alt="Lead Image"
 												src="<%=baseURL%>assets/image/11.png">
-											<div class="col-md-10">
+											<div class="col-md-10 p-0">
 												<div class="f-14 greyish-brown text-truncate d-inline" title="Stanley Howard"  data-toggle="tooltip" data-placement="bottom">Stanley Howard</div>
 												<div class="f-12 brown-grey text-truncate d-table" title="Team 01" data-toggle="tooltip" data-placement="bottom">Team 01</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-md-1">
+									<div class="col-md-1 p-0 text-right">
 										<div class="istar-dropdown dropleft">
-											<button class="dropdown-icon-btn " type="button"
+											<button class="dropdown-icon-btn text-right p-0 " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
@@ -346,10 +346,10 @@
 						</div>
 						<%} %>
 
-						<div class="row py-4 pb-5 px-4 ">
-							<div class="col-md-12  d-flex justify-content-end p-0">
+						<div class="row m-0 ">
+							<div class="col-md-12 d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination mb-0"></ul>
+									<ul class="salesken pagination m-0  pt-30 pb-40 pr-40"></ul>
 								</div>
 							</div>
 						</div>
@@ -362,12 +362,12 @@
 						<!-- start of qualified tab content-->
 
 						<div
-							class="row align-items-center theme_solid_border_bottom py-3 px-4">
-							<div class="col-md-3 text-result-found	">
+							class="row align-items-center theme_solid_border_bottom m-0">
+							<div class="col-md-3 text-result-found p-0 pl-40 ">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
-								<div class="input-group date custom-calendar">
+							<div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40 ">
+								<div class="input-group date custom-calendar mr-10">
 									<input type="text" id="lead_qualified_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1"
@@ -517,50 +517,50 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 theme_dotted_border_bottom shadow-bottom px-4">
-							<div class="col-md-2">
+						<div class="row theme_dotted_border_bottom shadow-bottom m-0  pt-25 pb-25">
+							<div class="pr-115 pl-40 p-0">
 								<div class="f-24 blue-black font-weight-bold">120</div>
 								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
 							</div>
-							<div class="col-md-2">
+							<div class="pr-115 p-0">
 								<div class="f-24 blue-black font-weight-bold">56</div>
 								<div class="f-14 brown-grey font-weight-bold">Engaged lead</div>
 							</div>
-							<div class="col-md-2">
+							<div class="pr-115 p-0">
 								<div class="f-24 blue-black font-weight-bold">25 Hrs</div>
 								<div class="f-14 brown-grey font-weight-bold">Average time
 									spent</div>
 							</div>
-							<div class="col-md-2">
+							<div class="pr-115 p-0">
 								<div class="f-24 blue-black font-weight-bold">$ 8562</div>
 								<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
 							</div>
 						</div>
 
-						<div class="row align-items-center theme_solid_border_bottom py-4 px-4">
-							<div class="col-md-2 col">
+						<div class="row align-items-center theme_solid_border_bottom m-0  pl-40 pr-40 pt-25 pb-25">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
+									Company Name <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Email ID <i class="fas fa-sort brown-grey ml-2"></i>
+									Email ID <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
+									Contact No. <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col ">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
+									Recent Task <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
-							<div class="col-md-4 col-12 ">
+							<div class="col-md-4 col-12 p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Agent<i class="fas fa-sort brown-grey ml-2"></i>
+									Agent<i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 						</div>
@@ -571,35 +571,35 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}%>
 						<div
-							class="row align-items-center theme_solid_border_bottom py-4 px-4 <%=bgcolor%>">
-							<div class="col-md-2 col">
+							class="row align-items-center theme_solid_border_bottom m-0 pl-40 pr-40 pt-25 pb-25 <%=bgcolor%>">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 fw-500 black text-truncate d-inline" title="Team 01" data-toggle="tooltip" data-placement="bottom">Zencorporation
 									Pot. Ltd.</div>
 								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col d-flex align-items-center">
-								<img class="hw-24 pr-2" alt="callicon"
+							<div class="col-md-2 col d-flex align-items-center p-0">
+								<img class="hw-24 mr-10" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2  text-break">Call -</div>
+								<div class="f-14 greyish-brown pr-2 text-break">Call <span class="pl-2">-</span></div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
-							<div class="col-md-4 col-12 ">
-								<div class="row  align-items-center">
-									<div class="col-md-11">
-										<div class="row">
-											<img class="rounded-circle imgsize-40"
+							<div class="col-md-4 col-12 p-0">
+								<div class="row m-0 align-items-center">
+									<div class="col-md-11 p-0">
+										<div class="row m-0">
+											<img class="rounded-circle imgsize-40 mr-10"
 												src="<%=baseURL%>assets/image/11.png" alt="Lead Image" >
-											<div class="col-md-10">
+											<div class="col-md-10 p-0">
 												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
 												<div class="f-12 brown-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Pipeline - New Sales
 													Pipeline">Pipeline - New Sales
@@ -607,9 +607,9 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-md-1">
+									<div class="col-md-1 p-0 text-right">
 										<div class="istar-dropdown dropleft">
-											<button class="dropdown-icon-btn " type="button"
+											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
@@ -645,10 +645,10 @@
 							</div>
 						</div>
 						<%} %>
-						<div class="row py-4 pb-5 px-4 ">
+						<div class="row m-0">
 							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination mb-0"></ul>
+									<ul class="salesken pagination m-0  pt-30 pb-40 pr-40"></ul>
 								</div>
 							</div>
 						</div>
@@ -661,12 +661,12 @@
 						<!-- start of lost leads tab content-->
 
 						<div
-							class="row align-items-center  theme_solid_border_bottom py-3 px-4">
-							<div class="col-md-2 col-xl-3 text-result-found	font_text_result">
+							class="row align-items-center m-0 theme_solid_border_bottom">
+							<div class="col-md-2 col-xl-3 text-result-found	font_text_result p-0  pl-40">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-10 col-xl-9 d-md-flex justify-content-end p-0 ">
-								<div class="input-group date custom-calendar">
+							<div class="col-md-10 col-xl-9 d-md-flex justify-content-end p-0  mt-10 mb-10 pr-40">
+								<div class="input-group date custom-calendar mr-10">
 									<input type="text" id="lead_lost_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1" onclick="showlostCalendar()">
@@ -834,20 +834,20 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom px-4 theme_dotted_border_bottom">
+						<div class="row shadow-bottom m-0 pt-25 pb-25 theme_dotted_border_bottom">
 
-							<div class="col-md-2">
+							<div class="pr-115 pl-40  p-0">
 								<div class="f-24 blue-black font-weight-bold">$ 8562</div>
 								<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
 							</div>
 
-							<div class="col-md-2">
+							<div class="pr-115  p-0">
 								<div class="f-24 blue-black font-weight-bold">25 Hrs</div>
 								<div class="f-14 brown-grey font-weight-bold">Average time
 									spent</div>
 							</div>
 
-							<div class="col-md-2">
+							<div class="pr-115 p-0">
 								<div class="f-24 blue-black font-weight-bold">40%</div>
 								<div class="f-14 brown-grey font-weight-bold">Percentage
 									of loss</div>
@@ -857,30 +857,30 @@
 
 						</div>
 
-						<div class="row align-items-center theme_solid_border_bottom py-4  px-4">
-							<div class="col-md-2 col">
+						<div class="row align-items-center theme_solid_border_bottom  m-0 pl-40 pr-40 pt-25 pb-25">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
+									Company Name <i class="fas fa-sort brown-grey"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Email ID <i class="fas fa-sort brown-grey ml-2"></i>
+									Email ID <i class="fas fa-sort brown-grey"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
+									Contact No. <i class="fas fa-sort brown-grey"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col ">
+							<div class="col-md-2 col p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
+									Recent Task <i class="fas fa-sort brown-grey"></i>
 								</button>
 							</div>
-							<div class="col-md-4 col-12 ">
+							<div class="col-md-4 col-12 p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Agent<i class="fas fa-sort brown-grey ml-2"></i>
+									Agent<i class="fas fa-sort brown-grey"></i>
 								</button>
 							</div>
 						</div>
@@ -891,44 +891,44 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}%>
 						<div
-							class="row align-items-center theme_solid_border_bottom py-4  px-4 <%=bgcolor%>">
-							<div class="col-md-2 col">
+							class="row align-items-center theme_solid_border_bottom  m-0 pl-40 pr-40 pt-25 pb-25 <%=bgcolor%>">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 fw-500 black text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Vehement Capital Partners.">Vehement Capital
 									Partners.</div>
 								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col d-flex align-items-center">
-								<img class="hw-24 pr-2" alt="callicon"
+							<div class="col-md-2 col d-flex align-items-center p-0">
+								<img class="hw-24 mr-10" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2 text-break">Call -</div>
+								<div class="f-14 greyish-brown text-break pr-2">Call<span class="pl-2">-</span></div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
-							<div class="col-md-4 col-12 ">
-								<div class="row  align-items-center">
-									<div class="col-md-11">
-										<div class="row">
+							<div class="col-md-4 col-12  p-0">
+								<div class="row m-0 align-items-center">
+									<div class="col-md-11 p-0">
+										<div class="row m-0">
 											<img class="rounded-circle imgsize-40" alt="Lead Image"
 												src="<%=baseURL%>assets/image/11.png">
-											<div class="col-md-10">
+											<div class="col-md-10 p-0">
 												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
 												<div class="f-12 brown-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-md-1">
+									<div class="col-md-1  p-0 text-right">
 										<div class="istar-dropdown dropleft">
-											<button class="dropdown-icon-btn " type="button"
+											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
@@ -958,10 +958,10 @@
 							</div>
 						</div>
 						<%} %>
-						<div class="row py-4 pb-5 px-4 ">
+						<div class="row p-0 m-0">
 							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination mb-0"></ul>
+									<ul class="salesken pagination m-0 pt-30 pb-40 pr-40"></ul>
 								</div>
 							</div>
 						</div>
@@ -975,11 +975,11 @@
 						<!-- start of won leads content -->
 
 						<div
-							class="row align-items-center  theme_solid_border_bottom py-3 px-4">
-							<div class="col-md-2 text-result-found font_text_result	">
+							class="row align-items-center theme_solid_border_bottom m-0">
+							<div class="col-md-2 text-result-found font_text_result	pl-40 p-0">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-10 d-md-flex justify-content-end p-0 ">
+							<div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="lead_won_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
@@ -1147,20 +1147,20 @@
 							</div>
 						</div>
 
-						<div class="row pl-2 py-4 shadow-bottom px-4 theme_dotted_border_bottom shadow-bottom">
+						<div class="row p-0  m-0 pt-25 pb-25 shadow-bottom theme_dotted_border_bottom shadow-bottom">
 
-							<div class="col-md-2">
+							<div class="pr-115 pl-40  p-0">
 								<div class="f-24 blue-black font-weight-bold">$ 2345</div>
 								<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
 							</div>
 
-							<div class="col-md-2">
+							<div class="pr-115  p-0">
 								<div class="f-24 blue-black font-weight-bold">45 Hrs</div>
 								<div class="f-14 brown-grey font-weight-bold">Average time
 									spent</div>
 							</div>
 
-							<div class="col-md-2">
+							<div class="pr-115  p-0">
 								<div class="f-24 blue-black font-weight-bold">34%</div>
 								<div class="f-14 brown-grey font-weight-bold">Percentage
 									of Won</div>
@@ -1170,28 +1170,28 @@
 
 						</div>
 
-						<div class="row align-items-center theme_solid_border_bottom py-4 px-4">
-							<div class="col-md-2 col">
+						<div class="row align-items-center theme_solid_border_bottom p-0  m-0 pl-40 pr-40 pt-25 pb-25">
+							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col  p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Email ID <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col  p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col ">
+							<div class="col-md-2 col  p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-4 col-12 ">
+							<div class="col-md-4 col-12  p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Agent<i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
@@ -1204,46 +1204,46 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}%>
 						<div
-							class="row align-items-center theme_solid_border_bottom py-4 px-4  <%=bgcolor%>">
-							<div class="col-md-2 col">
+							class="row align-items-center theme_solid_border_bottom m-0 pl-40 pr-40 pt-25 pb-25 <%=bgcolor%>">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 fw-500 black text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Vehement Capital Partners.">Vehement Capital
 									Partners.</div>
 								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col">
+							<div class="col-md-2 col p-0">
 								<div class="f-14 brownish-grey text-break">
 									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
 								</div>
 							</div>
-							<div class="col-md-2 col ">
+							<div class="col-md-2 col p-0 ">
 							<div class="d-flex align-items-center">
-								<img class="hw-24 pr-2" alt="callicon"
+								<img class="hw-24" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2 text-break">Call -</div>
+								<div class="f-14 greyish-brown  p-0 text-break">Call -</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 								</div>
 							</div>
-							<div class="col-md-4 col-12 ">
-								<div class="row  align-items-center">
-									<div class="col-md-11">
-										<div class="row">
+							<div class="col-md-4 col-12 p-0 ">
+								<div class="row m-0 align-items-center">
+									<div class="col-md-11 p-0">
+										<div class="row m-0">
 											<img class="rounded-circle imgsize-40"  alt="Lead Image" 
 												src="<%=baseURL%>assets/image/11.png">
-											<div class="col-md-10">
+											<div class="col-md-10 p-0">
 												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
 												<div class="f-12 brown-grey  text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Pipeline - New Sales Pipeline">Pipeline - New Sales
 													Pipeline</div>
 											</div>
 										</div>
 									</div>
-									<div class="col-md-1">
+									<div class="col-md-1 p-0 text-right">
 										<div class="istar-dropdown dropleft">
-											<button class="dropdown-icon-btn " type="button"
+											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
@@ -1273,10 +1273,10 @@
 							</div>
 						</div>
 						<%} %>
-					<div class="row py-4 pb-5 px-4 ">
+					<div class="row  m-0 ">
 							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination mb-0"></ul>
+									<ul class="salesken pagination  m-0 pt-30 pb-40 pr-40"></ul>
 								</div>
 							</div>
 						</div>
