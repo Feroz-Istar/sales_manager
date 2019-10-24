@@ -4,44 +4,44 @@
 			+ request.getContextPath() + "/";
 	%>
 
-	<div class="row h-100">
-		<div class="col-md-10 p-0">
-			<div class="row pt-3 mx-2  px-2">
-				<div class="col">
-					<p class="greyish-brown f-18 font-weight-bold">Call
+	<div class="row h-100 m-0">
+		<div class="col-md-11 p-0">
+			<div class="row m-0">
+				<div class="col p-0">
+					<p class="greyish-brown f-18 font-weight-bold m-0">Call
 						Task</p>
 				</div>
 			</div>
 			
-			<div class="row  px-2 mx-2">
-				<div class="col-md-3 border-right-dashed-separation">
-					<p class="brownish-grey f-14 mb-0">Initiated At</p>
-					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
+			<div class="row m-0">
+				<div class="col-md-3 border-right-dashed-separation p-0">
+					<p class="brownish-grey f-14 m-0">Initiated At</p>
+					<p class="black f-16 fw-500 m-0">11:00 AM</p>
 				</div>
-				<div class="col-md-3 border-right-dashed-separation">
-					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" title="Stage 02">Stage 02</p>
+				<div class="col-md-3 border-right-dashed-separation p-0">
+					<p class="brownish-grey f-14 m-0">Pipeline Detail</p>
+					<p class="black f-16 fw-500 m-0 text-truncate" title="Stage 02">Stage 02</p>
 				</div>
-				<div class="col-md-3">
-					<p class="brownish-grey f-14 mb-0">Contact Person</p>
+				<div class="col-md-3 p-0">
+					<p class="brownish-grey f-14 mb-0 ">Contact Person</p>
 					<p class="black f-16 fw-500 mb-0 text-truncate" title="Robert Wolken">Robert Wolken</p>
 				</div>
-				<div class="col-md-3 text-right">
+				<div class="col-md-3 text-right p-0">
 					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#leaveTaskModal">LEAVE
 						TASK</button>
 
 				</div>
 
 			</div>
-			<div class="row pt-4 shadow-bottom  px-2  mx-2 "> 
-												<div class="col">
+			<div class="row shadow-bottom m-0"> 
+												<div class="col p-0">
 												<div class="theme_dotted_border_bottom "></div>	
 												</div>
 			</div>
-			<div class="row pt-3 px-2 mx-2 ">
-				<div class="col">
+			<div class="row m-0 ">
+				<div class="col p-0">
 					<nav>
-						<div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs"
+						<div class="nav nav-tabs nav-mytabs p-0" id="nav-tabs"
 							role="tablist">
 							<a class="nav-item nav-link show active minw-150"
 								id="whatswrong-tab" data-toggle="tab"
@@ -56,7 +56,7 @@
 								aria-controls="all" aria-selected="false">All</a>
 						</div>
 					</nav>
-					<div class="tab-content mytab-content"
+					<div class="tab-content mytab-content p-0"
 						id="nav-tasktabsContent">
 						<div class="tab-pane fade show active" id="whatswrong"
 							role="tabpanel" aria-labelledby="whatswrong-tab"></div>
@@ -70,25 +70,26 @@
 
 			</div>
 
-			<div class="row pt-2 px-3 mx-3 mb-5">
-				<div class="col d-flex flex-row justify-content-center">
+			<div class="row m-0">
+				<div class="col p-0 d-flex flex-row justify-content-center">
 
-					<div class="d-flex flex-row align-items-center mr-5">
+					<div class="d-flex flex-row align-items-center m-0">
 						<img src="<%=baseURL%>assets/image/man.jpg" alt="person"
 							class="rounded-circle hw-60 task-image-right"> <img
 							src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 							class="rounded-circle hw-40 task-icon">
 
 					</div>
-					<button class="btn  mr-1">
-						<i class="fas fa-forward"></i>
+					<button class="btn ">
+						
+						<i class="fas fa-backward"></i>
 					</button>
-					<button class="btn hw-64 shadow rounded-circle  mr-1">
+					<button class="btn hw-64 shadow rounded-circle ">
 						<i class="fas fa-play"></i>
 					</button>
 
-					<button class="btn  mr-5">
-						<i class="fas fa-backward"></i>
+					<button class="btn ">
+						<i class="fas fa-forward"></i>
 					</button>
 					<div class="d-flex flex-row align-items-center">
 						<img src="<%=baseURL%>assets/image/layer.png"  alt="layer"
@@ -100,13 +101,13 @@
 
 				</div>
 			</div>
-			<div class="row pt-4 px-2  mx-2 "> 
-												<div class="col">
+			<div class="row m-0"> 
+												<div class="col p-0">
 												<div class="theme_solid_border_top_2px"></div>	
 												</div></div>
 		<div class="row  m-0">
-												<div class="col">
-													<div class="row   theme_solid_border_2px">
+												<div class="col p-0">
+													<div class="row m-0 theme_solid_border_2px">
 													<div class="col-md-4 p-0 m-0 theme_solid_border_right_2px" >
 													<%for(int j=0;j<10;j++){ 
 														String isactive="";
@@ -117,17 +118,17 @@
 													%>
 													
 													<div class="row p-0 m-0 audioitem <%=isactive %>">
-													<div class="col-md-11 offset-md-1 p-0 ">
-													<div class="row p-0 m-0 py-3 ml-2 audioitemrow mr-2  "  style="border-bottom: 1px dashed #cccccc;">
-														<div class="col-md-6 text-center">
+													<div class="col-md-11  p-0 ">
+													<div class="row audioitemrow m-0  "  style="border-bottom: 1px dashed #cccccc;">
+														<div class="col-md-6 p-0 text-center">
 														<div class="d-flex flex-column">
-															<p class="mb-0 light_gray f-12">06 Mint</p>
-														<p class="mb-0 bblack f-16 text-break">Introduction</p>
+															<p class="m-0 light_gray f-12">06 Mint</p>
+														<p class="m-0 bblack f-16 text-break">Introduction</p>
 														</div>
 														</div>
-														<div class="col-md-6 ">
-															<div class="d-flex justify-content-end pr-3">
-															<button class="btn  mr-1 hw-45 playaudio rounded-circle">
+														<div class="col-md-6 p-0">
+															<div class="d-flex justify-content-end">
+															<button class="btn  hw-45 playaudio rounded-circle">
 															<i class="fas fa-play"></i>
 														</button>
 															</div>
@@ -141,9 +142,9 @@
 													</div>
 													<div class="col-md-8 p-0">
 
-														<div class="row  px-2  mx-2 "><div class="col">
+														<div class="row m-0"><div class="col p-0">
 														<div id="carouselExampleIndicators"
-															class="carousel slide mb-2 theme_solid_border_bottom " data-ride="carousel">
+															class="carousel slide  theme_solid_border_bottom " data-ride="carousel">
 															<ol class="carousel-indicators">
 																<li data-target="#carouselExampleIndicators"
 																	data-slide-to="0" class="active"></li>
@@ -164,14 +165,14 @@
 															
 																<div class="carousel-item  <%=isActive%>">
 																	
-																		<div class="row align-items-center  ml-3 mr-3"
+																		<div class="row align-items-center m-0"
 																		style="min-height: 170px;">
-																		<div class="col">
+																		<div class="col p-0">
 																		<div class="d-flex flex-row">
 																		
-																		<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg" alt="carousal-img">
-																		<div class="border-right-blue mr-3"></div>
-																		<p class="greyish-brown f-16  fw-500  align-self-center">Customers who responded positively in the end of a call</p>
+																		<img class="hw-94" src="<%=baseURL%>assets/image/Group 3614.svg" alt="carousal-img">
+																		<div class="border-right-blue"></div>
+																		<p class="greyish-brown f-16  fw-500 m-0 align-self-center">Customers who responded positively in the end of a call</p>
 																		</div>
 																		</div>
 																	</div>
@@ -196,19 +197,19 @@
 														</div>
 														</div>
 														</div>
-														<div class="row mx-4 px-2 pt-4" >
-															<div class="col">
-																<h3 class="black fw-500 f-16 mb-5">Transcript</h3>
-																<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
+														<div class="row m-0" >
+															<div class="col p-0">
+																<h3 class="black fw-500 f-16">Transcript</h3>
+																<div class="transcript_container " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
 																<%for(int j=0;j<20;j++){ %>
-																<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
-																	<p class="f-14 bblack">
-																		<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
+																<div class="d-flex flex-column ">
+																	<p class="f-14 bblack m-0">
+																		<small class="f-12 brown-grey">00:20.</small> Jamie
 																		Vargas
 																	</p>
 																	<div class="card shadow" style="border-radius: 1.25rem !important;" >
-																		<div class="card-body">
-																			<p class="card-text f-14">Some quick example text to
+																		<div class="card-body p-0">
+																			<p class="card-text f-14 m-0">Some quick example text to
 																				build on the card title and make up the bulk of the
 																				card's content.</p>
 																		</div>
@@ -216,14 +217,14 @@
 																</div>
 																
 																
-																<div class="d-flex flex-column pl-5 ml-5 mb-4">
+																<div class="d-flex flex-column">
 																	<p class="f-14 bblack align-self-end">
-																		<small class="f-12 brown-grey mr-2 ">00:20.</small> Jamie
+																		<small class="f-12 brown-grey ">00:20.</small> Jamie
 																		Vargas
 																	</p>
 																	<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
-																		<div class="card-body">
-																			<p class="card-text f-14">Some quick example text to
+																		<div class="card-body p-0">
+																			<p class="card-text f-14 m-0">Some quick example text to
 																				build on the card title and make up the bulk of the
 																				card's content.</p>
 																		</div>
@@ -245,7 +246,7 @@
 
 
 
-		<div class="col-md-2 pr-0">
+		<div class="col-md-1 p-0">
 												<ul
 													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
 													<li class="  dropleft  list-group-item p-0 py-3">

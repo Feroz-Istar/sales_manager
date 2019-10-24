@@ -49,20 +49,20 @@
 	<main role="main">
 	<div class="container-fluid salesken_container mb-5">
 		<div
-			class="row grey-white-bg align-items-center py-3 theme_solid_border_bottom pl-5">
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0 px-0">
-				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer"
+			class="row grey-white-bg align-items-center m-0 theme_solid_border_bottom">
+			<div class="col-md-6 col-12 d-flex align-items-center p-0">
+				<i class="fas fa-arrow-left black f-20 cursor-pointer"
 					onclick="window.location.href = 'report.jsp'"></i>
-				<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Accenture
+				<div class="display-1 black f-20 border-right-separation  fw-500">Accenture
 					Consulting Inc.</div>
-				<div class="pl-3 pr-2 f-12 brown-grey ">Path</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
+				<div class="f-12 brown-grey ">Path</div>
+				<i class="fas fa-chevron-circle-right f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Current Page</div>
 			</div>
 		</div>
-		<div class="row mb-5">
+		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 ">
-				<ul class="nav nav-tabs nav-mytabs  pt-2 px-5" id="agent-details" role="tablist">
+				<ul class="nav nav-tabs nav-mytabs p-0" id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active" id="agent-detail-tab" data-toggle="tab" href="#agent-detail" role="tab" aria-controls="nav-target" aria-selected="true">Agent Detail</a></li>
 					<li class="nav-item"><a class="nav-item nav-link" id="lead-detail-tab" data-toggle="tab" href="#lead-detail" role="tab" aria-controls="nav-qualified" aria-selected="false">Lead Detail</a></li>
 						</ul>
@@ -72,15 +72,15 @@
 
 							<!-- start of task detail content -->
 						<div
-							class="row align-items-center theme_solid_border_bottom py-3 px-5 m-0">
-							<div class="col-md-12 text-result-found	pl-0">
+							class="row align-items-center theme_solid_border_bottom m-0">
+							<div class="col-md-12 text-result-found	p-0">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 pl-4 pr-0 m-0 border-right">
+							<div class="col-md-3 p-0 border-right">
 								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
 									role="tablist" aria-orientation="vertical">
 									<%
@@ -98,15 +98,15 @@
 											}
 											
 									%>
-									<div class="nav-link rounded-0 pl-4 <%=isactive%> theme_solid_border_bottom"
+									<div class="nav-link rounded-0 p-0 <%=isactive%> theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true" data-task_type="<%=tasktype%>">
 										
 
 
-										<div class="row align-items-center minh-100">
-											<div class="col-md-3">
+										<div class="row align-items-center m-0">
+											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg" alt="callicon"
 														class="rounded-circle hw-30 task-icon"> <img
@@ -114,14 +114,14 @@
 														class="rounded-circle hw-40 task-image">
 												</div>
 											</div>
-											<div class="col-md-9">
-												<p class="soft-blue f-12 font-weight-bold mb-1">Confident</p>
-												<h1 class="black f-16 fw-500 mb-1 text-truncate" title="Robert Wolken">Marry Vasquez</h1>
-												<p class="brown-grey f-12 d-flex align-items-center mb-1">
-													<i class="tangerine fas fa-circle mr-1"
+											<div class="col-md-9 p-0">
+												<p class="soft-blue f-12 font-weight-bold m-0">Confident</p>
+												<h1 class="black f-16 fw-500 m-0 text-truncate" title="Robert Wolken">Marry Vasquez</h1>
+												<p class="brown-grey f-12 d-flex align-items-center m-0">
+													<i class="tangerine fas fa-circle m-1"
 														style="font-size: 8px;"></i>Ongoing
 												</p>
-												<p class="brown-grey f-12">June 26, 2019</p>
+												<p class="brown-grey f-12 m-0">June 26, 2019</p>
 											</div>
 											
 										</div>
@@ -135,7 +135,7 @@
 							</div>
 
 
-							<div class="col-md-9 bg-white">
+							<div class="col-md-9 p-0 bg-white">
 								<div class="tab-content h-100" id="taskdetail-tab-listContent">
 									<%
 										for (int i = 0; i < 4; i++) {
@@ -165,39 +165,39 @@
 					<div class="tab-pane fade" id="lead-detail" role="tabpanel" aria-labelledby="lead-detail-tab">
 
 						<!-- start of lead details tab -->
-						<div class="row align-items-center py-4 shadow-bottom m-0 pt-2 px-5 theme_dotted_border_bottom">
-							<div class="col-md-2 col-4 px-0">
+						<div class="row align-items-center shadow-bottom m-0 theme_dotted_border_bottom">
+							<div class="col-md-2 col-4 p-0">
 								<div class="f-24 font-weight-bold blue-black">$ 8562</div>
 								<div class="f-14 brown-grey">Deal Value</div>
 							</div>
-							<div class="col-md-2 col-4">
+							<div class="col-md-2 col-4 p-0">
 								<div class="f-24 font-weight-bold blue-black">85%</div>
 								<div class="f-14 brown-grey">Confident</div>
 							</div>
-							<div class="col-md-2 col-4">
+							<div class="col-md-2 col-4 p-0">
 								<div class="f-24 font-weight-bold blue-black">65%</div>
 								<div class="f-14 brown-grey">Tentative</div>
 							</div>
-							<div class="col-md-2 col-4">
+							<div class="col-md-2 col-4 p-0">
 								<div class="f-24 font-weight-bold blue-black">Stage 02</div>
 								<div class="f-14 brown-grey">Current Stage</div>
 							</div>
-							<div class="col-md-4 col-12">
-								<div class="row position-relative">
+							<div class="col-md-4 col-12 p-0">
+								<div class="row position-relative m-0">
 									<div class="line"></div>
-									<div class="col-md-3 text-center">
+									<div class="col-md-3 text-center p-0">
 										<i class="fas fa-check-circle  tea-color"></i>
 										<div class="brownish-grey f-14">Need</div>
 									</div>
-									<div class="col-md-3 text-center">
+									<div class="col-md-3 text-center p-0">
 										<i class="fas fa-check-circle  tea-color"></i>
 										<div class="brownish-grey f-14">Budget</div>
 									</div>
-									<div class="col-md-3 text-center">
+									<div class="col-md-3 text-center p-0">
 										<i class="fas fa-check-circle  tea-color"></i>
 										<div class="brownish-grey f-14">Authorized</div>
 									</div>
-									<div class="col-md-3 text-center">
+									<div class="col-md-3 text-center p-0">
 										<i class="fas fa-times-circle pastel-red"></i>
 										<div class="brownish-grey f-14">Urgency</div>
 									</div>
@@ -209,14 +209,14 @@
 						</div>
 						
 						<div class="row m-0">
-							<div class="col-md-8 minh-650 pl-5 pt-4">
-								<div class="d-flex  align-items-center mb-3">
+							<div class="col-md-8 minh-650 p-0">
+								<div class="d-flex  align-items-center">
 								 <div class="mr-auto  black f-16 fw-500">Information</div>
   								<div class=" bd-highlight f-16">
   									<img src="<%=baseURL%>assets/image/edit.svg" class="" alt="edit">
 								</div>
 								</div>
-								<div class="d-flex mb-3">
+								<div class="d-flex">
 									<div class="d-flex flex-column ">
 										<div class="mr-5 black f-14 font-weight-bold text-truncate" title="Robert Wolken">Robert
 											Wolken</div>
@@ -228,14 +228,14 @@
 
 									</div>
 								</div>
-								<h4 class="black f-14 mb-2 font-weight-bold">About Company</h4>
-								<p class="blue-black f-14 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-								<p class="black f-14 font-weight-bold mb-2">Contact Us</p>
-								<p class="blue-black f-14 mb-1">+91 989 989 8787    &nbsp; &nbsp; |&nbsp;&nbsp;       080 6565 5656 23</p>
-								<p class="blue-black f-14 ">www.openthech.com</p>
-								<p class="blue-black f-14" style="max-width:200px;">2nd Floor “Makam Plaza” 63/1 Above Kotak Bank, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560055</p>								
+								<h4 class="black f-14 font-weight-bold m-0">About Company</h4>
+								<p class="blue-black f-14 m-0 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+								<p class="black f-14 font-weight-bold m-0">Contact Us</p>
+								<p class="blue-black f-14 m-0">+91 989 989 8787    &nbsp; &nbsp; |&nbsp;&nbsp;       080 6565 5656 23</p>
+								<p class="blue-black f-14 m-0 ">www.openthech.com</p>
+								<p class="blue-black f-14 m-0" style="max-width:200px;">2nd Floor “Makam Plaza” 63/1 Above Kotak Bank, 18th Cross Rd, Malleshwaram, Bengaluru, Karnataka 560055</p>								
 								
-								<div class="theme_dashed_border_bottom mb-4 mt-5"></div>
+								<div class="theme_dashed_border_bottom"></div>
 								
 								<div class="d-flex align-items-center">
 								 	<div class="mr-auto  black f-16 fw-500">CRM Fields</div>
@@ -245,21 +245,21 @@
 								</div>
 								
 								<%for(int m=0;m<2;m++){ %>
-								<div class="d-flex flex-column mb-3">
+								<div class="d-flex flex-column">
 									<div class="f-14 font-weight-bold black">Question <%= (m+1) %></div>
 									<div class="f-14 blue-black">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</div>
 								</div>
 								<%} %>
 							</div>
-							<div class="col-md-4 pl-4 pt-4 theme_solid_border_left  very-light-pink-grey-bg">
+							<div class="col-md-4 p-0 theme_solid_border_left  very-light-pink-grey-bg">
 							<%for(int k=0;k<2;k++){ %>
 							
-							<h4 class="black fw-500 f-16 mb-3 pl-3">Objections </h4>
+							<h4 class="black fw-500 f-16  m-0">Objections </h4>
 							<%for(int l=0;l<2;l++){ %>
-							<div class="mx-3 signal_description border_bottom_1_dashed mb-3 py-3">
+							<div class="signal_description border_bottom_1_dashed">
 							
-							<p class=" brown-grey f-12 mb-2">June 22, 2019</p>
-							<p class="blue-black f-14 text-break">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+							<p class=" brown-grey f-12 m-0">June 22, 2019</p>
+							<p class="blue-black f-14 text-break m-0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
 							</div>
 							<%} }%>
 							</div>
