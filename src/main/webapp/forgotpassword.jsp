@@ -42,27 +42,27 @@
 
 						<form class="pt-30 pb-30">
 							<div class="form-group pb-30 mb-0">
-								<label class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+								<label class="f-14 fw-500 very-light-pink  mb-0 pb-10 "
 									for="email">Email address</label> <input type="email"
-									class="form-control f-14 rounded-0 input_wh istar-form-control" name="email"
+									class="form-control very-light-pink-bg  f-14 rounded-0 input_wh istar-form-control" name="email"
 									id="email" aria-describedby="emailHelp"
 									placeholder="Email ">
 
 							</div>
 							<div class="form-group position-relative  pb-30 mb-0">
-								<label class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+								<lael class="f-14 fw-500 black-two mb-0  pb-10 "
 									for="password">Password</label> <input
-									type="password" class="form-control f-14 rounded-0 input_wh istar-form-control"
+									type="password" class="form-control lighter_gray f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
 										<button type="button" class="btn eye_icon confirm_password">
 							<i class="far fa-eye"></i>
 						</button>
 							</div>
 					<div class="form-group position-relative pb-40 mb-0">
-								<label class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+								<label class="f-14 fw-500 black-two mb-0 pb-10 "
 									for="password">Confirm Password</label> <input
-									type="password" class="form-control f-14 rounded-0 input_wh istar-form-control"
-									id="password" placeholder="Password">
+									type="password" class="form-control f-14 rounded-0 lighter_gray input_wh istar-form-control"
+									id="cpassword" placeholder="Password">
 									<button type="button" class="btn eye_icon confirm_password">
 							<i class="far fa-eye"></i>
 						</button>
@@ -78,7 +78,7 @@
 				<div>
 					<p class="black f-24 mb-0 pb-10">See What Works, What Doesn’t &</p>
 
-					<h1 class=" f-38 pb-30 mb-0	fw-900">Help your
+					<h1 class="black  f-38 pb-30 mb-0	fw-900">Help your
 						Reps Sell Better</h1>
 					<p class="brown-grey f-16 mb-0 pb-90" style="max-width: 433px;"">Lorem
 						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet

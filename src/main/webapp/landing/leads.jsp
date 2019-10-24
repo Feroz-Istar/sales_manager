@@ -98,19 +98,22 @@
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 
-									<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="targetSourceType" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span>Filter by Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+									<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle" id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<img src="http://localhost:8080/assets/image/dropdown_right.svg" alt="call" class=" float-right">
+									</button>
+									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_deal">
+										<button class="dropdown-item" type="button">
+											 1000
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="targetSourceType">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											 2000
+										</button>
+										
 									</div>
+
+								</div>
 										
 										
 										

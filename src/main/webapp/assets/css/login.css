@@ -1,5 +1,4 @@
 .login_button{
-
 background:#ed4d67;
 height:40px;
 color:white;
@@ -23,9 +22,11 @@ color:white;
 	z-index: 1; width: 35px; height: 35px;
 	
 }
-
+.input_wh:focus{
+	color:#95989a !important;
+}
 .input_wh{
-	 width: 287.5px; height: 50px;color:#95989a!important;
+	 width: 287.5px; height: 50px;
 	
 }
 

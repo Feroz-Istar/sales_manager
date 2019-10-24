@@ -576,6 +576,9 @@ input[type="search"]::-webkit-search-cancel-button {
 /* end of buttons  */
 
 /* start of sizing  */
+.h-17{
+	height:17px;
+}
 .hw-30 {
 	height: 30px;
 	width: 30px;
@@ -1808,10 +1811,9 @@ label.error {
 .searchBox {
 	position: absolute;
     right: 17px;
-    margin: 9px 0px;
+    top:7px;
     pointer-events: none;
-    z-index: 5;
-    bottom: -2px;
+    z-index:5;
     height: 17px;
     width: 17px;
 }

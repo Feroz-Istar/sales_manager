@@ -78,28 +78,29 @@
 
 			</div>
 			<div class="col-md-6 col-6 d-flex justify-content-end ">
-				<div class="istar-dropdown-task">
-					 <button class="btn btn-style px-2 f-12 dropdown-toggle"
-						type="button" id="newTaskMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
-					
-					 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left" aria-labelledby="newTaskMenuButton">
-					    <button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
-					    <img src="<%=baseURL%>assets/image/calltask.svg" title="Call" alt="call" class="task-dropdown">
-					    Call Task</button>
-					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/emailtask.svg" title="Email" alt="email" class="task-dropdown">
-					    Email Task</button>
-					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/webinartask.svg" title="Webinar" alt="webinar" class="task-dropdown">
-					    Webinar Task
-					    </button>
-					    <button class="dropdown-item" type="button">
-					    <img src="<%=baseURL%>assets/image/presentation.svg" title="Presentation" alt="presentation" class="task-dropdown">
-					    Presentation
-					    </button>
-					</div>
-				</div>
+			
+				<div class="dropdown">
+									<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold " id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>NEW TASK
+										 <img src="<%=baseURL %>/assets/image/toggle_white.svg" alt="call" class="h-17 text-white "> 
+									</button>
+									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
+										<button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
+											<img src="http://localhost:8080/assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
+										</button>
+										<button class="dropdown-item" type="button">
+											<img src="http://localhost:8080/assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
+										</button>
+										<button class="dropdown-item" type="button">
+											<img src="http://localhost:8080/assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
+										</button>
+										<button class="dropdown-item" type="button">
+											<img src="http://localhost:8080/assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
+										</button>
+									</div>
+
+								</div>
+				
 			</div>
 
 		</div>

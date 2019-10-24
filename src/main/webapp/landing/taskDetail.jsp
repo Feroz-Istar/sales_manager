@@ -53,15 +53,37 @@
 			<div class="col-md-6 col-12 d-flex justify-content-md-end p-0">
 
 
-				<div class="input-group position-relative pr-10 search_width">
-				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
+					<div class="input-group position-relative pl-2 pr-2 search_width">
+				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
 					<input id=""
-						class="form-control  custom-taskborder brown-grey m-0 f-14 search_height custom-result-selects"
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
+				
+				<div class="dropdown  mr-10">
+									<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold " id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>NEW TASK
+										 <img src="<%=baseURL %>/assets/image/toggle_white.svg" alt="call" class="h-17 text-white "> 
+									</button>
+									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
+										<button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
+											<img src="http://localhost:8080/assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
+										</button>
+										<button class="dropdown-item" type="button">
+											<img src="http://localhost:8080/assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
+										</button>
+										<button class="dropdown-item" type="button">
+											<img src="http://localhost:8080/assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
+										</button>
+										<button class="dropdown-item" type="button">
+											<img src="http://localhost:8080/assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
+										</button>
+									</div>
 
-				<div class="istar-dropdown-task select_focus">
+								</div>
+
+			<%-- 	<div class="istar-dropdown-task select_focus">
 					<button class="btn btn-style px-2 f-12 dropdown-toggle"
 						type="button" id="newTaskMenuButton" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
@@ -88,7 +110,7 @@
 						</button>
 					</div>
 
-				</div>
+				</div> --%>
 
 			</div>
 
@@ -782,7 +804,7 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 pr-0 border-right">
+							<div class="col-md-3 p-0 border-right">
 								<div
 									class="nav flex-column nav-pills theme_light_gray_border_bottom"
 									id="taskdetail-tab-list" role="tablist"
@@ -794,19 +816,19 @@
 												isactive = "active";
 											}
 									%>
-									<div class="nav-link <%=isactive%> rounded-0 theme_solid_border_bottom"
+									<div class="nav-link <%=isactive%> p-0 rounded-0 theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center minh-100 px-4">
+										<div class="row align-items-center p-0 m-0">
 											<div class="col-md-9 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
 												<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
 											</div>
-											<div class="col-md-3">
+											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg"  alt="task-icon"
 														class="rounded-circle hw-30 task-icon" /> <img
@@ -837,32 +859,32 @@
 									<div class="tab-pane fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
-										<div class="row ">
+										<div class="row m-0 ">
 											<div class="col-md-11 p-0">
 
 												<div
-													class="shadow-bottom  theme_dotted_border_bottom py-4 mx-4">
-													<div class="row justify-content-between ">
-														<div class="col-md-4 f-18 font-weight-bold greyish-brown text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">
+													class="shadow-bottom  theme_dotted_border_bottom">
+													<div class="row justify-content-between m-0">
+														<div class="col-md-4 p-0 f-18 font-weight-bold greyish-brown text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">
 															Opentech Pvt. Ltd.</div>
 														<div
-															class="col-md-4 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
+															class="col-md-4 p-0 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
 															View More <i
 																class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 														</div>
 													</div>
-													<div class="row align-items-center py-2">
-														<div class="col-md-2">
+													<div class="row align-items-center  m-0">
+														<div class="col-md-2 p-0">
 															<div class="f-14 brownish-grey">Contact Person</div>
 															<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Deann Harper">Deann Harper</div>
 														</div>
-														<div class="col-md-2">
+														<div class="col-md-2 p-0">
 															<div class="f-14 brownish-grey">Agent</div>
 															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Bradley Obrien">Bradley Obrien</div>
 														</div>
-														<div class="col-md-5"></div>
-														<div class="col-md-3 d-flex justify-content-end">
+														<div class="col-md-5 p-0"></div>
+														<div class="col-md-3 p-0 d-flex justify-content-end">
 															<button class="btn btn-listen f-12 font-weight-bold"
 																data-toggle="modal" data-target="#rescheduleCenter">RESCHEDULE</button>
 														</div>
@@ -872,21 +894,21 @@
 
 
 
-												<div class="theme_dashed_border_bottom py-4 mx-4">
-													<div class="row">
-														<div class="col-md-3 border-right-dashed-separation">
+												<div class="theme_dashed_border_bottom ">
+													<div class="row m-0">
+														<div class="col-md-3 p-0 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black">Call</div>
 														</div>
-														<div class="col-md-3 border-right-dashed-separation">
+														<div class="col-md-3 p-0 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Timing</div>
 															<div class="f-16  fw-500 black">11:00 AM</div>
 														</div>
-														<div class="col-md-3 border-right-dashed-separation">
+														<div class="col-md-3 p-0 border-right-dashed-separation">
 															<div class="brownish-grey f-14">Deal Value</div>
 															<div class="f-16  fw-500 black">$500</div>
 														</div>
-														<div class="col-md-3">
+														<div class="col-md-3 p-0">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
 															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</div>
 														</div>
@@ -894,7 +916,7 @@
 												</div>
 
 												<div
-													class="d-flex flex-column justify-content-center align-items-center py-4">
+													class="d-flex flex-column justify-content-center align-items-center ">
 													<img src="<%=baseURL%>assets/image/timer.svg"  alt="clock"
 														class="mb-1 time-img-size">
 													<div class="f-16 font-weight-bold mb-1">Few minutes
