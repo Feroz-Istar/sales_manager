@@ -860,27 +860,27 @@
 						<div class="row align-items-center theme_solid_border_bottom  m-0 pl-40 pr-40 pt-25 pb-25">
 							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Company Name <i class="fas fa-sort brown-grey"></i>
+									Company Name <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Email ID <i class="fas fa-sort brown-grey"></i>
+									Email ID <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Contact No. <i class="fas fa-sort brown-grey"></i>
+									Contact No. <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-2 col p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Recent Task <i class="fas fa-sort brown-grey"></i>
+									Recent Task <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-4 col-12 p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Agent<i class="fas fa-sort brown-grey"></i>
+									Agent<i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 						</div>
@@ -917,7 +917,7 @@
 								<div class="row m-0 align-items-center">
 									<div class="col-md-11 p-0">
 										<div class="row m-0">
-											<img class="rounded-circle imgsize-40" alt="Lead Image"
+											<img class="rounded-circle imgsize-40 mr-10" alt="Lead Image"
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10 p-0">
 												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
@@ -980,7 +980,7 @@
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
 							<div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
-								<div class="input-group date custom-calendar">
+								<div class="input-group date custom-calendar mr-10">
 									<input type="text" id="lead_won_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1" onclick="showwonCalendar()">
@@ -1173,27 +1173,27 @@
 						<div class="row align-items-center theme_solid_border_bottom p-0  m-0 pl-40 pr-40 pt-25 pb-25">
 							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Company Name <i class="fas fa-sort brown-grey ml-2"></i>
+									Company Name <i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-2 col  p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Email ID <i class="fas fa-sort brown-grey ml-2"></i>
+									Email ID <i class="fas fa-sort brown-grey  pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-2 col  p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Contact No. <i class="fas fa-sort brown-grey ml-2"></i>
+									Contact No. <i class="fas fa-sort brown-grey  pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-2 col  p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Recent Task <i class="fas fa-sort brown-grey ml-2"></i>
+									Recent Task <i class="fas fa-sort brown-grey  pl-1"></i>
 								</button>
 							</div>
 							<div class="col-md-4 col-12  p-0 ">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Agent<i class="fas fa-sort brown-grey ml-2"></i>
+									Agent<i class="fas fa-sort brown-grey pl-1"></i>
 								</button>
 							</div>
 						</div>
@@ -1222,9 +1222,9 @@
 							</div>
 							<div class="col-md-2 col p-0 ">
 							<div class="d-flex align-items-center">
-								<img class="hw-24" alt="callicon"
+								<img class="hw-24 mr-10" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown  p-0 text-break">Call -</div>
+								<div class="f-14 greyish-brown  p-0 text-break pr-2">Call<span class="pl-2">-</span></div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 								</div>
 							</div>
@@ -1232,7 +1232,7 @@
 								<div class="row m-0 align-items-center">
 									<div class="col-md-11 p-0">
 										<div class="row m-0">
-											<img class="rounded-circle imgsize-40"  alt="Lead Image" 
+											<img class="rounded-circle imgsize-40 mr-10"  alt="Lead Image" 
 												src="<%=baseURL%>assets/image/11.png">
 											<div class="col-md-10 p-0">
 												<div class="f-14 greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Stanley Howard">Stanley Howard</div>
