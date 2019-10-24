@@ -58,10 +58,24 @@
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
-				<select class="form-control f-14 custom-taskselect custom-result-selects custom-taskborder" id="pipeline">
-					<option>Select Pipeline</option>
-					<option>Default select</option>
-				</select>
+				<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Pipeline
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
+										<button class="dropdown-item" type="button">
+											 Pipeline 1
+										</button>
+										<button class="dropdown-item" type="button">
+											Pipeline 2
+										</button>
+									</div>
+								</div>
 			</div>
 		</div>
 
@@ -78,26 +92,51 @@
 											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 										</div>
 									</div>	
-									<select
-										class="custom-result-selects"
-										id="deal_value">
-										<option>Filter by Deal Value</option>
-										<option>Default select</option>
-									</select> 	
+									<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="pipeline_deal_value" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_deal_value">
+										<button class="dropdown-item" type="button">
+											 $1000
+										</button>
+										<button class="dropdown-item" type="button">
+											 $5000
+										</button>
+									</div>
+								</div>
 								
-									<select
-										class="  custom-result-selects"
-										id="status">
-										<option>Filter by Status</option>
-										<option>Default select</option>
-									</select>
+									<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="pipeline_status" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_status">
+										<button class="dropdown-item" type="button">
+											 Won
+										</button>
+										<button class="dropdown-item" type="button">
+											Lost
+										</button>
+									</div>
+								</div>
 	
 									
-									<div class="dropdown dropleft" id="filterbutton">
-										<button
-											class="filter-btn"
-											id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<i class="fas fa-filter filtericon"></i>
+									<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="activity" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
 													

@@ -99,11 +99,11 @@
 							<div class="col-md-9 d-md-flex justify-content-end  ">
 
 									<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle" id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
-										<img src="http://localhost:8080/assets/image/dropdown_right.svg" alt="call" class=" float-right">
+									<button class="istar-dropdown-arrow dropdown-toggle" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
 									</button>
-									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_deal">
+									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="targetSourceType">
 										<button class="dropdown-item" type="button">
 											 1000
 										</button>
@@ -112,22 +112,22 @@
 										</button>
 										
 									</div>
-
-								</div>
+									</div>
 										
 										
 										
 										
-								<div class="istar-dropdown-task mr-2 custom-taskborder select_focus">
-									<button class="istar-dropdown-arrow dropdown-toggle "
-										id="activity" data-toggle="dropdown" aria-haspopup="true"
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="target_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										Activities 
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="target_activity">
 										<button class="dropdown-item" type="button">
 											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 												class="task-dropdown"> Call Task
@@ -147,12 +147,11 @@
 									</div>
 
 								</div>
-											<div class="dropdown dropleft" id="filterbutton">
-										<button
-											class="dropdown-icon-btn custom-result-selects text-left"
-											id="target_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										
@@ -376,56 +375,70 @@
 										<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"/>
 									</div>
 								</div>
-									<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedDealValue" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+									<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="qualified_deal_value" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualified_deal_value">
+										<button class="dropdown-item" type="button">
+											 $1000
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="qualifiedDealValue">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											 $5000
+										</button>
 									</div>
+								</div>
 									
-							 		<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedStage" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+							 		<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="qualified_stage" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualified_stage">
+										<button class="dropdown-item" type="button">
+											 Stage 1
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="qualifiedStage">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											stage 2
+										</button>
 									</div>
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="qualifiedSourceType" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								</div>
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="qualified_source_type" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualified_source_type">
+										<button class="dropdown-item" type="button">
+											 Manual
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="qualifiedSourceType">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											Offline
+										</button>
+										<button class="dropdown-item" type="button">
+											Outbound
+										</button>
 									</div>
+								</div>
 
-									<div class="dropdown dropleft" id="filterbutton">
-										<button
-											class="dropdown-icon-btn custom-result-selects text-left"
-											id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+									<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="qualified_dropdown" style="width:350px">
@@ -661,71 +674,88 @@
 									</div>
 								</div>
 								
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostCauses" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Causes <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="lost_causes" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Causes
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_causes">
+										<button class="dropdown-item" type="button">
+											 reason 1
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="lostCauses">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+ 											reason 2										
+ 										</button>
 									</div>
+								</div>
 								
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostDealValue" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="lost_deal_value" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_deal_value">
+										<button class="dropdown-item" type="button">
+											 $1000
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="lostDealValue">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											 $5000
+										</button>
 									</div>
+								</div>
 									
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostStages" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+							 		<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="lost_stage" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_stage">
+										<button class="dropdown-item" type="button">
+											 Stage 1
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="lostStages">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											stage 2
+										</button>
 									</div>
-								 <div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="lostSourceType" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								</div>
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="lost_source_type" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_source_type">
+										<button class="dropdown-item" type="button">
+											 Manual
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="lostSourceType">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											Offline
+										</button>
+										<button class="dropdown-item" type="button">
+											Outbound
+										</button>
 									</div>
-
-								<div class="dropdown dropleft" id="filterbutton">
-										<button
-											class="dropdown-icon-btn custom-result-selects text-left"
-											id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								</div>
+								<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="lost_dropdown" style="width:350px">
@@ -957,72 +987,88 @@
 										<img src="<%=baseURL%>/assets/image/calendar.svg"/>
 									</div>
 								</div>
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonCauses" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Causes <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="won_causes" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Causes
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_causes">
+										<button class="dropdown-item" type="button">
+											 reason 1
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="wonCauses">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+ 											reason 2										
+ 										</button>
 									</div>
+								</div>
 								
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonDealValue" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="won_deal_value" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_deal_value">
+										<button class="dropdown-item" type="button">
+											 $1000
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="wonDealValue">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											 $5000
+										</button>
 									</div>
+								</div>
 									
-								<div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonStages" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+							 		<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="won_stage" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_stage">
+										<button class="dropdown-item" type="button">
+											 Stage 1
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="wonStages">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											stage 2
+										</button>
 									</div>
-								 <div class="istar-dropdown-task border-0 mr-2">
-										<button class="dropdown-icon-btn dropleft custom-result-selects text-left" type="button" id="wonSourceType" 
-												data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								</div>
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="won_source_type" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_source_type">
+										<button class="dropdown-item" type="button">
+											 Manual
 										</button>
-										<div class="dropdown-menu istar-dropdown-task-menu custom-dropdown-width "
-											aria-labelledby="wonSourceType">
-											<button class="dropdown-item" type="button">Manual</button>
-											<button class="dropdown-item" type="button">Offline</button>
-											<button class="dropdown-item" type="button">Outbound</button>
-										</div>
+										<button class="dropdown-item" type="button">
+											Offline
+										</button>
+										<button class="dropdown-item" type="button">
+											Outbound
+										</button>
 									</div>
-
-								<div class="dropdown dropleft" id="filterbutton">
-										
-										<button
-											class="dropdown-icon-btn custom-result-selects text-left"
-											id="won_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
-											<span class="sr-only">Toggle Dropdown</span> Filter by
-										User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+								</div>
+								<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="won_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="won_dropdown" style="width:350px">
