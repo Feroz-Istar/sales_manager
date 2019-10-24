@@ -42,23 +42,23 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row grey-white-bg theme_solid_border_bottom align-items-center py-3 px-4">
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0">
-				<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Pipeline</div>
-				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
+		<div class="row grey-white-bg theme_solid_border_bottom align-items-center  m-0 pl-40 pr-40 pt-10 pb-10">
+			<div class="col-md-6 col-12 d-flex align-items-center p-0 ">
+				<div class="display-1 black f-20 border-right-separation fw-500 pr-20" >Pipeline</div>
+				<div class=" f-12 brown-grey pl-20">Dashboard</div>
+				<i class="fas fa-chevron-circle-right f-12 brown-grey pl-2 pr-2"></i>
 				<div class=" f-12 brown-grey fw-500">Pipeline</div>
 
 			</div>
-			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end">
-				<div class="input-group position-relative pl-2 pr-2 search_width">
+			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0 ">
+				<div class="input-group position-relative search_width">
 				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
 					<input id=""
-						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						class="form-control  custom-taskborder brown-grey f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
-				<div class="istar-dropdown-task select_focus mr-10">
+				<div class="istar-dropdown-task select_focus ml-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -80,11 +80,11 @@
 		</div>
 
 		
-			<div class="row align-items-center bg-white theme_solid_border_bottom  py-3 px-4">
-							<div class="col-md-3 text-result-found	">
+			<div class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40">
+							<div class="col-md-3 text-result-found p-0">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
+							<div class="col-md-9 d-md-flex justify-content-end p-0 ">
 									<div class="input-group date custom-calendar">
 										<input type="text" id="pipeline_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012">
@@ -215,9 +215,9 @@
 							</div>
 						</div>
 		
-		<div class="row very-light-pink-grey-bg pl-4" >
-		  <div class="col-md-2 col-12 pr-0 tabcol flex-grow-1 border-right">
-		    <div class="nav flex-column nav-pills h-100" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
+		<div class="row very-light-pink-grey-bg m-0" >
+		  <div class="col-md-2 col-12 p-0 tabcol flex-grow-1 border-right">
+		    <div class="nav flex-column nav-pills h-100 pl-40" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
 		    <%for(int i =0;i<5;i++){ 
 		    	String isactive = "";
 				if (i == 0) {
@@ -228,7 +228,7 @@
 		     <%} %>
 		     </div>
 		  </div>
-		  <div class="col-md-10 col-12 bg-white tabcontentcol">
+		  <div class="col-md-10 col-12 p-0 bg-white tabcontentcol">
 		    <div class="tab-content" id="piplelinestage-tabContent">
 		    <%for(int i =0;i<5;i++){ 
 		    	String isactive = "";
@@ -236,56 +236,88 @@
 					isactive = "active";
 				}
 		    %>
-		      <div class="tab-pane fade show pl-0 <%=isactive %>" id="stage-<%=i%>" role="tabpanel" aria-labelledby="stage-<%=i%>-tab">
-		      		<div class="row align-items-center py-4 pl-4 theme_dotted_border_bottom shadow-bottom">
-		      			<div class="col-md-2 col-4">
-		      				<div class="f-24 font-weight-bold blue-black">$ 8562</div>
-		      				<div class="f-14 brown-grey">Deal Value</div>
+		      <div class="tab-pane fade show p-0 <%=isactive %>" id="stage-<%=i%>" role="tabpanel" aria-labelledby="stage-<%=i%>-tab">
+		      		
+		      		<div class="row align-items-center m-0 theme_dotted_border_bottom shadow-bottom pl-45 pt-20 pb-20 pr-45">
+		      		
+		      			<div class="col-md-6 p-0">
+		      				<div class="row m-0">
+		      						<div class="col-md-3 col-6 p-0">
+									<div class="font-weight-bold f-30">
+										<i class="fas fa-dollar-sign black"></i> <span
+											class="theme_color"> 7245</span>
+									</div>
+									<div class="f-14 brownish-grey">Achieved Value</div>
+									</div>
+									<div class="col-md-3 col-6 p-0">
+										<div class="font-weight-bold f-30 greyish-brown">
+											<i class="fas fa-dollar-sign black"></i>88765
+										</div>
+										<div class="f-14 brownish-grey">Pipeline Value</div>
+									</div>
+									<div class="col-md-3 col-6 p-0">
+										<div class="font-weight-bold f-30 greyish-brown">
+											25%
+										</div>
+										<div class="f-14 brownish-grey">Tentative</div>
+									</div>
+									<div class="col-md-3 col-6 p-0">
+										<div class="font-weight-bold f-30 greyish-brown">
+											75%
+										</div>
+										<div class="f-14 brownish-grey">Win Rate</div>
+									</div>
+		      				</div>
+		      				
 		      			</div>
-		      			<div class="col-md-2 col-4">
-		      				<div class="f-24 font-weight-bold blue-black">85% </div>
-		      				<div class="f-14 brown-grey">Confident</div>
-		      			</div>
-		      			<div class="col-md-2 col-4">
-		      				<div class="f-24 font-weight-bold blue-black">65%</div>
-		      				<div class="f-14 brown-grey">Tentative </div>
-		      			</div>
-		      			<div class="col-md-6 col-12">
-		      				<div class="d-flex">
-		      					<div class="col-md-6">
-		      						<div class="f-14 font-weight-bold black mb-1">Strong Playbook</div>
-		      						<div class="f-14 brownish-grey">Objection,  Qualification <i class="fal fa-info-circle soft-blue"></i></div>
+		      			<div class="col-md-6 p-0">
+		      				<div class="row m-0">
+		      					<div class="col-md-6 p-0">
+		      						<div class="font-weight-bold brownish-grey f-12 pb-5">
+		      							Strong Playbook <i class="fal fa-info-circle soft-blue f-14"></i>
+		      						</div>
+		      						<div class="d-flex">
+										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
+										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
+		      						</div>
 		      					</div>
-		      					<div class="col-md-6">
-		      						<div class="f-14 font-weight-bold black mb-1">Weak Playbook</div>
-		      						<div class="f-14 brownish-grey">Need Investigation <i class="fal fa-info-circle soft-blue"></i></div>
+		      					<div class="col-md-6 p-0">
+		      						<div class="font-weight-bold brownish-grey f-12 pb-5">
+		      							Weak Playbook <i class="fal fa-info-circle soft-blue f-14"></i>
+		      						</div>
+		      						<div class="d-flex">
+		      																	<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
+										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
+		      						</div>
 		      					</div>
 		      				</div>
 		      			</div>
-		      		</div>
+		      			
+						
+					</div>
 		      		
-		      		<div class="row align-items-center theme_solid_border_bottom py-4 pl-4">
-		      			<div class="col-md-2 col">
+		      		<div class="row align-items-center theme_solid_border_bottom m-0 pl-45 pt-20 pb-20">
+		      			<div class="col-md-2 col p-0">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Lead Name	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-		      			<div class="col-md-2 col">
+		      			<div class="col-md-2 col p-0">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Contact Person	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-		      			<div class="col-md-2 col">
+		      			<div class="col-md-2 col p-0">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Contact Details	<i class="fas fa-sort brown-grey ml-2"></i>
 		      				</button>
 		      			</div>
-						<div class="col-md-6 col justify-content-lg-start pl-5">
-							<button class="btn p-0 black f-14 font-weight-bold pl-3">
+						<div class="col-md-6 col justify-content-lg-start  p-0">
+							<button class="btn p-0 black f-14 font-weight-bold">
 								Deal Journey <i class="fas fa-sort brown-grey ml-2"></i>
 							</button>
 						</div>
-						</div>
+					</div>
 		      		
 		      		<%for(int j=0;j<5;j++){
 		      			String bgcolor="bg-white";
@@ -293,40 +325,40 @@
 		      				bgcolor="very-light-pink-grey-bg";
 		      			}
 		      			%>
-		      		<div class="row py-4 theme_solid_border_bottom align-items-center pl-4 <%=bgcolor%>" >
-		      			<div class="col-md-2">
+		      		<div class="row m-0 theme_solid_border_bottom align-items-center pl-45 pr-40 pt-30 pb-30 <%=bgcolor%>" >
+		      			<div class="col-md-2 p-0">
 		      				<div class="f-14 black fw-500 text-truncate" title="Accenture Consulting Inc.">Accenture Consulting Inc.</div>
 		      				<div class="f-14 brownish-grey fw-500">$ 290</div>
 		      			</div>
 		      			
-		      			<div class="col-md-2">
+		      			<div class="col-md-2 p-0">
 		      				<div class="f-14 black fw-500 text-truncate" title="Robert Wolken">Robert Wolken</div>
 		      				<div class="f-14 brownish-grey fw-500 text-truncate" title="Manager">Manager</div>
 		      			</div>
 		      			
-		      			<div class="col-md-2">
+		      			<div class="col-md-2 p-0">
 		      				<div class="f-14 black fw-500 text-break">Info@accenture.com</div>
 		      				<div class="f-14 brownish-grey fw-500 text-truncate" title="888">+91 888 898 8989</div>
 		      			</div>
 		      			
-		      			<div class="col-md-6">
-		      				<div class="row align-items-center pr-3">
-		      					<div class="col-md-11">
-		      						<div class="row position-relative">
+		      			<div class="col-md-6 p-0">
+		      				<div class="row align-items-center m-0">
+		      					<div class="col-md-11 p-0">
+		      						<div class="row position-relative m-0">
 		      						<div class="line"></div>
-		      							<div class="col-md-3 text-center">
+		      							<div class="col-md-3 text-center p-0">
 		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Need</div>
 		      							</div>
-										<div class="col-md-3 text-center">
+										<div class="col-md-3 text-center p-0">
 		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Budget</div>
 		      							</div>	
-		      							<div class="col-md-3 text-center">
+		      							<div class="col-md-3 text-center p-0">
 		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Authorized </div>
 		      							</div>
-		      							<div class="col-md-3 text-center">
+		      							<div class="col-md-3 text-center p-0">
 		      									<i class="fas fa-times-circle pastel-red"></i>
 	      										<div class="brownish-grey f-14">Urgency</div>
 		      							</div>
@@ -335,9 +367,9 @@
 		      							
 									</div>
 		      					</div>
-		      					<div class="col-md-1">
-		      						<div class="istar-dropdown dropleft">
-											<button class="dropdown-icon-btn " type="button" id="dropdownMenuButton"
+		      					<div class="col-md-1 p-0 text-right">
+		      						<div class="istar-dropdown dropleft d-inline">
+											<button class="dropdown-icon-btn p-0 text-right" type="button" id="dropdownMenuButton"
 		                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
 		                                            aria-expanded="false">
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
@@ -363,12 +395,10 @@
 		      		</div>
 		      		<%} %>
 
-						<div class="row py-3 ">
-							<div class="col-md-12 ">
-							<div class="d-flex justify-content-end pr-3">
+						<div class="row  m-0 ">
+							<div class="col-md-12  d-flex justify-content-end p-0">
 								<div class="page">
-									<ul class="salesken pagination mb-0"></ul>
-								</div>
+									<ul class="salesken pagination  m-0 pt-30 pb-40 pr-40"></ul>
 								</div>
 							</div>
 						</div>
