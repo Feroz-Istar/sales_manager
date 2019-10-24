@@ -61,76 +61,35 @@
 						style="padding-right:30px">
 				</div>
 				
-				<div class="dropdown  mr-10">
+				<div class="dropdown  ">
 									<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold " id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>NEW TASK
-										 <img src="<%=baseURL %>/assets/image/toggle_white.svg" alt="call" class="h-17 text-white "> 
+										 <img src="<%=baseURL %>assets/image/toggle_white.svg" alt="call" class="h-17 text-white "> 
 									</button>
 									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
 										<button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="http://localhost:8080/assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
+											<img src="<%=baseURL %>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="http://localhost:8080/assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
+											<img src="<%=baseURL %>assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="http://localhost:8080/assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
+											<img src="<%=baseURL %>assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="http://localhost:8080/assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
+											<img src="<%=baseURL %>assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
 										</button>
 									</div>
 
 								</div>
 
-			<%-- 	<div class="istar-dropdown-task select_focus">
-					<button class="btn btn-style px-2 f-12 dropdown-toggle"
-						type="button" id="newTaskMenuButton" data-toggle="dropdown"
-						aria-haspopup="true" aria-expanded="false">NEW TASK</button>
-
-					<div
-						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu dropdown-menu-lg-left"
-						aria-labelledby="newTaskMenuButton">
-						<button class="dropdown-item" type="button"
-							onclick="window.location.href = 'dashboardCreateTask.jsp'">
-							<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
-								class="task-dropdown"> Call Task
-						</button>
-						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
-								class="task-dropdown"> Email Task
-						</button>
-						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
-								class="task-dropdown"> Webinar Task
-						</button>
-						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
-								class="task-dropdown"> Presentation
-						</button>
-					</div>
-
-				</div> --%>
+		
 
 			</div>
 
 		</div>
 		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 ">
-
-				<!-- <nav>
-				  <div class="nav nav-tabs nav-mytabs taskdetailtab pt-2 pl-4" id="nav-tabs" role="tablist">
-				  	<a class="nav-item nav-link show active" id="nav-ongoing-tab"
-										data-toggle="tab" href="#nav-ongoing" role="tab"
-										aria-controls="nav-ongoing" aria-selected="true">Ongoing</a> <a
-										class="nav-item nav-link" id="nav-upcoming-tab" data-toggle="tab"
-										href="#nav-upcoming" role="tab" aria-controls="nav-upcoming"
-										aria-selected="false">Upcoming</a> <a class="nav-item nav-link"
-										id="nav-completed-tab" data-toggle="tab" href="#nav-completed"
-										role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>  </div>
-				</nav> -->
-
-
 
 				<ul class="nav nav-tabs nav-mytabs pl-40 pt-20 " id="nav-tabs"
 					role="tablist">
@@ -214,7 +173,7 @@
 										id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities 
+										activities 
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -244,7 +203,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_status" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span>Filter by Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
 									<div
@@ -261,7 +220,7 @@
 
 								</div>
 
-								 <div class="istar-dropdown-task select_focus mr-10 dropdown" id="ongoing_filter">
+								 <div class="istar-dropdown-task select_focus dropdown" id="ongoing_filter">
 									
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_filter" data-toggle="dropdown" aria-haspopup="true"
@@ -288,20 +247,13 @@
 											<div class="tab-pane fade show active px-4 py-3"
 												id="individual" role="tabpanel"
 												aria-labelledby="individual-tab">
-												<div class="input-group py-2">
-													<input id="individual_search"
-														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-														type="search" placeholder="Search"
-														style="border-right: none !important;">
-													<div class="input-group-append">
-														<button
-															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-															type="button" style="">
-															<i class="fa fa-search f-12 brown-grey"></i>
-														</button>
-													</div>
-												</div>
-
+												<div class="input-group position-relative pl-2 pr-2 search_width">
+				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox" >
+					<input id=""
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						type="search" placeholder="Search"
+						style="padding-right:30px">
+				</div>
 												<div class=" mb-2"
 													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
 
@@ -479,10 +431,11 @@
 														</div>
 												
 														<div class="col-md-8 p-0 d-flex justify-content-end">
-															<button
-																class="btn btn-join f-12 font-weight-bold mr-10 istar-btn-hover">JOIN
+														
+																<button type="button" class="btn small_button rounded-0 font-weight-bold mr-10 f-12" id="outgoing_join">JOIN
 																NOW</button>
-															<button class="btn btn-listen f-12 font-weight-bold">LISTEN</button>
+																<button type="button" class="btn small_outline_button font-weight-bold rounded-0 f-12" id="outgoing_listen">LISTEN</button>
+															
 														</div>
 													</div>
 												</div>
@@ -518,8 +471,8 @@
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
 														data-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false" style="display:none" id="taskcontentmenu">Dropleft</button>
-													<div class="dropdown-menu taskdropdownmenu" aria-labelledby="taskcontentmenu">
+														aria-expanded="false" style="display:none" id="ongoing_task_content">Dropleft</button>
+													<div class="dropdown-menu ongoing_task_content" aria-labelledby="ongoing_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
@@ -529,7 +482,7 @@
 													
 													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="ongoing_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
@@ -537,8 +490,7 @@
 														</div>
 													</li>
 													<li class=" cuesdropdown list-group-item p-0 py-3">
-														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
@@ -547,7 +499,7 @@
 													</li>
 													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
@@ -556,7 +508,7 @@
 													</li>
 													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
@@ -684,7 +636,7 @@
 								<div class="istar-dropdown-task select_focus mr-10 dropdown" id="upcoming_filter">
 									
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="ongoing_filter" data-toggle="dropdown" aria-haspopup="true"
+										id="upcoming_filter" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
@@ -693,23 +645,23 @@
 										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="upcoming_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="myTab"
+										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="upcomingTab"
 											role="tablist">
 											<li class="nav-item"><a class="nav-link active"
-												id="individual-tab" data-toggle="tab" href="#individual"
-												role="tab" aria-controls="individual" aria-selected="true">Individual</a>
+												id="upcoming_individual-tab" data-toggle="tab" href="#upcoming_individual"
+												role="tab" aria-controls="upcoming_individual" aria-selected="true">Individual</a>
 											</li>
-											<li class="nav-item"><a class="nav-link" id="team-tab"
-												data-toggle="tab" href="#team" role="tab"
-												aria-controls="team" aria-selected="false">Team</a></li>
+											<li class="nav-item"><a class="nav-link" id="upcoming_team-tab"
+												data-toggle="tab" href="#upcoming_team" role="tab"
+												aria-controls="upcoming_team" aria-selected="false">Team</a></li>
 
 										</ul>
-										<div class="tab-content" id="myTabContent">
+										<div class="tab-content" id="upcomingTab-TabContent">
 											<div class="tab-pane fade show active px-4 py-3"
-												id="individual" role="tabpanel"
-												aria-labelledby="individual-tab">
+												id="upcoming_individual" role="tabpanel"
+												aria-labelledby="upcoming_individual-tab">
 												<div class="input-group py-2">
-													<input id="individual_search"
+													<input id="upcoming_individual_search"
 														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
 														type="search" placeholder="Search"
 														style="border-right: none !important;">
@@ -732,10 +684,10 @@
 
 
 														<input class="istar-checkbox agentcheckbox"
-															data-id="<%=i%>" id="associate-checkbox<%=i%>"
+															data-id="<%=i%>" id="upcoming_associate-checkbox<%=i%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style"
-															for="associate-checkbox<%=i%>"></label> <img alt="user-img"
+															for="upcoming_associate-checkbox<%=i%>"></label> <img alt="user-img"
 															src="<%=baseURL%>/assets/image/11.png"
 															class="rounded-circle ml-3 mr-2 hw-40">
 														<div>
@@ -752,11 +704,11 @@
 
 											</div>
 
-											<div class="tab-pane fade px-4 py-3" id="team"
-												role="tabpanel" aria-labelledby="team-tab">
+											<div class="tab-pane fade px-4 py-3" id="upcoming_team"
+												role="tabpanel" aria-labelledby="upcoming_team-tab">
 
 												<div class="input-group py-2">
-													<input id="individual_search"
+													<input id="upcoming_individual_search"
 														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
 														type="search" placeholder="Search"
 														style="border-right: none !important;">
@@ -776,9 +728,9 @@
 													%>
 													<div class="d-flex align-items-center pt-3">
 														<input class="istar-checkbox teamcheckbox"
-															data-id="<%=j%>" id="team-checkbox<%=j%>"
+															data-id="<%=j%>" id="upcoming_team-checkbox<%=j%>"
 															type="checkbox"> <label
-															class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
+															class="istar-checkbox-style" for="upcoming_team-checkbox<%=j%>"></label>
 														<div class="f-12 ml-2 brownish-grey">
 															Team -0<%=j%></div>
 													</div>
@@ -793,7 +745,7 @@
 										</div>
 										<div class="w-100 text-center">
 											<button
-												class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold agentteamsubmit mb-3 text-center px-3"
+												class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold upcomingteamsubmit mb-3 text-center px-3"
 												style="min-width: 200px;">Submit</button>
 										</div>
 									</div>
@@ -804,7 +756,7 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 p-0 border-right">
+							<div class="col-md-3 p-0 border-right pl-20">
 								<div
 									class="nav flex-column nav-pills theme_light_gray_border_bottom"
 									id="taskdetail-tab-list" role="tablist"
@@ -822,7 +774,7 @@
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
 
 
-										<div class="row align-items-center p-0 m-0">
+										<div class="row align-items-center 	p-20 p-0 m-0">
 											<div class="col-md-9 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
 												<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
@@ -860,18 +812,22 @@
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
 										<div class="row m-0 ">
-											<div class="col-md-11 p-0">
+											<div class="col-md-11 p-0  pl-45 pr-45">
 
 												<div
-													class="shadow-bottom  theme_dotted_border_bottom">
-													<div class="row justify-content-between m-0">
-														<div class="col-md-4 p-0 f-18 font-weight-bold greyish-brown text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">
+													class="shadow-bottom  theme_dotted_border_bottom pt-15  pb-20">
+													<div class="row justify-content-between m-0 pb-10">
+													<div class="col-md-6 p-0">
+													<div class=" f-18 font-weight-bold greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">
 															Opentech Pvt. Ltd.</div>
+													</div>
+																											<div class="col-md-6 p-0">
 														<div
-															class="col-md-4 p-0 f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
+															class=" f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
 															View More <i
 																class="fas fa-chevron-circle-right ml-1 pr-2"></i>
+														</div>
 														</div>
 													</div>
 													<div class="row align-items-center  m-0">
@@ -885,8 +841,8 @@
 														</div>
 														<div class="col-md-5 p-0"></div>
 														<div class="col-md-3 p-0 d-flex justify-content-end">
-															<button class="btn btn-listen f-12 font-weight-bold"
-																data-toggle="modal" data-target="#rescheduleCenter">RESCHEDULE</button>
+															
+																<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold" data-toggle="modal" data-target="#rescheduleCenter" id="upcomimg_reschedule">RESCHEDULE</button>
 														</div>
 													</div>
 												</div>
@@ -894,21 +850,21 @@
 
 
 
-												<div class="theme_dashed_border_bottom ">
+												<div class="theme_dashed_border_bottom pb-30 pt-30">
 													<div class="row m-0">
-														<div class="col-md-3 p-0 border-right-dashed-separation">
+														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black">Call</div>
 														</div>
-														<div class="col-md-3 p-0 border-right-dashed-separation">
+														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Timing</div>
 															<div class="f-16  fw-500 black">11:00 AM</div>
 														</div>
-														<div class="col-md-3 p-0 border-right-dashed-separation">
+														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Deal Value</div>
 															<div class="f-16  fw-500 black">$500</div>
 														</div>
-														<div class="col-md-3 p-0">
+														<div class="col-md-3 p-0 pl-15">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
 															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</div>
 														</div>
@@ -916,10 +872,10 @@
 												</div>
 
 												<div
-													class="d-flex flex-column justify-content-center align-items-center ">
+													class="d-flex flex-column justify-content-center align-items-center pt-45 ">
 													<img src="<%=baseURL%>assets/image/timer.svg"  alt="clock"
-														class="mb-1 time-img-size">
-													<div class="f-16 font-weight-bold mb-1">Few minutes
+														class="pb-20 time-img-size">
+													<div class="f-16 font-weight-bold ">Few minutes
 														left !</div>
 													<div class="f-12 brownish-grey">Lorem Ipsum is simply
 														dummy text of the printing and typesetting industry.</div>
@@ -934,8 +890,8 @@
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
 														data-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false" style="display:none" id="taskcontentmenu">Dropleft</button>
-													<div class="dropdown-menu taskdropdownmenu" aria-labelledby="taskcontentmenu">
+														aria-expanded="false" style="display:none" id="upcoming_task_content">Dropleft</button>
+													<div class="dropdown-menu upcoming_task_content" aria-labelledby="upcoming_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
@@ -945,7 +901,7 @@
 													
 													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="upcoming_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
@@ -954,7 +910,7 @@
 													</li>
 													<li class=" cuesdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="upcoming_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
@@ -963,7 +919,7 @@
 													</li>
 													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="upcoming_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
@@ -972,7 +928,7 @@
 													</li>
 													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="upcoming_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
@@ -1008,11 +964,11 @@
 						aria-labelledby="nav-completed-tab">
 						<!-- start of completed tab -->
 						<div
-							class="row align-items-center  theme_solid_border_bottom  py-3 m-0 px-4">
-							<div class="col-md-2 text-result-found	font_text_result">
+							class="row align-items-center  theme_solid_border_bottom  pl-40 pr-40 pt-15 pb-15  m-0">
+							<div class="col-md-2 p-0 text-result-found	font_text_result">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
-							<div class="col-md-10 d-md-flex justify-content-end  ">
+							<div class="col-md-10 p-0 d-md-flex justify-content-end  ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="completed_datepicker"
 										class="form-control  custom-dateselect" value="12-02-2012">
@@ -1021,10 +977,29 @@
 										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar">
 									</div>
 								</div>
-								<select class="  custom-result-selects" id="stages">
-									<option>Filter by Stages</option>
-									<option>Default select</option>
-								</select>
+								
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="completed_stage" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="completed_stage">
+										<button class="dropdown-item" type="button"
+											>
+											 Stage 1
+										</button>
+										<button class="dropdown-item" type="button">
+											stage 2
+										</button>
+										
+									</div>
+
+								</div>
+								
 								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
@@ -1054,18 +1029,149 @@
 									</div>
 
 								</div>
-								<select class="  custom-result-selects" id="status">
-									<option>Filter by Status</option>
-									<option>Default select</option>
-								</select> <select class="  custom-result-selects" id="leads">
-									<option>Filter by Leads</option>
-									<option>Default select</option>
-								</select>
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="completed_status" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="completed_status">
+										<button class="dropdown-item" type="button"
+											>
+											 Ongoing
+										</button>
+										<button class="dropdown-item" type="button">
+										Completed
+										</button>
+										
+									</div>
+
+								</div>
+ <div class="istar-dropdown-task select_focus mr-10 dropdown" id="completed_filter">
+									
+									<button class="istar-dropdown-arrow dropdown-toggle"
+										id="completed_filter" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="completed_filter" style="width: 350px">
+
+										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="completedTab"
+											role="tablist">
+											<li class="nav-item"><a class="nav-link active"
+												id="completed_individual-tab" data-toggle="tab" href="#completed_individual"
+												role="tab" aria-controls="completed_individual" aria-selected="true">Individual</a>
+											</li>
+											<li class="nav-item"><a class="nav-link" id="completed_team-tab"
+												data-toggle="tab" href="#completed_team" role="tab"
+												aria-controls="upcoming_team" aria-selected="false">Team</a></li>
+
+										</ul>
+										<div class="tab-content" id="completedTab-TabContent">
+											<div class="tab-pane fade show active px-4 py-3"
+												id="completed_individual" role="tabpanel"
+												aria-labelledby="upcoming_individual-tab">
+												<div class="input-group py-2">
+													<input id="completed_individual_search"
+														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
+														type="search" placeholder="Search"
+														style="border-right: none !important;">
+													<div class="input-group-append">
+														<button
+															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
+															type="button" style="">
+															<i class="fa fa-search f-12 brown-grey"></i>
+														</button>
+													</div>
+												</div>
+
+												<div class=" mb-2"
+													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
+
+													<%
+														for (int i = 0; i < 20; i++) {
+													%>
+													<div class="d-flex align-items-center pt-3">
+
+
+														<input class="istar-checkbox agentcheckbox"
+															data-id="<%=i%>" id="completed_associate-checkbox<%=i%>"
+															type="checkbox"> <label
+															class="istar-checkbox-style"
+															for="completed_associate-checkbox<%=i%>"></label> <img alt="user-img"
+															src="<%=baseURL%>/assets/image/11.png"
+															class="rounded-circle ml-3 mr-2 hw-40">
+														<div>
+															<div class="f-14 font-weight-bold greyish-brown">Robert
+																Garcia</div>
+															<div class="f-12  brownish-grey">Team -02</div>
+														</div>
+													</div>
+													<%
+														}
+													%>
+												</div>
+
+
+											</div>
+
+											<div class="tab-pane fade px-4 py-3" id="completed_team"
+												role="tabpanel" aria-labelledby="completed_team-tab">
+
+												<div class="input-group py-2">
+													<input id="completed_individual_search"
+														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
+														type="search" placeholder="Search"
+														style="border-right: none !important;">
+													<div class="input-group-append">
+														<button
+															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
+															type="button" style="">
+															<i class="fa fa-search f-12 brown-grey"></i>
+														</button>
+													</div>
+												</div>
+
+												<div class="mb-2"
+													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
+													<%
+														for (int j = 0; j < 20; j++) {
+													%>
+													<div class="d-flex align-items-center pt-3">
+														<input class="istar-checkbox teamcheckbox"
+															data-id="<%=j%>" id="completed_team-checkbox<%=j%>"
+															type="checkbox"> <label
+															class="istar-checkbox-style" for="completed_team-checkbox<%=j%>"></label>
+														<div class="f-12 ml-2 brownish-grey">
+															Team -0<%=j%></div>
+													</div>
+													<%
+														}
+													%>
+												</div>
+
+
+
+											</div>
+										</div>
+										<div class="w-100 text-center">
+											<button
+												class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold completedteamsubmit mb-3 text-center px-3"
+												style="min-width: 200px;">Submit</button>
+										</div>
+									</div>
+
+								</div>
 							</div>
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 pr-0 border-right taskmodal ">
+							<div class="col-md-3 p-0 border-right taskmodal ">
 								<div class="nav flex-column nav-pills "
 									id="taskdetail-tab-list" role="tablist"
 									aria-orientation="vertical">
@@ -1083,30 +1189,27 @@
 												tasktype = "webinar";
 											}
 									%>
-									<div class="nav-link <%=isactive%> theme_solid_border_bottom"
+									<div class="nav-link <%=isactive%> p-0 theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true"
 										data-task_type="<%=tasktype%>">
 
 
-										<div class="row align-items-center minh-100 px-4">
-											<div class="col-md-10 pl-0">
-												<div class="d-flex flex-row">
-													<div
-														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$
+									<div class="row align-items-center m-0 p-20">
+											<div class="col-md-9 p-0">
+												<div class="d-flex flex-row ">
+													<div class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$
 														500</div>
-													<div
-														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
+													<div class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Globex Corporation
+												<div class="f-16 fw-500  black text-truncate" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Globex Corporation. Inc.">Globex Corporation
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
-											<div class="col-md-2">
+											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
-														class="rounded-circle hw-30" />
+													<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon" class="rounded-circle hw-30 task-icon"> <img src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip" data-placement="bottom" title="" class="rounded-circle hw-40 task-image" alt="task-image" data-original-title="Agent name">
 												</div>
 											</div>
 										</div>
@@ -1120,7 +1223,7 @@
 							</div>
 
 
-							<div class="col-md-9 bg-white">
+							<div class="col-md-9 bg-white p-0">
 								<div class="tab-content " id="taskdetail-tab-listContent">
 									<%
 										for (int i = 8; i < 12; i++) {
@@ -1239,6 +1342,11 @@
 			$(document)
 					.ready(
 							function() {
+								$('.filtertabs>li>.nav-link').click(function(e) {
+									
+									$($(this).attr('href')+'-tab').tab('show')
+
+								});
 								$('#upcoming_datepicker').datepicker({
 									autoclose : true
 								})

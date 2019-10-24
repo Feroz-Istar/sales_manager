@@ -20,56 +20,74 @@ $( document ).ready(function() {
     /* start of task notes,cues,crm,chat dropdown */
    
     $('.notesdropdown').click(function(){
-    	closeNotes();
-    	closeCues();
-    	closeCRM();
-    	closeChat();
+    	var dropdown_id = $(this).children().data('dropdown_id');
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
     	$(this).addClass('show');
 
     	 $.get( "../popover/notescontent.jsp", function( data ) {
-    		 $( ".taskdropdownmenu" ).html( data );
-    	  	$('#taskcontentmenu').dropdown('show')	
+    		 $( "."+dropdown_id ).html( data );
+    	  	$('#'+dropdown_id).dropdown('show')	;
+    	  	
+    	  	$(".closenotes").click(function(){ closeNotes(dropdown_id); });
+
+    	  	
     	  	});
     	
     })
     
-    $('.cuesdropdown').click(function(){
-    	closeNotes();
-    	closeCues();
-    	closeCRM();
-    	closeChat();
+    $('.cuesdropdown').unbind().click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
 	  	 $(this).addClass('show');
 
     	 $.get( "../popover/cuescontent.jsp", function( data ) {
-    		 $( ".taskdropdownmenu" ).html( data );
-    	  	$('#taskcontentmenu').dropdown('show')	
+    		 $( "."+dropdown_id ).html( data );
+     	  	$('#'+dropdown_id).dropdown('show')	;
+    	  	$(".closecues").click(function(){ closeCues(dropdown_id); });
+
+     	  	
     	  	});
     	
     });
-    $('.crmdropdown').click(function(){
-    	closeNotes();
-    	closeCues();
-    	closeCRM();
-    	closeChat();
+    $('.crmdropdown').unbind().click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
     	$(this).addClass('show');
 
    	 $.get( "../popover/crmcontent.jsp", function( data ) {
-   		 $( ".taskdropdownmenu" ).html( data );
-   	  	$('#taskcontentmenu').dropdown('show')	
+   		 $( "."+dropdown_id ).html( data );
+  	  	$('#'+dropdown_id).dropdown('show');
+	  	$(".closecrm").click(function(){ closeCRM(dropdown_id); });
+
    	  	});
    	
    });
    
-    $('.chatdropdown').click(function(){
-    	closeNotes();
-    	closeCues();
-    	closeCRM();
-    	closeChat();
-    	$(this).addClass('show');
+    $('.chatdropdown').unbind().click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
+	  	 $(this).addClass('show');
 
   	 $.get( "../popover/chatcontent.jsp", function( data ) {
-  		 $( ".taskdropdownmenu" ).html( data );
-  	  	$('#taskcontentmenu').dropdown('show')	
+  		 $( "."+dropdown_id ).html( data );
+   	  	$('#'+dropdown_id).dropdown('show');
+	  	$(".closechat").click(function(){ closeChat(dropdown_id); });
+
   	  	});
   	
   });
@@ -167,20 +185,20 @@ jQuery.validator.setDefaults({
 	console.log(error)
 }
 });
-function closeNotes(){
+function closeNotes(dropdown_id){
 	$('.notesdropdown').removeClass('show');
-  	$('#taskcontentmenu').dropdown('hide')	
+  	$('#'+dropdown_id).dropdown('hide')	
 }
-function closeCues(){
+function closeCues(dropdown_id){
 	$('.cuesdropdown').removeClass('show');
-  	$('#taskcontentmenu').dropdown('hide')	
+  	$('#'+dropdown_id).dropdown('hide')	
 }
-function closeCRM(){
+function closeCRM(dropdown_id){
 	$('.crmdropdown').removeClass('show');
-  	$('#taskcontentmenu').dropdown('hide')	
+  	$('#'+dropdown_id).dropdown('hide')	
 }
 
-function closeChat(){
+function closeChat(dropdown_id){
 	$('.chatdropdown').removeClass('show');
-  	$('#taskcontentmenu').dropdown('hide')	
+  	$('#'+dropdown_id).dropdown('hide')	
 }

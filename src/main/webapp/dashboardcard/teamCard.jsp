@@ -17,56 +17,121 @@
 		if(j==0){
 			isshow="active";
 		}%>
-		<div class="team-container <%=isshow%> ">
-		<div class="row m-0 pt-30 pl-30 pr-30 pb-20">
-			<div class="col-md-6 p-0 m-0 font-weight-bold f-18 text-truncate" title="team">
+		<div class="team-container <%=isshow%> " style="padding: 30px;">
+		<div class="row m-0 ">
+			<div class="col-md-6 p-0 pb-20">
+			<div class="p-0 m-0 font-weight-bold f-18 text-truncate" title="team">
 				Team 0<%=j+1 %>&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
+				</div>
 			</div>
 			
 		</div>
-		<div class="row m-0 pl-30 pr-30 pb-30">
-			<div class="col-md-8 p-0">
-				<div class="row m-0">
-					<div class="col-md-3 p-0 col-6 pb-20">
-						<div class="font-weight-bold f-30">
-							<i class="fas fa-dollar-sign light_gray"></i> <span
-								class="theme_color"> 345</span>
-						</div>
-						<div class="f-14 brownish-grey">Deal Value</div>
-					</div>
-					<div class="col-md-3 col-6 p-0 pb-20 pr-7_5 pl-7_5">
-						<div class="font-weight-bold f-30 black">65%</div>
-						<div class="f-14 brownish-grey">Confident</div>
-					</div>
-					<div class="col-md-3 col-6 p-0 pb-20 pl-7_5 pr-7_5">
-						<div class="font-weight-bold f-30 black">25%</div>
-						<div class="f-14 brownish-grey">Won Leads</div>
-					</div>
-					<div class="col-md-3 col-6 p-0 pb-20">
-						<div class="font-weight-bold f-30 black">75%</div>
-						<div class="f-14 brownish-grey">Lost Leads</div>
-					</div>
-				</div>
-				<div class="row m-0">
-					<div class="col-md-6 p-0 pr-7_5">
-						<div class="f-14 font-weight-bold pb-5">Strong Playbook</div>
-						<div class="f-14 brownish-grey">Objection, Price,
-							Qualification, Introduction, Product Features, Value
-							Proposition,</div>
-					</div>
-					<div class="col-md-6 p-0 pl-7_5">
-						<div class="f-14 font-weight-bold pb-5">Weak Playbook</div>
-						<div class="f-14 brownish-grey">Need Investigation,
-							Competitor Mapping, Feature Mapping.</div>
-					</div>
-				</div>
+		<div class="row m-0">
+								<div class="col-md-6 p-0 theme_dashed_border_right_2 ">
+									<div class="fw-500 f-16 black pb-10">Team Stats</div>
+									<div class="row m-0">
+										<div class="col-md-4 p-0">
+											<div class="font-weight-bold f-30">
+												<i class="fas fa-dollar-sign light_gray"></i> <span
+													class="theme_color"> 50K</span>
+											</div>
+										</div>
+										<div class="col-md-4 p-0">
+											<div class="font-weight-bold f-30 greyish-brown">25%</div>
 
-			</div>
-			<div class="col-md-4 p-0">
+										</div>
+										<div class="col-md-4  p-0">
+											<div class="font-weight-bold f-30 greyish-brown">58%</div>
+										</div>
+									</div>
+									<div class="row m-0 pb-30 theme_dashed_border_bottom_2 ">
+										<div class="col-md-4 p-0">
+											<div class="font-weight-bold f-12 brownish-grey">Achieved
+												Value</div>
+										</div>
+										<div class="col-md-4 p-0">
+											<div class="font-weight-bold f-12 brownish-grey">Win Rate
+											</div>
 
-				<div id="container<%=j %>" class="w-100" style="height: 140px;"></div>
-			</div>
-		</div>
+										</div>
+										<div class="col-md-4 p-0">
+											<div class="font-weight-bold f-12 brownish-grey">Tentative</div>
+										</div>
+									</div>
+
+									<div class="fw-500 f-16 black pb-10 pt-25">Activity Stats</div>
+
+									<div class="row m-0">
+										<div class="col p-0">
+											<div class="d-flex ">
+												<div class="font-weight-bold f-30 greyish-brown pr-45">75%
+												</div>
+												<div class="font-weight-bold f-30 greyish-brown">46%</div>
+											</div>
+										</div>
+									</div>
+									<div class="row m-0 ">
+										<div class="col p-0 pr-25">
+											<div class="d-flex pb-10">
+												<div class="font-weight-bold f-12 brownish-grey pr-45">Utilisation
+												</div>
+												<div class="font-weight-bold f-12 brownish-grey">Talk
+													Ratio</div>
+											</div>
+
+											<div class="progress pipeline_progress ">
+												<div class="progress-bar bg_green" role="progressbar"
+													style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+													aria-valuemax="100"></div>
+												<div class="progress-bar  bg_blue" role="progressbar"
+													style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+													aria-valuemax="100"></div>
+												<div class="progress-bar   bg-info" role="progressbar"
+													style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+													aria-valuemax="100"></div>
+											</div>
+										</div>
+									</div>
+
+
+								</div>
+								<div class="col-md-6 p-0 pl-15">
+									<div class="fw-500 f-16 black pb-10">Playbook Stats</div>
+
+									<div class="f-12 brownish-grey text-break font-weight-bold">
+										Strong <i class="fas fa-info-circle soft-blue"></i>
+									</div>
+									<div class="strong-signal w-100 d-flex flex-wrap">
+										<%
+											for (int l = 0; l < 5; l++) {
+										%>
+										<button type="button"
+											class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background"
+											>Introduction</button>
+										<%
+											}
+										%>
+									</div>
+
+
+									<div
+										class="f-12 brownish-grey text-break font-weight-bold pt-20">
+										Weak <i class="fas fa-info-circle soft-blue"></i>
+									</div>
+
+									<div class="weak-signal w-100 d-flex flex-wrap">
+										<%
+											for (int k = 0; k < 5;k++) {
+										%>
+										<button type="button"
+											class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background"
+											>Introduction</button>
+										<%
+											}
+										%>
+									</div>
+								</div>
+							</div>
 		
 		</div>
 	<%} %>

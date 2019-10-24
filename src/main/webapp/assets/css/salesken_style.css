@@ -886,7 +886,7 @@ Modifying the scroll bar across the whole application
 }
 
 .border-bottom-dashed-separation {
-	border-bottom: 2px dashed;
+	border-bottom: 2px dashed ;
 }
 
 .border-right-separation {
@@ -956,6 +956,9 @@ Modifying the scroll bar across the whole application
 .theme_dashed_border_bottom {
 	border-bottom: 1px dashed #dddddd;
 }
+.theme_dashed_border_bottom_2 {
+	border-bottom: 2px dashed #cccccc;
+}
 
 .theme_dotted_border_bottom {
 	border-bottom: 1px dotted #dddddd;
@@ -972,7 +975,9 @@ Modifying the scroll bar across the whole application
 .theme_dashed_border {
 	border: 1px dashed #dddddd;
 }
-
+.theme_dashed_border_right_2 {
+	border-right: 2px dashed #dddddd;
+}
 .theme_dotted_border {
 	border: 1px dotted #dddddd;
 }
@@ -1399,13 +1404,6 @@ Modifying the scroll bar across the whole application
 	padding-top: 40px !important;
 }
 
-.pl-45 {
-	padding-left: 45px !important;
-}
-.pr-45 {
-	padding-right: 45px !important;
-}
-
 .pb-40 {
 	padding-bottom: 40px !important;
 }
@@ -1413,11 +1411,27 @@ Modifying the scroll bar across the whole application
 .p-40 {
 	padding: 40px !important;
 }
+.pl-45 {
+	padding-left: 45px !important;
+}
+.pr-45 {
+	padding-right: 45px !important;
+}
+
+.pt-45 {
+	padding-top: 45px !important;
+}
 
 .pb-65 {
 	padding-bottom: 65px !important;
 }
+.pl-60 {
+	padding-left: 60px !important;
+}
 
+.pl-65 {
+	padding-left: 65px !important;
+}
 .pb-70 {
 	padding-bottom: 70px !important;
 }
@@ -1468,6 +1482,36 @@ Modifying the scroll bar across the whole application
 .m-10 {
 	margin: 10px !important;
 }
+
+.ml-15 {
+	margin-left: 15px !important;
+}
+
+.mr-15 {
+	margin-right: 15px !important;
+}
+
+.mt-15 {
+	margin-top: 15px !important;
+}
+
+.mb-15 {
+	margin-bottom: 15px !important;
+}
+.m-15 {
+	margin: 15px !important;
+}
+.ml-20 {
+	margin-left: 20px !important;
+}
+
+.ml-25 {
+	margin-left: 25px !important;
+}
+
+.mr-25 {
+	margin-right: 25px !important;
+}
 .ml-30 {
 	margin-left: 30px !important;
 }
@@ -1487,7 +1531,21 @@ Modifying the scroll bar across the whole application
 .m-30 {
 	margin: 30px !important;
 }
+.ml-40 {
+	margin-left: 40px !important;
+}
 
+.mr-40 {
+	margin-right: 40px !important;
+}
+
+.ml-45 {
+	margin-left: 45px !important;
+}
+
+.mr-45 {
+	margin-right: 45px !important;
+}
 /* end of margin style */
 .istar-btn-primary:active {
 	background: #f7657d !important;
@@ -1994,4 +2052,46 @@ pointer-events: none;
 
 .dropdown-toggle::after {
     display: none;
+}
+
+
+
+.pipeline_progress{
+height:10px;
+}
+.pipeline_progress .progress-bar{
+ margin-right:3px;
+ 
+}
+.pipeline_progress .progress-bar{
+border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+   
+}
+/*:not(:first-child)*/
+.progress-bar.bg_blue:before{
+border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+
+}
+.bg_green{
+background:#bce0cc;
+}
+.bg_blue{
+background: #c0d5fb;
+}
+.bg_orange{
+background: #fbdcab;
+
+}
+
+.signal_background {
+	border-color: #454d9f;
+	border-radius: 6px !important;
+	color: #454d9f;
+	background: repeating-linear-gradient(-55deg, #9ca1d4, #9ca1d4 10px, #c0d5fb 10px,
+		#c0d5fb 11px);
+	padding-left: 25px !important;
+	padding-right: 25px !important;
+	height: 30px;
 }

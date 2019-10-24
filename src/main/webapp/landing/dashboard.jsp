@@ -86,16 +86,16 @@
 									</button>
 									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
 										<button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="http://localhost:8080/assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
+											<img src="<%=baseURL %>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="http://localhost:8080/assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
+											<img src="<%=baseURL %>assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="http://localhost:8080/assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
+											<img src="<%=baseURL %>assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="http://localhost:8080/assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
+											<img src="<%=baseURL %>assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
 										</button>
 									</div>
 

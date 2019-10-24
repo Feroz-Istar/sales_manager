@@ -31,7 +31,5 @@
 	
 </div>
 <script>
-$('.closenotes').click(function(){
-	$('.notesdropdown').dropdown('hide');
-})
+
 </script>
