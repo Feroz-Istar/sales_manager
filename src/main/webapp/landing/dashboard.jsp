@@ -694,7 +694,7 @@
 		        <div class="col-md-12 istar-dropdown p-0">
 			      <div class="f-14 fw-500 pb-10">Lead Name</div>
 							<div class="form-group">
-									<select class="form-control selectpicker h-35" id="leadname" data-style="removefocus" title="Select here"
+									<select class="istar-form-control form-control selectpicker h-35" id="leadname" data-style="mycustomstyle" title="Select here"
 										data-live-search="true" id="exampleFormControlSelect1" >
 
 										<%
@@ -705,10 +705,10 @@
 												}
 										%>
 										<option
-											data-content="<div class='row w-100 py-2 px-3 m-0'>
-											 <div class='col-md-4 f-14 fw-500 black text-center'>Vehement Capital Partners</div> 
-											 <div class='col-md-4 f-14 greyish-brown text-center'>Miriam Franklin <%=i%></div> 
-											 <div class='col-md-4 f-14 greyish-brown text-right'>+91 445 546 6456</div>
+											data-content="<div class='row w-100  m-0 pt-10 pb-10 pl-40 pr-40'>
+											 <div class='col-md-4 p-0 '><div class='text-wrap f-14 fw-500 black text-left'>Vehement Capital Partners</div></div> 
+											 <div class='col-md-4 p-0 f-14 greyish-brown '><div class='text-wrap f-14 fw-500 black text-center'>Miriam Franklin <%=i%></div></div> 
+											 <div class='col-md-4 p-0 f-14 greyish-brown '><div class='text-wrap f-14 fw-500 black text-center'>+ 91 445 546 6456</div></div>
 											  </div>">Miriam
 											Franklin
 											<%=i%></option>

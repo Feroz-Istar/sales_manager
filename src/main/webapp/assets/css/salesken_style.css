@@ -4,7 +4,6 @@
 
 body {
 	font-family: 'Roboto', sans-serif !important;
-	overflow-x:hidden;
 }
 
 .menu_icon {
@@ -1397,6 +1396,27 @@ Modifying the scroll bar across the whole application
 	padding: 30px !important;
 }
 
+
+.pl-35 {
+	padding-left: 35px !important;
+}
+
+.pr-35 {
+	padding-right: 35px !important;
+}
+.pt-35 {
+	padding-top: 35px !important;
+}
+
+.pb-35 {
+	padding-bottom: 35px !important;
+}
+
+.p-35 {
+	padding: 35px !important;
+}
+
+
 .pl-40 {
 	padding-left: 40px !important;
 }
@@ -1404,7 +1424,6 @@ Modifying the scroll bar across the whole application
 .pr-40 {
 	padding-right: 40px !important;
 }
-
 .pt-40 {
 	padding-top: 40px !important;
 }
@@ -1664,14 +1683,14 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .selectpicker ~.dropdown-menu li:nth-child(odd) {
-	background: #f9f9f9;
-	border-bottom: 1px solid #cccccc !important;
+	background: #ffffff;
+	border-bottom: 1px solid #eeeeee !important;
 	outline-color: transparent;
 }
 
 .selectpicker ~.dropdown-menu li:nth-child(even) {
 	background: #ffffff;
-	border-bottom: 1px solid #cccccc !important;
+	border-bottom: 1px solid #eeeeee !important;
 	outline-color: transparent;
 }
 
@@ -1680,7 +1699,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 .selectpicker ~.dropdown-menu>.bs-searchbox {
-	padding: 18px 30px 11px 30px !important;
+	padding: 40px 40px 10px 40px !important;
 }
 
 .selectpicker ~.dropdown-menu>.bs-searchbox>input:focus {
@@ -2102,3 +2121,15 @@ background: #fbdcab;
 	padding-right: 25px !important;
 	height: 30px;
 }
+
+.mycustomstyle{
+	    padding: 4px .75rem !important;
+	   
+}
+
+.bootstrap-select .dropdown-toggle.mycustomstyle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle.mycustomstyle{
+		 	outline: 1px auto red!important; 
+		 	outline-width:	1px !important;
+	
+}
+

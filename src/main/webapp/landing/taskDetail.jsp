@@ -389,7 +389,7 @@
 							</div>
 
 
-							<div class="col-md-9 bg-white p-0">
+							<div class="col-md-9 bg-white p-0 position-relative">
 								<div class="tab-content" id="taskdetail-tab-listContent">
 									<%
 										for (int i = 0; i < 3; i++) {
@@ -401,7 +401,7 @@
 									<div class="tab-pane fade show <%=isactive%>"
 										id="v-pills-<%=i%>" role="tabpanel"
 										aria-labelledby="v-pills-<%=i%>-tabs">
-										<div class="row minh-650 m-0">
+										<div class="row minh-650 m-0 ">
 											<div class="col-md-11 p-0 pl-45 pr-45">
 
 												<div
@@ -420,7 +420,9 @@
 															onclick="window.location.href = 'task_lead_detail.jsp'">
 															<div class="f-14 font-weight-bold  theme_color cursor-pointer" >View More <i
 																class="fas fa-chevron-circle-right ml-1 pr-2"></i></div>
+																
 														</div>
+														
 													</div>
 													<div class="row align-items-center m-0">
 														<div class="col-md-2 p-0">
@@ -469,12 +471,12 @@
 
 
 											<div class="col-md-1 p-0">
-												<div class=" dropleft " >
+											
+												<div class="dropleft  " >
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
-														data-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false" style="display:none" id="ongoing_task_content">Dropleft</button>
-													<div class="dropdown-menu ongoing_task_content " aria-labelledby="ongoing_task_content">
+														 style="display:none;"  id="ongoing_task_content"  data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Dropleft</button>
+													<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content animated bounceInRight" aria-labelledby="ongoing_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
