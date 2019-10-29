@@ -171,6 +171,10 @@ $(document).ready(function() {
 					required: true,
 					minlength: 5,
 				},
+				addGuest: {
+					required: true,
+					minlength: 5,
+				},
 				
 				eventdescription: {
 					minlength: 5,
@@ -194,6 +198,7 @@ $(document).ready(function() {
 		
 		$("#create").on("click", function() {
 			var istitlevalid =$("#eventTitle").valid();
+			var istitlevalid =$("#addGuest").valid();
 			var istypevalid =$("#eventType").valid();
 			var isdescriptionvalid = $("#eventdescription").valid();
 			
@@ -215,6 +220,11 @@ $(document).ready(function() {
 				      required: true,
 				      min: 1, //validates minimum value the element has to have
 				    },
+				    leadname: {
+					      required: true,
+					      min: 1, //validates minimum value the element has to have
+					    },
+				    
 				    task_type : {
 						validators : {
 							notEmpty : {
@@ -233,6 +243,7 @@ $(document).ready(function() {
 		
 		$("#schedule").on("click", function() {
 		    var istaskactor = $("#taskActor").valid();
+		    var istaskactor1 = $("#leadname").valid();
 		    if(istaskactor){
 		    	$("#scheduleTaskModalCenter").modal('hide');
 		    }

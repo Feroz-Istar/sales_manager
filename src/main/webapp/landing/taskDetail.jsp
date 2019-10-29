@@ -125,7 +125,7 @@
 									<option>Default select</option>
 								</select>  -->
 								
-									<div class="istar-dropdown-task select_focus mr-10">
+									<div class="istar-dropdown-task select_focus mr-10 ">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -134,7 +134,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_deal">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu animated fadeInDown	" aria-labelledby="ongoing_deal">
 										<button class="dropdown-item" type="button"
 											>
 											 1000
@@ -476,7 +476,7 @@
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
 														 style="display:none;"  id="ongoing_task_content"  data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Dropleft</button>
-													<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content animated bounceInRight" aria-labelledby="ongoing_task_content">
+													<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content animated fadeInRightBig" aria-labelledby="ongoing_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>

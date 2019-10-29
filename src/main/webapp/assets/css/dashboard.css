@@ -58,10 +58,11 @@ width: 80px;
 }
 .table-condensed>thead>tr>th.datepicker-switch,.table-condensed>thead>tr>th.prev,.table-condensed>thead>tr>th.next {
 	color: #999999 !important;
-	font-weight: bold;
+	  font-size: 14px !important;
+	font-weight: 400 !important;
 	}
 .table-condensed tbody tr td {
-  font-size: 12px;
+  font-size: 12px !important;
   	color: #444444;
   
 }

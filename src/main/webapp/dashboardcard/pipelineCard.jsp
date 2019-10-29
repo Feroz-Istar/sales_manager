@@ -28,10 +28,14 @@
 			%>
 			<div class="pipeline-container <%=isshow%> " style="padding: 30px;padding-bottom: 60px !important;">
 				<div class="row m-0 pb-20">
-					<div
-						class="card-title col-md-6 p-0 m-0 font-weight-bold f-18 black text-truncate"
-						title="Pipeline">
-						Pipeline - 0<%=j + 1%></div>
+					
+						<div class="p-0 m-0 font-weight-bold f-18 text-truncate" title="pipeline">
+				Pipeline <%=j+1 %>&nbsp; - &nbsp;<span class="brown-grey f-16 font-weight-normal">Stage 01</span>
+				</div>
+						
+						
+						
+						
 
 				</div>
 				<div id="pipeline_carousel" class="carousel slide"

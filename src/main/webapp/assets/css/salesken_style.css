@@ -205,6 +205,7 @@ html, body {
 	border-bottom: 4px solid #ed4d67;
 	background-color: transparent !important;
 	font-weight: 500 !important;
+	color: #444444 !important;
 }
 
 .saleken.nav-tabs>li>.nav-link {
@@ -1445,6 +1446,11 @@ Modifying the scroll bar across the whole application
 .pt-45 {
 	padding-top: 45px !important;
 }
+
+.pb-50 {
+	padding-bottom: 50px !important;
+}
+
 .pl-60 {
 	padding-left: 60px !important;
 }
@@ -1489,6 +1495,10 @@ Modifying the scroll bar across the whole application
 /* end of padding custom styles */
 
 /* start of margin style */
+.m_t-5 {
+	margin-top: 5px !important;
+}
+
 .ml-10 {
 	margin-left: 10px !important;
 }
@@ -1572,6 +1582,11 @@ Modifying the scroll bar across the whole application
 .mr-45 {
 	margin-right: 45px !important;
 }
+
+.mb-50 {
+	margin-bottom: 50px !important;
+}
+
 /* end of margin style */
 .istar-btn-primary:active {
 	background: #f7657d !important;
@@ -2123,7 +2138,8 @@ background: #fbdcab;
 }
 
 .mycustomstyle{
-	    padding: 4px .75rem !important;
+	    padding: 5px .75rem !important;
+	    font-size:14px !important;
 	   
 }
 
@@ -2133,3 +2149,19 @@ background: #fbdcab;
 	
 }
 
+
+
+.Rockstars>.theme_dashed_border_bottom>.border-right-dashed-separation:last-of-type  {
+	background: red !important;
+}
+.Laggards:last-child {
+	background: red !important;
+
+}
+.Trending_Up:last-child{
+	background: red !important;
+
+}
+.Trending_Down:last-child{
+border-right: 0 !important;
+}

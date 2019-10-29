@@ -604,14 +604,14 @@
 	<!-- start of create event modal -->
 		<div class="modal fade" id="createEventModalCenter" tabindex="-1" role="dialog" aria-labelledby="createEventModalCenterTitle" aria-hidden="true">
 		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-		    <div class="modal-content rounded-0 pl-30 pr-30 eventmodalsize">
-		     <div class="modal-header pt-20 pb-20 px-0">
+		    <div class="modal-content rounded-0 ">
+		     <div class="modal-header shadow-bottom pt-20 pb-20  pl-30 pr-30 ">
 		    	<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Create an Event</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">        </button>
 				</div>
-		      <div class="modal-body p-0">
-		      	<form action="" id="createTaskFrom">
+		      <div class="modal-body p-0 pr-30 pl-30">
+		      	<form action="" id="createTaskFrom" class="mb-0	">
 		      	<fieldset>
 		       	<div class="row pt-20 m-0">
 		       		<div class="col-md-6 p-0 pr-7_5">
@@ -658,7 +658,7 @@
 					</div>
 				</div>
 				
-				<div class="row m-0 pt-20 pb-40">
+				<div class="row m-0 pt-20 pb-30">
 					<div class="col-md-12 p-0">
 						<div class="f-14 fw-500 pb-10">Description</div>
 						<textarea class="custom-modal-textarea w-100 istar-form-control form-control" id="eventdescription " name="eventdescription" rows="6"></textarea>
@@ -667,8 +667,8 @@
 				</fieldset>
 				</form>
 		      </div>
-		      <div class="modal-footer p-0 pt-20 pb-20">
-		        <button type="submit" class="btn theme_color f-14 font-weight-bold" >Reset All</button>
+		      <div class="modal-footer p-0 pt-30 pb-30 pl-30	pr-30">
+		        <button type="submit" class="btn theme_color f-14 font-weight-bold " >Reset All</button>
 		         <button type="button" class="btn big_button rounded-0 f-14 font-weight-bold"  id="create" onclick="showList()">CREATE</button>		        
 		      </div>
 		    </div>
@@ -680,20 +680,20 @@
 	
 	<div class="modal fade" id="scheduleTaskModalCenter" tabindex="-1" role="dialog" aria-labelledby="scheduleTaskModalCenterTitle" aria-hidden="true">
 	  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
-	    <div class="modal-content eventmodalsize rounded-0 pl-30 pr-30">
-	     <div class="modal-header pt-20 pb-20 px-0">
+	    <div class="modal-content  rounded-0 ">
+	     <div class="modal-header pt-20 pb-20 pl-30 pr-30 shadow-bottom">
 		    	<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Schedule Task</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 <img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">   
      </button>
 				</div>
-	      <div class="modal-body  p-0">
+	      <div class="modal-body  p-0 pl-30 pr-30">
 	      <form id="scheduletaskform" class="mb-0">
 	      <fieldset>
 	        <div class="row  pt-20 m-0">
 		        <div class="col-md-12 istar-dropdown p-0">
 			      <div class="f-14 fw-500 pb-10">Lead Name</div>
-							<div class="form-group">
+							<div class="form-group mb-0 is-invalid" id="lead1">
 									<select class="istar-form-control form-control selectpicker h-35" id="leadname" data-style="mycustomstyle" title="Select here"
 										data-live-search="true" id="exampleFormControlSelect1" >
 
@@ -707,8 +707,8 @@
 										<option
 											data-content="<div class='row w-100  m-0 pt-10 pb-10 pl-40 pr-40'>
 											 <div class='col-md-4 p-0 '><div class='text-wrap f-14 fw-500 black text-left'>Vehement Capital Partners</div></div> 
-											 <div class='col-md-4 p-0 f-14 greyish-brown '><div class='text-wrap f-14 fw-500 black text-center'>Miriam Franklin <%=i%></div></div> 
-											 <div class='col-md-4 p-0 f-14 greyish-brown '><div class='text-wrap f-14 fw-500 black text-center'>+ 91 445 546 6456</div></div>
+											 <div class='col-md-4 p-0  '><div class='text-wrap f-14   text-center greyish-brown'>Miriam Franklin <%=i%></div></div> 
+											 <div class='col-md-4 p-0  '><div class='text-wrap f-14  black text-center greyish-brown '>+ 91 445 546 6456</div></div>
 											  </div>">Miriam
 											Franklin
 											<%=i%></option>
@@ -723,15 +723,15 @@
 	        </div>
 	        
 	        <div class="row  pt-20 m-0">
-	        	<div class="col-md-6 istar-dropdown p-0 pr-7_5">
+	        	<div class="col-md-6  p-0 pr-7_5">
 	       			<div class="f-14 fw-500 pb-10">Task Type</div>
 	       			
-				    
+				    <div class="istar-dropdown">
 					<button class="custom-modal-input w-100 pl-2 d-flex h-35" style="justify-content: space-between;"
 						id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Select here
 						<i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i> 
 					</button>
-					 <div class="dropdown-menu dropdown-menu-right task-dropdown-menu" id="scheduleTaskType">
+					 <div class="dropdown-menu dropdown-menu-right  w-100 task-dropdown-menu" id="scheduleTaskType">
 					    <button class="dropdown-item" type="button">
 					    <img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown">
 					    Call Task</button>
@@ -747,7 +747,7 @@
 					    Presentation
 					    </button>
 					  </div>
-					
+					</div>
 	       		</div>
 	       		<div class="col-md-6 p-0 pl-7_5">
 	       			<div class="f-14 fw-500 pb-10">Task By</div>
@@ -762,14 +762,14 @@
 					<div class="col-md-6 p-0 pr-7_5">
 						<div class="f-14 fw-500 pb-10">Date</div>
 						<div class="custom-modal-input w-100 d-flex mr-2 h-35">
-							<input class="f-14 border-0 removefocus w-100 pl-2 " placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
+							<input class="f-14 border-0 removefocus w-100 pl-2 brown-grey" placeholder="Select here" id="schedule_task_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" alt="date" class="pr-2">	
 						</div>	
 					</div>
 					<div class="col-md-6 p-0 pl-7_5">
 						<div class="f-14 fw-500 pb-10">Time	</div>
 						<div class="custom-modal-input w-100 d-flex mr-2 h-35">
-							<input class="f-14 border-0 removefocus w-100 pl-2 " placeholder="Select here" id="schedule_task_time">
+							<input class="f-14 border-0 removefocus w-100 pl-2 brown-grey" placeholder="Select here" id="schedule_task_time">
 							<img src="<%=baseURL%>assets/image/alarm.svg" alt="alarm" class="pr-2">	
 						</div>	
 					</div>
@@ -777,7 +777,7 @@
 				</fieldset>
 				</form>
 	      </div>
-	      <div class="modal-footer p-0 pt-20 pb-20">
+	      <div class="modal-footer p-0 pt-30 pb-30 pr-30 pl-30">
 	         <button type="button" class="btn theme_color f-14 font-weight-bold">Reset</button>
 	         
 	          <button type="button" class="btn big_button modal-submit-btn rounded-0 f-14 font-weight-bold" id="schedule">SCHEDULE</button>
@@ -821,8 +821,7 @@
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
  	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
- 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
-	<script src="<%=baseURL%>assets/js/exporting.js"></script>
+
 	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
 
 	<script src="<%=baseURL%>assets/js/dashboard.js"></script>

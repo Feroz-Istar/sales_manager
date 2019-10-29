@@ -180,14 +180,14 @@ if(teamCount>1){
 
 
 /*setting pie chart default color which is visible in team card of dashboard*/
-Highcharts.setOptions({
+/* Highcharts.setOptions({
 	colors: ['#57b280', '#6297f6', '#f5a82e', '#24CBE5', '#64E572', '#FF9655', '#FFF263', '#6AF9C4']
-});
+}); */
 
 /*rending of Pie chart shown in team card
  * In title shown below we need to set the text shown in middle of pie chart 
  * */
-for (i = 0; i < teamCount; i++){
+/* for (i = 0; i < teamCount; i++){
 new Highcharts.Chart({
 	chart: {
 		renderTo: 'container'+i,
@@ -263,7 +263,7 @@ new Highcharts.Chart({
 		}
 	}]
 });
-}
+} */
 	
 </script>
 	
