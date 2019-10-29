@@ -134,7 +134,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu animated fadeInDown	" aria-labelledby="ongoing_deal">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu 	" aria-labelledby="ongoing_deal">
 										<button class="dropdown-item" type="button"
 											>
 											 1000
@@ -484,7 +484,7 @@
 													class="list-group shadow d-flex flex-column h-100  taskpopup">
 													
 													
-													<li class="notesdropdown list-group-item p-0 py-3" style="z-index:99999">
+													<li class="notesdropdown list-group-item p-0 py-3" >
 														<div
 															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="ongoing_task_content"
 															>
@@ -493,7 +493,7 @@
 															
 														</div>
 													</li>
-													<li class=" cuesdropdown list-group-item p-0 py-3" style="z-index:99999">
+													<li class=" cuesdropdown list-group-item p-0 py-3" >
 														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
@@ -501,7 +501,7 @@
 															
 														</div>
 													</li>
-													<li class="crmdropdown list-group-item p-0 py-3" style="z-index:99999">
+													<li class="crmdropdown list-group-item p-0 py-3" >
 														<div
 															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
@@ -510,7 +510,7 @@
 															
 														</div>
 													</li>
-													<li class="chatdropdown list-group-item  p-0 py-3 " style="z-index:99999">
+													<li class="chatdropdown list-group-item  p-0 py-3 " >
 														<div
 															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
@@ -522,7 +522,7 @@
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="z-index:99999;height: calc(100% - 80px);"
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
 														></li>
 
 

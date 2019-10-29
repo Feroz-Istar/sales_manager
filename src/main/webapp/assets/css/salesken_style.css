@@ -1457,6 +1457,10 @@ Modifying the scroll bar across the whole application
 .pr-60 {
 	padding-right: 60px !important;
 }
+
+.pb-60 {
+	padding-bottom: 60px !important;
+}
 .pb-65 {
 	padding-bottom: 65px !important;
 }
