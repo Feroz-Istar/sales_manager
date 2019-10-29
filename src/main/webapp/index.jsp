@@ -82,7 +82,7 @@
 				<div class="text-break">
 					<p class="black f-24 mb-0 pb-10">See What Works, What Doesn’t &</p>
 
-					<h1 class=" f-38 pb-30 mb-0	fw-900">Help your
+					<h1 class=" f-38 pb-30 mb-0	fw-900 black">Help your
 						Reps Sell Better</h1>
 					<p class="brown-grey f-16 mb-0 pb-90 pr-40">Lorem
 						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet

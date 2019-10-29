@@ -52,7 +52,7 @@
 							<div class="form-group position-relative  pb-30 mb-0">
 								<lael class="f-14 fw-500 black-two mb-0  pb-10 "
 									for="password">Password</label> <input
-									type="password" class="form-control lighter_gray f-14 rounded-0 input_wh istar-form-control"
+									type="password" class="form-control very-light-pink f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
 										<button type="button" class="btn eye_icon confirm_password">
 							<i class="far fa-eye"></i>
@@ -61,7 +61,7 @@
 					<div class="form-group position-relative pb-40 mb-0">
 								<label class="f-14 fw-500 black-two mb-0 pb-10 "
 									for="password">Confirm Password</label> <input
-									type="password" class="form-control f-14 rounded-0 lighter_gray input_wh istar-form-control"
+									type="password" class="form-control f-14 rounded-0 very-light-pink input_wh istar-form-control"
 									id="cpassword" placeholder="Password">
 									<button type="button" class="btn eye_icon confirm_password">
 							<i class="far fa-eye"></i>

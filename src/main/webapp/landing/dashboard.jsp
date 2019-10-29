@@ -112,14 +112,14 @@
 			<!-- Start of left container/first column of dashboard  -->
 			<div class="col-md-3 pr-0 left_container pl-0 bg-white">
 				<!-- start of To do list & Notes Tabs -->
-				<ul class="saleken nav nav-tabs f-14  pb-0 pl-20 pt-30"
+				<ul class="saleken nav nav-tabs f-16  pb-0 pl-20 pt-30"
 					id="myTab" role="tablist" style="background: #f9f9f9">
 					<li class="nav-item">
-						<a class="nav-link active border-istar-left-0" id="home-tab" data-toggle="tab" href="#home" role="tab"
+						<a class="nav-link active border-istar-left-0 greyish-brown" id="home-tab" data-toggle="tab" href="#home" role="tab"
 						aria-controls="home" aria-selected="true">To - Do List</a>
 					</li>
 					<li class="nav-item ">
-						<a class="nav-link border-istar-left-0" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+						<a class="nav-link border-istar-left-0 greyish-brown" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
 						aria-controls="profile" aria-selected="false">Notes</a>
 					</li>
 
@@ -161,10 +161,10 @@
 										</div>
 										<div class="dropdown-menu   istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-left" style="min-width:150px;max-width:150px;"
 											aria-labelledby="todolist">
-											<button class="dropdown-item" type="button" id="create_event" onclick="scheduleEvent()">Create
+											<button class="dropdown-item  f-14 fw-500" type="button" id="create_event" onclick="scheduleEvent()">Create
 												an Event</button>
 
-											<button class="dropdown-item" type="button"  id="schedule_task" onclick="scheduleTask()">Schedule
+											<button class="dropdown-item  f-14 fw-500" type="button"  id="schedule_task" onclick="scheduleTask()">Schedule
 												Task</button>
 
 										</div>
@@ -342,25 +342,22 @@
 						%>
 						<div class="carousel-item <%=isActive%>">
 
-							<div class="card  rounded-0 saleskenCard" style="min-height: 194px;">
-								<div class="card-body">
-									<div class="row align-items-center px-3"
-										style="min-height: 104px;">
+							<div class="card  rounded-0 saleskenCard" >
+								<div class="card-body p-0 p-30">
+									<div class="row align-items-center p-0 pb-20">
 										<div class="col-md-4">
-											<div class="font-weight-bold f-30">
+											<div class="font-weight-bold f-30 black">
 												04
 											</div>
-											<div class="f-14 fw-500 greyish-brown">Not
-												asking for next steps</div>
+											<div class="f-16 fw-500 greyish-brown">No Follow - Ups</div>
 										</div>
-										<img class="col-md-2 signalimgsize" alt="next-step-img"
+										<img class="col-md-2 signalimgsize p-0 alt="next-step-img"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 										<div class="col-md-4 card-separation">
-											<div class="f-30 font-weight-bold greyish-brown">12</div>
-											<div class="f-14 fw-500 greyish-brown">Responded
-												positively in the end of a call</div>
+											<div class="f-30 font-weight-bold black">12</div>
+											<div class="f-16 fw-500 greyish-brown">Positive Response</div>
 										</div>
-										<img class="col-md-2 signalimgsize" alt="next-step-img"
+										<img class="col-md-2 signalimgsize pl-0" alt="next-step-img"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 									</div>
 								</div>
@@ -373,15 +370,7 @@
 						%>
 
 					</div>
-					<a class="carousel-control-prev" href="#carouselExampleIndicators"
-						role="button" data-slide="prev"> <span
-						class="carousel-control-prev-icon" aria-hidden="true"></span> <span
-						class="sr-only">Previous</span>
-					</a> <a class="carousel-control-next" href="#carouselExampleIndicators"
-						role="button" data-slide="next"> <span
-						class="carousel-control-next-icon" aria-hidden="true"></span> <span
-						class="sr-only">Next</span>
-					</a>
+				
 				</div>
 				<!-- End of Signal and its count card -->
 				<!-- Start of Top/Bottom 5 Agent card-->
@@ -469,7 +458,7 @@
 									>Angry</span>
 							</div>
 						</div>
-						<h5 class="card-title mb-0 f-18 font-weight-bold text-truncate" title="Accenture">Accenture Consulting Inc.</h5>
+						<h5 class="card-title mb-0 f-18 font-weight-bold text-truncate greyish-brown" title="Accenture">Accenture Consulting Inc.</h5>
 						<div class="f-16 brownish-grey text-truncate" title="Accenture">Robert Wolken</div>
 						<div class="f-12 brown-grey pb-10">Manager</div>
 						<div class="dotted-1 "></div>
@@ -504,7 +493,7 @@
 								<div class=" pr-10">
 								<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold">JOIN NOW</button>
 								</div>
-								<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold">LISTEN</button>
+								<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold greyish-brown">LISTEN</button>
 								
 
 						</div>
@@ -529,7 +518,7 @@
 						<p class="card-text greyish-brown f-14 text-truncate mb-0" title="Product Price in too expensive">Product Price in too
 							expensive, and agents are not supportive and they are not
 							providing information !</p>
-						<div class="f-18 pt-20 greyish-brown text-truncate" title="Martin Franklin">Martin Franklin</div>
+						<div class="f-18 pt-20 greyish-brown text-truncate font-weight-bold" title="Martin Franklin">Martin Franklin</div>
 						<div class="f-16 brownish-grey text-truncate" title="Infogen Consulting Pvt.">Infogen Consulting Pvt.
 							Ltd</div>
 						<div class="pt-25">

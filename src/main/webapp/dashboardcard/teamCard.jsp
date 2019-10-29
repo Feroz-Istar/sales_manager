@@ -21,7 +21,7 @@
 		<div class="row m-0 ">
 			<div class="col-md-6 p-0 pb-20">
 			<div class="p-0 m-0 font-weight-bold f-18 text-truncate" title="team">
-				Team 0<%=j+1 %>&nbsp; - &nbsp;<span class="brown-grey f-16">10 user</span>
+				Team Name<%=j+1 %>&nbsp; - &nbsp;<span class="brown-grey f-16 font-weight-normal">10 user</span>
 				</div>
 			</div>
 			

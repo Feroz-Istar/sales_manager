@@ -243,6 +243,7 @@ html, body {
 		padding-bottom: 0;
 		height: 40px;
 		line-height: 40px;
+		color: #444444 !important;
 	}
 }
 
@@ -770,6 +771,9 @@ Modifying the scroll bar across the whole application
 	background: #b30000;
 }
 /* start of color */
+.black-two{
+	color:#262626 !important;
+}
 .theme_color {
 	color: #ed4d67 !important;
 }
@@ -835,7 +839,7 @@ Modifying the scroll bar across the whole application
 }
 
 .very-light-pink {
-	color: #cccccc;
+	color: #cccccc !important;
 }
 /* end of color */
 
