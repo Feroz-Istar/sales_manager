@@ -29,7 +29,7 @@
 			<div class="pipeline-container <%=isshow%> " style="padding: 30px;padding-bottom: 60px !important;">
 				<div class="row m-0 pb-20">
 					<div
-						class="card-title col-md-6 p-0 m-0 font-weight-bold f-18 greyish-brown text-truncate"
+						class="card-title col-md-6 p-0 m-0 font-weight-bold f-18 black text-truncate"
 						title="Pipeline">
 						Pipeline - 0<%=j + 1%></div>
 
@@ -75,16 +75,16 @@
 									</div>
 									<div class="row m-0 pb-30 theme_dashed_border_bottom_2 ">
 										<div class="col-md-4 p-0">
-											<div class="font-weight-bold f-12 brownish-grey">Estimated
+											<div class="f-12 brownish-grey">Estimated
 												Value</div>
 										</div>
 										<div class="col-md-4 p-0">
-											<div class="font-weight-bold f-12 brownish-grey">Tentative
+											<div class=" f-12 brownish-grey">Tentative
 											</div>
 
 										</div>
 										<div class="col-md-4 p-0">
-											<div class="font-weight-bold f-12 brownish-grey">Win
+											<div class=" f-12 brownish-grey">Win
 												Rate</div>
 										</div>
 									</div>
@@ -103,9 +103,9 @@
 									<div class="row m-0 ">
 										<div class="col p-0 pr-25">
 											<div class="d-flex pb-10">
-												<div class="font-weight-bold f-12 brownish-grey pr-45">Utilisation
+												<div class=" f-12 brownish-grey pr-45">Utilisation
 												</div>
-												<div class="font-weight-bold f-12 brownish-grey">Talk
+												<div class=" f-12 brownish-grey">Talk
 													Ratio</div>
 											</div>
 

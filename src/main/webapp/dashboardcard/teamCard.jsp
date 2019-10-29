@@ -46,16 +46,16 @@
 									</div>
 									<div class="row m-0 pb-30 theme_dashed_border_bottom_2 ">
 										<div class="col-md-4 p-0">
-											<div class="font-weight-bold f-12 brownish-grey">Achieved
+											<div class=" f-12 brownish-grey">Achieved
 												Value</div>
 										</div>
 										<div class="col-md-4 p-0">
-											<div class="font-weight-bold f-12 brownish-grey">Win Rate
+											<div class=" f-12 brownish-grey">Win Rate
 											</div>
 
 										</div>
 										<div class="col-md-4 p-0">
-											<div class="font-weight-bold f-12 brownish-grey">Tentative</div>
+											<div class=" f-12 brownish-grey">Tentative</div>
 										</div>
 									</div>
 
@@ -73,9 +73,9 @@
 									<div class="row m-0 ">
 										<div class="col p-0 pr-25">
 											<div class="d-flex pb-10">
-												<div class="font-weight-bold f-12 brownish-grey pr-45">Utilisation
+												<div class="f-12 brownish-grey pr-45">Utilisation
 												</div>
-												<div class="font-weight-bold f-12 brownish-grey">Talk
+												<div class=" f-12 brownish-grey">Talk
 													Ratio</div>
 											</div>
 

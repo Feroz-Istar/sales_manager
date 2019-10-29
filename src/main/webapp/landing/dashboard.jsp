@@ -491,7 +491,7 @@
 							
 								
 								<div class=" pr-10">
-								<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold">JOIN NOW</button>
+								<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold">JOIN</button>
 								</div>
 								<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold greyish-brown">LISTEN</button>
 								
@@ -513,7 +513,7 @@
 				<!-- Start of issue resolve card-->
 				<div class="card rounded-0 shadow mb-20" >
 					<div class="card-body p-0 p-20">
-						<h6 class="card-subtitle m-0 text-muted f-12 pb-10 fw-300">June 12,
+						<h6 class="card-subtitle m-0 brown-grey f-12 pb-10 fw-300">June 12,
 							2019</h6>
 						<p class="card-text greyish-brown f-14 text-truncate mb-0" title="Product Price in too expensive">Product Price in too
 							expensive, and agents are not supportive and they are not
@@ -588,7 +588,7 @@
 						<p class="brownish-grey f-16 pb-25">Louella sent an request for
 							Meeting!</p>
 						<button type="button" class="btn join_btn istar-btn-hover f-12 mr-2 mb-3">ACCEPT</button>
-						<button type="button" class="btn listen_btn f-12 mb-3">REJECT</button>
+						<button type="button" class="btn listen_btn f-12 mb-3  font-weight-bold greyish-brown">REJECT</button>
 					</div>
 				</div>
 				<!-- End of accepting incoming call by Associate card-->
@@ -668,7 +668,7 @@
 				</form>
 		      </div>
 		      <div class="modal-footer p-0 pt-20 pb-20">
-		        <button type="submit" class="btn theme_color f-14 font-weight-bold" >Reset</button>
+		        <button type="submit" class="btn theme_color f-14 font-weight-bold" >Reset All</button>
 		         <button type="button" class="btn big_button rounded-0 f-14 font-weight-bold"  id="create" onclick="showList()">CREATE</button>		        
 		      </div>
 		    </div>
