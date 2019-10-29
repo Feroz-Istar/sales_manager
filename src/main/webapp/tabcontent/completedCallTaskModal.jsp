@@ -65,10 +65,7 @@
 
 
 												</div>
-												<div class="row shadow-bottom m-0 pl-45 pr-45 "> 
-												<div class="col p-0">
-												<div class="theme_dotted_border_bottom "></div>	
-												</div></div> 
+												
 
 												<div class="row m-0 pb-30">
 													<div class="col p-0 d-flex flex-row justify-content-center">
@@ -118,8 +115,8 @@
 													
 													<div class="row  m-0 audioitem <%=isactive %>">
 													<div class="col-md-12 p-0 ">
-													<div class="row  m-0 audioitemrow  "  style="border-bottom: 1px dashed #cccccc;">
-														<div class="col-md-6 p-0 pl-65 pt-15 pb-15">
+													<div class="row  m-0 audioitemrow ml-45 mr-10 "  style="border-bottom: 1px dashed #cccccc;">
+														<div class="col-md-6 p-0 pl-20 pt-15 pb-15">
 														<div class="d-flex flex-column">
 															<p class="mb-0 light_gray f-12">06 Mint</p>
 														<p class="mb-0 bblack f-16 text-break">Introduction</p>
@@ -237,64 +234,69 @@
 
 
 												<div class="col-md-1 p-0">
+												<div class=" dropleft" >
+													<button type="button"
+														class="btn btn-secondary dropdown-toggle"
+														data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false" style="display:none" id="completed_call_task_content">Dropleft</button>
+													<div class="dropdown-menu completed_call_task_content" aria-labelledby="completed_call_task_content">
+														<!-- Dropdown menu links -->
+													</div>
+												</div>
 												<ul
 													class="list-group shadow d-flex flex-column h-100  taskpopup">
-													<li class="  dropleft  list-group-item p-0 py-3">
+													
+													
+													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/notes.svg"  alt="notes"/>
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="completed_call_task_content"
+															>
+															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
-															<div class="dropdown-menu notespopupdropdown pt-0"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class=" dropleft list-group-item p-0 py-3">
-														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
+													<li class=" cuesdropdown list-group-item p-0 py-3">
+														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="completed_call_task_content"
+															>
+															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
-															<div class="dropdown-menu cuespopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class="dropleft list-group-item p-0 py-3">
+													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="completed_call_task_content"
+															>
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
-															<div class="dropdown-menu crmpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class="dropleft list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg"  alt="chat"/>
+															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="completed_call_task_content"
+															>
+															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
-															<div class="dropdown-menu chatpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
-														style="height: calc(100% - 80px);"></li>
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
+														></li>
 
 
 												</ul>
 											</div>
 										</div>
 										
-	<script src="<%=baseURL%>assets/js/salesken.js"></script>
+	<script>
+	  attachTaskRelatedData();
+
+	</script>
 	
 	
 	

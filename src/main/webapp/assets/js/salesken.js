@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 	  $('[data-toggle="tooltip"]').tooltip()
-
+	  attachTaskRelatedData();
 	$('.salesken_progress').show();
 	setTimeout(function(){ $('.salesken_progress').hide() }, 1000);
 	
@@ -17,83 +17,7 @@ $( document ).ready(function() {
     	});
     }); 
     
-    /* start of task notes,cues,crm,chat dropdown */
-   
-    $('.notesdropdown').click(function(){
-    	var dropdown_id = $(this).children().data('dropdown_id');
-    	closeNotes(dropdown_id);
-    	closeCues(dropdown_id);
-    	closeCRM(dropdown_id);
-    	closeChat(dropdown_id);
-    	$(this).addClass('show');
-
-    	 $.get( "../popover/notescontent.jsp", function( data ) {
-    		 $( "."+dropdown_id ).html( data );
-    	  	$('#'+dropdown_id).dropdown('show')	;
-    	  	
-    	  	$(".closenotes").click(function(){ closeNotes(dropdown_id); });
-
-    	  	
-    	  	});
-    	
-    })
-    
-    $('.cuesdropdown').unbind().click(function(){
-    	var dropdown_id = $(this).children().data('dropdown_id');
-
-    	closeNotes(dropdown_id);
-    	closeCues(dropdown_id);
-    	closeCRM(dropdown_id);
-    	closeChat(dropdown_id);
-	  	 $(this).addClass('show');
-
-    	 $.get( "../popover/cuescontent.jsp", function( data ) {
-    		 $( "."+dropdown_id ).html( data );
-     	  	$('#'+dropdown_id).dropdown('show')	;
-    	  	$(".closecues").click(function(){ closeCues(dropdown_id); });
-
-     	  	
-    	  	});
-    	
-    });
-    $('.crmdropdown').unbind().click(function(){
-    	var dropdown_id = $(this).children().data('dropdown_id');
-
-    	closeNotes(dropdown_id);
-    	closeCues(dropdown_id);
-    	closeCRM(dropdown_id);
-    	closeChat(dropdown_id);
-    	$(this).addClass('show');
-
-   	 $.get( "../popover/crmcontent.jsp", function( data ) {
-   		 $( "."+dropdown_id ).html( data );
-  	  	$('#'+dropdown_id).dropdown('show');
-	  	$(".closecrm").click(function(){ closeCRM(dropdown_id); });
-
-   	  	});
-   	
-   });
-   
-    $('.chatdropdown').unbind().click(function(){
-    	var dropdown_id = $(this).children().data('dropdown_id');
-
-    	closeNotes(dropdown_id);
-    	closeCues(dropdown_id);
-    	closeCRM(dropdown_id);
-    	closeChat(dropdown_id);
-	  	 $(this).addClass('show');
-
-  	 $.get( "../popover/chatcontent.jsp", function( data ) {
-  		 $( "."+dropdown_id ).html( data );
-   	  	$('#'+dropdown_id).dropdown('show');
-	  	$(".closechat").click(function(){ closeChat(dropdown_id); });
-
-  	  	});
-  	
-  });
-  
-    
-	/* End of task notes,cues,crm,chat dropdown */
+ 
 	
 	
 	
@@ -185,6 +109,87 @@ jQuery.validator.setDefaults({
 	console.log(error)
 }
 });
+
+function attachTaskRelatedData (){
+	
+	   /* start of task notes,cues,crm,chat dropdown */
+	   
+    $('.notesdropdown').click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
+    	$(this).addClass('show');
+
+    	 $.get( "../popover/notescontent.jsp", function( data ) {
+    		 $( "."+dropdown_id ).html( data );
+    	  	$('#'+dropdown_id).dropdown('show')	;
+    	  	
+    	  	$(".closenotes").click(function(){ closeNotes(dropdown_id); });
+
+    	  	
+    	  	});
+    	
+    })
+    
+    $('.cuesdropdown').unbind().click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
+	  	 $(this).addClass('show');
+
+    	 $.get( "../popover/cuescontent.jsp", function( data ) {
+    		 $( "."+dropdown_id ).html( data );
+     	  	$('#'+dropdown_id).dropdown('show')	;
+    	  	$(".closecues").click(function(){ closeCues(dropdown_id); });
+
+     	  	
+    	  	});
+    	
+    });
+    $('.crmdropdown').unbind().click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
+    	$(this).addClass('show');
+
+   	 $.get( "../popover/crmcontent.jsp", function( data ) {
+   		 $( "."+dropdown_id ).html( data );
+  	  	$('#'+dropdown_id).dropdown('show');
+	  	$(".closecrm").click(function(){ closeCRM(dropdown_id); });
+
+   	  	});
+   	
+   });
+   
+    $('.chatdropdown').unbind().click(function(){
+    	var dropdown_id = $(this).children().data('dropdown_id');
+
+    	closeNotes(dropdown_id);
+    	closeCues(dropdown_id);
+    	closeCRM(dropdown_id);
+    	closeChat(dropdown_id);
+	  	 $(this).addClass('show');
+
+  	 $.get( "../popover/chatcontent.jsp", function( data ) {
+  		 $( "."+dropdown_id ).html( data );
+   	  	$('#'+dropdown_id).dropdown('show');
+	  	$(".closechat").click(function(){ closeChat(dropdown_id); });
+
+  	  	});
+  	
+  });
+  
+    
+	/* End of task notes,cues,crm,chat dropdown */
+}
 function closeNotes(dropdown_id){
 	$('.notesdropdown').removeClass('show');
   	$('#'+dropdown_id).dropdown('hide')	

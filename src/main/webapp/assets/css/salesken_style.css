@@ -4,6 +4,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif !important;
+	overflow-x:hidden;
 }
 
 .menu_icon {
@@ -1421,12 +1422,14 @@ Modifying the scroll bar across the whole application
 .pt-45 {
 	padding-top: 45px !important;
 }
-
-.pb-65 {
-	padding-bottom: 65px !important;
-}
 .pl-60 {
 	padding-left: 60px !important;
+}
+.pr-60 {
+	padding-right: 60px !important;
+}
+.pb-65 {
+	padding-bottom: 65px !important;
 }
 
 .pl-65 {

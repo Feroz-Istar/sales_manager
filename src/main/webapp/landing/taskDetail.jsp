@@ -24,6 +24,8 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 	<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
+	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+	
 </head>
 <body data-base-url="<%=baseURL%>">
 <!-- start of circular progress bar for page loading -->
@@ -467,12 +469,12 @@
 
 
 											<div class="col-md-1 p-0">
-												<div class=" dropleft" >
+												<div class=" dropleft " >
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
 														data-toggle="dropdown" aria-haspopup="true"
 														aria-expanded="false" style="display:none" id="ongoing_task_content">Dropleft</button>
-													<div class="dropdown-menu ongoing_task_content" aria-labelledby="ongoing_task_content">
+													<div class="dropdown-menu ongoing_task_content " aria-labelledby="ongoing_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
@@ -480,7 +482,7 @@
 													class="list-group shadow d-flex flex-column h-100  taskpopup">
 													
 													
-													<li class="notesdropdown list-group-item p-0 py-3">
+													<li class="notesdropdown list-group-item p-0 py-3" style="z-index:99999">
 														<div
 															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="ongoing_task_content"
 															>
@@ -489,7 +491,7 @@
 															
 														</div>
 													</li>
-													<li class=" cuesdropdown list-group-item p-0 py-3">
+													<li class=" cuesdropdown list-group-item p-0 py-3" style="z-index:99999">
 														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
 															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
@@ -497,7 +499,7 @@
 															
 														</div>
 													</li>
-													<li class="crmdropdown list-group-item p-0 py-3">
+													<li class="crmdropdown list-group-item p-0 py-3" style="z-index:99999">
 														<div
 															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
@@ -506,7 +508,7 @@
 															
 														</div>
 													</li>
-													<li class="chatdropdown list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0 py-3 " style="z-index:99999">
 														<div
 															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
@@ -518,7 +520,7 @@
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="z-index:99999;height: calc(100% - 80px);"
 														></li>
 
 
@@ -633,7 +635,7 @@
 
 								</div>
 
-								<div class="istar-dropdown-task select_focus mr-10 dropdown" id="upcoming_filter">
+								<div class="istar-dropdown-task select_focus  dropdown" id="upcoming_filter">
 									
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="upcoming_filter" data-toggle="dropdown" aria-haspopup="true"
@@ -1049,7 +1051,7 @@
 									</div>
 
 								</div>
- <div class="istar-dropdown-task select_focus mr-10 dropdown" id="completed_filter">
+ <div class="istar-dropdown-task select_focus  dropdown" id="completed_filter">
 									
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="completed_filter" data-toggle="dropdown" aria-haspopup="true"
@@ -1444,6 +1446,8 @@
 			$('.dropdown-menu').click(function(e) {
 			    e.stopPropagation();
 			});
+			
+			
 		</script>
 
 

@@ -3,277 +3,304 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	%>
+	<div class="row h-100 m-0">
+											<div class="col-md-11 p-0">
+												<div class="row justify-content-between m-0 pl-45 pr-45 pt-15 pb-10">
+													<div class="col-9 p-0 ">
+														<p class="greyish-brown f-18 mb-0 font-weight-bold text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Globex Corporation Inc.</p>
+													</div>
+													<div class="col-3 p-0">
+														<div class="d-flex justify-content-end">
+															<img src="<%=baseURL%>assets/image/heart.svg" class="cursor-pointer mr-15" alt="heart">
+														<img src="<%=baseURL%>assets/image/message.svg" class="cursor-pointer taskcomment mr-15" alt="message">
+														<img src="<%=baseURL%>assets/image/reply.svg" class="cursor-pointer taskshare " alt="reply">																	
+														
+														</div>
+													</div>
+												</div>
+												
+												<div class="row  m-0 ml-45 mr-45  pb-20  theme_dotted_border_bottom shadow-bottom  ">
+													
+													<div class="col-md-3 p-0">
+														<p class="brownish-grey f-14 mb-0">Contact Person</p>
+														<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Robert Wolken</p>
+													</div>
+													<div class="col-md-3 p-0">
+														<p class="brownish-grey f-14 mb-0">Agent</p>
+														<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation">Marilyn Fowler</p>
+													</div>
 
-	<div class="row h-100  ">
-		<div class="col-md-10 p-0">
-			<div class="row p-2 pt-4  mx-4">
-				<div class="col">
-					<p class="greyish-brown f-18 font-weight-bold text-truncate" data-toggle="tooltip" data-placement="bottom"  title="Globex Corporation Inc">Globex Corporation Inc.</p>
-				</div>
-			</div>
-			<div class="row pl-2  mx-4">
-				<div class="col-md-3 border-right-dashed-separation">
-					<p class="brownish-grey f-14 mb-0">Initiated At</p>
-					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
-				</div>
-				<div class="col-md-3 border-right-dashed-separation">
-					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</p>
-				</div>
-				<div class="col-md-3">
-					<p class="brownish-grey f-14 mb-0">Contact Person</p>
-					<p class="black f-16 fw-500 mb-0 text-truncate" data-toggle="tooltip" data-placement="bottom" title="Robert Wolken">Robert Wolken</p>
-				</div>
-				<div class="col-md-3 text-right">
-					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#leaveTaskModal">LEAVE
-						TASK</button>
-
-				</div>
-
-			</div>
-			<div class="row pl-2  mx-4">
-				<div class="col">
-					<nav>
-						<div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs"
-							role="tablist">
-							<a class="nav-item nav-link show active minw-150"
-								id="whatswrong-tab" data-toggle="tab"
-								href="#whatswrong" role="tab"
-								aria-controls="whatswrong" aria-selected="true">Whats
-								Wrong?</a> <a class="nav-item nav-link minw-150 "
-								id="whatsright-tab" data-toggle="tab"
-								href="#whatsright" role="tab"
-								aria-controls="whatsright" aria-selected="false">Whats
-								Right?</a> <a class="nav-item nav-link minw-150"
-								id="all-tab" data-toggle="tab" href="#all" role="tab"
-								aria-controls="all" aria-selected="false">All</a>
-						</div>
-					</nav>
-					<div class="tab-content mytab-content"
-						id="nav-tasktabsContent">
-						<div class="tab-pane fade show active" id="whatswrong"
-							role="tabpanel" aria-labelledby="whatswrong-tab"></div>
-						<div class="tab-pane fade show " id="whatsright"
-							role="tabpanel" aria-labelledby="whatsright-tab"></div>
-						<div class="tab-pane fade show " id="all" role="tabpanel"
-							aria-labelledby="all-tab"></div>
-					</div>
-				</div>
+												</div>
+												 
+												<div class="row m-0 pl-45 pr-45 pt-20 ">
+													<div class="col p-0">
+														<nav>
+															<div class="nav nav-tabs nav-mytabs " id="nav-tabs"
+																role="tablist">
+																<a class="nav-item nav-link show active minw-150"
+																	id="whatswrong-tab" data-toggle="tab"
+																	href="#whatswrong" role="tab"
+																	aria-controls="whatswrong" aria-selected="true">Whats
+																	Wrong?</a> <a class="nav-item nav-link minw-150 "
+																	id="whatsright-tab" data-toggle="tab"
+																	href="#whatsright" role="tab"
+																	aria-controls="whatsright" aria-selected="false">Whats
+																	Right?</a> <a class="nav-item nav-link minw-150"
+																	id="all-tab" data-toggle="tab" href="#all" role="tab"
+																	aria-controls="all" aria-selected="false">All</a>
+															</div>
+														</nav>
+														<div class="tab-content mytab-content pt-40"
+															id="nav-tasktabsContent">
+															<div class="tab-pane fade show active" id="whatswrong"
+																role="tabpanel" aria-labelledby="whatswrong-tab"></div>
+															<div class="tab-pane fade show " id="whatsright"
+																role="tabpanel" aria-labelledby="whatsright-tab"></div>
+															<div class="tab-pane fade show " id="all" role="tabpanel"
+																aria-labelledby="all-tab"></div>
+														</div>
+													</div>
 
 
-			</div>
+												</div>
+												
 
-			<div class="row pt-2 pl-3 mb-5">
-				<div class="col d-flex flex-row justify-content-center">
+												<div class="row m-0 pb-30">
+													<div class="col p-0 d-flex flex-row justify-content-center">
 
-					<div class="d-flex flex-row align-items-center mr-5">
-						<img src="<%=baseURL%>assets/image/man.jpg" alt="person" data-toggle="tooltip" data-placement="bottom" title="Lead Name"
-							class="rounded-circle hw-60 task-image-right"> <img  alt="phone"
-							src="<%=baseURL%>assets/image/calltask.svg"
-							class="rounded-circle hw-40 task-icon">
+														<div class="d-flex flex-row align-items-center">
+															<img src="<%=baseURL%>assets/image/man.jpg" alt="person"  data-toggle="tooltip" data-placement="bottom"  title="Lead Name"
+																class="rounded-circle hw-60 task-image-right"> <img
+																src="<%=baseURL%>assets/image/calltask.svg" alt="call"
+																class="rounded-circle hw-40 task-icon">
 
-					</div>
-					<button class="btn  mr-1">
-						<i class="fas fa-forward"></i>
-					</button>
-					<button class="btn hw-64 shadow rounded-circle  mr-1">
-						<i class="fas fa-play"></i>
-					</button>
+														</div>
+														<button class="btn p-0 ml-40">
+															<i class="fas fa-backward"></i>
+														</button>
+														<button class="btn hw-64 shadow rounded-circle p-0	ml-25 mr-25 ">
+															<i class="fas fa-play"></i>
+														</button>
 
-					<button class="btn  mr-5">
-						<i class="fas fa-backward"></i>
-					</button>
-					<div class="d-flex flex-row align-items-center">
-						<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
-							class="rounded-circle hw-60 task-image-right" data-toggle="tooltip" data-placement="bottom" title="Agent Name"> <img  alt="call"
-							src="<%=baseURL%>assets/image/calltask.svg"
-							class="rounded-circle hw-40 task-icon">
+														<button class="btn p-0 mr-40">
+															<i class="fas fa-forward"></i>
+														</button>
+														<div class="d-flex flex-row align-items-center">
+															<img src="<%=baseURL%>assets/image/layer.png" alt="layer" data-toggle="tooltip" data-placement="bottom" title="Agent Name"
+																class="rounded-circle hw-60 task-image-right"> <img alt="call"  
+																src="<%=baseURL%>assets/image/calltask.svg"
+																class="rounded-circle hw-40 task-icon">
 
-					</div>
+														</div>
 
-				</div>
-			</div>
-			<div class="row mt-2 ml-3 border-top-task_list">
-				<div class="col-md-4 p-0 m-0" style="	border-right: 1px solid #cccccc;">
-				<%for(int j=0;j<10;j++){ %>
-				<div class="d-flex flex-row  p-3 audioitem" style="border-bottom: 1px dashed #cccccc;">
-					<div class="mr-auto">
-					<p class="mb-0 light_gray f-12">06 Mint</p>
-					<p class="mb-0 bblack f-16 text-break">Introduction</p>
-					
-					
-					</div>
-					<div>	<button class="btn  mr-1 hw-45 playaudio">
-						<i class="fas fa-forward"></i>
-					</button></div>
-				</div>
-				<%} %>
-				
-				</div>
-				<div class="col-md-8 ">
-				<div class="row  mr-4 pt-4">
-				<div class="col">
-<video class="w-100"  controls>
+													</div>
+												</div>
+												<div class="row m-0  pl-45 pr-45  "> 
+												<div class="col p-0">
+												<div class="theme_solid_border_top_2px"></div>	
+												</div></div>
+												<div class="row  m-0">
+												<div class="col p-0">
+													<div class="row p-0 m-0  theme_solid_border_2px">
+													<div class="col-md-4 p-0  theme_solid_border_right_2px" >
+													<%for(int j=0;j<10;j++){ 
+														String isactive="";
+														if(j==0){
+															isactive = "active";
+														}
+													
+													%>
+													
+													<div class="row  m-0 audioitem <%=isactive %>">
+													<div class="col-md-12 p-0 ">
+													<div class="row  m-0 audioitemrow ml-45 mr-10 "  style="border-bottom: 1px dashed #cccccc;">
+														<div class="col-md-6 p-0 pl-20 pt-15 pb-15">
+														<div class="d-flex flex-column">
+															<p class="mb-0 light_gray f-12">06 Mint</p>
+														<p class="mb-0 bblack f-16 text-break">Introduction</p>
+														</div>
+														</div>
+														<div class="col-md-6 p-0 pr-15 pt-15 pb-15">
+															<div class="d-flex justify-content-end ">
+															<button class="btn  p-0	 hw-45 playaudio rounded-circle">
+															<i class="fas fa-play"></i>
+														</button>
+															</div>
+														</div>
+														
+													</div>
+													</div>
+													</div>
+													<%} %>
+													
+													</div>
+													<div class="col-md-8 p-0">
+<div class="row  m-0 pl-10 pt-10 pb-20 pr-45">
+				<div class="col p-0 ">
+<video class="w-100" controls="">
   <source src="https://www.radiantmediaplayer.com/media/bbb-360p.mp4" type="video/mp4">
 
 </video></div></div>
+														<div class="row m-0 pl-60 pr-45"><div class="col p-0">
+														<div id="carouselExampleIndicators"
+															class="carousel slide theme_solid_border_bottom " data-ride="carousel">
+															<ol class="carousel-indicators m-0 pb-20">
+																<li data-target="#carouselExampleIndicators"
+																	data-slide-to="0" class="active"></li>
+																<li data-target="#carouselExampleIndicators"
+																	data-slide-to="1"></li>
+																<li data-target="#carouselExampleIndicators"
+																	data-slide-to="2"></li>
+															</ol>
+															<div class="carousel-inner ">
 
-					<div id="carouselExampleIndicators"
-						class="carousel slide mb-2 pt-4" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="0" class="active"></li>
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="1"></li>
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner ">
+																<%
+																	for (int h = 0; h < 4; h++) {
+																			String isActive = "";
+																			if (h == 0) {
+																				isActive = "active";
+																			}
+																%>
+															
+																<div class="carousel-item  <%=isActive%>">
+																	
+																		<div class="row align-items-center m-0">
+																		
+																		<div class="col p-0">
+																		<div class="d-flex flex-row">
+																		
+																		<img class="hw-94 " src="<%=baseURL%>assets/image/Group 3614.svg" alt="carousal-img">
+																		<div class="border-right-blue  pl-30"></div>
+																		<p class="greyish-brown ml-20 f-16  fw-500 mb-0 align-self-center">Customers who responded positively in the end of a call</p>
+																		</div>
+																		</div>
+																	</div>
+																	</div>
 
-							<%
-								for (int h = 0; h < 4; h++) {
-										String isActive = "";
-										if (h == 0) {
-											isActive = "active";
-										}
-							%>
-							<div class="carousel-item  <%=isActive%>">
+																<%
+																	}
+																%>
+															
+															</div>
+															
+														</div>
+														</div>
+														</div>
+														<div class="row m-0" >
+															<div class="col p-0 pt-25  ">
+																<h3 class="black fw-500 f-16 mb-0 pl-40 pb-25">Transcript</h3>
+																<div class="transcript_container  " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
+																<%for(int j=0;j<20;j++){ %>
+																<div class="d-flex flex-column pl-40 pr-45 pb-25">
+																	<p class="f-14 bblack pb-10 m-0">
+																		<small class="f-12 brown-grey pr-20 ">00:20.</small> Jamie
+																		Vargas
+																	</p>
+																	<div class="card shadow " style="border-radius: 1.25rem !important;" >
+																		<div class="card-body">
+																			<p class="card-text f-14 m-0">Some quick example text to
+																				build on the card title and make up the bulk of the
+																				card's content.</p>
+																		</div>
+																	</div>
+																</div>
+																
+																
+																<div class="d-flex flex-column pl-40 pr-45 pb-25">
+																	<p class="f-14 bblack align-self-end pb-10 mb-0">
+																		<small class="f-12 brown-grey  pr-20  ">00:20.</small> Jamie
+																		Vargas
+																	</p>
+																	<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
+																		<div class="card-body">
+																			<p class="card-text f-14 mb-0">Some quick example text to
+																				build on the card title and make up the bulk of the
+																				card's content.</p>
+																		</div>
+																	</div>
+																</div>
+																<%} %>
+																</div>
+															</div>
 
-								
-										<div class="row align-items-center ml-3 mr-3"
-											style="min-height: 170px;">
-											<div class="col">
-											<div class="d-flex flex-row">
-											
-											<img class="hw-94 mr-5" src="<%=baseURL%>assets/image/Group 3614.svg"  alt="carousal-item">
-											<div class="border-right-blue mr-3"></div>
-											<p class="greyish-brown f-16 fw-500  align-self-center">Customers who responded positively in the end of a call</p>
+														</div>
+
+
+													</div>
+												</div>
+												</div>
+												</div>
+
+
 											</div>
-											</div>
-										</div>
-									
-
-
-							</div>
-							<%
-								}
-							%>
-
-						</div>
-						<a class="carousel-control-prev"
-							href="#carouselExampleIndicators" role="button"
-							data-slide="prev"> <span
-							class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a> <a class="carousel-control-next"
-							href="#carouselExampleIndicators" role="button"
-							data-slide="next"> <span
-							class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
-					
-					<div class="row mt-2   ml-3 pr-2" >
-						<div class="col">
-							<h3 class="black fw-500 f-16 mb-4">Transcript</h3>
-							<div class="transcript_container p-3 " style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
-							<%for(int j=0;j<20;j++){ %>
-							<div class="d-flex flex-column pr-5 mr-5 mb-4 ">
-								<p class="f-14 bblack">
-									<small class="f-12 brown-grey mr-2">00:20.</small> Jamie
-									Vargas
-								</p>
-								<div class="card shadow" style="border-radius: 1.25rem !important;" >
-									<div class="card-body">
-										<p class="card-text f-14">Some quick example text to
-											build on the card title and make up the bulk of the
-											card's content.</p>
-									</div>
-								</div>
-							</div>
-							
-							
-							<div class="d-flex flex-column pl-5 ml-5 mb-4">
-								<p class="f-14 bblack align-self-end">
-									<small class="f-12 brown-grey mr-2 ">00:20.</small> Jamie
-									Vargas
-								</p>
-								<div class="card shadow align-self-end very-light-pink-bg" style="border-radius: 1.25rem !important;" >
-									<div class="card-body">
-										<p class="card-text f-14">Some quick example text to
-											build on the card title and make up the bulk of the
-											card's content.</p>
-									</div>
-								</div>
-							</div>
-							<%} %>
-							</div>
-						</div>
-
-					</div>
-
-
-				</div>
-			</div>
-
-		</div>
 
 
 
-			<div class="col-md-2 pr-0">
+												<div class="col-md-1 p-0">
+												<div class=" dropleft" >
+													<button type="button"
+														class="btn btn-secondary dropdown-toggle"
+														data-toggle="dropdown" aria-haspopup="true"
+														aria-expanded="false" style="display:none" id="completed_webinar_task_content">Dropleft</button>
+													<div class="dropdown-menu completed_webinar_task_content" aria-labelledby="completed_webinar_task_content">
+														<!-- Dropdown menu links -->
+													</div>
+												</div>
 												<ul
-													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
-													<li class="  dropleft  list-group-item p-0 py-3">
+													class="list-group shadow d-flex flex-column h-100  taskpopup">
+													
+													
+													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="completed_webinar_task_content"
+															>
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
-															<div class="dropdown-menu notespopupdropdown pt-0"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class=" dropleft list-group-item p-0 py-3">
-														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
+													<li class=" cuesdropdown list-group-item p-0 py-3">
+														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="completed_webinar_task_content"
+															>
+															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
-															<div class="dropdown-menu cuespopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class="dropleft list-group-item p-0 py-3">
+													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
+															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="completed_webinar_task_content"
+															>
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
-															<div class="dropdown-menu crmpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
-													<li class="dropleft list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg"  alt="chat"/>
+															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="completed_webinar_task_content"
+															>
+															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
-															<div class="dropdown-menu chatpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
+															
 														</div>
 													</li>
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
-														style="height: calc(100% - 80px);"></li>
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
+														></li>
 
 
 												</ul>
 											</div>
-</div>	<script src="<%=baseURL%>assets/js/salesken.js"></script>
+										</div>
+										
+	<script>
+	  attachTaskRelatedData();
+
+	</script>
+	
+	
+	
+	
