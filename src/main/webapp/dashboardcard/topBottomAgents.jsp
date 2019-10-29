@@ -24,7 +24,7 @@
 		%>
 		<div class=" font-weight-bold f-18 black pb-20 pt-20"><%=heading%></div>
 
-		<div class="row m-0 <%=heading.replaceAll(" ","_")%>">
+		<div class="row m-0 theme_dashed_border_bottom  <%=heading.replaceAll(" ","_")%> headingrow ">
 			<%
 				for (int i = 0; i < 5; i++) {
 					String ispadding="";
@@ -34,7 +34,7 @@
 					}
 			%>
 			<div
-				class="col theme_dashed_border_bottom p-0 pb-20 ">
+				class="col p-0 pb-20 ">
 						<div class="d-flex flex-column border-right-dashed-separation mb-10 <%=ispadding %> pr-20 ">
 						<img alt="" src="<%=baseURL%>assets/image/layer.png"
 							class="hw-60  rounded-circle align-self-center"

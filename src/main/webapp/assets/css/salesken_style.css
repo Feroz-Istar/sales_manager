@@ -2151,17 +2151,22 @@ background: #fbdcab;
 
 
 
-.Rockstars>.theme_dashed_border_bottom>.border-right-dashed-separation:last-of-type  {
-	background: red !important;
+.Rockstars> *:last-child >.border-right-dashed-separation  {
+	border-right: 0 !important;
 }
-.Laggards:last-child {
-	background: red !important;
+.Laggards> *:last-child >.border-right-dashed-separation {
+	border-right: 0 !important;
 
 }
-.Trending_Up:last-child{
-	background: red !important;
+.Trending_Up> *:last-child >.border-right-dashed-separation{
+	border-right: 0 !important;
 
 }
-.Trending_Down:last-child{
-border-right: 0 !important;
+.Trending_Down> *:last-child >.border-right-dashed-separation{
+	border-right: 0 !important;
 }
+.headingrow:last-child{
+		border-bottom: 0 !important;
+	
+}
+
