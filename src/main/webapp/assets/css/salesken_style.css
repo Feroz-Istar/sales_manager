@@ -795,7 +795,7 @@ Modifying the scroll bar across the whole application
 }
 
 .saleken.nav-tabs>li>a {
-	color: #999999;
+	color: #999999 !important;
 }
 
 .greyish-brown {
