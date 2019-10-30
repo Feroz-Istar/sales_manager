@@ -867,6 +867,12 @@ Modifying the scroll bar across the whole application
 .very-light-pink-grey-bg {
 	background-color: #f9f9f9 !important;
 }
+ .bg-purple{
+    	background-color: #9fa7ff;
+    }
+    .bg-light-pink{
+    	background-color: #fdedef;
+    }
 /* end of background Color */
 
 /* start of border color*/
@@ -886,9 +892,7 @@ Modifying the scroll bar across the whole application
 	border-bottom: 1px solid #cccccc;
 }
 
-.col_bordering:nth-child(4n) {
-	border-right: none !important;
-}
+
 
 .border-bottom-dashed-separation {
 	border-bottom: 2px dashed ;
@@ -911,10 +915,32 @@ Modifying the scroll bar across the whole application
 	border-bottom: 2px dashed #cccccc;
 }
 
-.col_bordering:nth-last-child(-n+4) {
-	border-bottom: none !important;
-}
-
+.col_bordering:nth-child(3n) {
+		border-right: none !important;
+	}
+	
+	.border-bottom-dashed-separation {
+		border-bottom: 2px dashed #cccccc ;
+	}
+	
+	.col_bordering:nth-last-child(-n+3) {
+		border-bottom: none !important;
+	}
+	.col_bordering:nth-child(3n) {
+		border-right: none !important;
+	}
+	
+	.col_bordering4 {
+		border-right: 2px dashed #cccccc;
+		border-bottom: 2px dashed #cccccc;
+	}
+	
+	.col_bordering4:nth-last-child(-n+4) {
+		border-bottom: none !important;
+	}
+	.col_bordering4:nth-child(4n) {
+		border-right: none !important;
+	}
 .custom-taskborder {
 	border: 1px solid #cccccc;
 	border-radius: 0;
@@ -2141,6 +2167,10 @@ pointer-events: none;
     display: none;
 }
 
+	.progress-bar-striped {
+    background-image: linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+    background-size: 1rem 1rem;
+    }
 
 
 .pipeline_progress{
@@ -2215,4 +2245,51 @@ background: #fbdcab;
 		border-bottom: 0 !important;
 	
 }
+
+/* start of radio buttton */
+
+
+    .istar-radio-btn .istar-radio-btn-style {
+	    position: relative;
+	    display: block;
+	    float: left;
+	    margin-right: 10px;
+	    width: 20px;
+	    height: 20px;
+	    border: 2px solid #999999;
+	    border-radius: 50%;
+	    -webkit-tap-highlight-color: transparent;
+	}
+	.istar-radio-btn .istar-radio-btn-style:after {
+	    content: '';
+	    position: absolute;
+	    top: 3px;
+	    left: 3px;
+	    width: 10px;
+	    height: 10px;
+	    border-radius: 50%;
+	    background: #ed4d67;
+	    transform: scale(0);
+	    transition: all 0.2s ease;
+	    opacity: 0.08;
+	    pointer-events: none;
+	}
+	.istar-radio-btn {
+	    position: relative;
+	    cursor: pointer;
+	    font-size: 13px;
+	}
+	input[type="radio"]:checked + .istar-radio-btn-style:after {
+	    transform: scale(1);
+	    transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+	    opacity: 1;
+	}
+	.istar-radio-btn > input {
+    	display: none;
+	}
+	input[type="radio"]:checked + .istar-radio-btn-style {
+    	border-color: #ed4d67;
+	}
+
+/* end of radio button */
 
