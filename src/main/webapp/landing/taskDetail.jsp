@@ -1176,7 +1176,7 @@
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 p-0 border-right taskmodal ">
+							<div class="col-md-3 p-0 border-right taskmodal pl-20">
 								<div class="nav flex-column nav-pills "
 									id="taskdetail-tab-list" role="tablist"
 									aria-orientation="vertical">

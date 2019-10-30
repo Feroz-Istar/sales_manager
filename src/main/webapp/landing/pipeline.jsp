@@ -340,7 +340,7 @@
 		      			</div>
 		      			
 		      			<div class="col-md-6 p-0">
-		      				<div class="row align-items-center m-0">
+		      				<div class="row  m-0">
 		      					<div class="col-md-11 p-0">
 		      						<div class="row position-relative justify-content-between m-0">
 		      						<div class="line"></div>
@@ -365,8 +365,8 @@
 		      							
 									</div>
 		      					</div>
-		      					<div class="col-md-1 p-0 text-right">
-		      						<div class="istar-dropdown dropleft d-inline">
+		      					<div class="col-md-1 p-0 text-right h-100 ">
+		      						<div class="istar-dropdown dropleft pt-20 d-inline">
 											<button class="dropdown-icon-btn p-0 text-right" type="button" id="dropdownMenuButton"
 		                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
 		                                            aria-expanded="false">
