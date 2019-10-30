@@ -71,7 +71,7 @@
 
 		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 pt-10">
-				<ul class="nav nav-tabs nav-mytabs pl-40 pr-40" id="reportTab" role="tablist">
+				<ul class="nav nav-tabs nav-mytabs pl-40 pr-40 d-flex align-items-end" id="reportTab" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active" id="nav-target-tab"
 							data-toggle="tab" href="#nav-target" role="tab"
 							aria-controls="nav-target" aria-selected="true">Target</a></li>
@@ -157,7 +157,7 @@
 										
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="target_dropdown" style="width:350px">
 												
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="targetTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="targetTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-item nav-link active" id="target_individual-tab" data-toggle="tab" href="#target_individual" role="tab" aria-controls="target_individual" aria-selected="true">Individual</a>
 												  </li>

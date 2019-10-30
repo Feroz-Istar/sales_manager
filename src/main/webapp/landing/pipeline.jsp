@@ -140,7 +140,7 @@
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="myTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="myTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="individual-tab" data-toggle="tab" href="#individual" role="tab" aria-controls="individual" aria-selected="true">Individual</a>
 												  </li>

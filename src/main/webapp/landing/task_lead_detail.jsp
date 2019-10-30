@@ -65,7 +65,7 @@
 		</div>
 		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 ">
-				<ul class="nav nav-tabs nav-mytabs p-0 pl-40 pt-20"
+				<ul class="nav nav-tabs nav-mytabs p-0 pl-40 pt-20 d-flex align-items-end"
 					id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="agent-detail-tab" data-toggle="tab" href="#agent-detail"

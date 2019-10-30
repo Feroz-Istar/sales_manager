@@ -93,16 +93,16 @@
 		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 ">
 
-				<ul class="nav nav-tabs nav-mytabs pl-40 pt-20 " id="nav-tabs"
+				<ul class="nav nav-tabs nav-mytabs pl-40 pt-20 d-flex align-items-end" id="nav-tabs"
 					role="tablist">
-					<li class="nav-item "><a
+					<li class="nav-item rounded-0"><a
 						class="nav-item nav-link show active" id="nav-ongoing-tab"
 						data-toggle="tab" href="#nav-ongoing" role="tab"
 						aria-controls="nav-ongoing" aria-selected="true">Ongoing</a></li>
-					<li class="nav-item"><a class="nav-item nav-link"
+					<li class="nav-item rounded-0"><a class="nav-item nav-link"
 						id="nav-upcoming-tab" data-toggle="tab" href="#nav-upcoming"
 						role="tab" aria-controls="nav-upcoming" aria-selected="false">Upcoming</a></li>
-					<li class="nav-item"><a class="nav-item nav-link"
+					<li class="nav-item rounded-0"><a class="nav-item nav-link"
 						id="nav-completed-tab" data-toggle="tab" href="#nav-completed"
 						role="tab" aria-controls="nav-completed" aria-selected="false">Completed</a>
 					</li>
@@ -234,7 +234,7 @@
 										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="ongoing_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="myTab"
+										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="myTab"
 											role="tablist">
 											<li class="nav-item"><a class="nav-link active"
 												id="individual-tab" data-toggle="tab" href="#individual"
@@ -649,7 +649,7 @@
 										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="upcoming_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="upcomingTab"
+										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="upcomingTab"
 											role="tablist">
 											<li class="nav-item"><a class="nav-link active"
 												id="upcoming_individual-tab" data-toggle="tab" href="#upcoming_individual"
@@ -1065,7 +1065,7 @@
 										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="completed_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="completedTab"
+										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="completedTab"
 											role="tablist">
 											<li class="nav-item"><a class="nav-link active"
 												id="completed_individual-tab" data-toggle="tab" href="#completed_individual"

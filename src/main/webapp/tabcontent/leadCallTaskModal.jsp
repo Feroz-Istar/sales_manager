@@ -45,20 +45,20 @@
 		</div>
 
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
-			<div class="col p-0">
-				<nav>
-					<div class="nav nav-tabs nav-mytabs " id="nav-tabs" role="tablist">
-						<a class="nav-item nav-link show active minw-150"
-							id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
-							role="tab" aria-controls="whatswrong" aria-selected="true">Whats
-							Wrong?</a> <a class="nav-item nav-link minw-150 " id="whatsright-tab"
-							data-toggle="tab" href="#whatsright" role="tab"
-							aria-controls="whatsright" aria-selected="false">Whats Right?</a>
-						<a class="nav-item nav-link minw-150" id="all-tab"
-							data-toggle="tab" href="#all" role="tab" aria-controls="all"
-							aria-selected="false">All</a>
-					</div>
-				</nav>
+			<div class="col p-0">		
+				<ul class="nav nav-tabs nav-mytabs p-0 pl-40 pt-20 d-flex align-items-end"
+					id="agent-details" role="tablist">
+					<li class="nav-item"><a class="nav-item nav-link active"
+						id="whatsright-tab" data-toggle="tab" href="#whatsright"
+						role="tab" aria-controls="whatsright" aria-selected="true">Whats Right?</a></li>
+					<li class="nav-item"><a class="nav-item nav-link"
+						id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
+						role="tab" aria-controls="whatswrong" aria-selected="false">Whats
+							Wrong?</a></li>
+								<li class="nav-item"><a class="nav-item nav-link"
+						id="all-tab" data-toggle="tab" href="#all"
+						role="tab" aria-controls="all" aria-selected="false">All</a></li>
+				</ul>
 				<div class="tab-content mytab-content pt-40"
 					id="nav-tasktabsContent">
 					<div class="tab-pane fade show active" id="whatswrong"
