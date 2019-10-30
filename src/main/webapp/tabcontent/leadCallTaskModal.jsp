@@ -39,7 +39,7 @@
 					title="Globex Corporation">Robert Wolken</p>
 			</div>
 			<div class="col-md-3 d-flex justify-content-end p-0">
-				<button type="button" class="btn small_outline_button rounded-0  f-12 font-weight-bold " data-toggle="modal" data-target="#leaveTaskModal">LEAVE TASK</button>
+				<button type="button" class="btn small_outline_button rounded-0  f-12 font-weight-bold " id="leave_task"  href="/modals/leavetask.jsp">LEAVE TASK</button>
 			</div>
 			
 		</div>
@@ -320,6 +320,13 @@
 <script>
 	$('.dropdown-menu').click(function(e) {
 		e.stopPropagation();
+	});
+	
+	$('#leave_task').unbind().click(function (e){
+		  e.preventDefault();
+		  $('#leaveTaskModal').modal('show').find('.modal-body').load($(this).attr('href'));
+
+		  
 	});
 </script>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
