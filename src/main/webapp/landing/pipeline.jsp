@@ -66,10 +66,10 @@
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0 ">
-				<div class="input-group position-relative search_width">
-				<i class="fa fa-search f-12 brown-grey searchBox" ></i>
-					<input id=""
-						class="form-control  custom-taskborder brown-grey f-14 search_height custom-result-selects"
+				<div class="input-group position-relative pl-2 pr-2 search_width">
+				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
+					<input id="pipeline_search"
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
@@ -94,7 +94,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="pipeline_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<span class="sr-only">Toggle Dropdown</span>All Deal Value
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -113,7 +113,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="pipeline_status" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<span class="sr-only">Toggle Dropdown</span>All Stages
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -133,7 +133,7 @@
 										<button class="istar-dropdown-arrow "
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="activity" style="width:350px">
