@@ -1786,6 +1786,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-o-transform: scale(1) !important; /* Opera */
 	box-shadow: 8px 4px 20px 0 rgba(0, 0, 0, 0.13);
 }
+.audioitem.active .f-16{
+		font-size:18px !important;
+		font-weight:500;
+}
+.audioitem.active .f-12{
+	color: #999999 !important;
+	font-weight:400 !important;
+}
+
+
 
 .audioitem.active .audioitemrow {
 	border-bottom: 0 !important;
@@ -2044,6 +2054,7 @@ label.error {
 	padding-right: 25px !important;
 	height: 30px !important;
 	border-color: #222222 !important;
+	color:#444444;
 }
 
 .small_outline_button:hover {

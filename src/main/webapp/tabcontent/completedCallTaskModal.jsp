@@ -116,7 +116,7 @@
 					<div
 						class="f-14 font-weight-bold theme_color cursor-pointer align-self-center"
 						onclick="window.location.href = 'task_lead_detail.jsp'">
-						View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
+						View More <i class="fas fa-chevron-circle-right ml-1 "></i>
 					</div>
 				</div>
 			</div>
@@ -225,7 +225,7 @@
 									style="border-bottom: 1px dashed #cccccc;">
 									<div class="col-md-6 p-0 pl-20 pt-15 pb-15">
 										<div class="d-flex flex-column">
-											<p class="mb-0 light_gray f-12">06 Mint</p>
+											<p class="mb-0 light_gray fw-300 f-12">06 Mint</p>
 											<p class="mb-0 bblack f-16 text-break">Introduction</p>
 										</div>
 									</div>
@@ -310,9 +310,9 @@
 											Vargas
 										</p>
 										<div class="card shadow "
-											style="border-radius: 1.25rem !important;">
+											style="border-radius: 0px 20px 20px 20px">
 											<div class="card-body">
-												<p class="card-text f-14 m-0">Some quick example text to
+												<p class="card-text f-14 blue-black m-0">Some quick example text to
 													build on the card title and make up the bulk of the card's
 													content.</p>
 											</div>
@@ -326,9 +326,9 @@
 											Vargas
 										</p>
 										<div class="card shadow align-self-end very-light-pink-bg"
-											style="border-radius: 1.25rem !important;">
+											style="border-radius: 20px 0px 20px 20px">
 											<div class="card-body">
-												<p class="card-text f-14 mb-0">Some quick example text
+												<p class="card-text blue-black f-14 mb-0">Some quick example text
 													to build on the card title and make up the bulk of the
 													card's content.</p>
 											</div>

@@ -25,7 +25,8 @@
 	rel="stylesheet">
 	<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-	
+	<link rel="stylesheet"
+	href="<%=baseURL%>assets/css/wickedpicker.min.css">
 </head>
 <body data-base-url="<%=baseURL%>">
 <!-- start of circular progress bar for page loading -->
@@ -361,10 +362,11 @@
 											<div class="col-md-9 p-0">
 												<div class="d-flex flex-row ">
 													<div
-														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$
+														class="f-16 font-weight-bold pr-10 theme_color">$
 														500</div>
+														<div class=" border-right-separation  my-1"></div>
 													<div
-														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
+														class="pl-10 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
 												<div class="f-16 fw-500  black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation. Inc.">Globex Corporation
 													Inc.</div>
@@ -419,22 +421,22 @@
 															class="col-md-6 p-0 text-right"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
 															<div class="f-14 font-weight-bold  theme_color cursor-pointer" >View More <i
-																class="fas fa-chevron-circle-right ml-1 pr-2"></i></div>
+																class="fas fa-chevron-circle-right"></i></div>
 																
 														</div>
 														
 													</div>
 													<div class="row align-items-center m-0">
-														<div class="col-md-2 p-0">
+														<div class="col-md-3 p-0">
 															<div class="f-14 brownish-grey">Contact Person</div>
 															<div class="f-16 fw-500 black  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Rosemary Garcia">Rosemary Garcia</div>
 														</div>
-														<div class="col-md-2 p-0">
+														<div class="col-md-3 p-0 pl-20">
 															<div class="f-14 brownish-grey">Agent</div>
 															<div class="f-16 fw-500 black  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Marry Vasquez">Marry Vasquez</div>
 														</div>
 												
-														<div class="col-md-8 p-0 d-flex justify-content-end">
+														<div class="col-md-6 p-0 d-flex justify-content-end">
 														
 																<button type="button" class="btn small_button rounded-0 font-weight-bold mr-10 f-12" id="outgoing_join">JOIN
 																NOW</button>
@@ -830,23 +832,22 @@
 															class=" f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
 															View More <i
-																class="fas fa-chevron-circle-right ml-1 pr-2"></i>
+																class="fas fa-chevron-circle-right ml-1 "></i>
 														</div>
 														</div>
 													</div>
 													<div class="row align-items-center  m-0">
-														<div class="col-md-2 p-0">
+														<div class="col-md-3 p-0">
 															<div class="f-14 brownish-grey">Contact Person</div>
 															<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Deann Harper">Deann Harper</div>
 														</div>
-														<div class="col-md-2 p-0">
+														<div class="col-md-3 p-0 pl-40">
 															<div class="f-14 brownish-grey">Agent</div>
 															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Bradley Obrien">Bradley Obrien</div>
 														</div>
-														<div class="col-md-5 p-0"></div>
-														<div class="col-md-3 p-0 d-flex justify-content-end">
+														<div class="col-md-6 p-0 d-flex justify-content-end">
 															
-																<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold" data-toggle="modal" data-target="#rescheduleCenter" id="upcomimg_reschedule">RESCHEDULE</button>
+																<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold"  id="upcomimg_reschedule" href="/modals/reschedule.jsp">RESCHEDULE</button>
 														</div>
 													</div>
 												</div>
@@ -856,7 +857,7 @@
 
 												<div class="theme_dashed_border_bottom pb-30 pt-30">
 													<div class="row m-0">
-														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+														<div class="col-md-3 p-0 border-right-dashed-separation ">
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black">Call</div>
 														</div>
@@ -878,8 +879,8 @@
 												<div
 													class="d-flex flex-column justify-content-center align-items-center pt-45 ">
 													<img src="<%=baseURL%>assets/image/timer.svg"  alt="clock"
-														class="pb-20 time-img-size">
-													<div class="f-16 font-weight-bold ">Few minutes
+														class="mb-20 time-img-size">
+													<div class="f-16 fw-500 black ">Few minutes
 														left !</div>
 													<div class="f-12 brownish-grey">Lorem Ipsum is simply
 														dummy text of the printing and typesetting industry.</div>
@@ -969,7 +970,7 @@
 						<!-- start of completed tab -->
 						<div
 							class="row align-items-center  theme_solid_border_bottom  pl-40 pr-40 pt-15 pb-15  m-0">
-							<div class="col-md-2 p-0 text-result-found	font_text_result">
+							<div class="col-md-2 p-0 text-result-found	font_text_result fw-500">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 							<div class="col-md-10 p-0 d-md-flex justify-content-end  ">
@@ -1203,9 +1204,11 @@
 									<div class="row align-items-center m-0 p-20">
 											<div class="col-md-9 p-0">
 												<div class="d-flex flex-row ">
-													<div class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$
+													<div class="f-16 font-weight-bold  pr-10 theme_color">$
 														500</div>
-													<div class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
+														
+														<div class=" border-right-separation  my-1"></div>
+													<div class="pl-10 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
 												<div class="f-16 fw-500  black text-truncate" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Globex Corporation. Inc.">Globex Corporation
 													Inc.</div>
@@ -1261,65 +1264,19 @@
 			<div class="modal-dialog modal-lg modal-dialog-centered"
 				role="document">
 				<div class="modal-content rounded-0">
-					<div class="d-flex shadow-sm py-3">
-						<div
-							class="col-md-11 modal-title greyish-brown f-18 font-weight-bold"
-							id="rescheduleCenterTitle">Reschedule Task</div>
-						<button type="button" class="col-md-1 close" data-dismiss="modal"
-							aria-label="Close">
-							<span aria-hidden="true">×</span>
+					<div class="modal-header shadow-bottom pt-20 pb-20  ml-30 mr-30 p-0">
+						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Reschedule Task</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<img src="<%=baseURL %>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">
 						</button>
 					</div>
-					<div class="modal-body">
-						<div class="f-18 font-weight-bold">Opentech Pvt. Ltd.</div>
-						<div class="row  py-3 dotted-bottom-separation">
-							<div class="col-md-4 border-right-separation">
-								<div class="f-14 brownish-grey">Contact Person</div>
-								<div class="f-16 fw-500">Deann Harper</div>
-							</div>
-							<div class="col-md-4 border-right-separation">
-								<div class="f-14 brownish-grey">Agent</div>
-								<div class="f-16 fw-500">Bradley Obrien</div>
-							</div>
-							<div class="col-md-4 ">
-								<div class="f-14 brownish-grey">Date & Time</div>
-								<div class="f-16 fw-500">June 12, 19 &nbsp;&nbsp;&nbsp;
-									11:00 AM</div>
-							</div>
-						</div>
-						<div class="row py-3">
-							<div class="col-md-6">
-								<div class="f-14 fw-500 pb-1">Date</div>
-								<div
-									class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
-									<input class="f-14 border-0 removefocus w-100 pl-2"
-										placeholder="Select here"> <img alt="calendar"
-										src="<%=baseURL%>assets/image/calendar.svg" class="pr-2">
-								</div>
-							</div>
-							<div class="col-md-6">
-								<div class="f-14 fw-500 pb-1">Time</div>
-								<div
-									class="custom-taskborder custom-taskselect w-100 d-flex mr-2">
-									<input class="f-14 border-0 removefocus w-100 pl-2"
-										placeholder="Select here"> <img alt="alarm"
-										src="<%=baseURL%>assets/image/alarm.svg" class="pr-2">
-								</div>
-							</div>
-						</div>
-						<div class="row py-3">
-							<div class="col-md-12">
-								<div class="f-14 fw-500 pb-1">Reason</div>
-								<textarea class="w-100 custom-modal-textarea" rows="5"></textarea>
-							</div>
-						</div>
+					<div class="modal-body p-0">
+						
 					</div>
 
-					<div class="d-flex pb-3 justify-content-end">
-						<div class="col-4 text-right">
-							<button class="btn theme_color font-weight-bold f-14 mr-2">Reset</button>
-							<button class="btn modal-submit-btn font-weight-bold f-14">Submit</button>
-						</div>
+					<div class="modal-footer p-0 pt-30 pb-30 ml-30	mr-30 border-top-task_list ">
+						<button type="submit" class="btn theme_color f-14 font-weight-bold " id="reset_schedule_task">Reset </button>
+						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold" id="create_schedule_task" >SUBMIT</button>
 					</div>
 				</div>
 			</div>
@@ -1332,7 +1289,10 @@
 		<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 		<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 		<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
+					<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
+		
 		<script src="<%=baseURL%>assets/js/salesken.js"></script>
+		
 		<script>
 			$('.salesken.navbar-nav>li').removeClass('active');
 			$($('.salesken.navbar-nav>li')[1]).addClass('active')
@@ -1449,7 +1409,11 @@
 			    e.stopPropagation();
 			});
 			
+			$('#upcomimg_reschedule').click(function (e){
 			
+			 e.preventDefault();
+			  $('#rescheduleCenter').modal('show').find('.modal-body').load($(this).attr('href'));
+			});
 		</script>
 
 
