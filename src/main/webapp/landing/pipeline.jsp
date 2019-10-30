@@ -222,7 +222,7 @@
 					isactive = "active";
 				}
 		    %>
-		      <a class="nav-link py-3  <%=isactive %> text-truncate" title="Stage 01" id="stage-<%=i%>-tab" data-toggle="pill" href="#stage-<%=i%>" role="tab" aria-controls="stage-<%=i%>" aria-selected="true">Stage 0<%=i+1	%></a>
+		      <a class="nav-link pt-15 pb-15 pl-20 pr-20 <%=isactive %> text-truncate" title="Stage 01" id="stage-<%=i%>-tab" data-toggle="pill" href="#stage-<%=i%>" role="tab" aria-controls="stage-<%=i%>" aria-selected="true">Stage 0<%=i+1	%></a>
 		     <%} %>
 		     </div>
 		  </div>
