@@ -1461,6 +1461,10 @@ Modifying the scroll bar across the whole application
 .pb-60 {
 	padding-bottom: 60px !important;
 }
+.pt-60 {
+	padding-top: 60px !important;
+}
+
 .pb-65 {
 	padding-bottom: 65px !important;
 }
@@ -1579,6 +1583,12 @@ Modifying the scroll bar across the whole application
 	margin-right: 40px !important;
 }
 
+.mt-40 {
+	margin-top: 40px !important;
+}
+.mb-40 {
+	margin-bottom: 40px !important;
+}
 .ml-45 {
 	margin-left: 45px !important;
 }

@@ -7,20 +7,117 @@
 
 <div class="row justify-content-between m-0 pt-15 pl-45 pr-45 pb-15">
 	<div
-		class="col-md-6 p-0 greyish-brown f-18 font-weight-bold text-truncate"
+		class="col-md-9 p-0 greyish-brown f-18 font-weight-bold text-truncate"
 		data-toggle="tooltip" data-placement="bottom"
 		title="Globex Corporation">Globex Corporation Inc.</div>
 	<div class="col-3 p-0">
-		<div class="d-flex justify-content-end">
-			<img src="<%=baseURL%>assets/image/heart.svg" alt="heart"
-				class="cursor-pointer mr-3"> <img
-				src="<%=baseURL%>assets/image/message.svg" alt="message"
-				class="cursor-pointer taskcomment mr-3"> <img
-				src="<%=baseURL%>assets/image/reply.svg" alt="reply"
-				class="cursor-pointer taskshare">
+				<div class="d-flex justify-content-end">
+					<img src="<%=baseURL%>assets/image/heart.svg"
+						class="cursor-pointer mr-15" alt="heart">
+					<div class=" dropdown" id="completed_email_comment">
+						<button class="btn p-0 dropdown-toggle" id="completed_email_comment"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img src="<%=baseURL%>assets/image/message.svg"
+								class="cursor-pointer taskcomment mr-15" alt="message">
+						</button>
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-menu-md-left filter-menu position-absolute p-0"
+							aria-labelledby="completed_email_comment">
+							<div class="tab-content border-0" id="myTabContent">
+								<div class="tab-pane fade pt-25 pl-20 pr-20   active show"
+									id="completed_email_comment" role="tabpanel"
+									aria-labelledby="completed_email_comment-tab"
+									style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);">
+									<div class="card rounded-0 border-0" style="width: 500px">
+										<div class="card-header p-0 border-bottom-0 bg-white">
+											<div class="row m-0">
+												<div class="col-md-6 p-0 pb-20 fw-500 f-16">Comment</div>
+												<div class="col-md-6 p-0">
+													<button type="button" class="close" data-dismiss="modal"
+														aria-label="Close">
+														<img src="<%=baseURL%>assets/image/close.svg"
+															alt="taskicon" class="rounded-circle hw-24 task-icon">
+													</button>
+												</div>
+											</div>
+										</div>
+										<div class="card-body p-0 pb-20">
+											<div class="form-group mb-0">
+												<textarea class="form-control rounded-0"
+													id="completed_email_comment_textarea" rows="3"></textarea>
+											</div>
+										</div>
+										<div class="card-footer p-0 border-top-0 pb-20 bg-white">
+											<div class="row d-flex justify-content-end m-0">
+												<button type="button"
+													class="btn join_btn  istar-btn-hover f-12 " id="completed_email_comment_submit">Submit</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 
-		</div>
-	</div>
+					<div class=" dropdown" id="completed_email_reply">
+						<button class="btn  p-0 dropdown-toggle" id="completed_email_reply"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+							<img src="<%=baseURL%>assets/image/reply.svg"
+								class="cursor-pointer taskshare mr-15" alt="reply">
+						</button>
+						<div
+							class="dropdown-menu dropdown-menu-right dropdown-menu-md-left filter-menu position-absolute p-0"
+							aria-labelledby="completed_email_reply">
+							<div class="tab-content" id="myTabContent">
+								<div class="tab-pane fade pb-25 pl-20 pr-20 pt-20 active show"
+									id="completed_email_reply" role="tabpanel"
+									aria-labelledby="completed_call_reply-tab"
+									style="width: 280px; height: 516px; box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.25);">
+									<div class="input-group position-relative pb-20">
+										<img src="http://192.168.0.121:8080/assets/image/search.svg"
+											alt="edit" class=" searchBox"> <input
+											id="completed_email_reply_search"
+											class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+											type="search" placeholder="Search"
+											style="padding-right: 30px">
+									</div>
+									<div
+										style="height: 370px; overflow-x: hidden; overflow-y: auto;">
+										<%
+											for (int i = 0; i < 30; i++) {
+										%>
+										<div class="d-flex align-items-center pb-10 ">
+											<input class="istar-checkbox agentcheckbox " data-id="0"
+												id="completed_email_reply-checkbox<%=i%>" type="checkbox">
+											<label class="istar-checkbox-style"
+												for="completed_email_reply-checkbox<%=i%>"></label> <img
+												alt="user-img"
+												src="http://192.168.0.121:8080//assets/image/11.png"
+												class="rounded-circle ml-3 mr-2 hw-40">
+											<div>
+												<div class="f-14 font-weight-bold greyish-brown">Robert
+													Garcia</div>
+												<div class="f-12  brownish-grey">Team -02</div>
+											</div>
+										</div>
+										<%
+											}
+										%>
+									</div>
+									<button type="button"
+										class="btn btn-block big_button rounded-0 font-weight-bold f-12 mt-25"
+										id="completed_email_reply_submit">Submit</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="f-14 font-weight-bold theme_color cursor-pointer align-self-center"
+						onclick="window.location.href = 'task_lead_detail.jsp'">
+						View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
+					</div>
+				</div>
+			</div>
 </div>
 <div
 	class="row m-0 theme_dotted_border_bottom shadow-bottom   pt-15 ml-45 mr-45 pb-20">
