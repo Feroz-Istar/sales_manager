@@ -55,12 +55,12 @@
 				<i class="fas fa-arrow-left black f-20 cursor-pointer"
 					onclick="window.location.href = 'report.jsp'"></i>
 				<div
-					class="display-1 black f-20 border-right-separation pr-20  fw-500">Accenture
+					class="display-1 black f-20 border-right-separation pr-20  fw-500 pl-20">Accenture
 					Consulting Inc.</div>
-				<div class="f-12 brown-grey pl-20">Path</div>
-				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Current
-					Page</div>
+				<div class="f-12 brown-grey pl-20">Dashboard</div>
+				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>
+				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Accenture
+					Consulting Inc.</div>
 			</div>
 		</div>
 		<div class="row m-0">
@@ -86,7 +86,7 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom m-0 pl-40 pr-40 pt-15 pb-15  m-0">
 							<div class="col-md-12 text-result-found	p-0">
-								<strong class="number-of-results">04</strong> Results Found
+								<strong class="number-of-results">02</strong> Results Found
 							</div>
 
 						</div>

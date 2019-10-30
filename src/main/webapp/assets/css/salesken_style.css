@@ -16,8 +16,8 @@ body {
 /*this is used for aligning eye icon with respect to input password field*/
 .eye_icon {
 	position: absolute;
-	right: 0;
-	top: 35%;
+	right: 10px;
+	top: 48;
 }
 
 .eye_icon .active {
@@ -2003,6 +2003,7 @@ label.error {
 
 .big_button:active {
 	background-color: #f7657d !important;
+	color:white !important;
 }
 
 .small_button {
@@ -2053,6 +2054,7 @@ label.error {
 
 .small_outline_button:active {
 	background-color: #444444 !important;
+	color:white !important;
 }
 
 /* end of button styling css */

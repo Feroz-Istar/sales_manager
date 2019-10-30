@@ -40,7 +40,7 @@
 		src="<%=baseURL%>assets/image/nav_icon.png" />
 
 
-						<form class="pt-30 pb-30">
+						<form class="pt-30 pb-30" id="forgotform">
 							<div class="form-group pb-30 mb-0">
 								<label class="f-14 fw-500 very-light-pink  mb-0 pb-10 "
 									for="email">Email address</label> <input type="email"
@@ -50,11 +50,11 @@
 
 							</div>
 							<div class="form-group position-relative  pb-30 mb-0">
-								<lael class="f-14 fw-500 black-two mb-0  pb-10 "
+								<label class="f-14 fw-500 black-two mb-0  pb-10 "
 									for="password">Password</label> <input
 									type="password" class="form-control very-light-pink f-14 rounded-0 input_wh istar-form-control"
-									id="password" placeholder="Password">
-										<button type="button" class="btn eye_icon confirm_password">
+									id="password" placeholder="Password" name="password">
+										<button type="button" class="btn eye_icon confirm_password p-0">
 							<i class="far fa-eye"></i>
 						</button>
 							</div>
@@ -62,14 +62,14 @@
 								<label class="f-14 fw-500 black-two mb-0 pb-10 "
 									for="password">Confirm Password</label> <input
 									type="password" class="form-control f-14 rounded-0 very-light-pink input_wh istar-form-control"
-									id="cpassword" placeholder="Password">
-									<button type="button" class="btn eye_icon confirm_password">
+									id="confirmpassword" placeholder=" confirm Password" name="confirmpassword">
+									<button type="button" class="btn eye_icon confirm_password p-0">
 							<i class="far fa-eye"></i>
 						</button>
 							</div>
-							<button type="button"
+							<button type="submit"
 								class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  login_button"
-								style="">GENERATE PASSWORD</button>
+								style="" id="forgot_botton">GENERATE PASSWORD</button>
 						</form>
 					</div>
 				</div>
@@ -80,7 +80,7 @@
 
 					<h1 class="black  f-38 pb-30 mb-0	fw-900">Help your
 						Reps Sell Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90" style="max-width: 433px;"">Lorem
+					<p class="brown-grey f-16 mb-0 pb-90" style="max-width: 433px;">Lorem
 						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
 						nibh lobortis, vehicula lorem at.</p>
 					<img class="login_background" alt="login_background"
@@ -164,8 +164,7 @@
 	<!--------------------------------------------- closing of container ------------------------------------------------------>
 
 <script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
-	<script type="text/javascript"
-		src="http://botmonster.com/jquery-bootpag/jquery.bootpag.js"></script>
+
 
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
@@ -174,11 +173,12 @@
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
+		<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>	
 	<script>
 	$( document ).ready(function() {
 	    console.log( "ready!" );
 	    
-	    $('.confirm_password').click(function (){
+	  /*   $('.confirm_password').click(function (){
 	    	console.log('confirm_password');
 	    	if($(this).find('.active').length !== 0){
 	    		$(this).children().removeClass('active');
@@ -204,7 +204,53 @@
 	    		$(this).siblings('input').attr('type', 'text'); 
 
 	    	}
-	    });
+	    }); */
+	    
+	    jQuery.validator.setDefaults({
+			debug : true,
+			success : "valid",
+				errorPlacement : function(error, element) {
+					error.addClass('invalid-feedback');
+					console.log(error)
+			        element.closest('.form-group').append(error);
+
+				},
+				highlight : function(element, errorClass, validClass) {
+					$(element).addClass('is-invalid');
+				},
+				unhighlight : function(element, errorClass, validClass) {
+					$(element).removeClass('is-invalid').addClass('is-valid');
+				}
+		});
+		$("#forgotform").validate({
+			rules : {
+				email : {
+					required : true,
+					email : true
+				},
+				password : {
+					required : true	,
+					 minlength: 4
+				},
+				confirmpassword : {
+					equalTo: "#password"
+				}
+			},
+			messages: {
+				password: {
+					required: "Please enter password",
+					minlength:"Please enter atleast four character"
+				},
+				confirmpassword:{
+					equalTo: "Please enter same password",
+					minlength: "Please enter the password with minimum of 4 characters",
+				},
+				email:{
+					required: "Please enter username/email",
+					}
+		    }
+	
+		});
 	});
 
 </script>

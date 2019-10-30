@@ -30,22 +30,22 @@
 
 <main role="main">
 	<div class="container-fluid salesken_container">
-		<div class="row grey-white-bg align-items-center py-3 theme_solid_border_bottom justify-content-between px-4" >
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
+		<div class="row grey-white-bg align-items-center theme_solid_border_bottom justify-content-between m-0" >
+			<div class="col-md-6 col-12 d-flex align-items-center p-0" > 
 				<i class="fas fa-arrow-left black f-20 pr-4 cursor-pointer" onclick="window.location.href = 'dashboard.jsp'"></i>
-				<div class="display-1 black f-20 border-right-separation pr-3 fw-500 ">Call Task</div>
-				<div class="pl-3 pr-2 f-12 brown-grey ">Dashboard</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
+				<div class="display-1 black f-20 border-right-separation fw-500 ">Call Task</div>
+				<div class=" f-12 brown-grey ">Dashboard</div>
+				<i class="fas fa-chevron-circle-right  f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey fw-500  " id="breadcrumb">Call Task</div>
 			</div>
 		</div>
 		
 		
-		<div class="row bg-white">
-			<div class="col-md-3 cream_white dashboardcalltabsize p-0 " >
+		<div class="row bg-white m-0">
+			<div class="col-md-3 p-0 cream_white dashboardcalltabsize  " >
 			<!--  start of call dialer -->
 				<div  id="calldialer" class="" > 
-					<ul class="saleken nav nav-tabs f-16 pl-5 pt-3 " id="pills-tab" role="tablist" >
+					<ul class="saleken nav nav-tabs f-16  " id="pills-tab" role="tablist" >
 					  <li class="nav-item">
 					    <a class="nav-link active border-istar-left-0" id="dialer-tab" data-toggle="pill" href="#dialer" role="tab" aria-controls="dialer" aria-selected="true">Dialer</a>
 					  </li>
@@ -61,16 +61,16 @@
 					  <div class="tab-pane fade show active" id="dialer" role="tabpanel" aria-labelledby="dialer-tab">
 					  <!-- start of dialer content -->
 					  	
-					  	<div class="row pt-4 mx-4">
-					  		<input disabled type="text" class="col-md-10 col-10 form-control f-16 font-weight-bold border-0 cream_white text-center removefocus" id="exampleFormControlInput1"/>
-					  		<button class="col-md-2 col-2 btn">
+					  	<div class="row m-0">
+					  		<input disabled type="text" class="col-md-10 col-10 form-control p-0 f-16 font-weight-bold border-0 cream_white text-center removefocus" id="exampleFormControlInput1"/>
+					  		<button class="col-md-2 col-2 btn p-0">
 					  			<i class="fas fa-backspace very-light-pink f-14"></i>
 					  		</button>	
 					  	</div>
 					  
 					  	<hr class="mx-5 mb-0">
 					  	
-				  		<div class="row justify-content-centerrow mx-0 justify-content-center pt-4">
+				  		<div class="row justify-content-centerrow m-0 justify-content-center ">
 					  		<button class="col-md-2 col-2 btn">
 					  			<div class="f-24  bblack fw-500">1</div>
 					  			<div class="f-12 brown-grey">&nbsp;</div>
