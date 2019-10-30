@@ -245,25 +245,25 @@
 										<i class="fas fa-dollar-sign black"></i> <span
 											class="theme_color"> 7245</span>
 									</div>
-									<div class="f-14 brownish-grey">Achieved Value</div>
+									<div class="f-12 brownish-grey">Achieved Value</div>
 									</div>
 									<div class="col-md-3 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">
 											<i class="fas fa-dollar-sign black"></i>88765
 										</div>
-										<div class="f-14 brownish-grey">Pipeline Value</div>
+										<div class="f-12 brownish-grey">Pipeline Value</div>
 									</div>
 									<div class="col-md-3 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">
 											25%
 										</div>
-										<div class="f-14 brownish-grey">Tentative</div>
+										<div class="f-12 brownish-grey">Tentative</div>
 									</div>
 									<div class="col-md-3 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">
 											75%
 										</div>
-										<div class="f-14 brownish-grey">Win Rate</div>
+										<div class="f-12 brownish-grey">Win Rate</div>
 									</div>
 		      				</div>
 		      				
@@ -272,7 +272,7 @@
 		      				<div class="row m-0">
 		      					<div class="col-md-6 p-0">
 		      						<div class="font-weight-bold brownish-grey f-12 pb-5">
-		      							Strong Playbook <i class="fal fa-info-circle soft-blue f-14"></i>
+		      							Strong <i class="fal fa-info-circle soft-blue f-14"></i>
 		      						</div>
 		      						<div class="d-flex">
 										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
@@ -281,7 +281,7 @@
 		      					</div>
 		      					<div class="col-md-6 p-0">
 		      						<div class="font-weight-bold brownish-grey f-12 pb-5">
-		      							Weak Playbook <i class="fal fa-info-circle soft-blue f-14"></i>
+		      							Weak <i class="fal fa-info-circle soft-blue f-14"></i>
 		      						</div>
 		      						<div class="d-flex">
 		      																	<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
@@ -294,7 +294,7 @@
 						
 					</div>
 		      		
-		      		<div class="row align-items-center theme_solid_border_bottom m-0 pl-45 pt-20 pb-20">
+		      		<div class="row align-items-center theme_solid_border_bottom m-0 pl-45 pt-20 pb-20 pr-40">
 		      			<div class="col-md-2 col p-0">
 		      				<button class="btn p-0 black f-14 font-weight-bold">
 		      					Lead Name	<i class="fas fa-sort brown-grey ml-2"></i>
