@@ -44,7 +44,22 @@
 	<div class="container-fluid salesken_container">
 		<div class="row grey-white-bg theme_solid_border_bottom align-items-center  m-0 pl-40 pr-40 pt-10 pb-10">
 			<div class="col-md-6 col-12 d-flex align-items-center p-0 ">
-				<div class="display-1 black f-20 border-right-separation fw-500 pr-20" >Pipeline</div>
+				
+				<div class="dropdown">
+									<div class="display-1 black f-20 border-right-separation fw-500 pr-20 dropdown-toggle"id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<img src="<%=baseURL%>assets/image/dropdown-right-black.svg" alt="call"
+												class=" float-right">Pipeline</div>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
+										<button class="dropdown-item" type="button">
+											 Pipeline 1
+										</button>
+										<button class="dropdown-item" type="button">
+											Pipeline 2
+										</button>
+									</div>
+								</div>
 				<div class=" f-12 brown-grey pl-20">Dashboard</div>
 				<i class="fas fa-chevron-circle-right f-12 brown-grey pl-2 pr-2"></i>
 				<div class=" f-12 brown-grey fw-500">Pipeline</div>
@@ -58,24 +73,7 @@
 						type="search" placeholder="Search"
 						style="padding-right:30px">
 				</div>
-				<div class="istar-dropdown-task select_focus ml-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Pipeline
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
-									</button>
-									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
-										<button class="dropdown-item" type="button">
-											 Pipeline 1
-										</button>
-										<button class="dropdown-item" type="button">
-											Pipeline 2
-										</button>
-									</div>
-								</div>
+				
 			</div>
 		</div>
 
