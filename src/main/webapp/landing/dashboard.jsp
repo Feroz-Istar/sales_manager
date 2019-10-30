@@ -206,7 +206,7 @@
 											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 										</button>
 										<div
-											class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 											aria-labelledby="dropdownMenuButton">
 
 											<button class="dropdown-item" href="#">

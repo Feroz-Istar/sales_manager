@@ -372,7 +372,7 @@
 		                                            aria-expanded="false">
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
-											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 	                                            aria-labelledby="dropdownMenuButton">
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/won.svg" alt="won"
 	                                                    srcset="" class="mr-2"> Won</button>
