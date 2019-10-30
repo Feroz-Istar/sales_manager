@@ -342,21 +342,21 @@
 		      			<div class="col-md-6 p-0">
 		      				<div class="row align-items-center m-0">
 		      					<div class="col-md-11 p-0">
-		      						<div class="row position-relative m-0">
+		      						<div class="row position-relative justify-content-between m-0">
 		      						<div class="line"></div>
-		      							<div class="col-md-3 text-center p-0">
+		      							<div class="col-md-1 text-center p-0">
 		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Need</div>
 		      							</div>
-										<div class="col-md-3 text-center p-0">
+										<div class="col-md-1 text-center p-0">
 		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Budget</div>
 		      							</div>	
-		      							<div class="col-md-3 text-center p-0">
+		      							<div class="col-md-1 text-center p-0">
 		      									<i class="fas fa-check-circle  tea-color"></i>
 	      										<div class="brownish-grey f-14">Authorized </div>
 		      							</div>
-		      							<div class="col-md-3 text-center p-0">
+		      							<div class="col-md-1 text-center p-0">
 		      									<i class="fas fa-times-circle pastel-red"></i>
 	      										<div class="brownish-grey f-14">Urgency</div>
 		      							</div>
