@@ -1016,10 +1016,11 @@ Modifying the scroll bar across the whole application
 	border-radius: 2px 2px 0 0;
 	background: #f9f9f9;
 	color: #999999;
-	opacity: 0.9;
+	opacity: 0.6;
 	transition: all 0.1s ease-in-out;
 	font-weight: normal;
 	text-align: center;
+	font-size: 14px;
 }
 
 .nav-mytabs a.active, .nav-mytabs a:hover {
@@ -1029,6 +1030,8 @@ Modifying the scroll bar across the whole application
 	background: white;
 	color: #444444 !important;
 	border-radius: 0 !important;
+		font-size: 16px !important;
+	
 }
 
 .mytab-content {
