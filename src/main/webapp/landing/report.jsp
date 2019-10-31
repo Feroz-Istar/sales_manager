@@ -26,7 +26,7 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
-
+<link rel="stylesheet" href="<%=baseURL%>assets/css/report.css">
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
@@ -51,7 +51,7 @@
 	<div class="row grey-white-bg align-items-center py-3 theme_solid_border_bottom pl-4">
 		<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0"> 
 		<div class="display-1 black f-20 border-right-separation pr-3  fw-500">Reports</div>
-							<div class="pl-3 pr-2 f-12 brown-grey ">Report</div>
+					<div class="pl-3 pr-2 f-12 brown-grey ">Report</div>
 					<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
 					<div class=" f-12 brown-grey  fw-500" id="breadcrumb">Task</div>
 		
@@ -242,7 +242,7 @@
 									
 									<div class="input-group date custom-calendar">
 										<input type="text" id="user_datepicker" class="form-control  custom-dateselect"
-											value="12-02-2012">
+											value="12-02-2012" placeholder="Calendar">
 										<div class="input-group-addon" onclick="showCalendar()">
 											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 										</div>
@@ -315,7 +315,7 @@
 											
 											<div class="row">
 												<div class="col-md-4">
-													<div class="f-30 blue-black font-weight-bold">$ <span class="theme_color">50K</span> </div>
+													<div class="f-30 blue-black font-weight-bold">$ <span class="pastel-red">50K</span> </div>
 													<div class="f-12 brown-grey">Acheived Value </div>
 												</div>
 												<div class="col-md-4">
@@ -341,7 +341,7 @@
 													<div class="f-12 brown-grey">Talk Ratio </div>
 												</div>
 											</div>
-											<div class="progress pipeline_progress mt-2" style="height: 20px; background-color: white;">
+											<div class="progress pipeline_progress mt-2 report_pipeline">
 													<div class="progress-bar bg_green" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
 													<div class="progress-bar  bg_blue" role="progressbar" style="width: 40%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
 													<div class="progress-bar   bg-info" role="progressbar" style="width: 15%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -383,12 +383,12 @@
 						<!-- end of user tab content -->
 
 					</div>
-					<div class="tab-pane fade" id="customer" role="tabpanel"
+					<div class="tab-pane fade minh-700" id="customer" role="tabpanel"
 						aria-labelledby="customer-tab">
 
 						<!-- start of customer tab content-->
 
-					<div class="row align-items-center theme_solid_border_bottom py-3 pl-4">
+						<div class="row align-items-center theme_solid_border_bottom py-3 pl-4">
 							<div class="col-md-3 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -396,7 +396,7 @@
 						</div>
 						
 
-						<div class="row  mr-md-2">
+						<div class="row mr-md-2 border-bottom-dashed-separation ">
 						
 							<%for(int i=0;i<4;i++){ %>
 							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center objections cursor-pointer minh-200" >
@@ -422,7 +422,7 @@
 
 						<!-- start of time analysis tab content -->
 
-						<div class="card border-0" style="box-shadow: 0 11px 14px -9px #dddddd;">
+						<div class="card border-0 card-shadow-bottom">
 							<div class="card-body">
 								<div class="d-flex">
 								<%for(int i=0;i<5;i++){ %>
@@ -448,7 +448,7 @@
 						<div class="col-md-8 d-flex justify-content-end">
 							<div class="input-group date custom-calendar">
 										<input type="text" id="timeline_datepicker" class="form-control  custom-dateselect"
-											value="12-02-2012">
+											value="12-02-2012" placeholder="Calendar">
 										<div class="input-group-addon" onclick="showTimelineCalendar()">
 											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 										</div>
@@ -580,26 +580,22 @@
 						
 						<div class="row pt-4" >
 						
-							<div class="line" style="   width: 76%;
-													    height: 1px;
-													    border: 1px dashed #eeeeee;
-													    top: 214px;
-													    left: 8px;">
+							<div class="line-style">
 							</div>
 							<div class="col-md-3">
-								<div class="theme_bg rounded-circle" style="height:10px; width: 10px"></div>
+								<div class="theme_bg rounded-circle hw-10"></div>
 								<div class="very-light-pink f-20 font-weight-bold">25%</div>
 							</div>
 							<div class="col-md-3">
-								<div class="theme_bg rounded-circle" style="height:10px; width: 10px"></div>
+								<div class="theme_bg rounded-circle hw-10"></div>
 								<div class="very-light-pink f-20 font-weight-bold">50%</div>
 							</div>
 							<div class="col-md-3">
-								<div class="theme_bg rounded-circle" style="height:10px; width: 10px"></div>
+								<div class="theme_bg rounded-circle hw-10"></div>
 								<div class="very-light-pink f-20 font-weight-bold">75%</div>
 							</div>
 							<div class="col-md-3">
-								<div class="theme_bg rounded-circle" style="height:10px; width: 10px"></div>
+								<div class="theme_bg rounded-circle hw-10"></div>
 								<div class="very-light-pink f-20 font-weight-bold">100%</div>
 							</div>
 						</div>					
@@ -607,10 +603,10 @@
 						<div class="d-flex flex-wrap">
 							<%for(int i=0;i<16;i++){ %>
 							<div class="col-md-3 p-2">
-							<div class="progress rounded p-0" style="height: 60px;  border: solid 1px #9fa7ff;">
+							<div class="progress rounded p-0 progress-box">
 								<div class="progress-bar progress-bar-striped bg-purple pl-2" role="progressbar" style="width: 50%; text-align: left;" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
-									<div class="font-weight-bold f-12" style="color: #454d9f">Introduction</div>
-									<div class="fw-900 f-22"  style="color: #454d9f">50%</div>
+									<div class="font-weight-bold f-12 purple">Introduction</div>
+									<div class="fw-900 f-22 purple">50%</div>
 								</div>
 							</div>
 							</div>
@@ -625,8 +621,8 @@
 					
 					
 					
-					<div class="tab-pane fade" id="roi_calculator" role="tabpanel"
-						aria-labelledby="roi_calculator-tab" style="min-height:700px">
+					<div class="tab-pane fade minh-700" id="roi_calculator" role="tabpanel"
+						aria-labelledby="roi_calculator-tab">
 
 						<!-- start of roi_calculator tab content-->
 
@@ -678,7 +674,7 @@
 									</div>
 									<div class="col-md-3 pl-40">
 										<div class="f-12 brownish-grey"><span class="font-weight-bold f-30 greyish-brown">38%</span> Utilisation</div>
-										<div class="progress pipeline_progress mt-2" style="height: 20px; background-color: white;">
+										<div class="progress pipeline_progress mt-2 report_pipeline">
 											<div class="progress-bar bg_green" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
 											<div class="progress-bar  bg_blue" role="progressbar" style="width: 40%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
 											<div class="progress-bar   bg-info" role="progressbar" style="width: 15%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
@@ -737,12 +733,12 @@
 							
 							<div class="before-search">
 								<div class="row cream-white py-2 px-5 theme_solid_border_bottom">
-									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-2" id="2bhk" style="min-width: 90px; height: 25px;">2 BHK Flats</button>
-									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-2" id="badWord" style="min-width: 90px; height: 25px;">Bad Words</button>
-									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-2" id="expensiveFlat" style="min-width: 90px; height: 25px;">Expensive Flats</button>	
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-2 search-filter" id="2bhk">2 BHK Flats</button>
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-2 search-filter" id="badWord">Bad Words</button>
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-2 search-filter" id="expensiveFlat">Expensive Flats</button>	
 								</div>
 								
-								<div class="d-flex flex-column justify-content-center align-items-center pt-115 " style="min-height: 508px;">
+								<div class="d-flex flex-column justify-content-center align-items-center pt-115 minh-500">
 									<img src="<%=baseURL %>assets/image/custom-report.svg" alt="custom report" class="pb-20" height="111.3" width="119.7">
 									<div class="f-16 fw-500 ">Make a custom report</div>
 									<div class="f-12 brownish-grey">Lorem Ipsum is simply
@@ -758,8 +754,8 @@
 										<strong class="number-of-results">04</strong> Results Found
 									</div>
 									<div class="ml-4">
-										<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative" style="min-width: 90px; height: 25px;">2 BHK Flats
-										<i class="fas fa-times-circle brown-grey f-14" style="position: absolute; right: -7px; top: 5px;"></i>
+										<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" style="min-width: 90px; height: 25px;">2 BHK Flats
+										<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
 										</button>
 										
 									</div>
@@ -771,8 +767,8 @@
 								</div>
 								</div>
 								
-								<div class="row"  style="min-height: 508px;">
-									<div class="col-md-10" style="box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.05);">
+								<div class="row minh-500">
+									<div class="col-md-10 shadow-right">
 										<%for(int i=0;i<2;i++){ %>
 										<div class="row">
 											<div class="col-md-10">
@@ -808,7 +804,7 @@
 										
 										<div class="input-group date custom-calendar ml-40 mr-40 my-2">
 											<input type="text" id="lead_qualified_datepicker"
-												class="form-control  custom-dateselect" value="12-02-2012">
+												class="form-control  custom-dateselect" value="12-02-2012" placeholder="Calendar">
 											<div class="input-group-addon px-1"
 												onclick="showqualifiedCalendar()">
 												<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"/>
@@ -905,8 +901,8 @@
 											</div>
 										</div>
 
-										<button type="button" class="btn small_outline_button font-weight-bold rounded-0 f-12 ml-40 mr-40 my-2" id="custom_filter_apply" onclick="apply_filter()"
-											style="width:100px;">APPLY</button>
+										<button type="button" class="btn small_outline_button font-weight-bold rounded-0 f-12 ml-40 mr-40 my-2 width-100" id="custom_filter_apply" onclick="apply_filter()"
+											>APPLY</button>
 
 									</div>
 								</div>
