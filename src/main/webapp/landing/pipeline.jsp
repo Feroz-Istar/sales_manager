@@ -370,7 +370,7 @@
 											<button class="dropdown-icon-btn p-0 text-right" type="button" id="dropdownMenuButton"
 		                                            data-display="static" data-toggle="dropdown" aria-haspopup="true"
 		                                            aria-expanded="false">
-												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
+												<i class="fas fa-ellipsis-v f-12 brown-grey mt-3"></i>
 											</button>
 											<div class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 	                                            aria-labelledby="dropdownMenuButton">
@@ -379,9 +379,8 @@
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/lost.svg"
 	                                                    alt="lost" srcset="" class="mr-2">Lose</button>
 	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-	                                                    srcset="" class="mr-2">Edit</button>
-	                                            <button class="dropdown-item" href="#"><img src="<%=baseURL%>assets/image/delete.svg"
-	                                                    alt="delete" srcset="" class="mr-2">Delete</button>
+	                                                    srcset="" class="mr-2" height="20" width="24">Edit</button>
+	                                            
 	                                            <button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'"><img src="<%=baseURL%>assets/image/details.png"
 	                                                    alt="details" srcset="" class="mr-2">Details</button>
 	                                        </div>
