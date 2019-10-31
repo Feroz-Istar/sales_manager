@@ -9,11 +9,11 @@
 
 .line-style{
 	position: absolute;
-	width: 76%;
+    width: 70%;
     height: 1px;
     border: 1px dashed #eeeeee;
-    top: 214px;
-    left: 8px;
+    top: 213px;
+    left: 70px;
 }
 
 .hw-10{
@@ -49,4 +49,23 @@
 }
 .width-100{
 	width: 100px;
+}
+.report-signal-bg{
+	    border-color: #454d9f;
+    border-radius: 6px !important;
+    color: #454d9f;
+    background: repeating-linear-gradient(-55deg, #9ca1d4, #9ca1d4 10px, #c0d5fb 10px, #c0d5fb 11px);
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: 25px;
+    line-height: 10px;
+}
+.mt-25{
+	margin-top: 25px;
+}
+.mb-25{
+	margin-bottom: 25px;
+}
+.mt-20{
+ 	margin-top: 20px;
 }
