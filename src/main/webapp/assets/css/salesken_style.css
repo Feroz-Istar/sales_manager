@@ -980,6 +980,10 @@ Modifying the scroll bar across the whole application
 	border-bottom: 1px solid #dddddd;
 }
 
+ .theme_solid_border_bottom_2px {
+	border-bottom: 2px solid #dddddd;
+}
+
 .theme_light_gray_border_bottom {
 	border-bottom: 1px solid #f2f2f2;
 }
@@ -1133,7 +1137,7 @@ border: 1px solid #ebebeb !important;
 	border: none;
 	border-radius: 10px;
 	color: #999999;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 400;
 }
 
@@ -1609,6 +1613,9 @@ border: 1px solid #ebebeb !important;
 .mr-25 {
 	margin-right: 25px !important;
 }
+.mb-25 {
+	margin-bottom: 25px !important;
+}
 .ml-30 {
 	margin-left: 30px !important;
 }
@@ -1685,7 +1692,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 #taskdetail-tab-list>.active {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
-	box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.1) !important;
+	box-shadow: -18px 14px 21px #e6e6e6 !important;
 	border-radius: 0;
 	border-bottom: none;
 	z-index: 4;
@@ -1695,12 +1702,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-moz-transform: scale(1) !important; /* Firefox */
 	-ms-transform: sscale(1) !important; /* IE 9 */
 	-o-transform: scale(1) !important; /* Opera */
+	margin-right:-4px;
 }
 
 #taskdetail-tab-list>.nav-link:hover {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
-	box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+	/*  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;  	  */	 	
 	border-radius: 0;
 	opacity: 2;
 	/* 	transition : all 0.1s ease-in-out;
@@ -1853,7 +1861,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
     border-width:2px;
     position: absolute;
     top: 11px;
-    left: 35px;
+    left: 28px;
 }
 
 /* start of checkbox */
@@ -1988,11 +1996,11 @@ label.error {
 .searchBox {
 	position: absolute;
     right: 9px;
-    top:7px;
+    top:5px;
     pointer-events: none;
     z-index:5;
-    height: 17px;
-    width: 17px;
+    height: 20px;
+    width: 20px;
 }
 
 .text-truncate {
@@ -2093,13 +2101,13 @@ label.error {
 }
 
 .small_outline_button:hover {
-	background-color: #999999 !important;
-	color: white;
-	border-color: #999999 !important;
+	background-color: #444444 !important;
+	color: white !important;
+	border-color: #222222 !important;
 }
 
 .small_outline_button:active {
-	background-color: #444444 !important;
+	background-color: #222222 !important;
 	color:white !important;
 }
 

@@ -6,15 +6,18 @@
 %>
 
 <div class="row h-100 m-0">
-	
+
 	<div class="col-md-11 p-0">
 		<div class="row justify-content-between m-0 pl-45 pr-45 pt-15 pb-10">
-			<div class="col-9 p-0 ">
-				<p class="greyish-brown f-18 mb-0 font-weight-bold text-truncate"
-					data-toggle="tooltip" data-placement="bottom"
-					title="Globex Corporation">Call Task</p>
-			</div>
 			
+			<div class="col-md-9 p-0 ">
+
+				<div
+					class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
+					data-toggle="tooltip" data-placement="bottom" title=""
+					data-original-title="Call Task">Call Task</div>
+			</div>
+
 		</div>
 
 		<div
@@ -39,25 +42,29 @@
 					title="Globex Corporation">Robert Wolken</p>
 			</div>
 			<div class="col-md-3 d-flex justify-content-end p-0">
-				<button type="button" class="btn small_outline_button rounded-0  f-12 font-weight-bold " id="leave_task"  href="/modals/leavetask.jsp">LEAVE TASK</button>
+				<button type="button"
+					class="btn small_outline_button rounded-0  f-12 font-weight-bold "
+					id="leave_task" href="/modals/leavetask.jsp">LEAVE TASK</button>
 			</div>
-			
+
 		</div>
 
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
-			<div class="col p-0">		
-				<ul class="nav nav-tabs nav-mytabs p-0 pl-40 pt-20 d-flex align-items-end"
-					id="agent-details" role="tablist">
+			<div class="col p-0">
+				<ul
+					class="nav nav-tabs nav-mytabs p-0  d-flex align-items-end"
+					id="task-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
-						id="whatsright-tab" data-toggle="tab" href="#whatsright"
-						role="tab" aria-controls="whatsright" aria-selected="true">Whats Right?</a></li>
-					<li class="nav-item"><a class="nav-item nav-link"
 						id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
-						role="tab" aria-controls="whatswrong" aria-selected="false">Whats
+						role="tab" aria-controls="whatswrong" aria-selected="true">Whats
 							Wrong?</a></li>
-								<li class="nav-item"><a class="nav-item nav-link"
-						id="all-tab" data-toggle="tab" href="#all"
-						role="tab" aria-controls="all" aria-selected="false">All</a></li>
+					<li class="nav-item"><a class="nav-item nav-link"
+						id="whatsright-tab" data-toggle="tab" href="#whatsright"
+						role="tab" aria-controls="whatsright" aria-selected="false">What's
+							Right?</a></li>
+					<li class="nav-item"><a class="nav-item nav-link" id="all-tab"
+						data-toggle="tab" href="#all" role="tab" aria-controls="all"
+						aria-selected="false">All</a></li>
 				</ul>
 				<div class="tab-content mytab-content pt-40"
 					id="nav-tasktabsContent">
@@ -122,14 +129,13 @@
 									isactive = "active";
 								}
 						%>
-
-						<div class="row  m-0 audioitem <%=isactive%>">
+<div class="row  m-0 audioitem <%=isactive%>">
 							<div class="col-md-12 p-0 ">
 								<div class="row  m-0 audioitemrow ml-45 mr-10 "
 									style="border-bottom: 1px dashed #cccccc;">
 									<div class="col-md-6 p-0 pl-20 pt-15 pb-15">
 										<div class="d-flex flex-column">
-											<p class="mb-0 light_gray f-12">06 Mint</p>
+											<p class="mb-0 light_gray fw-300 f-12">06 Mint</p>
 											<p class="mb-0 bblack f-16 text-break">Introduction</p>
 										</div>
 									</div>
@@ -151,7 +157,7 @@
 					</div>
 					<div class="col-md-8 p-0">
 
-						<div class="row m-0 pl-60 pr-45">
+						<div class="row m-0 pl-10 pr-45">
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"
 									class="carousel slide theme_solid_border_bottom "
@@ -214,11 +220,11 @@
 											Vargas
 										</p>
 										<div class="card shadow "
-											style="border-radius: 1.25rem !important;">
+											style="border-radius: 0px 20px 20px 20px">
 											<div class="card-body">
-												<p class="card-text f-14 m-0">Some quick example text to
-													build on the card title and make up the bulk of the card's
-													content.</p>
+												<p class="card-text f-14 blue-black m-0">Some quick
+													example text to build on the card title and make up the
+													bulk of the card's content.</p>
 											</div>
 										</div>
 									</div>
@@ -230,11 +236,11 @@
 											Vargas
 										</p>
 										<div class="card shadow align-self-end very-light-pink-bg"
-											style="border-radius: 1.25rem !important;">
+											style="border-radius: 20px 0px 20px 20px">
 											<div class="card-body">
-												<p class="card-text f-14 mb-0">Some quick example text
-													to build on the card title and make up the bulk of the
-													card's content.</p>
+												<p class="card-text blue-black f-14 mb-0">Some quick
+													example text to build on the card title and make up the
+													bulk of the card's content.</p>
 											</div>
 										</div>
 									</div>
@@ -262,7 +268,7 @@
 			<button type="button" class="btn btn-secondary dropdown-toggle"
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 				style="display: none" id="completed_call_task_content">Dropleft</button>
-			<div class="dropdown-menu completed_call_task_content"
+			<div class="dropdown-menu completed_call_task_content m-0"
 				aria-labelledby="completed_call_task_content">
 				<!-- Dropdown menu links -->
 			</div>
@@ -321,12 +327,13 @@
 	$('.dropdown-menu').click(function(e) {
 		e.stopPropagation();
 	});
-	
-	$('#leave_task').unbind().click(function (e){
-		  e.preventDefault();
-		  $('#leaveTaskModal').modal('show').find('.modal-body').load($(this).attr('href'));
 
-		  
-	});
+	$('#leave_task').unbind().click(
+			function(e) {
+				e.preventDefault();
+				$('#leaveTaskModal').modal('show').find('.modal-body').load(
+						$(this).attr('href'));
+
+			});
 </script>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>

@@ -17,7 +17,7 @@
 			<li class="nav-item dropdown mr-2 "><a class="nav-link p-0 "
 				data-display="static" aria-haspopup="true" aria-expanded="false"
 				id="navbarDropdownMenuLink" data-toggle="dropdown"> <img
-					class="linkicon" src="<%=baseURL%>assets/image/notification.png" />
+					class="linkicon" src="<%=baseURL%>assets/image/notification_active.svg" />
 			</a>
 				<div class="dropdown-menu dropdown-menu-lg-right position-absolute "
 					role="menu" aria-labelledby="imageDropdown"

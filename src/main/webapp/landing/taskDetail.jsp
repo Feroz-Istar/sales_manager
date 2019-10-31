@@ -56,12 +56,9 @@
 			<div class="col-md-6 col-12 d-flex justify-content-md-end p-0">
 
 
-					<div class="input-group position-relative pl-2 mr-2 search_width">
-				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
-					<input id=""
-						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
-						type="search" placeholder="Search"
-						style="padding-right:30px">
+				<div class="input-group position-relative mr-2 search_width">
+				<img src="<%=baseURL %>assets/image/search.svg" alt="edit" class=" searchBox">
+					<input id="taskdetail_search" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects" type="search" placeholder="Search" style="padding-right:30px">
 				</div>
 				
 				<div class="dropdown  ">
@@ -232,7 +229,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
+										class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="ongoing_filter" style="width: 350px">
 
 										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="myTab"
@@ -420,7 +417,8 @@
 														<div
 															class="col-md-6 p-0 text-right"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
-															<div class="f-14 font-weight-bold  theme_color cursor-pointer" >View More <i
+															<div class="f-14 font-weight-bold  theme_color cursor-pointer" >
+																View More <i
 																class="fas fa-chevron-circle-right"></i></div>
 																
 														</div>
@@ -478,7 +476,7 @@
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
 														 style="display:none;"  id="ongoing_task_content"  data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Dropleft</button>
-													<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content animated fadeInRightBig" aria-labelledby="ongoing_task_content">
+													<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content p-0 m-0 animated fadeInRightBig" aria-labelledby="ongoing_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
@@ -561,7 +559,7 @@
 							<div class="col-md-9 p-0 d-md-flex justify-content-end  ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="upcoming_datepicker"
-										class="form-control  custom-dateselect" value="12-02-2012">
+										class="form-control  custom-dateselect" value="12-02-2012" placeholder="Calendar">
 									<div class="input-group-addon" onclick="showCalendar()">
 										<img src="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 									</div>
@@ -648,7 +646,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
+										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left  istar-dropdown-task-menu position-absolute px-4"
 										aria-labelledby="upcoming_filter" style="width: 350px">
 
 										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="upcomingTab"
@@ -896,7 +894,7 @@
 														class="btn btn-secondary dropdown-toggle"
 														data-toggle="dropdown" aria-haspopup="true"
 														aria-expanded="false" style="display:none" id="upcoming_task_content">Dropleft</button>
-													<div class="dropdown-menu upcoming_task_content" aria-labelledby="upcoming_task_content">
+													<div class="dropdown-menu upcoming_task_content m-0" aria-labelledby="upcoming_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
@@ -1063,7 +1061,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left position-absolute px-4"
+										class="dropdown-menu filter-menu dropdown-menu-right  istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="completed_filter" style="width: 350px">
 
 										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="completedTab"
@@ -1194,7 +1192,7 @@
 												tasktype = "webinar";
 											}
 									%>
-									<div class="nav-link <%=isactive%> p-0 theme_solid_border_bottom"
+									<div class="nav-link <%=isactive%> p-0 theme_solid_border_bottom rounded-0"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true"

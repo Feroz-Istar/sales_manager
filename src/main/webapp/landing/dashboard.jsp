@@ -85,7 +85,7 @@
 				<div class="dropdown">
 					<button
 						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "
-						id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true"
+						id="dashboard_activity" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>NEW TASK <img
 							src="<%=baseURL%>/assets/image/toggle_white.svg" alt="call"
@@ -93,7 +93,7 @@
 					</button>
 					<div
 						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
-						aria-labelledby="ongoing_activity">
+						aria-labelledby="dashboard_activity">
 						<button class="dropdown-item" type="button"
 							onclick="window.location.href = 'dashboardCreateTask.jsp'">
 							<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
@@ -169,8 +169,9 @@
 										<button
 											class="btn rounded-circle shadow d-flex justify-content-center align-items-center "
 											style="height: 30px; width: 30px; background: white;">
-											<i class="fas fa-plus theme_color"></i>
-
+											
+							<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
+													srcset="" class="">
 										</button>
 									</div>
 									<div
@@ -369,30 +370,38 @@
 
 							<div class="card  rounded-0 saleskenCard">
 								<div class="card-body p-0 pl-30 pr-30 pt-30 pb-60">
-								<div class="row m-0 ">
-									<div class="col-md-6 p-0 pr-15">
-										<div class="row m-0">
-											<div class="col-md-8 p-0 m-0">
-												<div class="font-weight-bold f-30 black">04</div>
-												<div class="f-16 fw-500 greyish-brown">No Follow - Ups</div>
+									<div class="row m-0 ">
+										<div class="col-md-6 p-0 pr-15">
+											<div class="row m-0">
+												<div class="col-md-8 p-0 m-0">
+													<div class="font-weight-bold f-30 black">04</div>
+													<div class="f-16 fw-500 greyish-brown">No Follow -
+														Ups</div>
+												</div>
+												<div class="col-md-4 p-0 m-0">
+													<img class=" signalimgsize p-0 alt="
+														next-step-img"
+											src="<%=baseURL%>assets/image/Group 3614.svg" />
+												</div>
 											</div>
-											<div class="col-md-4 p-0 m-0"><img class=" signalimgsize p-0 alt="next-step-img"
-											src="<%=baseURL%>assets/image/Group 3614.svg" /></div>
 										</div>
-									</div>
-									<div class="col-md-6 p-0 pl-15 card-separation ">
-									<div class="row m-0">
-											<div class="col-md-8 p-0 ">
-												<div class="font-weight-bold f-30 black">04</div>
-												<div class="f-16 fw-500 greyish-brown">No Follow - Ups</div>
+										<div class="col-md-6 p-0 pl-15 card-separation ">
+											<div class="row m-0">
+												<div class="col-md-8 p-0 ">
+													<div class="font-weight-bold f-30 black">04</div>
+													<div class="f-16 fw-500 greyish-brown">No Follow -
+														Ups</div>
+												</div>
+												<div class="col-md-4 p-0  ">
+													<img class=" signalimgsize p-0 alt="
+														next-step-img"
+											src="<%=baseURL%>assets/image/Group 3614.svg" />
+												</div>
 											</div>
-											<div class="col-md-4 p-0  "><img class=" signalimgsize p-0 alt="next-step-img"
-											src="<%=baseURL%>assets/image/Group 3614.svg" /></div>
 										</div>
+
 									</div>
-									
 								</div>
-							</div>
 							</div>
 
 
@@ -460,11 +469,12 @@
 
 							<div class="d-flex mb-3 border-top-task_list ">
 								<div class="mr-auto pt-4 greyish-brown f-16 font-weight-bold">RESOLVE</div>
-								<button type="button"
+								 <button type="button"
 									class="close resolve_task very-light-pink-bg pt-4 removefocus"
 									aria-label="Close" style="">
 									<span aria-hidden="true">&times;</span>
 								</button>
+						
 							</div>
 
 
@@ -902,25 +912,27 @@
 		<div class="modal fade" id="resolvecardmodal" tabindex="-1"
 			role="dialog" aria-labelledby="exampleModalCenterTitle"
 			aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered " role="document">
-				<div class="modal-content rounded-0 px-3 ">
-					<div class="row shadow-sm p-3">
-						<div
-							class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold"
+			<div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+				<div class="modal-content rounded-0 ">
+				 <div class="modal-header shadow-bottom	">
+					<div class="row w-100 m-0">
+						<div class="col-md-11 p-0 col-11 modal-title greyish-brown f-18 font-weight-bold"
 							id="createresolveModalCenterTitle">Objection</div>
-						<button type="button" class="close" data-dismiss="modal"
+							<div class="col-md-1 p-0 col-1"><button type="button" class="close" data-dismiss="modal"
 							aria-label="Close">
 							<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
 								class="rounded-circle hw-24 task-icon">
-						</button>
+						</button></div>
+						
 					</div>
-					<div class="modal-body"></div>
-					<div class="modal-footer">
+					</div>
+					<div class="modal-body p-30"></div>
+					<div class="modal-footer pt-30 pb-30 pr-30">
 						<button type="button"
-							class="btn theme_color bg-transparent font-weight-bold"
+							class="btn  f-14 theme_color bg-transparent font-weight-bold"
 							data-dismiss="modal">Reset</button>
-						<button type="button" class="btn  istar-btn-primary"
-							style="width: 140px;">RESOLVE</button>
+						
+							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold" id="resolve" >RESOLVE</button>
 					</div>
 				</div>
 			</div>

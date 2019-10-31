@@ -5,15 +5,15 @@
 			+ request.getContextPath() + "/";
 %>
 <style>
-
 </style>
 <div class="row h-100 m-0">
 	<div class="col-md-11 p-0">
 		<div class="row justify-content-between m-0 pl-45 pr-45 pt-15 pb-10">
 			<div class="col-9 p-0 ">
-				<p class="greyish-brown f-18 mb-0 font-weight-bold text-truncate"
+				<div
+					class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
 					data-toggle="tooltip" data-placement="bottom"
-					title="Globex Corporation">Globex Corporation Inc.</p>
+					title="Globex Corporation. Inc.">Globex Corporation. Inc.</div>
 			</div>
 			<div class="col-3 p-0">
 				<div class="d-flex justify-content-end">
@@ -30,7 +30,7 @@
 							class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
 							aria-labelledby="completed_call_comment" style="right: -67px;">
 
-							<div class="card rounded-0 border-0" style="width: 500px;">
+							<div class="card p-20 " style="width: 500px;">
 								<div class="card-header p-0 border-bottom-0 bg-white">
 									<div class="row m-0">
 										<div class="col-md-6 p-0 pb-20 fw-500 f-16">Comment</div>
@@ -43,14 +43,14 @@
 										</div>
 									</div>
 								</div>
-								<div class="card-body p-0 pb-20">
+								<div class="card-body border-0 p-0 pb-20">
 									<div class="form-group mb-0">
-										<textarea class="form-control rounded-0"
+										<textarea class="form-control rounded-0 brown-grey f-14"
 											id="exampleFormControlTextarea1" rows="3"
 											placeholder="Type here"></textarea>
 									</div>
 								</div>
-								<div class="card-footer p-0 border-top-0 pb-20 bg-white">
+								<div class="card-footer p-0 border-top-0  bg-white">
 									<div class="row d-flex justify-content-end m-0">
 										<button type="button"
 											class="btn join_btn  istar-btn-hover f-12 "
@@ -63,13 +63,14 @@
 
 					<div class=" dropdown" id="completed_call_reply">
 						<button class="btn  p-0 dropdown-toggle" id="completed_call_reply"
-							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" data-display="static">
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+							data-display="static">
 							<img src="<%=baseURL%>assets/image/reply.svg"
 								class="cursor-pointer taskshare mr-15" alt="reply">
 						</button>
 						<div
 							class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0"
-							aria-labelledby="completed_call_reply" style="right:-18px;">
+							aria-labelledby="completed_call_reply" style="right: -18px;">
 
 							<div class="input-group position-relative pb-20">
 								<img src="http://192.168.0.121:8080/assets/image/search.svg"
@@ -353,7 +354,7 @@
 			<button type="button" class="btn btn-secondary dropdown-toggle"
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
 				style="display: none" id="completed_call_task_content">Dropleft</button>
-			<div class="dropdown-menu completed_call_task_content"
+			<div class="dropdown-menu completed_call_task_content m-0"
 				aria-labelledby="completed_call_task_content">
 				<!-- Dropdown menu links -->
 			</div>
@@ -411,6 +412,9 @@
 
 <script>
 	attachTaskRelatedData();
+	$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
 </script>
 
 

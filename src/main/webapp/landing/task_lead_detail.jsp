@@ -69,7 +69,7 @@
 					id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="agent-detail-tab" data-toggle="tab" href="#agent-detail"
-						role="tab" aria-controls="nav-target" aria-selected="true">Agent
+						role="tab" aria-controls="nav-target" aria-selected="true">Task
 							Detail</a></li>
 					<li class="nav-item"><a class="nav-item nav-link"
 						id="lead-detail-tab" data-toggle="tab" href="#lead-detail"

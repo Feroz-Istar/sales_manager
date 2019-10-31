@@ -6,10 +6,12 @@
 %>
 
 <div class="row justify-content-between m-0 pt-15 pl-45 pr-45 pb-15">
-	<div
-		class="col-md-9 p-0 greyish-brown f-18 font-weight-bold text-truncate"
-		data-toggle="tooltip" data-placement="bottom"
-		title="Globex Corporation">Globex Corporation Inc.</div>
+	<div class="col-9 p-0 ">
+				<div
+					class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
+					data-toggle="tooltip" data-placement="bottom"
+					title="Globex Corporation. Inc.">Globex Corporation. Inc.</div>
+			</div>
 	<div class="col-3 p-0">
 				<div class="d-flex justify-content-end">
 					<img src="<%=baseURL%>assets/image/heart.svg"
@@ -345,4 +347,7 @@
 		$(this).siblings().find('.partial_email_content').show().hide();
 
 	});
+	$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
 </script>

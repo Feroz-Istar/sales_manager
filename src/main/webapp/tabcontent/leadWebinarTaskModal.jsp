@@ -7,10 +7,12 @@
 	<div class="row h-100 m-0">
 		<div class="col-md-11 p-0">
 		<div class="row justify-content-between m-0 pl-45 pr-45 pt-15 pb-10">
-			<div class="col-9 p-0 ">
-				<p class="greyish-brown f-18 mb-0 font-weight-bold text-truncate"
-					data-toggle="tooltip" data-placement="bottom"
-					title="Globex Corporation">Webinar Task</p>
+				<div class="col-md-9 p-0 ">
+
+				<div
+					class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
+					data-toggle="tooltip" data-placement="bottom" title=""
+					data-original-title="Webinar Task">Webinar Task</div>
 			</div>
 			
 		</div>
@@ -44,19 +46,21 @@
 
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
 			<div class="col p-0">
-				<nav>
-					<div class="nav nav-tabs nav-mytabs " id="nav-tabs" role="tablist">
-						<a class="nav-item nav-link show active minw-150"
-							id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
-							role="tab" aria-controls="whatswrong" aria-selected="true">Whats
-							Wrong?</a> <a class="nav-item nav-link minw-150 " id="whatsright-tab"
-							data-toggle="tab" href="#whatsright" role="tab"
-							aria-controls="whatsright" aria-selected="false">Whats Right?</a>
-						<a class="nav-item nav-link minw-150" id="all-tab"
-							data-toggle="tab" href="#all" role="tab" aria-controls="all"
-							aria-selected="false">All</a>
-					</div>
-				</nav>
+				<ul
+					class="nav nav-tabs nav-mytabs p-0  d-flex align-items-end"
+					id="task-details" role="tablist">
+					<li class="nav-item"><a class="nav-item nav-link active"
+						id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
+						role="tab" aria-controls="whatswrong" aria-selected="true">Whats
+							Wrong?</a></li>
+					<li class="nav-item"><a class="nav-item nav-link"
+						id="whatsright-tab" data-toggle="tab" href="#whatsright"
+						role="tab" aria-controls="whatsright" aria-selected="false">What's
+							Right?</a></li>
+					<li class="nav-item"><a class="nav-item nav-link" id="all-tab"
+						data-toggle="tab" href="#all" role="tab" aria-controls="all"
+						aria-selected="false">All</a></li>
+				</ul>
 				<div class="tab-content mytab-content pt-40"
 					id="nav-tasktabsContent">
 					<div class="tab-pane fade show active" id="whatswrong"
