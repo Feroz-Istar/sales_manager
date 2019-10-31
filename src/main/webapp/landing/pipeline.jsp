@@ -46,20 +46,20 @@
 			<div class="col-md-6 col-12 d-flex align-items-center p-0 ">
 				
 				<div class="dropdown">
-									<div class="display-1 black f-20 border-right-separation fw-500 pr-20 dropdown-toggle"id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<img src="<%=baseURL%>assets/image/dropdown-right-black.svg" alt="call"
-												class=" float-right">Pipeline 01</div>
-									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
-										<button class="dropdown-item" type="button">
-											 Pipeline 02
-										</button>
-										<button class="dropdown-item" type="button">
-											Pipeline 03
-										</button>
-									</div>
-								</div>
+					<div class="display-1 black f-20 border-right-separation fw-500 pr-20 dropdown-toggle"id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						<img src="<%=baseURL%>assets/image/dropdown-right-black.svg" alt="call"
+								class=" float-right">Pipeline 01</div>
+					<div
+						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
+						<button class="dropdown-item" type="button">
+							 Pipeline 02
+						</button>
+						<button class="dropdown-item" type="button">
+							Pipeline 03
+						</button>
+					</div>
+				</div>
 				<div class=" f-12 brown-grey pl-20">Dashboard</div>
 				<i class="fas fa-chevron-circle-right f-12 brown-grey pl-2 pr-2"></i>
 				<div class=" f-12 brown-grey fw-500">Pipeline</div>
@@ -344,8 +344,8 @@
 		      					<div class="col-md-11 p-0">
 		      						<div class="row position-relative justify-content-between m-0">
 		      						<div class="line"></div>
-		      							<div class="col-md-1 text-center p-0">
-		      									<i class="fas fa-check-circle  tea-color"></i>
+		      							<div class="col-md-1 p-0">
+		      									<i class="fas fa-check-circle pl-2 tea-color"></i>
 	      										<div class="brownish-grey f-14">Need</div>
 		      							</div>
 										<div class="col-md-1 text-center p-0">
