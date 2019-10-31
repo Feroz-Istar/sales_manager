@@ -94,7 +94,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="task_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by
+										<span class="sr-only">Toggle Dropdown</span>All 
 										Activities 
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
@@ -125,7 +125,7 @@
 										<button class="istar-dropdown-arrow "
 										id="task_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										
@@ -205,6 +205,19 @@
 								
 							</div>
 						</div>
+						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="insight_filter">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="insight_reset">Reset</button>
+							</div>
+						</div>
+						
 						<div class="row m-0 pl-40 pr-40">
 						<%for(int i=0;i<12;i++){ %>
 							<div class="col-md-4 d-flex align-items-center col_bordering minh-200 p-0" >
@@ -267,7 +280,17 @@
 							</div>
 						</div>
 					
-					
+					<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="user_filter">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">$1000
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="user_reset">Reset</button>
+							</div>
+						</div>
 					
 					<div class="row shadow-bottom theme_dotted_border_bottom  pt-25 pb-25 m-0">
 							<div class="pl-40 pr-115 ">
@@ -1020,6 +1043,14 @@
 			 $(".before-search").hide();
 			 $(".after-search").show();
 		 });
+		 
+		 $('#insight_reset').click(function(){
+			 $('#insight_filter').hide();
+		 });
+		 $('#user_reset').click(function(){
+			 $('#user_filter').hide();
+		 });
+		
 		
 	});
 	function showCalendar(){

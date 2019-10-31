@@ -50,8 +50,7 @@
 						aria-expanded="false">
 						<img src="<%=baseURL%>assets/image/dropdown-right-black.svg" alt="call"
 								class=" float-right">Pipeline 01</div>
-					<div
-						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
+					<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
 						<button class="dropdown-item" type="button">
 							 Pipeline 02
 						</button>
@@ -67,11 +66,9 @@
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0 ">
 				<div class="input-group position-relative pl-2 search_width">
-				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
-					<input id="pipeline_search"
-						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
-						type="search" placeholder="Search"
-						style="padding-right:30px">
+				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class="searchBox">
+					<input id="pipeline_search" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						type="search" placeholder="Search" style="padding-right:30px">
 				</div>
 				
 			</div>
@@ -109,7 +106,7 @@
 									</div>
 								</div>
 								
-									<div class="istar-dropdown-task select_focus mr-10">
+								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="pipeline_status" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -117,8 +114,7 @@
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
-									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_status">
+									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_status">
 										<button class="dropdown-item" type="button">
 											 Won
 										</button>
@@ -212,7 +208,18 @@
 								
 							</div>
 						</div>
-		
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"  id='pipeline_filter'>
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">2 BHK Flats
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='pipeline_reset'>Reset</button>
+							</div>
+						</div>
+						
 		<div class="row very-light-pink-grey-bg m-0" >
 		  <div class="col-md-2 col-12 p-0 tabcol flex-grow-1 border-right">
 		    <div class="nav flex-column nav-pills h-100 pl-40" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
@@ -440,14 +447,14 @@
 		});
 		
 		$('.filtertabs>li>.nav-link').click(function(e) {
-			
 			$($(this).attr('href')+'-tab').tab('show')
-
 		});
-			$('.agentteamsubmit').click(function(e) {
-				$('#activity').dropdown('hide')	
-				
-			});
+		$('.agentteamsubmit').click(function(e) {
+			$('#activity').dropdown('hide');
+		});
+		$('#pipeline_reset').click(function(){
+			$('#pipeline_filter').hide();	
+		});
 	});
 	
 	

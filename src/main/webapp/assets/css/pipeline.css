@@ -63,7 +63,16 @@
 	box-shadow:0 4px 13px -9px #cccccc;
 
 }
+.cross-btn{
+	position: absolute; 
+	right: -7px; 
+	top: 5px;
+}
 
+.search-filter{
+	min-width: 90px; 
+	height: 25px;
+}
 
 
 

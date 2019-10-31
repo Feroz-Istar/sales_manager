@@ -232,6 +232,18 @@
 							</div>
 						</div>
 
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"  id='target_filter'>
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">2 BHK Flats
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='target_reset'>Reset</button>
+							</div>
+						</div>
+
 						<div class="row shadow-bottom theme_dotted_border_bottom  pt-25 pb-25 m-0">
 							<div class="pl-40 pr-115 ">
 								<div class="f-24 blue-black font-weight-bold">280</div>
@@ -514,6 +526,18 @@
 										  </div>
 										
 									</div> 
+							</div>
+						</div>
+						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"  id='qualified_filter'>
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">2 BHK Flats
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='qualified_reset'>Reset</button>
 							</div>
 						</div>
 
@@ -833,6 +857,18 @@
 									</div> 
 							</div>
 						</div>
+						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"  id='lost_filter'>
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">2 BHK Flats
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='lost_reset'>Reset</button>
+							</div>
+						</div>
 
 						<div class="row shadow-bottom m-0 pt-25 pb-25 theme_dotted_border_bottom">
 
@@ -1144,6 +1180,18 @@
 										  </div>
 										
 									</div> 
+							</div>
+						</div>
+
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"  id='won_filter'>
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">2 BHK Flats
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='won_reset'>Reset</button>
 							</div>
 						</div>
 
@@ -1651,6 +1699,18 @@
 
 		    
 		});
+	$('#target_reset').click(function(){
+		$('#target_filter').hide();	
+	});
+	$('#qualified_reset').click(function(){
+		$('#qualified_filter').hide();	
+	});
+	$('#lost_reset').click(function(){
+		$('#lost_filter').hide();	
+	});
+	$('#won_reset').click(function(){
+		$('#won_filter').hide();	
+	});
 	});
 	
 	function openEditModal(){
