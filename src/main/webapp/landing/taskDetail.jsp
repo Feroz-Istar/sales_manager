@@ -56,7 +56,7 @@
 			<div class="col-md-6 col-12 d-flex justify-content-md-end p-0">
 
 
-					<div class="input-group position-relative pl-2 pr-2 search_width">
+					<div class="input-group position-relative pl-2 mr-2 search_width">
 				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
 					<input id=""
 						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"

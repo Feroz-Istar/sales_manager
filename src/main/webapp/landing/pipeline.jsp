@@ -49,14 +49,14 @@
 									<div class="display-1 black f-20 border-right-separation fw-500 pr-20 dropdown-toggle"id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<img src="<%=baseURL%>assets/image/dropdown-right-black.svg" alt="call"
-												class=" float-right">Pipeline</div>
+												class=" float-right">Pipeline 01</div>
 									<div
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="pipeline_select">
 										<button class="dropdown-item" type="button">
-											 Pipeline 1
+											 Pipeline 02
 										</button>
 										<button class="dropdown-item" type="button">
-											Pipeline 2
+											Pipeline 03
 										</button>
 									</div>
 								</div>
@@ -66,7 +66,7 @@
 
 			</div>
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0 ">
-				<div class="input-group position-relative pl-2 pr-2 search_width">
+				<div class="input-group position-relative pl-2 search_width">
 				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
 					<input id="pipeline_search"
 						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
@@ -85,7 +85,7 @@
 							<div class="col-md-9 d-md-flex justify-content-end p-0 ">
 									<div class="input-group date custom-calendar">
 										<input type="text" id="pipeline_datepicker" class="form-control  custom-dateselect"
-											value="12-02-2012">
+											value="12-02-2012" placeholder="Calendar">
 										<div class="input-group-addon" onclick="showCalendar()">
 											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
 										</div>
@@ -113,7 +113,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="pipeline_status" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All Stages
+										<span class="sr-only">Toggle Dropdown</span>All Status
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -242,14 +242,14 @@
 		      				<div class="row m-0">
 		      						<div class="col-md-3 col-6 p-0">
 									<div class="font-weight-bold f-30">
-										<i class="fas fa-dollar-sign black"></i> <span
-											class="theme_color"> 7245</span>
+										<i class="fas fa-dollar-sign black"></i><span
+											class="pastel-red">&nbsp;7245</span>
 									</div>
 									<div class="f-12 brownish-grey">Achieved Value</div>
 									</div>
 									<div class="col-md-3 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">
-											<i class="fas fa-dollar-sign black"></i>88765
+											<i class="fas fa-dollar-sign black"></i>&nbsp;88765
 										</div>
 										<div class="f-12 brownish-grey">Pipeline Value</div>
 									</div>
@@ -275,8 +275,8 @@
 		      							Strong <i class="fal fa-info-circle soft-blue f-14"></i>
 		      						</div>
 		      						<div class="d-flex">
-										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
-										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
+										<button type="button" class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
+										<button type="button" class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
 		      						</div>
 		      					</div>
 		      					<div class="col-md-6 p-0">
@@ -284,8 +284,8 @@
 		      							Weak <i class="fal fa-info-circle soft-blue f-14"></i>
 		      						</div>
 		      						<div class="d-flex">
-		      																	<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
-										<button type="button" class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background">Introduction</button>
+		      							<button type="button" class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
+										<button type="button" class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
 		      						</div>
 		      					</div>
 		      				</div>

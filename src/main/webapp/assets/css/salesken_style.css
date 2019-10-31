@@ -833,9 +833,6 @@ Modifying the scroll bar across the whole application
 	color: #fff;
 }
 
-.salesken.pagination>.page-item>#page-next {
-	color: #ed4d67;
-}
 
 .btn-style:hover {
 	color: #ffffff !important;
@@ -1143,6 +1140,7 @@ border: 1px solid #ebebeb !important;
 .salesken.pagination>.page-item.active .page-link {
 	background-color: #ed4d67;
 	color: #fff !important;
+	font-weight: bold;
 }
 
 .salesken.pagination>.page-item.active .page-link:hover {
@@ -1158,12 +1156,18 @@ border: 1px solid #ebebeb !important;
 	border-color: #fff;
 }
 
+.salesken.pagination>.page-item>#page-next {
+	color: #ed4d67;
+	font-weight:bold;
+}
+
+
 /* end of pagination */
 
 /* start of vertical tab */
 #piplelinestage-tab>.nav-link {
 	color: #999999;
-	font-size: 16px;
+	font-size: 14px;
 	background: transparent;
 	min-width: 133px;
 	border-bottom: 1px solid #f2f2f2;
@@ -1182,6 +1186,7 @@ border: 1px solid #ebebeb !important;
 	font-weight: 500;
 	box-shadow: -6px 8px 20px 0px rgba(0, 0, 0, .15);
 	border-radius: 0;
+	font-size: 16px;
 	/* transition : all 0.3s ease-in-out; */
 	transform: scale(1) !important;
 	-webkit-transform: scale(1) !important; /* Safari and Chrome */
@@ -1842,9 +1847,10 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 /* exclusive to pipeline----------- */
 .line {
-	    width: 90%;
+	width: 90%;
     height: 1px;
-    border: 1px dashed #eeeeee;
+    border-top: 1px dashed #eeeeee;
+    border-width:2px;
     position: absolute;
     top: 11px;
     left: 35px;
@@ -1981,7 +1987,7 @@ label.error {
 
 .searchBox {
 	position: absolute;
-    right: 17px;
+    right: 9px;
     top:7px;
     pointer-events: none;
     z-index:5;
