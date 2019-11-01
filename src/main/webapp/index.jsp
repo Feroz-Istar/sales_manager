@@ -33,14 +33,14 @@
 	<div class="container-fluid   h-100">
 		<div class="row h-100  ">
 			<div
-				class="col-md-5 d-flex justify-content-end h-100 align-items-center">
+				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center">
 				<div class="card  pr-115 border-0  shadow_right">
 					<div class="card-body p-0 ">
 						<div class="pl-25 pr-25">
 							<div style="text-align: center" class="pb-10">
 
-								<button class="btn rounded-circle tea border-0 tick_icon ">
-									<i class="fas fa-check text-white f-16"></i>
+								<button class="btn rounded-circle tea border-0 tick_icon p-0">
+									<i class="fas fa-check text-white pt-2 f-18"></i>
 								</button>
 							</div>
 							<p class="brownish-grey f-14 text-center mb-0 fw-500">Great!
@@ -51,23 +51,23 @@
 
 						<img class=" text-center saleskenlogo" alt="salesken_logo"
 							src="<%=baseURL%>assets/image/nav_icon.png" />
-						<div class="theme_solid_border_bottom mt-30 "></div>
+						<div class="bottom_border_1px mt-30 "></div>
 
 
 						<form class="pt-40 pb-30" id="loginform">
 							<div class="form-group pb-30 mb-0">
 								<label
-									class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+									class="f-14 label_color mb-0 pb-10 fw-500"
 									for="email">Email address</label> <input type="email"
-									class="form-control f-14 rounded-0 input_wh istar-form-control"
+									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									name="email" id="email" aria-describedby="emailHelp"
 									placeholder="Email ">
 							</div>
 							<div class="form-group pb-40 mb-0">
 								<label
-									class="f-14 font-weight-bold label_color mb-0 pb-10 fw-500"
+									class="f-14  label_color mb-0 pb-10 fw-500"
 									for="password">Password</label> <input type="password" name="password"
-									class="form-control f-14 rounded-0 input_wh istar-form-control"
+									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
 							</div>
 
@@ -81,16 +81,16 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7   h-100 d-flex align-items-center">
+			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
 				<div class="text-break">
-					<p class="black f-24 mb-0 pb-10">See What Works, What Doesn’t &</p>
+					<p class="black f-24 mb-0 pl-90 pb-5">See What Works, What Doesn’t &</p>
 
-					<h1 class=" f-38 pb-30 mb-0	fw-900 black">Help your Reps Sell
+					<h1 class=" f-38  mb-0	pl-90 fw-900 black">Help your Reps Sell
 						Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90 pr-40">Lorem ipsum dolor
+					<p class="brown-grey f-16 mb-0 pb-90 pt-30 pl-90" style="max-width: 534px;">Lorem ipsum dolor
 						sit amet, consectetur adipiscing elit. Nulla sit amet nibh
 						lobortis, vehicula lorem at.</p>
-					<img class="login_background" alt="login_background"
+					<img class="login_background pl-30" alt="login_background"
 						src="<%=baseURL%>assets/image/login_background.svg" />
 				</div>
 			</div>
@@ -155,20 +155,15 @@
 			}); 
 			}); */
 			jQuery.validator.setDefaults({
-				debug : true,
-				success : "valid",
-					errorPlacement : function(error, element) {
-						error.addClass('invalid-feedback');
-						console.log(error)
-				        element.closest('.form-group').append(error);
-
-					},
-					highlight : function(element, errorClass, validClass) {
-						$(element).addClass('is-invalid');
-					},
-					unhighlight : function(element, errorClass, validClass) {
-						$(element).removeClass('is-invalid').addClass('is-valid');
-					}
+				errorPlacement : function(error, element) {
+					error.addClass('invalid-feedback');
+				},
+				highlight : function(element, errorClass, validClass) {
+					$(element).addClass('is-invalid');
+				},
+				unhighlight : function(element, errorClass, validClass) {
+					$(element).removeClass('is-invalid').addClass('is-valid');
+				}
 			});
 			$("#loginform").validate({
 				rules : {
@@ -176,11 +171,11 @@
 						required : true,
 						email : true
 					},
-					password : {
+					password : {	
 						required: true,
 						 minlength: 4
 					}
-				},
+				}/* ,
 				messages: {
 					email: {
 						required: "Please enter username or your email",
@@ -189,7 +184,7 @@
 						required: "Please enter your password",
 						minlength: "Please enter the password with minimum of 4 characters",
 					}
-			    }
+			    } */
 		
 			});
 

@@ -884,6 +884,10 @@ Modifying the scroll bar across the whole application
 	border: 1px dashed #eeeeee !important;
 }
 
+.bottom_border_1px{
+	border-bottom: 1px solid #eeeeee !important;
+}
+
 .bottom-separation-solid {
 	border-bottom: 2px solid #ebebeb;
 }
@@ -892,11 +896,6 @@ Modifying the scroll bar across the whole application
 	border-bottom: 1px solid #cccccc;
 }
 
-
-
-.border-bottom-dashed-separation {
-	border-bottom: 2px dashed ;
-}
 
 .border-right-separation {
 	border-right: 1px dotted #cccccc;
@@ -2313,6 +2312,8 @@ background: #fbdcab;
 
 /* end of radio button */
 
+/* start of arrow left */
+
 .arrow-left:after, .arrow-left:before {
 left: 100%;
     top: 10%;
@@ -2335,3 +2336,6 @@ border-color: rgba(194, 225, 245, 0);
     border-left-color: #ccc;
     border-width: 8px;
 }
+/* end of arrow left */
+
+
