@@ -31,8 +31,8 @@
 	<div class="container h-100">
 <div class="row h-100  ">
 			<div
-				class="col-md-5 d-flex justify-content-end h-100 align-items-center">
-				<div class="card  pr-115 border-0  shadow_right">
+				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center">
+				<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
 					<div class="card-body p-0 ">
 				
 					
@@ -44,7 +44,7 @@
 							<div class="form-group pb-30 mb-0">
 								<label class="f-14 fw-500 very-light-pink  mb-0 pb-10 "
 									for="email">Email address</label> <input type="email"
-									class="form-control very-light-pink-bg  f-14 rounded-0 input_wh istar-form-control" name="email"
+									class="form-control very-light-pink-bg p-0 pr-15 pl-15 pb-15 pt-15  f-14 rounded-0 input_wh istar-form-control" name="email"
 									id="email" aria-describedby="emailHelp"
 									placeholder="Email ">
 
@@ -52,19 +52,19 @@
 							<div class="form-group position-relative  pb-30 mb-0">
 								<label class="f-14 fw-500 black-two mb-0  pb-10 "
 									for="password">Password</label> <input
-									type="password" class="form-control very-light-pink f-14 rounded-0 input_wh istar-form-control"
+									type="password" class="form-control p-0 pr-15 pl-15 pb-15 pt-15 -very-light-pink f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password" name="password">
-										<button type="button" class="btn eye_icon confirm_password p-0">
-							<i class="far fa-eye"></i>
+										<button type="button" class="btn eye_icon confirm_password p-0 bg-white   pl-2">
+							<i class="far f-14 fa-eye"></i>
 						</button>
 							</div>
 					<div class="form-group position-relative pb-40 mb-0">
 								<label class="f-14 fw-500 black-two mb-0 pb-10 "
 									for="password">Confirm Password</label> <input
-									type="password" class="form-control f-14 rounded-0 very-light-pink input_wh istar-form-control"
-									id="confirmpassword" placeholder=" confirm Password" name="confirmpassword">
-									<button type="button" class="btn eye_icon confirm_password p-0">
-							<i class="far fa-eye"></i>
+									type="password" class="form-control pr-15 pl-15 pb-15 pt-15  f-14 rounded-0 very-light-pink input_wh istar-form-control"
+									id="confirmpassword" placeholder=" Confirm Password" name="confirmpassword">
+									<button type="button" class="btn  eye_icon confirm_password bg-white p-0 pl-2">
+							<i class="far  f-14  fa-eye"></i>
 						</button>
 							</div>
 							<button type="submit"
@@ -74,13 +74,13 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7   h-100 d-flex align-items-center">
+			<div class="col-md-7  p-0 h-100 d-flex align-items-center">
 				<div>
-					<p class="black f-24 mb-0 pb-10">See What Works, What Doesn’t &</p>
+					<p class="black f-24 mb-0 pb-5 pl-90">See What Works, What Doesn’t &</p>
 
-					<h1 class="black  f-38 pb-30 mb-0	fw-900">Help your
+					<h1 class="black  f-38  mb-0 pl-90	fw-900">Help your
 						Reps Sell Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90" style="max-width: 433px;">Lorem
+					<p class="brown-grey f-16 mb-0 pb-90 pt-30 pl-90" style="max-width: 534px;">Lorem
 						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
 						nibh lobortis, vehicula lorem at.</p>
 					<img class="login_background" alt="login_background"
