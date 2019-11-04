@@ -968,7 +968,7 @@
 						<!-- start of completed tab -->
 						<div
 							class="row align-items-center  theme_solid_border_bottom  pl-40 pr-40 pt-15 pb-15  m-0">
-							<div class="col-md-2 p-0 text-result-found	font_text_result fw-500">
+							<div class="col-md-2 p-0 text-result-found	font_text_result">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 							<div class="col-md-10 p-0 d-md-flex justify-content-end  ">

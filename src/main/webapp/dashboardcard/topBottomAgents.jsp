@@ -11,7 +11,7 @@
 			+ request.getContextPath() + "/";
 %>
 
-<div class="card  rounded-0 shadow mb-20">
+<div class="card  rounded-0 shadow">
 	<div class="card-body ongoingtaskcard cursor-pointer p-0 pl-30 pr-30 pb-30 pt-10">
 		<%
 			List<String> headings = new ArrayList<String>();

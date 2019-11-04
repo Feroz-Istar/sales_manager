@@ -656,6 +656,10 @@ input[type="search"]::-webkit-search-cancel-button {
 /* end of sizing */
 
 /* Start of font sizes */
+.f-10{
+	font-size:0.625rem !important;
+}	
+
 .f-12 {
 	font-size: 0.75rem !important;
 }
@@ -855,7 +859,9 @@ Modifying the scroll bar across the whole application
 .tea {
 	background: #57b280 !important;
 }
-
+.dark_theme_color{
+	color:#eb384f;
+}
 .cream_white {
 	background: #f9f9f9 !important;
 }
@@ -1607,7 +1613,9 @@ border: 1px solid #ebebeb !important;
 .ml-20 {
 	margin-left: 20px !important;
 }
-
+.mr-20 {
+	margin-right: 20px !important;
+}
 .ml-25 {
 	margin-left: 25px !important;
 }
@@ -2194,6 +2202,7 @@ pointer-events: none;
 
 .pipeline_progress{
 height:10px;
+background-color: white;
 }
 .pipeline_progress .progress-bar{
  margin-right:3px;
@@ -2236,6 +2245,28 @@ background: #fbdcab;
 	    padding: 5px .75rem !important;
 	    font-size:14px !important;
 	   
+}
+
+.mycustomstyle+.dropdown-menu{
+	margin-top: 10px;
+	margin-left: 10px;
+	min-width: 727px !important;
+	
+}
+
+
+.bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:before{
+	border-bottom: 7px solid #d9d9d9  !important;
+    bottom: -12px !important;
+ left: 684px !important;
+    border-width: 9px !important;
+}
+
+.bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:after {
+    
+    bottom: -12px !important;
+left: 685px !important;
+    border-width: 8px !important;
 }
 
 .bootstrap-select .dropdown-toggle.mycustomstyle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle.mycustomstyle{
@@ -2339,3 +2370,102 @@ border-color: rgba(194, 225, 245, 0);
 /* end of arrow left */
 
 
+/* start of calendar */
+
+
+ .datepicker{
+ 	 padding: 15px 30px !important;
+ 	 background-color: #fff !important;
+	 box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.25);
+	 border: solid 1px #dddddd;
+ }
+.table-condensed {
+	background:white !important;
+}
+
+.datepicker, .table-condensed tbody tr td {
+  font-size: 12px !important;
+  padding:12.5px;
+}
+
+ .datepicker .table-condensed>thead>tr>th.dow {
+	color: #999999 !important;
+	font-weight: bold;
+		font-size: 12px;
+	
+}
+
+.datepicker .table-condensed>thead>tr>th.datepicker-switch,#datepicker .table-condensed>thead>tr>th.prev,#datepicker .table-condensed>thead>tr>th.next {
+	color: #999999 !important;
+	  font-size: 14px !important;
+	font-weight: 400 !important;
+	}
+
+.datepicker table tr td span.active.active{
+    background-color: #ed4d67 !important;
+    border-color: #ed4d67 !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#datepicker .datepicker{
+	padding: 0px !important;
+ 	 background-color: #fff !important;
+	 box-shadow: none !important;
+	 border: none !important;
+}
+
+
+
+#datepicker .datepicker,#datepicker .table-condensed {
+	background-color: #f9f9f9 !important;
+}
+
+
+#datepicker .datepicker {
+	font-size: 12px;
+} 
+
+
+
+#datepicker .table-condensed>thead>tr>th.dow {
+	color: #999999 !important;
+	font-weight: bold;
+		font-size: 12px;
+	
+}
+#datepicker .table-condensed>thead>tr>th.datepicker-switch,#datepicker .table-condensed>thead>tr>th.prev,#datepicker .table-condensed>thead>tr>th.next {
+	color: #999999 !important;
+	  font-size: 14px !important;
+	font-weight: 400 !important;
+	}
+#datepicker .table-condensed tbody tr td {
+  font-size: 12px !important;
+  
+}
+#datepicker .activeClass {
+	background: #dddddd;
+	font-weight: 600;
+}
+
+#datepicker .table-condensed {
+	border-collapse: separate;
+	border-spacing: 10px 8px;
+}
+
+
+
+
+
+
+/* end of calendar */

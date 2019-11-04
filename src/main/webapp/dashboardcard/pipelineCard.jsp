@@ -12,12 +12,12 @@
 
 			<button type="button" class="istar-btn-icon istar-square previous"
 				id="pipeline-left">
-				<i class="fas fa-chevron-left"></i>
+				<i class="fal fa-chevron-left"></i>
 			</button>
 			<button type="button"
 				class="istar-btn-icon istar-square active ml-2 next"
 				id="pipeline-right">
-				<i class="fas fa-chevron-right"></i>
+				<i class="fal fa-chevron-right"></i>
 			</button>
 			<%
 				for (int j = 0; j < 10; j++) {
@@ -45,6 +45,7 @@
 							class="active"></li>
 						<li data-target="#pipeline_carousel" data-slide-to="1"></li>
 						<li data-target="#pipeline_carousel" data-slide-to="2"></li>
+						<li data-target="#pipeline_carousel" data-slide-to="3"></li>
 					</ol>
 
 					<div class="carousel-inner ">
@@ -133,7 +134,7 @@
 									<div class="fw-500 f-16 black pb-10">Playbook Stats</div>
 
 									<div class="f-12 brownish-grey text-break font-weight-bold">
-										Strong <i class="fas fa-info-circle soft-blue"></i>
+										Strong <i class="fal fa-info-circle soft-blue f-14"></i>
 									</div>
 									<div class="strong-signal w-100 d-flex flex-wrap">
 										<%
@@ -149,7 +150,7 @@
 
 									<div
 										class="f-12 brownish-grey text-break font-weight-bold pt-20">
-										Weak <i class="fas fa-info-circle soft-blue"></i>
+										Weak <i class="fal fa-info-circle soft-blue  f-14"></i>
 									</div>
 
 									<div class="weak-signal w-100 d-flex flex-wrap">

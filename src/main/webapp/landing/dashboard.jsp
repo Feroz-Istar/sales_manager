@@ -85,8 +85,8 @@
 				<div class="dropdown">
 					<button
 						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "
-						id="dashboard_activity" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">
+						id="dashboard_activity" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>NEW TASK <img
 							src="<%=baseURL%>/assets/image/toggle_white.svg" alt="call"
 							class="h-17 text-white ">
@@ -162,16 +162,16 @@
 								</button> --%>
 
 								<div class="istar-dropdown-task border-0">
-									<div class="d-flex" style="min-width: 60px;" id="todolist"
+									<div class="d-flex" style="min-width: 40px;" id="todolist"
 										data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 
 										<button
 											class="btn rounded-circle shadow d-flex justify-content-center align-items-center "
 											style="height: 30px; width: 30px; background: white;">
-											
-							<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
-													srcset="" class="">
+
+											<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
+												srcset="" class="">
 										</button>
 									</div>
 									<div
@@ -238,8 +238,10 @@
 									<%
 										}
 									%>
-
-								</div>
+										<div class="rounded-circle imgsize mr-1 ml_10 theme_bg f-10 font-weight-bold text-white d-flex align-items-center justify-content-center border-white">
+										 +05
+										</div>
+										</div>
 							</div>
 							<%
 								}
@@ -335,16 +337,14 @@
 
 
 			<!-- start of center container/second column of dashboard  -->
-			<div class="col-md-6 p-0 m-0 center_container mb-3 ">
+			<div class="col-md-6 p-0 m-0 center_container ">
 
 
 				<!-- Start of Pipeline and Stages card-->
 				<div class="pipeline-card"></div>
 				<!-- End of Pipeline and Stages card-->
 
-				<!-- Start of Teams card-->
-				<div class="team-card pb-10"></div>
-				<!-- End of Teams card-->
+				
 
 
 
@@ -356,6 +356,7 @@
 							class="active"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 						<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
 					</ol>
 					<div class="carousel-inner shadow">
 
@@ -379,8 +380,7 @@
 														Ups</div>
 												</div>
 												<div class="col-md-4 p-0 m-0">
-													<img class=" signalimgsize p-0 alt="
-														next-step-img"
+													<img class=" signalimgsize p-0" alt="next-step-img"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 												</div>
 											</div>
@@ -393,7 +393,7 @@
 														Ups</div>
 												</div>
 												<div class="col-md-4 p-0  ">
-													<img class=" signalimgsize p-0 alt="
+													<img class=" signalimgsize p-0" alt="
 														next-step-img"
 											src="<%=baseURL%>assets/image/Group 3614.svg" />
 												</div>
@@ -414,6 +414,11 @@
 
 				</div>
 				<!-- End of Signal and its count card -->
+				
+				<!-- Start of Teams card-->
+				<div class="team-card pb-10"></div>
+				<!-- End of Teams card-->
+				
 				<!-- Start of Top/Bottom 5 Agent card-->
 				<div class="top-bottom-agent-card"></div>
 
@@ -444,7 +449,7 @@
 								<button type="button"
 									class="close task very-light-pink-bg pt-4 removefocus"
 									aria-label="Close" style="">
-									<span aria-hidden="true">&times;</span>
+									<img src="<%=baseURL %>assets/image/close.svg" alt="taskicon" class="border-0 hw-24 task-icon">
 								</button>
 							</div>
 
@@ -469,12 +474,12 @@
 
 							<div class="d-flex mb-3 border-top-task_list ">
 								<div class="mr-auto pt-4 greyish-brown f-16 font-weight-bold">RESOLVE</div>
-								 <button type="button"
+								<button type="button"
 									class="close resolve_task very-light-pink-bg pt-4 removefocus"
 									aria-label="Close" style="">
-									<span aria-hidden="true">&times;</span>
+									<img src="<%=baseURL %>assets/image/close.svg" alt="taskicon" class="border-0 hw-24 task-icon">
 								</button>
-						
+
 							</div>
 
 
@@ -495,9 +500,13 @@
 								<div
 									class="mr-auto  bd-highlight theme_color f-20 font-weight-bold">$
 									250</div>
+									
 								<div class=" bd-highlight">
 									<span class="badge badge-danger istar_badge">Angry</span>
 								</div>
+							</div>
+							<div class="d-flex pb-5">
+							<div class="fw-500  f-14 greyish-brown">Stage 02 -</div><div class="f-14 brown-grey"> &nbsp; Follow Up </div>
 							</div>
 							<h5
 								class="card-title mb-0 f-18 font-weight-bold text-truncate greyish-brown"
@@ -549,7 +558,7 @@
 						<div class="card-footer cream_white p-0 pt-10 pb-10">
 							<div
 								class="d-flex justify-content-end view_more_ongoing_task pr-20">
-								<div class="theme_color f-14 font-weight-bold cursor-pointer">
+								<div class="dark_theme_color f-14 font-weight-bold cursor-pointer">
 									04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 								</div>
 							</div>
@@ -583,7 +592,7 @@
 						<div class="card-footer cream_white p-0 pt-10 pb-10">
 							<div class="d-flex justify-content-end pr-20">
 								<div
-									class="theme_color f-14 font-weight-bold cursor-pointer view_more_resolve_task">
+									class="dark_theme_color f-14 font-weight-bold cursor-pointer view_more_resolve_task">
 									04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 								</div>
 							</div>
@@ -595,14 +604,14 @@
 					<div class="card mb-3 rounded-0 shadow">
 						<div class="card-body p-0 p-20">
 							<h6 class=" mb-0 text-muted f-12 fw-300 pb-10">10:30 AM</h6>
-							<div class="row align-items-center m-0 pb-15">
+							<div class="row align-items-center justify-content-between m-0 pb-15">
 								<div class="col-md-9 col-6 p-0 pr-10">
 									<p class="card-text greyish-brown f-14 text-trucate"
 										title="Hello Sir, The
 									customer is asking about dis">Hello
 										Sir, The customer is asking about discount, please tell me….</p>
 								</div>
-								<div class="col-md-3 col-6  p-0 pl-10">
+								<div class="col-md-2 col-6  p-0 ">
 									<img class="hw-60 " alt="user" title="UserName"
 										src="<%=baseURL%>assets/image/11.png">
 
@@ -621,8 +630,8 @@
 					<!-- End of chat now card-->
 					<!-- Start of accepting incoming call by Associate card-->
 					<div class="card rounded-0 shadow ">
-						<div class="card-body p-20">
-							<div class="row m-0 pb-10">
+						<div class="card-body p-0 border_bottom_1_dashed ml-20 mr-20">
+							<div class="row m-0 pb-10 pt-20">
 								<div class="col-md-6 p-0 d-flex col-6 ">
 									<img class="hw-24 mr-1" alt="task"
 										src="<%=baseURL%>assets/image/task.svg">
@@ -637,22 +646,20 @@
 										PM</div>
 								</div>
 							</div>
-							<h5 class="mb-0 f-18 text-truncate" title="Accenture">Accenture
+							<h5 class="mb-0 f-18 text-truncate font-weight-bold greyish-brown " title="Accenture">Accenture
 								Consulting Inc.</h5>
 							<div class="f-16 brownish-grey text-truncate"
 								title="Robert Wolken">Robert Wolken</div>
-							<div class="f-12 brown-grey ">Manager</div>
+							<div class="f-12 brown-grey pb-20 ">Manager</div>
 						</div>
 
-
-
-						<div class="card-footer p-20 cream_white">
-							<p class="brownish-grey f-16 pb-25">Louella sent an request
+						<div class="card-footer p-20 cream_white border-0">
+							<p class="brownish-grey f-16 pb-25 m-0">Louella sent an request
 								for Meeting!</p>
 							<button type="button"
-								class="btn join_btn istar-btn-hover f-12 mr-2 mb-3">ACCEPT</button>
+								class="btn join_btn istar-btn-hover f-12 mr-2">ACCEPT</button>
 							<button type="button"
-								class="btn listen_btn f-12 mb-3  font-weight-bold greyish-brown">REJECT</button>
+								class="btn listen_btn f-12  small_outline_button font-weight-bold greyish-brown">REJECT</button>
 						</div>
 					</div>
 					<!-- End of accepting incoming call by Associate card-->
@@ -788,13 +795,14 @@
 							<fieldset>
 								<div class="row  pt-20 m-0">
 									<div class="col-md-12 istar-dropdown p-0">
-										<div class="f-14 fw-500 pb-10">Lead Name</div>
+										<div class="f-14 fw-500 pb-10 black">Lead Name</div>
 										<div class="form-group mb-0 is-invalid" id="lead1">
 											<select
-												class="istar-form-control form-control selectpicker h-35"
+												class="istar-form-control form-control selectpicker h-35 show-menu-arrow "
 												id="leadname" data-style="mycustomstyle" title="Select here"
-												data-live-search="true" id="exampleFormControlSelect1">
-
+												data-live-search="true" id="exampleFormControlSelect1" data-live-search-placeholder="Search">
+											    
+											
 												<%
 													for (int i = 0; i < 10; i++) {
 														String bgcolor = "bg-white";
@@ -803,7 +811,7 @@
 														}
 												%>
 												<option
-													data-content="<div class='row w-100  m-0 pt-10 pb-10 pl-40 pr-40'>
+													data-content="<div class='row w-100  m-0 pt-10 pb-10 pl-40 pr-40 '>
 											 <div class='col-md-4 p-0 '><div class='text-wrap f-14 fw-500 black text-left'>Vehement Capital Partners</div></div> 
 											 <div class='col-md-4 p-0  '><div class='text-wrap f-14   text-center greyish-brown'>Miriam Franklin <%=i%></div></div> 
 											 <div class='col-md-4 p-0  '><div class='text-wrap f-14  black text-center greyish-brown '>+ 91 445 546 6456</div></div>
@@ -822,7 +830,7 @@
 
 								<div class="row  pt-20 m-0">
 									<div class="col-md-6  p-0 pr-7_5">
-										<div class="f-14 fw-500 pb-10">Task Type</div>
+										<div class="f-14 fw-500 pb-10 black">Task Type</div>
 
 										<div class="istar-dropdown">
 											<button class="custom-modal-input w-100 pl-2 d-flex h-35"
@@ -833,7 +841,7 @@
 													class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right  w-100 task-dropdown-menu"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100 task-dropdown-menu"
 												id="scheduleTaskType">
 												<button class="dropdown-item" type="button">
 													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
@@ -856,7 +864,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
-										<div class="f-14 fw-500 pb-10">Task By</div>
+										<div class="f-14 fw-500 pb-10 black">Task By</div>
 										<select
 											class="form-control custom-modal-input w-100 f-14 brwon-grey h-35"
 											id="taskActor" name="taskActor">
@@ -868,10 +876,10 @@
 								</div>
 								<div class="row  pt-20 m-0 pb-30">
 									<div class="col-md-6 p-0 pr-7_5">
-										<div class="f-14 fw-500 pb-10">Date</div>
+										<div class="f-14 fw-500 pb-10 black">Date</div>
 										<div class="custom-modal-input w-100 d-flex mr-2 h-35">
 											<input
-												class="f-14 border-0 removefocus w-100 pl-2 brown-grey"
+												class="f-14 border-0 removefocus w-100 pl-2 brown-grey custom_calendar"
 												placeholder="Select here" id="schedule_task_date"
 												value="<%=today_date%>"> <img
 												src="<%=baseURL%>assets/image/calendar.svg" alt="date"
@@ -879,7 +887,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
-										<div class="f-14 fw-500 pb-10">Time</div>
+										<div class="f-14 fw-500 pb-10 black">Time</div>
 										<div class="custom-modal-input w-100 d-flex mr-2 h-35">
 											<input
 												class="f-14 border-0 removefocus w-100 pl-2 brown-grey"
@@ -912,27 +920,33 @@
 		<div class="modal fade" id="resolvecardmodal" tabindex="-1"
 			role="dialog" aria-labelledby="exampleModalCenterTitle"
 			aria-hidden="true">
-			<div class="modal-dialog modal-lg modal-dialog-centered " role="document">
+			<div class="modal-dialog modal-lg modal-dialog-centered "
+				role="document">
 				<div class="modal-content rounded-0 ">
-				 <div class="modal-header shadow-bottom	">
-					<div class="row w-100 m-0">
-						<div class="col-md-11 p-0 col-11 modal-title greyish-brown f-18 font-weight-bold"
-							id="createresolveModalCenterTitle">Objection</div>
-							<div class="col-md-1 p-0 col-1"><button type="button" class="close" data-dismiss="modal"
-							aria-label="Close">
-							<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
-								class="rounded-circle hw-24 task-icon">
-						</button></div>
-						
-					</div>
+					<div class="modal-header shadow-bottom	">
+						<div class="row w-100 m-0">
+							<div
+								class="col-md-11 p-0 col-11 modal-title greyish-brown f-18 font-weight-bold"
+								id="createresolveModalCenterTitle">Objection</div>
+							<div class="col-md-1 p-0 col-1">
+								<button type="button" class="close" data-dismiss="modal"
+									aria-label="Close">
+									<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+										class="rounded-circle hw-24 task-icon">
+								</button>
+							</div>
+
+						</div>
 					</div>
 					<div class="modal-body p-30"></div>
 					<div class="modal-footer pt-30 pb-30 pr-30">
 						<button type="button"
 							class="btn  f-14 theme_color bg-transparent font-weight-bold"
 							data-dismiss="modal">Reset</button>
-						
-							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold" id="resolve" >RESOLVE</button>
+
+						<button type="button"
+							class="btn big_button rounded-0 f-14 font-weight-bold"
+							id="resolve">RESOLVE</button>
 					</div>
 				</div>
 			</div>

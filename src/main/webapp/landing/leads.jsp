@@ -100,8 +100,7 @@
 
 									<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
+										<span class="sr-only">Toggle Dropdown</span>All Source type<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
 									</button>
 									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="targetSourceType">
 										<button class="dropdown-item" type="button">
@@ -121,8 +120,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="target_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities 
+										<span class="sr-only">Toggle Dropdown</span> All Activities
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -151,7 +149,7 @@
 										<button class="istar-dropdown-arrow "
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										
