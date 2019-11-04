@@ -917,6 +917,10 @@ Modifying the scroll bar across the whole application
 	border-right: 5px solid #488ef0;
 }
 
+.border-right-red {
+	border-right: 5px solid #ed4d67;
+}
+
 .col_bordering {
 	border-right: 2px dashed #cccccc;
 	border-bottom: 2px dashed #cccccc;
@@ -948,6 +952,19 @@ Modifying the scroll bar across the whole application
 	.col_bordering4:nth-child(4n) {
 		border-right: none !important;
 	}
+	
+	
+	.col_bordering4_blank {
+		border-right: 2px dashed #cccccc;
+		border-bottom: 2px dashed #cccccc;
+	}
+	
+
+	.col_bordering4_blank:nth-child(4n) {
+		border-right: none !important;
+	}
+	
+	
 .custom-taskborder {
 	border: 1px solid #cccccc;
 	border-radius: 0;
@@ -1030,6 +1047,10 @@ Modifying the scroll bar across the whole application
 
 .theme_solid_border_left {
 	border-left: 1px solid #dddddd;
+}
+
+.theme_solid_border_left {
+	border-left: 1px dashed #dddddd;
 }
 
 /* end of border */
