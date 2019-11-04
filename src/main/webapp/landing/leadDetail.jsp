@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>Salesken - Lead Detail</title>
 </head>
-<body>
+<body onload="load()">
 
 </body>
 </html>

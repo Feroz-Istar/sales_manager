@@ -23,7 +23,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 
 </head>
-<body>
+<body onload="load()">
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
 	<div class="container-fluid salesken_container">

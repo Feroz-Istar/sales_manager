@@ -26,7 +26,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
 </head>
-<body data-base-url="<%=baseURL%>">
+<body data-base-url="<%=baseURL%>" onload="load()">
 
 <!-- start of circular progress bar for page loading -->
 	<div class="salesken_progress h-100 w-100 " style="display:none">

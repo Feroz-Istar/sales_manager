@@ -25,7 +25,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
 </head>
-<body data-base-url="<%=baseURL%>">
+<body data-base-url="<%=baseURL%>" onload="load()">
 <jsp:include page="../navbar/nav.jsp"></jsp:include>
 
 <main role="main">
