@@ -7,8 +7,9 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport"
-	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+	
 <meta name="description" content="">
 <title>Salesken Dashboard</title>
 <%
@@ -45,7 +46,7 @@
 	href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
 </head>
-<body data-base-url="<%=baseURL%>">
+<body data-base-url="<%=baseURL%>" onload="load()">
 
 	<!-- start of circular progress bar for page loading -->
 	<div class="salesken_progress h-100 w-100 " style="display: none">
@@ -970,6 +971,8 @@
 	<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
+<script>
 
+</script>
 </body>
 </html>

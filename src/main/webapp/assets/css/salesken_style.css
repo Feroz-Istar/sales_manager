@@ -4,6 +4,7 @@
 
 body {
 	font-family: 'Roboto', sans-serif !important;
+	
 }
 
 .menu_icon {
@@ -97,6 +98,7 @@ body {
 /* end of modal */
 html, body {
 	height: 100%;
+	
 }
 
 .inner-circle-div {
