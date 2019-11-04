@@ -27,6 +27,18 @@
 					}
 			%>
 			<div class="pipeline-container <%=isshow%> " style="padding: 30px;padding-bottom: 60px !important;">
+			<!-- <div class="row">
+				<div class="col-md-12">
+				<div class="v-progress-bar-container">
+
+            <div class="v-progress-bar" style="background-color: #BBE3CB;width: 25%;z-index: 5;"></div>
+            <div class="v-progress-bar" style="background-color: #C4CFFD;width: 25%;z-index: 4;"></div>
+            <div class="v-progress-bar" style="background-color: #F8E1A5;width: 25%;z-index: 3;"></div>
+
+        </div>
+				
+				</div>
+			</div> -->
 				<div class="row m-0 pb-20">
 					
 						<div class="p-0 m-0 font-weight-bold f-18 text-truncate" title="pipeline">
@@ -114,15 +126,15 @@
 													Ratio</div>
 											</div>
 
-											<div class="progress pipeline_progress ">
-												<div class="progress-bar bg_green" role="progressbar"
-													style="width: 15%" aria-valuenow="15" aria-valuemin="0"
+											<div class=" v-progress-bar-container ">
+												<div class="progress-bar bg_green v-progress-bar" role="progressbar"
+													style="width: 40%;z-index:3;" aria-valuenow="40" aria-valuemin="0"
 													aria-valuemax="100"></div>
-												<div class="progress-bar  bg_blue" role="progressbar"
-													style="width: 30%" aria-valuenow="30" aria-valuemin="0"
+												<div class="progress-bar  bg_blue v-progress-bar" role="progressbar"
+													style="width: 40%;z-index:2;" aria-valuenow="40" aria-valuemin="0"
 													aria-valuemax="100"></div>
-												<div class="progress-bar   bg-info" role="progressbar"
-													style="width: 20%" aria-valuenow="20" aria-valuemin="0"
+												<div class="progress-bar   bg-info v-progress-bar" role="progressbar"
+													style="width: 20%;z-index:1;" aria-valuenow="20" aria-valuemin="0"
 													aria-valuemax="100"></div>
 											</div>
 										</div>

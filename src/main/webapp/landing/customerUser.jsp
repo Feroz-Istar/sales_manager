@@ -308,11 +308,19 @@
 													<div class="f-12 brown-grey">Talk Ratio </div>
 												</div>
 											</div>
-											<div class="progress pipeline_progress report_pipeline mt-15">
-													<div class="progress-bar bg_green" role="progressbar" style="width: 55%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-													<div class="progress-bar  bg_blue" role="progressbar" style="width: 40%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-													<div class="progress-bar   bg-info" role="progressbar" style="width: 15%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
-											</div>
+											
+											<div class=" v-progress-bar-container_report mt-15	">
+												<div class="progress-bar bg_green v-progress-bar_report" role="progressbar"
+													style="width: 55%;z-index:3;" aria-valuenow="40" aria-valuemin="0"
+													aria-valuemax="100"></div>
+												<div class="progress-bar  bg_blue v-progress-bar_report" role="progressbar"
+													style="width:  40%;z-index:2;" aria-valuenow="40" aria-valuemin="0"
+													aria-valuemax="100"></div>
+												<div class="progress-bar   bg-info v-progress-bar_report" role="progressbar"
+													style="width: 15%;z-index:1;" aria-valuenow="20" aria-valuemin="0"
+													aria-valuemax="100"></div>
+											</div> 
+											
 										</div>
 										<div class="col-md-6 p-0 pl-30 pr-30">
 											<div class="font-weight-bold f-18 black mb-15">Playbook Stats</div>

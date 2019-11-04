@@ -57,7 +57,7 @@
 		</div>
 		<div class="row bg-white pl-3">
 			<div class="col-md-12">
-				<ul class="nav nav-tabs nav-mytabs pt-2" id="myTab" role="tablist">
+				<ul class="nav nav-tabs nav-mytabs pt-2 d-flex align-items-end" id="myTab" role="tablist">
 				  <li class="nav-item">
 				    <a class="nav-link active" id="taskDetails-tab" data-toggle="tab" href="#taskDetails" role="tab" aria-controls="taskDetails" aria-selected="true">Task Details</a>
 				  </li>

@@ -522,7 +522,7 @@
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center " style="height: calc(100% - 80px);"
 														></li>
 
 

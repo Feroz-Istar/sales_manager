@@ -30,9 +30,9 @@
 			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png" alt="user">
 			
 		</div>
-		<div class="col-md-2 p-0">
+		<div class="col-md-2 p-0 d-flex align-items-center justify-content-end">
 			
-			<div class="hw-40 rounded-circle custom-border very-light-pink-bg mr-1 d-flex align-items-center justify-content-center">
+			<div class="hw-40 rounded-circle custom-border very-light-pink-bg  d-flex align-items-center justify-content-center">
 			<button class="btn bg-white rounded-circle btn-size p-0 d-flex">
 				<i class="theme_color align-self-center fas fa-plus-circle"></i>
 			</button>	
@@ -76,7 +76,7 @@
 		</div>
 		<%} %>
 	</div>
-	<div class="mr-30 ml-30 pt-10 pb-20">
+	<div class="mr-30 ml-30 pt-10 pb-60">
 	<div class="input-group m-0 shadow w-100 ">
 		<input id=""
 			class="form-control  custom-taskborder brown-grey  removefocus f-14"
