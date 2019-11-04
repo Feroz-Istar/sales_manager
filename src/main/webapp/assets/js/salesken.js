@@ -209,6 +209,12 @@ function closeChat(dropdown_id){
 }
 
 function load(){
+	$(document).keydown(function (event) {
+        if (event.ctrlKey == true && (event.which == '107' || event.which == '109' || event.which == '187' || event.which == '189'))
+         {
+             event.preventDefault();
+         }
+     });
 	  document.body.addEventListener("wheel", zoomShortcut,{passive:false}); //add the event
 	}
 
