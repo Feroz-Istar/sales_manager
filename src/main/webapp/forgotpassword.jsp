@@ -26,7 +26,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 </head>
-<body class="bg-white">
+<body class="bg-white"  onload="load()">
 	<!--------------------------------------------- Opening of container ------------------------------------------------------>
 	<div class="container h-100">
 <div class="row h-100  ">
@@ -173,7 +173,9 @@
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
-		<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>	
+		<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
+			<script src="<%=baseURL%>assets/js/salesken.js"></script>
+			
 	<script>
 	$( document ).ready(function() {
 	    console.log( "ready!" );

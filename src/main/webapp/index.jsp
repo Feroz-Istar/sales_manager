@@ -28,7 +28,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 </head>
-<body style="background: #ffffff !important">
+<body style="background: #ffffff !important" onload="load()">
 	<main role="main" class="h-100">
 	<div class="container-fluid   h-100">
 		<div class="row h-100  ">
@@ -56,17 +56,16 @@
 
 						<form class="pt-40 pb-30" id="loginform">
 							<div class="form-group pb-30 mb-0">
-								<label
-									class="f-14 label_color mb-0 pb-10 fw-500"
-									for="email">Email address</label> <input type="email"
+								<label class="f-14 label_color mb-0 pb-10 fw-500" for="email">Email
+									address</label> <input type="email"
 									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									name="email" id="email" aria-describedby="emailHelp"
 									placeholder="Email ">
 							</div>
 							<div class="form-group pb-40 mb-0">
-								<label
-									class="f-14  label_color mb-0 pb-10 fw-500"
-									for="password">Password</label> <input type="password" name="password"
+								<label class="f-14  label_color mb-0 pb-10 fw-500"
+									for="password">Password</label> <input type="password"
+									name="password"
 									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
 							</div>
@@ -83,13 +82,15 @@
 			</div>
 			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
 				<div class="text-break">
-					<p class="black f-24 mb-0 pl-90 pb-5">See What Works, What Doesn’t &</p>
+					<p class="black f-24 mb-0 pl-90 pb-5">See What Works, What
+						Doesn’t &</p>
 
 					<h1 class=" f-38  mb-0	pl-90 fw-900 black">Help your Reps Sell
 						Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90 pt-30 pl-90" style="max-width: 534px;">Lorem ipsum dolor
-						sit amet, consectetur adipiscing elit. Nulla sit amet nibh
-						lobortis, vehicula lorem at.</p>
+					<p class="brown-grey f-16 mb-0 pb-90 pt-30 pl-90"
+						style="max-width: 534px;">Lorem ipsum dolor sit amet,
+						consectetur adipiscing elit. Nulla sit amet nibh lobortis,
+						vehicula lorem at.</p>
 					<img class="login_background pl-30" alt="login_background"
 						src="<%=baseURL%>assets/image/login_background.svg" />
 				</div>
@@ -115,6 +116,7 @@
 	<script
 		src="https://cdn.jsdelivr.net/npm/node-forge@0.7.0/dist/forge.min.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
+	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 
 	<script>
 		$(document).ready(function() {
@@ -171,21 +173,22 @@
 						required : true,
 						email : true
 					},
-					password : {	
-						required: true,
-						 minlength: 4
+					password : {
+						required : true,
+						minlength : 4
 					}
-				}/* ,
-				messages: {
-					email: {
-						required: "Please enter username or your email",
-					},
-					password:{
-						required: "Please enter your password",
-						minlength: "Please enter the password with minimum of 4 characters",
-					}
-			    } */
-		
+				}
+			/* ,
+							messages: {
+								email: {
+									required: "Please enter username or your email",
+								},
+								password:{
+									required: "Please enter your password",
+									minlength: "Please enter the password with minimum of 4 characters",
+								}
+						    } */
+
 			});
 
 		});
