@@ -75,7 +75,7 @@
 								class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  login_button"
 								style="">LOGIN</button>
 						</form>
-						<a href="#"
+						<a href="forgotpassword.jsp"
 							class="f-14  text-left font-weight-bold p-0 theme_color">Forgot
 							Password ?</a>
 					</div>
