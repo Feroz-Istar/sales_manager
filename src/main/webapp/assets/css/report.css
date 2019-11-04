@@ -12,7 +12,7 @@
     width: 70%;
     height: 1px;
     border: 1px dashed #eeeeee;
-    top: 213px;
+    top: 28px;
     left: 70px;
 }
 
@@ -69,3 +69,37 @@
 .mt-20{
  	margin-top: 20px;
 }
+
+/* start of arrow right */
+
+.arrow-right {
+	border: none !important;
+}
+.arrow-right:after, .arrow-right:before {
+	right: 100%;
+    top: 13%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow-right:after {
+border-color: rgba(136, 183, 213, 0);
+    border-right-color: #fff;
+    border-width: 10px;
+    margin-top: -34px;
+}
+.arrow-right:before {
+	border-color: rgba(194, 225, 245, 0);
+    border-right-color: #ddd;
+    border-width: 12px;
+    margin-top: -36px;
+
+}
+
+
+
+/* end of arrow right */
