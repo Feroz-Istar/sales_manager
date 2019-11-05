@@ -71,7 +71,7 @@
 
 		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 pt-10">
-				<ul class="nav nav-tabs nav-mytabs pl-40 pr-40 d-flex align-items-end" id="reportTab" role="tablist">
+				<ul class="nav nav-tabs nav-mytabs ml-40 mr-40 d-flex align-items-end" id="reportTab" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active" id="nav-target-tab"
 							data-toggle="tab" href="#nav-target" role="tab"
 							aria-controls="nav-target" aria-selected="true">Target</a></li>
@@ -145,7 +145,7 @@
 									</div>
 
 								</div>
-											<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+											<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -153,7 +153,8 @@
 												class=" float-right">
 										</button>
 										
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="target_dropdown" style="width:350px">
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="ongoing_filter" style="width: 350px">
 												
 												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="targetTab" role="tablist">
 												  <li class="nav-item">
@@ -242,19 +243,18 @@
 							</div>
 						</div>
 
-						<div class="row shadow-bottom theme_dotted_border_bottom  pt-25 pb-25 m-0">
-							<div class="pl-40 pr-115 ">
+						<div class="row shadow-bottom theme_dotted_border_bottom pt-25 pb-25 m-0">
+							<div class="pl-40 pr-115 p-0 ">
 								<div class="f-24 blue-black font-weight-bold">280</div>
-								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
+								<div class="f-14 brown-grey ">New Leads</div>
 							</div>
-							<div class="pr-115">
+							<div class=" pr-115 p-0">
 								<div class="f-24 blue-black font-weight-bold">156</div>
-								<div class="f-14 brown-grey font-weight-bold">Engaged lead</div>
+								<div class="f-14 brown-grey ">Engaged lead</div>
 							</div>
-							<div class="p-0">
+							<div class=" pr-115 p-0">
 								<div class="f-24 blue-black font-weight-bold">30 Hrs</div>
-								<div class="f-14 brown-grey font-weight-bold">Average time
-									spent</div>
+								<div class="f-14 brown-grey ">Average time spent</div>
 							</div>
 						</div>
 
@@ -300,17 +300,17 @@
 								<div class="f-14 brownish-grey text-truncate d-table" title="Miriam Franklin"  data-toggle="tooltip" data-placement="bottom">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									infotech@gmail.com <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									+91 445 546 6456 <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col p-0 ">
-								<div class="f-14 brownish-grey text-truncate d-inline" title="Web Form" data-toggle="tooltip" data-placement="bottom">Web Form</div>
+								<div class="f-14 greyish-brown text-truncate d-inline" title="Web Form" data-toggle="tooltip" data-placement="bottom">Web Form</div>
 							</div>
 							<div class="col-md-4 col-12 p-0 ">
 								<div class="row m-0 align-items-center">
@@ -325,7 +325,7 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right">
-										<div class="istar-dropdown dropleft">
+										<div class="istar-dropdown dropleft d-inline">
 											<button class="dropdown-icon-btn text-right p-0 " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -333,7 +333,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
@@ -389,7 +389,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="qualified_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<span class="sr-only">Toggle Dropdown</span>All Deal Value
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -408,7 +408,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="qualified_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<span class="sr-only">Toggle Dropdown</span>All Stages
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -426,7 +426,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="qualified_source_type" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<span class="sr-only">Toggle Dropdown</span>All Source Type
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -444,16 +444,17 @@
 									</div>
 								</div>
 
-									<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+									<div class="istar-dropdown-task dropdown " id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="qualified_dropdown" style="width:350px">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="qualified_dropdown" style="width: 350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="qualifiedTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="qualifiedTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="qualified_individual-tab" data-toggle="tab" href="#qualified_individual" role="tab" aria-controls="qualified_individual" aria-selected="true">Individual</a>
 												  </li>
@@ -539,23 +540,23 @@
 							</div>
 						</div>
 
-						<div class="row theme_dotted_border_bottom shadow-bottom m-0  pt-25 pb-25">
-							<div class="pr-115 pl-40 p-0">
+						<div class="row theme_dotted_border_bottom shadow-bottom m-0 pl-40 pr-40 pt-25 pb-25">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">120</div>
-								<div class="f-14 brown-grey font-weight-bold">New Leads</div>
+								<div class="f-14 brown-grey">New Leads</div>
 							</div>
-							<div class="pr-115 p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">56</div>
-								<div class="f-14 brown-grey font-weight-bold">Engaged lead</div>
+								<div class="f-14 brown-grey">Engaged lead</div>
 							</div>
-							<div class="pr-115 p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">25 Hrs</div>
-								<div class="f-14 brown-grey font-weight-bold">Average time
+								<div class="f-14 brown-grey">Average time
 									spent</div>
 							</div>
-							<div class="pr-115 p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">$ 8562</div>
-								<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
+								<div class="f-14 brown-grey">Deal Value</div>
 							</div>
 						</div>
 
@@ -600,13 +601,13 @@
 								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									infotech@gmail.com <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									+91 445 546 6456 <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col d-flex align-items-center p-0">
@@ -630,7 +631,7 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right">
-										<div class="istar-dropdown dropleft">
+										<div class="istar-dropdown dropleft d-inline">
 											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -638,7 +639,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 												aria-labelledby="dropdownMenuButton">
 												<button class="dropdown-item"  onclick="openWonModal()">
 													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
@@ -700,7 +701,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="lost_causes" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Causes
+										<span class="sr-only">Toggle Dropdown</span>All Causes
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -719,7 +720,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="lost_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<span class="sr-only">Toggle Dropdown</span>All Deal Value
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -738,7 +739,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="lost_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<span class="sr-only">Toggle Dropdown</span>All Stages
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -756,7 +757,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="lost_source_type" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<span class="sr-only">Toggle Dropdown</span>All Source Type
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -773,16 +774,17 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="lost_dropdown" style="width:350px">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="lost_dropdown" style="width: 350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="lostTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="lostTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="lost_individual-tab" data-toggle="tab" href="#lost_individual" role="tab" aria-controls="lost_individual" aria-selected="true">Individual</a>
 												  </li>
@@ -868,22 +870,22 @@
 							</div>
 						</div>
 
-						<div class="row shadow-bottom m-0 pt-25 pb-25 theme_dotted_border_bottom">
+						<div class="row shadow-bottom m-0 pl-40 pr-40 pt-25 pb-25 theme_dotted_border_bottom">
 
-							<div class="pr-115 pl-40  p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">$ 8562</div>
-								<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
+								<div class="f-14 brown-grey">Deal Value</div>
 							</div>
 
-							<div class="pr-115  p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">25 Hrs</div>
-								<div class="f-14 brown-grey font-weight-bold">Average time
+								<div class="f-14 brown-grey">Average time
 									spent</div>
 							</div>
 
-							<div class="pr-115 p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">40%</div>
-								<div class="f-14 brown-grey font-weight-bold">Percentage
+								<div class="f-14 brown-grey">Percentage
 									of loss</div>
 							</div>
 
@@ -932,13 +934,13 @@
 								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									infotech@gmail.com  <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									+91 445 546 6456  <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col d-flex align-items-center p-0">
@@ -961,7 +963,7 @@
 										</div>
 									</div>
 									<div class="col-md-1  p-0 text-right">
-										<div class="istar-dropdown dropleft">
+										<div class="istar-dropdown dropleft d-inline">
 											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -969,7 +971,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
@@ -1025,7 +1027,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="won_causes" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Causes
+										<span class="sr-only">Toggle Dropdown</span>All Causes
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -1044,7 +1046,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="won_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
+										<span class="sr-only">Toggle Dropdown</span>All Deal Value
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -1063,7 +1065,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="won_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
+										<span class="sr-only">Toggle Dropdown</span>All Stages
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -1081,7 +1083,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="won_source_type" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Source Type
+										<span class="sr-only">Toggle Dropdown</span>All Source Type
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -1098,16 +1100,17 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="won_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="won_dropdown" style="width:350px">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="won_dropdown" style="width: 350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="wonTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="wonTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="won_individual-tab" data-toggle="tab" href="#won_individual" role="tab" aria-controls="won_individual" aria-selected="true">Individual</a>
 												  </li>
@@ -1193,23 +1196,22 @@
 							</div>
 						</div>
 
-						<div class="row p-0  m-0 pt-25 pb-25 shadow-bottom theme_dotted_border_bottom shadow-bottom">
+						<div class="row p-0 pl-40 pr-40 m-0 pt-25 pb-25 shadow-bottom theme_dotted_border_bottom shadow-bottom">
 
-							<div class="pr-115 pl-40  p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">$ 2345</div>
-								<div class="f-14 brown-grey font-weight-bold">Deal Value</div>
+								<div class="f-14 brown-grey">Deal Value</div>
 							</div>
 
-							<div class="pr-115  p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">45 Hrs</div>
-								<div class="f-14 brown-grey font-weight-bold">Average time
+								<div class="f-14 brown-grey">Average time
 									spent</div>
 							</div>
 
-							<div class="pr-115  p-0">
+							<div class="col-md-2 p-0">
 								<div class="f-24 blue-black font-weight-bold">34%</div>
-								<div class="f-14 brown-grey font-weight-bold">Percentage
-									of Won</div>
+								<div class="f-14 brown-grey">Percentage of Won</div>
 							</div>
 
 
@@ -1257,13 +1259,13 @@
 								<div class="f-14 brownish-grey text-truncate d-table" data-toggle="tooltip" data-placement="bottom" title="Miriam Franklin">Miriam Franklin</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									infotech@gmail.com <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									infotech@gmail.com  <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col p-0">
-								<div class="f-14 brownish-grey text-break">
-									+91 445 546 6456 <i class="fas fa-info-circle soft-blue"></i>
+								<div class="f-14 greyish-brown text-break">
+									+91 445 546 6456  <i class="fal fa-info-circle soft-blue f-16"></i>
 								</div>
 							</div>
 							<div class="col-md-2 col p-0 ">
@@ -1288,7 +1290,7 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right">
-										<div class="istar-dropdown dropleft">
+										<div class="istar-dropdown d-inline dropleft">
 											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -1296,7 +1298,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
