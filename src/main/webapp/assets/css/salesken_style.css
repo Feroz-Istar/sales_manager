@@ -1194,6 +1194,7 @@ border: 1px solid #ebebeb !important;
 .salesken.pagination>.page-item>#page-next {
 	color: #ed4d67;
 	font-weight:bold;
+	    padding-right: 0 !important;
 }
 
 
@@ -1576,7 +1577,9 @@ border: 1px solid #ebebeb !important;
 .pt-80 {
 	padding-top: 80px !important;
 }
-
+.pt-90 {
+	padding-top: 90px !important;
+}
 .pb-90 {
 	padding-bottom: 90px !important;
 }
@@ -1701,7 +1704,13 @@ border: 1px solid #ebebeb !important;
 .mb-50 {
 	margin-bottom: 50px !important;
 }
+.ml-130 {
+	margin-left: 130px !important;
+}
 
+.mr-130 {
+	margin-right: 130px !important;
+}
 /* end of margin style */
 .istar-btn-primary:active {
 	background: #f7657d !important;

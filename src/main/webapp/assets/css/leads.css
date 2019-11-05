@@ -16,40 +16,6 @@
 	color:#ed4d67 !important;
 }
 
-.leadpreview.table {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-}
-
-.leadpreview.table thead {
-    flex: 0 0 auto;
-    color:#222222;
-    font-size: 14px;
-    padding-top:20px;
-    border:0;
-}
-
-.leadpreview.table thead tr th{
-   
-    border:0 !important;
-}
-
-.leadpreview.table tbody {
-    flex: 1 1 auto;
-    display: block;
-    overflow-y: auto;
-    overflow-x: hidden;
-    height:340px;
-}
-
-.leadpreview.table tr {
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-}
-
-
 .border-right-separation{
 	border-right: 1px dotted #cccccc;
 }
@@ -157,4 +123,11 @@
 	height:20px;
 	width: 20px;
 }
-
+.leadpreview_container{
+	height:400px;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.leadpreview:nth-of-type(odd) {
+    background-color: #f9f9f9 !important;
+}
