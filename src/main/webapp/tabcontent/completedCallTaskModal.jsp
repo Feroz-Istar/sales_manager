@@ -24,7 +24,7 @@
 							id="completed_call_comment" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="true" data-display="static">
 							<img src="<%=baseURL%>assets/image/message.svg"
-								class="cursor-pointer taskcomment mr-15" alt="message">
+								class="cursor-pointer taskcomment mr-15" alt="message" id="message">
 						</button>
 						<div
 							class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
@@ -415,6 +415,7 @@
 	$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
 		})
+	
 </script>
 
 

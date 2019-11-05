@@ -59,10 +59,10 @@
 			<div class="col-md-12">
 				<ul class="nav nav-tabs nav-mytabs pt-2 d-flex align-items-end" id="myTab" role="tablist">
 				  <li class="nav-item">
-				    <a class="nav-link active" id="taskDetails-tab" data-toggle="tab" href="#taskDetails" role="tab" aria-controls="taskDetails" aria-selected="true">Task Details</a>
+				    <a class="nav-link  nav-item active" id="taskDetails-tab" data-toggle="tab" href="#taskDetails" role="tab" aria-controls="taskDetails" aria-selected="true">Task Details</a>
 				  </li>
 				  <li class="nav-item">
-				    <a class="nav-link" id="agentDetails-tab" data-toggle="tab" href="#agentDetails" role="tab" aria-controls="agentDetails" aria-selected="false">Agent Details</a>
+				    <a class="nav-link  nav-item" id="agentDetails-tab" data-toggle="tab" href="#agentDetails" role="tab" aria-controls="agentDetails" aria-selected="false">Agent Details</a>
 				  </li>
 				</ul>
 				<div class="tab-content" id="myTabContent">

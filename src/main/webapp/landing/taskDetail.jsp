@@ -505,7 +505,7 @@
 														<div
 															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
 															>
-															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
+															<img src="<%=baseURL%>assets/image/Group 6056.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 															
 														</div>
