@@ -154,7 +154,7 @@
 										</button>
 										
 										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="ongoing_filter" style="width: 350px">
+										aria-labelledby="target_dropdown" style="width: 350px">
 												
 												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="targetTab" role="tablist">
 												  <li class="nav-item">

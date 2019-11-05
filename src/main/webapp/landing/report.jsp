@@ -95,7 +95,7 @@
 										id="task_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All 
-										Activities 
+										activities 
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
@@ -121,7 +121,7 @@
 
 								</div>
 									
-									<div class="istar-dropdown-task dropdown dropleft mt-10 mb-10" id="filterbutton">
+									<div class="istar-dropdown-task dropdown mt-10 mb-10" id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="task_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -129,9 +129,10 @@
 												class=" float-right">
 										</button>
 										
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4 " aria-labelledby="task_dropdown" style="width:350px">
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="task_dropdown" style="width: 350px">
 												
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="taskTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs pt-10 d-flex align-items-end" id="taskTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-item nav-link active" id="task_individual-tab" data-toggle="tab" href="#task_individual" role="tab" aria-controls="task_individual" aria-selected="true">Individual</a>
 												  </li>
@@ -223,10 +224,10 @@
 							<div class="col-md-4 d-flex align-items-center col_bordering minh-200 p-0 cursor-pointer" onclick="window.location.href = 'customerNoFollowUp.jsp'" >
 								<div class="row w-100 m-0">
 								<div class="col-md-8 p-0 pl-20 pr-20 align-self-center">
-								<div><div class="font-weight-bold f-42" > 04</div>
+								<div><div class="font-weight-bold f-30 black" > 04</div>
 								<div class="greyish-brown f-16 fw-500">No Follow - Ups</div>
 								
-								<div class="greyish-brown f-14">Next Steps/Follow up Action was not done in the calls</div>
+								<div class="brownish-grey f-12">Next Steps/Follow up Action was not done in the calls</div>
 								</div>
 								</div>
 								<div class="col-md-4 p-0 pr-20 text-center">
@@ -559,16 +560,16 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="timeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="timeline_dropdown" style="width:350px">
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4	" aria-labelledby="timeline_dropdown" style="width:350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="timelineTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs pt-10 d-flex align-items-end" id="timelineTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="timeline_individual-tab" data-toggle="tab" href="#timeline_individual" role="tab" aria-controls="timeline_individual" aria-selected="true">Individual</a>
 												  </li>
@@ -774,16 +775,16 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
 										id="timeline_comparative_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4" aria-labelledby="timeline_comparative_dropdown" style="width:350px">
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4" aria-labelledby="timeline_comparative_dropdown" style="width:350px">
 													
-												<ul class="nav nav-tabs nav-mytabs filtertabs pt-2" id="timeline_comparativeTab" role="tablist">
+												<ul class="nav nav-tabs nav-mytabs pt-10 d-flex align-items-end" id="timeline_comparativeTab" role="tablist">
 												  <li class="nav-item">
 												    <a class="nav-link active" id="timeline_comparative_individual-tab" data-toggle="tab" href="#timeline_comparative_individual" role="tab" aria-controls="timeline_comparative_individual" aria-selected="true">Individual</a>
 												  </li>

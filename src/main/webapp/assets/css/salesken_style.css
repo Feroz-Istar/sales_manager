@@ -583,6 +583,9 @@ input[type="search"]::-webkit-search-cancel-button {
 .h-17{
 	height:17px;
 }
+.h-20{
+	height:20px;
+}
 .hw-30 {
 	height: 30px;
 	width: 30px;
@@ -879,11 +882,14 @@ Modifying the scroll bar across the whole application
 	background-color: #f9f9f9 !important;
 }
  .bg-purple{
-    	background-color: #9fa7ff;
-    }
-    .bg-light-pink{
-    	background-color: #fdedef;
-    }
+    background-color: #9fa7ff;
+}
+.bg-light-pink{
+	background-color: #fdedef;
+}
+.soft_blue_bg{
+	background-color: #6297f6;
+}
 /* end of background Color */
 
 /* start of border color*/
@@ -925,8 +931,8 @@ Modifying the scroll bar across the whole application
 }
 
 .col_bordering {
-	border-right: 2px dashed #cccccc;
-	border-bottom: 2px dashed #cccccc;
+	border-right: 1px dashed #cccccc;
+	border-bottom: 1px dashed #cccccc;
 }
 
 .col_bordering:nth-child(3n) {
@@ -934,7 +940,7 @@ Modifying the scroll bar across the whole application
 	}
 	
 	.border-bottom-dashed-separation {
-		border-bottom: 2px dashed #cccccc ;
+		border-bottom: 1px dashed #cccccc ;
 	}
 	
 	.col_bordering:nth-last-child(-n+3) {
@@ -945,8 +951,8 @@ Modifying the scroll bar across the whole application
 	}
 	
 	.col_bordering4 {
-		border-right: 2px dashed #cccccc;
-		border-bottom: 2px dashed #cccccc;
+		border-right: 1px dashed #cccccc;
+		border-bottom: 1px dashed #cccccc;
 	}
 	
 	.col_bordering4:nth-last-child(-n+4) {
@@ -958,8 +964,8 @@ Modifying the scroll bar across the whole application
 	
 	
 	.col_bordering4_blank {
-		border-right: 2px dashed #cccccc;
-		border-bottom: 2px dashed #cccccc;
+		border-right: 1px dashed #cccccc;
+		border-bottom: 1px dashed #cccccc;
 	}
 	
 

@@ -73,7 +73,7 @@
 							aria-labelledby="completed_call_reply" style="right: -18px;">
 
 							<div class="input-group position-relative pb-20">
-								<img src="http://192.168.0.121:8080/assets/image/search.svg"
+								<img src="<%=baseURL %>assets/image/search.svg"
 									alt="edit" class=" searchBox"> <input
 									id="completed_call_reply_search"
 									class="form-control  custom-taskborder brown-grey  f-14 search_height minw-237"
@@ -89,7 +89,7 @@
 									<label class="istar-checkbox-style"
 										for="completed_call_reply-checkbox<%=i%>"></label> <img
 										alt="user-img"
-										src="http://192.168.0.121:8080//assets/image/11.png"
+										src="<%=baseURL%>assets/image/11.png"
 										class="rounded-circle ml-3 mr-2 hw-40">
 									<div>
 										<div class="f-14 font-weight-bold greyish-brown">Robert
@@ -118,26 +118,31 @@
 
 		<div
 			class="row  m-0 ml-45 mr-45  pb-20  theme_dotted_border_bottom shadow-bottom  ">
-
-			<div class="col-md-3 p-0">
+			<div class="col-md-3 p-0 border-right-dashed-separation">
+				<p class="brownish-grey f-14 mb-0">Initiated At</p>
+				<p class="black f-16 fw-500 mb-0 text-truncate"
+					data-toggle="tooltip" data-placement="bottom"
+					title="Globex Corporation">11:00 AM</p>
+			</div>
+			<div class="col-md-3 p-0 pl-15 border-right-dashed-separation">
+				<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
+				<p class="black f-16 fw-500 mb-0 text-truncate"
+					data-toggle="tooltip" data-placement="bottom"
+					title="Globex Corporation">Stage 02</p>
+			</div>
+			
+			<div class="col-md-3 p-0 pl-15 ">
 				<p class="brownish-grey f-14 mb-0">Contact Person</p>
 				<p class="black f-16 fw-500 mb-0 text-truncate"
 					data-toggle="tooltip" data-placement="bottom"
 					title="Globex Corporation">Robert Wolken</p>
 			</div>
-			<div class="col-md-3 p-0">
-				<p class="brownish-grey f-14 mb-0">Agent</p>
-				<p class="black f-16 fw-500 mb-0 text-truncate"
-					data-toggle="tooltip" data-placement="bottom"
-					title="Globex Corporation">Marilyn Fowler</p>
-			</div>
-
 		</div>
 
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
 			<div class="col p-0">
 				<ul
-					class="nav nav-tabs nav-mytabs p-0 pl-40 pt-20 d-flex align-items-end"
+					class="nav nav-tabs nav-mytabs p-0 pt-20 d-flex align-items-end"
 					id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="whatsright-tab" data-toggle="tab" href="#whatsright"
@@ -172,9 +177,9 @@
 				<div class="d-flex flex-row align-items-center">
 					<img src="<%=baseURL%>assets/image/man.jpg" alt="person"
 						data-toggle="tooltip" data-placement="bottom" title="Lead Name"
-						class="rounded-circle hw-60 task-image-right"> <img
-						src="<%=baseURL%>assets/image/calltask.svg" alt="call"
-						class="rounded-circle hw-40 task-icon">
+						class="rounded-circle hw-60 task-image-right"> 
+					<div class="rounded-circle hw-40 task-icon soft_blue_bg text-white font-weight-bold f-12 p-2">50%</div>
+					
 
 				</div>
 				<button class="btn p-0 ml-40">
@@ -190,9 +195,7 @@
 				<div class="d-flex flex-row align-items-center">
 					<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
 						data-toggle="tooltip" data-placement="bottom" title="Agent Name"
-						class="rounded-circle hw-60 task-image-right"> <img
-						alt="call" src="<%=baseURL%>assets/image/calltask.svg"
-						class="rounded-circle hw-40 task-icon">
+						class="rounded-circle hw-60 task-image-right"> <div class="rounded-circle hw-40 task-icon theme_bg text-white font-weight-bold f-12 p-2">50%</div>
 
 				</div>
 
@@ -243,7 +246,7 @@
 					</div>
 					<div class="col-md-8 p-0">
 
-						<div class="row m-0 pl-60 pr-45">
+						<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg">
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"
 									class="carousel slide theme_solid_border_bottom "
@@ -266,18 +269,18 @@
 
 										<div class="carousel-item  <%=isActive%>">
 
-											<div class="row align-items-center m-0"
+											<div class="row align-items-center m-0 bg-white"
 												style="min-height: 170px;">
 												<div class="col p-0">
-													<div class="d-flex flex-row">
-
-														<img class="hw-94 "
-															src="<%=baseURL%>assets/image/Group 3614.svg"
+													<div class="d-flex flex-row pr-30 pt-10 pb-30 pl-30 align-items-center">
+														<div class="col-md-9 pr-50">
+															<div class="f-16 fw-500 greyish-brown">Unsatisfactory Resolution </div>
+															<div class="f-12 brownish-grey">Customer sounded tentative after an objection was handled</div>
+														</div>
+														<img class="minh-100 "
+															src="<%=baseURL%>assets/image/unsatisfactory_resolution.svg"
 															alt="carousal-img">
-														<div class="border-right-blue  pl-30"></div>
-														<p
-															class="greyish-brown ml-20 f-16  fw-500 mb-0 align-self-center">Customers
-															who responded positively in the end of a call</p>
+														
 													</div>
 												</div>
 											</div>
@@ -393,8 +396,8 @@
 				<div
 					class="  d-flex flex-column justify-content-center align-items-center minh-50"
 					data-dropdown_id="completed_call_task_content">
-					<img src="<%=baseURL%>assets/image/presentation.svg"
-						alt="presentation" />
+					<img src="<%=baseURL%>assets/image/chat.svg"
+						alt="chat" />
 					<div class="f-12 pt-1 greyish-brown">Chat</div>
 
 				</div>

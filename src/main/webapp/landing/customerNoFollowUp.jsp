@@ -50,35 +50,40 @@
 			
 		</div>
 		
-		<div class="row m-0 justify-content-between bg-white pt-15 pb-15">
-			<div class="col-md-6 d-flex align-items-center p-0 pl-40">
-				<img src="<%=baseURL %>/assets/image/objection.svg" height="60" width="70" class="border-right-red mr-2">
-				<div class="greyish-brown f-16 fw-500">No Follow - Ups</div>
-			</div>
-			
-			<div class="col-md-2">
-				<button type="button" class="istar-btn-icon  previous" style="right: 80px;   position: absolute;  top: 14px;  border-radius: 4px !important;"
-				id="follow-up-left">
-				<i class="fal fa-chevron-left"></i>
-			</button>
-			<button type="button"
-				class="istar-btn-icon  active ml-2 next" style="right: 40px;  position: absolute;  top: 13px; border-radius: 4px !important;"
-				id="follow-up-left">
-				<i class="fal fa-chevron-right"></i>
-			</button>
+		<div class="card shadow-bottom w-100 border-0">
+			<div class="card-body p-0">
+				<div class="row m-0 justify-content-between bg-white pt-15 pb-15 theme_solid_border_bottom">
+					<div class="col-md-6 d-flex align-items-center p-0 pl-40">
+						<img src="<%=baseURL %>/assets/image/report-no-followup.svg" height="60" width="70" class="border-right-red mr-2">
+						<div class="greyish-brown f-16 fw-500">No Follow - Ups</div>
+					</div>
+					
+					<div class="col-md-2">
+						<button type="button" class="istar-btn-icon  previous" style="right: 80px;   position: absolute;  top: 14px;  border-radius: 4px !important;"
+						id="follow-up-left">
+						<i class="fal fa-chevron-left"></i>
+					</button>
+					<button type="button"
+						class="istar-btn-icon  active ml-2 next" style="right: 40px;  position: absolute;  top: 13px; border-radius: 4px !important;"
+						id="follow-up-left">
+						<i class="fal fa-chevron-right"></i>
+					</button>
+					</div>
+				</div>
 			</div>
 		</div>
+		
 		
 		<div class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40">
 							<div class="col-md-3 text-result-found p-0">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0 ">
-									<div class="input-group date custom-calendar">
+									<div class="input-group date custom-calendar align-items-center">
 										<input type="text" id="nofollowup_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012" placeholder="Calendar">
-										<div class="input-group-addon" onclick="showCalendar()">
-											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
+										<div class="input-group-addon " onclick="showCalendar()">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1 h-20">
 										</div>
 									</div>	
 									<div class="istar-dropdown-task select_focus mr-10">
@@ -195,25 +200,27 @@
 
 
 
-										<div class="row align-items-center minh-100 m-0">
-											<div class="col-md-10 p-0 pl-20">
-												<div class="d-flex flex-row ">
-													<div
-														class="f-16 font-weight-bold border-right-separation pr-15 theme_color">$ 500</div>
-													<div
-														class="pl-15 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
-												</div>
-												<div class="f-16 pt-5 fw-500 black text-truncate" title="Globex
-													Corporation Inc.">Globex
-													Corporation Inc.</div>
-												<div class="f-12 brown-grey">June 28, 2019</div>
-											</div>
-											<div class="col-md-2">
+										<div class="row align-items-center m-0 p-20">
+											<div class="col-md-2 p-0">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
-														class="rounded-circle hw-30" /> 
+													<img src="<%=baseURL%>assets/image/calltask.svg"
+														alt="callicon" class="rounded-circle hw-30 task-icon">
+													<img src="<%=baseURL%>assets/image/37.jpg"
+														title="Agent Name" alt="user-img"
+														class="rounded-circle hw-40 task-image">
 												</div>
 											</div>
+											<div class="col-md-10 pl-15 p-0">
+												<p class="soft-blue f-12 font-weight-bold m-0">Confident</p>
+												<h1 class="black f-16 fw-500 m-0 text-truncate"
+													title="Robert Wolken">Marry Vasquez</h1>
+												<p class="brown-grey f-12 d-flex align-items-center m-0">
+													<i class="tangerine fas fa-circle m-1"
+														style="font-size: 8px;"></i>Ongoing
+												</p>
+												<p class="brown-grey f-12 m-0">June 26, 2019</p>
+											</div>
+
 										</div>
 
 									</div>
