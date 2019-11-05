@@ -8,8 +8,9 @@
 <head>
 <meta charset="utf-8">
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-	
+<meta name="viewport"
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+
 <meta name="description" content="">
 <title>Salesken Dashboard</title>
 <%
@@ -18,7 +19,8 @@
 			+ request.getContextPath() + "/";
 	SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyyy");
 	SimpleDateFormat incoming = new SimpleDateFormat("dd-MM-yyyy");
-	String incomingDate = request.getParameter("var") != null ? request.getParameter("var")
+	String incomingDate = request.getParameter("var") != null
+			? request.getParameter("var")
 			: sdf.format(new Date());
 	String today_date = sdf.format(new Date());
 	int size = 0;
@@ -109,8 +111,8 @@
 								class="task-dropdown"> Webinar Task
 						</button>
 						<button class="dropdown-item" type="button">
-							<img src="<%=baseURL%>assets/image/presentation.svg"
-								alt="presentation" class="task-dropdown"> Presentation
+							<img src="<%=baseURL%>assets/image/chat.svg" alt="presentation"
+								class="task-dropdown"> Presentation
 						</button>
 					</div>
 
@@ -239,10 +241,10 @@
 									<%
 										}
 									%>
-										<div class="rounded-circle imgsize mr-1 ml_10 theme_bg f-10 font-weight-bold text-white d-flex align-items-center justify-content-center border-white">
-										 +05
-										</div>
-										</div>
+									<div
+										class="rounded-circle imgsize mr-1 ml_10 theme_bg f-10 font-weight-bold text-white d-flex align-items-center justify-content-center border-white">
+										+05</div>
+								</div>
 							</div>
 							<%
 								}
@@ -345,7 +347,7 @@
 				<div class="pipeline-card"></div>
 				<!-- End of Pipeline and Stages card-->
 
-				
+
 
 
 
@@ -382,7 +384,7 @@
 												</div>
 												<div class="col-md-4 p-0 m-0">
 													<img class=" signalimgsize p-0" alt="next-step-img"
-											src="<%=baseURL%>assets/image/Group 3614.svg" />
+														src="<%=baseURL%>assets/image/Group 3614.svg" />
 												</div>
 											</div>
 										</div>
@@ -394,9 +396,10 @@
 														Ups</div>
 												</div>
 												<div class="col-md-4 p-0  ">
-													<img class=" signalimgsize p-0" alt="
+													<img class=" signalimgsize p-0"
+														alt="
 														next-step-img"
-											src="<%=baseURL%>assets/image/Group 3614.svg" />
+														src="<%=baseURL%>assets/image/Group 3614.svg" />
 												</div>
 											</div>
 										</div>
@@ -415,11 +418,11 @@
 
 				</div>
 				<!-- End of Signal and its count card -->
-				
+
 				<!-- Start of Teams card-->
 				<div class="team-card pb-10"></div>
 				<!-- End of Teams card-->
-				
+
 				<!-- Start of Top/Bottom 5 Agent card-->
 				<div class="top-bottom-agent-card"></div>
 
@@ -450,7 +453,8 @@
 								<button type="button"
 									class="close task very-light-pink-bg pt-4 removefocus"
 									aria-label="Close" style="">
-									<img src="<%=baseURL %>assets/image/close.svg" alt="taskicon" class="border-0 hw-24 task-icon">
+									<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+										class="border-0 hw-24 task-icon">
 								</button>
 							</div>
 
@@ -478,7 +482,8 @@
 								<button type="button"
 									class="close resolve_task very-light-pink-bg pt-4 removefocus"
 									aria-label="Close" style="">
-									<img src="<%=baseURL %>assets/image/close.svg" alt="taskicon" class="border-0 hw-24 task-icon">
+									<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+										class="border-0 hw-24 task-icon">
 								</button>
 
 							</div>
@@ -495,19 +500,20 @@
 
 				<div class="third_main_container">
 					<!-- Start of Associate Join now/Listen card-->
-					<div class="card  rounded-0 shadow mb-20">
+					<div class="card  rounded-0 shadow mb-10">
 						<div class="card-body ongoingtaskcard cursor-pointer p-0 p-20">
 							<div class="d-flex pb-10">
 								<div
 									class="mr-auto  bd-highlight theme_color f-20 font-weight-bold">$
 									250</div>
-									
+
 								<div class=" bd-highlight">
-									<span class="badge badge-danger istar_badge">Angry</span>
+									<img src="<%=baseURL%>assets/image/angry.svg" alt="angry">
 								</div>
 							</div>
 							<div class="d-flex pb-5">
-							<div class="fw-500  f-14 greyish-brown">Stage 02 -</div><div class="f-14 brown-grey"> &nbsp; Follow Up </div>
+								<div class="fw-500  f-14 greyish-brown">Stage 02 -</div>
+								<div class="f-14 brown-grey">&nbsp; Follow Up</div>
 							</div>
 							<h5
 								class="card-title mb-0 f-18 font-weight-bold text-truncate greyish-brown"
@@ -559,7 +565,8 @@
 						<div class="card-footer cream_white p-0 pt-10 pb-10">
 							<div
 								class="d-flex justify-content-end view_more_ongoing_task pr-20">
-								<div class="dark_theme_color f-14 font-weight-bold cursor-pointer">
+								<div
+									class="dark_theme_color f-14 font-weight-bold cursor-pointer">
 									04 More<i class="fas fa-chevron-circle-right theme_color ml-2"></i>
 								</div>
 							</div>
@@ -570,7 +577,7 @@
 
 
 					<!-- Start of issue resolve card-->
-					<div class="card rounded-0 shadow mb-20">
+					<div class="card rounded-0 shadow mb-10">
 						<div class="card-body p-0 p-20">
 							<h6 class="card-subtitle m-0 brown-grey f-12 pb-10 fw-300">June
 								12, 2019</h6>
@@ -602,10 +609,11 @@
 					<!-- End of issue resolve card-->
 
 					<!-- Start of chat now card-->
-					<div class="card mb-3 rounded-0 shadow">
+					<div class="card mb-10 rounded-0 shadow">
 						<div class="card-body p-0 p-20">
 							<h6 class=" mb-0 text-muted f-12 fw-300 pb-10">10:30 AM</h6>
-							<div class="row align-items-center justify-content-between m-0 pb-15">
+							<div
+								class="row align-items-center justify-content-between m-0 pb-15">
 								<div class="col-md-9 col-6 p-0 pr-10">
 									<p class="card-text greyish-brown f-14 text-trucate"
 										title="Hello Sir, The
@@ -633,7 +641,7 @@
 					<div class="card rounded-0 shadow ">
 						<div class="card-body p-0 border_bottom_1_dashed ml-20 mr-20">
 							<div class="row m-0 pb-10 pt-20">
-								<div class="col-md-6 p-0 d-flex col-6 ">
+								<div class="col-md-6 p-0 d-flex col-6 " style="left: -5px;">
 									<img class="hw-24 mr-1" alt="task"
 										src="<%=baseURL%>assets/image/task.svg">
 									<div class="f-16 brownish-grey " style="line-height: 28px;">Call
@@ -647,16 +655,17 @@
 										PM</div>
 								</div>
 							</div>
-							<h5 class="mb-0 f-18 text-truncate font-weight-bold greyish-brown " title="Accenture">Accenture
-								Consulting Inc.</h5>
+							<h5
+								class="mb-0 f-18 text-truncate font-weight-bold greyish-brown "
+								title="Accenture">Accenture Consulting Inc.</h5>
 							<div class="f-16 brownish-grey text-truncate"
 								title="Robert Wolken">Robert Wolken</div>
 							<div class="f-12 brown-grey pb-20 ">Manager</div>
 						</div>
 
 						<div class="card-footer p-20 cream_white border-0">
-							<p class="brownish-grey f-16 pb-25 m-0">Louella sent an request
-								for Meeting!</p>
+							<p class="brownish-grey f-16 pb-25 m-0">Louella sent an
+								request for Meeting!</p>
 							<button type="button"
 								class="btn join_btn istar-btn-hover f-12 mr-2">ACCEPT</button>
 							<button type="button"
@@ -801,9 +810,10 @@
 											<select
 												class="istar-form-control form-control selectpicker h-35 show-menu-arrow "
 												id="leadname" data-style="mycustomstyle" title="Select here"
-												data-live-search="true" id="exampleFormControlSelect1" data-live-search-placeholder="Search">
-											    
-											
+												data-live-search="true" id="exampleFormControlSelect1"
+												data-live-search-placeholder="Search">
+
+
 												<%
 													for (int i = 0; i < 10; i++) {
 														String bgcolor = "bg-white";
@@ -857,7 +867,7 @@
 														alt="webinar" class="task-dropdown"> Webinar Task
 												</button>
 												<button class="dropdown-item" type="button">
-													<img src="<%=baseURL%>assets/image/presentation.svg"
+													<img src="<%=baseURL%>assets/image/chat.svg"
 														alt="presentation" class="task-dropdown">
 													Presentation
 												</button>
@@ -971,8 +981,8 @@
 	<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
-<script>
-
-</script>
+	<script>
+		
+	</script>
 </body>
 </html>

@@ -12,12 +12,12 @@
 
 			<button type="button" class="istar-btn-icon istar-square previous"
 				id="pipeline-left">
-				<i class="fal fa-chevron-left"></i>
+				<img src="<%=baseURL%>assets/image/prev.svg" alt="crm" />
 			</button>
 			<button type="button"
 				class="istar-btn-icon istar-square active ml-2 next"
 				id="pipeline-right">
-				<i class="fal fa-chevron-right"></i>
+				<img src="<%=baseURL%>assets/image/next.svg" alt="crm" />
 			</button>
 			<%
 				for (int j = 0; j < 10; j++) {

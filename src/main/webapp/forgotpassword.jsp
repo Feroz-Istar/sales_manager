@@ -55,7 +55,7 @@
 									type="password" class="form-control p-0 pr-15 pl-15 pb-15 pt-15 -very-light-pink f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password" name="password">
 										<button type="button" class="btn eye_icon confirm_password p-0 bg-white   pl-2">
-							<i class="far f-14 fa-eye"></i>
+							<img src="<%=baseURL%>assets/image/eye.svg" alt="eye" />
 						</button>
 							</div>
 					<div class="form-group position-relative pb-40 mb-0">
@@ -64,7 +64,7 @@
 									type="password" class="form-control pr-15 pl-15 pb-15 pt-15  f-14 rounded-0 very-light-pink input_wh istar-form-control"
 									id="confirmpassword" placeholder=" Confirm Password" name="confirmpassword">
 									<button type="button" class="btn  eye_icon confirm_password bg-white p-0 pl-2">
-							<i class="far  f-14  fa-eye"></i>
+						<img src="<%=baseURL%>assets/image/eye.svg" alt="eye" />
 						</button>
 							</div>
 							<button type="submit"

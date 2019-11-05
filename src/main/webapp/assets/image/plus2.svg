@@ -1,13 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="15.714" height="15.714" viewBox="0 0 15.714 15.714">
+<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
     <defs>
         <style>
-            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#ed4d67}
+            .cls-1{fill:#fff}.cls-2{fill:#ed4d67}.cls-3{filter:url(#Path_672)}
         </style>
-        <clipPath id="clip-path">
-            <path d="M0 0h15.714v15.714H0z" class="cls-1"/>
-        </clipPath>
+        <filter id="Path_672" width="60" height="60" x="0" y="0" filterUnits="userSpaceOnUse">
+            <feOffset dy="3"/>
+            <feGaussianBlur result="blur" stdDeviation="5"/>
+            <feFlood flood-opacity=".149"/>
+            <feComposite in2="blur" operator="in"/>
+            <feComposite in="SourceGraphic"/>
+        </filter>
     </defs>
-    <g id="plus_2" class="cls-2" data-name="plus – 2">
-        <path id="Path_2289" d="M15.714-8.929v2.143a1.033 1.033 0 0 1-.312.759 1.033 1.033 0 0 1-.759.313H10v4.643a1.033 1.033 0 0 1-.312.759A1.033 1.033 0 0 1 8.929 0H6.786a1.033 1.033 0 0 1-.759-.312 1.033 1.033 0 0 1-.312-.759v-4.643H1.071a1.033 1.033 0 0 1-.759-.312A1.033 1.033 0 0 1 0-6.786v-2.143a1.033 1.033 0 0 1 .313-.759A1.033 1.033 0 0 1 1.071-10h4.643v-4.643a1.033 1.033 0 0 1 .313-.759 1.033 1.033 0 0 1 .759-.312h2.143a1.033 1.033 0 0 1 .759.313 1.033 1.033 0 0 1 .313.759V-10h4.643a1.033 1.033 0 0 1 .759.313 1.033 1.033 0 0 1 .311.758z" class="cls-3" data-name="Path 2289" transform="translate(0 15.714)"/>
+    <g id="Group_1969" data-name="Group 1969" transform="translate(15 12)">
+        <g class="cls-3" transform="translate(-15 -12)">
+            <path id="Path_672-2" d="M15 0A15 15 0 1 1 0 15 15 15 0 0 1 15 0z" class="cls-1" data-name="Path 672" transform="translate(15 12)"/>
+        </g>
+        <path id="Path_671" d="M536.754 1374.743a1.041 1.041 0 0 1-1.04 1.041h-4.162v3.93a1.04 1.04 0 1 1-2.081 0v-3.93h-3.931a1.04 1.04 0 0 1 0-2.081h3.931v-4.162a1.04 1.04 0 1 1 2.081 0v4.162h4.162a1.04 1.04 0 0 1 1.04 1.04z" class="cls-2" data-name="Path 671" transform="translate(-515.5 -1359.5)"/>
     </g>
 </svg>

@@ -303,7 +303,7 @@
 				<div
 					class="  d-flex flex-column justify-content-center align-items-center minh-50"
 					data-dropdown_id="completed_call_task_content">
-					<img src="<%=baseURL%>assets/image/presentation.svg"
+					<img src="<%=baseURL%>assets/image/chat.svg"
 						alt="presentation" />
 					<div class="f-12 pt-1 greyish-brown">Chat</div>
 

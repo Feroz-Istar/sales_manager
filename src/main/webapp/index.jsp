@@ -39,8 +39,9 @@
 						<div class="pl-25 pr-25">
 							<div style="text-align: center" class="pb-10">
 
-								<button class="btn rounded-circle tea border-0 tick_icon p-0">
-									<i class="fas fa-check text-white pt-2 f-18"></i>
+								<button class="btn p-0">
+							<img class=" text-center saleskenlogo" alt="check_icon"
+							src="<%=baseURL%>assets/image/checkicon.svg" />
 								</button>
 							</div>
 							<p class="brownish-grey f-14 text-center mb-0 fw-500">Great!
@@ -80,7 +81,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
+			<div class="col-md-7 p-0  h-100 d-flex align-items-center" style=" background-image: url('<%=baseURL%>assets/image/loginbackgroung.svg');background-repeat: no-repeat; background-size: cover;background-position: left; ">
 				<div class="text-break">
 					<p class="black f-24 mb-0 pl-90 pb-5">See What Works, What
 						Doesn’t &</p>
@@ -91,9 +92,8 @@
 						style="max-width: 534px;">Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit. Nulla sit amet nibh lobortis,
 						vehicula lorem at.</p>
-					<img class="login_background pl-30" alt="login_background"
-						src="<%=baseURL%>assets/image/login_background.svg" />
-				</div>
+					<%--  <img class="login_background pl-30" alt="login_background"
+						src="<%=baseURL%>assets/image/login_background.svg" />  --%>
 			</div>
 		</div>
 

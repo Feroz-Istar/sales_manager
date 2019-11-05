@@ -23,14 +23,16 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/taskDetail.css">
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
-	<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
-	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-	<link rel="stylesheet"
+<link rel="stylesheet"
+	href="<%=baseURL%>assets/css/salesken_style_media_query.css">
+<link rel="stylesheet"
+	href="https://daneden.github.io/animate.css/animate.min.css">
+<link rel="stylesheet"
 	href="<%=baseURL%>assets/css/wickedpicker.min.css">
 </head>
 <body data-base-url="<%=baseURL%>" onload="load()">
-<!-- start of circular progress bar for page loading -->
-	<div class="salesken_progress h-100 w-100 " style="display:none">
+	<!-- start of circular progress bar for page loading -->
+	<div class="salesken_progress h-100 w-100 " style="display: none">
 		<div
 			class="d-flex align-items-center justify-content-center  h-100 w-100">
 			<div class="spinner-border text-danger" role="status">
@@ -57,33 +59,46 @@
 
 
 				<div class="input-group position-relative mr-2 search_width">
-				<img src="<%=baseURL %>assets/image/search.svg" alt="edit" class=" searchBox">
-					<input id="taskdetail_search" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects" type="search" placeholder="Search" style="padding-right:30px">
+					<img src="<%=baseURL%>assets/image/search.svg" alt="edit"
+						class=" searchBox"> <input id="taskdetail_search"
+						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						type="search" placeholder="Search" style="padding-right: 30px">
 				</div>
-				
+
 				<div class="dropdown  ">
-									<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold " id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>NEW TASK
-										 <img src="<%=baseURL %>assets/image/toggle_white.svg" alt="call" class="h-17 text-white "> 
-									</button>
-									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
-										<button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="<%=baseURL %>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
-										</button>
-										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL %>assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
-										</button>
-										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL %>assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
-										</button>
-										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL %>assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
-										</button>
-									</div>
+					<button
+						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "
+						id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
+						<span class="sr-only">Toggle Dropdown</span>NEW TASK <img
+							src="<%=baseURL%>assets/image/toggle_white.svg" alt="call"
+							class="h-17 text-white ">
+					</button>
+					<div
+						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+						aria-labelledby="ongoing_activity">
+						<button class="dropdown-item" type="button"
+							onclick="window.location.href = 'dashboardCreateTask.jsp'">
+							<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
+								class="task-dropdown"> Call Task
+						</button>
+						<button class="dropdown-item" type="button">
+							<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email"
+								class="task-dropdown"> Email Task
+						</button>
+						<button class="dropdown-item" type="button">
+							<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
+								class="task-dropdown"> Webinar Task
+						</button>
+						<button class="dropdown-item" type="button">
+							<img src="<%=baseURL%>assets/image/.svg"
+								alt="" class="task-dropdown"> Presentation
+						</button>
+					</div>
 
-								</div>
+				</div>
 
-		
+
 
 			</div>
 
@@ -91,8 +106,9 @@
 		<div class="row m-0">
 			<div class="col-md-12 bg-white p-0 ">
 
-				<ul class="nav nav-tabs nav-mytabs pl-40 pt-20 d-flex align-items-end" id="nav-tabs"
-					role="tablist">
+				<ul
+					class="nav nav-tabs nav-mytabs pl-40 pt-20 d-flex align-items-end"
+					id="nav-tabs" role="tablist">
 					<li class="nav-item rounded-0"><a
 						class="nav-item nav-link show active" id="nav-ongoing-tab"
 						data-toggle="tab" href="#nav-ongoing" role="tab"
@@ -122,63 +138,56 @@
 									<option>Filter by Deal Value</option>
 									<option>Default select</option>
 								</select>  -->
-								
-									<div class="istar-dropdown-task select_focus mr-10 ">
+
+								<div class="istar-dropdown-task select_focus mr-10 ">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Value
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal
+										Value <img src="<%=baseURL%>assets/image/dropdown_right.svg"
+											alt="call" class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu 	" aria-labelledby="ongoing_deal">
-										<button class="dropdown-item" type="button"
-											>
-											 1000
-										</button>
-										<button class="dropdown-item" type="button">
-											 2000
-										</button>
-										
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu 	"
+										aria-labelledby="ongoing_deal">
+										<button class="dropdown-item" type="button">1000</button>
+										<button class="dropdown-item" type="button">2000</button>
+
 									</div>
 
 								</div>
-								
+
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_stage">
-										<button class="dropdown-item" type="button"
-											>
-											 Stage 1
-										</button>
-										<button class="dropdown-item" type="button">
-											stage 2
-										</button>
-										
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="ongoing_stage">
+										<button class="dropdown-item" type="button">Stage 1</button>
+										<button class="dropdown-item" type="button">stage 2</button>
+
 									</div>
 
 								</div>
-									
-								
+
+
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
+										id="ongoing_activity" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by
-										activities 
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										activities <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_activity">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="ongoing_activity">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
 											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
@@ -189,51 +198,52 @@
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
-												class="task-dropdown"> Webinar Task
+											<img src="<%=baseURL%>assets/image/webinartask.svg"
+												alt="webinar" class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
-												class="task-dropdown"> Presentation
+											<img src="<%=baseURL%>assets/image/.svg"
+												alt="" class="task-dropdown"> Presentation
 										</button>
 									</div>
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="ongoing_status" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="ongoing_status" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Status <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="ongoing_status">
-										<button class="dropdown-item" type="button"
-											>
-											 Ongoing
-										</button>
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="ongoing_status">
+										<button class="dropdown-item" type="button">Ongoing</button>
 										<button class="dropdown-item" type="button">
-										Completed
-										</button>
-										
+											Completed</button>
+
 									</div>
 
 								</div>
 
-								 <div class="istar-dropdown-task select_focus dropdown" id="ongoing_filter">
-									
+								<div class="istar-dropdown-task select_focus dropdown"
+									id="ongoing_filter">
+
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="ongoing_filter" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="ongoing_filter" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
 										class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="ongoing_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="myTab"
-											role="tablist">
+										<ul
+											class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
+											id="myTab" role="tablist">
 											<li class="nav-item"><a class="nav-link active"
 												id="individual-tab" data-toggle="tab" href="#individual"
 												role="tab" aria-controls="individual" aria-selected="true">Individual</a>
@@ -247,13 +257,14 @@
 											<div class="tab-pane fade show active px-4 py-3"
 												id="individual" role="tabpanel"
 												aria-labelledby="individual-tab">
-												<div class="input-group position-relative pl-2 pr-2 search_width">
-				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox" >
-					<input id=""
-						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
-						type="search" placeholder="Search"
-						style="padding-right:30px">
-				</div>
+												<div
+													class="input-group position-relative pl-2 pr-2 search_width">
+													<img src="<%=baseURL%>assets/image/search.svg" alt="edit"
+														class=" searchBox"> <input id=""
+														class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+														type="search" placeholder="Search"
+														style="padding-right: 30px">
+												</div>
 												<div class=" mb-2"
 													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
 
@@ -267,8 +278,8 @@
 															data-id="<%=i%>" id="associate-checkbox<%=i%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style"
-															for="associate-checkbox<%=i%>"></label> <img alt="user-img"
-															src="<%=baseURL%>/assets/image/11.png"
+															for="associate-checkbox<%=i%>"></label> <img
+															alt="user-img" src="<%=baseURL%>/assets/image/11.png"
 															class="rounded-circle ml-3 mr-2 hw-40">
 														<div>
 															<div class="f-14 font-weight-bold greyish-brown">Robert
@@ -308,9 +319,9 @@
 													%>
 													<div class="d-flex align-items-center pt-3">
 														<input class="istar-checkbox teamcheckbox"
-															data-id="<%=j%>" id="team-checkbox<%=j%>"
-															type="checkbox"> <label
-															class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
+															data-id="<%=j%>" id="team-checkbox<%=j%>" type="checkbox">
+														<label class="istar-checkbox-style"
+															for="team-checkbox<%=j%>"></label>
 														<div class="f-12 ml-2 brownish-grey">
 															Team -0<%=j%></div>
 													</div>
@@ -331,16 +342,15 @@
 									</div>
 
 								</div>
-								
+
 
 							</div>
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0 ">
 							<div class="col-md-3 p-0 border-right pl-20">
-								<div class="nav flex-column nav-pills"
-									id="taskdetail-tab-list" role="tablist"
-									aria-orientation="vertical">
+								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
+									role="tablist" aria-orientation="vertical">
 									<%
 										for (int i = 0; i < 3; i++) {
 											String isactive = "";
@@ -358,23 +368,26 @@
 										<div class="row align-items-center m-0 p-20">
 											<div class="col-md-9 p-0">
 												<div class="d-flex flex-row ">
-													<div
-														class="f-16 font-weight-bold pr-10 theme_color">$
+													<div class="f-16 font-weight-bold pr-10 theme_color">$
 														500</div>
-														<div class=" border-right-separation  my-1"></div>
+													<div class=" border-right-separation  my-1"></div>
 													<div
 														class="pl-10 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 fw-500  black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation. Inc.">Globex Corporation
+												<div class="f-16 fw-500  black text-truncate"
+													data-toggle="tooltip" data-placement="bottom"
+													title="Globex Corporation. Inc.">Globex Corporation
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
 											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon"
-														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip" data-placement="bottom" title="Agent name"
-														class="rounded-circle hw-40 task-image" alt="task-image" />
+													<img src="<%=baseURL%>assets/image/calltask.svg"
+														alt="taskicon" class="rounded-circle hw-30 task-icon" />
+													<img src="<%=baseURL%>assets/image/37.jpg"
+														data-toggle="tooltip" data-placement="bottom"
+														title="Agent name" class="rounded-circle hw-40 task-image"
+														alt="task-image" />
 												</div>
 											</div>
 										</div>
@@ -414,32 +427,39 @@
 																title="Globex Corporation. Inc.">Globex
 																Corporation. Inc.</div>
 														</div>
-														<div
-															class="col-md-6 p-0 text-right"
+														<div class="col-md-6 p-0 text-right"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
-															<div class="f-14 font-weight-bold  theme_color cursor-pointer" >
-																View More <i
-																class="fas fa-chevron-circle-right"></i></div>
-																
+															<div
+																class="f-14 font-weight-bold  theme_color cursor-pointer">
+																View More <i class="fas fa-chevron-circle-right"></i>
+															</div>
+
 														</div>
-														
+
 													</div>
 													<div class="row align-items-center m-0">
 														<div class="col-md-3 p-0">
 															<div class="f-14 brownish-grey">Contact Person</div>
-															<div class="f-16 fw-500 black  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Rosemary Garcia">Rosemary Garcia</div>
+															<div class="f-16 fw-500 black  text-truncate"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Rosemary Garcia">Rosemary Garcia</div>
 														</div>
 														<div class="col-md-3 p-0 pl-20">
 															<div class="f-14 brownish-grey">Agent</div>
-															<div class="f-16 fw-500 black  text-truncate" data-toggle="tooltip" data-placement="bottom" title="Marry Vasquez">Marry Vasquez</div>
+															<div class="f-16 fw-500 black  text-truncate"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Marry Vasquez">Marry Vasquez</div>
 														</div>
-												
+
 														<div class="col-md-6 p-0 d-flex justify-content-end">
-														
-																<button type="button" class="btn small_button rounded-0 font-weight-bold mr-10 f-12" id="outgoing_join">JOIN
-																NOW</button>
-																<button type="button" class="btn small_outline_button font-weight-bold rounded-0 f-12" id="outgoing_listen">LISTEN</button>
-															
+
+															<button type="button"
+																class="btn small_button rounded-0 font-weight-bold mr-10 f-12"
+																id="outgoing_join">JOIN NOW</button>
+															<button type="button"
+																class="btn small_outline_button font-weight-bold rounded-0 f-12"
+																id="outgoing_listen">LISTEN</button>
+
 														</div>
 													</div>
 												</div>
@@ -450,17 +470,21 @@
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black ">Call</div>
 														</div>
-														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+														<div
+															class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Initiated At</div>
 															<div class="f-16  fw-500 black ">11:00 AM</div>
 														</div>
-														<div class="col-md-3 p-0 border-right-dashed-separation pl-15 ">
+														<div
+															class="col-md-3 p-0 border-right-dashed-separation pl-15 ">
 															<div class="brownish-grey f-14">Deal Value</div>
 															<div class="f-16  fw-500 black ">$500</div>
 														</div>
 														<div class="col-md-3 p-0 pl-15">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
-															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</div>
+															<div class="f-16  fw-500 black text-truncate"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Stage 02">Stage 02</div>
 														</div>
 													</div>
 												</div>
@@ -471,59 +495,65 @@
 
 
 											<div class="col-md-1 p-0">
-											
-												<div class="dropleft  " >
+
+												<div class="dropleft  ">
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
-														 style="display:none;"  id="ongoing_task_content"  data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">Dropleft</button>
-													<div class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content p-0 m-0 animated fadeInRightBig" aria-labelledby="ongoing_task_content">
+														style="display: none;" id="ongoing_task_content"
+														data-toggle="dropdown" data-display="static"
+														aria-haspopup="true" aria-expanded="false">Dropleft</button>
+													<div
+														class="dropdown-menu dropdown-menu-right dropdown-menu-lg-left ongoing_task_content p-0 m-0 animated fadeInRightBig"
+														aria-labelledby="ongoing_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
 												<ul
 													class="list-group shadow d-flex flex-column h-100  taskpopup">
-													
-													
-													<li class="notesdropdown list-group-item p-0 py-3" >
+
+
+													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="ongoing_task_content"
-															>
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															data-dropdown_id="ongoing_task_content">
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
-															
+
 														</div>
 													</li>
-													<li class=" cuesdropdown list-group-item p-0 py-3" >
-														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
-															>
-															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
+													<li class=" cuesdropdown list-group-item p-0 py-3">
+														<div
+															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															data-dropdown_id="ongoing_task_content">
+															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
-															
+
 														</div>
 													</li>
-													<li class="crmdropdown list-group-item p-0 py-3" >
+													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
-															>
-															<img src="<%=baseURL%>assets/image/Group 6056.svg" alt="crm" />
+															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															data-dropdown_id="ongoing_task_content">
+															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
-															
+
 														</div>
 													</li>
-													<li class="chatdropdown list-group-item  p-0 py-3 " >
+													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="ongoing_task_content"
-															>
-															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
+															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															data-dropdown_id="ongoing_task_content">
+															<img src="<%=baseURL%>assets/image/chat.svg"
+																alt="" />
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
-															
+
 														</div>
 													</li>
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center " style="height: calc(100% - 80px);"
-														></li>
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center "
+														style="height: calc(100% - 80px);"></li>
 
 
 												</ul>
@@ -559,43 +589,42 @@
 							<div class="col-md-9 p-0 d-md-flex justify-content-end  ">
 								<div class="input-group date custom-calendar">
 									<input type="text" id="upcoming_datepicker"
-										class="form-control  custom-dateselect" value="12-02-2012" placeholder="Calendar">
+										class="form-control  custom-dateselect" value="12-02-2012"
+										placeholder="Calendar">
 									<div class="input-group-addon" onclick="showCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
+										<img src="<%=baseURL%>/assets/image/calendar.svg"
+											alt="calendar" class="pr-1">
 									</div>
 								</div>
-									<div class="istar-dropdown-task select_focus mr-10">
+								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="upcoming_stage" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="upcoming_stage" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="upcoming_stage">
-										<button class="dropdown-item" type="button"
-											>
-											 Stage 1
-										</button>
-										<button class="dropdown-item" type="button">
-											stage 2
-										</button>
-										
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="upcoming_stage">
+										<button class="dropdown-item" type="button">Stage 1</button>
+										<button class="dropdown-item" type="button">stage 2</button>
+
 									</div>
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="upcoming_activity" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
+										id="upcoming_activity" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities 
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										Activities <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="upcoming_activity">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="upcoming_activity">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
 											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
@@ -606,57 +635,60 @@
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
-												class="task-dropdown"> Webinar Task
+											<img src="<%=baseURL%>assets/image/webinartask.svg"
+												alt="webinar" class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
-												class="task-dropdown"> Presentation
+											<img src="<%=baseURL%>assets/image/chat.svg"
+												alt="" class="task-dropdown"> Presentation
 										</button>
 									</div>
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="upcoming_status" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="upcoming_status" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal
+										Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
+											alt="call" class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="upcoming_status">
-										<button class="dropdown-item" type="button"
-											>
-											 Ongoing
-										</button>
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="upcoming_status">
+										<button class="dropdown-item" type="button">Ongoing</button>
 										<button class="dropdown-item" type="button">
-										Completed
-										</button>
-										
+											Completed</button>
+
 									</div>
 
 								</div>
 
-								<div class="istar-dropdown-task select_focus  dropdown" id="upcoming_filter">
-									
+								<div class="istar-dropdown-task select_focus  dropdown"
+									id="upcoming_filter">
+
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="upcoming_filter" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="upcoming_filter" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
 										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left  istar-dropdown-task-menu position-absolute px-4"
 										aria-labelledby="upcoming_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="upcomingTab"
-											role="tablist">
+										<ul
+											class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
+											id="upcomingTab" role="tablist">
 											<li class="nav-item"><a class="nav-link active"
-												id="upcoming_individual-tab" data-toggle="tab" href="#upcoming_individual"
-												role="tab" aria-controls="upcoming_individual" aria-selected="true">Individual</a>
+												id="upcoming_individual-tab" data-toggle="tab"
+												href="#upcoming_individual" role="tab"
+												aria-controls="upcoming_individual" aria-selected="true">Individual</a>
 											</li>
-											<li class="nav-item"><a class="nav-link" id="upcoming_team-tab"
-												data-toggle="tab" href="#upcoming_team" role="tab"
+											<li class="nav-item"><a class="nav-link"
+												id="upcoming_team-tab" data-toggle="tab"
+												href="#upcoming_team" role="tab"
 												aria-controls="upcoming_team" aria-selected="false">Team</a></li>
 
 										</ul>
@@ -691,8 +723,8 @@
 															data-id="<%=i%>" id="upcoming_associate-checkbox<%=i%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style"
-															for="upcoming_associate-checkbox<%=i%>"></label> <img alt="user-img"
-															src="<%=baseURL%>/assets/image/11.png"
+															for="upcoming_associate-checkbox<%=i%>"></label> <img
+															alt="user-img" src="<%=baseURL%>/assets/image/11.png"
 															class="rounded-circle ml-3 mr-2 hw-40">
 														<div>
 															<div class="f-14 font-weight-bold greyish-brown">Robert
@@ -734,7 +766,8 @@
 														<input class="istar-checkbox teamcheckbox"
 															data-id="<%=j%>" id="upcoming_team-checkbox<%=j%>"
 															type="checkbox"> <label
-															class="istar-checkbox-style" for="upcoming_team-checkbox<%=j%>"></label>
+															class="istar-checkbox-style"
+															for="upcoming_team-checkbox<%=j%>"></label>
 														<div class="f-12 ml-2 brownish-grey">
 															Team -0<%=j%></div>
 													</div>
@@ -772,7 +805,8 @@
 												isactive = "active";
 											}
 									%>
-									<div class="nav-link <%=isactive%> p-0 rounded-0 theme_solid_border_bottom"
+									<div
+										class="nav-link <%=isactive%> p-0 rounded-0 theme_solid_border_bottom"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true">
@@ -781,15 +815,18 @@
 										<div class="row align-items-center 	p-20 p-0 m-0">
 											<div class="col-md-9 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
-												<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
+												<div class="f-16 fw-500 black text-truncate"
+													data-toggle="tooltip" data-placement="bottom"
+													title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
 											</div>
 											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"  alt="task-icon"
-														class="rounded-circle hw-30 task-icon" /> <img
-														src="<%=baseURL%>assets/image/37.jpg" alt="task-image" data-toggle="tooltip" data-placement="bottom" title="Agent Name"
-														class="rounded-circle hw-40 task-image" />
+													<img src="<%=baseURL%>assets/image/calltask.svg"
+														alt="task-icon" class="rounded-circle hw-30 task-icon" />
+													<img src="<%=baseURL%>assets/image/37.jpg" alt="task-image"
+														data-toggle="tooltip" data-placement="bottom"
+														title="Agent Name" class="rounded-circle hw-40 task-image" />
 												</div>
 											</div>
 										</div>
@@ -821,31 +858,38 @@
 												<div
 													class="shadow-bottom  theme_dotted_border_bottom pt-15  pb-20">
 													<div class="row justify-content-between m-0 pb-10">
-													<div class="col-md-6 p-0">
-													<div class=" f-18 font-weight-bold greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">
-															Opentech Pvt. Ltd.</div>
-													</div>
-																											<div class="col-md-6 p-0">
-														<div
-															class=" f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
-															onclick="window.location.href = 'task_lead_detail.jsp'">
-															View More <i
-																class="fas fa-chevron-circle-right ml-1 "></i>
+														<div class="col-md-6 p-0">
+															<div
+																class=" f-18 font-weight-bold greyish-brown text-truncate d-inline"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 														</div>
+														<div class="col-md-6 p-0">
+															<div
+																class=" f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
+																onclick="window.location.href = 'task_lead_detail.jsp'">
+																View More <i class="fas fa-chevron-circle-right ml-1 "></i>
+															</div>
 														</div>
 													</div>
 													<div class="row align-items-center  m-0">
 														<div class="col-md-3 p-0">
 															<div class="f-14 brownish-grey">Contact Person</div>
-															<div class="f-16 fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Deann Harper">Deann Harper</div>
+															<div class="f-16 fw-500 black text-truncate"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Deann Harper">Deann Harper</div>
 														</div>
 														<div class="col-md-3 p-0 pl-40">
 															<div class="f-14 brownish-grey">Agent</div>
-															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Bradley Obrien">Bradley Obrien</div>
+															<div class="f-16  fw-500 black text-truncate"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Bradley Obrien">Bradley Obrien</div>
 														</div>
 														<div class="col-md-6 p-0 d-flex justify-content-end">
-															
-																<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold"  id="upcomimg_reschedule" href="/modals/reschedule.jsp">RESCHEDULE</button>
+
+															<button type="button"
+																class="btn small_outline_button rounded-0 f-12 font-weight-bold"
+																id="upcomimg_reschedule" href="/modals/reschedule.jsp">RESCHEDULE</button>
 														</div>
 													</div>
 												</div>
@@ -859,27 +903,30 @@
 															<div class="brownish-grey f-14">Task Type</div>
 															<div class="f-16  fw-500 black">Call</div>
 														</div>
-														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+														<div
+															class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Timing</div>
 															<div class="f-16  fw-500 black">11:00 AM</div>
 														</div>
-														<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+														<div
+															class="col-md-3 p-0 border-right-dashed-separation pl-15">
 															<div class="brownish-grey f-14">Deal Value</div>
 															<div class="f-16  fw-500 black">$500</div>
 														</div>
 														<div class="col-md-3 p-0 pl-15">
 															<div class="brownish-grey f-14">Pipeline Detail</div>
-															<div class="f-16  fw-500 black text-truncate" data-toggle="tooltip" data-placement="bottom" title="Stage 02">Stage 02</div>
+															<div class="f-16  fw-500 black text-truncate"
+																data-toggle="tooltip" data-placement="bottom"
+																title="Stage 02">Stage 02</div>
 														</div>
 													</div>
 												</div>
 
 												<div
 													class="d-flex flex-column justify-content-center align-items-center pt-45 ">
-													<img src="<%=baseURL%>assets/image/timer.svg"  alt="clock"
+													<img src="<%=baseURL%>assets/image/timer.svg" alt="clock"
 														class="mb-20 time-img-size">
-													<div class="f-16 fw-500 black ">Few minutes
-														left !</div>
+													<div class="f-16 fw-500 black ">Few minutes left !</div>
 													<div class="f-12 brownish-grey">Lorem Ipsum is simply
 														dummy text of the printing and typesetting industry.</div>
 												</div>
@@ -888,61 +935,64 @@
 
 
 
-												<div class="col-md-1 p-0">
-												<div class=" dropleft" >
+											<div class="col-md-1 p-0">
+												<div class=" dropleft">
 													<button type="button"
 														class="btn btn-secondary dropdown-toggle"
 														data-toggle="dropdown" aria-haspopup="true"
-														aria-expanded="false" style="display:none" id="upcoming_task_content">Dropleft</button>
-													<div class="dropdown-menu upcoming_task_content m-0" aria-labelledby="upcoming_task_content">
+														aria-expanded="false" style="display: none"
+														id="upcoming_task_content">Dropleft</button>
+													<div class="dropdown-menu upcoming_task_content m-0"
+														aria-labelledby="upcoming_task_content">
 														<!-- Dropdown menu links -->
 													</div>
 												</div>
 												<ul
 													class="list-group shadow d-flex flex-column h-100  taskpopup">
-													
-													
+
+
 													<li class="notesdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50 " data-dropdown_id="upcoming_task_content"
-															>
+															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															data-dropdown_id="upcoming_task_content">
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
-															
+
 														</div>
 													</li>
 													<li class=" cuesdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="upcoming_task_content"
-															>
-															<img src="<%=baseURL%>assets/image/cues.svg"  alt="cues"/>
+															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															data-dropdown_id="upcoming_task_content">
+															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
-															
+
 														</div>
 													</li>
 													<li class="crmdropdown list-group-item p-0 py-3">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="upcoming_task_content"
-															>
+															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															data-dropdown_id="upcoming_task_content">
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
-															
+
 														</div>
 													</li>
 													<li class="chatdropdown list-group-item  p-0 py-3 ">
 														<div
-															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="upcoming_task_content"
-															>
-															<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"/>
+															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															data-dropdown_id="upcoming_task_content">
+															<img src="<%=baseURL%>assets/image/chat.svg"
+																alt="" />
 															<div class="f-12 pt-1 greyish-brown">Chat</div>
-															
+
 														</div>
 													</li>
 
 
 													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"
-														></li>
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
+														style="height: calc(100% - 80px);"></li>
 
 
 												</ul>
@@ -977,32 +1027,29 @@
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon"
 										onclick="showcompletedCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar">
+										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"
+											alt="calendar">
 									</div>
 								</div>
-								
+
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="completed_stage" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages
-										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="completed_stage" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Stages <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="completed_stage">
-										<button class="dropdown-item" type="button"
-											>
-											 Stage 1
-										</button>
-										<button class="dropdown-item" type="button">
-											stage 2
-										</button>
-										
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="completed_stage">
+										<button class="dropdown-item" type="button">Stage 1</button>
+										<button class="dropdown-item" type="button">stage 2</button>
+
 									</div>
 
 								</div>
-								
+
 								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
@@ -1014,7 +1061,7 @@
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 										<button class="dropdown-item" type="button"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
-											<img src="<%=baseURL%>assets/image/calltask.svg"  alt="call"
+											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 												class="task-dropdown"> Call Task
 										</button>
 										<button class="dropdown-item" type="button">
@@ -1022,56 +1069,59 @@
 												class="task-dropdown"> Email Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar"
-												class="task-dropdown"> Webinar Task
+											<img src="<%=baseURL%>assets/image/webinartask.svg"
+												alt="webinar" class="task-dropdown"> Webinar Task
 										</button>
 										<button class="dropdown-item" type="button">
-											<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation"
-												class="task-dropdown"> Presentation
+											<img src="<%=baseURL%>assets/image/chat.svg"
+												alt="" class="task-dropdown"> Presentation
 										</button>
 									</div>
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="completed_status" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal Status <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="completed_status" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>Filter by Deal
+										Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
+											alt="call" class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="completed_status">
-										<button class="dropdown-item" type="button"
-											>
-											 Ongoing
-										</button>
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+										aria-labelledby="completed_status">
+										<button class="dropdown-item" type="button">Ongoing</button>
 										<button class="dropdown-item" type="button">
-										Completed
-										</button>
-										
+											Completed</button>
+
 									</div>
 
 								</div>
- <div class="istar-dropdown-task select_focus  dropdown" id="completed_filter">
-									
+								<div class="istar-dropdown-task select_focus  dropdown"
+									id="completed_filter">
+
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="completed_filter" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
+										id="completed_filter" data-toggle="dropdown"
+										aria-haspopup="true" aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> Filter by User <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
 										class="dropdown-menu filter-menu dropdown-menu-right  istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
 										aria-labelledby="completed_filter" style="width: 350px">
 
-										<ul class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="completedTab"
-											role="tablist">
+										<ul
+											class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
+											id="completedTab" role="tablist">
 											<li class="nav-item"><a class="nav-link active"
-												id="completed_individual-tab" data-toggle="tab" href="#completed_individual"
-												role="tab" aria-controls="completed_individual" aria-selected="true">Individual</a>
+												id="completed_individual-tab" data-toggle="tab"
+												href="#completed_individual" role="tab"
+												aria-controls="completed_individual" aria-selected="true">Individual</a>
 											</li>
-											<li class="nav-item"><a class="nav-link" id="completed_team-tab"
-												data-toggle="tab" href="#completed_team" role="tab"
+											<li class="nav-item"><a class="nav-link"
+												id="completed_team-tab" data-toggle="tab"
+												href="#completed_team" role="tab"
 												aria-controls="upcoming_team" aria-selected="false">Team</a></li>
 
 										</ul>
@@ -1106,8 +1156,8 @@
 															data-id="<%=i%>" id="completed_associate-checkbox<%=i%>"
 															type="checkbox"> <label
 															class="istar-checkbox-style"
-															for="completed_associate-checkbox<%=i%>"></label> <img alt="user-img"
-															src="<%=baseURL%>/assets/image/11.png"
+															for="completed_associate-checkbox<%=i%>"></label> <img
+															alt="user-img" src="<%=baseURL%>/assets/image/11.png"
 															class="rounded-circle ml-3 mr-2 hw-40">
 														<div>
 															<div class="f-14 font-weight-bold greyish-brown">Robert
@@ -1149,7 +1199,8 @@
 														<input class="istar-checkbox teamcheckbox"
 															data-id="<%=j%>" id="completed_team-checkbox<%=j%>"
 															type="checkbox"> <label
-															class="istar-checkbox-style" for="completed_team-checkbox<%=j%>"></label>
+															class="istar-checkbox-style"
+															for="completed_team-checkbox<%=j%>"></label>
 														<div class="f-12 ml-2 brownish-grey">
 															Team -0<%=j%></div>
 													</div>
@@ -1175,9 +1226,8 @@
 
 						<div class="row very-light-pink-grey-bg m-0">
 							<div class="col-md-3 p-0 border-right taskmodal pl-20">
-								<div class="nav flex-column nav-pills "
-									id="taskdetail-tab-list" role="tablist"
-									aria-orientation="vertical">
+								<div class="nav flex-column nav-pills " id="taskdetail-tab-list"
+									role="tablist" aria-orientation="vertical">
 									<%
 										for (int i = 8; i < 12; i++) {
 											String isactive = "";
@@ -1192,29 +1242,38 @@
 												tasktype = "webinar";
 											}
 									%>
-									<div class="nav-link <%=isactive%> p-0 theme_solid_border_bottom rounded-0"
+									<div
+										class="nav-link <%=isactive%> p-0 theme_solid_border_bottom rounded-0"
 										id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true"
 										data-task_type="<%=tasktype%>">
 
 
-									<div class="row align-items-center m-0 p-20">
+										<div class="row align-items-center m-0 p-20">
 											<div class="col-md-9 p-0">
 												<div class="d-flex flex-row ">
 													<div class="f-16 font-weight-bold  pr-10 theme_color">$
 														500</div>
-														
-														<div class=" border-right-separation  my-1"></div>
-													<div class="pl-10 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
+
+													<div class=" border-right-separation  my-1"></div>
+													<div
+														class="pl-10 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
 												</div>
-												<div class="f-16 fw-500  black text-truncate" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Globex Corporation. Inc.">Globex Corporation
-													Inc.</div>
+												<div class="f-16 fw-500  black text-truncate"
+													data-toggle="tooltip" data-placement="bottom" title=""
+													data-original-title="Globex Corporation. Inc.">Globex
+													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
 											<div class="col-md-3 p-0">
 												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon" class="rounded-circle hw-30 task-icon"> <img src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip" data-placement="bottom" title="" class="rounded-circle hw-40 task-image" alt="task-image" data-original-title="Agent name">
+													<img src="<%=baseURL%>assets/image/calltask.svg"
+														alt="taskicon" class="rounded-circle hw-30 task-icon">
+													<img src="<%=baseURL%>assets/image/37.jpg"
+														data-toggle="tooltip" data-placement="bottom" title=""
+														class="rounded-circle hw-40 task-image" alt="task-image"
+														data-original-title="Agent name">
 												</div>
 											</div>
 										</div>
@@ -1262,19 +1321,26 @@
 			<div class="modal-dialog modal-lg modal-dialog-centered"
 				role="document">
 				<div class="modal-content rounded-0">
-					<div class="modal-header shadow-bottom pt-20 pb-20  ml-30 mr-30 p-0">
-						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Reschedule Task</h5>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<img src="<%=baseURL %>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">
+					<div
+						class="modal-header shadow-bottom pt-20 pb-20  ml-30 mr-30 p-0">
+						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Reschedule
+							Task</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+								class="rounded-circle hw-24 task-icon">
 						</button>
 					</div>
-					<div class="modal-body p-0">
-						
-					</div>
+					<div class="modal-body p-0"></div>
 
-					<div class="modal-footer p-0 pt-30 pb-30 ml-30	mr-30 border-top-task_list ">
-						<button type="submit" class="btn theme_color f-14 font-weight-bold " id="reset_schedule_task">Reset </button>
-						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold" id="create_schedule_task" >SUBMIT</button>
+					<div
+						class="modal-footer p-0 pt-30 pb-30 ml-30	mr-30 border-top-task_list ">
+						<button type="submit"
+							class="btn theme_color f-14 font-weight-bold "
+							id="reset_schedule_task">Reset</button>
+						<button type="button"
+							class="btn big_button rounded-0 f-14 font-weight-bold"
+							id="create_schedule_task">SUBMIT</button>
 					</div>
 				</div>
 			</div>
@@ -1287,10 +1353,10 @@
 		<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 		<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 		<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
-					<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
-		
+		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
+
 		<script src="<%=baseURL%>assets/js/salesken.js"></script>
-		
+
 		<script>
 			$('.salesken.navbar-nav>li').removeClass('active');
 			$($('.salesken.navbar-nav>li')[1]).addClass('active')
@@ -1304,11 +1370,13 @@
 			$(document)
 					.ready(
 							function() {
-								$('.filtertabs>li>.nav-link').click(function(e) {
-									
-									$($(this).attr('href')+'-tab').tab('show')
+								$('.filtertabs>li>.nav-link').click(
+										function(e) {
 
-								});
+											$($(this).attr('href') + '-tab')
+													.tab('show')
+
+										});
 								$('#upcoming_datepicker').datepicker({
 									autoclose : true
 								})
@@ -1402,16 +1470,20 @@
 			function showcompletedCalendar() {
 				$('#completed_datepicker').datepicker('show')
 			}
-			
+
 			$('.dropdown-menu').click(function(e) {
-			    e.stopPropagation();
+				e.stopPropagation();
 			});
-			
-			$('#upcomimg_reschedule').click(function (e){
-			
-			 e.preventDefault();
-			  $('#rescheduleCenter').modal('show').find('.modal-body').load($(this).attr('href'));
-			});
+
+			$('#upcomimg_reschedule')
+					.click(
+							function(e) {
+
+								e.preventDefault();
+								$('#rescheduleCenter').modal('show').find(
+										'.modal-body').load(
+										$(this).attr('href'));
+							});
 		</script>
 
 
