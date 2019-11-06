@@ -46,6 +46,7 @@
 	rel="stylesheet">
 <link rel="stylesheet"
 	href="<%=baseURL%>assets/css/salesken_style_media_query.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
 
 </head>
 <body data-base-url="<%=baseURL%>" onload="load()">
@@ -87,7 +88,7 @@
 
 				<div class="dropdown">
 					<button
-						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "
+						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "  data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew"
 						id="dashboard_activity" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>NEW TASK <img
@@ -155,30 +156,21 @@
 
 						<div class="task-item-container bg-white  pl-20 pr-20 pt-40 pb-40">
 
-							<div
-								class="d-flex flex-row align-items-center  istar-dropdown pb-10">
+							<div class="d-flex flex-row align-items-center  istar-dropdown pb-10">
 								<div class="pr-20 bblack f-18 fw-500">To-Do List</div>
-								<%-- <button
-									class="btn rounded-circle shadow d-flex justify-content-center align-items-center sales_ken_popover"
-									style="height: 30px; width: 30px; background: white;"  data-toggle="popover"  data-placement="bottom"  data-content='<ul class="popover_content list-group  py-2 bg-white" style="">   <li class="list-group-item border-0 f-14 cursor-pointer rounded-0" id="create_event" onclick="scheduleEvent()">Create an Event</li>   <li class="list-group-item border-0 f-14 cursor-pointer rounded-0" id="schedule_task" onclick="scheduleTask()">Schedule Task</li> </ul>'>
-									<i class="fas fa-plus theme_color"></i>
-								</button> --%>
 
 								<div class="istar-dropdown-task border-0">
-									<div class="d-flex" style="min-width: 40px;" id="todolist"
-										data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-
-										<button
-											class="btn rounded-circle shadow d-flex justify-content-center align-items-center "
-											style="height: 30px; width: 30px; background: white;">
+									<div class="d-flex" style="min-width: 40px;" id="todolist" data-toggle="dropdown" 
+										aria-haspopup="true" aria-expanded="false">
+										<button class="btn rounded-circle d-flex justify-content-center align-items-center "
+											style="width: 30px; background: white;">
 
 											<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
 												srcset="" class="">
 										</button>
 									</div>
 									<div
-										class="dropdown-menu   istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-left"
+										class="dropdown-menu istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-left"
 										style="min-width: 150px; max-width: 150px;"
 										aria-labelledby="todolist">
 										<button class="dropdown-item  f-14 fw-500" type="button"
@@ -981,6 +973,7 @@
 	<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
+		
 	<script>
 		
 	</script>

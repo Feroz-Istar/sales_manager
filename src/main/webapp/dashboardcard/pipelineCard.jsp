@@ -10,15 +10,12 @@
 		<div class="salesken_caurosel position-relative" data-index="0"
 			data-child="pipeline-container">
 
-			<button type="button" class="istar-btn-icon istar-square previous"
-				id="pipeline-left">
-				<img src="<%=baseURL%>assets/image/prev.svg" alt="crm" />
-			</button>
-			<button type="button"
-				class="istar-btn-icon istar-square active ml-2 next"
-				id="pipeline-right">
-				<img src="<%=baseURL%>assets/image/next.svg" alt="crm" />
-			</button>
+			<button type="button" class="istar-btn-icon  previous p-0" id="pipeline-left" >
+                 <i class="fal fa-chevron-left"></i>
+             </button>
+             <button type="button" class="istar-btn-icon  active next p-0" id="pipeline-right" >
+                 <i class="fal fa-chevron-right"></i>
+             </button>
 			<%
 				for (int j = 0; j < 10; j++) {
 					String isshow = "";
