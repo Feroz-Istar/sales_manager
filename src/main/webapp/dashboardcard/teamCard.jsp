@@ -98,37 +98,31 @@
 								<div class="col-md-6 p-0 pl-15">
 									<div class="fw-500 f-16 black pb-10">Playbook Stats</div>
 
-									<div class="f-12 brownish-grey text-break font-weight-bold">
+									<div class="f-12 brownish-grey text-break font-weight-bold pb-10">
 										Strong  <i class="fal fa-info-circle soft-blue  f-14"></i>
 									</div>
 									<div class="strong-signal w-100 d-flex flex-wrap">
-										<%
-											for (int l = 0; l < 5; l++) {
-										%>
-										<button type="button"
-											class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background"
-											>Introduction</button>
-										<%
-											}
-										%>
+										<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/objection_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/lead_qualification.svg" class="pr-2 pb-2">
 									</div>
 
 
 									<div
-										class="f-12 brownish-grey text-break font-weight-bold pt-20">
+										class="f-12 brownish-grey text-break font-weight-bold pt-20 pb-10">
 										Weak  <i class="fal fa-info-circle soft-blue  f-14"></i>
 									</div>
 
 									<div class="weak-signal w-100 d-flex flex-wrap">
-										<%
-											for (int k = 0; k < 5;k++) {
-										%>
-										<button type="button"
-											class="btn  rounded-0 f-12 m-1 font-weight-bold signal_background"
-											>Introduction</button>
-										<%
-											}
-										%>
+										<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/objection_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/lead_qualification.svg" class="pr-2 pb-2">
 									</div>
 								</div>
 							</div>
