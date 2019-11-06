@@ -154,21 +154,21 @@
 						<hr class="p-0 m-0">
 
 
-						<div class="task-item-container bg-white  pl-20 pr-20 pt-40 pb-40">
+						<div class="task-item-container bg-white  pl-20 pt-20 pr-20 pb-40">
 
 							<div class="d-flex flex-row align-items-center  istar-dropdown pb-10">
-								<div class="pr-20 bblack f-18 fw-500">To-Do List</div>
+								<div class="bblack f-18 fw-500 pb-5 pr-15">To-Do List</div>
 
 								<div class="istar-dropdown-task border-0">
-									<div class="d-flex" style="min-width: 40px;" id="todolist" data-toggle="dropdown" 
+								
+										<button class="btn rounded-circle d-flex justify-content-center align-items-center p-0"
+											id="todolist" data-toggle="dropdown" 
 										aria-haspopup="true" aria-expanded="false">
-										<button class="btn rounded-circle d-flex justify-content-center align-items-center "
-											style="width: 30px; background: white;">
 
 											<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
 												srcset="" class="">
 										</button>
-									</div>
+									
 									<div
 										class="dropdown-menu istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-left"
 										style="min-width: 150px; max-width: 150px;"
@@ -191,7 +191,7 @@
 								for (int j = 0; j < 4; j++) {
 							%>
 							<div class="taskitem  pt-20 pb-20" style="display: none">
-								<div class="d-flex flex-row align-items-center mb-2 ">
+								<div class="d-flex flex-row align-items-center ">
 									<div class="font-weight-bold f-14 bblack">Meeting with
 										Sales Team</div>
 									<div class=" ml-auto istar-dropdown dropleft f-12 brown-grey">
@@ -202,7 +202,7 @@
 											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 										</button>
 										<div
-											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
+											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left mb-10"
 											aria-labelledby="dropdownMenuButton">
 
 											<button class="dropdown-item" href="#">
@@ -218,7 +218,7 @@
 									</div>
 
 								</div>
-								<div class="f-12  mb-1 bblack mb-2">11:00 AM</div>
+								<div class="f-12 bblack">11:00 AM</div>
 								<div class="d-flex flex-row  mb-1">
 									<%
 										for (int i = 0; i < 3; i++) {
@@ -227,7 +227,7 @@
 													img_mar = "ml_10";
 												}
 									%>
-									<img class="rounded-circle imgsize mr-1 <%=img_mar%>"
+									<img class="rounded-circle imgsize <%=img_mar%>"
 										alt="associate-name" title="associate-name"
 										src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg">
 									<%
@@ -366,9 +366,9 @@
 
 							<div class="card  rounded-0 saleskenCard">
 								<div class="card-body p-0 pl-30 pr-30 pt-30 pb-60">
-									<div class="row m-0 ">
+									<div class="row m-0">
 										<div class="col-md-6 p-0 pr-15">
-											<div class="row m-0">
+											<div class="row m-0  align-items-center">
 												<div class="col-md-8 p-0 m-0">
 													<div class="font-weight-bold f-30 black">04</div>
 													<div class="f-16 fw-500 greyish-brown">No Follow -
@@ -376,22 +376,21 @@
 												</div>
 												<div class="col-md-4 p-0 m-0">
 													<img class=" signalimgsize p-0" alt="next-step-img"
-														src="<%=baseURL%>assets/image/Group 3614.svg" />
+														src="<%=baseURL%>assets/image/report-no-followup.svg" />
 												</div>
 											</div>
 										</div>
 										<div class="col-md-6 p-0 pl-15 card-separation ">
-											<div class="row m-0">
+											<div class="row m-0  align-items-center">
 												<div class="col-md-8 p-0 ">
-													<div class="font-weight-bold f-30 black">04</div>
-													<div class="f-16 fw-500 greyish-brown">No Follow -
-														Ups</div>
+													<div class="font-weight-bold f-30 black">12</div>
+													<div class="f-16 fw-500 greyish-brown">Positive Response</div>
 												</div>
 												<div class="col-md-4 p-0  ">
-													<img class=" signalimgsize p-0"
+													<img class=" signalimgsize"
 														alt="
 														next-step-img"
-														src="<%=baseURL%>assets/image/Group 3614.svg" />
+														src="<%=baseURL%>assets/image/positive_response.svg" />
 												</div>
 											</div>
 										</div>
@@ -721,7 +720,7 @@
 						</div>	 --%>
 										<div class="input-group position-relative  ">
 											<img src="<%=baseURL%>assets/image/calendar.svg" alt=""
-												class=" event_date"> <input id="event_date"
+												class=" event_date align-self-center h-20"> <input id="event_date"
 												name="event_date" value="<%=today_date%>"
 												class=" pl-2 f-14  removefocus w-100 istar-form-control h-35"
 												placeholder="Select here">
@@ -735,7 +734,7 @@
 						</div>	 --%>
 										<div class="input-group position-relative  ">
 											<img src="<%=baseURL%>assets/image/alarm.svg" alt=""
-												class="event_date"> <input id="timepicker"
+												class="event_date  align-self-center h-20"> <input id="timepicker"
 												name="event_date"
 												class=" pl-2 f-14  removefocus timepicker w-100 istar-form-control h-35"
 												type="text" placeholder="Select here">
@@ -756,7 +755,7 @@
 									<div class="col-md-12 p-0">
 										<div class="f-14 fw-500 pb-10">Description</div>
 										<textarea
-											class="custom-modal-textarea w-100 istar-form-control form-control"
+											class="custom-modal-textarea w-100 istar-form-control form-control" placeholder="Type here"
 											id="eventdescription " name="eventdescription" rows="6"></textarea>
 									</div>
 								</div>
@@ -765,9 +764,9 @@
 					</div>
 					<div class="modal-footer p-0 pt-30 pb-30 pl-30	pr-30">
 						<button type="submit"
-							class="btn theme_color f-14 font-weight-bold ">Reset All</button>
+							class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset All</button>
 						<button type="button"
-							class="btn big_button rounded-0 f-14 font-weight-bold"
+							class="btn big_button rounded-0 f-14 font-weight-bold m-0"
 							id="create" onclick="showList()">CREATE</button>
 					</div>
 				</div>
@@ -795,7 +794,7 @@
 					<div class="modal-body  p-0 pl-30 pr-30">
 						<form id="scheduletaskform" class="mb-0">
 							<fieldset>
-								<div class="row  pt-20 m-0">
+								<div class="row  pt-30 m-0">
 									<div class="col-md-12 istar-dropdown p-0">
 										<div class="f-14 fw-500 pb-10 black">Lead Name</div>
 										<div class="form-group mb-0 is-invalid" id="lead1">
@@ -886,7 +885,7 @@
 												placeholder="Select here" id="schedule_task_date"
 												value="<%=today_date%>"> <img
 												src="<%=baseURL%>assets/image/calendar.svg" alt="date"
-												class="pr-2">
+												class="pr-2 align-self-center h-20">
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
@@ -896,7 +895,7 @@
 												class="f-14 border-0 removefocus w-100 pl-2 brown-grey"
 												placeholder="Select here" id="schedule_task_time"> <img
 												src="<%=baseURL%>assets/image/alarm.svg" alt="alarm"
-												class="pr-2">
+												class="pr-2 align-self-center h-20">
 										</div>
 									</div>
 								</div>
@@ -926,10 +925,10 @@
 			<div class="modal-dialog modal-lg modal-dialog-centered "
 				role="document">
 				<div class="modal-content rounded-0 ">
-					<div class="modal-header shadow-bottom	">
-						<div class="row w-100 m-0">
+					<div class="modal-header shadow-bottom	p-0">
+						<div class="row w-100 m-0 pt-25 pb-25 pl-30 pr-30">
 							<div
-								class="col-md-11 p-0 col-11 modal-title greyish-brown f-18 font-weight-bold"
+								class="col-md-11 p-0 col-11 modal-title greyish-brown f-18 font-weight-bold "
 								id="createresolveModalCenterTitle">Objection</div>
 							<div class="col-md-1 p-0 col-1">
 								<button type="button" class="close" data-dismiss="modal"

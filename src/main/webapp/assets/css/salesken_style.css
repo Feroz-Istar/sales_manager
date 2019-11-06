@@ -1322,6 +1322,7 @@ border: 1px solid #ebebeb !important;
 /* end of istar */
 
 /* start of padding custom styles */
+
 .pl-5 {
 	padding-left: 5px !important;
 }
@@ -2094,7 +2095,7 @@ label.error {
 	right: 0px;
 	pointer-events: none;
 	z-index: 5;
-	top: 5px;
+	top: 7px;
 	padding-right: 5px;
 }
 /* Start of button styling css */
@@ -2554,3 +2555,7 @@ border-color: rgba(194, 225, 245, 0);
 
 /* end of calendar */
 
+.disabled{
+	opacity: 0.3;
+	pointer-events: none; 
+}

@@ -60,7 +60,7 @@
 					<div class="carousel-inner ">
 
 						<%
-							for (int i = 0; i < 3; i++) {
+							for (int i = 0; i < 4; i++) {
 									String isActive = "";
 									if (i == 0)
 										isActive = "active";
@@ -197,8 +197,7 @@
 				var pipelineShowing = 0;
 				$('.pipeline-container').hide();
 				$('.pipeline-container').eq(pipelineShowing).show();
-				console.log('pipelineCount' + pipelineCount
-						+ 'pipelineshowing ' + pipelineShowing);
+				
 				if (pipelineCount == 0) {
 					$('.pipeline-card').hide();
 				}
@@ -218,8 +217,6 @@
 									$('#pipeline-right').removeClass('active');
 								}
 
-								console.log('right click showing '
-										+ pipelineShowing);
 							})
 
 					$('#pipeline-left').click(
@@ -235,8 +232,7 @@
 									$('.pipeline-container').eq(0).show();
 									$('#pipeline-left').removeClass('active');
 								}
-								console.log('left click showing '
-										+ pipelineShowing);
+								
 							})
 				} else {
 					$('#pipeline-right').removeClass('active');

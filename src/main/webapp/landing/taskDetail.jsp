@@ -143,7 +143,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal
+										<span class="sr-only">Toggle Dropdown</span>All Deal
 										Value <img src="<%=baseURL%>assets/image/dropdown_right.svg"
 											alt="call" class=" float-right">
 									</button>
@@ -161,7 +161,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages <img
+										<span class="sr-only">Toggle Dropdown</span>All Stages <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -180,7 +180,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_activity" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by
+										<span class="sr-only">Toggle Dropdown</span>All
 										activities <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
@@ -212,7 +212,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_status" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Status <img
+										<span class="sr-only">Toggle Dropdown</span>All Status <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -233,7 +233,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_filter" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img
+										<span class="sr-only">Toggle Dropdown</span>All Agents<img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -258,7 +258,7 @@
 												id="individual" role="tabpanel"
 												aria-labelledby="individual-tab">
 												<div
-													class="input-group position-relative pl-2 pr-2 search_width">
+													class="input-group position-relative search_width">
 													<img src="<%=baseURL%>assets/image/search.svg" alt="edit"
 														class=" searchBox"> <input id=""
 														class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
@@ -430,7 +430,7 @@
 														<div class="col-md-6 p-0 text-right"
 															onclick="window.location.href = 'task_lead_detail.jsp'">
 															<div
-																class="f-14 font-weight-bold  theme_color cursor-pointer">
+																class="f-14 font-weight-bold   dark_theme_color cursor-pointer">
 																View More <i class="fas fa-chevron-circle-right"></i>
 															</div>
 
@@ -509,7 +509,7 @@
 													</div>
 												</div>
 												<ul
-													class="list-group shadow d-flex flex-column h-100  taskpopup">
+													class="list-group shadow d-flex flex-column h-100  taskpopup  disabled	">
 
 
 													<li class="notesdropdown list-group-item p-0 py-3">
@@ -600,7 +600,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="upcoming_stage" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages <img
+										<span class="sr-only">Toggle Dropdown</span>All Stages <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -617,7 +617,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="upcoming_activity" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by
+										<span class="sr-only">Toggle Dropdown</span>All
 										Activities <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
@@ -649,7 +649,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="upcoming_status" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal
+										<span class="sr-only">Toggle Dropdown</span>All Deal
 										Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
 											alt="call" class=" float-right">
 									</button>
@@ -670,7 +670,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="upcoming_filter" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img
+										<span class="sr-only">Toggle Dropdown</span>All Agents<img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -866,7 +866,7 @@
 														</div>
 														<div class="col-md-6 p-0">
 															<div
-																class=" f-14 font-weight-bold d-flex justify-content-end align-items-center theme_color cursor-pointer"
+																class=" f-14 font-weight-bold d-flex justify-content-end align-items-center dark_theme_color cursor-pointer"
 																onclick="window.location.href = 'task_lead_detail.jsp'">
 																View More <i class="fas fa-chevron-circle-right ml-1 "></i>
 															</div>
@@ -948,7 +948,7 @@
 													</div>
 												</div>
 												<ul
-													class="list-group shadow d-flex flex-column h-100  taskpopup">
+													class="list-group shadow d-flex flex-column h-100  taskpopup disabled	">
 
 
 													<li class="notesdropdown list-group-item p-0 py-3">
@@ -1322,7 +1322,7 @@
 				role="document">
 				<div class="modal-content rounded-0">
 					<div
-						class="modal-header shadow-bottom pt-20 pb-20  ml-30 mr-30 p-0">
+						class="modal-header shadow-bottom pt-20 pb-20  pl-30 pr-30 p-0">
 						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Reschedule
 							Task</h5>
 						<button type="button" class="close" data-dismiss="modal"
@@ -1334,12 +1334,12 @@
 					<div class="modal-body p-0"></div>
 
 					<div
-						class="modal-footer p-0 pt-30 pb-30 ml-30	mr-30 border-top-task_list ">
+						class="modal-footer p-0 pt-30 pb-30 border-top-task_list ">
 						<button type="submit"
-							class="btn theme_color f-14 font-weight-bold "
+							class="btn theme_color f-14 font-weight-bold m-0 pr-20"
 							id="reset_schedule_task">Reset</button>
 						<button type="button"
-							class="btn big_button rounded-0 f-14 font-weight-bold"
+							class="btn big_button rounded-0 f-14 font-weight-bold m-0 mr-30" style="width:140px;"
 							id="create_schedule_task">SUBMIT</button>
 					</div>
 				</div>

@@ -50,22 +50,24 @@
 				</div></li>
 			<li class="nav-item dropdown mr-4">
 
-				<div class="d-flex flex-row align-items-center nav-link p-0"
+				<div class="d-flex flex-row align-items-center nav-link p-0 dropdown-toggle"
 					id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">
 					<img
 						src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg" title="Wade walker" alt="User name"
 						class="rounded-circle align-self-center mr-2"
 						style="height: 45px; width: 45px;" />
-					<div class="d-flex flex-column  ">
+					<div class="d-flex flex-column ">
 						<div
 							class="f-14 font-weight-bold d-flex flex-row align-items-center">
-							<div class="mr-3 text-truncate-1">Wade walker</div>
-							<div class="dropdown-toggle"></div>
+							<div class="mr-3 text-truncate-1 black">Wade walker</div>
+							<img src="<%=baseURL%>assets/image/dropdown-right-black.svg"
+							alt="call" class=" float-right">
 
 						</div>
 						<div class="f-12 text-truncate-1">Manager</div>
 					</div>
+					
 				</div>
 				<div
 					class="dropdown-menu dropdown-menu-lg-right position-absolute border-0 p-0"

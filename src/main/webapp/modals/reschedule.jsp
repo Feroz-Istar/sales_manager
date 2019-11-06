@@ -2,7 +2,7 @@
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
-%><div class="f-18 font-weight-bold  pl-30 pr-30 pt-20  greyish-brown pb-10">Opentech Pvt. Ltd.</div>
+%><div class="f-18 font-weight-bold  pl-30 pr-30 pt-30  greyish-brown pb-10">Opentech Pvt. Ltd.</div>
 						<div class="row   theme_dashed_border_bottom ml-30 mr-30 m-0 pb-20">
 							<div class="col-md-4 border-right-separation p-0">
 								<div class="f-14 brownish-grey">Contact Person</div>
@@ -26,14 +26,14 @@
 										<div class="f-14 fw-500 pb-10 black">Date</div>
 										
 										<div class="input-group position-relative  ">
-											<img src="<%=baseURL%>assets/image/calendar.svg" alt="" class=" event_date"> <input id="reschedule_date" name="event_date" value="10/30/2019" class="brown-grey pl-2 f-14 removefocus w-100 istar-form-control h-35 is-valid" placeholder="Select here" aria-invalid="false">
+											<img src="<%=baseURL%>assets/image/calendar.svg" alt="" class="h-20 event_date"> <input id="reschedule_date" name="event_date" value="10/30/2019" class="brown-grey pl-2 f-14 removefocus w-100 istar-form-control h-35 is-valid" placeholder="Select here" aria-invalid="false">
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
 										<div class="f-14 fw-500 pb-10 black">Time</div>
 										
 										<div class="input-group position-relative  ">
-											<img src="<%=baseURL%>assets/image/alarm.svg" alt="" class="event_date"> <input id="reschedule_time" name="event_date" class=" brown-grey pl-2 f-14 removefocus timepicker w-100 istar-form-control h-35 hasWickedpicker" type="text" placeholder="Select here" onkeypress="return false;" aria-showingpicker="false" tabindex="0">
+											<img src="<%=baseURL%>assets/image/alarm.svg" alt="" class="h-20 event_date"> <input id="reschedule_time" name="event_date" class=" brown-grey pl-2 f-14 removefocus timepicker w-100 istar-form-control h-35 hasWickedpicker" type="text" placeholder="Select here" onkeypress="return false;" aria-showingpicker="false" tabindex="0">
 										</div>
 									</div>
 								</div>

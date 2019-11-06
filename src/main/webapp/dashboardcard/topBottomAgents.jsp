@@ -27,15 +27,18 @@
 		<div class="row m-0 theme_dashed_border_bottom  <%=heading.replaceAll(" ","_")%> headingrow ">
 			<%
 				for (int i = 0; i < 5; i++) {
-					String ispadding="";
+					String ispadding="pl-20 pr-20";
 					
-					if(i!=0){
-					ispadding="pl-20";	
+					if(i==0){
+					ispadding="pr-20";	
+					}
+					if(i==4){
+						ispadding="pl-20";
 					}
 			%>
 			<div
 				class="col p-0 pb-20 ">
-						<div class="d-flex flex-column border-right-dashed-separation mb-10 <%=ispadding %> pr-20 ">
+						<div class="d-flex flex-column border-right-dashed-separation mb-10 <%=ispadding %>">
 						<img alt="" src="<%=baseURL%>assets/image/layer.png"
 							class="hw-60  rounded-circle align-self-center"
 							style="position: relative; top: 5px; z-index: 2; left: 0px;">

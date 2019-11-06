@@ -2,5 +2,6 @@
 		<h4 class="greyish-brown f-18 mb-0 font-weight-bold">Martin Franklin</h4>
 		<p class="brownish-grey f-16 mb-0 pb-10">Infogen Consulting Pvt. Ltd</p> 
 		<div class="form-group m-0">
-    <textarea class="form-control rounded-0 brown-grey f-14" id="exampleFormControlTextarea1" rows="5" placeholder="Type here"></textarea>
+   		<textarea class="custom-modal-textarea w-100 istar-form-control form-control" placeholder="Type here"
+											id="resolvedescription " name="eventdescription" rows="6"></textarea>
   </div>
