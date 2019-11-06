@@ -142,6 +142,119 @@
 </div>
 
 
+<div class="row m-0 pt-25 pl-45 pr-45 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
+
+	<div class="col-md-6 p-0 pr-25" style="">
+		<div class="fw-500 f-16 greyish-brown pb-10">What's Wrong?</div>
+		<div id="email_whats_wrong" class="carousel slide shadow "
+			data-ride="carousel">
+			<ol class="carousel-indicators m-0 pb-20 pt-10">
+				<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<li data-target="#email_whats_wrong" data-slide-to="<%=h %>"
+					class="<%=isActive%>"></li>
+				
+				<%} %>
+			</ol>
+			<div class="carousel-inner ">
+
+				<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<div class="carousel-item  <%=isActive%>">
+					<div class="row align-items-center m-0 bg-white"
+						style="height: 170px;">
+						<div class="col p-0">
+							<div class="d-flex flex-row pr-30 pt-10 pb-30 pl-30 align-items-center">
+								<div class="col-md-9 pr-50">
+									<div class="f-16 fw-500 greyish-brown">Angry Customers</div>
+									<div class="f-12 brownish-grey">Customers who were angry at  the end of the call</div>
+								</div>
+								<img class="minh-100 "
+									src="<%=baseURL%>assets/image/angry_customer.svg"
+									alt="carousal-img">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<%}%>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	<div class="col-md-6 p-0">
+	<div class="fw-500 f-16 greyish-brown pb-10">What's Right?</div>
+		<div id="email_whats_right" class="carousel slide shadow"
+			data-ride="carousel">
+			<ol class="carousel-indicators m-0 pb-20 pt-10">
+			<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<li data-target="#email_whats_right" data-slide-to="<%=h %>"
+					class="<%=isActive%>"></li>
+				
+				<%} %>
+			</ol>
+			<div class="carousel-inner ">
+
+				<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<div class="carousel-item  <%=isActive%>">
+					<div class="row align-items-center m-0 bg-white"
+						style="height: 170px;">
+						<div class="col p-0">
+							<div class="d-flex flex-row pr-30 pt-10 pb-30 pl-30 align-items-center">
+								<div class="col-md-9 pr-50">
+									<div class="f-16 fw-500 greyish-brown">Unsatisfactory Resolution </div>
+									<div class="f-12 brownish-grey">Customer sounded tentative after an objection was handled</div>
+								</div>
+								<img class="minh-100 "
+									src="<%=baseURL%>assets/image/unsatisfactory_resolution.svg"
+									alt="carousal-img">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<%
+					}
+				%>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+</div>
+
+
+
 
 <div class="accordion" id="accordionExample"
 	style="height: 400px; overflow-x: hidden; overflow-y: auto">
@@ -224,115 +337,7 @@
 	%>
 </div>
 
-<div class="row m-0 pt-15 pl-45 pr-45 pb-15">
 
-	<div class="col-md-6 p-0 pr-10" style="">
-		<div id="email_whats_wrong" class="carousel slide "
-			data-ride="carousel">
-			<ol class="carousel-indicators m-0 pb-20 pt-10">
-				<%
-					for (int h = 0; h < 4; h++) {
-						String isActive = "";
-						if (h == 0) {
-							isActive = "active";
-						}
-				%>
-				<li data-target="#email_whats_wrong" data-slide-to="<%=h %>"
-					class="<%=isActive%>"></li>
-				
-				<%} %>
-			</ol>
-			<div class="carousel-inner ">
-
-				<%
-					for (int h = 0; h < 4; h++) {
-						String isActive = "";
-						if (h == 0) {
-							isActive = "active";
-						}
-				%>
-				<div class="carousel-item  <%=isActive%>">
-					<div class="row  m-0  pb-30" style="border: 1px solid #eeeeee">
-						<div class="col-md-12 p-0">
-							<div class="f-16 greyish-brown fw-500 pb-10 pt-10 pl-30">What's
-								Wrong</div>
-
-							<div class="d-flex flex-row pl-30 pb-20">
-								<img class="hw-94 pr-40"
-									src="<%=baseURL%>assets/image/Group 3614.svg"
-									alt="carousal-img">
-								<div class="border-right-blue  mr-15 "></div>
-								<p
-									class=" mb-0 greyish-brown f-16 fw-500  align-self-center pr-20">Customers
-									who responded positively in the end of a call</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<%}%>
-
-			</div>
-
-
-		</div>
-
-	</div>
-
-
-	<div class="col-md-6 p-0 pl-10">
-		<div id="email_whats_right" class="carousel slide "
-			data-ride="carousel">
-			<ol class="carousel-indicators m-0 pb-20 pt-10">
-			<%
-					for (int h = 0; h < 4; h++) {
-						String isActive = "";
-						if (h == 0) {
-							isActive = "active";
-						}
-				%>
-				<li data-target="#email_whats_right" data-slide-to="<%=h %>"
-					class="<%=isActive%>"></li>
-				
-				<%} %>
-			</ol>
-			<div class="carousel-inner ">
-
-				<%
-					for (int h = 0; h < 4; h++) {
-						String isActive = "";
-						if (h == 0) {
-							isActive = "active";
-						}
-				%>
-				<div class="carousel-item  <%=isActive%>">
-					<div class="row  m-0 pb-30" style="border: 1px solid #eeeeee;">
-						<div class="col-md-12 p-0">
-							<div class="f-16 greyish-brown fw-500 pb-10 pt-10 pl-30">What's
-								Right</div>
-
-							<div class="d-flex flex-row pl-30 pb-20">
-								<img class="hw-94 pr-40"
-									src="<%=baseURL%>assets/image/Group 3614.svg"
-									alt="carousal-img">
-								<div class="border-right-blue mr-15 "></div>
-								<p class="greyish-brown f-16 fw-500  align-self-center">Responded
-									positively in the end of a call</p>
-							</div>
-						</div>
-					</div>
-				</div>
-				<%
-					}
-				%>
-
-			</div>
-
-		</div>
-
-	</div>
-
-
-</div>
 
 
 

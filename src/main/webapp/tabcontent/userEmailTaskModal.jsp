@@ -15,7 +15,8 @@
 					</div>
 				</div>
 				</div>
-			<div class="row p-3 border-bottom-separation shadow-sm">
+			<div
+	class="row m-0 theme_dotted_border_bottom shadow-bottom   pt-15 ml-45 mr-45 pb-20">
 				<div class="col-md-3 border-right-dashed-separation">
 					<p class="brownish-grey f-14 mb-0">Initiated At</p>
 					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
@@ -31,6 +32,118 @@
 				
 
 			</div>
+			
+			
+			<div class="row m-0 pt-25 pl-45 pr-45 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
+
+	<div class="col-md-6 p-0 pr-25" style="">
+		<div class="fw-500 f-16 greyish-brown pb-10">What's Wrong?</div>
+		<div id="email_whats_wrong" class="carousel slide shadow "
+			data-ride="carousel">
+			<ol class="carousel-indicators m-0 pb-20 pt-10">
+				<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<li data-target="#email_whats_wrong" data-slide-to="<%=h %>"
+					class="<%=isActive%>"></li>
+				
+				<%} %>
+			</ol>
+			<div class="carousel-inner ">
+
+				<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<div class="carousel-item  <%=isActive%>">
+					<div class="row align-items-center m-0 bg-white"
+						style="height: 170px;">
+						<div class="col p-0">
+							<div class="d-flex flex-row pr-30 pt-10 pb-30 pl-30 align-items-center">
+								<div class="col-md-9 pr-50">
+									<div class="f-16 fw-500 greyish-brown">Angry Customers</div>
+									<div class="f-12 brownish-grey">Customers who were angry at  the end of the call</div>
+								</div>
+								<img class="minh-100 "
+									src="<%=baseURL%>assets/image/angry_customer.svg"
+									alt="carousal-img">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<%}%>
+
+			</div>
+
+
+		</div>
+
+	</div>
+
+
+	<div class="col-md-6 p-0">
+	<div class="fw-500 f-16 greyish-brown pb-10">What's Right?</div>
+		<div id="email_whats_right" class="carousel slide shadow"
+			data-ride="carousel">
+			<ol class="carousel-indicators m-0 pb-20 pt-10">
+			<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<li data-target="#email_whats_right" data-slide-to="<%=h %>"
+					class="<%=isActive%>"></li>
+				
+				<%} %>
+			</ol>
+			<div class="carousel-inner ">
+
+				<%
+					for (int h = 0; h < 3; h++) {
+						String isActive = "";
+						if (h == 0) {
+							isActive = "active";
+						}
+				%>
+				<div class="carousel-item  <%=isActive%>">
+					<div class="row align-items-center m-0 bg-white"
+						style="height: 170px;">
+						<div class="col p-0">
+							<div class="d-flex flex-row pr-30 pt-10 pb-30 pl-30 align-items-center">
+								<div class="col-md-9 pr-50">
+									<div class="f-16 fw-500 greyish-brown">Unsatisfactory Resolution </div>
+									<div class="f-12 brownish-grey">Customer sounded tentative after an objection was handled</div>
+								</div>
+								<img class="minh-100 "
+									src="<%=baseURL%>assets/image/unsatisfactory_resolution.svg"
+									alt="carousal-img">
+								
+							</div>
+						</div>
+					</div>
+				</div>
+				<%
+					}
+				%>
+
+			</div>
+
+		</div>
+
+	</div>
+
+
+</div>
 			
 			
 			
@@ -76,119 +189,7 @@
 			    <%} %>
 			  </div>
 			  
-			  <div class="row mx-4">
-			  
-			  <div class="col-md-6 p-0">
-					<div id="carouselExampleIndicators"
-						class="carousel slide mb-2" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="0" class="active"></li>
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="1"></li>
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner ">
-
-							<%
-								for (int h = 0; h < 4; h++) {
-										String isActive = "";
-										if (h == 0) {
-											isActive = "active";
-										}
-							%>
-							<div class="carousel-item  <%=isActive%>">
-								<div class="row align-items-center mx-3	px-3"
-									style="min-height: 170px; border:1px solid #eeeeee">
-										<div class="col-md-12">
-											<div class="f-16 greyish-brown fw-500">What's Wrong</div>
-																	
-											<div class="d-flex flex-row">
-												<img class="hw-94 mr-5" alt="carousal-img" src="<%=baseURL%>assets/image/Group 3614.svg">
-												<div class="border-right-blue mr-3"></div>
-												<p class="greyish-brown f-16 fw-500  align-self-center">Customers who responded positively in the end of a call</p>
-											</div>
-										</div>
-								</div>
-							</div>
-							<%
-								}
-							%>
-
-						</div>
-						<a class="carousel-control-prev"
-							href="#carouselExampleIndicators" role="button"
-							data-slide="prev"> <span
-							class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a> <a class="carousel-control-next"
-							href="#carouselExampleIndicators" role="button"
-							data-slide="next"> <span
-							class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
-
-				</div>
-			  
-			  
-			  <div class="col-md-6 p-0">
-					<div id="carouselExampleIndicators"
-						class="carousel slide mb-2" data-ride="carousel">
-						<ol class="carousel-indicators">
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="0" class="active"></li>
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="1"></li>
-							<li data-target="#carouselExampleIndicators"
-								data-slide-to="2"></li>
-						</ol>
-						<div class="carousel-inner ">
-
-							<%
-								for (int h = 0; h < 4; h++) {
-										String isActive = "";
-										if (h == 0) {
-											isActive = "active";
-										}
-							%>
-							<div class="carousel-item  <%=isActive%>">
-								<div class="row align-items-center mx-3	px-3"
-									style="min-height: 170px; border:1px solid #eeeeee">
-										<div class="col-md-12">
-											<div class="f-16 greyish-brown fw-500">What's Right</div>
-																	
-											<div class="d-flex flex-row">
-												<img class="hw-94 mr-5" alt="carousal-img" src="<%=baseURL%>assets/image/Group 3614.svg">
-												<div class="border-right-blue mr-3"></div>
-												<p class="greyish-brown f-16 fw-500  align-self-center">Responded positively in the end of a call</p>
-											</div>
-										</div>
-								</div>
-							</div>
-							<%
-								}
-							%>
-
-						</div>
-						<a class="carousel-control-prev"
-							href="#carouselExampleIndicators" role="button"
-							data-slide="prev"> <span
-							class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="sr-only">Previous</span>
-						</a> <a class="carousel-control-next"
-							href="#carouselExampleIndicators" role="button"
-							data-slide="next"> <span
-							class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="sr-only">Next</span>
-						</a>
-					</div>
-
-				</div>
-			  
-			  
-			</div>  
+			 
 			  
 			  
 			  

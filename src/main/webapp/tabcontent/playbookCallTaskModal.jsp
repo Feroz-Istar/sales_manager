@@ -246,7 +246,7 @@
 					</div>
 					<div class="col-md-8 p-0">
 
-						<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg">
+						<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"
 									class="carousel slide theme_solid_border_bottom "
@@ -295,7 +295,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="row m-0">
+						<div class="row m-0   theme_solid_border_top_2px mr-40">
 							<div class="col p-0 pt-25  ">
 								<h3 class="black fw-500 f-16 mb-0 pl-40 pb-25">Transcript</h3>
 								<div class="transcript_container  "
@@ -303,7 +303,7 @@
 									<%
 										for (int j = 0; j < 20; j++) {
 									%>
-									<div class="d-flex flex-column pl-40 pr-45 pb-25">
+									<div class="d-flex flex-column pl-40 pb-25">
 										<p class="f-14 bblack pb-10 m-0">
 											<small class="f-12 brown-grey pr-20 ">00:20.</small> Jamie
 											Vargas
@@ -319,7 +319,7 @@
 									</div>
 
 
-									<div class="d-flex flex-column pl-40 pr-45 pb-25">
+									<div class="d-flex flex-column pl-40 pb-25">
 										<p class="f-14 bblack align-self-end pb-10 mb-0">
 											<small class="f-12 brown-grey  pr-20  ">00:20.</small> Jamie
 											Vargas
