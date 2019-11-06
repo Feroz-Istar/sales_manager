@@ -31,37 +31,36 @@
 				</div>
 
 			</div>
-			<div class="row pt-2 pl-3">
-				<div class="col">
-					<nav>
-						<div class="nav nav-tabs nav-mytabs pt-2" id="nav-tabs"
-							role="tablist">
-							<a class="nav-item nav-link show active minw-150"
-								id="whatswrong-tab" data-toggle="tab"
-								href="#whatswrong" role="tab"
-								aria-controls="whatswrong" aria-selected="true">Whats
-								Wrong?</a> <a class="nav-item nav-link minw-150 "
-								id="whatsright-tab" data-toggle="tab"
-								href="#whatsright" role="tab"
-								aria-controls="whatsright" aria-selected="false">Whats
-								Right?</a> <a class="nav-item nav-link minw-150"
-								id="all-tab" data-toggle="tab" href="#all" role="tab"
-								aria-controls="all" aria-selected="false">All</a>
-						</div>
-					</nav>
-					<div class="tab-content mytab-content"
-						id="nav-tasktabsContent">
-						<div class="tab-pane fade show active" id="whatswrong"
-							role="tabpanel" aria-labelledby="whatswrong-tab"></div>
-						<div class="tab-pane fade show " id="whatsright"
-							role="tabpanel" aria-labelledby="whatsright-tab"></div>
-						<div class="tab-pane fade show " id="all" role="tabpanel"
-							aria-labelledby="all-tab"></div>
-					</div>
+			<div class="row m-0 pl-45 pr-45 pt-20 ">
+			<div class="col p-0">
+				<ul
+					class="nav nav-tabs nav-mytabs p-0  pt-20 d-flex align-items-end"
+					id="agent-details" role="tablist">
+					<li class="nav-item"><a class="nav-item nav-link active"
+						id="whatsright-tab" data-toggle="tab" href="#whatsright"
+						role="tab" aria-controls="whatsright" aria-selected="true">Whats
+							Right?</a></li>
+					<li class="nav-item"><a class="nav-item nav-link"
+						id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
+						role="tab" aria-controls="whatswrong" aria-selected="false">Whats
+							Wrong?</a></li>
+					<li class="nav-item"><a class="nav-item nav-link" id="all-tab"
+						data-toggle="tab" href="#all" role="tab" aria-controls="all"
+						aria-selected="false">All</a></li>
+				</ul>
+				<div class="tab-content mytab-content pt-40"
+					id="nav-tasktabsContent">
+					<div class="tab-pane fade show active" id="whatswrong"
+						role="tabpanel" aria-labelledby="whatswrong-tab"></div>
+					<div class="tab-pane fade show " id="whatsright" role="tabpanel"
+						aria-labelledby="whatsright-tab"></div>
+					<div class="tab-pane fade show " id="all" role="tabpanel"
+						aria-labelledby="all-tab"></div>
 				</div>
-
-
 			</div>
+
+
+		</div>
 
 			<div class="row m-0 pb-30 pl-45">
 			<div class="col p-0 d-flex flex-row ">
@@ -238,68 +237,64 @@
 		</div>
 
 
-	</div>
-
-
-
-	<div class="col-md-1 p-0">
-		<div class=" dropleft">
-			<button type="button" class="btn btn-secondary dropdown-toggle"
-				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-				style="display: none" id="completed_webinar_task_content">Dropleft</button>
-			<div class="dropdown-menu completed_webinar_task_content m-0"
-				aria-labelledby="completed_webinar_task_content">
-				<!-- Dropdown menu links -->
-			</div>
 		</div>
-		<ul class="list-group shadow d-flex flex-column h-100  taskpopup">
 
 
-			<li class="notesdropdown list-group-item p-0 py-3">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50 "
-					data-dropdown_id="completed_webinar_task_content">
-					<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
-					<div class="f-12 pt-1 greyish-brown">Notes</div>
 
-				</div>
-			</li>
-			<li class=" cuesdropdown list-group-item p-0 py-3">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
-					data-dropdown_id="completed_webinar_task_content">
-					<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
-					<div class="f-12 pt-1 greyish-brown">Cues</div>
+		<div class="col-md-2 pr-0">
+												<ul
+													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
+													<li class="  dropleft  list-group-item p-0 py-3">
+														<div
+															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/notes.svg"  alt="notes"/>
+															<div class="f-12 pt-1 greyish-brown">Notes</div>
+															<div class="dropdown-menu notespopupdropdown pt-0"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
+													</li>
+													<li class=" dropleft list-group-item p-0 py-3">
+														<div
+															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
+															<div class="f-12 pt-1 greyish-brown">Cues</div>
+															<div class="dropdown-menu cuespopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
+													</li>
+													<li class="dropleft list-group-item p-0 py-3">
+														<div
+															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/crm.svg"  alt="crm"/>
+															<div class="f-12 pt-1 greyish-brown">CRM</div>
+															<div class="dropdown-menu crmpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
+													</li>
+													<li class="dropleft list-group-item  p-0 py-3 ">
+														<div
+															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
+															data-toggle="dropdown" aria-haspopup="true"
+															aria-expanded="false">
+															<img src="<%=baseURL%>assets/image/presentation.svg"  alt="chat"/>
+															<div class="f-12 pt-1 greyish-brown">Chat</div>
+															<div class="dropdown-menu chatpopoverdropdown"
+																aria-labelledby="dropdownMenuButton"></div>
+														</div>
+													</li>
 
-				</div>
-			</li>
-			<li class="crmdropdown list-group-item p-0 py-3">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
-					data-dropdown_id="completed_webinar_task_content">
-					<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
-					<div class="f-12 pt-1 greyish-brown">CRM</div>
 
-				</div>
-			</li>
-			<li class="chatdropdown list-group-item  p-0 py-3 ">
-				<div
-					class="  d-flex flex-column justify-content-center align-items-center minh-50"
-					data-dropdown_id="completed_webinar_task_content">
-					<img src="<%=baseURL%>assets/image/presentation.svg"
-						alt="presentation" />
-					<div class="f-12 pt-1 greyish-brown">Chat</div>
-
-				</div>
-			</li>
+													<li
+														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
+														style="height: calc(100% - 80px);"></li>
 
 
-			<li
-				class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
-				style="height: calc(100% - 80px);"></li>
-
-
-		</ul>
-	</div>
-</div>
+												</ul>
+											</div>
 </div>	<script src="<%=baseURL%>assets/js/salesken.js"></script>
