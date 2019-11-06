@@ -554,7 +554,7 @@
 
 								<div class=" pr-10">
 									<button type="button"
-										class="btn small_button rounded-0 f-12 font-weight-bold">JOIN</button>
+										class="btn small_button rounded-0 f-12 font-weight-bold" style="min-width: 100px;">JOIN</button>
 								</div>
 								<button type="button"
 									class="btn small_outline_button rounded-0 f-12 font-weight-bold greyish-brown">LISTEN</button>
@@ -689,7 +689,7 @@
 			<div class="modal-dialog modal-lg modal-dialog-centered"
 				role="document">
 				<div class="modal-content rounded-0 ">
-					<div class="modal-header shadow-bottom pt-20 pb-20  pl-30 pr-30 ">
+					<div class="modal-header shadow-bottom pt-25 pb-25  pl-30 pr-30 ">
 						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Create
 							an Event</h5>
 						<button type="button" class="close" data-dismiss="modal"

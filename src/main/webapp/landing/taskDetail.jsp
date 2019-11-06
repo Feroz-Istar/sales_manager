@@ -1471,7 +1471,7 @@
 				$('#completed_datepicker').datepicker('show')
 			}
 
-			$('.dropdown-menu').click(function(e) {
+			$('.filter-menu.dropdown-menu').click(function(e) {
 				e.stopPropagation();
 			});
 
