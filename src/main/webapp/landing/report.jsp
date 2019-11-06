@@ -337,30 +337,30 @@
 											
 											<div class="row m-0 justify-content-between">
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">$ <span class="pastel-red">50K</span> </div>
-													<div class="f-12 brown-grey">Acheived Value </div>
+													<div class="f-30 black font-weight-bold">$ <span class="pastel-red">10K</span> </div>
+													<div class="f-12 brownish-grey">Acheived Value </div>
+												</div>
+												<div class="col-md-3 p-0">
+													<div class="f-30 black font-weight-bold">$ <span class="greyish-brown">50K</span> </div>
+													<div class="f-12 brownish-grey">Estimated Value </div>
 												</div>
 												<div class="col-md-2 p-0">
-													<div class="f-30 blue-black font-weight-bold">25%</div>
-													<div class="f-12 brown-grey">Win Rate</div>
-												</div>
-												<div class="col-md-2 p-0">
-													<div class="f-30 blue-black font-weight-bold">52% </div>
-													<div class="f-12 brown-grey">Tentative </div>
+													<div class="f-30 black font-weight-bold">52% </div>
+													<div class="f-12 brownish-grey">Tentative </div>
 												</div>
 											</div>
 											
 										</div>
 										<div class="col-md-3 border-right-dashed-separation p-0 pl-30 pr-30	">
-											<div class="font-weight-bold f-18 black mb-10">Activity Stats</div>
+											<div class="fw-500 f-18 black mb-10">Activity Stats</div>
 											<div class="row m-0">
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">25%</div>
-													<div class="f-12 brown-grey">Utilisation</div>
+													<div class="f-30 black font-weight-bold">25%</div>
+													<div class="f-12 brownish-grey">Utilisation</div>
 												</div>
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">52% </div>
-													<div class="f-12 brown-grey">Talk Ratio </div>
+													<div class="f-30 black font-weight-bold">52% </div>
+													<div class="f-12 brownish-grey">Talk Ratio </div>
 												</div>
 											</div>
 											<!-- <div class="progress pipeline_progress report_pipeline mt-15">
@@ -382,7 +382,7 @@
 											
 										</div>
 										<div class="col-md-6 p-0 pl-30 pr-30">
-											<div class="font-weight-bold f-18 black mb-15">Playbook Stats</div>
+											<div class="fw-500 f-18 black mb-15">Playbook Stats</div>
 											<div class="row m-0">
 												<div class="col-md-6 p-0">
 													<div class="font-weight-bold f-12 brownish-grey d-flex mb-10">Strong <i class="fal fa-info-circle f-16 soft-blue align-self-center ml-1"></i></div>
