@@ -126,6 +126,18 @@
 							</div>
 						</div>
 						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="agent_filters">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="agent_reset">Reset</button>
+							</div>
+						</div>
+						
 						<div class="row very-light-pink-grey-bg">
 							<div class="col-md-3 pr-0">
 								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
@@ -489,6 +501,10 @@
 	    $('.nav-tabs>.nav-item').on('show.bs.tab', function (e) {
 	    	  $('.popover').popover('hide');
   		});
+	    $('#agent_reset').click(function(){
+			 $('#agent_filters').hide();
+		 });
+	    
 	});
 	function showCalendar(){
 		$('#task_datepicker').datepicker('show')

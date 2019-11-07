@@ -2559,3 +2559,12 @@ border-color: rgba(194, 225, 245, 0);
 	opacity: 0.3;
 	pointer-events: none; 
 }
+.search-filter{
+	min-width: 90px; 
+	height: 25px;
+}
+.cross-btn{
+	position: absolute; 
+	right: -7px; 
+	top: 5px;
+}

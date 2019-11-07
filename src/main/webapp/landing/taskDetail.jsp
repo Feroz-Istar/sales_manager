@@ -347,6 +347,18 @@
 							</div>
 						</div>
 
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="ongoing_filter_selections">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="ongoing_reset">Reset</button>
+							</div>
+						</div>
+
 						<div class="row very-light-pink-grey-bg m-0 ">
 							<div class="col-md-3 p-0 border-right pl-20">
 								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
@@ -791,6 +803,19 @@
 
 							</div>
 						</div>
+						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="upcoming_filter_selections">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="upcoming_reset">Reset</button>
+							</div>
+						</div>
+						
 
 						<div class="row very-light-pink-grey-bg m-0">
 							<div class="col-md-3 p-0 border-right pl-20">
@@ -1224,6 +1249,19 @@
 							</div>
 						</div>
 
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="completed_filter_selections">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="completed_reset">Reset</button>
+							</div>
+						</div>
+
+
 						<div class="row very-light-pink-grey-bg m-0">
 							<div class="col-md-3 p-0 border-right taskmodal pl-20">
 								<div class="nav flex-column nav-pills " id="taskdetail-tab-list"
@@ -1462,6 +1500,16 @@
 
 										})
 
+								$('#ongoing_reset').click(function(){
+									 $('#ongoing_filter_selections').hide();
+								 });
+								$('#upcoming_reset').click(function(){
+									 $('#upcoming_filter_selections').hide();
+								 });
+								$('#completed_reset').click(function(){
+									 $('#completed_filter_selections').hide();
+								 });
+										
 							});
 
 			function showCalendar() {

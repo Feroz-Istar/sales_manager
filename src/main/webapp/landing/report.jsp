@@ -643,6 +643,17 @@
 						</div>
 						</div>
 						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="overall_analysis_selections">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="overall_analysis_reset">Reset</button>
+							</div>
+						</div>
 					
 						<div class="row pt-4 m-0 pt-25 pb-25 pl-60 pr-60  position-relative" >
 						
@@ -856,6 +867,18 @@
 										
 									</div> 
 						</div>
+						</div>
+						
+						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="comparative_analysis_selections">
+							<div class="col-md-10 d-flex p-0">
+									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
+									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
+									</button>
+							</div>
+							
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="comparative_analysis_reset">Reset</button>
+							</div>
 						</div>
 						
 						<div class="row pt-4 m-0 pt-25 pb-25 pl-60 pr-40 ">
@@ -1421,7 +1444,12 @@
 		 $('#user_reset').click(function(){
 			 $('#user_filter').hide();
 		 });
-		
+		 $('#overall_analysis_reset').click(function(){
+			 $('#overall_analysis_selections').hide();
+		 });
+		 $('#comparative_analysis_reset').click(function(){
+			 $('#comparative_analysis_selections').hide();
+		 });
 		 
 		
 		$('.overall_title').click(function(){
