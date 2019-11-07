@@ -465,7 +465,7 @@
 
 														<div class="col-md-6 p-0 d-flex justify-content-end">
 
-															<button type="button"
+															<button type="button"  onclick="window.location.href = 'ongoingJoined.jsp'"
 																class="btn small_button rounded-0 font-weight-bold mr-10 f-12"
 																id="outgoing_join">JOIN NOW</button>
 															<button type="button"
