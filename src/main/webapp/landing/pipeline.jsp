@@ -263,7 +263,10 @@
 					class="btn theme_color f-14 font-weight-bold p-0"
 					id='pipeline_reset'>Reset</button>
 			</div>
-			<div class="card w-100 " style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);">
+		</div>
+		
+		<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-15 pb-15">
+		<div class="card w-100 " style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);">
 				<div class="card-body  pt-30 pb-30 pl-30 pr-30" >
 					<div class="row m-0">
 					<%for(int i=0;i<3;i++){ %>
@@ -290,7 +293,6 @@
 					</div>
 				</div>
 			</div>
-
 		</div>
 
 		<div class="row very-light-pink-grey-bg m-0">
@@ -362,10 +364,8 @@
 											Strong <i class="fal fa-info-circle soft-blue f-14"></i>
 										</div>
 										<div class="d-flex">
-											<button type="button"
-												class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
-											<button type="button"
-												class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
+											<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+											<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
 										</div>
 									</div>
 									<div class="col-md-6 p-0">
@@ -373,10 +373,8 @@
 											Weak <i class="fal fa-info-circle soft-blue f-14"></i>
 										</div>
 										<div class="d-flex">
-											<button type="button"
-												class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
-											<button type="button"
-												class="btn  rounded-0 f-12 mr-2 font-weight-bold signal_background">Introduction</button>
+											<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+											<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
 										</div>
 									</div>
 								</div>
