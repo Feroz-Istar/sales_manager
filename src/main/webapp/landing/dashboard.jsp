@@ -265,7 +265,7 @@
 					<!-- End of To-do list tab content -->
 
 					<!-- Start of Notes tab content -->
-					<div class="tab-pane fade bg-white p-3" id="profile"
+					<div class="tab-pane fade bg-white" id="profile"
 						role="tabpanel" aria-labelledby="profile-tab">
 						<div id="summernote"></div>
 

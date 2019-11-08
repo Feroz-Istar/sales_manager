@@ -2599,3 +2599,6 @@ border-color: rgba(194, 225, 245, 0);
 .cues-card{
 	border-radius: 8px;
 }
+.note-editor.note-frame {
+    border: none !important;
+}
