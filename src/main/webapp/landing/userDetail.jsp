@@ -248,75 +248,66 @@
 					  			<div class="f-14 greyish-brown mr-4 text-truncate" title="stanleyhoward@gmail.com">stanleyhoward@gmail.com</div>
 					  			<img src="<%=baseURL%>assets/image/call.svg" class="mr-2" alt="phone"/>
 					  			<div class="f-14 greyish-brown mr-4">(741)-210-1851</div>
-					  			<img src="<%=baseURL%>assets/image/edit.svg"/>
+					  			<img src="<%=baseURL%>assets/image/edit_red.svg"/>
 				  			</div>
 				  		</div>		
 				  	</div>		
 				  	
-				  	<div class="row py-3 border-bottom-dashed-separation ">
-				  		<div class="col-md-2 border-right-dashed-separation">
-				  			<div class="row">
-				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/task.svg" class="hw-45" alt="task" />
+				  	<div class="row border-bottom-dashed-separation m-0 pt-25 pb-25">
+				  		<div class="col-md-6 p-0">
+				  			<div class="row m-0">
+				  				<div class="col-md-3 p-0 border-right-dashed-separation">
+				  					<div class="d-flex align-items-center">
+				  						<i class="fas fa-dollar-sign black f-30"></i>
+				  						<div class="f-30 font-weight-bold pastel-red"> &nbsp;450 </div>
+				  					</div>
+				  					<div class="f-12 brownish-grey">Achieved Value</div>
 				  				</div>
-				  				<div class="col-md-9">
-				  					<div class="f-24 blue-black font-weight-bold">40</div>
-									<div class="f-14 brown-grey ">Total Tasks </div>
+				  				<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+				  					<div class="d-flex align-items-center">
+				  						<img src="<%=baseURL %>assets/image/people.svg" class="h-30">
+				  						<div class="f-30 font-weight-bold black"> &nbsp;24 - 40 </div>
+				  					</div>
+				  					<div class="f-12 brownish-grey">Won & Lost Leads</div>
 				  				</div>
-				  			</div>
-				  		</div>
-				  		<div class="col-md-2 border-right-dashed-separation">
-				  			<div class="row">
-				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/donecircle.svg" class="hw-45"  alt="done"/>
+				  				<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+				  					<div class="d-flex align-items-center">
+				  						<img src="<%=baseURL %>assets/image/stats.svg" class="h-30">
+				  						<div class="f-30 font-weight-bold black"> &nbsp;30</div>
+				  					</div>
+				  					<div class="f-12 brownish-grey">Activities Per Lead Won </div>
 				  				</div>
-				  				<div class="col-md-9">
-				  					<div class="f-24 blue-black font-weight-bold">24</div>
-									<div class="f-14 brown-grey ">Completed Tasks </div>
-				  				</div>
-				  			</div>
-				  		</div>
-				  		<div class="col-md-2 border-right-dashed-separation">
-				  			<div class="row">
-				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/call.svg" class="hw-45"  alt="call"/>
-				  				</div>
-				  				<div class="col-md-9">
-				  					<div class="f-24 blue-black font-weight-bold">34</div>
-									<div class="f-14 brown-grey">Call Tasks </div>
-				  				</div>
-				  			</div>
-				  		</div>
-				  		<div class="col-md-2 border-right-dashed-separation">
-				  			<div class="row">
-				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/mail.svg" class="hw-45"  alt="mail"/>
-				  				</div>
-				  				<div class="col-md-9">
-				  					<div class="f-24 blue-black font-weight-bold">12</div>
-									<div class="f-14 brown-grey">Email Tasks </div>
+				  				<div class="col-md-3 p-0 border-right-dashed-separation pl-15">
+				  					<div class="d-flex align-items-center">
+				  						<img src="<%=baseURL %>assets/image/task.svg" class="h-30">
+				  						<div class="f-30 font-weight-bold black"> &nbsp;40 </div>
+				  					</div>
+				  					<div class="f-12 brownish-grey">Pending Tasks </div>
 				  				</div>
 				  			</div>
 				  		</div>
-				  		<div class="col-md-2 border-right-dashed-separation">
+				  		<div class="col-md-6">
 				  			<div class="row">
-				  				<div class="col-md-3 align-self-center">
-				  					<img src="<%=baseURL%>assets/image/desktop.svg" class="hw-45"  alt="desktop"/>
+				  				<div class="col-md-4 p-0 pl-15">
+				  					<div class="d-flex align-items-center">
+				  						<img src="<%=baseURL %>assets/image/call_outline.svg" class="h-30">
+				  						<div class="f-30 font-weight-bold black"> &nbsp;34 </div>
+				  					</div>
+				  					<div class="f-12 brownish-grey">Completed Task </div>
+				  				</div>	
+				  				<div class="col-md-4 p-0">
+				  					<div class="d-flex align-items-center pl-15">
+				  						<img src="<%=baseURL %>assets/image/call_outline.svg" class="h-30">
+				  						<div class="f-30 font-weight-bold black"> &nbsp;12 </div>
+				  					</div>
+				  					<div class="f-12 brownish-grey"></div>
 				  				</div>
-				  				<div class="col-md-9">
-				  					<div class="f-24 blue-black font-weight-bold">12</div>
-									<div class="f-14 brown-grey ">Webinar Tasks </div>
-				  				</div>
-				  			</div>
-				  		</div>
-				  		<div class="col-md-2">
-				  			<div class="row">
-				  				<div class="col-md-3 align-self-center">
-				  					<i class="fas fa-video f-30 brown-grey"></i>
-				  				</div>
-				  				<div class="col-md-9">
-				  					<div class="f-24 blue-black font-weight-bold">03</div>
-									<div class="f-14 brown-grey">Presentation Tasks </div>
+				  				<div class="col-md-4 p-0">
+				  					<div class="d-flex align-items-center pl-15">
+				  						<img src="<%=baseURL %>assets/image/webinar_outline.svg" class="h-30">
+				  						<div class="f-30 font-weight-bold black"> &nbsp;05 </div>
+				  					</div>
+				  					<div class="f-12 brownish-grey"></div>
 				  				</div>
 				  			</div>
 				  		</div>
@@ -324,24 +315,7 @@
 				  	
 				  	<div class="row ">
 				  		<div class="col-md-9">
-				  			<div class="row py-3">
-				  				<div class="col-md-3">
-				  					<div class="f-24 blue-black font-weight-bold">$ 2345</div>
-									<div class="f-14 brown-grey">Deal Value</div>
-				  				</div>
-				  				<div class="col-md-3">
-				  					<div class="f-24 blue-black font-weight-bold">45</div>
-									<div class="f-14 brown-grey">Won Leads</div>
-				  				</div>
-				  				<div class="col-md-3">
-				  					<div class="f-24 blue-black font-weight-bold">04</div>
-									<div class="f-14 brown-grey">Lost Leads</div>
-				  				</div>
-				  				<div class="col-md-3">
-				  					<div class="f-24 blue-black font-weight-bold">30</div>
-									<div class="f-14 brown-grey">Activities Per Lead Won</div>
-				  				</div>
-				  			</div>
+				  			
 				  			<div class="row border-bottom-dashed-separation py-3">
 				  				<div class="col-md-6">
 		      						<div class="f-14 font-weight-bold black mb-1">Strong Playbook</div>
