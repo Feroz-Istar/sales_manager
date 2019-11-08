@@ -47,8 +47,8 @@
 			<div class="row bg-white m-0 ">
 			
 				<div class="col-md-11 p-0" id="crm_closed">
-						<%-- <jsp:include page="../popover/joinClosedCRM.jsp"></jsp:include> --%>
-						<jsp:include page="../popover/joinTaskCRM.jsp"></jsp:include>
+						<jsp:include page="../popover/joinClosedCRM.jsp"></jsp:include> 
+						<%-- <jsp:include page="../popover/joinTaskCRM.jsp"></jsp:include>--%>
 				</div>
 			<div class="float-right col-md-1 p-0 z-9" id="calldropleft">
 						<div class=" dropleft" >
@@ -73,7 +73,7 @@
 															
 														</div>
 													</li>
-													<li class="chatdropdown list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0 py-3 " >
 														<div
 															class="  d-flex flex-column justify-content-center align-items-center minh-50" data-dropdown_id="connected_call_task_content"
 															>
@@ -82,10 +82,8 @@
 															
 														</div>
 													</li>
-													<li class="crmdropdown list-group-item p-0 py-3">
-														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50" id="join_crm"
-															>
+													<li class="crmdropdown list-group-item p-0 py-3" id="join_crm" onclick="openCRM()" >
+														<div class=" d-flex flex-column justify-content-center align-items-center minh-50" >
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 															
@@ -133,9 +131,30 @@
 		<script src="<%=baseURL%>assets/js/salesken.js"></script>
 		<script>
 			$(document).ready(function() {
-				
-				$('.salesken.navbar-nav>li').removeClass('active');
+				$('.salesken.navbar-nav>li').removeClass('active');				
 			});
+			
+			
+			function openCRM(){
+				$('#join_crm').addClass('show');
+				var url = location.origin + '/popover/joinTaskCRM.jsp';
+				$.get(url, function(data) {
+					$('#crm_closed').html(data);
+				});
+			}
+			
+			function closeCRM(event){
+				if (event.isTrusted){
+					$('#join_crm').removeClass('show');
+					var url = location.origin + '/popover/joinClosedCRM.jsp';
+					$.get(url, function(data) {
+						$('#crm_closed').html(data);
+					});
+				}
+				
+			}
+			
+		
 			
 		</script>
 		</div>

@@ -196,9 +196,10 @@
 														</div>
 													</div>
 												</div>
-												<div class="card shadow cues-card mb-10" style="max-width:200px;">
+												<div class="card shadow cues-card mb-10" style="max-width:230px;">
 													<div class="card-body p-0 pt-15 pb-15 pl-20 pr-20">
-														<div class="f-12 brown-grey">Wait system is responding...</div>
+														
+														<div class="f-12 brown-grey"> <i class="fa fa-spinner fa-spin brown-grey mr-2 f-18"></i> Wait system is responding...</div>
 													</div>
 												</div>
 											
