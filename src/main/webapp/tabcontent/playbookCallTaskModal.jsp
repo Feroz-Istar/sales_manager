@@ -208,7 +208,7 @@
 		</div>
 		<div class="row  m-0">
 			<div class="col p-0">
-				<div class="row p-0 m-0  theme_solid_border_2px">
+				<div class="row p-0 m-0 ">
 					<div class="col-md-4 p-0  theme_solid_border_right_2px">
 						<%
 							for (int j = 0; j < 10; j++) {
