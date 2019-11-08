@@ -123,28 +123,27 @@
 									
 									<div class="istar-dropdown-task dropdown mt-10 mb-10" id="filterbutton">
 										<button class="istar-dropdown-arrow "
-										id="task_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										id="insight_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										
-										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="task_dropdown" style="width: 350px">
-												
-												<ul class="nav nav-tabs nav-mytabs pt-10 d-flex align-items-end" id="taskTab" role="tablist">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="insight_dropdown" style="width: 350px">
+													
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="insightTab" role="tablist">
 												  <li class="nav-item">
-												    <a class="nav-item nav-link active" id="task_individual-tab" data-toggle="tab" href="#task_individual" role="tab" aria-controls="task_individual" aria-selected="true">Individual</a>
+												    <a class="nav-link active" id="insight_individual-tab" data-toggle="tab" href="#insight_individual" role="tab" aria-controls="insight_individual" aria-selected="true">Individual</a>
 												  </li>
 												  <li class="nav-item">
-												    <a class="nav-item nav-link" id="task_team-tab" data-toggle="tab" href="#task_team" role="tab" aria-controls="task_team" aria-selected="false">Team</a>
+												    <a class="nav-link" id="insight_team-tab" data-toggle="tab" href="#insight_team" role="tab" aria-controls="insight_team" aria-selected="false">Team</a>
 												  </li>
 												 
 												</ul>
-												<div class="tab-content" id="taskTab-tabContent">
-												  <div class="tab-pane fade show active px-4 py-3" id="task_individual" role="tabpanel" aria-labelledby="task_individual-tab">
+												<div class="tab-content" id="insightTabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="insight_individual" role="tabpanel" aria-labelledby="insight_individual-tab">
 												  		<div class="input-group py-2">
-															<input id="task_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<input id="insight_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
 																	<i class="fa fa-search f-12 brown-grey"></i>
@@ -158,9 +157,9 @@
 					                                    <div class="d-flex align-items-center pt-3">
 					                                    
 					                                    
-									<input class="istar-checkbox taskagentcheckbox" data-id="<%=i %>" id="task_associate-checkbox<%=i %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="task_associate-checkbox<%=i %>"></label>
-											<img alt="Agent Image" title="Agent Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+									<input class="istar-checkbox insightagentcheckbox" data-id="<%=i %>" id="insight_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="insight_associate-checkbox<%=i %>"></label>
+											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
 					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
@@ -172,10 +171,10 @@
 					                                     		
 					                                 </div>
 					                                			                                 
-												  <div class="tab-pane fade px-4 py-3" id="task_team" role="tabpanel" aria-labelledby="task_team-tab">
+												  <div class="tab-pane fade px-4 py-3" id="insight_team" role="tabpanel" aria-labelledby="insight_team-tab">
 												  		
 												  		<div class="input-group py-2">
-															<input id="task_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<input id="insight_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
 																	<i class="fa fa-search f-12 brown-grey"></i>
@@ -186,8 +185,8 @@
 														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
-					                                        <input class="istar-checkbox taskteamcheckbox" data-id="<%=j %>" id="task_team-checkbox<%=j %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="task_team-checkbox<%=j%>"></label>
+					                                        <input class="istar-checkbox insightteamcheckbox" data-id="<%=j %>" id="insight_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="insight_team-checkbox<%=j%>"></label>
 					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
 					                                    </div>
 					                                    <%} %>
@@ -198,7 +197,7 @@
 												  </div>
 												</div>
 												 <div class="w-100 text-center">
-												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold mb-3 text-center px-3" style="min-width:200px;" id="task_team_submit">Submit</button>
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="insight_team_submit">Submit</button>
 												</div>
 										  </div>
 										
@@ -562,26 +561,27 @@
 								
 								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
-										id="timeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										id="overallAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4	" aria-labelledby="timeline_dropdown" style="width:350px">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="overallAnalysis_dropdown" style="width: 350px">
 													
-												<ul class="nav nav-tabs nav-mytabs pt-10 d-flex align-items-end" id="timelineTab" role="tablist">
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="overallAnalysisTab" role="tablist">
 												  <li class="nav-item">
-												    <a class="nav-link active" id="timeline_individual-tab" data-toggle="tab" href="#timeline_individual" role="tab" aria-controls="timeline_individual" aria-selected="true">Individual</a>
+												    <a class="nav-link active" id="overallAnalysis_individual-tab" data-toggle="tab" href="#overallAnalysis_individual" role="tab" aria-controls="overallAnalysis_individual" aria-selected="true">Individual</a>
 												  </li>
 												  <li class="nav-item">
-												    <a class="nav-link" id="timeline_team-tab" data-toggle="tab" href="#timeline_team" role="tab" aria-controls="timeline_team" aria-selected="false">Team</a>
+												    <a class="nav-link" id="overallAnalysis_team-tab" data-toggle="tab" href="#overallAnalysis_team" role="tab" aria-controls="overallAnalysis_team" aria-selected="false">Team</a>
 												  </li>
 												 
 												</ul>
-												<div class="tab-content" id="myTabContent">
-												  <div class="tab-pane fade show active px-4 py-3" id="timeline_individual" role="tabpanel" aria-labelledby="timeline_individual-tab">
+												<div class="tab-content" id="overallAnalysisTabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="overallAnalysis_individual" role="tabpanel" aria-labelledby="overallAnalysis_individual-tab">
 												  		<div class="input-group py-2">
-															<input id="timeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<input id="overallAnalysis_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
 																	<i class="fa fa-search f-12 brown-grey"></i>
@@ -595,8 +595,8 @@
 					                                    <div class="d-flex align-items-center pt-3">
 					                                    
 					                                    
-									<input class="istar-checkbox timelineagentcheckbox" data-id="<%=i %>" id="timeline_associate-checkbox<%=i %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="timeline_associate-checkbox<%=i %>"></label>
+									<input class="istar-checkbox overallAnalysisagentcheckbox" data-id="<%=i %>" id="overallAnalysis_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="overallAnalysis_associate-checkbox<%=i %>"></label>
 											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
@@ -609,10 +609,10 @@
 					                                     		
 					                                 </div>
 					                                			                                 
-												  <div class="tab-pane fade px-4 py-3" id="timeline_team" role="tabpanel" aria-labelledby="timeline_team-tab">
+												  <div class="tab-pane fade px-4 py-3" id="overallAnalysis_team" role="tabpanel" aria-labelledby="overallAnalysis_team-tab">
 												  		
 												  		<div class="input-group py-2">
-															<input id="timeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<input id="overallAnalysis_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
 																	<i class="fa fa-search f-12 brown-grey"></i>
@@ -623,8 +623,8 @@
 														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
-					                                        <input class="istar-checkbox timelineteamcheckbox" data-id="<%=j %>" id="timeline_team-checkbox<%=j %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="timeline_team-checkbox<%=j%>"></label>
+					                                        <input class="istar-checkbox overallAnalysisteamcheckbox" data-id="<%=j %>" id="overallAnalysis_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="overallAnalysis_team-checkbox<%=j%>"></label>
 					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
 					                                    </div>
 					                                    <%} %>
@@ -635,11 +635,11 @@
 												  </div>
 												</div>
 												 <div class="w-100 text-center">
-												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold mb-3 text-center px-3" style="min-width:200px;" id="timeline_team_submit">Submit</button>
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="overallAnalysis_team_submit">Submit</button>
 												</div>
 										  </div>
 										
-									</div> 
+									</div>  
 						</div>
 						</div>
 						
@@ -788,26 +788,27 @@
 								
 								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow "
-										id="timeline_comparative_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										id="comparativeAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4" aria-labelledby="timeline_comparative_dropdown" style="width:350px">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="comparativeAnalysis_dropdown" style="width: 350px">
 													
-												<ul class="nav nav-tabs nav-mytabs pt-10 d-flex align-items-end" id="timeline_comparativeTab" role="tablist">
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="comparativeAnalysisTab" role="tablist">
 												  <li class="nav-item">
-												    <a class="nav-link active" id="timeline_comparative_individual-tab" data-toggle="tab" href="#timeline_comparative_individual" role="tab" aria-controls="timeline_comparative_individual" aria-selected="true">Individual</a>
+												    <a class="nav-link active" id="comparativeAnalysis_individual-tab" data-toggle="tab" href="#comparativeAnalysis_individual" role="tab" aria-controls="comparativeAnalysis_individual" aria-selected="true">Individual</a>
 												  </li>
 												  <li class="nav-item">
-												    <a class="nav-link" id="timeline_comparative_team-tab" data-toggle="tab" href="#timeline_comparative_team" role="tab" aria-controls="timeline_comparative_team" aria-selected="false">Team</a>
+												    <a class="nav-link" id="comparativeAnalysis_team-tab" data-toggle="tab" href="#comparativeAnalysis_team" role="tab" aria-controls="comparativeAnalysis_team" aria-selected="false">Team</a>
 												  </li>
 												 
 												</ul>
-												<div class="tab-content" id="myTabContent">
-												  <div class="tab-pane fade show active px-4 py-3" id="timeline_comparative_individual" role="tabpanel" aria-labelledby="timeline_comparative_individual-tab">
+												<div class="tab-content" id="comparativeAnalysisTabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="comparativeAnalysis_individual" role="tabpanel" aria-labelledby="comparativeAnalysis_individual-tab">
 												  		<div class="input-group py-2">
-															<input id="timeline_comparative_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<input id="comparativeAnalysis_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
 																	<i class="fa fa-search f-12 brown-grey"></i>
@@ -821,8 +822,8 @@
 					                                    <div class="d-flex align-items-center pt-3">
 					                                    
 					                                    
-									<input class="istar-checkbox timeline_comparativeagentcheckbox" data-id="<%=i %>" id="timeline_comparative_associate-checkbox<%=i %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="timeline_comparative_associate-checkbox<%=i %>"></label>
+									<input class="istar-checkbox comparativeAnalysisagentcheckbox" data-id="<%=i %>" id="comparativeAnalysis_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="comparativeAnalysis_associate-checkbox<%=i %>"></label>
 											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
 										  <div>
 					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
@@ -835,10 +836,10 @@
 					                                     		
 					                                 </div>
 					                                			                                 
-												  <div class="tab-pane fade px-4 py-3" id="timeline_comparative_team" role="tabpanel" aria-labelledby="timeline_comparative_team-tab">
+												  <div class="tab-pane fade px-4 py-3" id="comparativeAnalysis_team" role="tabpanel" aria-labelledby="comparativeAnalysis_team-tab">
 												  		
 												  		<div class="input-group py-2">
-															<input id="timeline_comparative_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<input id="comparativeAnalysis_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
 															<div class="input-group-append">
 																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
 																	<i class="fa fa-search f-12 brown-grey"></i>
@@ -849,8 +850,8 @@
 														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
-					                                        <input class="istar-checkbox timeline_comparativeteamcheckbox" data-id="<%=j %>" id="timeline_comparative_team-checkbox<%=j %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="timeline_comparative_team-checkbox<%=j%>"></label>
+					                                        <input class="istar-checkbox comparativeAnalysisteamcheckbox" data-id="<%=j %>" id="comparativeAnalysis_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="comparativeAnalysis_team-checkbox<%=j%>"></label>
 					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
 					                                    </div>
 					                                    <%} %>
@@ -861,11 +862,11 @@
 												  </div>
 												</div>
 												 <div class="w-100 text-center">
-												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold mb-3 text-center px-3" style="min-width:200px;" id="timeline_comparative_team_submit">Submit</button>
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="comparativeAnalysis_team_submit">Submit</button>
 												</div>
 										  </div>
 										
-									</div> 
+									</div>  
 						</div>
 						</div>
 						
@@ -1354,43 +1355,41 @@
 		
 		
 		
-		$('#task_team_submit').click(function(e) {
-			var agent_array=[];
-			var team_array=[];
-			
-			$('.taskagentcheckbox').each(function(){
-				if($(this).prop('checked')===true){
-					agent_array.push($(this).data('id'));
-				}
-			});
-			$('.taskteamcheckbox').each(function(){
-				if($(this).prop('checked')===true){
-					team_array.push($(this).data('id'));
-				}
-			});
-			
-			if(agent_array.length==0 && team_array.length==0){
-				alert("Please select atleast one");
-			}else{
-				$('#task_dropdown').dropdown('hide');
-			}
-			console.log(agent_array)
-			console.log(team_array)
+		  $('#insight_team_submit').click(function(e) {
+				var agent_array=[];
+				var team_array=[];
 				
-
-		});
+				$('.insightagentcheckbox').each(function(){
+					if($(this).prop('checked')===true){
+						agent_array.push($(this).data('id'));
+					}
+				});
+				$('.insightteamcheckbox').each(function(){
+					if($(this).prop('checked')===true){
+						team_array.push($(this).data('id'));
+					}
+				});
+				
+				if(agent_array.length==0 && team_array.length==0){
+					alert("Please select atleast one");
+				}else{
+					$('#insight_dropdown').dropdown('hide');
+				}
+				console.log(agent_array)
+				console.log(team_array)
+			});
 			
 		
-		 $('#timeline_team_submit').click(function(e) {
+		  $('#overallAnalysis_team_submit').click(function(e) {
 				var agent_array=[];
 				var team_array=[];
 				
-				$('.timelineagentcheckbox').each(function(){
+				$('.overallAnalysisagentcheckbox').each(function(){
 					if($(this).prop('checked')===true){
 						agent_array.push($(this).data('id'));
 					}
 				});
-				$('.timelineteamcheckbox').each(function(){
+				$('.overallAnalysisteamcheckbox').each(function(){
 					if($(this).prop('checked')===true){
 						team_array.push($(this).data('id'));
 					}
@@ -1399,24 +1398,23 @@
 				if(agent_array.length==0 && team_array.length==0){
 					alert("Please select atleast one");
 				}else{
-					$('#timeline_dropdown').dropdown('hide');
+					$('#overallAnalysis_dropdown').dropdown('hide');
 				}
 				console.log(agent_array)
 				console.log(team_array)
-
 			});
 		 
 		 
-		 $('#timeline_comparative_team_submit').click(function(e) {
+		  $('#comparativeAnalysis_team_submit').click(function(e) {
 				var agent_array=[];
 				var team_array=[];
 				
-				$('.timeline_comparativeagentcheckbox').each(function(){
+				$('.comparativeAnalysisagentcheckbox').each(function(){
 					if($(this).prop('checked')===true){
 						agent_array.push($(this).data('id'));
 					}
 				});
-				$('.timeline_comparativeteamcheckbox').each(function(){
+				$('.comparativeAnalysisteamcheckbox').each(function(){
 					if($(this).prop('checked')===true){
 						team_array.push($(this).data('id'));
 					}
@@ -1425,11 +1423,10 @@
 				if(agent_array.length==0 && team_array.length==0){
 					alert("Please select atleast one");
 				}else{
-					$('#timeline_comparative_dropdown').dropdown('hide');
+					$('#comparativeAnalysis_dropdown').dropdown('hide');
 				}
 				console.log(agent_array)
 				console.log(team_array)
-
 			});
 		 
 		 $(".after-search").hide();

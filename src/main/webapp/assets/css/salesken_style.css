@@ -1137,6 +1137,10 @@ border: 1px solid #ebebeb !important;
 	background: white;
 }
 
+.dropdown-nav.nav-mytabs a {
+	  min-width: 100px;
+}
+
 /* end of tab styling */
 .flag_pos {
 	position: absolute;

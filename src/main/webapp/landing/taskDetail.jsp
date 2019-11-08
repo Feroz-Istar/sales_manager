@@ -227,121 +227,88 @@
 
 								</div>
 
-								<div class="istar-dropdown-task select_focus dropdown"
-									id="ongoing_filter">
-
-									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="ongoing_filter" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All Agents<img
-											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-											class=" float-right">
-									</button>
-									<div
-										class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="ongoing_filter" style="width: 350px">
-
-										<ul
-											class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
-											id="myTab" role="tablist">
-											<li class="nav-item"><a class="nav-link active"
-												id="individual-tab" data-toggle="tab" href="#individual"
-												role="tab" aria-controls="individual" aria-selected="true">Individual</a>
-											</li>
-											<li class="nav-item"><a class="nav-link" id="team-tab"
-												data-toggle="tab" href="#team" role="tab"
-												aria-controls="team" aria-selected="false">Team</a></li>
-
-										</ul>
-										<div class="tab-content" id="myTabContent">
-											<div class="tab-pane fade show active px-4 py-3"
-												id="individual" role="tabpanel"
-												aria-labelledby="individual-tab">
-												<div
-													class="input-group position-relative search_width">
-													<img src="<%=baseURL%>assets/image/search.svg" alt="edit"
-														class=" searchBox"> <input id=""
-														class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
-														type="search" placeholder="Search"
-														style="padding-right: 30px">
-												</div>
-												<div class=" mb-2"
-													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-
-													<%
-														for (int i = 0; i < 20; i++) {
-													%>
-													<div class="d-flex align-items-center pt-3">
-
-
-														<input class="istar-checkbox agentcheckbox"
-															data-id="<%=i%>" id="associate-checkbox<%=i%>"
-															type="checkbox"> <label
-															class="istar-checkbox-style"
-															for="associate-checkbox<%=i%>"></label> <img
-															alt="user-img" src="<%=baseURL%>/assets/image/11.png"
-															class="rounded-circle ml-3 mr-2 hw-40">
-														<div>
-															<div class="f-14 font-weight-bold greyish-brown">Robert
-																Garcia</div>
-															<div class="f-12  brownish-grey">Team -02</div>
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="ongoing_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+										</button>
+										
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="ongoing_dropdown" style="width: 350px">
+												
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="ongoingTab" role="tablist">
+												  <li class="nav-item">
+												    <a class="nav-item nav-link active" id="ongoing_individual-tab" data-toggle="tab" href="#ongoing_individual" role="tab" aria-controls="ongoing_individual" aria-selected="true">Individual</a>
+												  </li>
+												  <li class="nav-item">
+												    <a class="nav-item nav-link" id="ongoing_team-tab" data-toggle="tab" href="#ongoing_team" role="tab" aria-controls="ongoing_team" aria-selected="false">Team</a>
+												  </li>
+												 
+												</ul>
+												<div class="tab-content" id="ongoingTab-tabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="ongoing_individual" role="tabpanel" aria-labelledby="ongoing_individual-tab">
+												  		<div class="input-group py-2">
+															<input id="ongoing_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
 														</div>
-													</div>
-													<%
-														}
-													%>
-												</div>
-
-
-											</div>
-
-											<div class="tab-pane fade px-4 py-3" id="team"
-												role="tabpanel" aria-labelledby="team-tab">
-
-												<div class="input-group py-2">
-													<input id="individual_search"
-														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-														type="search" placeholder="Search"
-														style="border-right: none !important;">
-													<div class="input-group-append">
-														<button
-															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-															type="button" style="">
-															<i class="fa fa-search f-12 brown-grey"></i>
-														</button>
-													</div>
-												</div>
-
-												<div class="mb-2"
-													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-													<%
-														for (int j = 0; j < 20; j++) {
-													%>
-													<div class="d-flex align-items-center pt-3">
-														<input class="istar-checkbox teamcheckbox"
-															data-id="<%=j%>" id="team-checkbox<%=j%>" type="checkbox">
-														<label class="istar-checkbox-style"
-															for="team-checkbox<%=j%>"></label>
-														<div class="f-12 ml-2 brownish-grey">
-															Team -0<%=j%></div>
-													</div>
-													<%
-														}
-													%>
-												</div>
-
-
-
-											</div>
+														
+														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														
+														<%for(int i=0; i<20;i++){ %>
+					                                    <div class="d-flex align-items-center pt-3">
+					                                    
+					                                    
+									<input class="istar-checkbox ongoingagentcheckbox" data-id="<%=i %>" id="ongoing_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="ongoing_associate-checkbox<%=i %>"></label>
+											<img alt="Agent Image" title="Agent Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+										  <div>
+					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
+					                                        </div>
 										</div>
-										<div class="w-100 text-center">
-											<button
-												class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold agentteamsubmit mb-3 text-center px-3"
-												style="min-width: 200px;">Submit</button>
-										</div>
-									</div>
-
-								</div>
+										<%} %>
+					                                    </div>
+					                                    
+					                                     		
+					                                 </div>
+					                                			                                 
+												  <div class="tab-pane fade px-4 py-3" id="ongoing_team" role="tabpanel" aria-labelledby="ongoing_team-tab">
+												  		
+												  		<div class="input-group py-2">
+															<input id="ongoing_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<%for(int j=0; j<20;j++){ %>
+														<div class="d-flex align-items-center pt-3">
+					                                        <input class="istar-checkbox ongoingteamcheckbox" data-id="<%=j %>" id="ongoing_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="ongoing_team-checkbox<%=j%>"></label>
+					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+					                                    </div>
+					                                    <%} %>
+					                                    </div>
+					                                    
+					                                     	
+												  		
+												  </div>
+												</div>
+												 <div class="w-100 text-center">
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold mb-3 text-center px-3" style="min-width:200px;" id="ongoing_team_submit">Submit</button>
+												</div>
+										  </div>
+										
+									</div> 
 
 
 							</div>
@@ -676,130 +643,87 @@
 
 								</div>
 
-								<div class="istar-dropdown-task select_focus  dropdown"
-									id="upcoming_filter">
-
-									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="upcoming_filter" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All Agents<img
-											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-											class=" float-right">
-									</button>
-									<div
-										class="dropdown-menu filter-menu dropdown-menu-right dropdown-menu-lg-left  istar-dropdown-task-menu position-absolute px-4"
-										aria-labelledby="upcoming_filter" style="width: 350px">
-
-										<ul
-											class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
-											id="upcomingTab" role="tablist">
-											<li class="nav-item"><a class="nav-link active"
-												id="upcoming_individual-tab" data-toggle="tab"
-												href="#upcoming_individual" role="tab"
-												aria-controls="upcoming_individual" aria-selected="true">Individual</a>
-											</li>
-											<li class="nav-item"><a class="nav-link"
-												id="upcoming_team-tab" data-toggle="tab"
-												href="#upcoming_team" role="tab"
-												aria-controls="upcoming_team" aria-selected="false">Team</a></li>
-
-										</ul>
-										<div class="tab-content" id="upcomingTab-TabContent">
-											<div class="tab-pane fade show active px-4 py-3"
-												id="upcoming_individual" role="tabpanel"
-												aria-labelledby="upcoming_individual-tab">
-												<div class="input-group py-2">
-													<input id="upcoming_individual_search"
-														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-														type="search" placeholder="Search"
-														style="border-right: none !important;">
-													<div class="input-group-append">
-														<button
-															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-															type="button" style="">
-															<i class="fa fa-search f-12 brown-grey"></i>
-														</button>
-													</div>
-												</div>
-
-												<div class=" mb-2"
-													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-
-													<%
-														for (int i = 0; i < 20; i++) {
-													%>
-													<div class="d-flex align-items-center pt-3">
-
-
-														<input class="istar-checkbox agentcheckbox"
-															data-id="<%=i%>" id="upcoming_associate-checkbox<%=i%>"
-															type="checkbox"> <label
-															class="istar-checkbox-style"
-															for="upcoming_associate-checkbox<%=i%>"></label> <img
-															alt="user-img" src="<%=baseURL%>/assets/image/11.png"
-															class="rounded-circle ml-3 mr-2 hw-40">
-														<div>
-															<div class="f-14 font-weight-bold greyish-brown">Robert
-																Garcia</div>
-															<div class="f-12  brownish-grey">Team -02</div>
+								<div class="istar-dropdown-task dropdown " id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="upcoming_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+										</button>
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="upcoming_dropdown" style="width: 350px">
+													
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="upcomingTab" role="tablist">
+												  <li class="nav-item">
+												    <a class="nav-link active" id="upcoming_individual-tab" data-toggle="tab" href="#upcoming_individual" role="tab" aria-controls="upcoming_individual" aria-selected="true">Individual</a>
+												  </li>
+												  <li class="nav-item">
+												    <a class="nav-link" id="upcoming_team-tab" data-toggle="tab" href="#upcoming_team" role="tab" aria-controls="upcoming_team" aria-selected="false">Team</a>
+												  </li>
+												 
+												</ul>
+												<div class="tab-content" id="myTabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="upcoming_individual" role="tabpanel" aria-labelledby="upcoming_individual-tab">
+												  		<div class="input-group py-2">
+															<input id="upcoming_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
 														</div>
-													</div>
-													<%
-														}
-													%>
-												</div>
-
-
-											</div>
-
-											<div class="tab-pane fade px-4 py-3" id="upcoming_team"
-												role="tabpanel" aria-labelledby="upcoming_team-tab">
-
-												<div class="input-group py-2">
-													<input id="upcoming_individual_search"
-														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-														type="search" placeholder="Search"
-														style="border-right: none !important;">
-													<div class="input-group-append">
-														<button
-															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-															type="button" style="">
-															<i class="fa fa-search f-12 brown-grey"></i>
-														</button>
-													</div>
-												</div>
-
-												<div class="mb-2"
-													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-													<%
-														for (int j = 0; j < 20; j++) {
-													%>
-													<div class="d-flex align-items-center pt-3">
-														<input class="istar-checkbox teamcheckbox"
-															data-id="<%=j%>" id="upcoming_team-checkbox<%=j%>"
-															type="checkbox"> <label
-															class="istar-checkbox-style"
-															for="upcoming_team-checkbox<%=j%>"></label>
-														<div class="f-12 ml-2 brownish-grey">
-															Team -0<%=j%></div>
-													</div>
-													<%
-														}
-													%>
-												</div>
-
-
-
-											</div>
+														
+														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														
+														<%for(int i=0; i<20;i++){ %>
+					                                    <div class="d-flex align-items-center pt-3">
+					                                    
+					                                    
+									<input class="istar-checkbox upcomingagentcheckbox" data-id="<%=i %>" id="upcoming_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="upcoming_associate-checkbox<%=i %>"></label>
+											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+										  <div>
+					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
+					                                        </div>
 										</div>
-										<div class="w-100 text-center">
-											<button
-												class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold upcomingteamsubmit mb-3 text-center px-3"
-												style="min-width: 200px;">Submit</button>
-										</div>
-									</div>
-
-								</div>
+										<%} %>
+					                                    </div>
+					                                    
+					                                     		
+					                                 </div>
+					                                			                                 
+												  <div class="tab-pane fade px-4 py-3" id="upcoming_team" role="tabpanel" aria-labelledby="upcoming_team-tab">
+												  		
+												  		<div class="input-group py-2">
+															<input id="qualified_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<%for(int j=0; j<20;j++){ %>
+														<div class="d-flex align-items-center pt-3">
+					                                        <input class="istar-checkbox upcomingteamcheckbox" data-id="<%=j %>" id="upcoming_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="upcoming_team-checkbox<%=j%>"></label>
+					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+					                                    </div>
+					                                    <%} %>
+					                                    </div>
+					                                    
+					                                     	
+												  		
+												  </div>
+												</div>
+												 <div class="w-100 text-center">
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold mb-3 text-center px-3" style="min-width:200px;" id="upcoming_team_submit">Submit</button>
+												</div>
+										  </div>
+										
+									</div> 
 
 							</div>
 						</div>
@@ -1122,130 +1046,87 @@
 									</div>
 
 								</div>
-								<div class="istar-dropdown-task select_focus  dropdown"
-									id="completed_filter">
-
-									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="completed_filter" data-toggle="dropdown"
-										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by User <img
-											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-											class=" float-right">
-									</button>
-									<div
-										class="dropdown-menu filter-menu dropdown-menu-right  istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="completed_filter" style="width: 350px">
-
-										<ul
-											class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
-											id="completedTab" role="tablist">
-											<li class="nav-item"><a class="nav-link active"
-												id="completed_individual-tab" data-toggle="tab"
-												href="#completed_individual" role="tab"
-												aria-controls="completed_individual" aria-selected="true">Individual</a>
-											</li>
-											<li class="nav-item"><a class="nav-link"
-												id="completed_team-tab" data-toggle="tab"
-												href="#completed_team" role="tab"
-												aria-controls="upcoming_team" aria-selected="false">Team</a></li>
-
-										</ul>
-										<div class="tab-content" id="completedTab-TabContent">
-											<div class="tab-pane fade show active px-4 py-3"
-												id="completed_individual" role="tabpanel"
-												aria-labelledby="upcoming_individual-tab">
-												<div class="input-group py-2">
-													<input id="completed_individual_search"
-														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-														type="search" placeholder="Search"
-														style="border-right: none !important;">
-													<div class="input-group-append">
-														<button
-															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-															type="button" style="">
-															<i class="fa fa-search f-12 brown-grey"></i>
-														</button>
-													</div>
-												</div>
-
-												<div class=" mb-2"
-													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-
-													<%
-														for (int i = 0; i < 20; i++) {
-													%>
-													<div class="d-flex align-items-center pt-3">
-
-
-														<input class="istar-checkbox agentcheckbox"
-															data-id="<%=i%>" id="completed_associate-checkbox<%=i%>"
-															type="checkbox"> <label
-															class="istar-checkbox-style"
-															for="completed_associate-checkbox<%=i%>"></label> <img
-															alt="user-img" src="<%=baseURL%>/assets/image/11.png"
-															class="rounded-circle ml-3 mr-2 hw-40">
-														<div>
-															<div class="f-14 font-weight-bold greyish-brown">Robert
-																Garcia</div>
-															<div class="f-12  brownish-grey">Team -02</div>
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
+										<button class="istar-dropdown-arrow "
+										id="completed_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+										</button>
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+										aria-labelledby="completed_dropdown" style="width: 350px">
+													
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="completedTab" role="tablist">
+												  <li class="nav-item">
+												    <a class="nav-link active" id="completed_individual-tab" data-toggle="tab" href="#completed_individual" role="tab" aria-controls="completed_individual" aria-selected="true">Individual</a>
+												  </li>
+												  <li class="nav-item">
+												    <a class="nav-link" id="completed_team-tab" data-toggle="tab" href="#completed_team" role="tab" aria-controls="completed_team" aria-selected="false">Team</a>
+												  </li>
+												 
+												</ul>
+												<div class="tab-content" id="completedTabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="completed_individual" role="tabpanel" aria-labelledby="completed_individual-tab">
+												  		<div class="input-group py-2">
+															<input id="completed_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
 														</div>
-													</div>
-													<%
-														}
-													%>
-												</div>
-
-
-											</div>
-
-											<div class="tab-pane fade px-4 py-3" id="completed_team"
-												role="tabpanel" aria-labelledby="completed_team-tab">
-
-												<div class="input-group py-2">
-													<input id="completed_individual_search"
-														class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-														type="search" placeholder="Search"
-														style="border-right: none !important;">
-													<div class="input-group-append">
-														<button
-															class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-															type="button" style="">
-															<i class="fa fa-search f-12 brown-grey"></i>
-														</button>
-													</div>
-												</div>
-
-												<div class="mb-2"
-													style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-													<%
-														for (int j = 0; j < 20; j++) {
-													%>
-													<div class="d-flex align-items-center pt-3">
-														<input class="istar-checkbox teamcheckbox"
-															data-id="<%=j%>" id="completed_team-checkbox<%=j%>"
-															type="checkbox"> <label
-															class="istar-checkbox-style"
-															for="completed_team-checkbox<%=j%>"></label>
-														<div class="f-12 ml-2 brownish-grey">
-															Team -0<%=j%></div>
-													</div>
-													<%
-														}
-													%>
-												</div>
-
-
-
-											</div>
+														
+														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														
+														<%for(int i=0; i<20;i++){ %>
+					                                    <div class="d-flex align-items-center pt-3">
+					                                    
+					                                    
+									<input class="istar-checkbox completedagentcheckbox" data-id="<%=i %>" id="completed_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="completed_associate-checkbox<%=i %>"></label>
+											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+										  <div>
+					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
+					                                        </div>
 										</div>
-										<div class="w-100 text-center">
-											<button
-												class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold completedteamsubmit mb-3 text-center px-3"
-												style="min-width: 200px;">Submit</button>
-										</div>
-									</div>
-
-								</div>
+										<%} %>
+					                                    </div>
+					                                    
+					                                     		
+					                                 </div>
+					                                			                                 
+												  <div class="tab-pane fade px-4 py-3" id="completed_team" role="tabpanel" aria-labelledby="completed_team-tab">
+												  		
+												  		<div class="input-group py-2">
+															<input id="completed_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<%for(int j=0; j<20;j++){ %>
+														<div class="d-flex align-items-center pt-3">
+					                                        <input class="istar-checkbox completedteamcheckbox" data-id="<%=j %>" id="completed_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="completed_team-checkbox<%=j%>"></label>
+					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+					                                    </div>
+					                                    <%} %>
+					                                    </div>
+					                                    
+					                                     	
+												  		
+												  </div>
+												</div>
+												 <div class="w-100 text-center">
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="completed_team_submit">Submit</button>
+												</div>
+										  </div>
+										
+									</div> 
 							</div>
 						</div>
 
@@ -1510,6 +1391,112 @@
 									 $('#completed_filter_selections').hide();
 								 });
 										
+								
+								
+								
+								
+								$('#ongoing_team_submit').click(function(e) {
+									var agent_array=[];
+									var team_array=[];
+									
+									$('.ongoingagentcheckbox').each(function(){
+										if($(this).prop('checked')===true){
+											agent_array.push($(this).data('id'));
+										}
+									});
+									$('.ongoingteamcheckbox').each(function(){
+										if($(this).prop('checked')===true){
+											team_array.push($(this).data('id'));
+										}
+									});
+									
+									if(agent_array.length==0 && team_array.length==0){
+										alert("Please select atleast one");
+									}else{
+										$('#ongoing_dropdown').dropdown('hide');
+									}
+									console.log(agent_array)
+									console.log(team_array)
+										
+
+								});
+								
+								
+								$('#upcoming_team_submit').click(function(e) {
+									var agent_array=[];
+									var team_array=[];
+									
+									$('.upcomingagentcheckbox').each(function(){
+										if($(this).prop('checked')===true){
+											agent_array.push($(this).data('id'));
+										}
+									});
+									$('.upcomingteamcheckbox').each(function(){
+										if($(this).prop('checked')===true){
+											team_array.push($(this).data('id'));
+										}
+									});
+									
+									if(agent_array.length==0 && team_array.length==0){
+										alert("Please select atleast one");
+									}else{
+										$('#upcoming_dropdown').dropdown('hide');
+									}
+									console.log(agent_array)
+									console.log(team_array)
+
+								});
+								
+								
+								  $('#qualified_team_submit').click(function(e) {
+										var agent_array=[];
+										var team_array=[];
+										
+										$('.qualifiedagentcheckbox').each(function(){
+											if($(this).prop('checked')===true){
+												agent_array.push($(this).data('id'));
+											}
+										});
+										$('.qualifiedteamcheckbox').each(function(){
+											if($(this).prop('checked')===true){
+												team_array.push($(this).data('id'));
+											}
+										});
+										
+										if(agent_array.length==0 && team_array.length==0){
+											alert("Please select atleast one");
+										}else{
+											$('#qualified_dropdown').dropdown('hide');
+										}
+										console.log(agent_array)
+										console.log(team_array)
+
+									});
+								
+								  $('#completed_team_submit').click(function(e) {
+										var agent_array=[];
+										var team_array=[];
+										
+										$('.completedagentcheckbox').each(function(){
+											if($(this).prop('checked')===true){
+												agent_array.push($(this).data('id'));
+											}
+										});
+										$('.completedteamcheckbox').each(function(){
+											if($(this).prop('checked')===true){
+												team_array.push($(this).data('id'));
+											}
+										});
+										
+										if(agent_array.length==0 && team_array.length==0){
+											alert("Please select atleast one");
+										}else{
+											$('#completed_dropdown').dropdown('hide');
+										}
+										console.log(agent_array)
+										console.log(team_array)
+									});
+								
 							});
 
 			function showCalendar() {

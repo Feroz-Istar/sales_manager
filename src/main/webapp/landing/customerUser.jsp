@@ -159,7 +159,7 @@
 						aria-labelledby="user_agent" style="width: 350px">
 
 						<ul
-							class="nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
+							class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
 							id="myTab" role="tablist">
 							<li class="nav-item"><a class="nav-link active"
 								id="individual-tab" data-toggle="tab" href="#individual"
