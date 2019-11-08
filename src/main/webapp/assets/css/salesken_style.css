@@ -346,7 +346,7 @@ html, body {
 }
 
 .istar-dropdown-task-menu>.dropdown-item:hover {
-	background: #eeeeee !important;
+	background: #fef5f6 !important;
 	color: #222222 !important;
 	font-weight: 500 !important;
 }
@@ -1103,7 +1103,7 @@ Modifying the scroll bar across the whole application
 	font-size: 14px;
 	    margin-bottom: 1px !important;
 	        padding: 5px 20px;
-	    
+	        min-width: 136px;
 }
 .nav-mytabs li{
 }
@@ -2047,16 +2047,16 @@ button:focus {
 
 .select_focus:focus {
 	outline: none !important;
-	border-color: #ed4d67 !important;
+	border-color: #999999 !important;
 	box-shadow: none !important;
-	border: 1px solid #ed4d67 !important;
+	border: 1px solid #999999 !important;
 }
 
 .select_focus.show {
 	outline: none !important;
-	border-color: #ed4d67 !important;
+	border-color: #999999 !important;
 	box-shadow: none !important;
-	border: 1px solid #ed4d67 !important;
+	border: 1px solid #999999 !important;
 }
 
 label.error {
