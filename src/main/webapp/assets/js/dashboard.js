@@ -269,7 +269,7 @@ function loadOngoingTaskDetail(){
 	$('.ongoingtaskcard').unbind().click(function (){
 		//window.location.href = location.href + 'landing/task_lead_detail.jsp'
 		
-		window.location.replace("task_lead_detail.jsp");
+		window.location.replace("ongoingJoined.jsp");
 
 	});
 }

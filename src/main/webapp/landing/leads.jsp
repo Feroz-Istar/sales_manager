@@ -1724,7 +1724,7 @@
 	
 	$( document ).ready(function() {
 	
-		$('.dropdown-menu').click(function(e) {
+		$('.filter-menu.dropdown-menu').click(function(e) {
 		    e.stopPropagation();
 		});
 			
