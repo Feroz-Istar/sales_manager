@@ -30,7 +30,7 @@
 							class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
 							aria-labelledby="completed_call_comment" style="right: -67px;">
 
-							<div class="card p-20 " style="width: 500px;">
+							<div class="card p-20 border-0" style="width: 500px;">
 								<div class="card-header p-0 border-bottom-0 bg-white">
 									<div class="row m-0">
 										<div class="col-md-6 p-0 pb-20 fw-500 f-16 black">Comment</div>
@@ -54,14 +54,14 @@
 									<div class="row d-flex justify-content-end m-0">
 										<button type="button"
 											class="btn join_btn  istar-btn-hover f-12 "
-											id="completed_call_reply_submit">Submit</button>
+											id="completed_call_comment_submit">Submit</button>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
 
-					<div class=" dropdown" id="completed_call_reply">
+					<div class=" dropdown">
 						<button class="btn  p-0 dropdown-toggle" id="completed_call_reply"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
 							data-display="static">
@@ -69,11 +69,11 @@
 								class="cursor-pointer taskshare mr-15" alt="reply">
 						</button>
 						<div
-							class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0"
+							class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0 share-menu"
 							aria-labelledby="completed_call_reply" style="right: -18px;">
 
 							<div class="input-group position-relative pb-20">
-								<img src="http://192.168.0.121:8080/assets/image/search.svg"
+								<img src="<%=baseURL%>assets/image/search.svg"
 									alt="edit" class=" searchBox"> <input
 									id="completed_call_reply_search"
 									class="form-control  custom-taskborder brown-grey  f-14 search_height minw-237"
@@ -89,7 +89,7 @@
 									<label class="istar-checkbox-style"
 										for="completed_call_reply-checkbox<%=i%>"></label> <img
 										alt="user-img"
-										src="http://192.168.0.121:8080//assets/image/11.png"
+										src="<%=baseURL%>assets/image/11.png"
 										class="rounded-circle ml-3 mr-2 hw-40">
 									<div>
 										<div class="f-14 font-weight-bold greyish-brown">Robert
@@ -408,11 +408,19 @@
 </div>
 
 <script>
-	attachTaskRelatedData();
-	$(function () {
-		  $('[data-toggle="tooltip"]').tooltip()
-		})
-	
+	$(document).ready(function(){
+		attachTaskRelatedData();
+		$(function () {
+			  $('[data-toggle="tooltip"]').tooltip()
+			});
+		$('.share-menu.dropdown-menu').click(function(e) {
+			e.stopPropagation();
+		});
+
+		$('#completed_call_reply_submit').click(function(){
+			$('#completed_call_reply').dropdown('hide');
+		});
+	});
 </script>
 
 

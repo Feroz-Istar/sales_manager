@@ -1266,7 +1266,7 @@
 		</div>
 		<!--end of Task Reschedule modal -->
 
-
+		
 
 		<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 		<script src="<%=baseURL%>assets/js/popper.min.js"></script>
@@ -1509,7 +1509,7 @@
 			$('.filter-menu.dropdown-menu').click(function(e) {
 				e.stopPropagation();
 			});
-
+		
 			$('#upcomimg_reschedule')
 					.click(
 							function(e) {
