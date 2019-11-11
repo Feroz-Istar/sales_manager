@@ -297,10 +297,11 @@ html, body {
 }
 
 .istar-dropdown-menu>.dropdown-item:hover {
-	background-color: #eeeeee;
+	
 	font-size: 14px !important;
-	font-weight: 500 !important;
-	color: #222222 !important;
+	background: #ed4d67 !important;
+    color: #ffffff !important;
+    font-weight: 500 !important;
 }
 
 /* end of dropdown with icons */

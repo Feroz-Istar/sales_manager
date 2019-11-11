@@ -33,15 +33,12 @@
 	<div class="container-fluid   h-100">
 		<div class="row h-100  ">
 			<div
-				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center">
-				<div class="card  pr-115 border-0  shadow_right">
+				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center ">
+				<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
 					<div class="card-body p-0 ">
 						<div class="pl-25 pr-25">
 							<div style="text-align: center" class="pb-10">
-
-								<button class="btn rounded-circle tea border-0 tick_icon p-0">
-									<i class="fas fa-check text-white pt-2 f-18"></i>
-								</button>
+								<img src="<%=baseURL%>assets/image/checkicon.svg">
 							</div>
 							<p class="brownish-grey f-14 text-center mb-0 fw-500">Great!
 								Password has been generated !</p>
@@ -82,12 +79,12 @@
 			</div>
 			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
 				<div class="text-break">
-					<p class="black f-24 mb-0 pl-90 pb-5">See What Works, What
+					<p class="black f-24 mb-0 pl-90">See What Works, What
 						Doesn’t &</p>
 
 					<h1 class=" f-38  mb-0	pl-90 fw-900 black">Help your Reps Sell
 						Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90 pt-30 pl-90"
+					<p class="brown-grey f-16 mb-0 pb-90 pt-40 pl-90"
 						style="max-width: 534px;">Lorem ipsum dolor sit amet,
 						consectetur adipiscing elit. Nulla sit amet nibh lobortis,
 						vehicula lorem at.</p>
@@ -120,42 +117,7 @@
 
 	<script>
 		$(document).ready(function() {
-			/* console.log("ready!"); */
 
-			/*
-				
-				$.post("http://192.168.0.141:8081/javacore/api/global/authenticate",{ email: "John", password: "2pm" },function(data){
-					 console.log(data);
-				}, "json");
-
-				//window.location.href = location.href + 'landing/dashboard.jsp'
-			
-			 */
-			/* 	 $('.login_button').click(function() {
-					 //window.location.href = location.href + 'landing/dashboard.jsp';
-					 var obj = { email: $('#email').val(), password: $('#password').val() };
-					 
-					  $.ajax({
-				    contentType: 'application/json',
-				    data: JSON.stringify(obj),
-				    dataType: 'json',
-				    success: function(data,textStatus,request){ */
-			/*  console.log(data);
-			 console.log(textStatus); */
-			/*  console.log(request.getResponseHeader('Authorization').replace('Bearer ',''));
-
-			 console.log(request);
-			window.location.replace("landing/dashboard.jsp");
-
-			},
-			error: function(){
-			  console.log("Device control failed");
-			},
-			processData: false,
-			type: 'POST',
-			url: 'http://192.168.0.140:8081/javacore/api/global/authenticate'
-			}); 
-			}); */
 			jQuery.validator.setDefaults({
 				errorPlacement : function(error, element) {
 					error.addClass('invalid-feedback');
@@ -178,17 +140,7 @@
 						minlength : 4
 					}
 				}
-			/* ,
-							messages: {
-								email: {
-									required: "Please enter username or your email",
-								},
-								password:{
-									required: "Please enter your password",
-									minlength: "Please enter the password with minimum of 4 characters",
-								}
-						    } */
-
+		
 			});
 
 		});

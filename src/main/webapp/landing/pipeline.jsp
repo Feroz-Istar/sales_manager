@@ -592,7 +592,7 @@
                              <label class="istar-checkbox-style" for="owner-checkbox<%=j%>"></label>
                              <div class="d-flex w-100 m-0 align-items-center" >
                              	<div class="col-md-4">
-                             		<div class="d-flex">
+                             		<div class="d-flex align-items-center">
                              			<img src="<%=baseURL%>assets/image/37.jpg" class="rounded-circle hw-40">
                              			<div class="ml-2">
                              				<div class="f-14 greyish-brown">Stanley Howard</div>
