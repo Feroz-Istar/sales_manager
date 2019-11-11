@@ -346,8 +346,8 @@ html, body {
 }
 
 .istar-dropdown-task-menu>.dropdown-item:hover {
-	background: #fef5f6 !important;
-	color: #222222 !important;
+	background: #ed4d67 !important;
+	color: #ffffff !important;
 	font-weight: 500 !important;
 }
 
@@ -2604,4 +2604,18 @@ border-color: rgba(194, 225, 245, 0);
 }
 .note-editor.note-frame {
     border: none !important;
+}
+
+.modal.fade{
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: all .2s linear;
+  -o-transition: all .2s linear;
+  transition: all .2s linear;
+}
+
+.modal.fade.show{
+	  opacity: 1;
+	
+  transform: scale(1);
 }
