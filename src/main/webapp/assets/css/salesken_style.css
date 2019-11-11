@@ -124,6 +124,8 @@ html, body {
 	justify-content: center;
 	border: 1px solid #eeeeee;
 	outline: none !important;
+		border-radius: 4px !important;
+	
 }
 
 .istar-btn-icon>i {
@@ -144,14 +146,12 @@ html, body {
 	right: 68px;
 	position: absolute;
 	top: 28px;
-	border-radius: 4px !important;
 }
 
 .istar-btn-icon.next {
 	right: 31px;
 	position: absolute;
 	top: 28px;
-	border-radius: 4px !important;
 }
 
 .istar-btn-icon.active:active {

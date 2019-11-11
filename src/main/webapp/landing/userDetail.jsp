@@ -47,7 +47,18 @@
 				<div class="pl-3 pr-2 f-12 brown-grey ">Path</div>
 				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
 				<div class=" f-12 brown-grey  fw-500" id="breadcrumb">Current Page</div>
+				
 			</div>
+			<div class="col-md-6 d-flex align-items-center justify-content-end">
+				
+					<button type="button" class="istar-btn-icon  previous p-0" style="top: -14px !important;">
+		                 <i class="fal fa-chevron-left"></i>
+		             </button>
+		             <button type="button" class="istar-btn-icon  active next p-0"  style="top: -14px !important;">
+		                 <i class="fal fa-chevron-right"></i>
+		             </button>
+				
+				</div>
 		</div>
 		<div class="row rounded-0 alert alert-success mb-0 font-italic align-items-center d-none" role="alert">
 		 <span class="font-weight-bold f-14 mr-2 tea-color">Won Lead: </span> <div class="f-12 brownish-grey">A simple success alert—check it out!</div>
@@ -315,44 +326,49 @@
 				  	
 				  	<div class="row ">
 				  		<div class="col-md-9">
-				  			
+				  			<div class="f-16 fw-500 black">	Playbook Stats</div>
 				  			<div class="row border-bottom-dashed-separation py-3">
 				  				<div class="col-md-6">
-		      						<div class="f-14 font-weight-bold black mb-1">Strong Playbook</div>
-		      						<div class="f-14 brownish-grey">Objection,  Qualification <i class="fal fa-info-circle soft-blue"></i></div>
+		      						<div class="f-12 font-weight-bold brownish-grey mb-1">Strong  <i class="fal fa-info-circle soft-blue"></i></div>
+		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 		      					</div>
 		      					<div class="col-md-6">
-		      						<div class="f-14 font-weight-bold black mb-1">Weak Playbook</div>
-		      						<div class="f-14 brownish-grey">Need Investigation <i class="fal fa-info-circle soft-blue"></i></div>
+		      						<div class="f-12 font-weight-bold brownish-grey mb-1">Weak <i class="fal fa-info-circle soft-blue"></i></div>
+		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 		      					</div>
 				  			</div>
 				  			<div class="row py-3">
 				  				<div class="col-md-6 fw-500">Disposition</div>
 				  			</div>
 				  			
-				  			<div class="row">
-		  					<table class="table table-striped pt-3">
-								  <thead>
-								    <tr>
-								      <th class="f-14" scope="col">Lead Names</th>
-								      <th class="f-14" scope="col">Follow-Ups </th>
-								      <th class="f-14" scope="col">Talk Ratio</th>
-								      <th class="f-14" scope="col">Connected Call</th>
-								    </tr>
-								  </thead>
-								  <tbody>
-								  
-								  <%for(int i=0;i<10;i++){ %>
-								    <tr>
-								      <td class="f-14 py-4 text-truncate" title="Massive Dynamic Pvt. Ltd.">Massive Dynamic Pvt. Ltd.</td>
-								      <td class="f-14 py-4">45</td>
-								      <td class="f-14 py-4">20%</td>
-								      <td class="f-14 py-4">03</td>
-								    </tr>
-								    <%}%>
-								   </tbody>
-							  </table>
-				  			</div>
+				  			<div class="row m-0 pl-30 pt-30 pb-10 align-items-center">
+								<div class="col-md-3 p-0 black f-14 font-weight-bold">Lead Name</div>
+								<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Follow-Ups </div>
+								<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Talk Ratio</div>
+								<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Connected Call</div>
+							</div>
+						
+							<%for(int i=0;i<10;i++){ 
+								String bg_color="bg-white";
+								if(i%2==0){
+									bg_color="cream_white";
+								}
+							%>
+								
+							<div class="row m-0 pl-30 leadpreview pt-20 pb-20 bottom_border_1px align-items-center <%=bg_color%>">
+								<div class="col-md-3 p-0 greyish-brown f-14">Massive Dynamic Pvt. Ltd.</div>
+								<div class="col-md-3 p-0 greyish-brown f-14 p-0">45</div>
+								<div class="col-md-3 p-0 greyish-brown f-14">20%</div>
+								<div class="col-md-3 p-0 greyish-brown f-14">03</div>
+								
+							</div>
+							<%} %>
 				  		</div>
 				  			
 				  		<div class="col-md-3 cream_white p-3 ">
