@@ -33,8 +33,8 @@
 		<div class="col-md-2 p-0 d-flex align-items-center justify-content-end">
 			
 			<div class="hw-40 rounded-circle custom-border very-light-pink-bg  d-flex align-items-center justify-content-center">
-			<button class="btn bg-white rounded-circle btn-size p-0 d-flex">
-				<i class="theme_color align-self-center fas fa-plus-circle"></i>
+			<button class="btn bg-white rounded-circle btn-size p-0 d-flex" >
+				<i class="theme_color align-self-center rounded-circle f-14 fas fa-plus-circle" style="border: 1px solid white;"></i>
 			</button>	
 				<img class="hw-24 mr-3" src="<%=baseURL%>assets/image/person.svg" alt="add-person">
 			</div>
