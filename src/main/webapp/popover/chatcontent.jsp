@@ -26,8 +26,8 @@
 	
 	<div class="row m-0 ml-30 mr-30 pt-10 pb-10 theme_solid_border_bottom_2px"">
 		<div class="col-md-10 p-0 d-flex">
-			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png" alt="user">
-			<img class="hw-40 mr-1" src="<%=baseURL%>assets/image/11.png" alt="user">
+			<img class="hw-40 mr-10" src="<%=baseURL%>assets/image/11.png" alt="user">
+			<img class="hw-40 mr-10 disabled" src="<%=baseURL%>assets/image/11.png" alt="user">
 			
 		</div>
 		<div class="col-md-2 p-0 d-flex align-items-center justify-content-end">

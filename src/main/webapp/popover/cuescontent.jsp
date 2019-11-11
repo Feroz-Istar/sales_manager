@@ -10,8 +10,8 @@
 	border-width: 1px 1px 1px 5px;
 	border-color: #dddddd;
 	border-style: solid;
-	border-top-right-radius: 10%;
-	border-bottom-right-radius: 10%;
+	border-top-right-radius: 25px;
+	border-bottom-right-radius: 25px;
 }
 
 .left-blue-border {
@@ -41,8 +41,8 @@
 	</div>
 	<div class="ml-30 mr-30 pb-20">
 	<div class="input-group position-relative  ">
-				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
-					<input id="" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects" type="search" placeholder="Search" style="padding-right:30px">
+				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox" style="margin-top: 3px;">
+					<input id="" class="form-control  custom-taskborder brown-grey pt-10 pb-10 f-14" type="search" placeholder="Search" style="padding-right:30px">
 	</div></div>
 	<div class="cuesdialog left-blue-border ml-30 mr-30 pl-30 pt-20 pb-15 mb-20">
 		<div class="f-12 brown-grey">10:20 AM</div>

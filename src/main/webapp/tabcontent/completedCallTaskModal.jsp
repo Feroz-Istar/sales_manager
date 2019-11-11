@@ -108,7 +108,7 @@
 						</div>
 					</div>
 					<div
-						class="f-14 font-weight-bold theme_color cursor-pointer align-self-center"
+						class="f-14 font-weight-bold dark_theme_color cursor-pointer align-self-center"
 						onclick="window.location.href = 'task_lead_detail.jsp'">
 						View More <i class="fas fa-chevron-circle-right ml-1 "></i>
 					</div>
@@ -250,7 +250,7 @@
 										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 									</ol>
-									<div class="carousel-inner ">
+									<div class="carousel-inner" style="box-shadow: 0 .5rem 1rem #eee !important;">
 
 										<%
 											for (int h = 0; h < 4; h++) {
@@ -289,8 +289,8 @@
 							</div>
 						</div>
 						<div class="row m-0   theme_solid_border_top_2px mr-40">
-							<div class="col p-0 pt-25  ">
-								<h3 class="black fw-500 f-16 mb-0 pl-40 pb-25">Transcript</h3>
+							<div class="col p-0 pt-30  ">
+								<h3 class="black fw-500 f-16 mb-0 pl-40 pb-30">Transcript</h3>
 								<div class="transcript_container  "
 									style="max-height: 520px; overflow-x: hidden; overflow-y: auto;">
 									<%
@@ -301,8 +301,8 @@
 											<small class="f-12 brown-grey pr-20 ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card shadow "
-											style="border-radius: 0px 20px 20px 20px">
+										<div class="card "
+											style="border-radius: 0px 20px 20px 20px; box-shadow: 0 .5rem 1rem #eee !important;">
 											<div class="card-body">
 												<p class="card-text f-14 blue-black m-0">Some quick
 													example text to build on the card title and make up the
@@ -317,7 +317,7 @@
 											<small class="f-12 brown-grey  pr-20  ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card shadow align-self-end very-light-pink-bg"
+										<div class="card align-self-end very-light-pink-bg"
 											style="border-radius: 20px 0px 20px 20px">
 											<div class="card-body">
 												<p class="card-text blue-black f-14 mb-0">Some quick
@@ -358,36 +358,36 @@
 		<ul class="list-group shadow d-flex flex-column h-100  taskpopup">
 
 
-			<li class="notesdropdown list-group-item p-0 py-3">
+			<li class="notesdropdown list-group-item p-0 pt-10 pb-10">
 				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+					class=" d-flex flex-column justify-content-center align-items-center minh-80 "
 					data-dropdown_id="completed_call_task_content">
 					<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 					<div class="f-12 pt-1 greyish-brown">Notes</div>
 
 				</div>
 			</li>
-			<li class=" cuesdropdown list-group-item p-0 py-3">
+			<li class=" cuesdropdown list-group-item p-0  pt-10 pb-10">
 				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
+					class=" d-flex flex-column justify-content-center align-items-center minh-80"
 					data-dropdown_id="completed_call_task_content">
 					<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 					<div class="f-12 pt-1 greyish-brown">Cues</div>
 
 				</div>
 			</li>
-			<li class="crmdropdown list-group-item p-0 py-3">
+			<li class="crmdropdown list-group-item p-0  pt-10 pb-10">
 				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
+					class=" d-flex flex-column justify-content-center align-items-center minh-80"
 					data-dropdown_id="completed_call_task_content">
 					<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 					<div class="f-12 pt-1 greyish-brown">CRM</div>
 
 				</div>
 			</li>
-			<li class="chatdropdown list-group-item  p-0 py-3 ">
+			<li class="chatdropdown list-group-item  p-0  pt-10 pb-10 ">
 				<div
-					class="  d-flex flex-column justify-content-center align-items-center minh-50"
+					class="  d-flex flex-column justify-content-center align-items-center minh-80"
 					data-dropdown_id="completed_call_task_content">
 					<img src="<%=baseURL%>assets/image/chat.svg"
 						alt="presentation" />

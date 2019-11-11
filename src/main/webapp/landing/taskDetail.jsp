@@ -180,8 +180,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="ongoing_activity" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All
-										activities <img
+										<span class="sr-only">Toggle Dropdown</span>All Activities <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -345,7 +344,7 @@
 
 
 										<div class="row align-items-center m-0 p-20">
-											<div class="col-md-9 p-0">
+											<div class="col-md-8 p-0">
 												<div class="d-flex flex-row ">
 													<div class="f-16 font-weight-bold pr-10 theme_color">$
 														500</div>
@@ -359,8 +358,8 @@
 													Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
-											<div class="col-md-3 p-0">
-												<div class="d-flex flex-row align-items-center">
+											<div class="col-md-4 p-0">
+												<div class="d-flex flex-row align-items-center justify-content-end">
 													<img src="<%=baseURL%>assets/image/calltask.svg"
 														alt="taskicon" class="rounded-circle hw-30 task-icon" />
 													<img src="<%=baseURL%>assets/image/37.jpg"
@@ -491,36 +490,36 @@
 													class="list-group shadow d-flex flex-column h-100  taskpopup  disabled	">
 
 
-													<li class="notesdropdown list-group-item p-0 py-3">
+													<li class="notesdropdown list-group-item p-0  pt-10 pb-10">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															class=" d-flex flex-column justify-content-center align-items-center minh-80 "
 															data-dropdown_id="ongoing_task_content">
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
 
 														</div>
 													</li>
-													<li class=" cuesdropdown list-group-item p-0 py-3">
+													<li class=" cuesdropdown list-group-item p-0  pt-10 pb-10">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-80"
 															data-dropdown_id="ongoing_task_content">
 															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
 
 														</div>
 													</li>
-													<li class="crmdropdown list-group-item p-0 py-3">
+													<li class="crmdropdown list-group-item p-0  pt-10 pb-10">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-80"
 															data-dropdown_id="ongoing_task_content">
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 
 														</div>
 													</li>
-													<li class="chatdropdown list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0 pt-10 pb-10 ">
 														<div
-															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															class="  d-flex flex-column justify-content-center align-items-center minh-80"
 															data-dropdown_id="ongoing_task_content">
 															<img src="<%=baseURL%>assets/image/chat.svg"
 																alt="" />
@@ -762,15 +761,15 @@
 
 
 										<div class="row align-items-center 	p-20 p-0 m-0">
-											<div class="col-md-9 p-0">
+											<div class="col-md-8 p-0">
 												<div class="f-16 greyish-brown ">11:00 AM</div>
 												<div class="f-16 fw-500 black text-truncate"
 													data-toggle="tooltip" data-placement="bottom"
 													title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 												<div class="f-12 brown-grey">$ 500 Deal Value</div>
 											</div>
-											<div class="col-md-3 p-0">
-												<div class="d-flex flex-row align-items-center">
+											<div class="col-md-4 p-0">
+												<div class="d-flex flex-row align-items-center justify-content-end">
 													<img src="<%=baseURL%>assets/image/calltask.svg"
 														alt="task-icon" class="rounded-circle hw-30 task-icon" />
 													<img src="<%=baseURL%>assets/image/37.jpg" alt="task-image"
@@ -900,36 +899,36 @@
 													class="list-group shadow d-flex flex-column h-100  taskpopup disabled	">
 
 
-													<li class="notesdropdown list-group-item p-0 py-3">
+													<li class="notesdropdown list-group-item p-0  pt-10 pb-10">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+															class=" d-flex flex-column justify-content-center align-items-center minh-80 "
 															data-dropdown_id="upcoming_task_content">
 															<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 															<div class="f-12 pt-1 greyish-brown">Notes</div>
 
 														</div>
 													</li>
-													<li class=" cuesdropdown list-group-item p-0 py-3">
+													<li class=" cuesdropdown list-group-item p-0  pt-10 pb-10">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-80"
 															data-dropdown_id="upcoming_task_content">
 															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 															<div class="f-12 pt-1 greyish-brown">Cues</div>
 
 														</div>
 													</li>
-													<li class="crmdropdown list-group-item p-0 py-3">
+													<li class="crmdropdown list-group-item p-0  pt-10 pb-10">
 														<div
-															class=" d-flex flex-column justify-content-center align-items-center minh-50"
+															class=" d-flex flex-column justify-content-center align-items-center minh-80"
 															data-dropdown_id="upcoming_task_content">
 															<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 															<div class="f-12 pt-1 greyish-brown">CRM</div>
 
 														</div>
 													</li>
-													<li class="chatdropdown list-group-item  p-0 py-3 ">
+													<li class="chatdropdown list-group-item  p-0  pt-10 pb-10 ">
 														<div
-															class="  d-flex flex-column justify-content-center align-items-center minh-50"
+															class="  d-flex flex-column justify-content-center align-items-center minh-80"
 															data-dropdown_id="upcoming_task_content">
 															<img src="<%=baseURL%>assets/image/chat.svg"
 																alt="" />
@@ -985,7 +984,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="completed_stage" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Stages <img
+										<span class="sr-only">Toggle Dropdown</span>All Stages <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 											class=" float-right">
 									</button>
@@ -1003,8 +1002,9 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> Filter by
-										Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+										<span class="sr-only">Toggle Dropdown</span> All Activities <img
+											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+											class=" float-right">
 									</button>
 									<div
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
@@ -1032,8 +1032,7 @@
 									<button class="istar-dropdown-arrow dropdown-toggle"
 										id="completed_status" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>Filter by Deal
-										Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
+										<span class="sr-only">Toggle Dropdown</span>All Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
 											alt="call" class=" float-right">
 									</button>
 									<div
@@ -1170,7 +1169,7 @@
 
 
 										<div class="row align-items-center m-0 p-20">
-											<div class="col-md-9 p-0">
+											<div class="col-md-8 p-0">
 												<div class="d-flex flex-row ">
 													<div class="f-16 font-weight-bold  pr-10 theme_color">$
 														500</div>
@@ -1185,8 +1184,8 @@
 													Corporation Inc.</div>
 												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
 											</div>
-											<div class="col-md-3 p-0">
-												<div class="d-flex flex-row align-items-center">
+											<div class="col-md-4 p-0">
+												<div class="d-flex flex-row align-items-center justify-content-end">
 													<img src="<%=baseURL%>assets/image/calltask.svg"
 														alt="taskicon" class="rounded-circle hw-30 task-icon">
 													<img src="<%=baseURL%>assets/image/37.jpg"
