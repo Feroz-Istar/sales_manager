@@ -121,9 +121,10 @@ function attachTaskRelatedData (){
     	closeCRM(dropdown_id);
     	closeChat(dropdown_id);
     	$(this).addClass('show');
-
+    	var new_height= $(this).parent().height()-18	;
     	 $.get( "../popover/notescontent.jsp", function( data ) {
     		 $( "."+dropdown_id ).html( data );
+    		 $( "."+dropdown_id ).height(new_height);
     	  	$('#'+dropdown_id).dropdown('show')	;
     	  	
     	  	$(".closenotes").click(function(){ closeNotes(dropdown_id); });
@@ -141,9 +142,10 @@ function attachTaskRelatedData (){
     	closeCRM(dropdown_id);
     	closeChat(dropdown_id);
 	  	 $(this).addClass('show');
-
+	  	var new_height= $(this).parent().height()-18	;
     	 $.get( "../popover/cuescontent.jsp", function( data ) {
     		 $( "."+dropdown_id ).html( data );
+    		 $( "."+dropdown_id ).height(new_height);
      	  	$('#'+dropdown_id).dropdown('show')	;
     	  	$(".closecues").click(function(){ closeCues(dropdown_id); });
 
@@ -159,9 +161,11 @@ function attachTaskRelatedData (){
     	closeCRM(dropdown_id);
     	closeChat(dropdown_id);
     	$(this).addClass('show');
+	  	var new_height= $(this).parent().height()-18	;
 
    	 $.get( "../popover/crmcontent.jsp", function( data ) {
    		 $( "."+dropdown_id ).html( data );
+		 $( "."+dropdown_id ).height(new_height);
   	  	$('#'+dropdown_id).dropdown('show');
 	  	$(".closecrm").click(function(){ closeCRM(dropdown_id); });
 
@@ -177,10 +181,12 @@ function attachTaskRelatedData (){
     	closeCRM(dropdown_id);
     	closeChat(dropdown_id);
 	  	 $(this).addClass('show');
-
+		 var new_height= $(this).parent().height()-18	;
   	 $.get( "../popover/chatcontent.jsp", function( data ) {
   		 $( "."+dropdown_id ).html( data );
    	  	$('#'+dropdown_id).dropdown('show');
+		 $( "."+dropdown_id ).height(new_height);
+
 	  	$(".closechat").click(function(){ closeChat(dropdown_id); });
 
   	  	});

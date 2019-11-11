@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+	<%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html lang="en" class="h-100">
 <html>
@@ -295,11 +295,11 @@
 													<div class="f-30 blue-black font-weight-bold">$ <span class="pastel-red">50K</span> </div>
 													<div class="f-12 brown-grey">Acheived Value </div>
 												</div>
-												<div class="col-md-2 p-0">
+												<div class="col-md-3 p-0">
 													<div class="f-30 blue-black font-weight-bold">25%</div>
 													<div class="f-12 brown-grey">Win Rate</div>
 												</div>
-												<div class="col-md-2 p-0">
+												<div class="col-md-3 p-0">
 													<div class="f-30 blue-black font-weight-bold">52% </div>
 													<div class="f-12 brown-grey">Tentative </div>
 												</div>
@@ -338,21 +338,23 @@
 												<div class="col-md-6 p-0">
 													<div class="font-weight-bold f-12 brownish-grey d-flex mb-10">Strong <i class="fal fa-info-circle f-16 soft-blue align-self-center ml-1"></i></div>
 													<div class="strong-signal w-100 d-flex flex-wrap">
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
+														<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/objection_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/lead_qualification.svg" class="pr-2 pb-2">
 													</div>
 												</div>
 												<div class="col-md-6 p-0">
 													<div class="font-weight-bold f-12 brownish-grey d-flex mb-10">Weak <i class="fal fa-info-circle f-16 soft-blue align-self-center ml-1"></i></div>
 													<div class="strong-signal w-100 d-flex flex-wrap">
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
+														<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/objection_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/lead_qualification.svg" class="pr-2 pb-2">
 													</div>
 												</div>
 											</div>
