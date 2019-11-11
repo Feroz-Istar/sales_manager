@@ -103,7 +103,7 @@
 							</div>
 							<button type="button"
 								class="btn btn-block big_button rounded-0 font-weight-bold f-12 mt-30"
-								id="completed_call_reply_submit">Submit</button>
+								id="completed_call_reply_submit"  data-toggle="modal" data-target="#shareTaskModal">Submit</button>
 
 						</div>
 					</div>
@@ -246,8 +246,7 @@
 									class="carousel slide theme_solid_border_bottom "
 									data-ride="carousel">
 									<ol class="carousel-indicators m-0 pb-20">
-										<li data-target="#carouselExampleIndicators" data-slide-to="0"
-											class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 									</ol>
@@ -419,6 +418,8 @@
 
 		$('#completed_call_reply_submit').click(function(){
 			$('#completed_call_reply').dropdown('hide');
+			$('#shareTaskModal').modal('show');
+
 		});
 	});
 </script>

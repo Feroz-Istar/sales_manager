@@ -357,8 +357,7 @@
 
 
 			<li class="notesdropdown list-group-item p-0 py-3">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+				<div class=" d-flex flex-column justify-content-center align-items-center minh-50 "
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 					<div class="f-12 pt-1 greyish-brown">Notes</div>
@@ -366,8 +365,7 @@
 				</div>
 			</li>
 			<li class=" cuesdropdown list-group-item p-0 py-3">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
+				<div class=" d-flex flex-column justify-content-center align-items-center minh-50"
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 					<div class="f-12 pt-1 greyish-brown">Cues</div>
@@ -375,8 +373,7 @@
 				</div>
 			</li>
 			<li class="crmdropdown list-group-item p-0 py-3">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
+				<div class=" d-flex flex-column justify-content-center align-items-center minh-50"
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 					<div class="f-12 pt-1 greyish-brown">CRM</div>
@@ -384,8 +381,7 @@
 				</div>
 			</li>
 			<li class="chatdropdown list-group-item  p-0 py-3 ">
-				<div
-					class="  d-flex flex-column justify-content-center align-items-center minh-50"
+				<div class="  d-flex flex-column justify-content-center align-items-center minh-50"
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/chat.svg"
 						alt="presentation" />
@@ -395,8 +391,7 @@
 			</li>
 
 
-			<li
-				class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
+			<li class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
 				style="height: calc(100% - 80px);"></li>
 
 
@@ -414,6 +409,7 @@
 	});
 	$('#completed_webinar_reply_submit').click(function(){
 		$('#completed_webinar_reply').dropdown('hide');
+		$('#shareTaskModal').modal('show');
 	});
 </script>
 

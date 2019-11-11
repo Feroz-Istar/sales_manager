@@ -348,5 +348,6 @@
 
 	$('#completed_email_reply_submit').click(function(){
 		$('#completed_email_reply').dropdown('hide');
+		$('#shareTaskModal').modal('show');
 	});
 </script>

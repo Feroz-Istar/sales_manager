@@ -58,6 +58,7 @@ $( document ).ready(function() {
 	    
 	    if(iscompanynamevalid){
 	    	$('#editLeadModalCenter').modal('hide');
+	    	$('#updateConfirmation').modal('show');
 	    }
 	});	
 	

@@ -981,7 +981,7 @@
 			      </div>
 			      <div class="modal-footer border-0 p-0 pl-30 pr-30 pb-30">
 					<button type="button" class="btn theme_color f-14 font-weight-bold" data-dismiss="modal">Cancel</button>
-					<button type="button" class="btn big_button f-14 font-weight-bold"
+					<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold"
 						 id="leave-task"  data-dismiss="modal">DELETE</button>
 				</div>
 			     </div>

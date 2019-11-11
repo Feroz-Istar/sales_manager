@@ -378,7 +378,7 @@
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40 ">
 								<div class="input-group date custom-calendar mr-10">
-									<input type="text" id="lead_qualified_datepicker"
+									<input type="text" id="lead_qualified_datepicker" placeholder="Calendar"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1"
 										onclick="showqualifiedCalendar()">
@@ -690,7 +690,7 @@
 							</div>
 							<div class="col-md-10 col-xl-9 d-md-flex justify-content-end p-0  mt-10 mb-10 pr-40">
 								<div class="input-group date custom-calendar mr-10">
-									<input type="text" id="lead_lost_datepicker"
+									<input type="text" id="lead_lost_datepicker" placeholder="Calendar"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1" onclick="showlostCalendar()">
 										<img src="<%=baseURL%>/assets/image/calendar.svg">
@@ -749,7 +749,7 @@
 											 Stage 1
 										</button>
 										<button class="dropdown-item" type="button">
-											stage 2
+											Stage 2
 										</button>
 									</div>
 								</div>
@@ -1017,7 +1017,7 @@
 							</div>
 							<div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 								<div class="input-group date custom-calendar mr-10">
-									<input type="text" id="lead_won_datepicker"
+									<input type="text" id="lead_won_datepicker" placeholder="Calendar"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1" onclick="showwonCalendar()">
 										<img src="<%=baseURL%>/assets/image/calendar.svg"/>
@@ -1075,7 +1075,7 @@
 											 Stage 1
 										</button>
 										<button class="dropdown-item" type="button">
-											stage 2
+											Stage 2
 										</button>
 									</div>
 								</div>
@@ -1668,35 +1668,63 @@
 	<!-- end of edit lead modal -->
 	
 	<!-- start of delete modal -->
-			<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true">
-			  <div class="modal-dialog modal-dialog-centered modal-lg	" role="document">
-			    <div class="modal-content  rounded-0">
-			    <div class="row justify-content-end m-0 pt-25 pr-25">
-					<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
-						<img src="<%=baseURL%>assets/image/close.svg" alt="close" class="float-right">
-					</button>
-				</div>
-			       <div class="modal-body">
-			       		<div class="row m-0 pl-30 pr-30 align-items-center">
-			       			<div class="col-md-4 p-0 border-right-dashed-separation pb-15 pt-15 ">
-			       				<img src="<%=baseURL%>assets/image/delete-img.svg">
-			       			</div>
-			       			<div class="col-md-8 p-0 pl-30">
-			       				<div class="fw-500 f-20 black">You wanna really delete it ?</div>
-			       				<div class="f-16 brownish-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare eget velit at porttitor</div>
-			       			</div>
-			       		</div>
-			       		
-			      </div>
-			      <div class="modal-footer border-0 p-0 pl-30 pr-30 pb-30">
-					<button type="button" class="btn theme_color f-14 font-weight-bold" data-dismiss="modal">Cancel</button>
-					<button type="button" class="btn big_button f-14 font-weight-bold"
-						 id="leave-task"  data-dismiss="modal">DELETE</button>
-				</div>
-			     </div>
-			  </div>
-			</div>
-			<!-- end of delete modal -->
+	<div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg	" role="document">
+	    <div class="modal-content  rounded-0">
+	    <div class="row justify-content-end m-0 pt-25 pr-25">
+			<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+				<img src="<%=baseURL%>assets/image/close.svg" alt="close" class="float-right">
+			</button>
+		</div>
+	       <div class="modal-body">
+	       		<div class="row m-0 pl-30 pr-30 align-items-center">
+	       			<div class="col-md-4 p-0 border-right-dashed-separation pb-15 pt-15 ">
+	       				<img src="<%=baseURL%>assets/image/delete-img.svg">
+	       			</div>
+	       			<div class="col-md-8 p-0 pl-30">
+	       				<div class="fw-500 f-20 black">You wanna really delete it ?</div>
+	       				<div class="f-16 brownish-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare eget velit at porttitor</div>
+	       			</div>
+	       		</div>
+	       		
+	      </div>
+	      <div class="modal-footer border-0 p-0 pl-30 pr-30 pb-30">
+			<button type="button" class="btn theme_color f-14 font-weight-bold" data-dismiss="modal">Cancel</button>
+			<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold"
+				 id="leave-task"  data-dismiss="modal">DELETE</button>
+		</div>
+	     </div>
+	  </div>
+	</div>
+	<!-- end of delete modal -->
+
+		
+	<!-- start of leave task modal -->
+	<div class="modal fade" id="updateConfirmation" tabindex="-1" role="dialog" aria-labelledby="updateConfirmationTitle" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered modal-lg	" role="document">
+	    <div class="modal-content  rounded-0">
+	    <div class="row justify-content-end m-0 pt-25 pr-25">
+			<button type="button" class="col-md-1 col-1 close" data-dismiss="modal" aria-label="Close">
+				<img src="<%=baseURL%>assets/image/close.svg" alt="close" class="float-right">
+			</button>
+		</div>
+	       <div class="modal-body">
+	       		<div class="row m-0 pl-30 pr-30 align-items-center pb-50">
+	       			<div class="col-md-4 p-0 border-right-dashed-separation pb-15 pt-15 ">
+	       				<img src="<%=baseURL%>assets/image/confirm-img.svg">
+	       			</div>
+	       			<div class="col-md-8 p-0 pl-30">
+	       				<div class="fw-500 f-20 black">Congratulations !</div>
+	       				<div class="f-16 brownish-grey">Your information has been updated successfully.</div>
+	       			</div>
+	       		</div>
+	       		
+	      </div>
+	     
+	     </div>
+	  </div>
+	</div>
+	<!-- end of leave task modal -->
 
 	</div>
 	</main>
