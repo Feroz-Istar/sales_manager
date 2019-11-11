@@ -58,10 +58,8 @@
 			<div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0">
 				<div class="input-group position-relative search_width ">
 				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
-					<input id=""
-						class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
-						type="search" placeholder="Search"
-						style="padding-right:30px">
+					<input id="" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+						type="search" placeholder="Search" style="padding-right:30px">
 				</div>
 				<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold ml-10" data-toggle="modal"
 					data-target="#addLeadModalCenter">UPLOAD NEW</button>
@@ -75,15 +73,14 @@
 					<li class="nav-item"><a class="nav-item nav-link active" id="nav-target-tab"
 							data-toggle="tab" href="#nav-target" role="tab"
 							aria-controls="nav-target" aria-selected="true">Target</a></li>
-					<li class="nav-item"><a
-							class="nav-item nav-link" id="nav-qualified-tab"
+					<li class="nav-item"><a class="nav-item nav-link" id="nav-qualified-tab"
 							data-toggle="tab" href="#nav-qualified" role="tab"
 							aria-controls="nav-qualified" aria-selected="false">Qualified</a></li>
-					<li class="nav-item"><a class="nav-item nav-link" id="nav-lost-tab" data-toggle="tab"
-							href="#nav-lost" role="tab" aria-controls="nav-lost"
+					<li class="nav-item"><a class="nav-item nav-link" id="nav-lost-tab" 
+							data-toggle="tab" href="#nav-lost" role="tab" aria-controls="nav-lost"
 							aria-selected="false">Lost Leads</a></li>
-						<li class="nav-item"><a class="nav-item nav-link"
-							id="nav-win-tab" data-toggle="tab" href="#nav-win" role="tab"
+					<li class="nav-item"><a class="nav-item nav-link" id="nav-win-tab" 
+							data-toggle="tab" href="#nav-win" role="tab"
 							aria-controls="nav-win" aria-selected="false">Won Leads</a></li>
 				</ul>
 				<div class="tab-content p-0 mytab-content" id="nav-tabContent">

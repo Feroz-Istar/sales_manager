@@ -129,86 +129,86 @@
 
 
 				<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
-										id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
-										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-												class=" float-right">
-										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="pipeline_dropdown" style="width: 350px">
-													
-												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="pipelineTab" role="tablist">
-												  <li class="nav-item">
-												    <a class="nav-link active" id="pipeline_individual-tab" data-toggle="tab" href="#pipeline_individual" role="tab" aria-controls="pipeline_individual" aria-selected="true">Individual</a>
-												  </li>
-												  <li class="nav-item">
-												    <a class="nav-link" id="pipeline_team-tab" data-toggle="tab" href="#pipeline_team" role="tab" aria-controls="pipeline_team" aria-selected="false">Team</a>
-												  </li>
-												 
-												</ul>
-												<div class="tab-content" id="pipelineTabContent">
-												  <div class="tab-pane fade show active px-4 py-3" id="pipeline_individual" role="tabpanel" aria-labelledby="pipeline_individual-tab">
-												  		<div class="input-group py-2">
-															<input id="pipeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
-															<div class="input-group-append">
-																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
-																	<i class="fa fa-search f-12 brown-grey"></i>
-																</button>
-															</div>
-														</div>
-														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
-														
-														<%for(int i=0; i<20;i++){ %>
-					                                    <div class="d-flex align-items-center pt-3">
-					                                    
-					                                    
-									<input class="istar-checkbox pipelineagentcheckbox" data-id="<%=i %>" id="pipeline_associate-checkbox<%=i %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="pipeline_associate-checkbox<%=i %>"></label>
-											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-										  <div>
-					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-					                                        </div>
+					<button class="istar-dropdown-arrow "
+					id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false">
+					<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+							class=" float-right">
+					</button>
+					<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
+					aria-labelledby="pipeline_dropdown" style="width: 350px">
+								
+							<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="pipelineTab" role="tablist">
+							  <li class="nav-item">
+							    <a class="nav-link active" id="pipeline_individual-tab" data-toggle="tab" href="#pipeline_individual" role="tab" aria-controls="pipeline_individual" aria-selected="true">Individual</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" id="pipeline_team-tab" data-toggle="tab" href="#pipeline_team" role="tab" aria-controls="pipeline_team" aria-selected="false">Team</a>
+							  </li>
+							 
+							</ul>
+							<div class="tab-content" id="pipelineTabContent">
+							  <div class="tab-pane fade show active px-4 py-3" id="pipeline_individual" role="tabpanel" aria-labelledby="pipeline_individual-tab">
+							  		<div class="input-group py-2">
+										<input id="pipeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+										<div class="input-group-append">
+											<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+												<i class="fa fa-search f-12 brown-grey"></i>
+											</button>
 										</div>
-										<%} %>
-					                                    </div>
-					                                    
-					                                     		
-					                                 </div>
-					                                			                                 
-												  <div class="tab-pane fade px-4 py-3" id="pipeline_team" role="tabpanel" aria-labelledby="pipeline_team-tab">
-												  		
-												  		<div class="input-group py-2">
-															<input id="pipeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
-															<div class="input-group-append">
-																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
-																	<i class="fa fa-search f-12 brown-grey"></i>
-																</button>
-															</div>
-														</div>
-														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
-														<%for(int j=0; j<20;j++){ %>
-														<div class="d-flex align-items-center pt-3">
-					                                        <input class="istar-checkbox pipelineteamcheckbox" data-id="<%=j %>" id="pipeline_team-checkbox<%=j %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="pipeline_team-checkbox<%=j%>"></label>
-					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
-					                                    </div>
-					                                    <%} %>
-					                                    </div>
-					                                    
-					                                     	
-												  		
-												  </div>
-												</div>
-												 <div class="w-100 text-center">
-												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="pipeline_team_submit">Submit</button>
-												</div>
-										  </div>
-										
-									</div> 	
+									</div>
+									
+									<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+									
+									<%for(int i=0; i<20;i++){ %>
+                                    <div class="d-flex align-items-center pt-3">
+                                    
+                                    
+				<input class="istar-checkbox pipelineagentcheckbox" data-id="<%=i %>" id="pipeline_associate-checkbox<%=i %>" type="checkbox">
+                                        <label class="istar-checkbox-style" for="pipeline_associate-checkbox<%=i %>"></label>
+						<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+					  <div>
+                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
+                                        </div>
+					</div>
+					<%} %>
+                                    </div>
+                                    
+                                     		
+                                 </div>
+                                			                                 
+							  <div class="tab-pane fade px-4 py-3" id="pipeline_team" role="tabpanel" aria-labelledby="pipeline_team-tab">
+							  		
+							  		<div class="input-group py-2">
+										<input id="pipeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+										<div class="input-group-append">
+											<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+												<i class="fa fa-search f-12 brown-grey"></i>
+											</button>
+										</div>
+									</div>
+									
+									<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+									<%for(int j=0; j<20;j++){ %>
+									<div class="d-flex align-items-center pt-3">
+                                        <input class="istar-checkbox pipelineteamcheckbox" data-id="<%=j %>" id="pipeline_team-checkbox<%=j %>" type="checkbox">
+                                        <label class="istar-checkbox-style" for="pipeline_team-checkbox<%=j%>"></label>
+                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+                                    </div>
+                                    <%} %>
+                                    </div>
+                                    
+                                     	
+							  		
+							  </div>
+							</div>
+							 <div class="w-100 text-center">
+							 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="pipeline_team_submit">Submit</button>
+							</div>
+					  </div>
+					
+				</div> 	
 
 			</div>
 		</div>
@@ -446,15 +446,14 @@
 													<img src="<%=baseURL%>assets/image/lost.svg" alt="lost"
 														srcset="" class="mr-2">Lose
 												</button>
-												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-														srcset="" class="mr-2" height="20" width="24">Edit
+												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#changeStageModal">
+													<img src="<%=baseURL%>assets/image/stats.svg" alt="edit"
+														srcset="" class="mr-2" height="20" width="24">Change Stage
 												</button>
 
-												<button class="dropdown-item"
-													onclick="window.location.href = 'task_lead_detail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png"
-														alt="details" srcset="" class="mr-2">Details
+												<button class="dropdown-item"  data-toggle="modal" data-target="#assignOwnerModal">
+													<img src="<%=baseURL%>assets/image/people.svg" alt="details" 
+														srcset="" class="mr-2">Change Owner 
 												</button>
 											</div>
 										</div>
@@ -482,6 +481,143 @@
 				</div>
 			</div>
 		</div>
+
+	<!-- start of change stage modal -->
+		<div class="modal fade" id="changeStageModal" tabindex="-1"
+			role="dialog" aria-labelledby="changeStageModalTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered"
+				role="document">
+				<div class="modal-content rounded-0 ">
+					<div class="modal-header shadow-bottom pt-25 pb-25  pl-30 pr-30 ">
+						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Change Stage</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+								class="rounded-circle hw-24 task-icon">
+						</button>
+					</div>
+					<div class="modal-body p-0 pr-30 pl-30">
+						<div class="pt-40 greyish-brown font-weight-bold f-18 pb-10">TEK Consulting Inc.</div>
+						<div class="row m-0 pb-20 border_bottom_1_dashed">
+							<div class="col-md-4 border-right-dashed-separation p-0">
+								<div class="f-14 brownish-grey">Contact Person</div>
+								<div class="fw-500 f-16 black">Johnni Owens</div>
+							</div>
+							<div class="col-md-4 border-right-dashed-separation p-0 pl-15">
+								<div class="f-14 brownish-grey">Agent</div>
+								<div class="fw-500 f-16 black">Raul Woods</div>
+							</div>
+							<div class="col-md-4 p-0 pl-15">
+								<div class="f-14 brownish-grey">Current Stage</div>
+								<div class="fw-500 f-16 black">Stage 01</div>
+							</div>
+						</div>
+						
+						<div class="row m-0">
+							<div class="col-md-6 p-0">
+								<div class="fw-500 f-14 black pb-10 pt-20">Stage Type</div>
+								<div class="istar-dropdown">
+								<button class="custom-modal-input w-100 pl-2 d-flex h-35"
+									style="justify-content: space-between;" id="stageType"
+									data-toggle="dropdown" aria-haspopup="true"
+									aria-expanded="false">Select here <i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
+								</button>
+								<div
+									class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100"
+									 aria-labelledby="stageType">
+									<button class="dropdown-item" type="button">Stage Type 1</button>
+									<button class="dropdown-item" type="button">Stage Type 2</button>
+									<button class="dropdown-item" type="button">Stage Type 3</button>
+									<button class="dropdown-item" type="button">Stage Type 4</button>
+								</div>
+								</div>
+							</div>
+						</div>
+						<div class="row pb-40 pt-20 m-0">
+							<div class="col-md-12 p-0">
+								<div class="fw-500 f-14 black pb-10">Reason</div>
+								<textarea class="form-control custom-modal-textarea f-14 brown-grey w-100 p-2"
+									id="reasontochangestage" name="reasontochangestage" rows="6" placeholder="Type here"></textarea>
+							</div>
+						</div>
+							
+						
+					</div>
+					<div class="modal-footer p-0 pt-30 pb-30 pl-30	pr-30">
+						<button type="submit"
+							class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+						<button type="button"
+							class="btn big_button rounded-0 f-14 font-weight-bold m-0"
+							id="create">SUBMIT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of change stage modal -->
+		
+		
+		<!-- start of change owner modal -->
+		<div class="modal fade" id="assignOwnerModal" tabindex="-1" role="dialog" aria-labelledby="assignOwnerModalTitle"
+			aria-hidden="true">
+			<div class="modal-dialog modal-lg modal-dialog-centered"
+				role="document">
+				<div class="modal-content rounded-0 ">
+					<div class="modal-header shadow-bottom pt-25 pb-25  pl-30 pr-30 ">
+						<h5 class="modal-title greyish-brown f-18 font-weight-bold mb-0">Assign Owner</h5>
+						<button type="button" class="close" data-dismiss="modal"
+							aria-label="Close">
+							<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+								class="rounded-circle hw-24 task-icon">
+						</button>
+					</div>
+					<div class="modal-body p-0">
+						<div class="row m-0 align-items-center cream_white pt-10 pb-10 pr-30 pl-30">
+							<div class="col-md-6 text-result-found p-0">
+									<strong class="number-of-results ">504</strong> Results Found
+							</div>
+							<div class="col-md-6 d-lg-flex justify-content-md-end p-0">
+								<div class="input-group position-relative search_width ">
+								<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox">
+									<input id="" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+										type="search" placeholder="Search" style="padding-right:30px">
+								</div>
+							</div>
+						</div>
+						
+						<div style="height:360px; overflow-x: none; overflow-y:auto;">
+						<%for(int j=0; j<20;j++){ %>
+						<div class="d-flex align-items-center pt-10 pb-10 pr-30 pl-30 border-bottom-separation " >
+                             <input class="istar-checkbox" data-id="<%=j %>" id="owner-checkbox<%=j %>" type="checkbox">
+                             <label class="istar-checkbox-style" for="owner-checkbox<%=j%>"></label>
+                             <div class="d-flex w-100 m-0 align-items-center" >
+                             	<div class="col-md-4">
+                             		<div class="d-flex">
+                             			<img src="<%=baseURL%>assets/image/37.jpg" class="rounded-circle hw-40">
+                             			<div class="ml-2">
+                             				<div class="f-14 greyish-brown">Stanley Howard</div>
+                             				<div class="f-12 brown-grey">Associate</div>
+                             			</div>
+                             		</div>
+                             	</div>
+                             	<div class="col-md-4 f-14 greyish-brown">stanley@gmail.com</div>
+                             	<div class="col-md-4 f-14 greyish-brown">+91 445 546 6456</div>
+                             </div>
+                         </div>
+                         <%} %>
+						</div>
+					</div>
+					<div class="modal-footer p-0 pt-30 pb-30 pl-30	pr-30">
+						<button type="button"
+							class="btn theme_color f-14 font-weight-bold m-0 pr-20"  data-dismiss="modal">Reset All</button>
+						<button type="button"
+							class="btn big_button rounded-0 f-14 font-weight-bold m-0"  data-dismiss="modal"
+							id="submit">SUBMIT</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- end of change owner modal -->
 
 	</div>
 	</main>

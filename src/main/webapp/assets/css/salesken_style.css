@@ -421,11 +421,6 @@ html, body {
 	padding: 0 20px !important;
 }
 
-.task-dropdown-menu>.dropdown-item:hover {
-	background: #eeeeee !important;
-	color: #222222 !important;
-	font-weight: bold !important;
-}
 
 .task-dropdown-menu>.dropdown-item>.task-dropdown {
 	height: 25px !important;
