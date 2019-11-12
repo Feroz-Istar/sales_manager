@@ -147,7 +147,7 @@
 								
 	
 									
-									<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
+									<div class="istar-dropdown-task dropdown" id="filterbutton">
 					<button class="istar-dropdown-arrow " id="user_agent"  data-display="static"
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>All Agents <img
@@ -156,7 +156,7 @@
 					</button>
 					<div
 						class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4"
-						aria-labelledby="user_agent" style="width: 350px; margin-top: 0px !important;">
+						aria-labelledby="user_agent" style="width: 350px; ">
 
 						<ul
 							class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"

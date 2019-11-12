@@ -121,15 +121,15 @@
 
 								</div>
 									
-									<div class="istar-dropdown-task dropleft mt-10 mb-10" id="filterbutton">
+									<div class="istar-dropdown-task dropdown mt-10 mb-10" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="insight_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="insight_dropdown" style="width: 350px; margin-top: 0px !important;">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="insight_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="insightTab" role="tablist">
 												  <li class="nav-item">
@@ -293,27 +293,27 @@
 						</div>
 					
 					<div class="row shadow-bottom theme_dotted_border_bottom  pt-25 pb-25 m-0">
-							<div class="pl-40 pr-115 ">
+							<div class="pl-40 pr-90 ">
 								<div class="f-24 blue-black font-weight-bold">$ <span class="theme_color">5625</span> </div>
 								<div class="f-14 brown-grey ">Achieved Value</div>
 							</div>
-							<div class="pr-115">
+							<div class="pr-90">
 								<div class="f-24 blue-black font-weight-bold">$ 85625 </div>
 								<div class="f-14 brown-grey ">Pipeline Value </div>
 							</div>
-							<div class="pr-115">
+							<div class="pr-90">
 								<div class="f-24 blue-black font-weight-bold">85%</div>
 								<div class="f-14 brown-grey ">Confident</div>
 							</div>
-							<div class="pr-115 ">
+							<div class="pr-90 ">
 								<div class="f-24 blue-black font-weight-bold">28%</div>
 								<div class="f-14 brown-grey ">Utilisation</div>
 							</div>
-							<div class="pr-115">
+							<div class="pr-90">
 								<div class="f-24 blue-black font-weight-bold">78%</div>
 								<div class="f-14 brown-grey ">Talk Ratio</div>
 							</div>
-							<div class="pr-115">
+							<div class="pr-90">
 								<div class="f-24 blue-black font-weight-bold">689</div>
 								<div class="f-14 brown-grey ">Won Leads</div>
 							</div>
@@ -330,7 +330,7 @@
 							<div class="card mb-20 mr-40 ml-40 cursor-pointer"  onclick="window.location.href = 'customerUser.jsp'">
 								<div class="card-body p-0">
 									<div class="row m-0  pt-30 pb-30">
-										<div class="col-md-3 border-right-dashed-separation p-0 pl-30 pr-30">
+										<div class="col-md-3 border-right-dashed-separation-2px p-0 pl-30 pr-30">
 											<div class="font-weight-bold f-18 black">Team South</div>
 											<div class="f-14 brown-grey mb-20">25 Users</div>
 											
@@ -350,8 +350,8 @@
 											</div>
 											
 										</div>
-										<div class="col-md-3 border-right-dashed-separation p-0 pl-30 pr-30	">
-											<div class="fw-500 f-18 black mb-10">Activity Stats</div>
+										<div class="col-md-3 border-right-dashed-separation-2px p-0 pl-30 pr-30	">
+											<div class="fw-500 f-16 black mb-10">Activity Stats</div>
 											<div class="row m-0">
 												<div class="col-md-3 p-0">
 													<div class="f-30 black font-weight-bold">25%</div>
@@ -381,26 +381,28 @@
 											
 										</div>
 										<div class="col-md-6 p-0 pl-30 pr-30">
-											<div class="fw-500 f-18 black mb-15">Playbook Stats</div>
+											<div class="fw-500 f-16 black mb-15">Playbook Stats</div>
 											<div class="row m-0">
 												<div class="col-md-6 p-0">
 													<div class="font-weight-bold f-12 brownish-grey d-flex mb-10">Strong <i class="fal fa-info-circle f-16 soft-blue align-self-center ml-1"></i></div>
 													<div class="strong-signal w-100 d-flex flex-wrap">
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
+														<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/objection_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/lead_qualification.svg" class="pr-2 pb-2">
 													</div>
 												</div>
 												<div class="col-md-6 p-0">
 													<div class="font-weight-bold f-12 brownish-grey d-flex mb-10">Weak <i class="fal fa-info-circle f-16 soft-blue align-self-center ml-1"></i></div>
 													<div class="strong-signal w-100 d-flex flex-wrap">
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
-														<button type="button" class="btn  rounded-0 f-12 mr-1 mb-1 font-weight-bold report-signal-bg">Introduction</button>
+														<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/objection_signal.svg" class="pr-2 pb-2">
+														<img src="<%=baseURL %>assets/image/lead_qualification.svg" class="pr-2 pb-2">
 													</div>
 												</div>
 											</div>
@@ -559,15 +561,15 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="overallAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="overallAnalysis_dropdown" style="width: 350px; margin-top: 0px !important;">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="overallAnalysis_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="overallAnalysisTab" role="tablist">
 												  <li class="nav-item">
@@ -786,15 +788,15 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="comparativeAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="comparativeAnalysis_dropdown" style="width: 350px; margin-top: 0px !important;">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="comparativeAnalysis_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="comparativeAnalysisTab" role="tablist">
 												  <li class="nav-item">

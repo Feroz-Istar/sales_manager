@@ -54,7 +54,7 @@
 			<div class="card-body p-0">
 				<div class="row m-0 justify-content-between bg-white pt-15 pb-15 theme_solid_border_bottom">
 					<div class="col-md-6 d-flex align-items-center p-0 pl-40">
-						<img src="<%=baseURL %>/assets/image/report-no-followup.svg" height="60" width="70" class="border-right-red mr-2">
+						<img src="<%=baseURL %>/assets/image/report-no-followup.svg" height="60" width="100" class="border-right-red mr-25 pr-25	 ">
 						<div class="greyish-brown f-16 fw-500">No Follow - Ups</div>
 					</div>
 					
@@ -200,7 +200,7 @@
 
 
 
-										<div class="row align-items-center m-0 p-20">
+										<div class="row align-items-center m-0 p-20 minh-100">
 											<div class="col-md-2 p-0">
 												<div class="d-flex flex-row align-items-center">
 													<img src="<%=baseURL%>assets/image/calltask.svg"
@@ -214,10 +214,7 @@
 												<p class="soft-blue f-12 font-weight-bold m-0">Confident</p>
 												<h1 class="black f-16 fw-500 m-0 text-truncate"
 													title="Robert Wolken">Marry Vasquez</h1>
-												<p class="brown-grey f-12 d-flex align-items-center m-0">
-													<i class="tangerine fas fa-circle m-1"
-														style="font-size: 8px;"></i>Ongoing
-												</p>
+											
 												<p class="brown-grey f-12 m-0">June 26, 2019</p>
 											</div>
 

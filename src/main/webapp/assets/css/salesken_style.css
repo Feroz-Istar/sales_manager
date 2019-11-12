@@ -935,7 +935,7 @@ Modifying the scroll bar across the whole application
 	border-right: 1px dotted #cccccc;
 }
 
-.border-right-dashed-separation {
+.border-right-dashed-separation-2px {
 	border-right: 2px dashed #cccccc;
 }
 
@@ -1629,7 +1629,9 @@ border: 1px solid #ebebeb !important;
 .pb-100 {
 	padding-bottom: 100px !important;
 }
-
+.pr-90 {
+	padding-right: 90px !important;
+}
 .pr-115 {
 	padding-right: 115px !important;
 }
@@ -2617,9 +2619,9 @@ border-color: rgba(194, 225, 245, 0);
 
 
 .dropdown .dropdown-menu,.istar-dropdown-task  .dropdown-menu{
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
+  -webkit-transition: all .1s linear;
+  -o-transition: all .1s linear;
+  transition: all .1s linear;
   display: block !important;
   transform: scale(0);
 }
@@ -2629,3 +2631,6 @@ border-color: rgba(194, 225, 245, 0);
 
 
 
+.navbar-light .navbar-nav .nav-link:hover{
+	color:#ed4d67 !important;
+}

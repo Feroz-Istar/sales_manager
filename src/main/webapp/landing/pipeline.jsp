@@ -128,15 +128,15 @@
 				</div>
 
 
-				<div class="istar-dropdown-task dropleft" id="filterbutton">
+				<div class="istar-dropdown-task dropdown" id="filterbutton">
 					<button class="istar-dropdown-arrow " data-display="static"
 					id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">
 					<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 							class=" float-right">
 					</button>
-					<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-					aria-labelledby="pipeline_dropdown" style="width: 350px; margin-top: 0px !important;">
+					<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+					aria-labelledby="pipeline_dropdown" style="width: 350px;">
 								
 							<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="pipelineTab" role="tablist">
 							  <li class="nav-item">

@@ -108,7 +108,7 @@
 						</div>
 					</div>
 					<div
-						class="f-14 font-weight-bold theme_color cursor-pointer align-self-center"
+						class="f-14 font-weight-bold dark_theme_color cursor-pointer align-self-center"
 						onclick="window.location.href = 'task_lead_detail.jsp'">
 						View More <i class="fas fa-chevron-circle-right ml-1 "></i>
 					</div>
@@ -142,7 +142,7 @@
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
 			<div class="col p-0">
 				<ul
-					class="nav nav-tabs nav-mytabs p-0 pt-20 d-flex align-items-end"
+					class="nav nav-tabs nav-mytabs p-0 d-flex align-items-end"
 					id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="whatsright-tab" data-toggle="tab" href="#whatsright"
@@ -183,14 +183,14 @@
 
 				</div>
 				<button class="btn p-0 ml-40">
-					<i class="fas fa-backward"></i>
+					<i class="fas fa-backward dark_gray"></i>
 				</button>
-				<button class="btn hw-64 shadow rounded-circle p-0	ml-25 mr-25 ">
-					<i class="fas fa-play"></i>
+				<button class="btn hw-64 border rounded-circle p-0	ml-25 mr-25 ">
+					<i class="fas fa-play dark_gray"></i>
 				</button>
 
 				<button class="btn p-0 mr-40">
-					<i class="fas fa-forward"></i>
+					<i class="fas fa-forward dark_gray"></i>
 				</button>
 				<div class="d-flex flex-row align-items-center">
 					<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
@@ -246,7 +246,7 @@
 					</div>
 					<div class="col-md-8 p-0">
 
-						<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
+						<div class="row m-0 p-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"
 									class="carousel slide theme_solid_border_bottom "
@@ -309,7 +309,7 @@
 											Vargas
 										</p>
 										<div class="card shadow "
-											style="border-radius: 0px 20px 20px 20px">
+											style="border-radius: 0px 20px 20px 20px;  box-shadow: 0 .5rem 1rem #eee !important;">
 											<div class="card-body">
 												<p class="card-text f-14 blue-black m-0">Some quick
 													example text to build on the card title and make up the
@@ -324,7 +324,7 @@
 											<small class="f-12 brown-grey  pr-20  ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card shadow align-self-end very-light-pink-bg"
+										<div class="card  align-self-end very-light-pink-bg"
 											style="border-radius: 20px 0px 20px 20px">
 											<div class="card-body">
 												<p class="card-text blue-black f-14 mb-0">Some quick

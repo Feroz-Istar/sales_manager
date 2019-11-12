@@ -14,14 +14,14 @@
 	</a>
 	<div class="d-flex flex-row order-2 order-lg-3">
 		<ul class="navbar-nav flex-row align-items-center">
-			<li class="nav-item dropdown mr-2 "><a class="nav-link p-0"
+			<li class="nav-item istar-dropdown-task mr-2 border-0"><a class="nav-link p-0"
 				data-display="static" aria-haspopup="true" aria-expanded="false"
 				id="navbarDropdownMenuLink" data-toggle="dropdown"> <img
 					class="linkicon" src="<%=baseURL%>assets/image/notification_active.svg" />
 			</a>
 				<div class="dropdown-menu dropdown-menu-lg-right position-absolute istar-dropdown-task-menu"
 					role="menu" aria-labelledby="imageDropdown"  data-display="static"
-					style="border: none !important; padding: 0px ">
+					style="border: none !important; padding: 0px; margin-top: 26px !important;	 ">
 					<div class="card" style="width: 300px;;">
 
 						<div class="card-body py-0">
@@ -48,7 +48,7 @@
 
 					</div>
 				</div></li>
-			<li class="nav-item dropdown mr-4">
+			<li class="nav-item istar-dropdown-task border-0 mr-4" style="line-height: 1 !important;">
 
 				<div class="d-flex flex-row align-items-center nav-link p-0 dropdown-toggle"
 					id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
@@ -69,40 +69,40 @@
 					</div>
 					
 				</div>
-				<div class="dropdown-menu dropdown-menu-lg-right position-absolute border-0 p-0"
-					aria-labelledby="dropdownMenuButton">
+				<div class="dropdown-menu dropdown-menu-lg-right position-absolute border-0 p-0 istar-dropdown-task-menu"
+					aria-labelledby="dropdownMenuButton" style="margin-top:15px !important; min-width: 200px !important;">
 
 
-					<ul class="list-group istar-dropdown-task-menu profile_dropdown w-100 p-0">
-						<li class="list-group-item border-0 cursor-pointer" style="pointer-event: none;">
+					
+						<button class="list-group-item border-0 cursor-pointer" style="pointer-event: none;">
 							<div class="d-flex flex-row align-items-center">
 								<img
 									src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg" alt="profile_img"
 									class="rounded-circle align-self-center mr-2"
 									style="height: 35px; width: 35px;" />
 								<div class="d-flex flex-column">
-									<div class="f-14 font-weight-bold text-truncate-1">Wade walker</div>
+									<div class="f-14 font-weight-bold text-truncate-1 text-left">Wade walker</div>
 									<div class="f-12 text-truncate-1">wade@gmail.com</div>
 
 								</div>
 							</div>
-						</li>
-						<li
+						</button>
+						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item">
 							<img src="<%=baseURL%>assets/image/person.svg" alt="switch" class="pr-3" />
 							<div>Switch to Manager</div>
-						</li>
-						<li
+						</button>
+						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item">
 							<img src="<%=baseURL%>assets/image/setting.svg" alt="setting" class="pr-3" />
 							<div>My Account</div>
-						</li>
-						<li
+						</button>
+						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer signout dropdown-item">
 							<img src="<%=baseURL%>assets/image/signout.svg" alt="signout" class="pr-3" />
 							<div>Sign Out</div>
-						</li>
-					</ul>
+						</button>
+					
 				</div>
 
 			</li>

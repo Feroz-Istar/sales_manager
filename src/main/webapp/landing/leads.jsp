@@ -142,7 +142,7 @@
 									</div>
 
 								</div>
-											<div class="istar-dropdown-task dropleft" id="filterbutton">
+											<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -150,8 +150,8 @@
 												class=" float-right">
 										</button>
 										
-										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="target_dropdown" style="width: 350px; margin-top: 0px !important;">
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="target_dropdown" style="width: 350px;">
 												
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="targetTab" role="tablist">
 												  <li class="nav-item">
@@ -441,15 +441,15 @@
 									</div>
 								</div>
 
-									<div class="istar-dropdown-task dropleft " id="filterbutton">
+									<div class="istar-dropdown-task dropdown " id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="qualified_dropdown" style="width: 350px; margin-top: 0px !important;">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="qualified_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="qualifiedTab" role="tablist">
 												  <li class="nav-item">
@@ -771,15 +771,15 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="lost_dropdown" style="width: 350px; margin-top: 0px !important;">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="lost_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="lostTab" role="tablist">
 												  <li class="nav-item">
@@ -1097,15 +1097,15 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropleft" id="filterbutton">
+								<div class="istar-dropdown-task dropdown" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="won_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
-										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="won_dropdown" style="width: 350px; margin-top: 0px !important;">
+										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="won_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="wonTab" role="tablist">
 												  <li class="nav-item">
