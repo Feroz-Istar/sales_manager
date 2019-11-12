@@ -322,7 +322,7 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right">
-										<div class="istar-dropdown dropleft d-inline">
+										<div class="dropdown dropleft d-inline">
 											<button class="dropdown-icon-btn text-right p-0 " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -628,7 +628,7 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right">
-										<div class="istar-dropdown dropleft d-inline">
+										<div class="dropdown dropleft d-inline">
 											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -960,7 +960,7 @@
 										</div>
 									</div>
 									<div class="col-md-1  p-0 text-right">
-										<div class="istar-dropdown dropleft d-inline">
+										<div class="dropdown dropleft d-inline">
 											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
@@ -1287,7 +1287,7 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right">
-										<div class="istar-dropdown d-inline dropleft">
+										<div class="dropdown d-inline dropleft">
 											<button class="dropdown-icon-btn p-0 text-right " type="button"
 												id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"

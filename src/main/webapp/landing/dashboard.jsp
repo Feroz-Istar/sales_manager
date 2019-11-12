@@ -1,4 +1,4 @@
-<%@page import="java.text.SimpleDateFormat"%>
+	<%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -157,21 +157,19 @@
 						<div class="task-item-container bg-white  pl-20 pt-20 pr-20 pb-40">
 
 							<div class="d-flex flex-row align-items-center  istar-dropdown pb-10">
-								<div class="bblack f-18 fw-500 pb-5 pr-15">To-Do List</div>
+								<div class="bblack f-18 fw-500 pb-5">To-Do List</div>
 
 								<div class="istar-dropdown-task border-0">
 								
-										<button class="btn rounded-circle d-flex justify-content-center align-items-center p-0"
+										<button class="btn rounded-circle bg-white shadow hw-30 d-flex justify-content-center align-items-center ml-20 mr-10 theme_color todo-btn"
 											id="todolist" data-toggle="dropdown" data-display="static"
 										aria-haspopup="true" aria-expanded="false">
-
-											<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
-												srcset="" class="">
+												<i class="fas fa-plus "></i>
 										</button>
 									
 									<div
-										class="dropdown-menu istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-left"
-										style="min-width: 150px; max-width: 150px;"
+										class="dropdown-menu istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-right"
+										style="min-width: 150px !important; max-width: 150px !important;"
 										aria-labelledby="todolist">
 										<button class="dropdown-item  f-14 fw-500" type="button"
 											id="create_event" onclick="scheduleEvent()">Create
