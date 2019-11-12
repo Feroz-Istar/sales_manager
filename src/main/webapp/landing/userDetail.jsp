@@ -209,25 +209,23 @@
 									<div class="nav-link <%=isactive%> border-bottom-separation p-0" id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true" data-task_type="<%=tasktype%>">
-										<div class="row align-items-center minh-100 m-0 pl-20 pr-20">
-											<div class="col-md-10 p-0">
-												<div class="d-flex flex-row pt-20 ">
-													<div
-														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$ 500</div>
-													<div
-														class="pl-2 f-12 align-self-center signal-analytical font-weight-bold">Analytical</div>
-												</div>
-												<div class="f-16  fw-500 black text-truncate" title="Globex
-													Corporation Inc.">Globex
-													Corporation Inc.</div>
-												<div class="f-12 brown-grey pb-10">June 28, 2019</div>
-											</div>
+										<div class="row align-items-center m-0 p-20">
 											<div class="col-md-2 p-0">
-												<div class="d-flex flex-row align-items-center justify-content-end">
-													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
-														class="rounded-circle hw-30" /> 
+												<div class="d-flex flex-row align-items-center">
+													<img src="<%=baseURL%>assets/image/calltask.svg"
+														alt="callicon" class="rounded-circle hw-30 task-icon">
+													<img src="<%=baseURL%>assets/image/37.jpg"
+														title="Agent Name" alt="user-img"
+														class="rounded-circle hw-40 task-image">
 												</div>
 											</div>
+											<div class="col-md-10 pl-15 p-0">
+												<p class="soft-blue f-12 font-weight-bold m-0">Confident</p>
+												<h1 class="black f-16 fw-500 m-0 text-truncate"
+													title="Robert Wolken">Marry Vasquez</h1>
+												<p class="brown-grey f-12 m-0">June 26, 2019</p>
+											</div>
+
 										</div>
 									</div>
 

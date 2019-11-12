@@ -7,8 +7,8 @@
 <div style="min-width: 500px;min-height:1000px		">
 	<div class="row justify-content-between m-0 ml-30 mr-30 pt-20 pb-20 theme_solid_border_bottom_2px">
 	  <div class="col-md-10 p-0 greyish-brown font-weight-bold f-18">Note</div>
-	<div class="col-md-2 p-0"><button type="button" class=" close closenotes" data-dismiss="modal" aria-label="Close" onclick="closeNotes()">
-<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle hw-24 task-icon">        </button></div>
+	<div class="col-md-2 p-0"><button type="button" class="btn p-0 float-right closenotes" data-dismiss="modal" aria-label="Close" onclick="closeNotes()">
+<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="rounded-circle task-icon">        </button></div>
 
 	</div>
 

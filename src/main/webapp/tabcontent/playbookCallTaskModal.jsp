@@ -260,7 +260,7 @@
 									<div class="carousel-inner ">
 
 										<%
-											for (int h = 0; h < 4; h++) {
+											for (int h = 0; h < 3; h++) {
 												String isActive = "";
 												if (h == 0) {
 													isActive = "active";

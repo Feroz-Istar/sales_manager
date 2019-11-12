@@ -948,8 +948,8 @@ Modifying the scroll bar across the whole application
 }
 
 .col_bordering {
-	border-right: 1px dashed #cccccc;
-	border-bottom: 1px dashed #cccccc;
+	border-right: 2px dashed #cccccc;
+	border-bottom: 2px dashed #cccccc;
 }
 
 .col_bordering:nth-child(3n) {
@@ -957,7 +957,7 @@ Modifying the scroll bar across the whole application
 	}
 	
 	.border-bottom-dashed-separation {
-		border-bottom: 1px dashed #cccccc ;
+		border-bottom: 2px dashed #cccccc ;
 	}
 	
 	.col_bordering:nth-last-child(-n+3) {
@@ -968,8 +968,8 @@ Modifying the scroll bar across the whole application
 	}
 	
 	.col_bordering4 {
-		border-right: 1px dashed #cccccc;
-		border-bottom: 1px dashed #cccccc;
+		border-right: 2px dashed #cccccc;
+		border-bottom: 2px dashed #cccccc;
 	}
 	
 	.col_bordering4:nth-last-child(-n+4) {
@@ -981,8 +981,8 @@ Modifying the scroll bar across the whole application
 	
 	
 	.col_bordering4_blank {
-		border-right: 1px dashed #cccccc;
-		border-bottom: 1px dashed #cccccc;
+		border-right: 2px dashed #cccccc;
+		border-bottom: 2px dashed #cccccc;
 	}
 	
 

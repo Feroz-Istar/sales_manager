@@ -31,10 +31,10 @@
 	<div class="row justify-content-between m-0  pl-30 pr-30 pt-20 pb-20 ">
 		<div class="col-md-10 p-0 greyish-brown font-weight-bold f-18">Cues</div>
 		<div class="col-md-2 p-0">
-			<button type="button" class="close closecues" data-dismiss="modal"
+			<button type="button" class="btn p-0 float-right closecues" data-dismiss="modal"
 				aria-label="Close" onclick="closeCues()">
 				<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
-					class="rounded-circle hw-24 task-icon">
+					class="rounded-circle task-icon">
 			</button>
 		</div>
 
