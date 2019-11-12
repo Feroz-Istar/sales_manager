@@ -186,7 +186,8 @@ function attachTaskRelatedData (){
   		 $( "."+dropdown_id ).html( data );
    	  	$('#'+dropdown_id).dropdown('show');
 		 $( "."+dropdown_id ).height(new_height);
-
+		
+		 $('.chat-transcript').height(new_height-200);
 	  	$(".closechat").click(function(){ closeChat(dropdown_id); });
 
   	  	});

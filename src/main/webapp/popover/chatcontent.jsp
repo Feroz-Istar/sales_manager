@@ -46,7 +46,7 @@
 	</div>
 
 	
-	<div class="transcript_container pl-30 pr-30 pt-20" style="max-height:520px; overflow-x:hidden;overflow-y:auto;">
+	<div class="transcript_container chat-transcript pl-30 pr-30 pt-20" style="overflow: auto;">
 		<%for(int j=0;j<10;j++){ %>
 		<div class="d-flex flex-column  ">
 			<p class="f-14 bblack mb-0 pb-10">
@@ -92,8 +92,12 @@
 	</div>
 	</div>
 </div>
-<script>$('.closechat').click(function(){
+<script>
+
+$('.closechat').click(function(){
 	$('.chatdropdown').dropdown('hide');
+	
+	
 })</script>
 
 
