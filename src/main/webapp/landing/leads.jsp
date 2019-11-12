@@ -96,7 +96,7 @@
 							<div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 
 									<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Source type<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
 									</button>
 									<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="targetSourceType">
@@ -114,7 +114,7 @@
 										
 										
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="target_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Activities
@@ -142,8 +142,8 @@
 									</div>
 
 								</div>
-											<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+											<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
@@ -151,7 +151,7 @@
 										</button>
 										
 										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="target_dropdown" style="width: 350px">
+										aria-labelledby="target_dropdown" style="width: 350px; margin-top: 0px !important;">
 												
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="targetTab" role="tablist">
 												  <li class="nav-item">
@@ -383,7 +383,7 @@
 									</div>
 								</div>
 									<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="qualified_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal Value
@@ -391,7 +391,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualified_deal_value">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static" aria-labelledby="qualified_deal_value">
 										<button class="dropdown-item" type="button">
 											 $1000
 										</button>
@@ -402,7 +402,7 @@
 								</div>
 									
 							 		<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="qualified_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages
@@ -410,7 +410,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualified_stage">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static" aria-labelledby="qualified_stage">
 										<button class="dropdown-item" type="button">
 											 Stage 1
 										</button>
@@ -420,7 +420,7 @@
 									</div>
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="qualified_source_type" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Source Type
@@ -441,15 +441,15 @@
 									</div>
 								</div>
 
-									<div class="istar-dropdown-task dropdown " id="filterbutton">
-										<button class="istar-dropdown-arrow "
+									<div class="istar-dropdown-task dropleft " id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="qualified_dropdown" style="width: 350px">
+										aria-labelledby="qualified_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="qualifiedTab" role="tablist">
 												  <li class="nav-item">
@@ -695,7 +695,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="lost_causes" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Causes
@@ -703,7 +703,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_causes">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_causes" data-display="static">
 										<button class="dropdown-item" type="button">
 											 reason 1
 										</button>
@@ -714,7 +714,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="lost_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal Value
@@ -733,7 +733,7 @@
 								</div>
 									
 							 		<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="lost_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages
@@ -751,7 +751,7 @@
 									</div>
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="lost_source_type" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Source Type
@@ -771,15 +771,15 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="lost_dropdown" style="width: 350px">
+										aria-labelledby="lost_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="lostTab" role="tablist">
 												  <li class="nav-item">
@@ -1021,7 +1021,7 @@
 									</div>
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="won_causes" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Causes
@@ -1040,7 +1040,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="won_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal Value
@@ -1059,7 +1059,7 @@
 								</div>
 									
 							 		<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="won_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages
@@ -1077,7 +1077,7 @@
 									</div>
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="won_source_type" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Source Type
@@ -1097,15 +1097,15 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="won_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="won_dropdown" style="width: 350px">
+										aria-labelledby="won_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="wonTab" role="tablist">
 												  <li class="nav-item">

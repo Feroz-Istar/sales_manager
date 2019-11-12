@@ -89,7 +89,7 @@
 				<div class="dropdown">
 					<button
 						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "  data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew"
-						id="dashboard_activity" data-toggle="dropdown"
+						id="dashboard_activity" data-toggle="dropdown" data-display="static"
 						aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>NEW TASK <img
 							src="<%=baseURL%>/assets/image/toggle_white.svg" alt="call"
@@ -162,7 +162,7 @@
 								<div class="istar-dropdown-task border-0">
 								
 										<button class="btn rounded-circle d-flex justify-content-center align-items-center p-0"
-											id="todolist" data-toggle="dropdown" 
+											id="todolist" data-toggle="dropdown" data-display="static"
 										aria-haspopup="true" aria-expanded="false">
 
 											<img src="<%=baseURL%>assets/image/plus2.svg" alt="delete"
@@ -194,7 +194,7 @@
 								<div class="d-flex flex-row align-items-center ">
 									<div class="font-weight-bold f-14 bblack">Meeting with
 										Sales Team</div>
-									<div class=" ml-auto istar-dropdown dropleft f-12 brown-grey">
+									<div class="dropdown ml-auto istar-dropdown dropleft f-12 brown-grey">
 										<button class="dropdown-icon-btn " type="button"
 											id="dropdownMenuButton" data-display="static"
 											data-toggle="dropdown" aria-haspopup="true"
@@ -834,10 +834,10 @@
 									<div class="col-md-6  p-0 pr-7_5">
 										<div class="f-14 fw-500 pb-10 black">Task Type</div>
 
-										<div class="istar-dropdown">
+										<div class="dropdown istar-dropdown">
 											<button class="custom-modal-input w-100 pl-2 d-flex h-35"
 												style="justify-content: space-between;" id="activity"
-												data-toggle="dropdown" aria-haspopup="true"
+												data-toggle="dropdown" aria-haspopup="true" data-display="static"
 												aria-expanded="false">
 												Select here <i
 													class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>

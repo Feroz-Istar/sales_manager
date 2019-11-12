@@ -68,7 +68,7 @@
 				<div class="dropdown  ">
 					<button
 						class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold "
-						id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true"
+						id="ongoing_activity" data-toggle="dropdown" aria-haspopup="true" data-display="static"
 						aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>NEW TASK <img
 							src="<%=baseURL%>assets/image/toggle_white.svg" alt="call"
@@ -140,7 +140,7 @@
 								</select>  -->
 
 								<div class="istar-dropdown-task select_focus mr-10 ">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="ongoing_deal" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal
@@ -158,7 +158,7 @@
 								</div>
 
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="ongoing_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages <img
@@ -177,7 +177,7 @@
 
 
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle"  data-display="static"
 										id="ongoing_activity" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Activities <img
@@ -208,7 +208,7 @@
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="ongoing_status" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Status <img
@@ -226,8 +226,8 @@
 
 								</div>
 
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="ongoing_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
@@ -235,7 +235,7 @@
 										</button>
 										
 										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="ongoing_dropdown" style="width: 350px">
+										aria-labelledby="ongoing_dropdown" style="width: 350px; margin-top: 0 !important;">
 												
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="ongoingTab" role="tablist">
 												  <li class="nav-item">
@@ -575,7 +575,7 @@
 									</div>
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="upcoming_stage" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages <img
@@ -592,7 +592,7 @@
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle"  data-display="static"
 										id="upcoming_activity" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All
@@ -625,7 +625,7 @@
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="upcoming_status" data-toggle="dropdown"
+										id="upcoming_status" data-toggle="dropdown" data-display="static"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal
 										Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
@@ -642,15 +642,15 @@
 
 								</div>
 
-								<div class="istar-dropdown-task dropdown " id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft " id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="upcoming_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="upcoming_dropdown" style="width: 350px">
+										aria-labelledby="upcoming_dropdown" style="width: 350px; margin-top: 0 !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="upcomingTab" role="tablist">
 												  <li class="nav-item">
@@ -982,7 +982,7 @@
 
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle"
-										id="completed_stage" data-toggle="dropdown"
+										id="completed_stage" data-toggle="dropdown" data-display="static"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages <img
 											src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
@@ -998,8 +998,8 @@
 
 								</div>
 
-								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+								<div class="istar-dropdown-task mr-2 custom-taskborder select_focus">
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Activities <img
@@ -1008,7 +1008,7 @@
 									</button>
 									<div
 										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
-										<button class="dropdown-item" type="button"
+										<button class="dropdown-item" type="button" data-display="static"
 											onclick="window.location.href = 'dashboardCreateTask.jsp'">
 											<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 												class="task-dropdown"> Call Task
@@ -1029,7 +1029,7 @@
 
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="completed_status" data-toggle="dropdown"
 										aria-haspopup="true" aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Status <img src="<%=baseURL%>assets/image/dropdown_right.svg"
@@ -1045,15 +1045,15 @@
 									</div>
 
 								</div>
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="completed_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="completed_dropdown" style="width: 350px">
+										aria-labelledby="completed_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="completedTab" role="tablist">
 												  <li class="nav-item">

@@ -75,7 +75,7 @@
 										</div>
 									</div>	
 									<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="user_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal Value
@@ -83,7 +83,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_deal_value">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"  data-display="static" aria-labelledby="user_deal_value">
 										<button class="dropdown-item" type="button">
 											 $1000
 										</button>
@@ -94,7 +94,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="users_stages" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages
@@ -113,7 +113,7 @@
 								
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="users_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All
@@ -148,7 +148,7 @@
 	
 									
 									<div class="istar-dropdown-task dropdown dropleft" id="filterbutton">
-					<button class="istar-dropdown-arrow " id="user_agent"
+					<button class="istar-dropdown-arrow " id="user_agent"  data-display="static"
 						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>All Agents <img
 							src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
@@ -156,7 +156,7 @@
 					</button>
 					<div
 						class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4"
-						aria-labelledby="user_agent" style="width: 350px">
+						aria-labelledby="user_agent" style="width: 350px; margin-top: 0px !important;">
 
 						<ul
 							class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"

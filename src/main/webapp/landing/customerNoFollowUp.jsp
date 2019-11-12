@@ -87,7 +87,7 @@
 										</div>
 									</div>	
 									<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="nofollowup_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages
@@ -106,7 +106,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="nofollowup_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All
@@ -138,7 +138,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus ">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="nofollowup_status" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Status

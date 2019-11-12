@@ -51,7 +51,7 @@
 				<div class="dropdown">
 					<div
 						class="display-1 black f-20 border-right-separation fw-500 pr-20 dropdown-toggle"
-						id="pipeline_select" data-toggle="dropdown" aria-haspopup="true"
+						id="pipeline_select" data-toggle="dropdown" aria-haspopup="true" data-display="static"
 						aria-expanded="false">
 						<img src="<%=baseURL%>assets/image/dropdown-right-black.svg"
 							alt="call" class=" float-right">Pipeline 01
@@ -96,7 +96,7 @@
 					</div>
 				</div>
 				<div class="istar-dropdown-task select_focus mr-10">
-					<button class="istar-dropdown-arrow dropdown-toggle"
+					<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 						id="pipeline_deal_value" data-toggle="dropdown"
 						aria-haspopup="true" aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>All Deal Value <img
@@ -104,7 +104,7 @@
 							class=" float-right">
 					</button>
 					<div
-						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static"
 						aria-labelledby="pipeline_deal_value">
 						<button class="dropdown-item" type="button">$1000</button>
 						<button class="dropdown-item" type="button">$5000</button>
@@ -113,14 +113,14 @@
 
 				<div class="istar-dropdown-task select_focus mr-10">
 					<button class="istar-dropdown-arrow dropdown-toggle"
-						id="pipeline_status" data-toggle="dropdown" aria-haspopup="true"
+						id="pipeline_status" data-toggle="dropdown" aria-haspopup="true" data-display="static"
 						aria-expanded="false">
 						<span class="sr-only">Toggle Dropdown</span>All Status <img
 							src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 							class=" float-right">
 					</button>
 					<div
-						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"
+						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static"
 						aria-labelledby="pipeline_status">
 						<button class="dropdown-item" type="button">Won</button>
 						<button class="dropdown-item" type="button">Lost</button>
@@ -128,15 +128,15 @@
 				</div>
 
 
-				<div class="istar-dropdown-task dropdown" id="filterbutton">
-					<button class="istar-dropdown-arrow "
+				<div class="istar-dropdown-task dropleft" id="filterbutton">
+					<button class="istar-dropdown-arrow " data-display="static"
 					id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">
 					<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 							class=" float-right">
 					</button>
 					<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-					aria-labelledby="pipeline_dropdown" style="width: 350px">
+					aria-labelledby="pipeline_dropdown" style="width: 350px; margin-top: 0px !important;">
 								
 							<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="pipelineTab" role="tablist">
 							  <li class="nav-item">
@@ -428,8 +428,8 @@
 										</div>
 									</div>
 									<div class="col-md-1 p-0 text-right h-100 ">
-										<div class="istar-dropdown dropleft pt-20 d-inline">
-											<button class="dropdown-icon-btn p-0 text-right"
+										<div class="dropdown dropleft pt-20 d-inline">
+											<button class="dropdown-icon-btn p-0 text-right"  data-display="static"
 												type="button" id="dropdownMenuButton" data-display="static"
 												data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">

@@ -91,7 +91,7 @@
 							<div class="col-md-9 d-md-flex justify-content-end p-0">
 									
 									<div class="istar-dropdown-task select_focus mr-10 mt-10 mb-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="task_activity" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All 
@@ -121,15 +121,15 @@
 
 								</div>
 									
-									<div class="istar-dropdown-task dropdown mt-10 mb-10" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+									<div class="istar-dropdown-task dropleft mt-10 mb-10" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="insight_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="insight_dropdown" style="width: 350px">
+										aria-labelledby="insight_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="insightTab" role="tablist">
 												  <li class="nav-item">
@@ -261,7 +261,7 @@
 										</div>
 									</div>	
 									<div class="istar-dropdown-task select_focus mb-10 mt-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="pipeline_deal_value" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Deal Value
@@ -520,7 +520,7 @@
 										</div>
 									</div>	
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="timeline_persona" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Persona
@@ -540,7 +540,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="timeline_success" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>Filter by Success
@@ -559,15 +559,15 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="overallAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="overallAnalysis_dropdown" style="width: 350px">
+										aria-labelledby="overallAnalysis_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="overallAnalysisTab" role="tablist">
 												  <li class="nav-item">
@@ -747,7 +747,7 @@
 										</div>
 									</div>	
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="timeline_comparative_persona" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Persona
@@ -755,7 +755,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="timeline_comparative_persona">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static" aria-labelledby="timeline_comparative_persona">
 										<button class="dropdown-item" type="button">
 											 $1000
 										</button>
@@ -767,7 +767,7 @@
 								</div>
 								
 								<div class="istar-dropdown-task select_focus mr-10">
-									<button class="istar-dropdown-arrow dropdown-toggle"
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="timeline_comparative_success" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>Filter by Success
@@ -786,15 +786,15 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
-										<button class="istar-dropdown-arrow "
+								<div class="istar-dropdown-task dropleft" id="filterbutton">
+										<button class="istar-dropdown-arrow " data-display="static"
 										id="comparativeAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-left position-absolute px-4"
-										aria-labelledby="comparativeAnalysis_dropdown" style="width: 350px">
+										aria-labelledby="comparativeAnalysis_dropdown" style="width: 350px; margin-top: 0px !important;">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="comparativeAnalysisTab" role="tablist">
 												  <li class="nav-item">
@@ -1017,7 +1017,7 @@
 									<div class="col-md-3 theme_dashed_border_right_2 p-0">
 										<div class="d-flex align-items-center">
 												<div class="col-md-3 p-0">
-													<img src="http://localhost:8080/assets/image/objection.svg" width=" 93.8" height=" 87.2" class="">
+													<img src="<%=baseURL%>assets/image/objection.svg" width=" 93.8" height=" 87.2" class="">
 												</div>
 												
 												<div class="col-md-9 p-0 ml-15">
@@ -1194,7 +1194,7 @@
 										
 									
 										<div class="d-inline-block istar-dropdown-task select_focus ml-40 mr-40 mt-20">
-											<button class="istar-dropdown-arrow dropdown-toggle"
+											<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 												id="custom_report_activity" data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
 												<span class="sr-only">Toggle Dropdown</span> Filter by
@@ -1225,7 +1225,7 @@
 										</div>
 										
 										<div class="d-inline-block istar-dropdown-task select_focus ml-40 mr-40 mt-20">
-											<button class="istar-dropdown-arrow dropdown-toggle"
+											<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 												id="custom_report_stage" data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
 												<span class="sr-only">Toggle Dropdown</span>Filter by Stages
@@ -1244,7 +1244,7 @@
 										</div>
 	
 										<div class="d-inline-block istar-dropdown-task select_focus ml-40 mr-40 mt-20">
-											<button class="istar-dropdown-arrow dropdown-toggle"
+											<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 												id="custom_report_persona" data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
 												<span class="sr-only">Toggle Dropdown</span>Filter by Persona
@@ -1263,7 +1263,7 @@
 										</div>
 
 										<div class="d-inline-block istar-dropdown-task select_focus ml-40 mr-40 mt-20">
-											<button class="istar-dropdown-arrow dropdown-toggle"
+											<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 												id="custom_report_product" data-toggle="dropdown" aria-haspopup="true"
 												aria-expanded="false">
 												<span class="sr-only">Toggle Dropdown</span>Filter by Product
