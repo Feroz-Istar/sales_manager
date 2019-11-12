@@ -208,12 +208,16 @@ html, body {
 	background-color: transparent !important;
 	font-weight: 500 !important;
 	color: #444444 !important;
+	font-size: 16px;
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+
 }
 
 .saleken.nav-tabs>li>.nav-link {
-	padding: 0px !important;
+	padding: 0px;
 	padding-bottom: 5px !important;
-	margin-right: 30px !important;
+	margin-right: 20px !important;
 }
 
 .saleken.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -805,7 +809,9 @@ Modifying the scroll bar across the whole application
 .black {
 	color: #222222;
 }
-
+.black-87 {
+	color: #000000;
+}
 .pastel-red {
 	color: #e84c4c;
 }
@@ -833,7 +839,9 @@ Modifying the scroll bar across the whole application
 .light_gray {
 	color: #707070 !important;
 }
-
+.dark_gray {
+	color: #808080 !important;
+}
 .brownish-grey {
 	color: #666666 !important;
 }
@@ -2441,7 +2449,7 @@ border-color: rgba(194, 225, 245, 0);
 
 
  .datepicker{
- 	 padding: 15px 30px !important;
+ 	 padding: 12px 12px !important;
  	 background-color: #fff !important;
 	 box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.25);
 	 border: solid 1px #dddddd;
@@ -2452,7 +2460,7 @@ border-color: rgba(194, 225, 245, 0);
 
 .datepicker, .table-condensed tbody tr td {
   font-size: 12px !important;
-  padding:12.5px;
+  padding:10px;
 }
 
  .datepicker .table-condensed>thead>tr>th.dow {
@@ -2472,18 +2480,6 @@ border-color: rgba(194, 225, 245, 0);
     background-color: #ed4d67 !important;
     border-color: #ed4d67 !important;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 #datepicker .datepicker{
 	padding: 0px !important;

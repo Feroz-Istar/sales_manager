@@ -51,7 +51,7 @@
 			<div class="col-md-3 p-0 cream_white dashboardcalltabsize  ">
 				<!--  start of call dialer -->
 				<div id="calldialer" class="">
-					<ul class="saleken nav nav-tabs f-16 pt-20 " id="pills-tab"
+					<ul class="saleken nav nav-tabs f-14 pt-20 " id="pills-tab"
 						role="tablist">
 						<li class="nav-item pl-40"><a
 							class="nav-link active border-istar-left-0" id="dialer-tab"
@@ -187,7 +187,7 @@
 											class="form-control custom-call-dateselect"
 											value="" placeholder="Calendar"/>
 										<div class="input-group-addon" onclick="showCalendar()">
-											<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-1" />
+											<img src="<%=baseURL%>assets/image/calendar.svg" class="pr-1 hw-24" />
 										</div>
 									</div>
 								</div>
@@ -200,7 +200,7 @@
 								<div
 									class="row align-items-center m-0 bottom-dashed-separation pb-15 ml-40 mr-40 pt-20 ">
 									<div class="col-md-10 col-10 p-0">
-										<div class="f-14 bblack">+91 989 898 8789</div>
+										<div class="f-14 greyish-brown">+91 989 898 8789</div>
 										<div class="f-12 brown-grey">05:10 Min</div>
 									</div>
 									<button class="btn col-md-2 col-2 p-0 text-right">
@@ -260,7 +260,7 @@
 					<div class="row m-0 justify-content-around pl-40 pt-20 pb-20 pr-40">
 						<div class="col-md-10 p-0">
 							<div class="f-14 brown-grey ">Dialing ...</div>
-							<div class="f-20 font-weight-bold black">+91 445 546 9890</div>
+							<div class="f-20 fw-500 black-87">+91 445 546 9890</div>
 						</div>
 						<div class="col-md-2 p-0 d-flex justify-content-end">
 							<button
@@ -298,7 +298,7 @@
 						</button>
 					</div>
 
-
+					<div class="f-12 font-weight-bold theme_color pl-40 pr-40 pt-30">Privacy Setting</div>
 				</div>
 
 				<!-- end of call connected -->
@@ -370,7 +370,7 @@
 				<div class="row align-items-center h-100" id="page_empty">
 					<div class="col-md-12 text-center">
 						<img src="<%=baseURL%>assets/image/21.svg" class="pb-2" />
-						<div class="f-16 font-weight-bold black" class="pb-2">Start
+						<div class="f-16 fw-500 black" class="pb-2">Start
 							the process</div>
 						<div class="f-12 brownish-grey">Lorem Ipsum is simply dummy
 							text of the printing and typesetting industry.</div>
@@ -471,12 +471,14 @@
 				$('#calldialer').addClass("d-none");
 				$('#call_connected').removeClass('d-none');
 				$("#calldropleft").removeClass('d-none');
+				$("#page_empty").addClass('d-none');
 
 			}
 			function endCall() {
 				$('#calldialer').removeClass("d-none");
 				$('#call_connected').addClass('d-none');
 				$("#calldropleft").addClass("d-none");
+				$("#page_empty").removeClass('d-none');
 			}
 		</script>
 
