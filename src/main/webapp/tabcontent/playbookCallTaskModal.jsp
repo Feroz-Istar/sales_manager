@@ -30,7 +30,7 @@
 							class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
 							aria-labelledby="completed_call_comment" style="right: -67px;">
 
-							<div class="card p-20 " style="width: 500px;">
+							<div class="card p-20 border-0" style="width: 500px;">
 								<div class="card-header p-0 border-bottom-0 bg-white">
 									<div class="row m-0">
 										<div class="col-md-6 p-0 pb-20 fw-500 f-16 black">Comment</div>
@@ -418,6 +418,7 @@
 	$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
 		})
+	
 </script>
 
 

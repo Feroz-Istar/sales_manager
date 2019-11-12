@@ -4,9 +4,9 @@
 			+ request.getContextPath() + "/";
 	%>
 
-				<div class="row justify-content-between p-2">
-					<div class="col-md-6 greyish-brown f-18 font-weight-bold text-truncated" title="Globex Corporation Inc.">Globex Corporation Inc.</div>
-					<div class="col-3">
+				<div class="row justify-content-between m-0 pt-15 ml-45 mr-45">
+					<div class="col-md-6 greyish-brown f-18 font-weight-bold text-truncated p-0" title="Globex Corporation Inc.">Email Task</div>
+					<div class="col-3 p-0">
 					<div class="d-flex justify-content-end">
 						<img src="<%=baseURL%>assets/image/heart.svg" alt="heart" class="cursor-pointer mr-3">
 					<img src="<%=baseURL%>assets/image/message.svg" alt="message" class="cursor-pointer taskcomment mr-3">
@@ -17,15 +17,15 @@
 				</div>
 			<div
 	class="row m-0 theme_dotted_border_bottom shadow-bottom   pt-15 ml-45 mr-45 pb-20">
-				<div class="col-md-3 border-right-dashed-separation">
+				<div class="col-md-3 border-right-dashed-separation p-0">
 					<p class="brownish-grey f-14 mb-0">Initiated At</p>
 					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
 				</div>
-				<div class="col-md-3 border-right-dashed-separation">
+				<div class="col-md-3 border-right-dashed-separation p-0 pl-15">
 					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
 					<p class="black f-16 fw-500 mb-0 text-truncate" title="Stage 02">Stage 02</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 p-0 pl-15">
 					<p class="brownish-grey f-14 mb-0">Contact Person</p>
 					<p class="black f-16 fw-500 mb-0 text-truncate" title="Robert Wolken">Robert Wolken</p>
 				</div>
@@ -150,10 +150,10 @@
 			<div class="accordion" id="accordionExample"  style="height:400px; overflow-x:hidden; overflow-y: auto">
 			<%for(int i=0;i<10;i++){ %>
 			<div class=" border-bottom-separation">
-			  <div class="row py-2 px-3 " id="headingOne">
+			  <div class="row m-0" id="headingOne">
 			        <button class="btn w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			          <div class="row align-items-center">
-			          	<div class="col-md-3">
+			          <div class="row align-items-center m-0 pl-45 pr-45">
+			          	<div class="col-md-3 p-0">
 			          		<div class="d-flex">
 			          			<img src="<%=baseURL%>assets/image/37.jpg" alt="user" class="hw-40 mr-3">
 			          			<div class="text-left">
@@ -162,7 +162,7 @@
 			          			</div>
 			          		</div>
 			          	</div>
-			          	<div class="col-md-9 text-left">
+			          	<div class="col-md-9 text-left p-0">
 			          		<div class="f-14 brownish-grey text-truncate" title="Hello Sir...Lorem ipsum dolor ">Hello Sir...Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
 			          		<div class="d-flex align-items-center mt-2">
 			          			<img src="<%=baseURL%>assets/image/21.svg" alt="doc" class="hw-40 mr-3">
@@ -175,14 +175,14 @@
 			  </div>
 			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
 			      <div class="card-body f-14 brownish-grey">
-			        Hello Sir, Welcome, we are reaching you..
-<br><br><br>
-<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit. Donec varius finibus leo, nec scelerisque lacus. Cras at finibus purus. Fusce dignissim lorem eu lorem sollicitudin dictum. Cras commodo vel metus a lacinia. Integer commodo efficitur facilisis. Phasellus elementum magna lorem, quis ullamcorper lacus feugiat sed. Phasellus dictum eget sapien ac vehicula.
-
-
- <br><br><br>
-<br>Best,
-<br>Salesken Pvt. Ltd.
+					Hello Sir, Welcome, we are reaching you..
+					<br><br><br>
+					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit. Donec varius finibus leo, nec scelerisque lacus. Cras at finibus purus. Fusce dignissim lorem eu lorem sollicitudin dictum. Cras commodo vel metus a lacinia. Integer commodo efficitur facilisis. Phasellus elementum magna lorem, quis ullamcorper lacus feugiat sed. Phasellus dictum eget sapien ac vehicula.
+					
+					
+					 <br><br><br>
+					<br>Best,
+					<br>Salesken Pvt. Ltd.
 			      </div>
 			    </div>
 			    </div>

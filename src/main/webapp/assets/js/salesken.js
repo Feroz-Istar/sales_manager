@@ -21,76 +21,7 @@ $( document ).ready(function() {
 	
 	
 	
-	/*start of task share popover*/
-	$('.taskshare').popover({
-	    html: true,
-	    sanitize: false,
-	    container: 'body',
-	    placement: 'bottom',
-	    trigger: 'manual',
-	    content: function() {
-	      return $.ajax({url: '../popover/taskshare.jsp',
-	                     dataType: 'html',
-	                     async: false}).responseText;
-	    }
-	  }).click(function(e) {
-		  $('.popover').popover('hide');
-	    $(this).popover('toggle');
-	  });
 	
-	
-	$('.taskshare').on('shown.bs.popover', function () {
-		  // do something…
-		if('.taskcomment:visible'){
-			$('.taskcomment	').popover('hide');
-		}
-		/*$('.agentsubmit').click(function(e){
-			var agentarray=[];
-			$('.agentcheckbox:checked').each(function () { 
-				if(this.checked){
-					agentarray.push($(this).data('id'));
-				}
-				
-			});
-		    $('.taskshare').popover('hide');
-
-		})*/
-		
-		
-	});
-	
-	
-
-	/*end of task share popover*/
-
-	
-	$('.taskcomment').popover({
-	    html: true,
-	    sanitize: false,
-	    container: 'body',
-	    placement: 'bottom',
-	    trigger: 'manual',
-	    content: function() {
-	      return $.ajax({url: '../popover/taskcomment.jsp',
-	                     dataType: 'html',
-	                     async: false}).responseText;
-	    }
-	  }).click(function(e) {
-		  $('.popover').popover('hide');
-	    $(this).popover('toggle');
-	  });
-	
-	
-	$('.taskcomment').on('shown.bs.popover', function () {
-		  // do something…
-		
-		$('.closecomment').click(function(){
-			$('.taskcomment').popover('hide');
-		})
-		$('.submitcomment').click(function(){
-			$('.taskcomment').popover('hide');
-		})
-	})
 		
 try{
 jQuery.validator.setDefaults({

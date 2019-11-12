@@ -137,7 +137,7 @@
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
 			<div class="col p-0">
 				<ul
-					class="nav nav-tabs nav-mytabs p-0 pt-20 d-flex align-items-end"
+					class="nav nav-tabs nav-mytabs p-0 d-flex align-items-end"
 					id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="whatsright-tab" data-toggle="tab" href="#whatsright"

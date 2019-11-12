@@ -164,7 +164,7 @@
 										<button class="btn rounded-circle bg-white shadow hw-30 d-flex justify-content-center align-items-center ml-20 mr-10 theme_color todo-btn"
 											id="todolist" data-toggle="dropdown" data-display="static"
 										aria-haspopup="true" aria-expanded="false">
-												<i class="fas fa-plus "></i>
+												<i class="fal fa-plus "></i>
 										</button>
 									
 									<div

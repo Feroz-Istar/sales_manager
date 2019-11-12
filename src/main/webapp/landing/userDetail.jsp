@@ -40,21 +40,22 @@
 <main role="main">
 	<div class="container-fluid salesken_container">
 	
-		<div class="row grey-white-bg align-items-center py-3 border-bottom-separation" >
-			<div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0" > 
-				<i class="fas fa-arrow-left black f-20 pr-3 cursor-pointer" onclick="window.location.href = 'customerUser.jsp'"></i>
-				<div class="display-1 black f-20 border-right-separation pr-3 fw-500">Stanley Howard</div>
-				<div class="pl-3 pr-2 f-12 brown-grey ">Path</div>
-				<i class="fas fa-chevron-circle-right pr-2 f-12 brown-grey"></i>
-				<div class=" f-12 brown-grey  fw-500" id="breadcrumb">Current Page</div>
-				
+		<div class="row grey-white-bg align-items-center m-0 theme_solid_border_bottom pl-40 pr-40 pt-10 pb-10">
+			<div class="col-md-6 col-12 d-flex align-items-center p-0">
+				<i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = 'report.jsp'"></i>
+				<div class="display-1 black f-20 border-right-separation pr-20  fw-500 pl-20">Stanley Howard</div>
+				<div class="f-12 brown-grey pl-20">Dashboard</div>
+				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>
+				<div class="f-12 brown-grey">Users</div>
+				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>
+				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Stanley Howard</div>
 			</div>
 			<div class="col-md-6 d-flex align-items-center justify-content-end">
 				
-					<button type="button" class="istar-btn-icon  previous p-0" style="top: -14px !important;">
+					<button type="button" class="istar-btn-icon  previous p-0" style="top: -14px !important; right: 36px;">
 		                 <i class="fal fa-chevron-left"></i>
 		             </button>
-		             <button type="button" class="istar-btn-icon  active next p-0"  style="top: -14px !important;">
+		             <button type="button" class="istar-btn-icon  active next p-0"  style="top: -14px !important; right: -2px;">
 		                 <i class="fal fa-chevron-right"></i>
 		             </button>
 				
@@ -66,9 +67,9 @@
 		<div class="row rounded-0 alert alert-danger mb-0 font-italic align-items-center d-none" role="alert">
 		 <span class="font-weight-bold f-14 mr-2 theme_color">Lost Lead: </span> <div class="f-12 brownish-grey">A simple success alert—check it out!</div>
 		</div>
-		<div class="row bg-white pl-3">
-			<div class="col-md-12">
-				<ul class="nav nav-tabs nav-mytabs pt-2 d-flex align-items-end" id="myTab" role="tablist">
+		<div class="row bg-white m-0 pt-20">
+			<div class="col-md-12 p-0">
+				<ul class="nav nav-tabs nav-mytabs pl-40 pr-40 d-flex align-items-end" id="myTab" role="tablist">
 				  <li class="nav-item">
 				    <a class="nav-link  nav-item active" id="taskDetails-tab" data-toggle="tab" href="#taskDetails" role="tab" aria-controls="taskDetails" aria-selected="true">Task Details</a>
 				  </li>
@@ -79,30 +80,43 @@
 				<div class="tab-content" id="myTabContent">
 				  <div class="tab-pane fade show active" id="taskDetails" role="tabpanel" aria-labelledby="taskDetails-tab">
 				  	<!-- start of task detail content -->
-				  	<div class="row align-items-center  border-bottom-separation  pt-3 pb-3">
-							<div class="col-md-3 text-result-found	">
+				  	<div class="row align-items-center  border-bottom-separation m-0 pt-10 pb-10 pl-40 pr-40">
+							<div class="col-md-3 text-result-found p-0">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
-							<div class="col-md-9 d-md-flex justify-content-end  ">
-								<div class="input-group date custom-calendar">
+							<div class="col-md-9 d-md-flex justify-content-end p-0 ">
+								<div class="input-group date custom-calendar mr-10">
 									<input type="text" id="task_datepicker" class="form-control  custom-dateselect"
 										value="12-02-2012">
 									<div class="input-group-addon" onclick="showCalendar()">
 										<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar">
 									</div>
 								</div>	
-								<select
-									class="  custom-result-selects"
-									id="stages">
-									<option>Filter by Stages</option>
-									<option>Default select</option>
-								</select> 	
-								<div class="istar-dropdown mr-2 custom-taskborder select_focus">
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
+										id="user_stage" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>All Stages
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_stage" data-display="static">
+										<button class="dropdown-item" type="button">
+											Stage 1
+										</button>
+										<button class="dropdown-item" type="button">
+											 Stage 2
+										</button>
+									</div>
+								</div> 	
+								<div class="istar-dropdown-task select_focus mr-10">
 									<button
-										class="istar-dropdown-arrow dropdown-toggle"
+										class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 										<span class="sr-only">Toggle Dropdown</span>
-   										Filter by Activities &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+   										All Activities <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 									</button>
 									 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
 									    <button class="dropdown-item" type="button">
@@ -122,18 +136,42 @@
 									  </div>
 									
 								</div> 
-								<select
-									class="  custom-result-selects"
-									id="status">
-									<option>Filter by Status</option>
-									<option>Default select</option>
-								</select>
-								<select
-									class="  custom-result-selects"
-									id="leads">
-									<option>Filter by Leads</option>
-									<option>Default select</option>
-								</select>
+								<div class="istar-dropdown-task select_focus mr-10">
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
+										id="user_status" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>All Status
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_status">
+										<button class="dropdown-item" type="button">
+											Status 1
+										</button>
+										<button class="dropdown-item" type="button">
+											 Status 2
+										</button>
+									</div>
+								</div> 	
+								<div class="istar-dropdown-task select_focus">
+									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
+										id="user_leads" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span>All Leads
+										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
+									</button>
+									<div
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_leads">
+										<button class="dropdown-item" type="button">
+											Lead 1
+										</button>
+										<button class="dropdown-item" type="button">
+											 Lead 2
+										</button>
+									</div>
+								</div> 
 							</div>
 						</div>
 						
@@ -149,8 +187,8 @@
 							</div>
 						</div>
 						
-						<div class="row very-light-pink-grey-bg">
-							<div class="col-md-3 pr-0">
+						<div class="row very-light-pink-grey-bg m-0">
+							<div class="col-md-3 p-0 pl-20">
 								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
 									role="tablist" aria-orientation="vertical">
 									<%
@@ -168,16 +206,12 @@
 											}
 											
 									%>
-									<div class="nav-link <%=isactive%> border-bottom-separation"
-										id="v-pills-<%=i%>-tabs" data-toggle="pill"
+									<div class="nav-link <%=isactive%> border-bottom-separation p-0" id="v-pills-<%=i%>-tabs" data-toggle="pill"
 										href="#v-pills-<%=i%>" role="tab"
 										aria-controls="v-pills-<%=i%>" aria-selected="true" data-task_type="<%=tasktype%>">
-										
-
-
-										<div class="row align-items-center minh-100">
-											<div class="col-md-10">
-												<div class="d-flex flex-row ">
+										<div class="row align-items-center minh-100 m-0 pl-20 pr-20">
+											<div class="col-md-10 p-0">
+												<div class="d-flex flex-row pt-20 ">
 													<div
 														class="f-16 font-weight-bold border-right-separation pr-2 theme_color">$ 500</div>
 													<div
@@ -186,16 +220,15 @@
 												<div class="f-16  fw-500 black text-truncate" title="Globex
 													Corporation Inc.">Globex
 													Corporation Inc.</div>
-												<div class="f-12 brown-grey">Initiated at 11:00 PM</div>
+												<div class="f-12 brown-grey pb-10">June 28, 2019</div>
 											</div>
-											<div class="col-md-2">
-												<div class="d-flex flex-row align-items-center">
+											<div class="col-md-2 p-0">
+												<div class="d-flex flex-row align-items-center justify-content-end">
 													<img src="<%=baseURL%>assets/image/calltask.svg" alt="call"
 														class="rounded-circle hw-30" /> 
 												</div>
 											</div>
 										</div>
-
 									</div>
 
 									<%
@@ -205,7 +238,7 @@
 							</div>
 
 
-							<div class="col-md-9 bg-white">
+							<div class="col-md-9 bg-white p-0">
 								<div class="tab-content h-100" id="taskdetail-tab-listContent">
 									<%
 										for (int i = 0; i < 4; i++) {
@@ -236,11 +269,11 @@
 						
 				  <div class="tab-pane fade" id="agentDetails" role="tabpanel" aria-labelledby="agentDetails-tab">
 				  	<!-- start of agent detail content -->		
-				  	<div class="row mt-4">				
-				  		<div class="col-md-6">	
-				  			<div class="d-flex">	
+				  	<div class="row m-0 pt-35 pl-40 pr-40">				
+				  		<div class="col-md-6 p-0">	
+				  			<div class="d-flex align-items-center">	
 				  				<img src="<%=baseURL%>assets/image/11.png" class="hw-60" alt="user-img"/>
-				  				<div class="ml-4">
+				  				<div class="pl-20">
 				  					<div class="f-16  fw-500 black text-truncate" title="Globex Corporation Inc.">Stanley Howard</div>
 						  			<div class="d-flex align-items-center">		
 						  				<div class="p-0 rateYo mr-4" data-rating="3"></div>
@@ -251,7 +284,7 @@
 				  				</div>
 				  			</div>
 				  		</div>		
-				  		<div class="col-md-6 text-right	">
+				  		<div class="col-md-6 text-right	p-0">
 				  			<div class="d-flex align-items-center justify-content-end">
 					  			<img src="<%=baseURL%>assets/image/people.svg" class="mr-2" alt="team" />
 					  			<div class="f-14 greyish-brown mr-4 text-truncate" title="Team North">Team North</div>
@@ -264,7 +297,7 @@
 				  		</div>		
 				  	</div>		
 				  	
-				  	<div class="row border-bottom-dashed-separation m-0 pt-25 pb-25">
+				  	<div class="row border-bottom-dashed-separation m-0 pt-25 pb-25 pl-40 pr-40">
 				  		<div class="col-md-6 p-0">
 				  			<div class="row m-0">
 				  				<div class="col-md-3 p-0 border-right-dashed-separation">
@@ -324,18 +357,18 @@
 				  		</div>
 				  	</div>
 				  	
-				  	<div class="row ">
-				  		<div class="col-md-9">
-				  			<div class="f-16 fw-500 black">	Playbook Stats</div>
-				  			<div class="row border-bottom-dashed-separation py-3">
-				  				<div class="col-md-6">
+				  	<div class="row m-0">
+				  		<div class="col-md-9 p-0">
+				  			<div class="f-16 fw-500 black pt-30 pl-40 pb-10">	Playbook Stats</div>
+				  			<div class="row border-bottom-dashed-separation m-0 pl-40 pr-40 pb-40">
+				  				<div class="col-md-6 p-0">
 		      						<div class="f-12 font-weight-bold brownish-grey mb-1">Strong  <i class="fal fa-info-circle soft-blue"></i></div>
 		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 		      					</div>
-		      					<div class="col-md-6">
+		      					<div class="col-md-6 p-0">
 		      						<div class="f-12 font-weight-bold brownish-grey mb-1">Weak <i class="fal fa-info-circle soft-blue"></i></div>
 		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
@@ -343,15 +376,15 @@
 										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 		      					</div>
 				  			</div>
-				  			<div class="row py-3">
-				  				<div class="col-md-6 fw-500">Disposition</div>
+				  			<div class="row m-0 pt-40 pl-40">
+				  				<div class="col-md-6 fw-500 p-0">Disposition</div>
 				  			</div>
 				  			
-				  			<div class="row m-0 pl-30 pt-30 pb-10 align-items-center">
+				  			<div class="row m-0 pl-40 pt-30 pb-20 align-items-center bottom_border_1px">
 								<div class="col-md-3 p-0 black f-14 font-weight-bold">Lead Name</div>
-								<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Follow-Ups </div>
-								<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Talk Ratio</div>
-								<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Connected Call</div>
+								<div class="col-md-3 p-0 black f-14 font-weight-bold">Follow-Ups </div>
+								<div class="col-md-3 p-0 black f-14 font-weight-bold">Talk Ratio</div>
+								<div class="col-md-3 p-0 black f-14 font-weight-bold">Connected Call</div>
 							</div>
 						
 							<%for(int i=0;i<10;i++){ 
@@ -361,9 +394,9 @@
 								}
 							%>
 								
-							<div class="row m-0 pl-30 leadpreview pt-20 pb-20 bottom_border_1px align-items-center <%=bg_color%>">
+							<div class="row m-0 pl-40 leadpreview pt-30 pb-30 bottom_border_1px align-items-center <%=bg_color%>">
 								<div class="col-md-3 p-0 greyish-brown f-14">Massive Dynamic Pvt. Ltd.</div>
-								<div class="col-md-3 p-0 greyish-brown f-14 p-0">45</div>
+								<div class="col-md-3 p-0 greyish-brown f-14">45</div>
 								<div class="col-md-3 p-0 greyish-brown f-14">20%</div>
 								<div class="col-md-3 p-0 greyish-brown f-14">03</div>
 								
@@ -371,13 +404,13 @@
 							<%} %>
 				  		</div>
 				  			
-				  		<div class="col-md-3 cream_white p-3 ">
+				  		<div class="col-md-3 cream_white theme_solid_border_left p-0 pl-40 pr-40 pt-30 pb-30 ">
 				  			<div class="f-16 fw-500 black">Comments</div>
 				  			
 				  			<%for(int i=0;i<3;i++){ %>
-				  			<div class="f-12 pt-4 brown-grey">June 22, 2019</div>
-				  			<div class="f-14 greyish-brown fw-500 mb-2 text-truncate" title="Lawrence">Lawrence Lynch</div>
-				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-4 text-break">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
+				  			<div class="f-12 brown-grey pt-30">June 22, 2019</div>
+				  			<div class="f-14 greyish-brown fw-500 pb-10 text-truncate" title="Lawrence">Lawrence Lynch</div>
+				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-20 text-break">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
 				  			<%} %>
 				  		</div>				  		
 				  	</div>				  	

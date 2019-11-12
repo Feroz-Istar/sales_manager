@@ -4,31 +4,27 @@
 			+ request.getContextPath() + "/";
 %>
 
-	<div class="row h-100">
-		<div class="col-md-10">
-			<div class="row pt-2 pl-3">
-				<div class="col">
+	<div class="row h-100 m-0">
+		<div class="col-md-11 p-0">
+			<div class="row pt-30 pl-40 pr-40 m-0">
+				<div class="col p-0">
 					<p class="greyish-brown f-18 font-weight-bold text-truncate" title="Globex Corporation Inc">Globex Corporation Inc.</p>
 				</div>
 			</div>
-			<div class="row pt-2 pl-3">
-				<div class="col-md-3 border-right-dashed-separation">
+			<div class="row pl-40 pr-40 m-0">
+				<div class="col-md-3 border-right-dashed-separation p-0">
 					<p class="brownish-grey f-14 mb-0">Initiated At</p>
 					<p class="black f-16 fw-500 mb-0">11:00 AM</p>
 				</div>
-				<div class="col-md-3 border-right-dashed-separation">
+				<div class="col-md-3 border-right-dashed-separation p-0c">
 					<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
 					<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation Inc">Stage 02</p>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 p-0 pl-15">
 					<p class="brownish-grey f-14 mb-0">Contact Person</p>
 					<p class="black f-16 fw-500 mb-0 text-truncate" title="Globex Corporation Inc">Robert Wolken</p>
 				</div>
-				<div class="col-md-3 text-right">
-					<button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#leaveTaskModal">LEAVE
-						TASK</button>
-
-				</div>
+				
 
 			</div>
 			<div class="row m-0 pl-45 pr-45 pt-20 ">
@@ -241,60 +237,64 @@
 
 
 
-		<div class="col-md-2 pr-0">
-												<ul
-													class="list-group shadow d-flex flex-column h-100 ml-2 taskpopup">
-													<li class="  dropleft  list-group-item p-0 py-3">
-														<div
-															class="notesdropdown d-flex flex-column justify-content-center align-items-center minh-50 "
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/notes.svg"  alt="notes"/>
-															<div class="f-12 pt-1 greyish-brown">Notes</div>
-															<div class="dropdown-menu notespopupdropdown pt-0"
-																aria-labelledby="dropdownMenuButton"></div>
-														</div>
-													</li>
-													<li class=" dropleft list-group-item p-0 py-3">
-														<div
-															class="cuesdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
-															<div class="f-12 pt-1 greyish-brown">Cues</div>
-															<div class="dropdown-menu cuespopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
-														</div>
-													</li>
-													<li class="dropleft list-group-item p-0 py-3">
-														<div
-															class="crmdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/crm.svg"  alt="crm"/>
-															<div class="f-12 pt-1 greyish-brown">CRM</div>
-															<div class="dropdown-menu crmpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
-														</div>
-													</li>
-													<li class="dropleft list-group-item  p-0 py-3 ">
-														<div
-															class=" chatdropdown d-flex flex-column justify-content-center align-items-center minh-50"
-															data-toggle="dropdown" aria-haspopup="true"
-															aria-expanded="false">
-															<img src="<%=baseURL%>assets/image/presentation.svg"  alt="chat"/>
-															<div class="f-12 pt-1 greyish-brown">Chat</div>
-															<div class="dropdown-menu chatpopoverdropdown"
-																aria-labelledby="dropdownMenuButton"></div>
-														</div>
-													</li>
-
-
-													<li
-														class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
-														style="height: calc(100% - 80px);"></li>
-
-
-												</ul>
+		<div class="col-md-1 p-0">
+			<div class=" dropleft">
+				<button type="button" class="btn btn-secondary dropdown-toggle"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+					style="display: none" id="user_webinar_task_content">Dropleft</button>
+			<div class="dropdown-menu user_webinar_task_content m-0"
+				aria-labelledby="user_webinar_task_content">
+				<!-- Dropdown menu links -->
+				</div>
+			</div>
+			<ul class="list-group shadow d-flex flex-column h-100  taskpopup">
+			
+			
+				<li class="notesdropdown list-group-item p-0 pt-10 pb-10">
+					<div
+						class=" d-flex flex-column justify-content-center align-items-center minh-80 "
+						data-dropdown_id="user_webinar_task_content">
+						<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
+					<div class="f-12 pt-1 greyish-brown">Notes</div>
+			
+				</div>
+			</li>
+			<li class=" cuesdropdown list-group-item p-0  pt-10 pb-10">
+				<div
+					class=" d-flex flex-column justify-content-center align-items-center minh-80"
+					data-dropdown_id="user_webinar_task_content">
+					<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
+					<div class="f-12 pt-1 greyish-brown">Cues</div>
+			
+				</div>
+			</li>
+			<li class="crmdropdown list-group-item p-0  pt-10 pb-10">
+				<div
+					class=" d-flex flex-column justify-content-center align-items-center minh-80"
+					data-dropdown_id="user_webinar_task_content">
+					<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
+					<div class="f-12 pt-1 greyish-brown">CRM</div>
+			
+				</div>
+			</li>
+			<li class="chatdropdown list-group-item  p-0  pt-10 pb-10 ">
+				<div
+					class="  d-flex flex-column justify-content-center align-items-center minh-80"
+					data-dropdown_id="user_webinar_task_content">
+					<img src="<%=baseURL%>assets/image/chat.svg"
+						alt="presentation" />
+					<div class="f-12 pt-1 greyish-brown">Chat</div>
+			
+				</div>
+			</li>
+			
+			
+			<li
+				class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
+				style="height: calc(100% - 80px);"></li>
+			
+			
+				</ul>
+			</div>
 											</div>
 </div>	<script src="<%=baseURL%>assets/js/salesken.js"></script>
