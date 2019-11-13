@@ -681,19 +681,18 @@
 						<!-- start of lost leads tab content-->
 
 						<div
-							class="row align-items-center m-0 theme_solid_border_bottom">
-							<div class="col-md-2 col-xl-3 text-result-found	font_text_result p-0  pl-40">
+							class="row align-items-center theme_solid_border_bottom m-0">
+							<div class="col-md-2 text-result-found font_text_result	pl-40 p-0">
 								<strong class="number-of-results">03</strong> Results Found
 							</div>
-							<div class="col-md-10 col-xl-9 d-md-flex justify-content-end p-0  mt-10 mb-10 pr-40">
+							<div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 								<div class="input-group date custom-calendar mr-10">
 									<input type="text" id="lead_lost_datepicker" placeholder="Calendar"
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon px-1" onclick="showlostCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg">
+										<img src="<%=baseURL%>/assets/image/calendar.svg"/>
 									</div>
 								</div>
-								
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="lost_causes" data-toggle="dropdown" aria-haspopup="true"
@@ -703,7 +702,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_causes" data-display="static">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_causes">
 										<button class="dropdown-item" type="button">
 											 reason 1
 										</button>
@@ -775,7 +774,7 @@
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
-										<span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
@@ -854,6 +853,7 @@
 									</div> 
 							</div>
 						</div>
+
 						
 						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"  id='lost_filter'>
 							<div class="col-md-10 d-flex p-0">
