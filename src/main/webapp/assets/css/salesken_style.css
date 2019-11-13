@@ -4,7 +4,6 @@
 
 body {
 	font-family: 'Roboto', sans-serif !important;
-	
 }
 
 .menu_icon {
@@ -30,7 +29,6 @@ body {
 	padding-left: 40px !important;
 	padding-right: 40px !important;
 	padding-bottom: 40px !important;
-	
 }
 
 .fw-50 {
@@ -70,7 +68,6 @@ body {
 	border-radius: 0;
 	font-size: 14px;
 	color: #999999 !important;
-	
 	background: #ffffff;
 	text-align: left !important;
 }
@@ -98,7 +95,6 @@ body {
 /* end of modal */
 html, body {
 	height: 100%;
-	
 }
 
 .inner-circle-div {
@@ -124,8 +120,7 @@ html, body {
 	justify-content: center;
 	border: 1px solid #eeeeee;
 	outline: none !important;
-		border-radius: 4px !important;
-	
+	border-radius: 4px !important;
 }
 
 .istar-btn-icon>i {
@@ -211,7 +206,6 @@ html, body {
 	font-size: 16px;
 	padding-left: 10px !important;
 	padding-right: 10px !important;
-
 }
 
 .saleken.nav-tabs>li>.nav-link {
@@ -301,11 +295,10 @@ html, body {
 }
 
 .istar-dropdown-menu>.dropdown-item:hover {
-	
 	font-size: 14px !important;
 	background: #ed4d67 !important;
-    color: #ffffff !important;
-    font-weight: 500 !important;
+	color: #ffffff !important;
+	font-weight: 500 !important;
 }
 
 /* end of dropdown with icons */
@@ -426,7 +419,6 @@ html, body {
 	padding: 0 20px !important;
 }
 
-
 .task-dropdown-menu>.dropdown-item>.task-dropdown {
 	height: 25px !important;
 	width: 25px !important;
@@ -465,7 +457,6 @@ html, body {
 	border-radius: 0;
 	font-size: 14px;
 	color: #999999 !important;
-	
 	background: #ffffff;
 }
 
@@ -580,22 +571,27 @@ input[type="search"]::-webkit-search-cancel-button {
 /* end of buttons  */
 
 /* start of sizing  */
-.h-17{
-	height:17px;
+.h-17 {
+	height: 17px;
 }
-.h-20{
-	height:20px;
+
+.h-20 {
+	height: 20px;
 }
-.h-30{
-	height:30px;
+
+.h-30 {
+	height: 30px;
 }
-.h-123{
-	height:123px;
+
+.h-123 {
+	height: 123px;
 }
-.hw-20{
+
+.hw-20 {
 	height: 20px;
 	width: 20px;
 }
+
 .hw-30 {
 	height: 30px;
 	width: 30px;
@@ -624,10 +620,12 @@ input[type="search"]::-webkit-search-cancel-button {
 	height: 45px;
 	width: 45px;
 }
+
 .hw-50 {
 	height: 50px;
 	width: 50px;
 }
+
 .hw-66 {
 	height: 66px;
 	width: 66px;
@@ -651,6 +649,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .minh-50 {
 	min-height: 50px;
 }
+
 .minh-80 {
 	min-height: 80px;
 }
@@ -670,16 +669,16 @@ input[type="search"]::-webkit-search-cancel-button {
 .minw-150 {
 	min-width: 150px;
 }
-.minw-237{
-		min-width: 237px;
-	
+
+.minw-237 {
+	min-width: 237px;
 }
 /* end of sizing */
 
 /* Start of font sizes */
-.f-10{
-	font-size:0.625rem !important;
-}	
+.f-10 {
+	font-size: 0.625rem !important;
+}
 
 .f-12 {
 	font-size: 0.75rem !important;
@@ -799,9 +798,10 @@ Modifying the scroll bar across the whole application
 	background: #b30000;
 }
 /* start of color */
-.black-two{
-	color:#262626 !important;
+.black-two {
+	color: #262626 !important;
 }
+
 .theme_color {
 	color: #ed4d67 !important;
 }
@@ -809,9 +809,11 @@ Modifying the scroll bar across the whole application
 .black {
 	color: #222222;
 }
+
 .black-87 {
 	color: #000000;
 }
+
 .pastel-red {
 	color: #e84c4c;
 }
@@ -839,9 +841,11 @@ Modifying the scroll bar across the whole application
 .light_gray {
 	color: #707070 !important;
 }
+
 .dark_gray {
 	color: #808080 !important;
 }
+
 .brownish-grey {
 	color: #666666 !important;
 }
@@ -861,7 +865,6 @@ Modifying the scroll bar across the whole application
 .modal-submit-btn:hover {
 	color: #fff;
 }
-
 
 .btn-style:hover {
 	color: #ffffff !important;
@@ -884,9 +887,11 @@ Modifying the scroll bar across the whole application
 .tea {
 	background: #57b280 !important;
 }
-.dark_theme_color{
-	color:#eb384f;
+
+.dark_theme_color {
+	color: #eb384f;
 }
+
 .cream_white {
 	background: #f9f9f9 !important;
 }
@@ -898,13 +903,16 @@ Modifying the scroll bar across the whole application
 .very-light-pink-grey-bg {
 	background-color: #f9f9f9 !important;
 }
- .bg-purple{
-    background-color: #9fa7ff;
+
+.bg-purple {
+	background-color: #9fa7ff;
 }
-.bg-light-pink{
+
+.bg-light-pink {
 	background-color: #fdedef;
 }
-.soft_blue_bg{
+
+.soft_blue_bg {
 	background-color: #6297f6;
 }
 /* end of background Color */
@@ -918,7 +926,7 @@ Modifying the scroll bar across the whole application
 	border: 1px dashed #eeeeee !important;
 }
 
-.bottom_border_1px{
+.bottom_border_1px {
 	border-bottom: 1px solid #eeeeee !important;
 }
 
@@ -929,7 +937,6 @@ Modifying the scroll bar across the whole application
 .border-bottom-separation {
 	border-bottom: 1px solid #cccccc;
 }
-
 
 .border-right-separation {
 	border-right: 1px dotted #cccccc;
@@ -953,44 +960,43 @@ Modifying the scroll bar across the whole application
 }
 
 .col_bordering:nth-child(3n) {
-		border-right: none !important;
-	}
-	
-	.border-bottom-dashed-separation {
-		border-bottom: 2px dashed #cccccc ;
-	}
-	
-	.col_bordering:nth-last-child(-n+3) {
-		border-bottom: none !important;
-	}
-	.col_bordering:nth-child(3n) {
-		border-right: none !important;
-	}
-	
-	.col_bordering4 {
-		border-right: 2px dashed #cccccc;
-		border-bottom: 2px dashed #cccccc;
-	}
-	
-	.col_bordering4:nth-last-child(-n+4) {
-		border-bottom: none !important;
-	}
-	.col_bordering4:nth-child(4n) {
-		border-right: none !important;
-	}
-	
-	
-	.col_bordering4_blank {
-		border-right: 2px dashed #cccccc;
-		border-bottom: 2px dashed #cccccc;
-	}
-	
+	border-right: none !important;
+}
 
-	.col_bordering4_blank:nth-child(4n) {
-		border-right: none !important;
-	}
-	
-	
+.border-bottom-dashed-separation {
+	border-bottom: 2px dashed #cccccc;
+}
+
+.col_bordering:nth-last-child(-n+3) {
+	border-bottom: none !important;
+}
+
+.col_bordering:nth-child(3n) {
+	border-right: none !important;
+}
+
+.col_bordering4 {
+	border-right: 2px dashed #cccccc;
+	border-bottom: 2px dashed #cccccc;
+}
+
+.col_bordering4:nth-last-child(-n+4) {
+	border-bottom: none !important;
+}
+
+.col_bordering4:nth-child(4n) {
+	border-right: none !important;
+}
+
+.col_bordering4_blank {
+	border-right: 2px dashed #cccccc;
+	border-bottom: 2px dashed #cccccc;
+}
+
+.col_bordering4_blank:nth-child(4n) {
+	border-right: none !important;
+}
+
 .custom-taskborder {
 	border: 1px solid #cccccc;
 	border-radius: 0;
@@ -1030,7 +1036,7 @@ Modifying the scroll bar across the whole application
 	border-bottom: 1px solid #dddddd;
 }
 
- .theme_solid_border_bottom_2px {
+.theme_solid_border_bottom_2px {
 	border-bottom: 2px solid #dddddd;
 }
 
@@ -1041,6 +1047,7 @@ Modifying the scroll bar across the whole application
 .theme_dashed_border_bottom {
 	border-bottom: 1px dashed #dddddd;
 }
+
 .theme_dashed_border_bottom_2 {
 	border-bottom: 2px dashed #cccccc;
 }
@@ -1060,9 +1067,11 @@ Modifying the scroll bar across the whole application
 .theme_dashed_border {
 	border: 1px dashed #dddddd;
 }
+
 .theme_dashed_border_right_2 {
 	border-right: 2px dashed #dddddd;
 }
+
 .theme_dotted_border {
 	border: 1px dotted #dddddd;
 }
@@ -1070,9 +1079,11 @@ Modifying the scroll bar across the whole application
 .theme_solid_border_right_2px {
 	border-right: 2px solid #dddddd;
 }
+
 .theme_solid_border_right_1px {
 	border-right: 1px solid #dddddd;
 }
+
 .theme_solid_border_left {
 	border-left: 1px solid #dddddd;
 }
@@ -1080,6 +1091,7 @@ Modifying the scroll bar across the whole application
 .theme_dashed_border_left {
 	border-left: 1px dashed #dddddd;
 }
+
 .theme_solid_border_2px {
 	border: 2px solid #dddddd;
 }
@@ -1099,11 +1111,10 @@ Modifying the scroll bar across the whole application
 
 /* start of tab styling */
 .nav-mytabs a {
-	    border-radius: 0px !important;
+	border-radius: 0px !important;
 	border-right: 1px solid #eeeeee !important;
 	border-left: 1px solid #eeeeee !important;
-		border-top: 1px solid #eeeeee !important;
-	
+	border-top: 1px solid #eeeeee !important;
 	border-radius: 2px 2px 0 0;
 	background: #f9f9f9;
 	color: #999999;
@@ -1111,19 +1122,21 @@ Modifying the scroll bar across the whole application
 	font-weight: normal;
 	text-align: center;
 	font-size: 14px;
-	    margin-bottom: 1px !important;
-	        padding: 5px 20px;
-	        min-width: 136px;
-}
-.nav-mytabs li{
+	margin-bottom: 1px !important;
+	padding: 5px 20px;
+	min-width: 136px;
 }
 
-.nav-mytabs li>.active{
+.nav-mytabs li {
+	
+}
+
+.nav-mytabs li>.active {
 	margin-bottom: -1px !important;
-    padding: 10px 20px;
-/*     border: 1px solid #ebebeb !important;
- */}
-
+	padding: 10px 20px;
+	/*     border: 1px solid #ebebeb !important;
+ */
+}
 
 .nav-mytabs a.active, .nav-mytabs a:hover {
 	opacity: 1;
@@ -1132,11 +1145,11 @@ Modifying the scroll bar across the whole application
 	background: white;
 	color: #444444 !important;
 	border-radius: 0 !important;
-		font-size: 16px !important;
-    padding: 10px 20px;
-	    	margin-bottom: -1px !important;
-/* border: 1px solid #ebebeb !important;	    
- */	
+	font-size: 16px !important;
+	padding: 10px 20px;
+	margin-bottom: -1px !important;
+	/* border: 1px solid #ebebeb !important;	    
+ */
 }
 
 .mytab-content {
@@ -1148,7 +1161,7 @@ Modifying the scroll bar across the whole application
 }
 
 .dropdown-nav.nav-mytabs a {
-	  min-width: 100px;
+	min-width: 100px;
 }
 
 /* end of tab styling */
@@ -1221,15 +1234,14 @@ Modifying the scroll bar across the whole application
 	color: #222222 !important;
 	text-decoration: none;
 	background-color: transparent;
-	border-color:transparent;
+	border-color: transparent;
 }
 
 .salesken.pagination>.page-item>#page-next {
 	color: #ed4d67;
-	font-weight:bold;
-	    padding-right: 0 !important;
+	font-weight: bold;
+	padding-right: 0 !important;
 }
-
 
 /* end of pagination */
 
@@ -1349,7 +1361,6 @@ Modifying the scroll bar across the whole application
 /* end of istar */
 
 /* start of padding custom styles */
-
 .pl-5 {
 	padding-left: 5px !important;
 }
@@ -1454,8 +1465,6 @@ Modifying the scroll bar across the whole application
 	padding: 15px !important;
 }
 
-
-
 .pl-20 {
 	padding-left: 20px !important;
 }
@@ -1520,7 +1529,6 @@ Modifying the scroll bar across the whole application
 	padding: 30px !important;
 }
 
-
 .pl-35 {
 	padding-left: 35px !important;
 }
@@ -1528,6 +1536,7 @@ Modifying the scroll bar across the whole application
 .pr-35 {
 	padding-right: 35px !important;
 }
+
 .pt-35 {
 	padding-top: 35px !important;
 }
@@ -1540,7 +1549,6 @@ Modifying the scroll bar across the whole application
 	padding: 35px !important;
 }
 
-
 .pl-40 {
 	padding-left: 40px !important;
 }
@@ -1548,6 +1556,7 @@ Modifying the scroll bar across the whole application
 .pr-40 {
 	padding-right: 40px !important;
 }
+
 .pt-40 {
 	padding-top: 40px !important;
 }
@@ -1559,9 +1568,11 @@ Modifying the scroll bar across the whole application
 .p-40 {
 	padding: 40px !important;
 }
+
 .pl-45 {
 	padding-left: 45px !important;
 }
+
 .pr-45 {
 	padding-right: 45px !important;
 }
@@ -1569,21 +1580,29 @@ Modifying the scroll bar across the whole application
 .pt-45 {
 	padding-top: 45px !important;
 }
+
 .p-50 {
 	padding: 50px !important;
+}
+.pt-50 {
+	padding-top: 50px !important;
 }
 .pb-50 {
 	padding-bottom: 50px !important;
 }
+
 .pl-50 {
 	padding-left: 50px !important;
 }
+
 .pr-50 {
 	padding-right: 50px !important;
 }
+
 .pl-60 {
 	padding-left: 60px !important;
 }
+
 .pr-60 {
 	padding-right: 60px !important;
 }
@@ -1591,6 +1610,7 @@ Modifying the scroll bar across the whole application
 .pb-60 {
 	padding-bottom: 60px !important;
 }
+
 .pt-60 {
 	padding-top: 60px !important;
 }
@@ -1602,6 +1622,7 @@ Modifying the scroll bar across the whole application
 .pl-65 {
 	padding-left: 65px !important;
 }
+
 .pb-70 {
 	padding-bottom: 70px !important;
 }
@@ -1613,12 +1634,15 @@ Modifying the scroll bar across the whole application
 .pt-80 {
 	padding-top: 80px !important;
 }
+
 .pt-90 {
 	padding-top: 90px !important;
 }
+
 .pb-90 {
 	padding-bottom: 90px !important;
 }
+
 .pl-90 {
 	padding-left: 90px !important;
 }
@@ -1630,9 +1654,11 @@ Modifying the scroll bar across the whole application
 .pb-100 {
 	padding-bottom: 100px !important;
 }
+
 .pr-90 {
 	padding-right: 90px !important;
 }
+
 .pr-115 {
 	padding-right: 115px !important;
 }
@@ -1679,15 +1705,19 @@ Modifying the scroll bar across the whole application
 .mb-15 {
 	margin-bottom: 15px !important;
 }
+
 .m-15 {
 	margin: 15px !important;
 }
+
 .ml-20 {
 	margin-left: 20px !important;
 }
+
 .mr-20 {
 	margin-right: 20px !important;
 }
+
 .ml-25 {
 	margin-left: 25px !important;
 }
@@ -1695,9 +1725,11 @@ Modifying the scroll bar across the whole application
 .mr-25 {
 	margin-right: 25px !important;
 }
+
 .mb-25 {
 	margin-bottom: 25px !important;
 }
+
 .ml-30 {
 	margin-left: 30px !important;
 }
@@ -1717,6 +1749,7 @@ Modifying the scroll bar across the whole application
 .m-30 {
 	margin: 30px !important;
 }
+
 .ml-40 {
 	margin-left: 40px !important;
 }
@@ -1728,9 +1761,11 @@ Modifying the scroll bar across the whole application
 .mt-40 {
 	margin-top: 40px !important;
 }
+
 .mb-40 {
 	margin-bottom: 40px !important;
 }
+
 .ml-45 {
 	margin-left: 45px !important;
 }
@@ -1742,6 +1777,7 @@ Modifying the scroll bar across the whole application
 .mb-50 {
 	margin-bottom: 50px !important;
 }
+
 .ml-130 {
 	margin-left: 130px !important;
 }
@@ -1790,13 +1826,13 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-moz-transform: scale(1) !important; /* Firefox */
 	-ms-transform: sscale(1) !important; /* IE 9 */
 	-o-transform: scale(1) !important; /* Opera */
-	margin-right:-4px;
+	margin-right: -4px;
 }
 
 #taskdetail-tab-list>.nav-link:hover {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
-	/*  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;  	  */	 	
+	/*  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;  	  */
 	border-radius: 0;
 	opacity: 2;
 	/* 	transition : all 0.1s ease-in-out;
@@ -1916,16 +1952,16 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	-o-transform: scale(1) !important; /* Opera */
 	box-shadow: 8px 4px 20px 0 rgba(0, 0, 0, 0.13);
 }
-.audioitem.active .f-16{
-		font-size:18px !important;
-		font-weight:500;
+
+.audioitem.active .f-16 {
+	font-size: 18px !important;
+	font-weight: 500;
 }
-.audioitem.active .f-12{
+
+.audioitem.active .f-12 {
 	color: #999999 !important;
-	font-weight:400 !important;
+	font-weight: 400 !important;
 }
-
-
 
 .audioitem.active .audioitemrow {
 	border-bottom: 0 !important;
@@ -1944,12 +1980,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 /* exclusive to pipeline----------- */
 .line {
 	width: 90%;
-    height: 1px;
-    border-top: 1px dashed #eeeeee;
-    border-width:2px;
-    position: absolute;
-    top: 11px;
-    left: 28px;
+	height: 1px;
+	border-top: 1px dashed #eeeeee;
+	border-width: 2px;
+	position: absolute;
+	top: 11px;
+	left: 28px;
 }
 
 /* start of checkbox */
@@ -2083,12 +2119,12 @@ label.error {
 
 .searchBox {
 	position: absolute;
-    right: 9px;
-    top:5px;
-    pointer-events: none;
-    z-index:5;
-    height: 20px;
-    width: 20px;
+	right: 9px;
+	top: 5px;
+	pointer-events: none;
+	z-index: 5;
+	height: 20px;
+	width: 20px;
 }
 
 .text-truncate {
@@ -2144,7 +2180,7 @@ label.error {
 
 .big_button:active {
 	background-color: #f7657d !important;
-	color:white !important;
+	color: white !important;
 }
 
 .small_button {
@@ -2185,7 +2221,7 @@ label.error {
 	padding-right: 25px !important;
 	height: 30px !important;
 	border-color: #222222 !important;
-	color:#444444;
+	color: #444444;
 }
 
 .small_outline_button:hover {
@@ -2196,7 +2232,7 @@ label.error {
 
 .small_outline_button:active {
 	background-color: #222222 !important;
-	color:white !important;
+	color: white !important;
 }
 
 /* end of button styling css */
@@ -2235,7 +2271,6 @@ label.error {
 }
 /* end of tooltip styling */
 
-
 /*start of up arrow in dropdown*/
 /* .istar-dropdown-task-menu:after, .istar-dropdown-task-menu:before {
 bottom: 100%;
@@ -2262,50 +2297,50 @@ pointer-events: none;
       margin-left: -1px;
 } */
 /*end of up arrow in dropdown*/
-
 .custom-dropdown-width {
-    min-width: 185px !important;
+	min-width: 185px !important;
 }
-
 
 .dropdown-toggle::after {
-    display: none;
+	display: none;
 }
 
-	.progress-bar-striped {
-    background-image: linear-gradient(135deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
-    background-size: 1rem 1rem;
-    }
-
-
-.pipeline_progress{
-height:10px;
-background-color: white;
+.progress-bar-striped {
+	background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%,
+		transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%,
+		rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+	background-size: 1rem 1rem;
 }
-.pipeline_progress .progress-bar{
- margin-right:3px;
- 
+
+.pipeline_progress {
+	height: 10px;
+	background-color: white;
 }
-.pipeline_progress .progress-bar{
-border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-   
+
+.pipeline_progress .progress-bar {
+	margin-right: 3px;
+}
+
+.pipeline_progress .progress-bar {
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 10px;
 }
 /*:not(:first-child)*/
-.progress-bar.bg_blue:before{
-border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
+.progress-bar.bg_blue:before {
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
 
+.bg_green {
+	background: #bce0cc;
 }
-.bg_green{
-background:#bce0cc;
-}
-.bg_blue{
-background: #c0d5fb;
-}
-.bg_orange{
-background: #fbdcab;
 
+.bg_blue {
+	background: #c0d5fb;
+}
+
+.bg_orange {
+	background: #fbdcab;
 }
 
 .signal_background {
@@ -2319,206 +2354,202 @@ background: #fbdcab;
 	height: 30px;
 }
 
-.mycustomstyle{
-	    padding: 5px .75rem !important;
-	    font-size:14px !important;
-	   
+.mycustomstyle {
+	padding: 5px .75rem !important;
+	font-size: 14px !important;
 }
 
-.mycustomstyle+.dropdown-menu{
+.mycustomstyle+.dropdown-menu {
 	margin-top: 10px;
 	margin-left: 10px;
 	min-width: 727px !important;
-	
 }
 
-
-.bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:before{
-	border-bottom: 7px solid #d9d9d9  !important;
-    bottom: -12px !important;
- left: 684px !important;
-    border-width: 9px !important;
+.bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:before
+	{
+	border-bottom: 7px solid #d9d9d9 !important;
+	bottom: -12px !important;
+	left: 684px !important;
+	border-width: 9px !important;
 }
 
-.bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:after {
-    
-    bottom: -12px !important;
-left: 685px !important;
-    border-width: 8px !important;
+.bootstrap-select.show-menu-arrow .dropdown-toggle .filter-option:after
+	{
+	bottom: -12px !important;
+	left: 685px !important;
+	border-width: 8px !important;
 }
 
-.bootstrap-select .dropdown-toggle.mycustomstyle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle.mycustomstyle{
-		 	outline: 1px auto red!important; 
-		 	outline-width:	1px !important;
-	
+.bootstrap-select .dropdown-toggle.mycustomstyle:focus,
+	.bootstrap-select>select.mobile-device:focus+.dropdown-toggle.mycustomstyle
+	{
+	outline: 1px auto red !important;
+	outline-width: 1px !important;
 }
 
-
-
-.Rockstars> *:last-child >.border-right-dashed-separation  {
+.Rockstars>*:last-child>.border-right-dashed-separation {
 	border-right: 0 !important;
 }
-.Laggards> *:last-child >.border-right-dashed-separation {
-	border-right: 0 !important;
 
-}
-.Trending_Up> *:last-child >.border-right-dashed-separation{
+.Laggards>*:last-child>.border-right-dashed-separation {
 	border-right: 0 !important;
+}
 
-}
-.Trending_Down> *:last-child >.border-right-dashed-separation{
+.Trending_Up>*:last-child>.border-right-dashed-separation {
 	border-right: 0 !important;
 }
-.headingrow:last-child{
-		border-bottom: 0 !important;
-	
+
+.Trending_Down>*:last-child>.border-right-dashed-separation {
+	border-right: 0 !important;
+}
+
+.headingrow:last-child {
+	border-bottom: 0 !important;
 }
 
 /* start of radio buttton */
+.istar-radio-btn .istar-radio-btn-style {
+	position: relative;
+	display: block;
+	float: left;
+	margin-right: 10px;
+	width: 20px;
+	height: 20px;
+	border: 2px solid #999999;
+	border-radius: 50%;
+	-webkit-tap-highlight-color: transparent;
+}
 
+.istar-radio-btn .istar-radio-btn-style:after {
+	content: '';
+	position: absolute;
+	top: 3px;
+	left: 3px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: #ed4d67;
+	transform: scale(0);
+	transition: all 0.2s ease;
+	opacity: 0.08;
+	pointer-events: none;
+}
 
-    .istar-radio-btn .istar-radio-btn-style {
-	    position: relative;
-	    display: block;
-	    float: left;
-	    margin-right: 10px;
-	    width: 20px;
-	    height: 20px;
-	    border: 2px solid #999999;
-	    border-radius: 50%;
-	    -webkit-tap-highlight-color: transparent;
-	}
-	.istar-radio-btn .istar-radio-btn-style:after {
-	    content: '';
-	    position: absolute;
-	    top: 3px;
-	    left: 3px;
-	    width: 10px;
-	    height: 10px;
-	    border-radius: 50%;
-	    background: #ed4d67;
-	    transform: scale(0);
-	    transition: all 0.2s ease;
-	    opacity: 0.08;
-	    pointer-events: none;
-	}
-	.istar-radio-btn {
-	    position: relative;
-	    cursor: pointer;
-	    font-size: 13px;
-	}
-	input[type="radio"]:checked + .istar-radio-btn-style:after {
-	    transform: scale(1);
-	    transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
-	    opacity: 1;
-	}
-	.istar-radio-btn > input {
-    	display: none;
-	}
-	input[type="radio"]:checked + .istar-radio-btn-style {
-    	border-color: #ed4d67;
-	}
+.istar-radio-btn {
+	position: relative;
+	cursor: pointer;
+	font-size: 13px;
+}
+
+input[type="radio"]:checked+.istar-radio-btn-style:after {
+	transform: scale(1);
+	transition: all 0.2s cubic-bezier(0.35, 0.9, 0.4, 0.9);
+	opacity: 1;
+}
+
+.istar-radio-btn>input {
+	display: none;
+}
+
+input[type="radio"]:checked+.istar-radio-btn-style {
+	border-color: #ed4d67;
+}
 
 /* end of radio button */
 
 /* start of arrow left */
-
 .arrow-left:after, .arrow-left:before {
-left: 100%;
-    top: 10%;
-    border: solid transparent;
-    content: " ";
-    height: 0;
-    width: 0;
-    position: absolute;
-    pointer-events: none;
+	left: 100%;
+	top: 10%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
 }
 
 .arrow-left:after {
-border-color: rgba(136, 183, 213, 0);
-    border-left-color: #fff;
-    border-width: 7px;
-    margin-top: 1px;
+	border-color: rgba(136, 183, 213, 0);
+	border-left-color: #fff;
+	border-width: 7px;
+	margin-top: 1px;
 }
+
 .arrow-left:before {
-border-color: rgba(194, 225, 245, 0);
-    border-left-color: #ccc;
-    border-width: 8px;
+	border-color: rgba(194, 225, 245, 0);
+	border-left-color: #ccc;
+	border-width: 8px;
 }
 /* end of arrow left */
 
-
 /* start of calendar */
+.datepicker {
+	padding: 12px 12px !important;
+	background-color: #fff !important;
+	box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.25);
+	border: solid 1px #dddddd;
+}
 
-
- .datepicker{
- 	 padding: 12px 12px !important;
- 	 background-color: #fff !important;
-	 box-shadow: 0px 10px 40px 0 rgba(0, 0, 0, 0.25);
-	 border: solid 1px #dddddd;
- }
 .table-condensed {
-	background:white !important;
+	background: white !important;
 }
 
 .datepicker, .table-condensed tbody tr td {
-  font-size: 12px !important;
-  padding:10px;
+	font-size: 12px !important;
+	padding: 10px;
 }
 
- .datepicker .table-condensed>thead>tr>th.dow {
+.datepicker .table-condensed>thead>tr>th.dow {
 	color: #999999 !important;
 	font-weight: bold;
-		font-size: 12px;
-	
+	font-size: 12px;
 }
 
-.datepicker .table-condensed>thead>tr>th.datepicker-switch,#datepicker .table-condensed>thead>tr>th.prev,#datepicker .table-condensed>thead>tr>th.next {
+.datepicker .table-condensed>thead>tr>th.datepicker-switch, #datepicker .table-condensed>thead>tr>th.prev,
+	#datepicker .table-condensed>thead>tr>th.next {
 	color: #999999 !important;
-	  font-size: 14px !important;
+	font-size: 14px !important;
 	font-weight: 400 !important;
-	}
-
-.datepicker table tr td span.active.active{
-    background-color: #ed4d67 !important;
-    border-color: #ed4d67 !important;
 }
 
-#datepicker .datepicker{
+.datepicker table tr td span.active.active {
+	background-color: #ed4d67 !important;
+	border-color: #ed4d67 !important;
+}
+
+#datepicker .datepicker {
 	padding: 0px !important;
- 	 background-color: #fff !important;
-	 box-shadow: none !important;
-	 border: none !important;
+	background-color: #fff !important;
+	box-shadow: none !important;
+	border: none !important;
 }
 
-
-
-#datepicker .datepicker,#datepicker .table-condensed {
+#datepicker .datepicker, #datepicker .table-condensed {
 	background-color: #f9f9f9 !important;
 }
 
-
 #datepicker .datepicker {
 	font-size: 12px;
-} 
-
-
+}
 
 #datepicker .table-condensed>thead>tr>th.dow {
 	color: #999999 !important;
 	font-weight: bold;
-		font-size: 12px;
-	
+	font-size: 12px;
 }
-#datepicker .table-condensed>thead>tr>th.datepicker-switch,#datepicker .table-condensed>thead>tr>th.prev,#datepicker .table-condensed>thead>tr>th.next {
+
+#datepicker .table-condensed>thead>tr>th.datepicker-switch, #datepicker .table-condensed>thead>tr>th.prev,
+	#datepicker .table-condensed>thead>tr>th.next {
 	color: #999999 !important;
-	  font-size: 14px !important;
+	font-size: 14px !important;
 	font-weight: 400 !important;
-	}
-#datepicker .table-condensed tbody tr td {
-  font-size: 12px !important;
-  
 }
+
+#datepicker .table-condensed tbody tr td {
+	font-size: 12px !important;
+}
+
 #datepicker .activeClass {
 	background: #dddddd;
 	font-weight: 600;
@@ -2529,109 +2560,109 @@ border-color: rgba(194, 225, 245, 0);
 	border-spacing: 10px 8px;
 }
 
+.v-progress-bar-container {
+	width: 100%;
+	height: 14px;
+	display: flex;
+	align-items: center;
+}
 
+.v-progress-bar-container_report {
+	width: 100%;
+	height: 20px;
+	display: flex;
+	align-items: center;
+}
 
- .v-progress-bar-container {
-            width: 100%;
-            height: 14px;
-            display: flex;
-            align-items: center;
-        }
+.v-progress-bar {
+	height: 14px;
+	border-radius: 0 14px 14px 0;
+	position: relative;
+	border: 3px solid white;
+	margin-left: -8px;
+}
 
- .v-progress-bar-container_report {
-            width: 100%;
-            height: 20px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .v-progress-bar {
-            height: 14px;
-            border-radius: 0 14px 14px 0;
-            position: relative;
-            border:3px solid white;
-            margin-left: -8px;
-        }
-        
-          .v-progress-bar_report {
-            height: 20px;
-            border-radius: 0 14px 14px 0;
-            position: relative;
-            border:3px solid white;
-            margin-left: -8px;
-        }
+.v-progress-bar_report {
+	height: 20px;
+	border-radius: 0 14px 14px 0;
+	position: relative;
+	border: 3px solid white;
+	margin-left: -8px;
+}
 
-        .v-progress-bar-container .v-progress-bar:first-child{
-            margin-left: 0%;
-            border-radius: 14px;
-        }
- .v-progress-bar-container_report .v-progress-bar_report:first-child{
-            margin-left: 0%;
-            border-radius: 14px;
-        }
+.v-progress-bar-container .v-progress-bar:first-child {
+	margin-left: 0%;
+	border-radius: 14px;
+}
 
-
+.v-progress-bar-container_report .v-progress-bar_report:first-child {
+	margin-left: 0%;
+	border-radius: 14px;
+}
 
 /* end of calendar */
-
-.disabled{
+.disabled-div {
 	opacity: 0.3;
-	pointer-events: none; 
+	pointer-events: none;
 }
-.search-filter{
-	min-width: 90px; 
+
+.search-filter {
+	min-width: 90px;
 	height: 25px;
 }
-.cross-btn{
-	position: absolute; 
-	right: -7px; 
+
+.cross-btn {
+	position: absolute;
+	right: -7px;
 	top: 5px;
 }
-.z-9{
+
+.z-9 {
 	z-index: 9;
 }
-.connector-line{
+
+.connector-line {
 	position: absolute;
-   border-left: 1px dashed #ddd;
-   height: 84%;
-   top: 32px;
-   left: 50px;
+	border-left: 1px dashed #ddd;
+	height: 84%;
+	top: 32px;
+	left: 50px;
 }
-.cues-card{
+
+.cues-card {
 	border-radius: 8px;
 }
+
 .note-editor.note-frame {
-    border: none !important;
+	border: none !important;
 }
 
-.modal.fade{
-  transform: scale(0);
-  opacity: 0;
-  -webkit-transition: all .2s linear;
-  -o-transition: all .2s linear;
-  transition: all .2s linear;
+.modal.fade {
+	transform: scale(0);
+	opacity: 0;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
 }
 
-.modal.fade.show{
-	  opacity: 1;
-	
-  transform: scale(1);
+.modal.fade.show {
+	opacity: 1;
+	transform: scale(1);
 }
 
-
-.dropdown .dropdown-menu,.istar-dropdown-task  .dropdown-menu{
-  -webkit-transition: all .1s linear;
-  -o-transition: all .1s linear;
-  transition: all .1s linear;
-  display: block !important;
-  transform: scale(0);
-}
-.dropdown .dropdown-menu.show,.istar-dropdown-task  .dropdown-menu.show{
-  transform: scale(1);
+.dropdown .dropdown-menu, .istar-dropdown-task  .dropdown-menu {
+	-webkit-transition: all .1s linear;
+	-o-transition: all .1s linear;
+	transition: all .1s linear;
+	display: block !important;
+	transform: scale(0);
 }
 
+.dropdown .dropdown-menu.show, .istar-dropdown-task  .dropdown-menu.show
+	{
+	transform: scale(1);
+}
 
-
-.navbar-light .navbar-nav .nav-link:hover{
-	color:#ed4d67 !important;
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #ed4d67 !important;
 }

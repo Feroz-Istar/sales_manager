@@ -487,7 +487,7 @@
 													</div>
 												</div>
 												<ul
-													class="list-group shadow d-flex flex-column h-100  taskpopup  disabled	">
+													class="list-group shadow d-flex flex-column h-100  taskpopup  disabled-div">
 
 
 													<li class="notesdropdown list-group-item p-0  pt-10 pb-10">
@@ -896,7 +896,7 @@
 													</div>
 												</div>
 												<ul
-													class="list-group shadow d-flex flex-column h-100  taskpopup disabled	">
+													class="list-group shadow d-flex flex-column h-100  taskpopup disabled-div	">
 
 
 													<li class="notesdropdown list-group-item p-0  pt-10 pb-10">

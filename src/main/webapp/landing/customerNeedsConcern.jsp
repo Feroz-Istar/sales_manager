@@ -100,7 +100,7 @@
 					<div class="col-md-3 p-0 col_bordering4_blank minh-200">
 							<div class="">
 							<div class="row m-0 align-items-center pt-30 pb-30 pr-15 pl-15 <%=isshow%>">
-								<div class="col-md-2 pr-20 p-0 text-center" >
+								<div class="col-md-3 pr-20 p-0 text-center" >
 									<div class="greyish-brown f-42 font-weight-bold">04</div>
 									<div class="greyish-brown f-12 fw-300">Instances </div>
 								</div>

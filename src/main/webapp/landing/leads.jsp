@@ -610,7 +610,7 @@
 							<div class="col-md-2 col d-flex align-items-center p-0">
 								<img class="hw-24 mr-10" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown pr-2 text-break">Call <span class="pl-2">-</span></div>
+								<div class="f-14 greyish-brown text-break">Call&nbsp;&nbsp;-&nbsp;&nbsp;</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
 							<div class="col-md-4 col-12 p-0">
@@ -943,7 +943,7 @@
 							<div class="col-md-2 col d-flex align-items-center p-0">
 								<img class="hw-24 mr-10" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown text-break pr-2">Call<span class="pl-2">-</span></div>
+								<div class="f-14 greyish-brown text-break">Call&nbsp;&nbsp;-&nbsp;&nbsp;</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 							</div>
 							<div class="col-md-4 col-12  p-0">
@@ -1269,7 +1269,7 @@
 							<div class="d-flex align-items-center">
 								<img class="hw-24 mr-10" alt="callicon"
 									src="<%=baseURL%>assets/image/calltask.svg">
-								<div class="f-14 greyish-brown  p-0 text-break pr-2">Call<span class="pl-2">-</span></div>
+								<div class="f-14 greyish-brown text-break">Call&nbsp;&nbsp;-&nbsp;&nbsp;</div>
 								<div class="f-12 brown-grey">June 15, 2019 02:45 PM</div>
 								</div>
 							</div>
@@ -1341,40 +1341,40 @@
 			aria-hidden="true">
 			<div class="modal-dialog modal-lg modal-dialog-centered"
 				role="document">
-				<div class="modal-content rounded-0 px-3 lostleadmodalsize">
-					<div class="row shadow-sm p-3">
+				<div class="modal-content rounded-0 p-0 lostleadmodalsize">
+					<div class="row shadow-sm m-0 pl-30 pr-30 pt-25 pb-25	">
 						<div
-							class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold"
+							class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold p-0"
 							id="lostLeadModalCenterTitle">Lost Lead</div>
-						<button type="button" class="col-md-1 col-1 close"
+						<button type="button" class="col-md-1 col-1 close p-0"
 							data-dismiss="modal" aria-label="Close">
-							<img src="<%=baseURL%>assets/image/close.svg" alt="close">
+							<img src="<%=baseURL%>assets/image/close.svg" alt="close"  class=" float-right">
 						</button>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body p-0 pl-30 pr-30">
 					<form id="lostleadmodal">
-						<div class="row pb-4">
-							<div class="col-md-12 f-18 font-weight-bold greyish-brown text-truncate" title="Zencorporation Pot. Ltd.">
+						<div class="row pt-30 pb-10 m-0">
+							<div class="col-md-12 f-18 font-weight-bold greyish-brown text-truncate p-0" title="Zencorporation Pot. Ltd.">
 								Zencorporation Pot. Ltd.</div>
 						</div>
 
-						<div class="row pb-4">
-							<div class="col-md-4 border-right-separation">
+						<div class="row m-0">
+							<div class="col-md-4 border-right-separation p-0">
 								<div class="f-14 brownish-grey">Contact Person</div>
 								<div class="f-16 fw-500 black text-truncate" title="">Miriam Franklin</div>
 							</div>
-							<div class="col-md-4 border-right-separation">
+							<div class="col-md-4 border-right-separation p-0 pl-15">
 								<div class="f-14 brownish-grey">Recent Task</div>
 								<div class="f-16 fw-500 black">Call</div>
 							</div>
-							<div class="col-md-4 ">
+							<div class="col-md-4 p-0 pl-15 ">
 								<div class="f-14 brownish-grey">Deal Value</div>
 								<div class="f-16 fw-500 black">$ 208</div>
 							</div>
 						</div>
 
-						<div class="row pt-4">
-							<div class="col-md-12">
+						<div class="row m-0 pt-50 pb-30">
+							<div class="col-md-12 p-0">
 								<textarea
 									class="form-control custom-modal-textarea f-14 brown-grey w-100 p-2"
 									id="reasonforlosing" name="reasonforlosing" rows="6" placeholder="Type Reason"></textarea>
@@ -1382,11 +1382,11 @@
 						</div>
 					</form>
 					</div>
-					<div class="modal-footer">
+					<div class="modal-footer p-0 pt-25 pb-25 pl-30 pr-30">
 						<button type="button"
 							class="btn theme_color f-14 font-weight-bold">Reset</button>
 						<button type="button"
-							class="btn modal-submit-btn f-14 font-weight-bold"
+							class="btn big_button rounded-0 f-14 font-weight-bold"
 							 id="lostleadsubmit">SUBMIT</button>
 					</div>
 				</div>
@@ -1406,7 +1406,7 @@
 
 					<div class="modal-body p-0" id="lostLeadModalCenterTitle">
 
-						<div class="row shadow-bottom p-0 m-0  pt-25 pb-25 ml-25 mr-25">
+						<div class="row shadow-bottom bottom_border_1px p-0 m-0  pt-25 pb-25 ml-25 mr-25">
 							<div class="col-md-11 leadmodal p-0">
 								<ul class="nav nav-pills p-0" id="pills-tab" role="tablist">
 									<li class="nav-item"><a class="nav-link p-0 active"
@@ -1537,52 +1537,52 @@
 			aria-hidden="true">
 			<div class="modal-dialog modal-lg modal-dialog-centered"
 				role="document">
-				<div class="modal-content rounded-0 px-3 lostleadmodalsize">
-					<div class="row shadow-sm p-3">
+				<div class="modal-content rounded-0 p-0 lostleadmodalsize">
+					<div class="row shadow-sm m-0 pl-30 pr-30 pt-25 pb-25	">
 						<div
-							class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold"
+							class="col-md-11 col-11 modal-title greyish-brown f-18 font-weight-bold p-0"
 							id="wonLeadModalCenterTitle">Won Lead</div>
-						<button type="button" class="col-md-1 col-1 close"
+						<button type="button" class="col-md-1 col-1 close p-0"
 							data-dismiss="modal" aria-label="Close">
-							<img src="<%=baseURL%>assets/image/close.svg" alt="close">
+							<img src="<%=baseURL%>assets/image/close.svg" alt="close"  class=" float-right">
 						</button>
 					</div>
-					<div class="modal-body">
+					<div class="modal-body p-0 pl-30 pr-30">
 					<form id="wonleadmodal">
-						<div class="row pb-4">
-							<div class="col-md-12 f-18 font-weight-bold greyish-brown text-truncate" title="">
+						<div class="row pt-30 pb-10 m-0">
+							<div class="col-md-12 f-18 font-weight-bold greyish-brown text-truncate p-0" title="Zencorporation Pot. Ltd.">
 								Zencorporation Pot. Ltd.</div>
 						</div>
 
-						<div class="row pb-4">
-							<div class="col-md-4 border-right-separation">
+						<div class="row m-0">
+							<div class="col-md-4 border-right-separation p-0">
 								<div class="f-14 brownish-grey">Contact Person</div>
 								<div class="f-16 fw-500 black text-truncate" title="">Miriam Franklin</div>
 							</div>
-							<div class="col-md-4 border-right-separation">
+							<div class="col-md-4 border-right-separation p-0 pl-15">
 								<div class="f-14 brownish-grey">Recent Task</div>
 								<div class="f-16 fw-500 black">Call</div>
 							</div>
-							<div class="col-md-4 ">
+							<div class="col-md-4 p-0 pl-15 ">
 								<div class="f-14 brownish-grey">Deal Value</div>
 								<div class="f-16 fw-500 black">$ 208</div>
 							</div>
 						</div>
 
-						<div class="row pt-4">
-							<div class="col-md-12">
+						<div class="row m-0 pt-50 pb-30">
+							<div class="col-md-12 p-0">
 								<textarea
 									class="form-control custom-modal-textarea f-14 brown-grey w-100 p-2"
-									id="reasonforwin" name="reasonforwin" rows="6" placeholder="Type Reason"></textarea>
+									id="reasonforlosing" name="reasonforwinning" rows="6" placeholder="Type Reason"></textarea>
 							</div>
 						</div>
 					</form>
 					</div>
-					<div class="modal-footer">
+					<div class="modal-footer p-0 pt-25 pb-25 pl-30 pr-30">
 						<button type="button"
 							class="btn theme_color f-14 font-weight-bold">Reset</button>
 						<button type="button"
-							class="btn modal-submit-btn f-14 font-weight-bold"
+							class="btn big_button rounded-0 f-14 font-weight-bold"
 							 id="wonleadsubmit">SUBMIT</button>
 					</div>
 				</div>
