@@ -1202,6 +1202,7 @@ Modifying the scroll bar across the whole application
 	color: #999999;
 	font-size: 12px;
 	font-weight: 400;
+	background-color: transparent;
 }
 
 .salesken.pagination>.page-item.active .page-link {
@@ -1219,8 +1220,8 @@ Modifying the scroll bar across the whole application
 	z-index: 1;
 	color: #222222 !important;
 	text-decoration: none;
-	background-color: #fff;
-	border-color: #fff;
+	background-color: transparent;
+	border-color:transparent;
 }
 
 .salesken.pagination>.page-item>#page-next {

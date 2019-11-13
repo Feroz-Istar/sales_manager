@@ -257,7 +257,7 @@
 										<input type="text" id="user_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012" placeholder="Calendar">
 										<div class="input-group-addon" onclick="showCalendar()">
-											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1  hw-24">
 										</div>
 									</div>	
 									<div class="istar-dropdown-task select_focus mb-10 mt-10">
@@ -343,7 +343,7 @@
 													<div class="f-30 black font-weight-bold">$ <span class="greyish-brown">50K</span> </div>
 													<div class="f-12 brownish-grey">Estimated Value </div>
 												</div>
-												<div class="col-md-2 p-0">
+												<div class="col-md-3 p-0">
 													<div class="f-30 black font-weight-bold">52% </div>
 													<div class="f-12 brownish-grey">Tentative </div>
 												</div>
@@ -508,7 +508,7 @@
 						
 						<!-- start of overall analysis -->
 						<div class="overall_analysis">
-						<div class="row m-0 theme_dashed_border_bottom pl-40 pr-40 pt-20 pb-20">
+						<div class="row m-0 theme_dashed_border_bottom ml-40 mr-40 pt-20 pb-20">
 						<div class="col-md-4 p-0 overall_title">
 						<h5 class="f-20 fw-500 black">Overall Analysis</h5>
 						
@@ -518,7 +518,7 @@
 										<input type="text" id="timeline_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012" placeholder="Calendar">
 										<div class="input-group-addon" onclick="showTimelineCalendar()">
-											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1 hw-24">
 										</div>
 									</div>	
 								<div class="istar-dropdown-task select_focus mr-10">
@@ -663,19 +663,19 @@
 							</div>
 							<div class="col-md-3 p-0">
 								<div class="theme_bg rounded-circle hw-10"></div>
-								<div class="very-light-pink f-20 font-weight-bold">25%</div>
+								<div class="greyish-brown f-20 font-weight-bold">25%</div>
 							</div>
 							<div class="col-md-3 p-0">
 								<div class="theme_bg rounded-circle hw-10"></div>
-								<div class="very-light-pink f-20 font-weight-bold">50%</div>
+								<div class="greyish-brown f-20 font-weight-bold">50%</div>
 							</div>
 							<div class="col-md-3 p-0">
 								<div class="theme_bg rounded-circle hw-10"></div>
-								<div class="very-light-pink f-20 font-weight-bold">75%</div>
+								<div class="greyish-brown f-20 font-weight-bold">75%</div>
 							</div>
 							<div class="col-md-3 p-0">
 								<div class="theme_bg rounded-circle hw-10"></div>
-								<div class="very-light-pink f-20 font-weight-bold">100%</div>
+								<div class="greyish-brown f-20 font-weight-bold">100%</div>
 							</div>
 						</div>					
 						
@@ -702,17 +702,17 @@
 							aria-labelledby="signal_details">
 
 							<div class="card  pt-20 pr-20 pl-20 " style="min-width: 260px;">
-								<div class="card-body border-0 p-0">
+								<div class="card-body p-0">
 										
-											<div class="d-flex pb-25">
+											<div class="d-flex pb-5">
 												<div class="col-md-11 p-0 f-16 black fw-500"> Introduction Break-up</div>
 												<div class="col-md-1 p-0">
 													<img alt="close" src="<%=baseURL %>assets/image/close.svg" class="cursor-pointer close-signal">
 												</div>
 											</div>
 										
-											<%for(int j=0;j<4;j++){ %>
-											<div class="theme_dotted_border_bottom pb-15">
+											<%for(int j=0;j<3;j++){ %>
+											<div class="theme_dotted_border_bottom pb-15 pt-15">
 												<div class=" greyish-brown f-18 font-weight-bold">30%</div>
 												<div class="brownish-grey f-12">Hello Sir, I am calling from United Tech, Is it good time to speak ?</div>
 											</div>
@@ -735,7 +735,7 @@
 						
 						
 						<div class="comparative_analysis">
-						<div class="row m-0 theme_dashed_border_bottom pl-40 pr-40 pt-20 pb-20">
+						<div class="row m-0 theme_dashed_border_bottom ml-40 mr-40 pt-20 pb-20">
 						<div class="col-md-4 p-0">
 						<h5 class="f-20 fw-500 black">Comparative Analysis</h5>
 						
@@ -919,19 +919,19 @@
 								</div>
 								<div class="col-md-3 p-0">
 									<div class="theme_bg rounded-circle hw-10"></div>
-									<div class="very-light-pink f-20 font-weight-bold">25%</div>
+									<div class="greyish-brown f-20 font-weight-bold">25%</div>
 								</div>
 								<div class="col-md-3 p-0">
 									<div class="theme_bg rounded-circle hw-10"></div>
-									<div class="very-light-pink f-20 font-weight-bold">50%</div>
+									<div class="greyish-brown f-20 font-weight-bold">50%</div>
 								</div>
 								<div class="col-md-3 p-0">
 									<div class="theme_bg rounded-circle hw-10"></div>
-									<div class="very-light-pink f-20 font-weight-bold">75%</div>
+									<div class="greyish-brown f-20 font-weight-bold">75%</div>
 								</div>
 								<div class="col-md-3 p-0">
 									<div class="theme_bg rounded-circle hw-10"></div>
-									<div class="very-light-pink f-20 font-weight-bold">100%</div>
+									<div class="greyish-brown f-20 font-weight-bold">100%</div>
 								</div>
 							</div>	
 						
@@ -1102,7 +1102,7 @@
 						<!-- start of custom_report tab content-->
 							
 							<div class="row justify-content-center pt-20 pb-20 shadow-bottom theme_solid_border_bottom m-0">
-								<div class="col-md-8 p-0">
+								<div class="col-md-6 p-0">
 									<div class="input-group">
 										<input id="individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14	" type="search" placeholder="Search here" style="border-right: none !important; height: 35px;">
 										<div class="input-group-append">
@@ -1115,7 +1115,7 @@
 							</div>
 							
 							<div class="before-search">
-								<div class="row cream-white m-0 theme_solid_border_bottom pt-10 pb-10 pr-40 pl-40">
+								<div class="row cream_white m-0 theme_solid_border_bottom pt-10 pb-10 pr-40 pl-40">
 									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-10 " id="2bhk">2 BHK Flats</button>
 									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-10 search-filter" id="badWord">Bad Words</button>
 									<button class="theme_solid_border bg-white brown-grey rounded f-12 mr-10 search-filter" id="expensiveFlat">Expensive Flats</button>	
@@ -1123,7 +1123,7 @@
 								
 								<div class="d-flex flex-column justify-content-center align-items-center pt-115 minh-500">
 									<img src="<%=baseURL %>assets/image/custom-report.svg" alt="custom report" class="pb-20" height="111.3" width="119.7">
-									<div class="f-16 fw-500 ">Make a custom report</div>
+									<div class="f-16 fw-500 black ">Make a custom report</div>
 									<div class="f-12 brownish-grey">Lorem Ipsum is simply
 										dummy text of the printing and typesetting industry.</div>
 								</div>
@@ -1133,7 +1133,7 @@
 							<div class="after-search  ">
 								<div class="row cream-white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10">
 									<div class="col-md-6 d-flex p-0">
-										<div class="text-result-found border-right-separation pr-15">
+										<div class="text-result-found theme_solid_border_right_1px pr-15">
 											<strong class="number-of-results">04</strong> Results Found
 										</div>
 										<div class=" pl-15">
@@ -1144,23 +1144,23 @@
 									</div>
 									
 									<div class="col-md-2 text-right p-0">
-										<button type="submit" class="btn theme_color f-14 font-weight-bold ">Reset</button>
+										<button type="submit" class="btn theme_color f-12 font-weight-bold ">Reset</button>
 										<button type="button" class="btn small_outline_button font-weight-bold rounded-0 f-12" id="save" onclick="save()">SAVE</button>
 									</div>
 								</div>
 								
 								<div class="row minh-500 m-0">
-									<div class="col-md-10 shadow-right pl-30 pr-30">
+									<div class="col-md-10 shadow-right pl-40 pr-40">
 										<%for(int i=0;i<2;i++){ %>
 										<div class="row m-0">
 											<div class="col-md-10 p-0">
 												<div class="d-flex pb-15 pt-30">
 													<img src="<%=baseURL%>assets/image/calltask.svg" height="22px" width="22px" class="mr-10"> 
-													<div class="align-self-center border-right-separation f-12 pr-20">Call Task</div>
-													<div class="f-16 font-weight-bold pl-20">Accenture Consulting Inc.</div>
+													<div class="align-self-center theme_solid_border_right_1px black f-14 pr-20">Call Task</div>
+													<div class="f-16 fw-500 greyish-brown pl-20">Accenture Consulting Inc.</div>
 												</div>
 												
-												<div class="f-14 blue-black pb-15">Sed tempus odio eget lacus mattis scelerisque <span class="bg-light-pink font-weight-bold"> 2 Bhk</span> pellentesque pharetra elit non fringilla. Sed in libero diam. Pellentesque sem quam...</div>
+												<div class="f-14 blue-black pb-15">Sed tempus odio eget lacus mattis scelerisque <span class="bg-light-pink fw-500"> 2 Bhk</span> pellentesque pharetra elit non fringilla. Sed in libero diam. Pellentesque sem quam...</div>
 												<p class=" brown-grey f-12 m-0 pb-30 border_bottom_1_dashed">June 22, 2019 &nbsp;&nbsp; 02:45 PM</p>
 											</div>
 										</div>
@@ -1189,7 +1189,7 @@
 												class="form-control  custom-dateselect" value="12-02-2012" placeholder="Calendar">
 											<div class="input-group-addon px-1"
 												onclick="showqualifiedCalendar()">
-												<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"/>
+												<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar" class="h-20"/>
 											</div>
 										</div>
 										

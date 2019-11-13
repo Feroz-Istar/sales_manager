@@ -71,9 +71,10 @@
 										<input type="text" id="nofollowup_datepicker" class="form-control  custom-dateselect"
 											value="12-02-2012" placeholder="Calendar">
 										<div class="input-group-addon" onclick="showCalendar()">
-											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1">
+											<img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1 hw-24">
 										</div>
 									</div>	
+									
 									<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 										id="user_deal_value" data-toggle="dropdown" aria-haspopup="true"
@@ -83,7 +84,7 @@
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu"  data-display="static" aria-labelledby="user_deal_value">
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_deal_value">
 										<button class="dropdown-item" type="button">
 											 $1000
 										</button>
@@ -145,124 +146,90 @@
 								</div>
 								
 								
-	
-									
 									<div class="istar-dropdown-task dropdown" id="filterbutton">
-					<button class="istar-dropdown-arrow " id="user_agent"  data-display="static"
-						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<span class="sr-only">Toggle Dropdown</span>All Agents <img
-							src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
-							class=" float-right">
-					</button>
-					<div
-						class="dropdown-menu filter-menu dropdown-menu-lg-right position-absolute px-4"
-						aria-labelledby="user_agent" style="width: 350px; ">
-
-						<ul
-							class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end"
-							id="myTab" role="tablist">
-							<li class="nav-item"><a class="nav-link active"
-								id="individual-tab" data-toggle="tab" href="#individual"
-								role="tab" aria-controls="individual" aria-selected="true">Individual</a>
-							</li>
-							<li class="nav-item"><a class="nav-link" id="team-tab"
-								data-toggle="tab" href="#team" role="tab" aria-controls="team"
-								aria-selected="false">Team</a></li>
-
-						</ul>
-						<div class="tab-content" id="myTabContent">
-							<div class="tab-pane fade show active px-4 py-3" id="individual"
-								role="tabpanel" aria-labelledby="individual-tab">
-								<div class="input-group py-2">
-									<input id="individual_search"
-										class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-										type="search" placeholder="Search"
-										style="border-right: none !important;">
-									<div class="input-group-append">
-										<button
-											class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-											type="button" style="">
-											<i class="fa fa-search f-12 brown-grey"></i>
+										<button class="istar-dropdown-arrow " data-display="static"
+										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
+										aria-expanded="false">
+										<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+												class=" float-right">
 										</button>
-									</div>
-								</div>
-
-								<div class=" mb-2"
-									style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-
-									<%
-										for (int i = 0; i < 20; i++) {
-									%>
-									<div class="d-flex align-items-center pt-3">
-
-
-										<input class="istar-checkbox agentcheckbox" data-id="<%=i%>"
-											id="associate-checkbox<%=i%>" type="checkbox"> <label
-											class="istar-checkbox-style" for="associate-checkbox<%=i%>"></label>
-										<img alt="user-img" src="<%=baseURL%>/assets/image/11.png"
-											class="rounded-circle ml-3 mr-2 hw-40">
-										<div>
-											<div
-												class="f-14 font-weight-bold greyish-brown text-truncate"
-												title="Robert Garcia">Robert Garcia</div>
-											<div class="f-12  brownish-grey text-truncate" title="team">Team
-												-02</div>
+										
+										 <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+										aria-labelledby="target_dropdown" style="width: 350px;">
+												
+												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="targetTab" role="tablist">
+												  <li class="nav-item">
+												    <a class="nav-item nav-link active" id="target_individual-tab" data-toggle="tab" href="#target_individual" role="tab" aria-controls="target_individual" aria-selected="true">Individual</a>
+												  </li>
+												  <li class="nav-item">
+												    <a class="nav-item nav-link" id="target_team-tab" data-toggle="tab" href="#target_team" role="tab" aria-controls="target_team" aria-selected="false">Team</a>
+												  </li>
+												 
+												</ul>
+												<div class="tab-content" id="targetTab-tabContent">
+												  <div class="tab-pane fade show active px-4 py-3" id="target_individual" role="tabpanel" aria-labelledby="target_individual-tab">
+												  		<div class="input-group py-2">
+															<input id="target_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														
+														<%for(int i=0; i<20;i++){ %>
+					                                    <div class="d-flex align-items-center pt-3">
+					                                    
+					                                    
+									<input class="istar-checkbox targetagentcheckbox" data-id="<%=i %>" id="target_associate-checkbox<%=i %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="target_associate-checkbox<%=i %>"></label>
+											<img alt="Agent Image" title="Agent Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+										  <div>
+					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
+					                                        </div>
 										</div>
-									</div>
-									<%
-										}
-									%>
-								</div>
-
-
-							</div>
-
-							<div class="tab-pane fade px-4 py-3" id="team" role="tabpanel"
-								aria-labelledby="team-tab">
-
-								<div class="input-group py-2">
-									<input id="individual_search"
-										class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height"
-										type="search" placeholder="Search"
-										style="border-right: none !important;">
-									<div class="input-group-append">
-										<button
-											class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center"
-											type="button" style="">
-											<i class="fa fa-search f-12 brown-grey"></i>
-										</button>
-									</div>
-								</div>
-
-								<div class="mb-2"
-									style="height: 370px; overflow-x: hidden; overflow-y: auto;">
-									<%
-										for (int j = 0; j < 20; j++) {
-									%>
-									<div class="d-flex align-items-center pt-3">
-										<input class="istar-checkbox teamcheckbox" data-id="<%=j%>"
-											id="team-checkbox<%=j%>" type="checkbox"> <label
-											class="istar-checkbox-style" for="team-checkbox<%=j%>"></label>
-										<div class="f-12 ml-2 brownish-grey">
-											Team -0<%=j%></div>
-									</div>
-									<%
-										}
-									%>
-								</div>
-
-
-
-							</div>
-						</div>
-						<div class="w-100 text-center">
-							<button
-								class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold agentteamsubmit mb-3 text-center px-3"
-								style="min-width: 200px;">Submit</button>
-						</div>
-					</div>
-
-				</div>
+										<%} %>
+					                                    </div>
+					                                    
+					                                     		
+					                                 </div>
+					                                			                                 
+												  <div class="tab-pane fade px-4 py-3" id="target_team" role="tabpanel" aria-labelledby="target_team-tab">
+												  		
+												  		<div class="input-group py-2">
+															<input id="target_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+															<div class="input-group-append">
+																<button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+																	<i class="fa fa-search f-12 brown-grey"></i>
+																</button>
+															</div>
+														</div>
+														
+														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<%for(int j=0; j<20;j++){ %>
+														<div class="d-flex align-items-center pt-3">
+					                                        <input class="istar-checkbox targetteamcheckbox" data-id="<%=j %>" id="target_team-checkbox<%=j %>" type="checkbox">
+					                                        <label class="istar-checkbox-style" for="target_team-checkbox<%=j%>"></label>
+					                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
+					                                    </div>
+					                                    <%} %>
+					                                    </div>
+					                                    
+					                                     	
+												  		
+												  </div>
+												</div>
+												 <div class="w-100 text-center">
+												 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold mb-3 text-center px-3" style="min-width:200px;" id="target_team_submit">Submit</button>
+												</div>
+										  </div>
+										
+									</div> 
+									
+									
 								
 							</div>
 						</div>
@@ -286,35 +253,40 @@
 							<div class="card mb-20 mr-40 ml-40 cursor-pointer" onclick="window.location.href = 'userDetail.jsp'">
 								<div class="card-body p-0">
 									<div class="row m-0  pt-30 pb-30">
-										<div class="col-md-3 border-right-dashed-separation p-0 pl-30 pr-30">
-											<div class="font-weight-bold f-18 black">Team South</div>
-											<div class="f-14 brown-grey mb-20">25 Users</div>
+										<div class="col-md-3 border-right-dashed-separation-2px p-0 pl-30 pr-30">
+											<div class="d-flex align-items-center pb-25">
+												<img src="<%=baseURL%>assets/image/37.jpg" class="rounded-circle hw-40 ">
+												<div class="ml-10">
+													<div class="greyish-brown f-14">Stanley Howard</div>
+													<div class="brown-grey f-12">ID - 00089</div>	
+												</div>
+											</div>
 											
 											<div class="row m-0 justify-content-between">
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">$ <span class="pastel-red">50K</span> </div>
+													<div class="f-30 black font-weight-bold">$ <span class="pastel-red">50K</span> </div>
 													<div class="f-12 brown-grey">Acheived Value </div>
 												</div>
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">25%</div>
-													<div class="f-12 brown-grey">Win Rate</div>
+													<div class="f-30 blue-black font-weight-bold">$ 50K</div>
+													<div class="f-12 brown-grey">Estimated Value</div>
 												</div>
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">52% </div>
-													<div class="f-12 brown-grey">Tentative </div>
+													<div class="f-30 black font-weight-bold">52% </div>
+													<div class="f-12 brown-grey">Win Rate</div>
 												</div>
 											</div>
 											
 										</div>
-										<div class="col-md-3 border-right-dashed-separation p-0 pl-30 pr-30	">
-											<div class="font-weight-bold f-18 black mb-10">Activity Stats</div>
+										<div class="col-md-3 border-right-dashed-separation-2px p-0 pl-30 pr-30	">
+											<div class="fw-500 f-16 black mb-10">Activity Stats</div>
 											<div class="row m-0">
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">25%</div>
+													<div class="f-30 black font-weight-bold">25%</div>
 													<div class="f-12 brown-grey">Utilisation</div>
 												</div>
 												<div class="col-md-3 p-0">
-													<div class="f-30 blue-black font-weight-bold">52% </div>
+													<div class="f-30 black font-weight-bold">52% </div>
 													<div class="f-12 brown-grey">Talk Ratio </div>
 												</div>
 											</div>
@@ -333,7 +305,7 @@
 											
 										</div>
 										<div class="col-md-6 p-0 pl-30 pr-30">
-											<div class="font-weight-bold f-18 black mb-15">Playbook Stats</div>
+											<div class="fw-500 f-16 black mb-15">Playbook Stats</div>
 											<div class="row m-0">
 												<div class="col-md-6 p-0">
 													<div class="font-weight-bold f-12 brownish-grey d-flex mb-10">Strong <i class="fal fa-info-circle f-16 soft-blue align-self-center ml-1"></i></div>
@@ -393,7 +365,7 @@
 		<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 		<script>
 		$(document).ready(function() {
-			$('.dropdown-menu').click(function(e) {
+			$('.filter-menu.dropdown-menu').click(function(e) {
 				e.stopPropagation();
 			
 			});
@@ -413,8 +385,34 @@
 				 $('#user_selections').hide();
 			 });
 			
+			 $('#target_team_submit').click(function(e) {
+					var agent_array=[];
+					var team_array=[];
+					
+					$('.targetagentcheckbox').each(function(){
+						if($(this).prop('checked')===true){
+							agent_array.push($(this).data('id'));
+						}
+					});
+					$('.targetteamcheckbox').each(function(){
+						if($(this).prop('checked')===true){
+							team_array.push($(this).data('id'));
+						}
+					});
+					
+					if(agent_array.length==0 && team_array.length==0){
+						alert("Please select atleast one");
+					}else{
+						$('#target_dropdown').dropdown('hide');
+					}
+					console.log(agent_array)
+					console.log(team_array)
+						
+
 				});
-		</script>
+			
+		});
+</script>
 		
 		
 		

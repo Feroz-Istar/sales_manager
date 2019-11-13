@@ -8,11 +8,11 @@
 }
 
 .line-style{
-	position: absolute;
-    width: 70%;
+    position: absolute;
+    width: 68%;
     height: 1px;
-    border: 1px dashed #eeeeee;
-    top: 28px;
+    border-top: 2px dotted #eeeeee;
+    top: 30px;
     left: 70px;
 }
 
