@@ -337,7 +337,7 @@ html, body {
 .istar-dropdown-task-menu>.dropdown-item {
 	height: 50px !important;
 	font-size: 14px !important;
-	color: #999999 !important;
+	color: #999999;
 	display: flex;
 	align-items: center;
 	padding: 0 20px !important;
@@ -931,7 +931,7 @@ Modifying the scroll bar across the whole application
 }
 
 .bottom-separation-solid {
-	border-bottom: 2px solid #ebebeb;
+	border-bottom: 2px solid #ebebeb !important;
 }
 
 .border-bottom-separation {

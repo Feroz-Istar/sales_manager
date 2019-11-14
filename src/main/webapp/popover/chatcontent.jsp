@@ -27,7 +27,7 @@
 	<div class="row m-0 ml-30 mr-30 pt-10 pb-10 theme_solid_border_bottom_2px"">
 		<div class="col-md-10 p-0 d-flex">
 			<img class="hw-40 mr-10" src="<%=baseURL%>assets/image/11.png" alt="user">
-			<img class="hw-40 mr-10 disabled" src="<%=baseURL%>assets/image/11.png" alt="user">
+			<img class="hw-40 mr-10 disabled-div" src="<%=baseURL%>assets/image/11.png" alt="user">
 			
 		</div>
 		<div class="col-md-2 p-0 d-flex align-items-center justify-content-end">
@@ -47,13 +47,13 @@
 
 	
 	<div class="transcript_container chat-transcript pl-30 pr-30 pt-20" style="overflow: auto;">
-		<%for(int j=0;j<10;j++){ %>
+		<%for(int j=0;j<1;j++){ %>
 		<div class="d-flex flex-column  ">
 			<p class="f-14 bblack mb-0 pb-10">
 				<small class="f-12 brown-grey ">00:20.</small> Jamie
 				Vargas
 			</p>
-			<div class="card shadow mb-25" style="border-radius: 0px 20px 20px 20px;" >
+			<div class="card mb-25" style="border-radius: 0px 20px 20px 20px;box-shadow: 0 .5rem 1rem #eee !important;" >
 				<div class="card-body p-20" >
 					<p class="card-text blue-black f-14 mb-0 " >Some quick example text to
 						build on the card title </p>
@@ -67,7 +67,7 @@
 				<small class="f-12 brown-grey ">00:20.</small> Jamie
 				Vargas
 			</p>
-			<div class="card shadow align-self-end very-light-pink-bg mb-20" style="border-radius: 20px 0px 20px 20px;" >
+			<div class="card align-self-end very-light-pink-bg mb-20" style="border-radius: 20px 0px 20px 20px;" >
 				<div class="card-body  p-20">
 					<p class="card-text blue-black f-14 mb-0 "> make up the bulk of the
 						card's content.</p>

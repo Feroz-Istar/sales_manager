@@ -65,7 +65,7 @@
 							alt="call" class=" float-right">
 
 						</div>
-						<div class="f-12 text-truncate-1">Manager</div>
+						<div class="f-12 text-truncate-1 ">Manager</div>
 					</div>
 					
 				</div>
@@ -74,32 +74,32 @@
 
 
 					
-						<button class="list-group-item border-0 cursor-pointer" style="pointer-event: none;">
-							<div class="d-flex flex-row align-items-center">
+						<button class="list-group-item border-0 cursor-pointer p-0 pt-25  w-100" style="pointer-event: none;">
+							<div class="d-flex flex-row align-items-center ml-20 mr-20 pb-20 bottom-separation-solid">
 								<img
 									src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg" alt="profile_img"
 									class="rounded-circle align-self-center mr-2"
 									style="height: 35px; width: 35px;" />
 								<div class="d-flex flex-column">
-									<div class="f-14 font-weight-bold text-truncate-1 text-left">Wade walker</div>
-									<div class="f-12 text-truncate-1">wade@gmail.com</div>
+									<div class="f-14 font-weight-bold text-truncate-1 text-left greyish-brown pb-5">Wade walker</div>
+									<div class="f-12 text-truncate-1 brownish-grey">wade@gmail.com</div>
 
 								</div>
 							</div>
 						</button>
 						<button
-							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item">
-							<img src="<%=baseURL%>assets/image/person.svg" alt="switch" class="pr-3" />
+							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item greyish-brown p-0">
+							<img src="<%=baseURL%>assets/image/switch-role.svg" alt="switch" class="pr-3" />
 							<div>Switch to Manager</div>
 						</button>
 						<button
-							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item">
-							<img src="<%=baseURL%>assets/image/setting.svg" alt="setting" class="pr-3" />
+							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item greyish-brown p-0">
+							<img src="<%=baseURL%>assets/image/my-account.svg" alt="setting" class="pr-3" />
 							<div>My Account</div>
 						</button>
 						<button
-							class="list-group-item border-0 d-flex flex-row cursor-pointer signout dropdown-item">
-							<img src="<%=baseURL%>assets/image/signout.svg" alt="signout" class="pr-3" />
+							class="list-group-item border-0 d-flex flex-row cursor-pointer signout dropdown-item greyish-brown p-0">
+							<img src="<%=baseURL%>assets/image/sign-out.svg" alt="signout" class="pr-3" />
 							<div>Sign Out</div>
 						</button>
 					
