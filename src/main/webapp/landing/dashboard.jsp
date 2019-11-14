@@ -75,8 +75,8 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
-	<%-- <jsp:include page="../nodata/notFound.jsp"></jsp:include> --%>
-	<%-- <jsp:include page="../nodata/internalServerError.jsp"></jsp:include> --%>
+		<%-- <jsp:include page="../nodata/notFound.jsp"></jsp:include> --%>
+		<%-- <jsp:include page="../nodata/internalServerError.jsp"></jsp:include> --%>
 		<%-- <jsp:include page="../nodata/pageEmpty.jsp"></jsp:include>  --%>
 		<%-- <jsp:include page="../nodata/accountVerified.jsp"></jsp:include>  --%>
 		<div class="dashboard">
@@ -1004,8 +1004,6 @@
 	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
 		
-	<script>
-		
-	</script>
+	
 </body>
 </html>

@@ -211,5 +211,8 @@
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
+	<script>
+		$('.salesken.navbar-nav>li').removeClass('active');
+	</script>
 </body>
 </html>
