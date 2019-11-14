@@ -75,8 +75,8 @@
 
 	<main role="main">
 	<div class="container-fluid salesken_container">
-
-
+	<jsp:include page="../nodata/notFound.jsp"></jsp:include>
+		<div class="dashboard d-none">
 		<!-- Start of dashboard header div with dashboard title and New task -->
 		<div class="row pb-3" id="incoming_date"
 			data-input_date="<%=incomingDate%>">
@@ -984,7 +984,7 @@
 			  </div>
 			</div>
 			<!-- end of delete modal -->
-		
+		</div>
 	</div>
 	</main>
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
