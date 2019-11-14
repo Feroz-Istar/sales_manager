@@ -183,46 +183,6 @@ html, body {
 .salesken>li.active {
 	font-weight: bold;
 }
-.salesken>li.active>a.nav-link>div#taskDetail{
-	background-image: url(http://localhost:8080/assets/image/task-black.svg) !important;
-	vertical-align: middle;
-    height: 30px;
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 25px;
-}
-.salesken>li.active>a.nav-link>div#dashboard{
-	background-image: url(http://localhost:8080/assets/image/dashboard-black.svg) !important;
-	vertical-align: middle;
-    height: 27px  !important;
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 24px  !important;
-}
-.salesken>li.active>a.nav-link>div#pipeline{
-	background-image: url(http://localhost:8080/assets/image/pipeline-black.svg) !important;
-	vertical-align: middle;
-    height: 27px  !important;
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 28px  !important;
-}
-.salesken>li.active>a.nav-link>div#report{
-	background-image: url(http://localhost:8080/assets/image/report-black.svg) !important;
-	vertical-align: middle;
-    height: 27px  !important;
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 28px  !important;
-}
-.salesken>li.active>a.nav-link>div#lead{
-	background-image: url(http://localhost:8080/assets/image/lead-black.svg) !important;
-	vertical-align: middle;
-    height: 17px  !important;
-    display: inline-block;
-    background-repeat: no-repeat;
-    width: 21px  !important;
-}
 
 .salesken>li.active svg>path, .salesken>li.active svg>g>path, .salesken>li.active svg>g>g>path
 	{

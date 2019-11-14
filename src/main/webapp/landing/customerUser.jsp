@@ -380,6 +380,11 @@
 				console.log(obj)
 			});
 			
+			$('.filtertabs>li>.nav-link').click(function(e) {
+				
+				$($(this).attr('href')+'-tab').tab('show')
+
+			});
 			
 			$('#user_reset').click(function(){
 				 $('#user_selections').hide();
