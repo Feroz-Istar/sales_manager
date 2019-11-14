@@ -367,36 +367,36 @@
 		<ul class="list-group shadow d-flex flex-column h-100  taskpopup">
 
 
-			<li class="notesdropdown list-group-item p-0 py-3">
+			<li class="notesdropdown list-group-item p-0 pt-10 pb-10">
 				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50 "
+					class=" d-flex flex-column justify-content-center align-items-center minh-80 "
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 					<div class="f-12 pt-1 greyish-brown">Notes</div>
 
 				</div>
 			</li>
-			<li class=" cuesdropdown list-group-item p-0 py-3">
+			<li class=" cuesdropdown list-group-item p-0 pt-10 pb-10">
 				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
+					class=" d-flex flex-column justify-content-center align-items-center minh-80"
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 					<div class="f-12 pt-1 greyish-brown">Cues</div>
 
 				</div>
 			</li>
-			<li class="crmdropdown list-group-item p-0 py-3">
+			<li class="crmdropdown list-group-item p-0 pt-10 pb-10">
 				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-50"
+					class=" d-flex flex-column justify-content-center align-items-center minh-80"
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 					<div class="f-12 pt-1 greyish-brown">CRM</div>
 
 				</div>
 			</li>
-			<li class="chatdropdown list-group-item  p-0 py-3 ">
+			<li class="chatdropdown list-group-item  p-0 pt-10 pb-10 ">
 				<div
-					class="  d-flex flex-column justify-content-center align-items-center minh-50"
+					class="  d-flex flex-column justify-content-center align-items-center minh-80"
 					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/presentation.svg"
 						alt="presentation" />

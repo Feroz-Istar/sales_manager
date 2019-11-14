@@ -161,14 +161,14 @@
 
 											</div>
 											<button class="btn  mr-1">
-												<i class="fas fa-backward"></i>
+												<i class="fas fa-backward dark_gray"></i>
 											</button>
-											<button class="btn hw-64 shadow rounded-circle  mr-1">
-												<i class="fas fa-play"></i>
+											<button class="btn hw-64 border rounded-circle  mr-1">
+												<i class="fas fa-play dark_gray"></i>
 											</button>
 
 											<button class="btn  mr-5">
-												<i class="fas fa-forward"></i>
+												<i class="fas fa-forward dark_gray"></i>
 											</button>
 											<div class="d-flex flex-row align-items-center">
 												<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
