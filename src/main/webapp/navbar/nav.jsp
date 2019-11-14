@@ -90,10 +90,10 @@
 						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item greyish-brown p-0">
 							<img src="<%=baseURL%>assets/image/switch-role.svg" alt="switch" class="pr-3" />
-							<div>Switch to Manager</div>
+							<div>Switch to Admin</div>
 						</button>
 						<button
-							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item greyish-brown p-0">
+							class="list-group-item border-0 d-flex flex-row cursor-pointer account dropdown-item greyish-brown p-0">
 							<img src="<%=baseURL%>assets/image/my-account.svg" alt="setting" class="pr-3" />
 							<div>My Account</div>
 						</button>
