@@ -1257,11 +1257,7 @@ Modifying the scroll bar across the whole application
 	border-radius: 0px;
 }
 
-@media only screen and (min-width: 768px) {
-	#piplelinestage-tab>.active {
-		min-width: 276px;
-	}
-}
+
 
 #piplelinestage-tab>.active {
 	background: #ffffff !important;
@@ -1277,6 +1273,7 @@ Modifying the scroll bar across the whole application
 	-ms-transform: sscale(1) !important; /* IE 9 */
 	-o-transform: scale(1) !important; /* Opera */
 	border-bottom: 0 !important;
+	margin-right: -4px;
 }
 
 #piplelinestage-tab>.nav-link:hover {

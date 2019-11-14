@@ -49,7 +49,7 @@
 		     </div>
 		  </div>
 		  <div class="col-md-10 col-12 p-0 bg-white tabcontentcol">
-		    <div class="tab-content" id="piplelinestage-tabContent">
+		    <div class="tab-content h-100" id="piplelinestage-tabContent">
 		      <div class="tab-pane fade pl-0 pl-50 pr-50 pt-30 pb-20 show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
 		      	<!-- start of Basic Information content -->
 		      		<div class="row m-0 justify-content-between pb-50 theme_dashed_border_bottom_2">
@@ -101,7 +101,36 @@
 		      		</div>
 		      	<!-- end of Basic Information content -->
 		      </div>
-		      <div class="tab-pane fade pl-0" id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">Tab 2.</div>
+		      
+		      
+		      <div class="tab-pane fade p-0 pt-50 h-100 " id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
+		      	<!-- start of password content -->
+		      		<div class="row m-0 pl-50 pr-50">
+			       		<div class="col-md-4 p-0 theme_dashed_border_bottom pb-30">
+			       			<div class="f-14 fw-500 pb-10 black">Old Password</div>
+			       			<input type="password" class="custom-modal-input w-100 form-control f-14" id="old-password" name="old-password" aria-describedby="old-password" placeholder="Type here">
+			       		</div>
+			       	</div>
+			       	
+			       	<div class="row m-0 pt-30 pl-50 pr-50">
+			       		<div class="col-md-4 p-0">
+			       			<div class="f-14 fw-500 pb-10 black">New Password</div>
+			       			<input type="password" class="custom-modal-input w-100 form-control f-14" id="new-password" name="new-password" aria-describedby="new-password" placeholder="Type here">
+			       		</div>
+			       	</div>
+			       	
+			       	<div class="row m-0 pt-30 pb-100 pl-50 pr-50">
+			       		<div class="col-md-4 p-0">
+			       			<div class="f-14 fw-500 pb-10 black">Confirm Password</div>
+			       			<input type="password" class="custom-modal-input w-100 form-control f-14" id="confirm-password" name="confirm-password" aria-describedby="confirm-password" placeholder="Type here">
+			       		</div>
+			       	</div>
+			       	
+			       	<div class="row m-0 pt-20 mt-30 pb-20 border-top-task_list justify-content-end pr-50">
+			       		<button class="btn big_button rounded-0">UPDATE</button>
+			       	</div>
+		      	<!-- end of password content -->
+		      </div>
 		      <div class="tab-pane fade pl-0" id="v-pills-account-setting" role="tabpanel" aria-labelledby="v-pills-account-setting-tab">...</div>
 		     
 		    </div>
@@ -161,7 +190,6 @@
 					       			<div class="f-14 fw-500 pb-10 black">Location</div>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="location" name="location" aria-describedby="location" placeholder="Type here" value="Bangalore">
 					       		</div>
-					       		
 					       	</div>
 						</form>
 					</div>
