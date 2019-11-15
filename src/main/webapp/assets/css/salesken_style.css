@@ -923,6 +923,9 @@ Modifying the scroll bar across the whole application
 .soft_blue_bg {
 	background-color: #6297f6;
 }
+.perrywinkle-bg{
+	background-color: #9f85ef;
+}
 /* end of background Color */
 
 /* start of border color*/
@@ -1976,7 +1979,12 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 
 .audioitem.active .playaudio {
 	background: #ed4d67 !important;
-	color: white !important;
+	color: #ffffff !important;
+	font-size: 16px !important;
+}
+.audioitem .playaudio {
+	color: #999999;
+	font-size: 12px;
 }
 
 #extra>li:focus {

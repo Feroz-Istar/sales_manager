@@ -21,13 +21,13 @@
 			class="row  m-0 ml-45 mr-45  pb-20  theme_dotted_border_bottom shadow-bottom  ">
 
 			<div class="col-md-3 p-0">
-				<p class="brownish-grey f-14 mb-0">Initiated At</p>
+				<p class="brownish-grey f-14 mb-0 border-right-dashed-separation">Initiated At</p>
 				<p class="black f-16 fw-500 mb-0 text-truncate"
 					data-toggle="tooltip" data-placement="bottom"
 					title="Globex Corporation">11:00 AM</p>
 			</div>
 			<div class="col-md-3 p-0">
-				<p class="brownish-grey f-14 mb-0">Pipeline Detail</p>
+				<p class="brownish-grey f-14 mb-0 border-right-dashed-separation">Pipeline Detail</p>
 				<p class="black f-16 fw-500 mb-0 text-truncate"
 					data-toggle="tooltip" data-placement="bottom"
 					title="Globex Corporation">Stage 02</p>
@@ -38,9 +38,9 @@
 					data-toggle="tooltip" data-placement="bottom"
 					title="Globex Corporation">Robert Wolken</p>
 			</div>
-			<div class="col-md-3 d-flex justify-content-end p-0">
+			<!-- <div class="col-md-3 d-flex justify-content-end p-0">
 				<button type="button" class="btn small_outline_button rounded-0  f-12 font-weight-bold  " data-toggle="modal" data-target="#leaveTaskModal">LEAVE TASK</button>
-			</div>
+			</div> -->
 			
 		</div>
 
@@ -140,7 +140,7 @@
 					</div>
 					<div class="col-md-8 p-0">
 
-						<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
+						<div class="row m-0 pl-20 pr-20 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"
 									class="carousel slide theme_solid_border_bottom "
@@ -202,8 +202,8 @@
 											<small class="f-12 brown-grey pr-20 ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card shadow "
-											style="border-radius: 1.25rem !important;">
+										<div class="card "
+											style="border-radius: 1.25rem !important; box-shadow: 0 .5rem 1rem #eee !important;">
 											<div class="card-body">
 												<p class="card-text f-14 m-0">Some quick example text to
 													build on the card title and make up the bulk of the card's
@@ -218,7 +218,7 @@
 											<small class="f-12 brown-grey  pr-20  ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card shadow align-self-end very-light-pink-bg"
+										<div class="card align-self-end very-light-pink-bg"
 											style="border-radius: 1.25rem !important;">
 											<div class="card-body">
 												<p class="card-text f-14 mb-0">Some quick example text

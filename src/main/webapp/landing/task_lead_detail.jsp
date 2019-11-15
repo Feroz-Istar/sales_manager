@@ -57,7 +57,9 @@
 				<div
 					class="display-1 black f-20 border-right-separation pr-20  fw-500 pl-20">Accenture
 					Consulting Inc.</div>
-				<div class="f-12 brown-grey pl-20">Dashboard</div>
+					<div class="f-12 brown-grey pl-20">Task Detail</div>
+				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>
+				<div class="f-12 brown-grey ">Completed</div>
 				<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>
 				<div class=" f-12 brown-grey fw-500 " id="breadcrumb">Accenture
 					Consulting Inc.</div>
@@ -70,11 +72,11 @@
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="agent-detail-tab" data-toggle="tab" href="#agent-detail"
 						role="tab" aria-controls="nav-target" aria-selected="true">Task
-							Detail</a></li>
+							Details</a></li>
 					<li class="nav-item"><a class="nav-item nav-link"
 						id="lead-detail-tab" data-toggle="tab" href="#lead-detail"
 						role="tab" aria-controls="nav-qualified" aria-selected="false">Lead
-							Detail</a></li>
+							Details</a></li>
 				</ul>
 				<div class="tab-content p-0 mytab-content"
 					id="agent-details-tabContent">
@@ -84,11 +86,11 @@
 
 						<!-- start of task detail content -->
 						<div
-							class="row align-items-center theme_solid_border_bottom m-0 pl-40 pr-40 pt-15 pb-15  m-0">
-							<div class="col-md-12 text-result-found	p-0">
-								<strong class="number-of-results">02</strong> Results Found
+							class="row align-items-center  theme_solid_border_bottom  pl-40 pr-40 pt-15 pb-15  m-0">
+							<div class="col-md-3 p-0 text-result-found	">
+								<strong class="number-of-results">04</strong> Result Found
 							</div>
-
+							
 						</div>
 
 						<div class="row very-light-pink-grey-bg m-0">
@@ -132,10 +134,10 @@
 												<p class="soft-blue f-12 font-weight-bold m-0">Confident</p>
 												<h1 class="black f-16 fw-500 m-0 text-truncate"
 													title="Robert Wolken">Marry Vasquez</h1>
-												<p class="brown-grey f-12 d-flex align-items-center m-0">
+												<!-- <p class="brown-grey f-12 d-flex align-items-center m-0">
 													<i class="tangerine fas fa-circle m-1"
 														style="font-size: 8px;"></i>Ongoing
-												</p>
+												</p> -->
 												<p class="brown-grey f-12 m-0">June 26, 2019</p>
 											</div>
 
@@ -186,17 +188,18 @@
 								<div class="f-14 brown-grey">Deal Value</div>
 							</div>
 							<div class="col-md-2 col-4 p-0">
-								<div class="f-24 font-weight-bold blue-black">85%</div>
-								<div class="f-14 brown-grey">Confident</div>
-							</div>
-							<div class="col-md-2 col-4 p-0">
-								<div class="f-24 font-weight-bold blue-black">65%</div>
-								<div class="f-14 brown-grey">Tentative</div>
-							</div>
-							<div class="col-md-2 col-4 p-0">
 								<div class="f-24 font-weight-bold blue-black">Stage 02</div>
 								<div class="f-14 brown-grey">Current Stage</div>
 							</div>
+							<div class="col-md-2 col-4 p-0">
+								<div class="f-24 font-weight-bold blue-black">Call Task</div>
+								<div class="f-14 brown-grey">Recent Task</div>
+							</div>
+							<div class="col-md-2 col-4 p-0">
+								<img src="<%=baseURL%>assets/image/confident.svg" class="pb-2">
+								<div class="f-14 brown-grey">Lead Status</div>
+							</div>
+							
 							<div class="col-md-4 col-12 p-0">
 								<div class="row position-relative m-0">
 									<div class="line" style="left:75px; width: 75%;"></div>
@@ -290,16 +293,18 @@
 							</div>
 							<div
 								class="col-md-4 pt-20 pl-40 pr-40 p-0 theme_solid_border_left very-light-pink-grey-bg">
-								<%
-									for (int k = 0; k < 2; k++) {
-								%>
+								
 
 								<h4 class="black fw-500 f-16  m-0 pt-10 pb-10">Objections</h4>
 								<%
 									for (int l = 0; l < 2; l++) {
+										String bottomBorder="border_bottom_1_dashed";
+										if(l==1){
+											bottomBorder="";
+										}
 								%>
 								<div
-									class="signal_description border_bottom_1_dashed pb-20 pt-20">
+									class="signal_description <%=bottomBorder %> pb-20 pt-20">
 
 									<p class=" brown-grey f-12 m-0">June 22, 2019</p>
 									<p class="blue-black f-14 text-break m-0">Lorem Ipsum is
@@ -310,8 +315,13 @@
 								</div>
 								<%
 									}
-									}
 								%>
+								<h4 class="black fw-500 f-16  m-0 pt-50 pb-10">Needs & Concerns</h4>
+								<p class="blue-black f-14 text-break m-0">Lorem Ipsum is
+										simply dummy text of the printing and typesetting industry.
+										Lorem Ipsum has been the industry's standard dummy text ever
+										since the 1500s, when an unknown printer took a galley of type
+										and scrambled it to make a type specimen book.</p>
 							</div>
 
 						</div>
@@ -363,7 +373,6 @@
 
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/highcharts.js"></script>
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
@@ -436,6 +445,8 @@
 							$('.nav-tabs>.nav-item').on('show.bs.tab',
 									function(e) {
 									});
+							
+							
 
 						});
 	</script>

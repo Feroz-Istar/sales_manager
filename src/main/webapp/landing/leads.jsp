@@ -91,7 +91,7 @@
 						<div
 							class="row align-items-center bg-white m-0 theme_solid_border_bottom">
 							<div class="col-md-3 text-result-found p-0 pl-40 ">
-								<strong class="number-of-results ">504</strong> Results Found
+								<strong class="number-of-results ">504</strong> Result Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 
@@ -341,7 +341,7 @@
 													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 														srcset="" class="mr-2">Delete
 												</button>
-												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
+												<button class="dropdown-item"  onclick="window.location.href = 'userDetail.jsp'">
 													<img src="<%=baseURL%>assets/image/details.png" alt="details"
 														srcset="" class="mr-2">Details
 												</button>
@@ -371,7 +371,7 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom m-0">
 							<div class="col-md-3 text-result-found p-0 pl-40 ">
-								<strong class="number-of-results">03</strong> Results Found
+								<strong class="number-of-results">03</strong> Result Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40 ">
 								<div class="input-group date custom-calendar mr-10">
@@ -654,7 +654,7 @@
 													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 														srcset="" class="mr-2">Delete
 												</button>
-												<button class="dropdown-item" onclick="window.location.href = 'task_lead_detail.jsp'">
+												<button class="dropdown-item" onclick="window.location.href = 'userDetail.jsp'">
 													<img src="<%=baseURL%>assets/image/details.png" alt="detail"
 														srcset="" class="mr-2">Details
 												</button>
@@ -683,7 +683,7 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom m-0">
 							<div class="col-md-2 text-result-found font_text_result	pl-40 p-0">
-								<strong class="number-of-results">03</strong> Results Found
+								<strong class="number-of-results">03</strong> Result Found
 							</div>
 							<div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 								<div class="input-group date custom-calendar mr-10">
@@ -979,7 +979,7 @@
 													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 														srcset="" class="mr-2">Delete
 												</button>
-												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
+												<button class="dropdown-item"  onclick="window.location.href = 'userDetail.jsp'">
 													<img src="<%=baseURL%>assets/image/details.png" alt="details"
 														srcset="" class="mr-2">Details
 												</button>
@@ -1010,7 +1010,7 @@
 						<div
 							class="row align-items-center theme_solid_border_bottom m-0">
 							<div class="col-md-2 text-result-found font_text_result	pl-40 p-0">
-								<strong class="number-of-results">03</strong> Results Found
+								<strong class="number-of-results">03</strong> Result Found
 							</div>
 							<div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
 								<div class="input-group date custom-calendar mr-10">
@@ -1306,7 +1306,7 @@
 													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
 														srcset="" class="mr-2">Delete
 												</button>
-												<button class="dropdown-item"  onclick="window.location.href = 'task_lead_detail.jsp'">
+												<button class="dropdown-item"  onclick="window.location.href = 'userDetail.jsp'">
 													<img src="<%=baseURL%>assets/image/details.png" alt="details"
 														srcset="" class="mr-2">Details
 												</button>
@@ -1480,7 +1480,7 @@
 							<div class="tab-pane fade leadpreview_container" id="pills-preview" role="tabpanel"
 								aria-labelledby="pills-preview-tab">
 
-									<div class="row m-0 pl-30 pt-30 pb-10 align-items-center">
+									<div class="row m-0 pl-30 pt-30 pb-10 align-items-center bottom_border_1px">
 										<div class="col-md-3 p-0 black f-14 font-weight-bold">Lead Name</div>
 										<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Email ID</div>
 										<div class="col-md-3 p-0 black f-14 font-weight-bold p-0">Contact No.</div>

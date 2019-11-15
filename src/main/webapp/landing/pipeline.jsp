@@ -83,7 +83,7 @@
 		<div
 			class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40">
 			<div class="col-md-3 text-result-found p-0">
-				<strong class="number-of-results">04</strong> Results Found
+				<strong class="number-of-results">04</strong> Result Found
 			</div>
 			<div class="col-md-9 d-md-flex justify-content-end p-0 ">
 				<div class="input-group date custom-calendar">
@@ -234,12 +234,19 @@
 		<div class="card w-100 " style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);">
 				<div class="card-body  pt-30 pb-30 pl-30 pr-30" >
 					<div class="row m-0">
-					<%for(int i=0;i<3;i++){ %>
+					<%for(int i=0;i<3;i++){
+						String[] pipelineTitles ={"Achieved ","In Pipeline","Projected"};
+						String[] pipelineImage ={"confirm-img","lead-qualified","projected"};
+						String borderseparation = "border-right-dashed-separation";
+						if(i==2){
+							borderseparation="";
+						}
+						%>
 						<div class="col p-0 mr-30">
-							<div class="f-16 greyish-brown fw-500 pb-10">Achieved</div>
+							<div class="f-16 greyish-brown fw-500 pb-10"><%=pipelineTitles[i]%></div>
 							<div class="row m-0">
-								<div class="col-md-4 p-0">
-									<img src="<%=baseURL%>assets/image/Group 3614.svg" alt="call"
+								<div class="col-md-3 p-0  align-self-center">
+									<img src="<%=baseURL%>assets/image/<%= pipelineImage[i]%>.svg" alt="call" width="80" height="70"
 										class="task-dropdown">
 								</div>
 								<div class="col-md-4 p-0">
@@ -247,7 +254,7 @@
 									<div class="greyish-brown f-30  font-weight-bold">$ 100k</div>
 									<div class="f-12 brown-grey">From 25 Deals</div>
 								</div>
-								<div class="col-md-4 p-0 border-right-dashed-separation">
+								<div class="col-md-4 p-0 pr-50 <%=borderseparation%>">
 									<div class="greyish-brown f-12 fw-500">YTD</div>
 									<div class="greyish-brown f-30  font-weight-bold">$ 800k</div>
 									<div class="f-12 brown-grey">From 68 Deals</div>
@@ -298,24 +305,18 @@
 
 							<div class="col-md-6 p-0">
 								<div class="row m-0">
-									<div class="col-md-3 col-6 p-0">
-										<div class="font-weight-bold f-30">
-											<i class="fas fa-dollar-sign black"></i><span
-												class="pastel-red">&nbsp;7245</span>
-										</div>
-										<div class="f-12 brownish-grey">Achieved Value</div>
-									</div>
-									<div class="col-md-3 col-6 p-0">
+									
+									<div class="col-md-4 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">
 											<i class="fas fa-dollar-sign black"></i>&nbsp;88765
 										</div>
 										<div class="f-12 brownish-grey">Pipeline Value</div>
 									</div>
-									<div class="col-md-3 col-6 p-0">
+									<div class="col-md-4 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">25%</div>
 										<div class="f-12 brownish-grey">Tentative</div>
 									</div>
-									<div class="col-md-3 col-6 p-0">
+									<div class="col-md-4 col-6 p-0">
 										<div class="font-weight-bold f-30 greyish-brown">75%</div>
 										<div class="f-12 brownish-grey">Win Rate</div>
 									</div>
@@ -362,7 +363,7 @@
 							</div>
 							<div class="col-md-2 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
-									Contact Details <i class="fas fa-sort brown-grey ml-2"></i>
+									Agent <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
 							<div class="col-md-6 col justify-content-lg-start  p-0">

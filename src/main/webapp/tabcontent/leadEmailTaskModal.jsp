@@ -32,7 +32,7 @@
 
 </div>
 
-<div class="row m-0 pt-25 pl-45 pr-45 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
+<div class="row m-0 pt-25 pl-20 pr-20 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
 
 	<div class="col-md-6 p-0 pr-25" style="">
 		<div class="fw-500 f-16 greyish-brown pb-10">What's Wrong?</div>

@@ -57,7 +57,7 @@
 		</div>
 		<div class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40">
 							<div class="col-md-3 text-result-found p-0">
-								<strong class="number-of-results">04</strong> Results Found
+								<strong class="number-of-results">04</strong> Result Found
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0 ">
 									
@@ -106,7 +106,7 @@
 								</div>
 								<div class="col-md-9 theme_solid_border_left p-0 pl-15">
 									<div class="f-14 blue-black pb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce finibus, risus non…egestas gravida, ante ligula rutrum ligula, non dictum purus justo mattis tortor</div>
-									<div class="btn bg-purple pl-10 pr-10 pt-5 pb-5 text-white f-12 font-weight-bold">Personas 01</div>
+									<div class="btn perrywinkle-bg pl-10 pr-10 pt-5 pb-5 text-white f-12 font-weight-bold">Personas 01</div>
 								</div>
 							</div>
 					</div>

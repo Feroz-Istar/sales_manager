@@ -228,14 +228,14 @@
 													img_mar = "ml_10";
 												}
 									%>
-									<img class="rounded-circle imgsize <%=img_mar%>"
+									<img class="rounded-circle imgsize <%=img_mar%> theme_solid_border_2px border-white"
 										alt="associate-name" title="associate-name"
 										src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg">
 									<%
 										}
 									%>
 									<div
-										class="rounded-circle imgsize mr-1 ml_10 theme_bg f-10 font-weight-bold text-white d-flex align-items-center justify-content-center border-white">
+										class="rounded-circle imgsize mr-1 ml_10 theme_bg f-10 font-weight-bold text-white d-flex align-items-center justify-content-center theme_solid_border_2px border-white">
 										+05</div>
 								</div>
 							</div>

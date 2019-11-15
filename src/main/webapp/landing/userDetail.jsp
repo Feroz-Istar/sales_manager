@@ -61,11 +61,11 @@
 				
 				</div>
 		</div>
-		<div class="row rounded-0 alert alert-success mb-0 font-italic align-items-center d-none" role="alert">
-		 <span class="font-weight-bold f-14 mr-2 tea-color">Won Lead: </span> <div class="f-12 brownish-grey">A simple success alert—check it out!</div>
+		<div class="row rounded-0 alert alert-success mb-0 font-italic align-items-center m-0 pl-40 pr-40 pt-10 pb-10 d-none" role="alert">
+		 <span class="font-weight-bold f-12 mr-2 tea-color">Won Lead: </span> <div class="f-12 brownish-grey d-flex align-items-center">A simple success alert—check it out!<i class="fal fa-info-circle tea-color pl-10 f-16	"></i></div>
 		</div>
-		<div class="row rounded-0 alert alert-danger mb-0 font-italic align-items-center d-none" role="alert">
-		 <span class="font-weight-bold f-14 mr-2 theme_color">Lost Lead: </span> <div class="f-12 brownish-grey">A simple success alert—check it out!</div>
+		<div class="row rounded-0 alert alert-danger mb-0 font-italic align-items-center m-0 pl-40 pr-40 pt-10 pb-10 d-none" role="alert">
+		 <span class="font-weight-bold f-12 mr-2 theme_color">Lost Lead: </span> <div class="f-12 brownish-grey d-flex align-items-center">A simple success alert—check it out!<i class="fal fa-info-circle pl-10 theme_color f-16"></i></div>
 		</div>
 		<div class="row bg-white m-0 pt-20">
 			<div class="col-md-12 p-0">

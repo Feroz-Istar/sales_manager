@@ -238,7 +238,7 @@
 					</div>
 					<div class="col-md-8 p-0">
 
-					<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
+					<div class="row m-0 pl-20 pr-20 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
 
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"

@@ -47,7 +47,7 @@
 
 <div class="row align-items-center bg-white theme_solid_border_bottom m-0 pt-15 pb-15 pl-40 pr-40">
 <div class="col-md-3 text-result-found p-0">
-<strong class="number-of-results">05</strong> Results Found
+<strong class="number-of-results">05</strong> Result Found
 </div>
 
 </div>
@@ -62,7 +62,7 @@
     }%>
      <a class="nav-link p-0 pt-20 pb-20 <%=isactive%> text-truncate" title="Stage 01" id="objection-<%=i%>-tab" data-toggle="pill" href="#objection-<%=i%>" role="tab" aria-controls="objection-<%=i%>" aria-selected="true">
      <div class="row m-0 ">
-     <div class="col-3 p-0 col objection_count f-42 font-weight-bold pl-20">04</div>
+     <div class="col-3 p-0 col objection_count f-42 font-weight-bold pl-20 greyish-brown">04</div>
      <div class="col-9 p-0 col d-flex align-items-center objection_text fw-500 f-14 pl-40 pr-20"><p class="mb-0 blue-black">It is too expensive</p></div>
      </div></a>
     <% }%>
