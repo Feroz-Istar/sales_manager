@@ -361,12 +361,12 @@
 									Contact Person <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-2 col p-0">
+							<div class="col-md-3 col p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Agent <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
 							</div>
-							<div class="col-md-6 col justify-content-lg-start  p-0">
+							<div class="col-md-5 col justify-content-lg-start  p-0">
 								<button class="btn p-0 black f-14 font-weight-bold">
 									Deal Journey <i class="fas fa-sort brown-grey ml-2"></i>
 								</button>
@@ -396,13 +396,17 @@
 									title="Manager">Manager</div>
 							</div>
 
-							<div class="col-md-2 p-0">
-								<div class="f-14 black fw-500 text-break">Info@accenture.com</div>
-								<div class="f-14 brownish-grey fw-500 text-truncate" title="888">+91
-									888 898 8989</div>
+							<div class="col-md-3 p-0">
+								<div class="d-flex align-items-center">
+									<img src="<%=baseURL%>assets/image/37.jpg" class="rounded-circle hw-40">
+									<div class="pl-10">
+										<div class="f-14 greyish-brown text-truncate" title="Stanley Howard">Stanley Howard</div>
+										<div class="f-12 brown-grey">Pipeline - New Sales Pipeline</div>
+									</div>
+								</div>
 							</div>
 
-							<div class="col-md-6 p-0">
+							<div class="col-md-5 p-0">
 								<div class="row  m-0">
 									<div class="col-md-11 p-0">
 										<div class="row position-relative justify-content-between m-0">
