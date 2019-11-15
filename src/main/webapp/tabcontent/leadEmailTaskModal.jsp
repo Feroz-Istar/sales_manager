@@ -4,14 +4,106 @@
 			+ request.getContextPath() + "/";
 	%>
 <div class="row justify-content-between m-0 pt-15 pl-45 pr-45 pb-15">
-	<div class="col-md-9 p-0 ">
+	<div class="col-md-6 p-0 ">
 
 		<div
 			class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
 			data-toggle="tooltip" data-placement="bottom" title=""
 			data-original-title="Email Task">Email Task</div>
 		</div>
-	
+	<div class="col-6 p-0">
+					<div class="d-flex justify-content-end">
+						<button class="btn p-0">
+							<div style="background-image: url(<%=baseURL%>assets/image/heart.svg); height: 24px; width: 24px;" class="mr-15 fav"></div>
+						</button>
+					<div class=" dropdown ">
+													<button class="btn p-0 dropdown-toggle"
+														id="lead_call_comment" data-toggle="dropdown"
+														aria-haspopup="true" aria-expanded="true" data-display="static">
+														<div style="background-image: url(<%=baseURL%>assets/image/message.svg); height: 24px; width: 24px;" class="mr-15 comment"></div>
+													</button>
+													<div
+														class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
+														aria-labelledby="lead_call_comment" style="right: -67px;">
+							
+														<div class="card p-20 border-0" style="width: 500px;">
+															<div class="card-header p-0 border-bottom-0 bg-white">
+																<div class="row m-0">
+																	<div class="col-md-6 p-0 pb-20 fw-500 f-16 black">Comment</div>
+																	<div class="col-md-6 p-0">
+																		<button type="button" class="close" data-dismiss="modal"
+																			aria-label="Close">
+																			<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon"
+																				class="rounded-circle hw-24 task-icon">
+																		</button>
+																	</div>
+																</div>
+															</div>
+															<div class="card-body border-0 p-0 pb-20">
+																<div class="form-group mb-0">
+																	<textarea class="form-control rounded-0 brown-grey f-14"
+																		id="exampleFormControlTextarea1" rows="3"
+																		placeholder="Type here"></textarea>
+																</div>
+															</div>
+															<div class="card-footer p-0 border-top-0  bg-white">
+																<div class="row d-flex justify-content-end m-0">
+																	<button type="button"
+																		class="btn join_btn  istar-btn-hover f-12 "
+																		id="lead_call_comment_submit">Submit</button>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+					<div class=" dropdown">
+													<button class="btn  p-0 dropdown-toggle" id="lead_call_reply"
+														data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
+														data-display="static">
+														<div style="background-image: url(<%=baseURL%>assets/image/reply.svg); height: 24px; width: 24px;" class="mr-15 share"></div>
+													</button>
+													<div
+														class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0 share-menu"
+														aria-labelledby="lead_call_reply" style="right: -18px;">
+							
+														<div class="input-group position-relative pb-20">
+															<img src="<%=baseURL%>assets/image/search.svg"
+																alt="edit" class=" searchBox"> <input
+																id="lead_call_reply_search"
+																class="form-control  custom-taskborder brown-grey  f-14 search_height minw-237"
+																type="search" placeholder="Search" style="padding-right: 30px">
+														</div>
+														<div style="height: 370px; overflow-x: hidden; overflow-y: auto;">
+															<%
+																for (int i = 0; i < 30; i++) {
+															%>
+															<div class="d-flex align-items-center pb-10 ">
+																<input class="istar-checkbox agentcheckbox " data-id="0"
+																	id="lead_call_reply-checkbox<%=i%>" type="checkbox">
+																<label class="istar-checkbox-style"
+																	for="lead_call_reply-checkbox<%=i%>"></label> <img
+																	alt="user-img"
+																	src="<%=baseURL%>assets/image/11.png"
+																	class="rounded-circle ml-3 mr-2 hw-40">
+																<div>
+																	<div class="f-14 font-weight-bold greyish-brown">Robert
+																		Garcia</div>
+																	<div class="f-12  brownish-grey">Team -02</div>
+																</div>
+															</div>
+															<%
+																}
+															%>
+														</div>
+														<button type="button"
+															class="btn btn-block big_button rounded-0 font-weight-bold f-12 mt-30"
+															id="lead_call_reply_submit"  data-toggle="modal" data-target="#shareTaskModal">Submit</button>
+							
+													</div>
+												</div>
+					
+					</div>
+				</div>
 </div>
 <div class="row m-0 theme_dotted_border_bottom shadow-bottom   pt-15 ml-45 mr-45 pb-20">
 	<div class="col-md-3 p-0 border-right-dashed-separation">
@@ -226,4 +318,34 @@
 
 
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
-			
+			<script>
+			$('.share-menu.dropdown-menu').click(function(e) {
+				e.stopPropagation();
+			});
+			$('#completed_webinar_reply_submit').click(function(){
+				$('#completed_webinar_reply').dropdown('hide');
+				$(".share").removeClass('active');
+				$('#shareTaskModal').modal('show');
+			});
+			  $(".fav").click(function(){
+				  $( this ).toggleClass( "active" );
+				});
+			  $(".comment").click(function(){
+				  $( this ).toggleClass( "active" );
+				});
+			  $(".share").click(function(){
+				  $( this ).toggleClass( "active" );
+				});
+			  $('#completed_webinar_comment').on('show.bs.dropdown', function () {
+				  	$(".comment").addClass('active');
+				});
+			 $('#completed_webinar_comment').on('hidden.bs.dropdown', function () {
+			  		$(".comment").removeClass('active');
+				});
+			 $('#completed_webinar_reply').on('show.bs.dropdown', function () {
+				 	$(".share").addClass('active');
+				});
+			 $('#completed_webinar_reply').on('hidden.bs.dropdown', function () {
+					$(".share").removeClass('active');
+				});
+			</script>

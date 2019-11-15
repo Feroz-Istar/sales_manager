@@ -26,15 +26,15 @@
 						<button class="btn p-0">
 							<div style="background-image: url(<%=baseURL%>assets/image/heart.svg); height: 24px; width: 24px;" class="mr-15 fav"></div>
 						</button>
-					<div class=" dropdown " id="completed_user_webinar_comment">
+					<div class=" dropdown ">
 													<button class="btn p-0 dropdown-toggle"
-														id="completed_user_webinar_comment" data-toggle="dropdown"
+														id="lead_call_comment" data-toggle="dropdown"
 														aria-haspopup="true" aria-expanded="true" data-display="static">
 														<div style="background-image: url(<%=baseURL%>assets/image/message.svg); height: 24px; width: 24px;" class="mr-15 comment"></div>
 													</button>
 													<div
 														class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
-														aria-labelledby="completed_user_webinar_comment" style="right: -67px;">
+														aria-labelledby="lead_call_comment" style="right: -67px;">
 							
 														<div class="card p-20 border-0" style="width: 500px;">
 															<div class="card-header p-0 border-bottom-0 bg-white">
@@ -60,26 +60,26 @@
 																<div class="row d-flex justify-content-end m-0">
 																	<button type="button"
 																		class="btn join_btn  istar-btn-hover f-12 "
-																		id="completed_user_webinar_comment_submit">Submit</button>
+																		id="lead_call_comment_submit">Submit</button>
 																</div>
 															</div>
 														</div>
 													</div>
 												</div>
 					<div class=" dropdown">
-													<button class="btn  p-0 dropdown-toggle" id="completed_user_webinar_reply"
+													<button class="btn  p-0 dropdown-toggle" id="lead_call_reply"
 														data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
 														data-display="static">
 														<div style="background-image: url(<%=baseURL%>assets/image/reply.svg); height: 24px; width: 24px;" class="mr-15 share"></div>
 													</button>
 													<div
 														class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0 share-menu"
-														aria-labelledby="completed_user_webinar_reply" style="right: -18px;">
+														aria-labelledby="lead_call_reply" style="right: -18px;">
 							
 														<div class="input-group position-relative pb-20">
 															<img src="<%=baseURL%>assets/image/search.svg"
 																alt="edit" class=" searchBox"> <input
-																id="completed_user_webinar_reply_search"
+																id="lead_call_reply_search"
 																class="form-control  custom-taskborder brown-grey  f-14 search_height minw-237"
 																type="search" placeholder="Search" style="padding-right: 30px">
 														</div>
@@ -89,9 +89,9 @@
 															%>
 															<div class="d-flex align-items-center pb-10 ">
 																<input class="istar-checkbox agentcheckbox " data-id="0"
-																	id="completed_user_webinar_reply-checkbox<%=i%>" type="checkbox">
+																	id="lead_call_reply-checkbox<%=i%>" type="checkbox">
 																<label class="istar-checkbox-style"
-																	for="completed_user_webinar_reply-checkbox<%=i%>"></label> <img
+																	for="lead_call_reply-checkbox<%=i%>"></label> <img
 																	alt="user-img"
 																	src="<%=baseURL%>assets/image/11.png"
 																	class="rounded-circle ml-3 mr-2 hw-40">
@@ -107,7 +107,7 @@
 														</div>
 														<button type="button"
 															class="btn btn-block big_button rounded-0 font-weight-bold f-12 mt-30"
-															id="completed_user_webinar_reply_submit"  data-toggle="modal" data-target="#shareTaskModal">Submit</button>
+															id="lead_call_reply_submit"  data-toggle="modal" data-target="#shareTaskModal">Submit</button>
 							
 													</div>
 												</div>
@@ -433,5 +433,34 @@
 	function showCalendar() {
 		$('#datepicker').datepicker('show')
 	}
+	$('.share-menu.dropdown-menu').click(function(e) {
+		e.stopPropagation();
+	});
+	$('#lead_call_reply_submit').click(function(){
+		$('#lead_call_reply').dropdown('hide');
+		$(".share").removeClass('active');
+		$('#shareTaskModal').modal('show');
+	});
+	  $(".fav").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $(".comment").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $(".share").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $('#lead_call_comment').on('show.bs.dropdown', function () {
+		  	$(".comment").addClass('active');
+		});
+	 $('#lead_call_comment').on('hidden.bs.dropdown', function () {
+	  		$(".comment").removeClass('active');
+		});
+	 $('#lead_call_reply').on('show.bs.dropdown', function () {
+		 	$(".share").addClass('active');
+		});
+	 $('#lead_call_reply').on('hidden.bs.dropdown', function () {
+			$(".share").removeClass('active');
+		});
 </script>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
