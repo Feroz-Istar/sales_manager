@@ -131,7 +131,7 @@
 
 </div>
 
-<div class="row m-0 pt-25 pl-45 pr-45 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
+<div class="row m-0 pt-25 pl-20 pr-20 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
 
 	<div class="col-md-6 p-0 pr-25" style="">
 		<div class="fw-500 f-16 greyish-brown pb-10">What's Wrong?</div>
@@ -242,99 +242,47 @@
 
 </div>
 
-<div class="accordion" id="accordionExample"
-	style="height: 400px; overflow-x: hidden; overflow-y: auto">
-	<%
-		for (int i = 0; i < 10; i++) {
-	%>
-	<div class="row m-0 pl-45 pr-45 pt-30" id="heading<%=i%>">
-		<button class="btn w-100 p-0" type="button" data-toggle="collapse"
-			data-target="#subheading<%=i%>" aria-expanded="false"
-			aria-controls="subheading<%=i%>">
-			<div class="row  m-0">
-				<div class="col-md-3 p-0">
-					<div class="d-flex">
-						<img src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip"
-							data-placement="bottom" title="Agent Name" class="hw-40 "
-							alt="user-img">
-						<div class="text-left pl-10">
-							<div class="f-14 greyish-brown text-truncate"
-								data-toggle="tooltip" data-placement="bottom"
-								title="Carmen Collinsder">Carmen Collinsder</div>
-							<div class="f-12 brown-grey">11:30 AM</div>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-9 p-0">
-					<div class="partial_email_content">
-						<div class="f-14 brownish-grey  text-truncate-1"
-							data-toggle="tooltip" data-placement="bottom"
-							title="Hello Sir...Lorem ipsum do">Hello Sir...Lorem ipsum
-							dolor sit amet, consectetur adipiscing elit. In et massa
-							pulvinar, cursus sapien in, vulputate neque. Nunc ultricies
-							libero sed lacinia hendrerit</div>
-						<div class="d-flex align-items-center ">
-							<img src="<%=baseURL%>assets/image/21.svg" class="hw-40 "
-								data-toggle="tooltip" data-placement="bottom"
-								title="Product Name" alt="doc">
-							<div class="f-14 brownish-grey fw-500  text-truncate pr-10"
-								data-toggle="tooltip" data-placement="bottom"
-								title="Product-Brochure.pd">Product-Brochure.pdf</div>
-							<div class="f-14 brown-grey ">256kb</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</button>
-		<div id="subheading<%=i%>" class="collapse"
-			aria-labelledby="heading<%=i%>" data-parent="#subheading<%=i%>">
-			<div class="card-body p-0 f-14 bg-white ">
-				<p class="pt-20 pb-20 brownish-grey f-14">Hello Sir, Welcome, we
-					are reaching you..</p>
-
-				<p class="pb-10 brownish-grey f-14">Lorem ipsum dolor sit amet,
-					consectetur adipiscing elit. In et massa pulvinar, cursus sapien
-					in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit.
-					Donec varius finibus leo, nec scelerisque lacus. Cras at finibus
-					purus. Fusce dignissim lorem eu lorem sollicitudin dictum. Cras
-					commodo vel metus a lacinia. Integer commodo efficitur facilisis.
-					Phasellus elementum magna lorem, quis ullamcorper lacus feugiat
-					sed. Phasellus dictum eget sapien ac vehicula.</p>
-
-
-
-				<p class="pb-20 brownish-grey f-14">
-					Best,<br> Salesken Pvt. Ltd.
-				</p>
-				<div class="d-flex align-items-center ">
-					<img src="http://localhost:8080/assets/image/21.svg" class="hw-40 "
-						data-toggle="tooltip" data-placement="bottom" title="" alt="doc"
-						data-original-title="Product Name">
-					<div class="f-14 brownish-grey fw-500  text-truncate pr-10"
-						data-toggle="tooltip" data-placement="bottom" title=""
-						data-original-title="Product-Brochure.pd">Product-Brochure.pdf</div>
-					<div class="f-14 brown-grey ">256kb</div>
-				</div>
+<div class="minh-650" style="overflow-x: hidden; overflow-y:auto;">
+		<div class="email-outer ml-45 mr-45 pt-20 pb-20">
+			<div class="brown-grey f-12 fw-300">12:00 PM</div>
+			<div class="brownish-grey f-14 pb-5">Hello Sir Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>  
+			<div class="d-flex flex-row align-items-center">
+				<img src="<%=baseURL%>assets/image/pdfdoc.svg" class="mr-15" width="35" height="35">
+				<div class="fw-500 f-14 brownish-grey mr-15">Product-Brochure.pdf</div>
+				<div class="f-14 brown-grey">256kB</div>
 			</div>
 		</div>
+		<div class="email-inner ml-45 mr-45 pt-20 pb-20">
+			<div class="brown-grey f-12 fw-300">12:00 PM</div>
+			<div class="brownish-grey f-14 pb-30 pt-30">
+				Hello Sir, Welcome, we are reaching you...<br><br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit. Donec varius finibus leo, nec scelerisque lacus. Cras at finibus purus. Fusce dignissim lorem eu lorem sollicitudin dictum. Cras commodo vel metus a lacinia. Integer commodo efficitur facilisis. Phasellus elementum magna lorem, quis ullamcorper lacus feugiat sed. Phasellus dictum eget sapien ac vehicula.
+				<br><br><br><br><br><br>
+				Best,<br>Salesken Pvt. Ltd.
+			</div>
+			<div class="d-flex flex-row align-items-center">
+				<img src="<%=baseURL%>assets/image/pdfdoc.svg" class="mr-15" width="35" height="35">
+				<div class="fw-500 f-14 brownish-grey mr-15">Product-Brochure.pdf</div>
+				<div class="f-14 brown-grey">256kB</div>
+			</div>
+		</div>
+		<div class="email-read mr-45 ml-15 border rounded very-light-pink-bg">
+			<div class="row m-0 pl-30 pr-30 align-items-center pt-20 pb-20">
+				<div class="col-md-11 p-0">
+					<div class="brown-grey f-12 fw-300">12:00 PM</div>
+					<div class="brownish-grey f-14 pb-5">Hello Sir Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
+				</div>
+				<div class="col-md-1 p-0 text-right">
+					<i class="fal fa-reply-all f-18 brown-grey"></i>
+				</div>
+			</div>
+			
+		</div>
 	</div>
-	<%
-		}
-	%>
-</div>
-
 
 
 <script>
-	$('.collapse').on('hide.bs.collapse', function() {
-		// do something...
-		$(this).siblings().find('.partial_email_content').show()
-	});
-	$('.collapse').on('show.bs.collapse', function() {
-		// do something...
-		$(this).siblings().find('.partial_email_content').show().hide();
 
-	});
 	$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
 		});
@@ -371,4 +319,15 @@
 	 $('#completed_email_reply').on('hidden.bs.dropdown', function () {
 	  		$(".share").removeClass('active');
 		});
+	 
+	 $('.email-inner').hide();
+	 $('.email-outer').click(function(){
+		 	$(this).hide();
+            $('.email-inner').slideDown('slow');
+      });
+	 $('.email-inner').click(function(){
+		 	$(this).hide();
+		 	$('.email-outer').show();
+           
+      });
 </script>

@@ -119,7 +119,7 @@
 			</div>
 			
 			
-			<div class="row m-0 pt-25 pl-45 pr-45 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
+			<div class="row m-0 pt-25 pl-20 pr-20 pb-25 mr-45 ml-45 very-light-pink-grey-bg">
 
 	<div class="col-md-6 p-0 pr-25" style="">
 		<div class="fw-500 f-16 greyish-brown pb-10">What's Wrong?</div>
@@ -229,89 +229,89 @@
 
 
 </div>
+	<div class="minh-650" style="overflow-x: hidden; overflow-y:auto;">
+		<div class="email-outer ml-45 mr-45 pt-20 pb-20">
+			<div class="brown-grey f-12 fw-300">12:00 PM</div>
+			<div class="brownish-grey f-14 pb-5">Hello Sir Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>  
+			<div class="d-flex flex-row align-items-center">
+				<img src="<%=baseURL%>assets/image/pdfdoc.svg" class="mr-15" width="35" height="35">
+				<div class="fw-500 f-14 brownish-grey mr-15">Product-Brochure.pdf</div>
+				<div class="f-14 brown-grey">256kB</div>
+			</div>
+		</div>
+		<div class="email-inner ml-45 mr-45 pt-20 pb-20">
+			<div class="brown-grey f-12 fw-300">12:00 PM</div>
+			<div class="brownish-grey f-14 pb-30 pt-30">
+				Hello Sir, Welcome, we are reaching you...<br><br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit. Donec varius finibus leo, nec scelerisque lacus. Cras at finibus purus. Fusce dignissim lorem eu lorem sollicitudin dictum. Cras commodo vel metus a lacinia. Integer commodo efficitur facilisis. Phasellus elementum magna lorem, quis ullamcorper lacus feugiat sed. Phasellus dictum eget sapien ac vehicula.
+				<br><br><br><br><br><br>
+				Best,<br>Salesken Pvt. Ltd.
+			</div>
+			<div class="d-flex flex-row align-items-center">
+				<img src="<%=baseURL%>assets/image/pdfdoc.svg" class="mr-15" width="35" height="35">
+				<div class="fw-500 f-14 brownish-grey mr-15">Product-Brochure.pdf</div>
+				<div class="f-14 brown-grey">256kB</div>
+			</div>
+		</div>
+		<div class="email-read mr-45 ml-15 border rounded very-light-pink-bg">
+			<div class="row m-0 pl-30 pr-30 align-items-center pt-20 pb-20">
+				<div class="col-md-11 p-0">
+					<div class="brown-grey f-12 fw-300">12:00 PM</div>
+					<div class="brownish-grey f-14 pb-5">Hello Sir Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
+				</div>
+				<div class="col-md-1 p-0 text-right">
+					<i class="fal fa-reply-all f-18 brown-grey"></i>
+				</div>
+			</div>
 			
-			
-			
-			<div class="accordion" id="accordionExample"  style="height:400px; overflow-x:hidden; overflow-y: auto">
-			<%for(int i=0;i<10;i++){ %>
-			<div class=" border-bottom-separation">
-			  <div class="row m-0" id="headingOne">
-			        <button class="btn w-100" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-			          <div class="row align-items-center m-0 pl-45 pr-45">
-			          	<div class="col-md-3 p-0">
-			          		<div class="d-flex">
-			          			<img src="<%=baseURL%>assets/image/37.jpg" alt="user" class="hw-40 mr-3">
-			          			<div class="text-left">
-			          				<div class="f-14 greyish-brown text-truncate" title="Carmen Collinsder">Carmen Collinsder</div>
-			          				<div class="f-12 brown-grey">11:30 AM</div>
-			          			</div>
-			          		</div>
-			          	</div>
-			          	<div class="col-md-9 text-left p-0">
-			          		<div class="f-14 brownish-grey text-truncate" title="Hello Sir...Lorem ipsum dolor ">Hello Sir...Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit</div>
-			          		<div class="d-flex align-items-center mt-2">
-			          			<img src="<%=baseURL%>assets/image/21.svg" alt="doc" class="hw-40 mr-3">
-			          			<div class="f-14 brownish-grey fw-500 text-break">Product-Brochure.pdf</div>
-			          			<div class="f-14 brown-grey ml-3">256kb</div>
-			          		</div>
-			          	</div>
-			          </div>
-			        </button>
-			  </div>
-			    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-			      <div class="card-body f-14 brownish-grey">
-					Hello Sir, Welcome, we are reaching you..
-					<br><br><br>
-					<br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et massa pulvinar, cursus sapien in, vulputate neque. Nunc ultricies libero sed lacinia hendrerit. Donec varius finibus leo, nec scelerisque lacus. Cras at finibus purus. Fusce dignissim lorem eu lorem sollicitudin dictum. Cras commodo vel metus a lacinia. Integer commodo efficitur facilisis. Phasellus elementum magna lorem, quis ullamcorper lacus feugiat sed. Phasellus dictum eget sapien ac vehicula.
-					
-					
-					 <br><br><br>
-					<br>Best,
-					<br>Salesken Pvt. Ltd.
-			      </div>
-			    </div>
-			    </div>
-			    <%} %>
-			  </div>
-			  
-			 
-			  
-			  
-			  
-			  
+		</div>
+	</div>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
 			<script>
-			
-			$('.share-menu.dropdown-menu').click(function(e) {
-				e.stopPropagation();
-			});
+			$(document).ready(function(){
+				$('.share-menu.dropdown-menu').click(function(e) {
+					e.stopPropagation();
+				});
 
-			$('#completed_user_email_reply_submit').click(function(){
-				$('#completed_user_email_reply').dropdown('hide');
-				$('#shareTaskModal').modal('show');
-				$(".share").removeClass('active');
-			});
+				$('#completed_user_email_reply_submit').click(function(){
+					$('#completed_user_email_reply').dropdown('hide');
+					$('#shareTaskModal').modal('show');
+					$(".share").removeClass('active');
+				});
 
-			  $(".fav").click(function(){
-				  $( this ).toggleClass( "active" );
-				});
-			  $(".comment").click(function(){
-				  $( this ).toggleClass( "active" );
-				});
-			  $(".share").click(function(){
-				  $( this ).toggleClass( "active" );
-				});
-			  $('#completed_user_email_comment').on('show.bs.dropdown', function () {
-				  $(".comment").addClass('active');
-				});
-			 $('#completed_user_email_comment').on('hidden.bs.dropdown', function () {
-			  		$(".comment").removeClass('active');
-				});
-			 $('#completed_user_email_reply').on('show.bs.dropdown', function () {
-				  $(".share").addClass('active');
-				});
-			 $('#completed_user_email_reply').on('hidden.bs.dropdown', function () {
-			  		$(".share").removeClass('active');
-				});
+				  $(".fav").click(function(){
+					  $( this ).toggleClass( "active" );
+					});
+				  $(".comment").click(function(){
+					  $( this ).toggleClass( "active" );
+					});
+				  $(".share").click(function(){
+					  $( this ).toggleClass( "active" );
+					});
+				  $('#completed_user_email_comment').on('show.bs.dropdown', function () {
+					  $(".comment").addClass('active');
+					});
+				 $('#completed_user_email_comment').on('hidden.bs.dropdown', function () {
+				  		$(".comment").removeClass('active');
+					});
+				 $('#completed_user_email_reply').on('show.bs.dropdown', function () {
+					  $(".share").addClass('active');
+					});
+				 $('#completed_user_email_reply').on('hidden.bs.dropdown', function () {
+				  		$(".share").removeClass('active');
+					});
+				 
+				 $('.email-inner').hide();
+				 $('.email-outer').click(function(){
+					 	$(this).hide();
+			            $('.email-inner').slideDown('slow');
+			      });
+				 $('.email-inner').click(function(){
+					 	$(this).hide();
+					 	$('.email-outer').show();
+			           
+			      });
+			})
 			
+		
 			</script>
