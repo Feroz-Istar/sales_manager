@@ -571,7 +571,7 @@
 										placeholder="Calendar">
 									<div class="input-group-addon" onclick="showCalendar()">
 										<img src="<%=baseURL%>/assets/image/calendar.svg"
-											alt="calendar" class="pr-1">
+											alt="calendar" class="pr-1 hw-24">
 									</div>
 								</div>
 								<div class="istar-dropdown-task select_focus mr-10">
@@ -975,7 +975,7 @@
 										class="form-control  custom-dateselect" value="12-02-2012">
 									<div class="input-group-addon"
 										onclick="showcompletedCalendar()">
-										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1"
+										<img src="<%=baseURL%>/assets/image/calendar.svg" class="pr-1 hw-24"
 											alt="calendar">
 									</div>
 								</div>

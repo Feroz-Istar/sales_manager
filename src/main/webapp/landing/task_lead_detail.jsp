@@ -199,7 +199,7 @@
 							</div>
 							<div class="col-md-4 col-12 p-0">
 								<div class="row position-relative m-0">
-									<div class="line" style="left:75px"></div>
+									<div class="line" style="left:75px; width: 75%;"></div>
 									<div class="col-md-3 text-center p-0">
 										<i class="fas fa-check-circle  tea-color"></i>
 										<div class="brownish-grey f-14">Need</div>
