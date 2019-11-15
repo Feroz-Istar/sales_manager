@@ -17,14 +17,14 @@
 			</div>
 			<div class="col-3 p-0">
 				<div class="d-flex justify-content-end">
-					<img src="<%=baseURL%>assets/image/heart.svg"
-						class="cursor-pointer mr-15" alt="heart">
+					<button class="btn p-0">
+						<div style="background-image: url(<%=baseURL%>assets/image/heart.svg); height: 24px; width: 24px;" class="mr-15 fav"></div>
+					</button>
 					<div class=" dropdown " id="completed_call_comment">
 						<button class="btn p-0 dropdown-toggle"
 							id="completed_call_comment" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="true" data-display="static">
-							<img src="<%=baseURL%>assets/image/message.svg"
-								class="cursor-pointer taskcomment mr-15" alt="message">
+							<div style="background-image: url(<%=baseURL%>assets/image/message.svg); height: 24px; width: 24px;" class="mr-15 comment"></div>
 						</button>
 						<div
 							class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
@@ -65,8 +65,7 @@
 						<button class="btn  p-0 dropdown-toggle" id="completed_call_reply"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
 							data-display="static">
-							<img src="<%=baseURL%>assets/image/reply.svg"
-								class="cursor-pointer taskshare mr-15" alt="reply">
+							<div style="background-image: url(<%=baseURL%>assets/image/reply.svg); height: 24px; width: 24px;" class="mr-15 share"></div>
 						</button>
 						<div
 							class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0"
@@ -103,7 +102,7 @@
 							</div>
 							<button type="button"
 								class="btn btn-block big_button rounded-0 font-weight-bold f-12 mt-30"
-								id="completed_call_reply_submit">Submit</button>
+								id="completed_call_reply_submit" data-toggle="modal" data-target="#shareTaskModal"	>Submit</button>
 
 						</div>
 					</div>
@@ -417,8 +416,37 @@
 	attachTaskRelatedData();
 	$(function () {
 		  $('[data-toggle="tooltip"]').tooltip()
-		})
-	
+		});
+	$('.share-menu.dropdown-menu').click(function(e) {
+		e.stopPropagation();
+	});
+
+	$('#completed_call_reply_submit').click(function(){
+		$('#completed_call_reply').dropdown('hide');
+		$('#shareTaskModal').modal('show');
+		$(".share").removeClass('active');
+	});
+	$(".fav").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $(".comment").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $(".share").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $('#completed_call_comment').on('show.bs.dropdown', function () {
+		  $(".comment").addClass('active');
+		});
+	 $('#completed_call_comment').on('hidden.bs.dropdown', function () {
+	  		$(".comment").removeClass('active');
+		});
+	 $('#completed_call_reply').on('show.bs.dropdown', function () {
+		  $(".share").addClass('active');
+		});
+	 $('#completed_call_reply').on('hidden.bs.dropdown', function () {
+		 $(".share").removeClass('active');
+		});
 </script>
 
 

@@ -422,28 +422,13 @@
 		});
 		
 		  $(".fav").click(function(){
-				if(!$(this).hasClass('active')){
-					$(this).addClass('active');
-				}else{
-					$(this).removeClass('active');
-				}
-				
+			  $( this ).toggleClass( "active" );
 			});
 		  $(".comment").click(function(){
-				if(!$(this).hasClass('active')){
-					$(this).addClass('active');
-				}else{
-					$(this).removeClass('active');
-				}
-				
+			  $( this ).toggleClass( "active" );
 			});
 		  $(".share").click(function(){
-				if(!$(this).hasClass('active')){
-					$(this).addClass('active');
-				}else{
-					$(this).removeClass('active');
-				}
-				
+			  $( this ).toggleClass( "active" );
 			});
 		  $('#completed_call_comment').on('show.bs.dropdown', function () {
 			  $(".comment").addClass('active');

@@ -412,24 +412,13 @@
 		$('#shareTaskModal').modal('show');
 	});
 	  $(".fav").click(function(){
-			if(!$(this).hasClass('active')){
-				$(this).addClass('active');
-			}else{
-				$(this).removeClass('active');
-			}
-			
+		  $( this ).toggleClass( "active" );
 		});
 	  $(".comment").click(function(){
 		  $( this ).toggleClass( "active" );
-			
 		});
 	  $(".share").click(function(){
-			if(!$(this).hasClass('active')){
-				$(this).addClass('active');
-			}else{
-				$(this).removeClass('active');
-			}
-			
+		  $( this ).toggleClass( "active" );
 		});
 	  $('#completed_webinar_comment').on('show.bs.dropdown', function () {
 		  $(".comment").addClass('active');
@@ -441,10 +430,7 @@
 		  $(".share").addClass('active');
 		});
 	 $('#completed_webinar_reply').on('hidden.bs.dropdown', function () {
-		 setTimeout(function(){
-				$(".share").removeClass('active');
-		    },1000);
-	  	
+		$(".share").removeClass('active');
 		});
 </script>
 

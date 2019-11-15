@@ -6,25 +6,14 @@
 <div class="row justify-content-between m-0 pt-15 pl-45 pr-45 pb-15">
 	<div class="col-md-9 p-0 ">
 
-				<div
-					class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
-					data-toggle="tooltip" data-placement="bottom" title=""
-					data-original-title="Email Task">Email Task</div>
-			</div>
-	<div class="col-3 p-0">
-		<div class="d-flex justify-content-end">
-			<img src="<%=baseURL%>assets/image/heart.svg" alt="heart"
-				class="cursor-pointer mr-3"> <img
-				src="<%=baseURL%>assets/image/message.svg" alt="message"
-				class="cursor-pointer taskcomment mr-3"> <img
-				src="<%=baseURL%>assets/image/reply.svg" alt="reply"
-				class="cursor-pointer taskshare">
-
+		<div
+			class="f-18 font-weight-bold greyish-brown text-truncate d-inline"
+			data-toggle="tooltip" data-placement="bottom" title=""
+			data-original-title="Email Task">Email Task</div>
 		</div>
-	</div>
+	
 </div>
-<div
-	class="row m-0 theme_dotted_border_bottom shadow-bottom   pt-15 ml-45 mr-45 pb-20">
+<div class="row m-0 theme_dotted_border_bottom shadow-bottom   pt-15 ml-45 mr-45 pb-20">
 	<div class="col-md-3 p-0 border-right-dashed-separation">
 		<p class="brownish-grey f-14 mb-0">Initiated At</p>
 		<p class="black f-16 fw-500 mb-0">11:00 AM</p>
