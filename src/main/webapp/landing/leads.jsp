@@ -330,7 +330,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-right: -5px !important; margin-top: -12px !important;"
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
@@ -636,7 +636,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"  style="margin-right: -5px !important; margin-top: -19px !important;"
 												aria-labelledby="dropdownMenuButton">
 												<button class="dropdown-item"  onclick="openWonModal()">
 													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
@@ -968,7 +968,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-right: -5px !important; margin-top: -12px !important;"
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
@@ -1295,7 +1295,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-right: -5px !important; margin-top: -12px !important;"
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">

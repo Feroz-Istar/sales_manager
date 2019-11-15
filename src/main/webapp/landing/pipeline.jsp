@@ -437,7 +437,7 @@
 												<i class="fas fa-ellipsis-v f-12 brown-grey mt-3"></i>
 											</button>
 											<div
-												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"
+												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-right: -0.425rem; margin-top: 3px !important;"
 												aria-labelledby="dropdownMenuButton">
 												<button class="dropdown-item" href="#">
 													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
