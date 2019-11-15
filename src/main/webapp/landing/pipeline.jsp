@@ -92,7 +92,7 @@
 						placeholder="Calendar">
 					<div class="input-group-addon" onclick="showCalendar()">
 						<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"
-							class="pr-1">
+							class="pr-1 hw-24">
 					</div>
 				</div>
 				<div class="istar-dropdown-task select_focus mr-10">
@@ -237,7 +237,7 @@
 					<%for(int i=0;i<3;i++){
 						String[] pipelineTitles ={"Achieved ","In Pipeline","Projected"};
 						String[] pipelineImage ={"confirm-img","lead-qualified","projected"};
-						String borderseparation = "border-right-dashed-separation";
+						String borderseparation = "border-right-dashed-separation-2px";
 						if(i==2){
 							borderseparation="";
 						}
@@ -255,7 +255,7 @@
 									<div class="f-12 brown-grey">From 25 Deals</div>
 								</div>
 								<div class="col-md-4 p-0 pr-50 <%=borderseparation%>">
-									<div class="greyish-brown f-12 fw-500">YTD</div>
+									<div class="greyish-brown f-12 fw-500 pb-5">YTD</div>
 									<div class="greyish-brown f-30  font-weight-bold">$ 800k</div>
 									<div class="f-12 brown-grey">From 68 Deals</div>
 								</div>
@@ -326,8 +326,8 @@
 							<div class="col-md-6 p-0">
 								<div class="row m-0">
 									<div class="col-md-6 p-0">
-										<div class="font-weight-bold brownish-grey f-12 pb-5">
-											Strong <i class="fal fa-info-circle soft-blue f-14"></i>
+										<div class="font-weight-bold brownish-grey f-12 pb-5 d-flex align-items-center">
+											Strong <i class="fal fa-info-circle soft-blue f-18 pl-1"></i>
 										</div>
 										<div class="d-flex">
 											<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
@@ -335,8 +335,8 @@
 										</div>
 									</div>
 									<div class="col-md-6 p-0">
-										<div class="font-weight-bold brownish-grey f-12 pb-5">
-											Weak <i class="fal fa-info-circle soft-blue f-14"></i>
+										<div class="font-weight-bold brownish-grey f-12 pb-5 d-flex align-items-center">
+											Weak <i class="fal fa-info-circle soft-blue f-18 pl-1"></i>
 										</div>
 										<div class="d-flex">
 											<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
@@ -392,7 +392,7 @@
 							<div class="col-md-2 p-0">
 								<div class="f-14 black fw-500 text-truncate"
 									title="Robert Wolken">Robert Wolken</div>
-								<div class="f-14 brownish-grey fw-500 text-truncate"
+								<div class="f-14 brownish-grey text-truncate"
 									title="Manager">Manager</div>
 							</div>
 
