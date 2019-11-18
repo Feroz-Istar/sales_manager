@@ -21,6 +21,8 @@
 	rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/userDetails.css">
+
 <link rel="stylesheet" href="<%=baseURL%>assets/css/jquery.rateyo.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
@@ -360,46 +362,38 @@
 				  			<div class="f-16 fw-500 black pt-30 pl-40 pb-10">	Playbook Stats</div>
 				  			<div class="row border-bottom-dashed-separation m-0 pl-40 pr-40 pb-40">
 				  				<div class="col-md-6 p-0">
-		      						<div class="f-12 font-weight-bold brownish-grey mb-1">Strong  <i class="fal fa-info-circle soft-blue"></i></div>
+		      						<div class="f-12 font-weight-bold brownish-grey mb-1 d-flex align-items-center">Strong  <i class="fal fa-info-circle soft-blue f-16 pl-1"></i></div>
 		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 		      					</div>
 		      					<div class="col-md-6 p-0">
-		      						<div class="f-12 font-weight-bold brownish-grey mb-1">Weak <i class="fal fa-info-circle soft-blue"></i></div>
+		      						<div class="f-12 font-weight-bold brownish-grey mb-1 d-flex align-items-center">Weak <i class="fal fa-info-circle soft-blue f-16 pl-1"></i></div>
 		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
+										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
 										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
 		      					</div>
 				  			</div>
 				  			<div class="row m-0 pt-40 pl-40">
-				  				<div class="col-md-6 fw-500 p-0">Disposition</div>
+				  				<div class="col-md-6 fw-500 f-16 black p-0">Targeting Activities</div>
 				  			</div>
 				  			
-				  			<div class="row m-0 pl-40 pt-30 pb-20 align-items-center bottom_border_1px">
-								<div class="col-md-3 p-0 black f-14 font-weight-bold">Lead Name</div>
-								<div class="col-md-3 p-0 black f-14 font-weight-bold">Follow-Ups </div>
-								<div class="col-md-3 p-0 black f-14 font-weight-bold">Talk Ratio</div>
-								<div class="col-md-3 p-0 black f-14 font-weight-bold">Connected Call</div>
+				  			<div class="row m-0">
+				  				<div class="col-md-12 p-0 pl-40 pr-40">
+							    	<div id="container" style="height:600px"></div>
+							    </div>
 							</div>
-						
-							<%for(int i=0;i<10;i++){ 
-								String bg_color="bg-white";
-								if(i%2==0){
-									bg_color="cream_white";
-								}
-							%>
-								
-							<div class="row m-0 pl-40 leadpreview pt-30 pb-30 bottom_border_1px align-items-center <%=bg_color%>">
-								<div class="col-md-3 p-0 greyish-brown f-14">Massive Dynamic Pvt. Ltd.</div>
-								<div class="col-md-3 p-0 greyish-brown f-14">45</div>
-								<div class="col-md-3 p-0 greyish-brown f-14">20%</div>
-								<div class="col-md-3 p-0 greyish-brown f-14">03</div>
-								
-							</div>
-							<%} %>
+							   
+							
+				  			
 				  		</div>
 				  			
 				  		<div class="col-md-3 cream_white theme_solid_border_left p-0 pl-40 pr-40 pt-30 pb-30 ">
@@ -457,7 +451,11 @@
 <script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 <script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 <script src="<%=baseURL%>assets/js/salesken.js"></script>
+
 <script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="<%=baseURL%>assets/js/userDetail.js"></script>
 
 <script>
 	$( document ).ready(function() {
