@@ -42,7 +42,7 @@
 	<div class="ml-30 mr-30 pb-20">
 	<div class="input-group position-relative  ">
 				<img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox" style="margin-top: 3px;">
-					<input id="" class="form-control  custom-taskborder brown-grey pt-10 pb-10 f-14" type="search" placeholder="Search" style="padding-right:30px">
+					<input id="" class="form-control removefocus select_focus  custom-taskborder brown-grey pt-10 pb-10 f-14" type="search" placeholder="Search" style="padding-right:30px">
 	</div></div>
 	<div class="cuesdialog left-blue-border ml-30 mr-30 pl-30 pt-20 pb-15 mb-20">
 		<div class="f-12 brown-grey">10:20 AM</div>

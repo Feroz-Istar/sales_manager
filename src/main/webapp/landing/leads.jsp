@@ -142,7 +142,7 @@
 									</div>
 
 								</div>
-											<div class="istar-dropdown-task dropdown" id="filterbutton">
+											<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -441,7 +441,7 @@
 									</div>
 								</div>
 
-									<div class="istar-dropdown-task dropdown " id="filterbutton">
+									<div class="istar-dropdown-task dropdown select_focus " id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -770,7 +770,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -1097,7 +1097,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="won_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">

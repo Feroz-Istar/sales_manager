@@ -123,7 +123,7 @@
 
 								</div>
 									
-									<div class="istar-dropdown-task dropdown mt-10 mb-10" id="filterbutton">
+									<div class="istar-dropdown-task dropdown mt-10 mb-10 select_focus" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="insight_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -563,7 +563,7 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="overallAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -790,7 +790,7 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="comparativeAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">

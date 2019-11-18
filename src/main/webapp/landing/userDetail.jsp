@@ -89,7 +89,7 @@
 									<input type="text" id="task_datepicker" class="form-control  custom-dateselect"
 										value="12-02-2012">
 									<div class="input-group-addon" onclick="showCalendar()">
-										<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1" alt="calendar">
+										<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1 hw-24" alt="calendar">
 									</div>
 								</div>	
 								<div class="istar-dropdown-task select_focus mr-10">

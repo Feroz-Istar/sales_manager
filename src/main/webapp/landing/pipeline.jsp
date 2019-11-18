@@ -128,7 +128,7 @@
 				</div>
 
 
-				<div class="istar-dropdown-task dropdown" id="filterbutton">
+				<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
 					<button class="istar-dropdown-arrow " data-display="static"
 					id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">

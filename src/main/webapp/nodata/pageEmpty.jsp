@@ -38,8 +38,12 @@
 		</div>
 	</div>
 	</main>
-	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
-	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
+	<script>
+		$('.salesken.navbar-nav>li').removeClass('active');
+	</script>
+	<script  type="text/javascript" src="<%=baseURL%>assets/js/salesken.js"></script>
+	<script  type="text/javascript" src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+	<script  type="text/javascript" src="<%=baseURL%>assets/js/popper.min.js"></script>
+	<script  type="text/javascript" src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 </body>
 </html>

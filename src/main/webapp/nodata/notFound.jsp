@@ -40,6 +40,10 @@
 		</div>
 	</div>
 	</main>
+	<script>
+		$('.salesken.navbar-nav>li').removeClass('active');
+	</script>
+	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>

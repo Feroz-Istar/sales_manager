@@ -1929,7 +1929,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .selectpicker ~.dropdown-menu>.bs-searchbox>input:focus {
 	color: #495057;
 	background-color: #fff;
-	border-color: #ed4d67 !important;
+	border-color: #999999 !important;
 	outline: 0;
 	box-shadow: none !important;
 }
@@ -2108,9 +2108,9 @@ button:focus {
 
 .custom-result-selects:focus {
 	outline: none !important;
-	border-color: #ed4d67 !important;
+	border-color: #999999 !important;
 	box-shadow: none !important;
-	border: 1px solid #ed4d67 !important;
+	border: 1px solid #999999 !important;
 }
 
 .select_focus:focus {
