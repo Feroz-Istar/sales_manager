@@ -692,26 +692,44 @@
 							<fieldset>
 								<div class="row pt-20 m-0">
 									<div class="col-md-6 p-0 pr-7_5">
-										<div class="f-14 fw-500 pb-10">Add Title</div>
+										<label class="f-14 fw-500 pb-10 m-0">Add Title</label>
 										<input type="text"
 											class="custom-modal-input w-100 form-control f-14 istar-form-control"
 											name="eventTitle" id="eventTitle"
 											aria-describedby="eventTitle" placeholder="Type here" />
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
-										<div class="f-14 fw-500 pb-10">Type</div>
-										<select
-											class="form-control custom-modal-input w-100 f-14 brwon-grey istar-form-control"
-											name="eventType" id="eventType">
-											<option value="0">Select Here</option>
-											<option value="1">Type 1</option>
-											<option value="2">Type 2</option>
-										</select>
+										<label class="f-14 fw-500 pb-10 m-0">Type</label>
+										<div class="dropdown istar-dropdown">
+											<button class="custom-modal-input select_focus w-100 pl-2 d-flex h-35"
+												style="justify-content: space-between;" id="eventtype"
+												data-toggle="dropdown" aria-haspopup="true" data-display="static"
+												aria-expanded="false">
+												Select here <i
+													class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
+											</button>
+											<div
+												class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100"
+												>
+												<button class="dropdown-item" type="button">
+													Type 1
+												</button>
+												<button class="dropdown-item" type="button">
+													Type 2
+												</button>
+												<button class="dropdown-item" type="button">
+													Type 3
+												</button>
+												<button class="dropdown-item" type="button">
+													Type 4
+												</button>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="row m-0 pt-20">
 									<div class="col-md-6 p-0 pr-7_5">
-										<div class="f-14 fw-500 pb-10">Date</div>
+										<label class="f-14 fw-500 pb-10 m-0">Date</label>
 										<%-- 	<div class="custom-modal-input w-100 d-flex mr-2 border-0">
 							<input class="f-14  removefocus w-100 pl-2  istar-form-control " placeholder="Select here" id="event_date" name="event_date" value="<%=today_date%>">
 							<img src="<%=baseURL%>assets/image/calendar.svg" alt="" class="pr-2">	
@@ -725,7 +743,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
-										<div class="f-14 fw-500 pb-10">Time</div>
+										<label class="f-14 fw-500 pb-10 m-0">Time</label>
 										<%-- <div class="custom-modal-input w-100 d-flex mr-2 ">
 							<input class="f-14 border-0 removefocus w-100 pl-2 timepicker istar-form-control " name="timepicker" id="timepicker" placeholder="Select here">
 							<img src="<%=baseURL%>assets/image/alarm.svg" alt="" class="pr-2">	
@@ -741,7 +759,7 @@
 								</div>
 								<div class="row m-0 pt-20">
 									<div class="col-md-12 p-0">
-										<div class="f-14 fw-500 pb-10">Add Guest</div>
+										<label class="f-14 fw-500 pb-10 m-0">Add Guest</label>
 										<input type="text"
 											class="custom-modal-input w-100 form-control f-14 istar-form-control"
 											id="addGuest" name="addGuest" aria-describedby="addGuest"
@@ -751,7 +769,7 @@
 
 								<div class="row m-0 pt-20 pb-30">
 									<div class="col-md-12 p-0">
-										<div class="f-14 fw-500 pb-10">Description</div>
+										<label class="f-14 fw-500 pb-10 m-0">Description</label>
 										<textarea
 											class="custom-modal-textarea w-100 istar-form-control form-control" placeholder="Type here"
 											id="eventdescription " name="eventdescription" rows="6"></textarea>
@@ -794,7 +812,7 @@
 							<fieldset>
 								<div class="row  pt-30 m-0">
 									<div class="col-md-12 istar-dropdown p-0">
-										<div class="f-14 fw-500 pb-10 black">Lead Name</div>
+										<label class="f-14 fw-500 pb-10 black m-0">Lead Name</label>
 										<div class="form-group mb-0 is-invalid" id="lead1">
 											<select
 												class="istar-form-control form-control selectpicker h-35 show-menu-arrow "
@@ -830,7 +848,7 @@
 
 								<div class="row  pt-20 m-0">
 									<div class="col-md-6  p-0 pr-7_5">
-										<div class="f-14 fw-500 pb-10 black">Task Type</div>
+										<label class="f-14 fw-500 pb-10 black m-0">Task Type</label>
 
 										<div class="dropdown istar-dropdown">
 											<button class="custom-modal-input w-100 pl-2 d-flex h-35"
@@ -864,19 +882,37 @@
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
-										<div class="f-14 fw-500 pb-10 black">Task By</div>
-										<select
-											class="form-control custom-modal-input w-100 f-14 brwon-grey h-35"
-											id="taskActor" name="taskActor">
-											<option value="0">Me</option>
-											<option value="1">Type 1</option>
-											<option value="2">Type 2</option>
-										</select>
+										<label class="f-14 fw-500 pb-10 black m-0">Task By</label>
+										<div class="dropdown istar-dropdown">
+											<button class="custom-modal-input w-100 pl-2 d-flex h-35"
+												style="justify-content: space-between;" id="task_by"
+												data-toggle="dropdown" aria-haspopup="true" data-display="static"
+												aria-expanded="false">
+												Select here <i
+													class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
+											</button>
+											<div
+												class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100"
+												id="task_by">
+												<button class="dropdown-item" type="button">
+													Agent 1
+												</button>
+												<button class="dropdown-item" type="button">
+													Agent 2
+												</button>
+												<button class="dropdown-item" type="button">
+													Agent 3
+												</button>
+												<button class="dropdown-item" type="button">
+													Agent 4
+												</button>
+											</div>
+										</div>
 									</div>
 								</div>
 								<div class="row  pt-20 m-0 pb-30">
 									<div class="col-md-6 p-0 pr-7_5">
-										<div class="f-14 fw-500 pb-10 black">Date</div>
+										<label class="f-14 fw-500 pb-10 black m-0">Date</label>
 										<div class="custom-modal-input w-100 d-flex mr-2 h-35">
 											<input
 												class="f-14 border-0 removefocus w-100 pl-2 brown-grey custom_calendar"
@@ -887,7 +923,7 @@
 										</div>
 									</div>
 									<div class="col-md-6 p-0 pl-7_5">
-										<div class="f-14 fw-500 pb-10 black">Time</div>
+										<label class="f-14 fw-500 pb-10 black m-0">Time</label>
 										<div class="custom-modal-input w-100 d-flex mr-2 h-35">
 											<input
 												class="f-14 border-0 removefocus w-100 pl-2 brown-grey"
