@@ -334,16 +334,13 @@
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-														srcset="" class="mr-2">Edit
+													<div class="mr-2 dropdown-icon edit"></div>Edit
 												</button>
 												<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal">
-													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-														srcset="" class="mr-2">Delete
+													<div class="mr-2 dropdown-icon delete"></div>Delete
 												</button>
 												<button class="dropdown-item"  onclick="window.location.href = 'userDetail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png" alt="details"
-														srcset="" class="mr-2">Details
+													<div class="mr-2 dropdown-icon details"></div>Details
 												</button>
 											</div>
 										</div>
@@ -639,24 +636,19 @@
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left"  style="margin-right: -5px !important; margin-top: -19px !important;"
 												aria-labelledby="dropdownMenuButton">
 												<button class="dropdown-item"  onclick="openWonModal()">
-													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
-														srcset="" class="mr-2"> Won
+													<div class="mr-2 dropdown-icon won"></div> Won
 												</button>
 												<button class="dropdown-item"  onclick="openLostModal()">
-													<img src="<%=baseURL%>assets/image/lost.svg" alt="lost"
-														srcset="" class="mr-2">Lose
+													<div class="mr-2 dropdown-icon lost"></div>Lose
 												</button>
 												<button class="dropdown-item" onclick="openEditModal()">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-														srcset="" class="mr-2">Edit
+													<div class="mr-2 dropdown-icon edit"></div>Edit
 												</button>
 												<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal">
-													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-														srcset="" class="mr-2">Delete
+													<div class="mr-2 dropdown-icon delete"></div>Delete
 												</button>
 												<button class="dropdown-item" onclick="window.location.href = 'userDetail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png" alt="detail"
-														srcset="" class="mr-2">Details
+													<div class="mr-2 dropdown-icon details"></div>Details
 												</button>
 											</div>
 										</div>
@@ -972,16 +964,13 @@
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-														srcset="" class="mr-2">Edit
+													<div class="mr-2 dropdown-icon edit"></div>Edit
 												</button>
 												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal">
-													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-														srcset="" class="mr-2">Delete
+													<div class="mr-2 dropdown-icon delete"></div>Delete
 												</button>
 												<button class="dropdown-item"  onclick="window.location.href = 'userDetail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png" alt="details"
-														srcset="" class="mr-2">Details
+													<div class="mr-2 dropdown-icon details"></div>Details
 												</button>
 											</div>
 										</div>
@@ -1299,16 +1288,13 @@
 												aria-labelledby="dropdownMenuButton">
 												
 												<button class="dropdown-item" onclick="openEditModal()">
-													<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-														srcset="" class="mr-2">Edit
+													<div class="mr-2 dropdown-icon edit"></div>Edit
 												</button>
 												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#deleteModal">
-													<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-														srcset="" class="mr-2">Delete
+													<div class="mr-2 dropdown-icon delete"></div>Delete
 												</button>
 												<button class="dropdown-item"  onclick="window.location.href = 'userDetail.jsp'">
-													<img src="<%=baseURL%>assets/image/details.png" alt="details"
-														srcset="" class="mr-2">Details
+													<div class="mr-2 dropdown-icon details"></div>Details
 												</button>
 											</div>
 										</div>

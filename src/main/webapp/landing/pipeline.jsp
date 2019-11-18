@@ -444,21 +444,17 @@
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-right: -0.425rem; margin-top: 3px !important;"
 												aria-labelledby="dropdownMenuButton">
 												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/won.svg" alt="won"
-														srcset="" class="mr-2"> Won
+													<div class="mr-2 dropdown-icon won"></div>Won
 												</button>
 												<button class="dropdown-item" href="#">
-													<img src="<%=baseURL%>assets/image/lost.svg" alt="lost"
-														srcset="" class="mr-2">Lose
+													<div class="mr-2 dropdown-icon lost"></div>Lose
 												</button>
 												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#changeStageModal">
-													<img src="<%=baseURL%>assets/image/stats.svg" alt="edit"
-														srcset="" class="mr-2" height="20" width="24">Change Stage
+													<div class="mr-2 dropdown-icon change_stage"></div>Change Stage
 												</button>
 
 												<button class="dropdown-item"  data-toggle="modal" data-target="#assignOwnerModal">
-													<img src="<%=baseURL%>assets/image/people.svg" alt="details" 
-														srcset="" class="mr-2">Change Owner 
+													<div class="mr-2 dropdown-icon change_owner"></div>Change Owner 
 												</button>
 											</div>
 										</div>

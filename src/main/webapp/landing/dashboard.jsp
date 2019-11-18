@@ -200,16 +200,14 @@
 											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 										</button>
 										<div
-											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left mb-10"
+											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-top:-8px;"
 											aria-labelledby="dropdownMenuButton">
 
 											<button class="dropdown-item" href="#">
-												<img src="<%=baseURL%>assets/image/edit.svg" alt="edit"
-													srcset="" class="mr-2">Edit
+												<div class="mr-2 dropdown-icon edit"></div>Edit
 											</button>
 											<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal">
-												<img src="<%=baseURL%>assets/image/delete.svg" alt="delete"
-													srcset="" class="mr-2">Delete
+												<div class="mr-2 dropdown-icon delete"></div>Delete
 											</button>
 
 										</div>

@@ -2791,3 +2791,55 @@ input[type="radio"]:checked+.istar-radio-btn-style {
 	height:24px;
 	width:24px;
 }
+
+/* start of dropdown icons */
+
+.dropdown-icon{
+	    height: 24px !important;
+    width: 24px;
+    background-repeat: no-repeat;
+}
+.dropdown-icon.edit{
+	background-image: url(/assets/image/edit.svg);
+}
+.dropdown-item:hover .dropdown-icon.edit{
+	background-image: url(/assets/image/edit_hover.svg);
+}
+.dropdown-icon.delete{
+	background-image: url(/assets/image/delete.svg);
+}
+.dropdown-item:hover .dropdown-icon.delete{
+	background-image: url(/assets/image/delete_hover.svg);
+}
+.dropdown-icon.details{
+	background-image: url(/assets/image/details.svg);
+}
+.dropdown-item:hover .dropdown-icon.details{
+	background-image: url(/assets/image/details_hover.svg);
+}
+.dropdown-icon.won{
+	background-image: url(/assets/image/won.svg);
+}
+.dropdown-item:hover .dropdown-icon.won{
+	background-image: url(/assets/image/won_hover.svg);
+}
+.dropdown-icon.lost{
+	background-image: url(/assets/image/lost.svg);
+}
+.dropdown-item:hover .dropdown-icon.lost{
+	background-image: url(/assets/image/lost_hover.svg);
+}
+.dropdown-icon.change_stage{
+	background-image: url(/assets/image/stats.svg);
+}
+.dropdown-item:hover .dropdown-icon.change_stage{
+	background-image: url(/assets/image/stats_hover.svg);
+}
+.dropdown-icon.change_owner{
+	background-image: url(/assets/image/people.svg);
+}
+.dropdown-item:hover .dropdown-icon.change_owner{
+	background-image: url(/assets/image/people_hover.svg);
+}
+
+/* end of dropdown icons */
