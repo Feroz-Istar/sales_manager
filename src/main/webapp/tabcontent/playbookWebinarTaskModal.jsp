@@ -155,7 +155,7 @@
 						id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
 						role="tab" aria-controls="whatswrong" aria-selected="false">Whats
 							Wrong?</a></li>
-					<li class="nav-item"><a class="nav-item nav-link" id="all-tab"
+					<li class="nav-item"><a class="nav-item nav-link" id="all-tab" style="min-width:132px;"
 						data-toggle="tab" href="#all" role="tab" aria-controls="all"
 						aria-selected="false">All</a></li>
 				</ul>
