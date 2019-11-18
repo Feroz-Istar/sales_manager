@@ -146,7 +146,7 @@
 								</div>
 								
 								
-									<div class="istar-dropdown-task dropdown select_focus " id="filterbutton">
+									<div class="istar-dropdown-task dropdown select_focus " id="target-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -177,7 +177,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -208,7 +208,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox targetteamcheckbox" data-id="<%=j %>" id="target_team-checkbox<%=j %>" type="checkbox">
@@ -247,7 +247,7 @@
 							</div>
 						</div>
 						
-						<div class="row cream_white m-0">
+						<div class="row cream_white m-0" id="customer-user-content">
 						<div class="col-md-12 p-0 pt-20">
 							<%for(int i=0;i<4;i++){ %>
 							<div class="card mb-20 mr-40 ml-40 cursor-pointer" onclick="window.location.href = 'userDetail.jsp'">
@@ -387,7 +387,7 @@
 			});
 			
 			$('#user_reset').click(function(){
-				 $('#user_selections').hide();
+				 $('#user_selections').addClass('d-none');
 			 });
 			
 			 $('#target_team_submit').click(function(e) {
@@ -415,7 +415,12 @@
 						
 
 				});
-			
+			 $('#target-filter').on('show.bs.dropdown', function () {
+					var new_height= $('#user_selections').outerHeight() + $('#customer-user-content').outerHeight() ;
+					console.log(new_height);
+					$('#target_dropdown + .dropdown-menu').height(new_height-8);
+					$('.agent-team-list').height(new_height - 200);
+				});
 		});
 </script>
 		

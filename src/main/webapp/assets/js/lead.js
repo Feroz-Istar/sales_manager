@@ -153,7 +153,34 @@ $( document ).ready(function() {
 		$('#lead_lost_datepicker').datepicker({autoclose:true});
 		$('#lead_won_datepicker').datepicker({autoclose:true});
 		
-
+		$('#target-filter').on('show.bs.dropdown', function () {
+			var new_height= $('#nav-target').outerHeight() - $('#target-selection').outerHeight() ;
+			console.log(new_height);
+			$('#target_dropdown + .dropdown-menu').height(new_height-13);
+			$('.agent-team-list').height(new_height - 200);
+		});
+		
+		$('#qualified-filter').on('show.bs.dropdown', function () {
+			var new_height= $('#nav-qualified').outerHeight() - $('#qualified-selection').outerHeight() ;
+			console.log(new_height);
+			$('#qualified_dropdown + .dropdown-menu').height(new_height-13);
+			$('.agent-team-list').height(new_height - 200);
+		});
+		
+		$('#lost-filter').on('show.bs.dropdown', function () {
+			var new_height= $('#nav-lost').outerHeight() - $('#lost-selection').outerHeight() ;
+			console.log(new_height);
+			$('#lost_dropdown + .dropdown-menu').height(new_height-13);
+			$('.agent-team-list').height(new_height - 200);
+		});
+		
+		$('#won-filter').on('show.bs.dropdown', function () {
+			var new_height= $('#nav-win').outerHeight() - $('#won-selection').outerHeight() ;
+			console.log(new_height);
+			$('#won_dropdown + .dropdown-menu').height(new_height-13);
+			$('.agent-team-list').height(new_height - 200);
+		});
+		
 });
 		
 	function showqualifiedCalendar(){

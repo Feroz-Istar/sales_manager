@@ -128,7 +128,7 @@
 				</div>
 
 
-				<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+				<div class="istar-dropdown-task dropdown select_focus" id="pipeline-filter">
 					<button class="istar-dropdown-arrow " data-display="static"
 					id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
 					aria-expanded="false">
@@ -158,7 +158,7 @@
 										</div>
 									</div>
 									
-									<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+									<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 									
 									<%for(int i=0; i<20;i++){ %>
                                     <div class="d-flex align-items-center pt-3">
@@ -189,7 +189,7 @@
 										</div>
 									</div>
 									
-									<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+									<div class="mb-2 agent-team-list" style="overflow-x: hidden; overflow-y:auto;">
 									<%for(int j=0; j<20;j++){ %>
 									<div class="d-flex align-items-center pt-3">
                                         <input class="istar-checkbox pipelineteamcheckbox" data-id="<%=j %>" id="pipeline_team-checkbox<%=j %>" type="checkbox">
@@ -230,7 +230,7 @@
 			</div>
 		</div>
 		
-		<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-15 pb-15">
+		<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-15 pb-15" id="pipelineCard">
 		<div class="card w-100 " style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);">
 				<div class="card-body  pt-30 pb-30 pl-30 pr-30" >
 					<div class="row m-0">
@@ -267,7 +267,7 @@
 			</div>
 		</div>
 
-		<div class="row very-light-pink-grey-bg m-0">
+		<div class="row very-light-pink-grey-bg m-0" id="pipelineTab">
 			<div class="col-md-2 col-12 p-0 tabcol flex-grow-1 border-right">
 				<div class="nav flex-column nav-pills h-100 pl-40"
 					id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
@@ -661,7 +661,7 @@
 				$('#activity').dropdown('hide');
 			});
 			$('#pipeline_reset').click(function() {
-				$('#pipeline_filter').hide();
+				$('#pipeline_filter').addClass("d-none");
 			});
 			
 			
@@ -689,6 +689,13 @@
 				console.log(team_array)
 			});
 			
+			$('#pipeline-filter').on('show.bs.dropdown', function () {
+				var new_height= $('#pipeline_filter').outerHeight() + $('#pipelineCard').outerHeight() + $('#piplelinestage-tab').outerHeight() ;
+				console.log(new_height);
+				$('#pipeline_dropdown + .dropdown-menu').height(new_height-8);
+				$('.agent-team-list').height(new_height - 200);
+			});
+				
 		});
 
 		function showCalendar() {

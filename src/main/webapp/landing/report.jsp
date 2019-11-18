@@ -123,7 +123,7 @@
 
 								</div>
 									
-									<div class="istar-dropdown-task dropdown mt-10 mb-10 select_focus" id="filterbutton">
+									<div class="istar-dropdown-task dropdown mt-10 mb-10 select_focus" id="playbook-insight-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="insight_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -153,21 +153,19 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
-					                                    
-					                                    
-									<input class="istar-checkbox insightagentcheckbox" data-id="<%=i %>" id="insight_associate-checkbox<%=i %>" type="checkbox">
-					                                        <label class="istar-checkbox-style" for="insight_associate-checkbox<%=i %>"></label>
-											<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-										  <div>
-					                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-					                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-					                                        </div>
-										</div>
-										<%} %>
+					                                    	<input class="istar-checkbox insightagentcheckbox" data-id="<%=i %>" id="insight_associate-checkbox<%=i %>" type="checkbox">
+										                                        <label class="istar-checkbox-style" for="insight_associate-checkbox<%=i %>"></label>
+																<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
+															  <div>
+										                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
+										                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
+										                                        </div>
+															</div>
+															<%} %>
 					                                    </div>
 					                                    
 					                                     		
@@ -184,7 +182,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="mb-2 agent-team-list" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox insightteamcheckbox" data-id="<%=j %>" id="insight_team-checkbox<%=j %>" type="checkbox">
@@ -220,7 +218,7 @@
 							</div>
 						</div>
 						
-						<div class="row m-0 pl-40 pr-40">
+						<div class="row m-0 pl-40 pr-40" id="playbook-insight-content">
 						<%for(int i=0;i<12;i++){ %>
 							<div class="col-md-4 d-flex align-items-center col_bordering minh-200 p-0 cursor-pointer" onclick="window.location.href = 'customerNoFollowUp.jsp'" >
 								<div class="row w-100 m-0">
@@ -563,7 +561,7 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="overall-analysis-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="overallAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -571,7 +569,7 @@
 												class=" float-right">
 										</button>
 										<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
-										aria-labelledby="overallAnalysis_dropdown" style="width: 350px; ">
+											aria-labelledby="overallAnalysis_dropdown" style="width: 350px; ">
 													
 												<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="overallAnalysisTab" role="tablist">
 												  <li class="nav-item">
@@ -593,7 +591,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style=" overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -624,7 +622,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox overallAnalysisteamcheckbox" data-id="<%=j %>" id="overallAnalysis_team-checkbox<%=j %>" type="checkbox">
@@ -659,7 +657,7 @@
 							</div>
 						</div>
 					
-						<div class="row pt-4 m-0 pt-25 pb-25 pl-60 pr-60  position-relative" >
+						<div class="row pt-4 m-0 pt-25 pb-25 pl-60 pr-60  position-relative" id="overall-analysis-scale">
 						
 							<div class="line-style">
 							</div>
@@ -681,7 +679,7 @@
 							</div>
 						</div>					
 						
-						<div class="d-flex flex-wrap pl-60 pr-60 pb-20">
+						<div class="d-flex flex-wrap pl-60 pr-60 pb-20" id="overall-analysis-data">
 							<%for(int i=0;i<16;i++){ %>
 							<div class="col-md-3 p-0 pb-20 pr-60">
 							<div class=" dropdown dropright">
@@ -737,7 +735,7 @@
 						
 						
 						<div class="comparative_analysis">
-						<div class="row m-0 theme_dashed_border_bottom ml-40 mr-40 pt-20 pb-20">
+						<div class="row m-0 theme_dashed_border_bottom ml-40 mr-40 pt-20 pb-20" id="select-row">
 						<div class="col-md-4 p-0">
 						<h5 class="f-20 fw-500 black">Comparative Analysis</h5>
 						
@@ -790,7 +788,7 @@
 									
 								</div>
 								
-								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="comparative-analysis-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="comparativeAnalysis_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -820,7 +818,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -851,7 +849,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox comparativeAnalysisteamcheckbox" data-id="<%=j %>" id="comparativeAnalysis_team-checkbox<%=j %>" type="checkbox">
@@ -1443,16 +1441,16 @@
 		 });
 		 
 		 $('#insight_reset').click(function(){
-			 $('#insight_filter').hide();
+			 $('#insight_filter').addClass("d-none");
 		 });
 		 $('#user_reset').click(function(){
 			 $('#user_filter').hide();
 		 });
 		 $('#overall_analysis_reset').click(function(){
-			 $('#overall_analysis_selections').hide();
+			 $('#overall_analysis_selections').addClass("d-none");
 		 });
 		 $('#comparative_analysis_reset').click(function(){
-			 $('#comparative_analysis_selections').hide();
+			 $('#comparative_analysis_selections').addClass("d-none");
 		 });
 		 
 		
@@ -1466,9 +1464,26 @@
 			$('.comparative_analysis').hide();
 		});
 			
-		 
-		 
+		$('#playbook-insight-filter').on('show.bs.dropdown', function () {
+			var new_height= $('#playbook-insight-content').outerHeight() + $('#insight_filter').outerHeight() ;
+			console.log(new_height);
+			$('#insight_dropdown + .dropdown-menu').height(new_height-13);
+			$('.agent-team-list').height(new_height - 200);
+		});
 		
+		$('#overall-analysis-filter').on('show.bs.dropdown', function () {
+			var new_height= $('#overall_analysis_selections').outerHeight() + $('#overall-analysis-scale').outerHeight()  + $('#overall-analysis-data').outerHeight();
+			console.log(new_height);
+			$('#overallAnalysis_dropdown + .dropdown-menu').height(new_height-4);
+			$('.agent-team-list').height(new_height - 200);
+		});
+		
+		$('#comparative-analysis-filter').on('show.bs.dropdown', function () {
+			var new_height= $('.comparative_analysis').outerHeight() - $('#select-row').outerHeight();
+			console.log(new_height);
+			$('#comparativeAnalysis_dropdown + .dropdown-menu').height(new_height -4 );
+			$('.agent-team-list').height(new_height - 200);
+		});
 	});
 	function showCalendar(){
 		$('#user_datepicker').datepicker('show')

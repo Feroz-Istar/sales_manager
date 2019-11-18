@@ -226,7 +226,7 @@
 
 								</div>
 
-								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="ongoing-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="ongoing_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -257,7 +257,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -288,7 +288,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="mb-2 agent-team-list" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox ongoingteamcheckbox" data-id="<%=j %>" id="ongoing_team-checkbox<%=j %>" type="checkbox">
@@ -560,7 +560,7 @@
 
 
 						<div
-							class="row align-items-center  theme_solid_border_bottom  pl-40 pr-40 pt-15 pb-15  m-0">
+							class="row align-items-center  theme_solid_border_bottom  pl-40 pr-40 pt-15 pb-15  m-0" id="upcoming-results-found">
 							<div class="col-md-3 p-0 text-result-found	">
 								<strong class="number-of-results">04</strong> Results Found
 							</div>
@@ -642,7 +642,7 @@
 
 								</div>
 
-								<div class="istar-dropdown-task dropdown select_focus " id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus " id="upcoming-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="upcoming_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -672,7 +672,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -703,7 +703,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox upcomingteamcheckbox" data-id="<%=j %>" id="upcoming_team-checkbox<%=j %>" type="checkbox">
@@ -1045,7 +1045,7 @@
 									</div>
 
 								</div>
-								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="completed-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="completed_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -1075,7 +1075,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -1106,7 +1106,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="mb-2 agent-team-list" style=" overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox completedteamcheckbox" data-id="<%=j %>" id="completed_team-checkbox<%=j %>" type="checkbox">
@@ -1143,7 +1143,7 @@
 
 
 						<div class="row very-light-pink-grey-bg m-0">
-							<div class="col-md-3 p-0 border-right taskmodal pl-20">
+							<div class="col-md-3 p-0 border-right taskmodal pl-20" id="completed-tab-list">
 								<div class="nav flex-column nav-pills " id="taskdetail-tab-list"
 									role="tablist" aria-orientation="vertical">
 									<%
@@ -1425,13 +1425,13 @@
 										})
 
 								$('#ongoing_reset').click(function(){
-									 $('#ongoing_filter_selections').hide();
+									 $('#ongoing_filter_selections').addClass("d-none");
 								 });
 								$('#upcoming_reset').click(function(){
-									 $('#upcoming_filter_selections').hide();
+									 $('#upcoming_filter_selections').addClass("d-none");
 								 });
 								$('#completed_reset').click(function(){
-									 $('#completed_filter_selections').hide();
+									 $('#completed_filter_selections').addClass("d-none");
 								 });
 										
 								
@@ -1539,7 +1539,24 @@
 										console.log(agent_array)
 										console.log(team_array)
 									});
-								
+									$('#ongoing-filter').on('show.bs.dropdown', function () {
+										var new_height= $('#ongoing_filter_selections').outerHeight() + $('#taskdetail-tab-listContent').outerHeight() ;
+										console.log(new_height);
+										$('#ongoing_dropdown + .dropdown-menu').height(new_height-8);
+										$('.agent-team-list').height(new_height - 200);
+									});
+									$('#upcoming-filter').on('show.bs.dropdown', function () {
+										var new_height=  $('#nav-upcoming').outerHeight() - $('#upcoming-results-found').outerHeight() ;
+										console.log(new_height);
+										$('#upcoming_dropdown + .dropdown-menu').height(new_height-8);
+										$('.agent-team-list').height(new_height - 200);
+									});
+									$('#completed-filter').on('show.bs.dropdown', function () {
+										var new_height=  $('#completed_filter_selections').outerHeight() + $('#completed-tab-list').outerHeight() ;
+										console.log(new_height);
+										$('#completed_dropdown + .dropdown-menu').height(new_height-8);
+										$('.agent-team-list').height(new_height - 200);
+									});
 							});
 
 			function showCalendar() {

@@ -89,7 +89,7 @@
 						<!-- start of target content -->
 
 						<div
-							class="row align-items-center bg-white m-0 theme_solid_border_bottom">
+							class="row align-items-center bg-white m-0 theme_solid_border_bottom" id="target-selection">
 							<div class="col-md-3 text-result-found p-0 pl-40 ">
 								<strong class="number-of-results ">504</strong> Result Found
 							</div>
@@ -142,7 +142,7 @@
 									</div>
 
 								</div>
-											<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+											<div class="istar-dropdown-task dropdown select_focus" id="target-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="target_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -173,7 +173,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -204,7 +204,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="mb-2 agent-team-list" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox targetteamcheckbox" data-id="<%=j %>" id="target_team-checkbox<%=j %>" type="checkbox">
@@ -366,7 +366,7 @@
 						<!-- start of qualified tab content-->
 
 						<div
-							class="row align-items-center theme_solid_border_bottom m-0">
+							class="row align-items-center theme_solid_border_bottom m-0" id="qualified-selection">
 							<div class="col-md-3 text-result-found p-0 pl-40 ">
 								<strong class="number-of-results">03</strong> Result Found
 							</div>
@@ -438,7 +438,7 @@
 									</div>
 								</div>
 
-									<div class="istar-dropdown-task dropdown select_focus " id="filterbutton">
+									<div class="istar-dropdown-task dropdown select_focus " id="qualified-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -468,7 +468,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -499,7 +499,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox qualifiedteamcheckbox" data-id="<%=j %>" id="qualified_team-checkbox<%=j %>" type="checkbox">
@@ -672,8 +672,7 @@
 
 						<!-- start of lost leads tab content-->
 
-						<div
-							class="row align-items-center theme_solid_border_bottom m-0">
+						<div class="row align-items-center theme_solid_border_bottom m-0" id="lost-selection">
 							<div class="col-md-2 text-result-found font_text_result	pl-40 p-0">
 								<strong class="number-of-results">03</strong> Result Found
 							</div>
@@ -762,7 +761,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="lost-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -792,7 +791,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -823,7 +822,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox lostteamcheckbox" data-id="<%=j %>" id="lost_team-checkbox<%=j %>" type="checkbox">
@@ -997,7 +996,7 @@
 						<!-- start of won leads content -->
 
 						<div
-							class="row align-items-center theme_solid_border_bottom m-0">
+							class="row align-items-center theme_solid_border_bottom m-0" id="won-selection">
 							<div class="col-md-2 text-result-found font_text_result	pl-40 p-0">
 								<strong class="number-of-results">03</strong> Result Found
 							</div>
@@ -1086,7 +1085,7 @@
 										</button>
 									</div>
 								</div>
-								<div class="istar-dropdown-task dropdown select_focus" id="filterbutton">
+								<div class="istar-dropdown-task dropdown select_focus" id="won-filter">
 										<button class="istar-dropdown-arrow " data-display="static"
 										id="won_dropdown" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
@@ -1116,7 +1115,7 @@
 															</div>
 														</div>
 														
-														<div class=" mb-2"  style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
 					                                    <div class="d-flex align-items-center pt-3">
@@ -1147,7 +1146,7 @@
 															</div>
 														</div>
 														
-														<div class="mb-2" style="height:370px; overflow-x: hidden; overflow-y:auto;">
+														<div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;">
 														<%for(int j=0; j<20;j++){ %>
 														<div class="d-flex align-items-center pt-3">
 					                                        <input class="istar-checkbox wonteamcheckbox" data-id="<%=j %>" id="won_team-checkbox<%=j %>" type="checkbox">
