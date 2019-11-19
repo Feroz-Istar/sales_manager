@@ -2852,4 +2852,23 @@ input[type="radio"]:checked+.istar-radio-btn-style {
 	background-image: url(/assets/image/people_hover.svg);
 }
 
+.dropdown-icon.switch-role{
+	background-image: url(/assets/image/switch-role.svg);
+}
+.dropdown-item:hover .dropdown-icon.switch-role{
+	background-image: url(/assets/image/switch-role_hover.svg);
+}
+
+.dropdown-icon.setting{
+	background-image: url(/assets/image/my-account.svg);
+}
+.dropdown-item:hover .dropdown-icon.setting{
+	background-image: url(/assets/image/my-account_hover.svg);
+}
+.dropdown-icon.sign-out{
+	background-image: url(/assets/image/sign-out.svg);
+}
+.dropdown-item:hover .dropdown-icon.sign-out{
+	background-image: url(/assets/image/sign-out_hover.svg);
+}
 /* end of dropdown icons */

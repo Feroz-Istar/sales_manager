@@ -89,17 +89,17 @@
 						</button>
 						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer dropdown-item greyish-brown p-0">
-							<img src="<%=baseURL%>assets/image/switch-role.svg" alt="switch" class="pr-3" />
+							<div class="mr-2 dropdown-icon switch-role"></div>
 							<div>Switch to Admin</div>
 						</button>
 						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer account dropdown-item greyish-brown p-0">
-							<img src="<%=baseURL%>assets/image/my-account.svg" alt="setting" class="pr-3" />
+							<div class="mr-2 dropdown-icon setting"></div>
 							<div>My Account</div>
 						</button>
 						<button
 							class="list-group-item border-0 d-flex flex-row cursor-pointer signout dropdown-item greyish-brown p-0">
-							<img src="<%=baseURL%>assets/image/sign-out.svg" alt="signout" class="pr-3" />
+							<div class="mr-2 dropdown-icon sign-out"></div>
 							<div>Sign Out</div>
 						</button>
 					

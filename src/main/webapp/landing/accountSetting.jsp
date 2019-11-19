@@ -86,7 +86,7 @@
 			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="security-content">
 				<div class="d-flex flex-column justify-content-between h-100">
 					<div>
-						<div class="mr-200  pl-30 pr-30 pb-40 border_bottom_1_dashed">
+						<div class="mr-200  ml-30 pr-30 pb-40 border_bottom_1_dashed">
 						<div class="greyish-brown f-18 fw-500">Security </div>
 						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
 					</div>
@@ -135,28 +135,28 @@
 										<img src="<%=baseURL%>assets/image/positive_response.svg" height="95" width="110">
 										<div class="fw-500 f-16 greyish-brown pt-10">Telephony</div>
 									</div>
-									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="telephony">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
 								</div>
 								<div class="col p-0 mr-10" style="max-width:160px;">
 									<div class="dotted-2 text-center pt-10 pb-10">
 										<img src="<%=baseURL%>assets/image/webinar-illustration.svg" height="95" width="110">
 										<div class="fw-500 f-16 greyish-brown pt-10">Webinar</div>
 									</div>
-									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="webinar">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
 								</div>
 								<div class="col p-0 mr-10" style="max-width:160px;">
 									<div class="dotted-2 text-center pt-10 pb-10">
 										<img src="<%=baseURL%>assets/image/email-illustration.svg" height="95" width="110">
 										<div class="fw-500 f-16 greyish-brown pt-10">Email</div>
 									</div>
-									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="email">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
 								</div>
 								<div class="col p-0 mr-10" style="max-width:160px;">
 									<div class="dotted-2 text-center pt-10 pb-10">
 										<img src="<%=baseURL%>assets/image/crm-illustration.svg" height="95" width="110">
 										<div class="fw-500 f-16 greyish-brown pt-10">CRM</div>
 									</div>
-									<div class="f-14 theme_color font-weight-bold pt-10	 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+									<div class="f-14 theme_color font-weight-bold pt-10	 cursor-pointer" id="crm">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
 								</div>
 								
 							</div>
@@ -176,7 +176,7 @@
 						<div class="pr-10">
 							<div class="greyish-brown f-18 fw-500">Security </div>
 							<div class="pt-10 brown-grey f-14 pb-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
-							<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="security">Click Here &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+							<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer d-inline" id="security">Click Here &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
 						</div>
 						<div class="pl-10">
 							<img src="<%=baseURL %>assets/image/account-setting.svg">
@@ -189,7 +189,7 @@
 						<div class="pr-10">
 							<div class="greyish-brown f-18 fw-500">Accounts </div>
 							<div class="pt-10 brown-grey f-14 pb-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
-							<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="accounts">Click Here &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+							<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer d-inline" id="accounts">Click Here &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
 						</div>
 						<div class="pl-10">
 							<img src="<%=baseURL %>assets/image/account-setting.svg">
@@ -197,6 +197,135 @@
 					</div>
 				</div>
 				
+			</div>
+			
+			
+			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="telephony-content">
+				<div class="d-flex flex-column justify-content-between h-100">
+					<div>
+						<div class="mr-200  ml-30 pr-30 pb-40 border_bottom_1_dashed">
+						<div class="greyish-brown f-18 fw-500">Telephony </div>
+						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+					</div>
+					<form>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
+								<input type="text" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="telephony-username" id="telephony-username" aria-describedby="telephony-username" placeholder="Type here">
+							</div>
+						</div>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="telephony-password" id="telephony-password" aria-describedby="telephony-password" placeholder="Type here">
+							</div>
+						</div>
+												
+					</form>
+					</div>
+					<div>
+					<div class="row m-0 justify-content-end pt-20 pb-20 mt-30 pr-30 border-top-task_list">
+						<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="submit-telephony">CONFIRM</button>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="email-content">
+				<div class="d-flex flex-column justify-content-between h-100">
+					<div>
+						<div class="mr-200  ml-30 pr-30 pb-40 border_bottom_1_dashed">
+						<div class="greyish-brown f-18 fw-500">Email </div>
+						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+					</div>
+					<form>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
+								<input type="text" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="email-username" id="email-username" aria-describedby="email-username" placeholder="Type here">
+							</div>
+						</div>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="email-password" id="email-password" aria-describedby="email-password" placeholder="Type here">
+							</div>
+						</div>
+												
+					</form>
+					</div>
+					<div>
+					<div class="row m-0 justify-content-end pt-20 pb-20 mt-30 pr-30 border-top-task_list">
+						<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="submit-email">CONFIRM</button>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="webinar-content">
+				<div class="d-flex flex-column justify-content-between h-100">
+					<div>
+						<div class="mr-200  ml-30 pr-30 pb-40 border_bottom_1_dashed">
+						<div class="greyish-brown f-18 fw-500">Webinar </div>
+						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+					</div>
+					<form>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
+								<input type="text" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="webinar-username" id="webinar-username" aria-describedby="webinar-username" placeholder="Type here">
+							</div>
+						</div>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="webinar-password" id="webinar-password" aria-describedby="webinar-password" placeholder="Type here">
+							</div>
+						</div>
+												
+					</form>
+					</div>
+					<div>
+					<div class="row m-0 justify-content-end pt-20 pb-20 mt-30 pr-30 border-top-task_list">
+						<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="submit-webinar">CONFIRM</button>
+					</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="crm-content">
+				<div class="d-flex flex-column justify-content-between h-100">
+					<div>
+						<div class="mr-200  ml-30 pr-30 pb-40 border_bottom_1_dashed">
+						<div class="greyish-brown f-18 fw-500">CRM </div>
+						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+					</div>
+					<form>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
+								<input type="text" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="crm-username" id="crm-username" aria-describedby="crm-username" placeholder="Type here">
+							</div>
+						</div>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="crm-password" id="crm-password" aria-describedby="crm-password" placeholder="Type here">
+							</div>
+						</div>
+												
+					</form>
+					</div>
+					<div>
+					<div class="row m-0 justify-content-end pt-20 pb-20 mt-30 pr-30 border-top-task_list">
+						<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="submit-crm">CONFIRM</button>
+					</div>
+					</div>
+				</div>
 			</div>
 			
 		</div>
@@ -299,10 +428,38 @@
 			$("#my-accounts").removeClass("d-none");
 			$('#edit-icon').css('background-image','url(../assets/image/edit_red.svg)')
 		});
-		
-		if($("#my-accounts").height>0){
-			console.log('working');
-		}
+		$('#telephony').click(function(){
+			$('#telephony-content').removeClass("d-none");
+			$("#account-content").addClass	("d-none");
+		});
+		$('#email').click(function(){
+			$('#email-content').removeClass("d-none");
+			$("#account-content").addClass("d-none");
+		});
+		$('#webinar').click(function(){
+			$('#webinar-content').removeClass("d-none");
+			$("#account-content").addClass("d-none");
+		});
+		$('#crm').click(function(){
+			$('#crm-content').removeClass("d-none");
+			$("#account-content").addClass("d-none");
+		});
+		$('#submit-telephony').click(function(){
+			$('#account-content').removeClass("d-none");
+			$("#telephony-content").addClass("d-none");
+		});
+		$('#submit-email').click(function(){
+			$('#account-content').removeClass("d-none");
+			$("#email-content").addClass("d-none");
+		});
+		$('#submit-webinar').click(function(){
+			$('#account-content').removeClass("d-none");
+			$("#webinar-content").addClass("d-none");
+		});
+		$('#submit-crm').click(function(){
+			$('#account-content').removeClass("d-none");
+			$("#crm-content").addClass("d-none");
+		});
 		
 	</script>
 </body>
