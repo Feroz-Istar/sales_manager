@@ -936,7 +936,9 @@ Modifying the scroll bar across the whole application
 .dotted-1 {
 	border: 1px dashed #eeeeee !important;
 }
-
+.dotted-2 {
+	border: 2px dashed #eeeeee !important;
+}
 .bottom_border_1px {
 	border-bottom: 1px solid #eeeeee !important;
 }
@@ -1670,6 +1672,7 @@ Modifying the scroll bar across the whole application
 .pr-115 {
 	padding-right: 115px !important;
 }
+
 .pl-115 {
 	padding-left: 115px !important;
 }
@@ -1691,7 +1694,9 @@ Modifying the scroll bar across the whole application
 .mt-10 {
 	margin-top: 10px !important;
 }
-
+.mt-20 {
+	margin-top: 20px !important;
+}
 .mb-10 {
 	margin-bottom: 10px !important;
 }
@@ -1787,13 +1792,18 @@ Modifying the scroll bar across the whole application
 .mb-50 {
 	margin-bottom: 50px !important;
 }
-
+.mt-100 {
+	margin-top: 100px !important;
+}
 .ml-130 {
 	margin-left: 130px !important;
 }
 
 .mr-130 {
 	margin-right: 130px !important;
+}
+.mr-200{
+	margin-right: 200px !important;
 }
 /* end of margin style */
 .istar-btn-primary:active {

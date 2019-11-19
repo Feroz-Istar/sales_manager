@@ -39,103 +39,168 @@
 		</div>
 
 
-
-		<div class="row very-light-pink-grey-bg m-0 minh-550" >
-		  <div class="col-md-2 col-12 p-0 tabcol flex-grow-1 border-right pl-20">
-		    <div class="nav flex-column nav-pills h-100" id="piplelinestage-tab" role="tablist" aria-orientation="vertical">
-		      <a class="nav-link p-0 pt-15 pb-15 pr-20 pl-20 active" id="v-pills-basic-tab" data-toggle="pill" href="#v-pills-basic" role="tab" aria-controls="v-pills-basic" aria-selected="true">Basic Information</a>
-		      <a class="nav-link p-0 pt-15 pb-15 pr-20 pl-20 " id="v-pills-password-tab" data-toggle="pill" href="#v-pills-password" role="tab" aria-controls="v-pills-password" aria-selected="false">Password</a>
-		      <a class="nav-link p-0 pt-15 pb-15 pr-20 pl-20" id="v-pills-account-setting-tab" data-toggle="pill" href="#v-pills-account-setting" role="tab" aria-controls="v-pills-account-setting" aria-selected="false">Account Setting</a>
-		     </div>
-		  </div>
-		  <div class="col-md-10 col-12 p-0 bg-white tabcontentcol">
-		    <div class="tab-content h-100" id="piplelinestage-tabContent">
-		      <div class="tab-pane fade pl-0 pl-50 pr-50 pt-30 pb-20 show active" id="v-pills-basic" role="tabpanel" aria-labelledby="v-pills-basic-tab">
-		      	<!-- start of Basic Information content -->
-		      		<div class="row m-0 justify-content-between pb-50 theme_dashed_border_bottom_2">
-		      			<div class="col-md-6 p-0">
-		      				<div class="d-flex align-items-center">
-		      					<div class="position-relative">
-		      						<img src="<%=baseURL%>assets/image/11.png" class="rounded-circle " height="100" width="100">
-		      						<button class="btn rounded-circle d-flex align-items-center justify-content-center p-0 theme_bg hw-30" style="position: absolute; left: 35%; bottom: -12%;">
-		      							<i class="fal fa-camera f-14 text-white"></i>
-		      						</button>
-		      					</div>
-		      					<div class="ml-30">
-		      						<div class="greyish-brown f-18 font-weight-bold">Wade Wolkers</div>
-		      						<div class="brownish-grey f-14">Manager</div>
-		      					</div>
-		      				</div>
-		      			</div>
-		      			<div class="col-md-1 p-0 text-right"  data-toggle="modal" data-target="#editAccount">
-		      				<img src="<%=baseURL%>assets/image/edit_red.svg" class="cursor-pointer pl-2 pb-2">
-		      			</div>
-		      		</div>
-		      		
-		      		<div class="row pt-30 m-0">
-		      			<div class="col-md-2 p-0">
-		      				<div class="fw-500 f-14 black">Email ID</div>
-		      				<div class="greyish-brown f-16">wade@gmail.com</div>
-		      			</div>
-		      			<div class="col-md-2 p-0">
-		      				<div class="fw-500 f-14 black">Contact Number</div>
-		      				<div class="greyish-brown f-16">+91 945 950 9509</div>
-		      			</div>
-		      		</div>
-		      		<div class="row pt-30 m-0">
-		      			<div class="col-md-2 p-0">
-		      				<div class="fw-500 f-14 black">Organization</div>
-		      				<div class="greyish-brown f-16">Istarindia Pvt. Ltd.</div>
-		      			</div>
-		      			<div class="col-md-2 p-0">
-		      				<div class="fw-500 f-14 black">Department</div>
-		      				<div class="greyish-brown f-16">Sales Department</div>
-		      			</div>
-		      		</div>
-		      		<div class="row pt-30 m-0">
-		      			<div class="col-md-2 p-0">
-		      				<div class="fw-500 f-14 black">Location</div>
-		      				<div class="greyish-brown f-16">Bangalore</div>
-		      			</div>
-		      			
-		      		</div>
-		      	<!-- end of Basic Information content -->
-		      </div>
-		      
-		      
-		      <div class="tab-pane fade p-0 pt-50 h-100 " id="v-pills-password" role="tabpanel" aria-labelledby="v-pills-password-tab">
-		      	<!-- start of password content -->
-		      		<div class="row m-0 pl-50 pr-50">
-			       		<div class="col-md-4 p-0 theme_dashed_border_bottom pb-30">
-			       			<div class="f-14 fw-500 pb-10 black">Old Password</div>
-			       			<input type="password" class="custom-modal-input w-100 form-control f-14" id="old-password" name="old-password" aria-describedby="old-password" placeholder="Type here">
-			       		</div>
-			       	</div>
-			       	
-			       	<div class="row m-0 pt-30 pl-50 pr-50">
-			       		<div class="col-md-4 p-0">
-			       			<div class="f-14 fw-500 pb-10 black">New Password</div>
-			       			<input type="password" class="custom-modal-input w-100 form-control f-14" id="new-password" name="new-password" aria-describedby="new-password" placeholder="Type here">
-			       		</div>
-			       	</div>
-			       	
-			       	<div class="row m-0 pt-30 pb-100 pl-50 pr-50">
-			       		<div class="col-md-4 p-0">
-			       			<div class="f-14 fw-500 pb-10 black">Confirm Password</div>
-			       			<input type="password" class="custom-modal-input w-100 form-control f-14" id="confirm-password" name="confirm-password" aria-describedby="confirm-password" placeholder="Type here">
-			       		</div>
-			       	</div>
-			       	
-			       	<div class="row m-0 pt-20 mt-30 pb-20 border-top-task_list justify-content-end pr-50">
-			       		<button class="btn big_button rounded-0">UPDATE</button>
-			       	</div>
-		      	<!-- end of password content -->
-		      </div>
-		      <div class="tab-pane fade pl-0" id="v-pills-account-setting" role="tabpanel" aria-labelledby="v-pills-account-setting-tab">...</div>
-		     
-		    </div>
-		  </div>
+		<div class="d-flex m-0 pr-50 cream_white minh-650">
+			<div class="col-md-4 bg-white pt-30 pl-40 pr-20 p-0">
+				<div class="row m-0   pb-30 border_bottom_1_dashed">
+					<div class="col-md-11 p-0">
+						<div class="d-flex align-items-center ">
+							<div class="mr-10">
+								<img src="<%=baseURL%>assets/image/man.jpg" class="rounded-circle position-relative" height="100" width="100">
+								<button class="btn rounded-circle hw-30 theme_bg p-0" style="left: 67px; position: absolute; top: 67px;">
+									<img src="<%=baseURL%>assets/image/camera-white.svg">
+								</button>
+							</div>
+							<div class="ml-10">
+								<div class="greyish-brown f-18 font-weight-bold">Wade Wolkers</div>
+								<div class="brownish-grey f-14">Manager</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1  p-0">
+						<div id="edit-icon" class="float-right" style="background-image: url(../assets/image/edit_red.svg); height: 24px; width: 24px;">
+						</div>
+					</div>
+				</div>
+				<div class="d-flex pt-30">
+					<img src="<%=baseURL%>assets/image/mail.svg">
+					<div class="greyish-brown f-16 pl-15">wadewalkers@gmail.com</div>
+				</div>
+				<div class="d-flex pt-20">
+					<img src="<%=baseURL%>assets/image/call.svg">
+					<div class="greyish-brown f-16 pl-15">+91 945 950 9509</div>
+				</div>
+				<div class="d-flex pt-20">
+					<img src="<%=baseURL%>assets/image/building.svg">
+					<div class="greyish-brown f-16 pl-15">Istarindia Pvt. Ltd.</div>
+				</div>
+				<div class="d-flex pt-20">
+					<img src="<%=baseURL%>assets/image/suitcase.svg">
+					<div class="greyish-brown f-16 pl-15">Sales Department</div>
+				</div>
+				<div class="d-flex pt-20">
+					<img src="<%=baseURL%>assets/image/mail.svg">
+					<div class="greyish-brown f-16 pl-15">Bangalore</div>
+				</div>
+				
+			</div>
+			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="security-content">
+				<div class="d-flex flex-column justify-content-between h-100">
+					<div>
+						<div class="mr-200  pl-30 pr-30 pb-40 border_bottom_1_dashed">
+						<div class="greyish-brown f-18 fw-500">Security </div>
+						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+					</div>
+					<form>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Old Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="old-password" id="old-password" aria-describedby="old-password" placeholder="Type here">
+							</div>
+						</div>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">New Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="new-password" id="new-password" aria-describedby="new-password" placeholder="Type here">
+							</div>
+						</div>
+						<div class="row m-0 pl-30 pr-30">
+							<div class="col-md-7 p-0">
+								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Confirm Password</label>
+								<input type="password" class="custom-modal-input w-100 form-control f-14 istar-form-control" name="confirm-password" id="confirm-password" aria-describedby="confirm-password" placeholder="Type here">
+							</div>
+						</div>
+						
+					</form>
+					</div>
+					<div>
+					<div class="row m-0 justify-content-end pt-20 pb-20 mt-30 pr-30 border-top-task_list">
+						<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+						<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="submit-password">CONFIRM</button>
+					</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="col-md-8 bg-white ml-20 mt-20 mb-20 pt-40 p-0 shadow d-none" id="account-content">
+				<div class="d-flex flex-column justify-content-between h-100">
+					<div>
+							<div class="mr-200  ml-30 pr-30 pb-40 border_bottom_1_dashed">
+							<div class="greyish-brown f-18 fw-500">Accounts Setting </div>
+							<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+							</div>
+							<div class="d-flex m-0 pr-90 justify-content-between pt-30 pl-30">
+								<div class="col p-0 mr-10" style="max-width:160px;">
+									<div class="dotted-2 text-center pt-10 pb-10">
+										<img src="<%=baseURL%>assets/image/positive_response.svg" height="95" width="110">
+										<div class="fw-500 f-16 greyish-brown pt-10">Telephony</div>
+									</div>
+									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+								</div>
+								<div class="col p-0 mr-10" style="max-width:160px;">
+									<div class="dotted-2 text-center pt-10 pb-10">
+										<img src="<%=baseURL%>assets/image/webinar-illustration.svg" height="95" width="110">
+										<div class="fw-500 f-16 greyish-brown pt-10">Webinar</div>
+									</div>
+									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+								</div>
+								<div class="col p-0 mr-10" style="max-width:160px;">
+									<div class="dotted-2 text-center pt-10 pb-10">
+										<img src="<%=baseURL%>assets/image/email-illustration.svg" height="95" width="110">
+										<div class="fw-500 f-16 greyish-brown pt-10">Email</div>
+									</div>
+									<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+								</div>
+								<div class="col p-0 mr-10" style="max-width:160px;">
+									<div class="dotted-2 text-center pt-10 pb-10">
+										<img src="<%=baseURL%>assets/image/crm-illustration.svg" height="95" width="110">
+										<div class="fw-500 f-16 greyish-brown pt-10">CRM</div>
+									</div>
+									<div class="f-14 theme_color font-weight-bold pt-10	 cursor-pointer">Add Credential &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+								</div>
+								
+							</div>
+					</div>
+					<div>
+						<div class="row m-0 justify-content-end pt-20 pb-20 pr-30 border-top-task_list">
+							<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset</button>
+							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="submit-account">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="col-md-8  ml-20 mt-20 mb-20  p-0" id="my-accounts">
+				<div class="card mr-40 pt-40 pl-30 pr-30 pb-40 mb-20 rounded-0 bg-white">
+					<div class="d-flex">
+						<div class="pr-10">
+							<div class="greyish-brown f-18 fw-500">Security </div>
+							<div class="pt-10 brown-grey f-14 pb-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+							<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="security">Click Here &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+						</div>
+						<div class="pl-10">
+							<img src="<%=baseURL %>assets/image/account-setting.svg">
+						</div>
+					</div>
+					
+				</div>
+				<div class="card mr-40  pt-40  pl-30 pr-30 pb-40 rounded-0 bg-white">
+					<div class="d-flex">
+						<div class="pr-10">
+							<div class="greyish-brown f-18 fw-500">Accounts </div>
+							<div class="pt-10 brown-grey f-14 pb-15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
+							<div class="f-14 theme_color font-weight-bold pt-10 cursor-pointer" id="accounts">Click Here &nbsp;<i class="fas fa-chevron-circle-right f-14 theme_color"></i></div>
+						</div>
+						<div class="pl-10">
+							<img src="<%=baseURL %>assets/image/account-setting.svg">
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
 		</div>
+		
 
 
 		<!-- start of edit account modal -->
@@ -213,6 +278,32 @@
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script>
 		$('.salesken.navbar-nav>li').removeClass('active');
+		
+		$('#security').click(function(){
+			$(this).parent().parent().parent().parent().addClass("d-none");
+			$('#security-content').removeClass("d-none");
+			$('#edit-icon').css('background-image','url(../assets/image/edit.svg)');
+		});
+		$('#accounts').click(function(){
+			$(this).parent().parent().parent().parent().addClass("d-none");
+			$('#account-content').removeClass("d-none");
+			$('#edit-icon').css('background-image','url(../assets/image/edit.svg)');
+		});
+		$('#submit-password').click(function(){
+			$('#security-content').addClass("d-none");
+			$("#my-accounts").removeClass("d-none");
+			$('#edit-icon').css('background-image','url(../assets/image/edit_red.svg)')
+		});
+		$('#submit-account').click(function(){
+			$('#account-content').addClass("d-none");
+			$("#my-accounts").removeClass("d-none");
+			$('#edit-icon').css('background-image','url(../assets/image/edit_red.svg)')
+		});
+		
+		if($("#my-accounts").height>0){
+			console.log('working');
+		}
+		
 	</script>
 </body>
 </html>

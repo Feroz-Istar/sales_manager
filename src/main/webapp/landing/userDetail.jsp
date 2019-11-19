@@ -388,7 +388,7 @@
 				  			
 				  			<div class="row m-0">
 				  				<div class="col-md-12 p-0 pl-40 pr-40">
-							    	<div id="container" style="height:600px"></div>
+							    	<div id="container" style="height:200px"></div>
 							    </div>
 							</div>
 							   
