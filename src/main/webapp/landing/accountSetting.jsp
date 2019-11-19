@@ -57,7 +57,7 @@
 						</div>
 					</div>
 					<div class="col-md-1  p-0">
-						<div id="edit-icon" class="float-right" style="background-image: url(../assets/image/edit_red.svg); height: 24px; width: 24px;">
+						<div id="edit-icon"  data-toggle="modal" data-target="#editAccount" class="float-right cursor-pointer" style="background-image: url(../assets/image/edit_red.svg); height: 24px; width: 24px;">
 						</div>
 					</div>
 				</div>
@@ -78,7 +78,7 @@
 					<div class="greyish-brown f-16 pl-15">Sales Department</div>
 				</div>
 				<div class="d-flex pt-20">
-					<img src="<%=baseURL%>assets/image/mail.svg">
+					<img src="<%=baseURL%>assets/image/location.svg">
 					<div class="greyish-brown f-16 pl-15">Bangalore</div>
 				</div>
 				
@@ -90,7 +90,7 @@
 						<div class="greyish-brown f-18 fw-500">Security </div>
 						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
 					</div>
-					<form>
+					<form id="security-form">
 						<div class="row m-0 pl-30 pr-30">
 							<div class="col-md-7 p-0">
 								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Old Password</label>
@@ -207,7 +207,7 @@
 						<div class="greyish-brown f-18 fw-500">Telephony </div>
 						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
 					</div>
-					<form>
+					<form id="telephonyCredentials">
 						<div class="row m-0 pl-30 pr-30">
 							<div class="col-md-7 p-0">
 								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
@@ -239,7 +239,7 @@
 						<div class="greyish-brown f-18 fw-500">Email </div>
 						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
 					</div>
-					<form>
+					<form id="emailCredentials">
 						<div class="row m-0 pl-30 pr-30">
 							<div class="col-md-7 p-0">
 								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
@@ -271,7 +271,7 @@
 						<div class="greyish-brown f-18 fw-500">Webinar </div>
 						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
 					</div>
-					<form>
+					<form id="webinarCredentials">
 						<div class="row m-0 pl-30 pr-30">
 							<div class="col-md-7 p-0">
 								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
@@ -303,7 +303,7 @@
 						<div class="greyish-brown f-18 fw-500">CRM </div>
 						<div class="pt-10 brown-grey f-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae sapien in nibh consequat condimentum et quis turpis. Etiam tellus lorem, dapibus at lorem non</div>
 					</div>
-					<form>
+					<form id="crmCredentials">
 						<div class="row m-0 pl-30 pr-30">
 							<div class="col-md-7 p-0">
 								<label class="m-0 pb-10 fw-500 f-14 black pt-30">Username</label>
@@ -351,37 +351,37 @@
 						<form id="editAccount">
 							 <div class="row m-0">
 					       		<div class="col-md-6 p-0 pr-15">
-					       			<div class="f-14 fw-500 pb-10 black">Full Name</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Full Name</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="name" name="name" aria-describedby="name" placeholder="Type here" value="Wade Wolkers">
 					       		</div>
 					       		<div class="col-md-6 p-0">
-					       			<div class="f-14 fw-500 pb-10 black">Designation</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Designation</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="designation" name="designation" aria-describedby="designation" placeholder="Type here" value="Manager">
 					       		</div>
 					       	</div>
 					       	<div class="row m-0 pt-20">
 					       		<div class="col-md-6 p-0 pr-15">
-					       			<div class="f-14 fw-500 pb-10 black">Contact Number</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Contact Number</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="number" name="number" aria-describedby="number" placeholder="Type here" value="+91 945 950 9509">
 					       		</div>
 					       		<div class="col-md-6 p-0">
-					       			<div class="f-14 fw-500 pb-10 black">Email</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Email</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="email" name="email" aria-describedby="email" placeholder="Type here" value="wade@gmail.com">
 					       		</div>
 					       	</div>
 					       	<div class="row m-0 pt-20">
 					       		<div class="col-md-6 p-0 pr-15">
-					       			<div class="f-14 fw-500 pb-10 black">Organization</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Organization</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="organization" name="organization" aria-describedby="organization" placeholder="Type here" value="Istarindia">
 					       		</div>
 					       		<div class="col-md-6 p-0">
-					       			<div class="f-14 fw-500 pb-10 black">Department</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Department</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="department" name="department" aria-describedby="department" placeholder="Type here" value="Sales">
 					       		</div>
 					       	</div>
 					       	<div class="row m-0 pt-20">
 					       		<div class="col-md-6 p-0 pr-15">
-					       			<div class="f-14 fw-500 pb-10 black">Location</div>
+					       			<label class="f-14 fw-500 pb-10 black m-0">Location</label>
 					       			<input type="text" class="custom-modal-input w-100 form-control f-14" id="location" name="location" aria-describedby="location" placeholder="Type here" value="Bangalore">
 					       		</div>
 					       	</div>
@@ -391,7 +391,7 @@
 						<button type="button"
 							class="btn theme_color f-14 font-weight-bold m-0 pr-20">Reset All</button>
 						<button type="button"
-							class="btn big_button rounded-0 f-14 font-weight-bold m-0"
+							class="btn big_button rounded-0 f-14 font-weight-bold m-0" data-dismiss="modal"
 							id="submit">SUBMIT</button>
 					</div>
 					</div>
