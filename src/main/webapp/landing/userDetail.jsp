@@ -287,18 +287,18 @@
 				  		<div class="col-md-6 text-right	p-0">
 				  			<div class="d-flex align-items-center justify-content-end">
 					  			<img src="<%=baseURL%>assets/image/people.svg" class="mr-2" alt="team" />
-					  			<div class="f-14 greyish-brown mr-4 text-truncate" title="Team North">Team North</div>
+					  			<div class="f-14 greyish-brown mr-40 text-truncate" title="Team North">Team North</div>
 					  			<img src="<%=baseURL%>assets/image/mail.svg" class="mr-2" alt="email"/>
-					  			<div class="f-14 greyish-brown mr-4 text-truncate" title="stanleyhoward@gmail.com">stanleyhoward@gmail.com</div>
+					  			<div class="f-14 greyish-brown mr-40 text-truncate" title="stanleyhoward@gmail.com">stanleyhoward@gmail.com</div>
 					  			<img src="<%=baseURL%>assets/image/call.svg" class="mr-2" alt="phone"/>
-					  			<div class="f-14 greyish-brown mr-4">(741)-210-1851</div>
+					  			<div class="f-14 greyish-brown mr-40">(741)-210-1851</div>
 					  			<img src="<%=baseURL%>assets/image/edit_red.svg"/>
 				  			</div>
 				  		</div>		
 				  	</div>		
 				  	
 				  	<div class="row border-bottom-dashed-separation m-0 pt-25 pb-25 pl-40 pr-40">
-				  		<div class="col-md-6 p-0">
+				  		<div class="col-md-8 p-0">
 				  			<div class="row m-0">
 				  				<div class="col-md-3 p-0 border-right-dashed-separation">
 				  					<div class="d-flex align-items-center">
@@ -330,7 +330,7 @@
 				  				</div>
 				  			</div>
 				  		</div>
-				  		<div class="col-md-6">
+				  		<div class="col-md-4">
 				  			<div class="row">
 				  				<div class="col-md-4 p-0 pl-15">
 				  					<div class="d-flex align-items-center">
@@ -358,7 +358,7 @@
 				  	</div>
 				  	
 				  	<div class="row m-0">
-				  		<div class="col-md-9 p-0">
+				  		<div class="col-md-8 p-0">
 				  			<div class="f-16 fw-500 black pt-30 pl-40 pb-10">	Playbook Stats</div>
 				  			<div class="row border-bottom-dashed-separation m-0 pl-40 pr-40 pb-40">
 				  				<div class="col-md-6 p-0">
@@ -388,7 +388,55 @@
 				  			
 				  			<div class="row m-0">
 				  				<div class="col-md-12 p-0 pl-40 pr-40">
-							    	<div id="container" style="height:200px"></div>
+				  				
+				  				<ul class="nav nav-tabs saleken pt-20 pb-20 position-relative" id="myTab" role="tablist" style="border: none !important;">
+								  <li class="nav-item">
+								    <a class="nav-link active border-istar-left-0 " id="days-tab" data-toggle="tab" href="#days" role="tab" aria-controls="days" aria-selected="true">Days</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link border-istar-left-0 " id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="false">Week</a>
+								  </li>
+								  <li class="nav-item">
+								    <a class="nav-link  border-istar-left-0" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
+								  </li>
+								</ul>
+								<div class="tab-content pb-35" id="myTabContent">
+								  <div class="tab-pane fade show active" id="days" role="tabpanel" aria-labelledby="days-tab">
+								  	<div id="container" style="height:200px"></div>
+								  </div>
+								  <div class="tab-pane fade" id="week" role="tabpanel" aria-labelledby="week-tab">...</div>
+								  <div class="tab-pane fade" id="month" role="tabpanel" aria-labelledby="month-tab">...</div>
+								</div>
+				  				
+				  				<div class="d-flex position-absolute align-items-center" style="top: 4%; left: 45%;">
+				  					<div class="greyish-brown f-14">2nd Week</div>
+				  					<button class="btn greyish-black pr-0"><i class="fas fa-chevron-left"></i></button>
+				  					<button class="btn brown-grey"><i class="fas fa-chevron-right"></i></button>
+				  				</div>
+				  				
+				  				<div class="d-flex position-absolute" style="top: 8%; left: 71%;">
+				  					<div class="hw-15 blue-bg mr-10 rounded"></div> <div class="brownish-grey f-12 mr-15">New Calls</div>
+				  					<div class="hw-15 green-bg mr-10 rounded"></div> <div class="brownish-grey f-12 mr-15">Connected Calls</div>
+				  					<div class="hw-15 orange-bg mr-10 rounded"></div> <div class="brownish-grey f-12 mr-15">Follow Up</div>
+				  				</div>
+							   	
+							   		
+							   		<div class="d-flex pb-60	">
+							   			<div class="col-md-3 p-0 border-right-dashed-separation-2px">
+							   				<div class="black font-weight-bold f-30">12%</div>
+							   				<div class="brownish-grey f-12">Win Rate</div>
+							   			</div>
+							   			<div class="col-md-3 p-0 border-right-dashed-separation-2px pl-15">
+							   				<div class="black font-weight-bold f-30">24%</div>
+							   				<div class="brownish-grey f-12">Utilisation </div>
+							   			</div>
+							   			<div class="col-md-3 p-0 pl-15">
+							   				<div class="black font-weight-bold f-30">46% </div>
+							   				<div class="brownish-grey f-12">Talk Ratio </div>
+							   			</div>
+							   			
+							   		</div>
+							   	
 							    </div>
 							</div>
 							   
@@ -396,7 +444,7 @@
 				  			
 				  		</div>
 				  			
-				  		<div class="col-md-3 cream_white theme_solid_border_left p-0 pl-40 pr-40 pt-30 pb-30 ">
+				  		<div class="col-md-4 cream_white theme_solid_border_left p-0 pl-40 pr-40 pt-30 pb-30 ">
 				  			<div class="f-16 fw-500 black">Comments</div>
 				  			
 				  			<%for(int i=0;i<3;i++){ %>
@@ -507,7 +555,7 @@
 	        	//console.log(selectedTab);
 
 	        	$('#'+tabid).html(data);
-	    		//  alert( "Load was performed." );
+	    		//  alert( "Load was performed." );Lawrence Lynch
 	    		});
 	    	  console.log($(e.target).data('task_type')) // newly activated tab
 		    
