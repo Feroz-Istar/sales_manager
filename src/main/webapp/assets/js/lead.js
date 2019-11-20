@@ -44,23 +44,6 @@ $( document ).ready(function() {
 	   }
 	});	
 	
-	$("#updateLeadForm").validate({
-		rules: {
-			company_name:{
-				required: true	
-			},
-			
-		}
-	});
-	
-	$('#updateLead').click(function(){
-	    var iscompanynamevalid = $("#company_name").valid();
-	    
-	    if(iscompanynamevalid){
-	    	$('#editLeadModalCenter').modal('hide');
-	    	$('#updateConfirmation').modal('show');
-	    }
-	});	
 	
 	/*end of validation*/
 	
@@ -180,6 +163,24 @@ $( document ).ready(function() {
 			$('#won_dropdown + .dropdown-menu').height(new_height-13);
 			$('.agent-team-list').height(new_height - 200);
 		});
+		
+		
+		$('.add-number.dropdown-menu').click(function(e) {
+		    e.stopPropagation();
+		});
+		$('#addContactNumber').click(function(){
+			var number= $('#contact-number').val();
+			var html='<button type="button"  class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10">'+number+'&nbsp;&nbsp;<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i></button>'
+			if(number != ""){
+				$('#number-list').append(html);
+			};
+			$('#add_number_dropdown').dropdown('hide');
+		});
+		
+		$('#add-scp').click(function(){
+			var html='<div class="col-md-6 p-0 pt-10 pr-15"><input type="text" class="custom-modal-input w-100 form-control f-14" id="contact_person_name" name="contact_person_name" aria-describedby="contact_person_name" placeholder="Type here"></div>       		<div class="col-md-6 p-0 pt-10"><input type="text" class="custom-modal-input w-100 form-control f-14" id="designation" name="designation" aria-describedby="designation" placeholder="Type here"></div>';
+			$('#contact-person-row').append(html);
+		})
 		
 });
 		

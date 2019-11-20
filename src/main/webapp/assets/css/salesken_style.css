@@ -2885,3 +2885,14 @@ input[type="radio"]:checked+.istar-radio-btn-style {
 	background-image: url(/assets/image/sign-out_hover.svg);
 }
 /* end of dropdown icons */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance:textfield;
+}
