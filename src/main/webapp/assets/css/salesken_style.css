@@ -2896,3 +2896,9 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance:textfield;
 }
+
+.profile_edit{
+	background-image: url(/assets/image/edit_red.svg); 
+	height: 24px; 
+	width: 24px;
+}
