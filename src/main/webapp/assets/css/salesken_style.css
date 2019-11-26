@@ -2898,7 +2898,7 @@ input[type=number] {
 }
 
 .profile_edit{
-	background-image: url(/assets/image/edit_red.svg); 
+	background-image: url(/assets/image/editcolor.svg); 
 	height: 24px; 
 	width: 24px;
 }

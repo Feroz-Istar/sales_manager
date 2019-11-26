@@ -15,14 +15,14 @@ $('#submit-password').click(
 			$('#security-content').hide();
 			$("#my-profile").show();
 			$('#edit-icon').css('background-image',
-					'url(../assets/image/edit_red.svg)')
+					'url(../assets/image/editcolor.svg)')
 		});
 $('#submit-account').click(
 		function() {
 			$('#account-content').hide();
 			$("#my-profile").show();
 			$('#edit-icon').css('background-image',
-					'url(../assets/image/edit_red.svg)')
+					'url(../assets/image/editcolor.svg)')
 		});
 $('#telephony').click(function() {
 	$('#telephony-content').show();
@@ -62,14 +62,14 @@ $('#cancel-password').click(
 			$('#security-content').hide();
 			$("#my-profile").show();
 			$('#edit-icon').css('background-image',
-					'url(../assets/image/edit_red.svg)')
+					'url(../assets/image/editcolor.svg)')
 		});
 $('#cancel-account').click(
 		function() {
 			$('#account-content').hide();
 			$("#my-profile").show();
 			$('#edit-icon').css('background-image',
-					'url(../assets/image/edit_red.svg)')
+					'url(../assets/image/editcolor.svg)')
 		});
 $('#cancel-telephony').click(function() {
 	$('#account-content').show();

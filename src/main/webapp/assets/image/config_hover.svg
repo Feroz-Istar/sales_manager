@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <defs>
         <style>
-            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#444}
+            .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}.cls-3{fill:#ed4d67}
         </style>
         <clipPath id="clip-path">
             <path d="M0 0h24v24H0z" class="cls-1"/>
