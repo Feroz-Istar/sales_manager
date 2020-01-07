@@ -37,13 +37,20 @@
 				<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
 					<div class="card-body p-0 ">
 						<img class=" text-center saleskenlogo" alt="salesken_logo" src="<%=baseURL%>assets/image/nav_icon.png" />
+						<!-- start of error message -->
+							<div class="mt-40" id="error_alert" style="display:none">
+								<p class="greyish-brown f-14 pb-1 mb-0 fw-500"><img src="<%=baseURL%>assets/image/Close icon.svg">
+								An error occured</p>
+								<p class="mb-0 brown-grey pl-1 f-14 ">Username is wrong or account is Suspended.</p>
+							</div>
+							<!-- end of error message -->
 						<div class="bottom_border_1px mt-30 "></div>
 					<div class="mt-40" style="display: none;">
 								<p class="brownish-grey f-14 pb-1 mb-0 fw-500"><img src="<%=baseURL%>assets/image/checkiconsmall.png">
 								Great! Password has been generated !</p>
 								<p class="mb-0 brown-grey pl-1 f-14 ">You can now login to Salesken</p>
 							</div>
-
+						
 						<form class="pt-40 pb-30" id="loginform">
 							<div class="form-group pb-10 mb-0">
 								<label class="f-14 label_color mb-0 pb-10 fw-500" for="email">Email
@@ -152,10 +159,17 @@
 	}
 });
 		//end of function click on eye button on password field
+	 	
+			function dashboard(){
+				if($("#loginform").valid()){
+					location.href=contextPath+"dashboard/dashboard.jsp";
+				}else{
+					$('#error_alert').show();
+				}
+				
+				};
 		
-		function dashboard(){
-			location.href=contextPath+"dashboard/dashboard.jsp";
-			};
+		
 	</script>
 </body>
 </html>

@@ -1824,7 +1824,7 @@ Modifying the scroll bar across the whole application
 }
 
 .istar-btn-primary:focus {
-	box-shadow: 0 0 0 0.2rem rgba(225, 83, 97, .5);
+	box-shadow: none !important;
 }
 
 input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus textarea:-webkit-autofill,

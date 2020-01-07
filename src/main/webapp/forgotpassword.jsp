@@ -43,12 +43,16 @@
 							
 							<!-- LOGIN FORM START -->
 							<form class="pt-40 pb-30" id="loginform">
-								<div class="form-group pb-10 mb-0">
-									<label class="f-14 label_color mb-0 pb-10 fw-500" for="email">Email address</label> <input type="email" class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email ">
-									<label id="email-error" class="error invisible f-14 theme_color" for="email">error message</label>
+									<div class="form-group pb-10 mb-0">
+									<label class="f-14 label_color mb-0 pb-10 fw-500" for="email">Email address</label><input type="email"
+									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
+									name="email" id="email" aria-describedby="emailHelp"
+									placeholder="Email ">
+									<label id="email-error"
+										class="error invisible f-14 theme_color" for="email">error message</label>
 								</div>
 								<button type="button" class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  big_button get_reset_link" style="">GET RESET LINK</button>
-								<button onclick="return_to_index()" class=" mt-30 f-14 btn text-left font-weight-bold p-0 theme_color">Cancel</button>
+								<button type="button" onclick="return_to_index()" class=" mt-30 f-14 btn text-left font-weight-bold p-0 theme_color">Cancel</button>
 							</form>
 							
 						</div>
@@ -85,6 +89,28 @@
 			
 	<script>
 	var contextPath=$('body').data('baseurl');
+	jQuery.validator.setDefaults({
+		debug : true,
+		success : "valid",
+
+		highlight : function(element, errorClass, validClass) {
+		$(element).addClass('is-invalid');
+		$(element).siblings('.error').removeClass('invisible');
+		},
+		unhighlight : function(element, errorClass, validClass) {
+		$(element).removeClass('is-invalid').addClass('is-valid');
+		$(element).siblings('.error').addClass('invisible').html('error');
+		}
+		});
+	$("#loginform").validate({
+		rules : {
+			email : {
+				required : true,
+				email : true
+			}
+		}
+
+	});
 	  function return_to_index(){
 			location.href=contextPath+"/index.jsp";
 			};
