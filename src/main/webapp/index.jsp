@@ -39,7 +39,7 @@
 						<img class=" text-center saleskenlogo" alt="salesken_logo" src="<%=baseURL%>assets/image/nav_icon.png" />
 						<div class="bottom_border_1px mt-30 "></div>
 					<div class="mt-40" style="display: none;">
-								<p class="brownish-grey f-14 pb-1 mb-0 fw-500"><img src="<%=baseURL%>new_assets/image/checkiconsmall.png">
+								<p class="brownish-grey f-14 pb-1 mb-0 fw-500"><img src="<%=baseURL%>assets/image/checkiconsmall.png">
 								Great! Password has been generated !</p>
 								<p class="mb-0 brown-grey pl-1 f-14 ">You can now login to Salesken</p>
 							</div>
@@ -60,7 +60,7 @@
 									name="password"
 									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
-									<button type="button" class="btn eye_icon confirm_password p-0 ">
+									<button type="button" class="btn eye_icon confirm_password p-0 " >
 										<i class="far fa-eye brown-grey"></i>
 
 									</button>
@@ -110,19 +110,22 @@
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 
 	<script>
+	var contextPath=$('body').data('baseurl');
 		$(document).ready(function() {
 
 			jQuery.validator.setDefaults({
-				errorPlacement : function(error, element) {
-					error.addClass('invalid-feedback');
-				},
+				debug : true,
+				success : "valid",
+
 				highlight : function(element, errorClass, validClass) {
-					$(element).addClass('is-invalid');
+				$(element).addClass('is-invalid');
+				$(element).siblings('.error').removeClass('invisible');
 				},
 				unhighlight : function(element, errorClass, validClass) {
-					$(element).removeClass('is-invalid').addClass('is-valid');
+				$(element).removeClass('is-invalid').addClass('is-valid');
+				$(element).siblings('.error').addClass('invisible').html('error');
 				}
-			});
+				});
 			$("#loginform").validate({
 				rules : {
 					email : {
@@ -138,6 +141,21 @@
 			});
 
 		});
+		//start of function click on eye button on password field
+	$('.eye_icon.confirm_password').click(function() {
+	if ($(this).siblings('input').attr('type') === 'password') {
+		$(this).siblings('input').attr('type', 'text');
+		$(this).children().removeClass('brown-grey').addClass('theme_color')
+	} else {
+		$(this).siblings('input').attr('type', 'password');
+		$(this).children().removeClass('theme_color').addClass('brown-grey')
+	}
+});
+		//end of function click on eye button on password field
+		
+		function dashboard(){
+			location.href=contextPath+"dashboard/dashboard.jsp";
+			};
 	</script>
 </body>
 </html>

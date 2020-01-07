@@ -28,6 +28,7 @@ $( document ).ready(function() {
 	
 		
 try{
+
 jQuery.validator.setDefaults({
 		
 		errorPlacement : function(error, element) {
@@ -176,6 +177,5 @@ function load(){
 	  }
 	}
 	
-	function dashboard(){
-		location.href=contextPath+"/dashboard/dashboard.jsp";
-		};
+	
+		

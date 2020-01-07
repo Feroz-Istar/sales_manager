@@ -26,7 +26,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 </head>
-<body class="bg-white"  onload="load()">
+<body class="bg-white"  onload="load()" data-baseurl="<%=baseURL%>">
 	<!--------------------------------------------- Opening of container ------------------------------------------------------>
 	<div class="container h-100">
 <div class="row h-100  ">
@@ -48,7 +48,7 @@
 									<label id="email-error" class="error invisible f-14 theme_color" for="email">error message</label>
 								</div>
 								<button type="button" class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  big_button get_reset_link" style="">GET RESET LINK</button>
-								<button onclick="window.location.href='<%=baseURL%>global/index.jsp'" class=" mt-30 f-14 btn text-left font-weight-bold p-0 theme_color">Cancel</button>
+								<button onclick="return_to_index()" class=" mt-30 f-14 btn text-left font-weight-bold p-0 theme_color">Cancel</button>
 							</form>
 							
 						</div>
@@ -84,38 +84,10 @@
 			<script src="<%=baseURL%>assets/js/salesken.js"></script>
 			
 	<script>
-	$( document ).ready(function() {
-	    console.log( "ready!" );
-	
-	    jQuery.validator.setDefaults({
-			errorPlacement : function(error, element) {
-				error.addClass('invalid-feedback');
-			},
-			highlight : function(element, errorClass, validClass) {
-				$(element).addClass('is-invalid');
-			},
-			unhighlight : function(element, errorClass, validClass) {
-				$(element).removeClass('is-invalid').addClass('is-valid');
-			}
-		});
-		$("#forgotform").validate({
-			rules : {
-				email : {
-					required : true,
-					email : true
-				},
-				password : {
-					required : true	,
-					 minlength: 4
-				},
-				confirmpassword : {
-					required : true	,
-					equalTo: "#password"
-				}
-			}
-		});
-	});
-
+	var contextPath=$('body').data('baseurl');
+	  function return_to_index(){
+			location.href=contextPath+"/index.jsp";
+			};
 </script>
 </body>
 </html>
