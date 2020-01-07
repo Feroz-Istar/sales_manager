@@ -30,41 +30,41 @@
 </head>
 <body style="background: #ffffff !important" onload="load()">
 	<main role="main" class="h-100">
-	<div class="container-fluid   h-100">
+	<div class="container   h-100">
 		<div class="row h-100  ">
 			<div
 				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center ">
 				<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
 					<div class="card-body p-0 ">
-						<div class="pl-25 pr-25">
-							<div style="text-align: center" class="pb-10">
-								<img src="<%=baseURL%>assets/image/checkicon.svg">
-							</div>
-							<p class="brownish-grey f-14 text-center mb-0 fw-500">Great!
-								Password has been generated !</p>
-							<p class="mb-0 brown-grey f-14 text-center pb-70">You can now
-								login to Salesken</p>
-						</div>
-
-						<img class=" text-center saleskenlogo" alt="salesken_logo"
-							src="<%=baseURL%>assets/image/nav_icon.png" />
+						<img class=" text-center saleskenlogo" alt="salesken_logo" src="<%=baseURL%>assets/image/nav_icon.png" />
 						<div class="bottom_border_1px mt-30 "></div>
-
+					<div class="mt-40" style="display: none;">
+								<p class="brownish-grey f-14 pb-1 mb-0 fw-500"><img src="<%=baseURL%>new_assets/image/checkiconsmall.png">
+								Great! Password has been generated !</p>
+								<p class="mb-0 brown-grey pl-1 f-14 ">You can now login to Salesken</p>
+							</div>
 
 						<form class="pt-40 pb-30" id="loginform">
-							<div class="form-group pb-30 mb-0">
+							<div class="form-group pb-10 mb-0">
 								<label class="f-14 label_color mb-0 pb-10 fw-500" for="email">Email
 									address</label> <input type="email"
 									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									name="email" id="email" aria-describedby="emailHelp"
 									placeholder="Email ">
+									<label id="email-error"
+										class="error invisible f-14 theme_color" for="email">error message</label>
 							</div>
-							<div class="form-group pb-40 mb-0">
+							<div class="form-group  position-relative  pb-20 mb-0">
 								<label class="f-14  label_color mb-0 pb-10 fw-500"
 									for="password">Password</label> <input type="password"
 									name="password"
 									class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control"
 									id="password" placeholder="Password">
+									<button type="button" class="btn eye_icon confirm_password p-0 ">
+										<i class="far fa-eye brown-grey"></i>
+
+									</button>
+									<label id="password-error" class="error invisible f-14 theme_color" for="password" style="display: block !important;">error message</label>
 							</div>
 
 							<button type="button"
@@ -79,18 +79,12 @@
 			</div>
 			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
 				<div class="text-break">
-					<p class="black f-24 mb-0 pl-90">See What Works, What
-						Doesn’t &</p>
+						<p class="black f-24 mb-0 pl-90">Unparalleled Visibility</p>
 
-					<h1 class=" f-38  mb-0	pl-90 fw-900 black">Help your Reps Sell
-						Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90 pt-40 pl-90"
-						style="max-width: 534px;">Lorem ipsum dolor sit amet,
-						consectetur adipiscing elit. Nulla sit amet nibh lobortis,
-						vehicula lorem at.</p>
-					<img class="login_background pl-30" alt="login_background"
-						src="<%=baseURL%>assets/image/login_background.svg" />
-				</div>
+						<h1 class=" f-38  mb-0	pl-90 fw-900 black">Improved Performance</h1>
+						<p class="brown-grey f-16 mb-0 pb-90 pt-40 pl-90" style="max-width: 534px;">Salesken allows your sales reps to dramatically improve their quota performance by providing deep insights into what works and intelligence to assist their sales pitch</p>
+						<img class="login_background pl-30" alt="login_background" src="<%=baseURL%>assets/image/login_background.svg" />
+					</div>
 			</div>
 		</div>
 

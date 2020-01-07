@@ -16,8 +16,8 @@ body {
 /*this is used for aligning eye icon with respect to input password field*/
 .eye_icon {
 	position: absolute;
-	right: 15px;
-	top: 44;
+	right: 9px;
+    top: 46px;
 }
 
 .eye_icon .active {
