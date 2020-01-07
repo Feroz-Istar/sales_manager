@@ -1,3 +1,5 @@
+var contextPath=$('body').data('baseurl');
+
 $( document ).ready(function() {
 	  $('[data-toggle="tooltip"]').tooltip()
 	  attachTaskRelatedData();
@@ -41,6 +43,8 @@ jQuery.validator.setDefaults({
 }catch(error){
 	console.log(error)
 }
+
+
 });
 
 function attachTaskRelatedData (){
@@ -171,3 +175,7 @@ function load(){
 	    }
 	  }
 	}
+	
+	function dashboard(){
+		location.href=contextPath+"/dashboard/dashboard.jsp";
+		};

@@ -30,61 +30,38 @@
 	<!--------------------------------------------- Opening of container ------------------------------------------------------>
 	<div class="container h-100">
 <div class="row h-100  ">
-			<div
-				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center">
-				<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
-					<div class="card-body p-0 ">
-				
-					
+			<div class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center ">
+					<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
+						<div class="card-body p-0 ">
 							<img class=" text-center saleskenlogo" alt="salesken_logo" src="<%=baseURL%>assets/image/nav_icon.png" />
-
-
-						<form class="pt-30 pb-30" id="forgotform">
-							<div class="form-group pb-30 mb-0">
-								<label class="f-14 fw-500 very-light-pink  mb-0 pb-10 "
-									for="email">Email address</label> <input type="email"
-									class="form-control very-light-pink-bg p-0 pr-15 pl-15 pb-15 pt-15  f-14 rounded-0 input_wh istar-form-control" name="email"
-									id="email" aria-describedby="emailHelp"
-									placeholder="Email ">
-
-							</div>
-							<div class="form-group position-relative  pb-30 mb-0">
-								<label class="f-14 fw-500 black-two mb-0  pb-10 "
-									for="password">Password</label> <input
-									type="password" class="form-control p-0 pr-40 pl-15 pb-15 pt-15 -very-light-pink f-14 rounded-0 input_wh istar-form-control"
-									id="password" placeholder="Password" name="password">
-										<button type="button" class="btn eye_icon confirm_password p-0   pl-2">
-							<img src="<%=baseURL%>assets/image/eye.svg" alt="eye" />
-						</button>
-							</div>
-					<div class="form-group position-relative pb-40 mb-0">
-								<label class="f-14 fw-500 black-two mb-0 pb-10 "
-									for="password">Confirm Password</label> <input
-									type="password" class="form-control pr-40 pl-15 pb-15 pt-15  f-14 rounded-0 very-light-pink input_wh istar-form-control"
-									id="confirmpassword" placeholder=" Confirm Password" name="confirmpassword">
-									<button type="button" class="btn  eye_icon confirm_password p-0 pl-2">
-						<img src="<%=baseURL%>assets/image/eye.svg" alt="eye" />
-						</button>
-							</div>
-							<button type="submit"
-								class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  login_button"
-								style="" id="forgot_botton">GENERATE PASSWORD</button>
-						</form>
+							<div class="theme_border_bottom mt-30 "></div>
+							<div class="mt-40 generated" style="display: none;">
+								<p class="brownish-grey f-14 pb-1 mb-0 fw-500"><img src="<%=baseURL%>assets/image/checkiconsmall.png">
+								Email sent!</p>
+								<p class="mb-0 brown-grey pl-1 f-14 email_check"></p>
+							</div> 
+							
+							<!-- LOGIN FORM START -->
+							<form class="pt-40 pb-30" id="loginform">
+								<div class="form-group pb-10 mb-0">
+									<label class="f-14 label_color mb-0 pb-10 fw-500" for="email">Email address</label> <input type="email" class="form-control pr-15 pl-15 pb-15 pt-15 f-14 rounded-0 input_wh istar-form-control" name="email" id="email" aria-describedby="emailHelp" placeholder="Email ">
+									<label id="email-error" class="error invisible f-14 theme_color" for="email">error message</label>
+								</div>
+								<button type="button" class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  big_button get_reset_link" style="">GET RESET LINK</button>
+								<button onclick="window.location.href='<%=baseURL%>global/index.jsp'" class=" mt-30 f-14 btn text-left font-weight-bold p-0 theme_color">Cancel</button>
+							</form>
+							
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-md-7  p-0 h-100 d-flex align-items-center">
-				<div>
-					<p class="black f-24 mb-0 pb-5 pl-90">See What Works, What Doesn’t &</p>
+			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
+				<div class="text-break">
+						<p class="black f-24 mb-0 pl-90">Unparalleled Visibility</p>
 
-					<h1 class="black  f-38  mb-0 pl-90	fw-900">Help your
-						Reps Sell Better</h1>
-					<p class="brown-grey f-16 mb-0 pb-90 pt-30 pl-90" style="max-width: 534px;">Lorem
-						ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
-						nibh lobortis, vehicula lorem at.</p>
-					<img class="login_background" alt="login_background"
-						src="<%=baseURL%>assets/image/login_background.svg" />
-				</div>
+						<h1 class=" f-38  mb-0	pl-90 fw-900 black">Improved Performance</h1>
+						<p class="brown-grey f-16 mb-0 pb-90 pt-40 pl-90" style="max-width: 534px;">Salesken allows your sales reps to dramatically improve their quota performance by providing deep insights into what works and intelligence to assist their sales pitch</p>
+						<img class="login_background pl-30" alt="login_background" src="<%=baseURL%>assets/image/login_background.svg" />
+					</div>
 			</div>
 		</div>
 	

@@ -28,7 +28,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
 </head>
-<body style="background: #ffffff !important" onload="load()">
+<body style="background: #ffffff !important" onload="load()" data-baseurl="<%=baseURL%>">
 	<main role="main" class="h-100">
 	<div class="container   h-100">
 		<div class="row h-100  ">
@@ -69,7 +69,7 @@
 
 							<button type="button"
 								class="btn istar-btn-primary f-14 text-center w-100 font-weight-bold p-0 rounded-0  login_button"
-								style="">LOGIN</button>
+								style="" onclick="dashboard()">LOGIN</button>
 						</form>
 						<a href="forgotpassword.jsp"
 							class="f-14  text-left font-weight-bold p-0 theme_color">Forgot
