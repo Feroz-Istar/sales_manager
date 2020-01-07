@@ -155,6 +155,13 @@ $(document).ready(function() {
 
 			if($('#createTaskFrom').valid()){
 				$("#createEventModalCenter").modal('hide');
+				if($("#createEventModalCenter").modal('hide')){
+					create_event_reset();
+					$('#eventTitle').removeClass("is-valid");
+					$('#addGuest').removeClass("is-valid");
+					$('#eventdescription').removeClass("is-valid");
+				}
+					
 			}
 		});
 /*	end of create task form validation*/
@@ -207,6 +214,8 @@ $(document).ready(function() {
 				 $( ".to_do_items" ).html( data );
 				
 				});
+			/*	end of appending to do item list*/
+			scheduled_task_reset();
 		    
 		});
 		
@@ -221,7 +230,7 @@ function onCloseClick(){
 $('.showmore_close').hide();
 }
 
-/*on click view more it shows more card*/
+/*click on view more to shows more ongoing task  card*/
 function view_more_ongoing_task(){
 	$('.showmore_close').show();
 $( ".third_main_container_behind" ).empty();
@@ -348,24 +357,29 @@ function lefttocenterheight(){
 
 }
 /*End of setting first column of dashboard height equal to second column of dashboard*/
+
+/*start of reset function*/
 function create_event_reset(){
     $("#createTaskFrom").trigger("reset");
-    $('#eventtype').html('select here');
+    $('#eventType').html('select here');
 };
 function scheduled_task_reset(){
     $('#activity').html('select here');
     $('#task_by').html('select here');
     $('#Select_States').html('select here');
 };
+/*end of reset function*/
 
 
 /*$.each(serializedForm, function (item,val) {
 	console.log(item);
 	console.log(val);
 });*/
+
+/*start of selecting dropdown data*/
 function create_event_changecontent(elem){
-	$('#eventType').html($(elem).html());
-	$('#event_type').val($(elem).html());
+	$('#eventType').html($(elem).text());
+	$('#event_type').val($(elem).text());
 }
 function scheduled_task_changecontent(elem){
 	$('#task_by').html($(elem).html());
@@ -378,6 +392,8 @@ function scheduled_task_type_changecontent(elem){
 	$('#scheduled_task_type').val($(elem).text());
 	
 }
+/*end of selecting dropdown data*/
+
 function addToDoList(){
 	obj={
 		title:"Hello",
@@ -387,6 +403,7 @@ function addToDoList(){
 	
 }
 
+/*start of multi-select of lead name in scheduled task*/
 $(function () {
     $('select[multiple].active.3col').multiselect({
         columns: 1,
@@ -400,4 +417,4 @@ $(function () {
     });
 });
 
-
+/*end of multi-select of lead name in scheduled task*/

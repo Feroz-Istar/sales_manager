@@ -2707,23 +2707,23 @@ input[type="radio"]:checked+.istar-radio-btn-style {
 
 .salesken.navbar-nav  .nav-item>a:hover .dashboard{
 	height:20px !important;
-		background-image: url('/assets/image/dashboard_hover.svg')
+		background-image: url('../image/dashboard_hover.svg')
 	
 }
 
 .salesken.navbar-nav  .nav-item.active .dashboard{
 	height:20px !important;
-		background-image: url('/assets/image/Dashboard_active.svg')
+		background-image: url('../image/Dashboard_active.svg')
 	
 }
 
 .salesken.navbar-nav  .nav-item>a:hover .taskdetail{
-		background-image: url('/assets/image/task_hover.svg')
+		background-image: url('../image/task_hover.svg')
 	
 }
 
 .salesken.navbar-nav  .nav-item.active .taskdetail{
-		background-image: url('/assets/image/task_active.svg')
+		background-image: url('../image/task_active.svg')
 	
 }
 
@@ -2732,36 +2732,36 @@ input[type="radio"]:checked+.istar-radio-btn-style {
 
 .salesken.navbar-nav  .nav-item>a:hover .pipeline{
 	height:20px !important;
-		background-image: url('/assets/image/pipeline_hover.svg')
+		background-image: url('../image/pipeline_hover.svg')
 	
 }
 
 .salesken.navbar-nav  .nav-item.active .pipeline{
 	height:20px !important;
-		background-image: url('/assets/image/pipeline_active.svg')
+		background-image: url('../image/pipeline_active.svg')
 	
 }
 
 
 .salesken.navbar-nav  .nav-item>a:hover .reports{
-		background-image: url('/assets/image/report_hover.svg')
+		background-image: url('../image/report_hover.svg')
 	
 }
 
 .salesken.navbar-nav  .nav-item.active .reports{
-		background-image: url('/assets/image/report_active.svg')
+		background-image: url('../image/report_active.svg')
 	
 }
 
 
 
 .salesken.navbar-nav  .nav-item>a:hover .leads{
-		background-image: url('/assets/image/lead_hover.svg')
+		background-image: url('../image/lead_hover.svg')
 	
 }
 
 .salesken.navbar-nav  .nav-item.active .leads{
-		background-image: url('/assets/image/lead_active.svg')
+		background-image: url('../image/lead_active.svg')
 	
 }
 
@@ -2776,41 +2776,41 @@ input[type="radio"]:checked+.istar-radio-btn-style {
 }
 .salesken_navicon.dashboard{
 	height:20px !important;
-	background-image: url('/assets/image/dashboard.svg')
+	background-image: url('../image/dashboard.svg')
 }
 .salesken_navicon.taskdetail{
-		background-image: url('/assets/image/task.svg')
+		background-image: url('../image/task.svg')
 	
 }
 
 .salesken_navicon.pipeline{
 	height:20px !important;
-		background-image: url('/assets/image/pipeline.svg')
+		background-image: url('../image/pipeline.svg')
 	
 }
 .salesken_navicon.reports{
-		background-image: url('/assets/image/report.svg')
+		background-image: url('../image/report.svg')
 	
 }
 .salesken_navicon.leads{
-		background-image: url('/assets/image/lead.svg')
+		background-image: url('../image/lead.svg')
 	
 }
 
 .fav.active{
-	background-image: url('/assets/image/heart-red.svg') !important;
+	background-image: url('../image/heart-red.svg') !important;
 	height:24px;
 	width:24px;
 }
 
 .share.active{
-	background-image: url('/assets/image/reply-red.svg') !important;
+	background-image: url('../image/reply-red.svg') !important;
 	height:24px;
 	width:24px;
 }
 
 .comment.active{
-	background-image: url('/assets/image/message_color.svg') !important;
+	background-image: url('../image/message_color.svg') !important;
 	height:24px;
 	width:24px;
 }
@@ -2823,66 +2823,66 @@ input[type="radio"]:checked+.istar-radio-btn-style {
     background-repeat: no-repeat;
 }
 .dropdown-icon.edit{
-	background-image: url(/assets/image/edit.svg);
+	background-image: url(../image/edit.svg);
 }
 .dropdown-item:hover .dropdown-icon.edit{
-	background-image: url(/assets/image/edit_hover.svg);
+	background-image: url(../image/edit_hover.svg);
 }
 .dropdown-icon.delete{
-	background-image: url(/assets/image/delete.svg);
+	background-image: url(../image/delete.svg);
 }
 .dropdown-item:hover .dropdown-icon.delete{
-	background-image: url(/assets/image/delete_hover.svg);
+	background-image: url(../image/delete_hover.svg);
 }
 .dropdown-icon.details{
-	background-image: url(/assets/image/details.svg);
+	background-image: url(../image/details.svg);
 }
 .dropdown-item:hover .dropdown-icon.details{
-	background-image: url(/assets/image/details_hover.svg);
+	background-image: url(../image/details_hover.svg);
 }
 .dropdown-icon.won{
-	background-image: url(/assets/image/won.svg);
+	background-image: url(../image/won.svg);
 }
 .dropdown-item:hover .dropdown-icon.won{
-	background-image: url(/assets/image/won_hover.svg);
+	background-image: url(../image/won_hover.svg);
 }
 .dropdown-icon.lost{
-	background-image: url(/assets/image/lost.svg);
+	background-image: url(../image/lost.svg);
 }
 .dropdown-item:hover .dropdown-icon.lost{
-	background-image: url(/assets/image/lost_hover.svg);
+	background-image: url(../image/lost_hover.svg);
 }
 .dropdown-icon.change_stage{
-	background-image: url(/assets/image/stats.svg);
+	background-image: url(../image/stats.svg);
 }
 .dropdown-item:hover .dropdown-icon.change_stage{
-	background-image: url(/assets/image/stats_hover.svg);
+	background-image: url(../image/stats_hover.svg);
 }
 .dropdown-icon.change_owner{
-	background-image: url(/assets/image/people.svg);
+	background-image: url(../image/people.svg);
 }
 .dropdown-item:hover .dropdown-icon.change_owner{
-	background-image: url(/assets/image/people_hover.svg);
+	background-image: url(../image/people_hover.svg);
 }
 
 .dropdown-icon.switch-role{
-	background-image: url(/assets/image/switch-role.svg);
+	background-image: url(../image/switch-role.svg);
 }
 .dropdown-item:hover .dropdown-icon.switch-role{
-	background-image: url(/assets/image/switch-role_hover.svg);
+	background-image: url(../image/switch-role_hover.svg);
 }
 
 .dropdown-icon.setting{
-	background-image: url(/assets/image/my-account.svg);
+	background-image: url(../image/my-account.svg);
 }
 .dropdown-item:hover .dropdown-icon.setting{
-	background-image: url(/assets/image/my-account_hover.svg);
+	background-image: url(../image/my-account_hover.svg);
 }
 .dropdown-icon.sign-out{
-	background-image: url(/assets/image/sign-out.svg);
+	background-image: url(../image/sign-out.svg);
 }
 .dropdown-item:hover .dropdown-icon.sign-out{
-	background-image: url(/assets/image/sign-out_hover.svg);
+	background-image: url(../image/sign-out_hover.svg);
 }
 /* end of dropdown icons */
 /* Chrome, Safari, Edge, Opera */
@@ -2898,7 +2898,7 @@ input[type=number] {
 }
 
 .profile_edit{
-	background-image: url(/assets/image/editcolor.svg); 
+	background-image: url(../image/editcolor.svg); 
 	height: 24px; 
 	width: 24px;
 }

@@ -43,11 +43,19 @@
 													data-display="static" aria-expanded="false">
 													<span id="">Select here</span><i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
 												</button>
-												<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100">
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)" id="huu">Type 1</button>
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">Type 2</button>
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">Type 3</button>
-													<button class="dropdown-item" type="button"  onclick="create_event_changecontent(this)">Type 4</button>
+													<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100" id="scheduleTaskType">
+													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+														<img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
+													</button>
+													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+														<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
+													</button>
+													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+														<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
+													</button>
+													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+														<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
+													</button>
 												</div>
 											</div>
 										</div>
