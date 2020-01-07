@@ -1,24 +1,11 @@
+var contextPath=$('body').data('baseurl');
+
 $(document).ready(function() {
 	
 	/*hiding page loader afer one seconds*/
-	
+	addToDoList()
 
 	jQuery.validator.setDefaults({
-	   /* highlight: function(element) {
-	        jQuery(element).closest('.form-control').addClass('is-invalid');
-	    },
-	    unhighlight: function(element) {
-	        jQuery(element).closest('.form-control').removeClass('is-invalid');
-	    },
-	    errorElement: 'span',
-	    errorClass: 'label label-danger',
-	    errorPlacement: function(error, element) {
-	        if(element.parent('.input-group').length) {
-	            error.insertAfter(element.parent());
-	        } else {
-	            error.insertAfter(element);
-	        }
-	    }*/
 		errorPlacement : function(error, element) {
 			error.addClass('invalid-feedback');
 		},
@@ -31,44 +18,57 @@ $(document).ready(function() {
 	});
 	modalFormSetup();
 	
-	$.get(location.origin+"/dashboardcard/pipelineCard.jsp", function( data ) {
+	/*start of including cards from partials folder*/
+	$.get(contextPath+"/dashboard/partials/signal_card.jsp", function( data ) {
+		  $( "#carouselExampleIndicators" ).html( data );
+		  lefttocenterheight();
+
+		});
+	$.get(contextPath+"/dashboard/partials/pipelineCard.jsp", function( data ) {
 		  $( ".pipeline-card" ).html( data );
 		  lefttocenterheight();
 
 		});
-	$.get(location.origin+"/dashboardcard/teamCard.jsp", function( data ) {
+	$.get(contextPath+"/dashboard/partials/teamCard.jsp", function( data ) {
 		  $( ".team-card" ).html( data );
 		  lefttocenterheight();
 
 		});
-	$.get(location.origin+"/dashboardcard/topBottomAgents.jsp", function( data ) {
+	$.get(contextPath+"/dashboard/partials/topBottomAgents.jsp", function( data ) {
 		  $( ".top-bottom-agent-card" ).html( data );
 		  lefttocenterheight();
 		});
 	
 	
+	$.get(contextPath+"/dashboard/partials/ongoing_task_card.jsp", function( data ) {
+		  $( "#ongoing_task_card" ).html( data );
+		
+		});
 	
-		/*attaching resolve click to load modal body dynamically for each task resolve card*/
-		loadResolveModal();
-
-		/*ongoingtaskcard is class present in each card of  view more to display list of ongoing task card*/
-		loadOngoingTaskDetail();
+	$.get(contextPath+"/dashboard/partials/raise_issue_card.jsp", function( data ) {
+		  $( "#raise_issue_card" ).html( data );
 		
+		});
+	
+	$.get(contextPath+"/dashboard/partials/chat_card.jsp", function( data ) {
+		  $( "#chat_card" ).html( data );
 		
-
+		});
+	
+	$.get(contextPath+"/dashboard/partials/upcoming_meeting_card.jsp", function( data ) {
+		  $( "#upcoming_meeting" ).html( data );
 		
+		});
+	/*end of including cards from partials folder*/
 		
-		
-		
-//		$('.carousel').carousel('pause');
-		
+	
+	//$('.carousel').carousel('pause');
 		
 		/*active_dates variable represent date which contains event so that we can add a 
 		  activeClass as custom class on the calendar and styles date with events*/
 		var active_dates = ["21/9/2019", "25/9/2019"];
 		
 		/*calendar initialization start */
-		
 		
 		$('#datepicker').datepicker({
 			todayHighlight: true,
@@ -109,62 +109,7 @@ $(document).ready(function() {
 			    redirectWindow.location;*/
 		});
 		
-		
-		
-		/* click on view more to display list of ongoing task card */
-		$('.view_more_ongoing_task').click(function (){
-			var new_card='<div class="card mb-3 rounded-0 shadow cursor-pointer ongoingtaskcard" style="min-height: 263px;"> <div class="card-body"> <div class="d-flex"> <div class="mr-auto bd-highlight theme_color f-20 font-weight-bold">$ 250</div> <div class=" bd-highlight"> <span class="badge badge-danger istar_badge" >Angry</span> </div> </div> <div class="d-flex pb-5"> <div class="fw-500  f-14 greyish-brown">Stage 02 -</div><div class="f-14 brown-grey"> &nbsp; Follow Up </div></div> <h5 class="card-title f-18 text-truncate" title="Accenture">Accenture Consulting Inc.</h5> <div class="f-16 brownish-grey text-truncate" title="">Robert Wolken</div> <div class="f-12 brown-grey mb-2">Manager</div> <div class="dotted-1 mb-2"></div> <div class="d-flex align-items-center mb-2"> <div class="mr-auto "> <div class="d-flex flex-column"> <div class="brown-grey f-12">Call Task by</div> <div class="brownish-grey f-16  text-truncate" title="">Marry Vasquez</div> </div> </div> <div class=" bd-highlight"> <div class="img-wrapper position-relative"> <img class="hw-66 rounded-circle img-responsive" alt="user-img" src="/assets/image/layer.png" /> <div class="img-overlay" style="position: absolute; left: -19px; top: 28%;"> <button class="hw-30 rounded-circle tea border-0" style="z-index: 1; border: 2px solid white !important;"> <i class="fas fa-phone-alt text-white f-12"></i> </button> </div> </div> </div> </div> <div class="d-flex"> <button type="button" class="btn join_btn istar-btn-hover f-12 mr-2">JOIN NOW</button> <button type="button" class="btn small_outline_button listen_btn f-12">LISTEN</button> </div> </div></div>';
-			$('.ongoing_task_content').html(new_card);
-			$('.ongoing_task_content').append(new_card);
-			$('.ongoing_task_content').append(new_card);
-			$('.ongoing_task_content').append(new_card);
-
-			$('.third_main_container').hide();
-			$('.ongoing_task_container').show();
-			loadOngoingTaskDetail();
-
-		});
-		
-		
-		/* click to hide view more list of ongoing task card. show dashboard view of one ongoing card, resolve card  */
-		$('.close.task').click(function (){
-			
-			$('.third_main_container').show();
-			$('.ongoing_task_container').hide();
-		});
-		
-		
-		
-		
-		
-		/* click on view more to display list of resolve task card */
-		$('.view_more_resolve_task').click(function (){
-			var new_card='<div class="card mb-3 rounded-0 shadow resolvetaskcard" style="min-height: 292px;"> <div class="card-body"> <h6 class="card-subtitle mb-2 text-muted f-12 pt-3">June 12, 2019</h6> <p class="card-text greyish-brown f-14  text-truncate" title="Accenture">Product Price in too expensive, and agents are not supportive and they are not providing information !</p> <div class="f-18 greyish-brown mb-2 text-truncate" title="Accenture">Martin Franklin</div> <div class="f-16 brownish-grey mb-4 text-truncate" title="Accenture">Infogen Consulting Pvt. Ltd</div> <div> <button class="btn resolvecardmodal join_btn istar-btn-hover f-12 mr-2" href="/modals/resolvetask.jsp">RESOLVE</button> </div> </div> </div>';
-			$('.task_resolve_content').html(new_card);
-			$('.task_resolve_content').append(new_card);
-			$('.task_resolve_content').append(new_card);
-			$('.task_resolve_content').append(new_card);
-			$('.third_main_container').hide();
-			$('.task_resolve_container').show();
-			/*reattaching resolve click to load modal body dynamically for each task resolve card*/
-			loadResolveModal();
-
-		});
-		
-		/* click to hide view more list of resolve task card. show dashboard view of one ongoing card, resolve card  */
-		$('.close.resolve_task').click(function (){
-			$('.third_main_container').show();
-			$('.task_resolve_container').hide();
-		});
-		
-		/*resolvetaskcard is class present in each card of  view more to display list of resolve task card*/
-		$('.resolvetaskcard').click(function (){
-			
-			
-		});
-		
-		/*start of validation*/
-		
+/*	start of create task form validation*/	
 		$("#createTaskFrom").validate({
 			rules: {
 				eventTitle: {
@@ -177,11 +122,12 @@ $(document).ready(function() {
 				},
 				
 				eventdescription: {
+					required: true,
 					minlength: 5,
 				},
 				eventType: {
 				      required: true,
-				      min: 1, //validates minimum value the element has to have
+				      min: 4, //validates minimum value the element has to have
 				    }
 			},
 			messages: {
@@ -197,32 +143,33 @@ $(document).ready(function() {
 		});
 		
 		$("#create").on("click", function() {
-			var istitlevalid =$("#eventTitle").valid();
-			var istitlevalid =$("#addGuest").valid();
-			var istypevalid =$("#eventType").valid();
-			var isdescriptionvalid = $("#eventdescription").valid();
-			
-			if(istitlevalid && istypevalid && isdescriptionvalid){
+			/* start of getting the data after form submission*/
+			var jsonObject = {};
+			var serializedForm = $("#createTaskFrom").serializeArray();
+			$.each(serializedForm, function (item,val) {
+				jsonObject[val.name]=val.value;
+			});
+			var data = JSON.stringify(jsonObject);
+			console.log(data)
+			/* end of getting the data after form submission*/
+
+			if($('#createTaskFrom').valid()){
 				$("#createEventModalCenter").modal('hide');
 			}
 		});
+/*	end of create task form validation*/
+
 		
-		$('#scheduletaskform').selectpicker({
-			width : '100%',
-			sanitize : false,
-			showContent : false,
-			liveSearch : true,
-			virtualScroll : '600'
-		});
+/*	start of scheduled task form validation*/
 		$("#scheduletaskform").validate({
 			rules: {
-				taskActor: {
+				task_by: {
 				      required: true,
-				      min: 1, //validates minimum value the element has to have
+				      minlength: 4, //validates minimum value the element has to have
 				    },
 				    leadname: {
 					      required: true,
-					      min: 1, //validates minimum value the element has to have
+					      minlength: 4, //validates minimum value the element has to have
 					    },
 				    
 				    task_type : {
@@ -242,18 +189,66 @@ $(document).ready(function() {
 		})
 		
 		$("#schedule").on("click", function() {
-		    var istaskactor = $("#taskActor").valid();
-		    var istaskactor1 = $("#leadname").valid();
-		    if(istaskactor){
-		    	$("#scheduleTaskModalCenter").modal('hide');
-		    }
+			/* start of getting the data after form submission*/
+			var jsonObject = {};
+			var serializedForm=$("#scheduletaskform").serializeArray();
+			$.each(serializedForm, function (item,val) {
+				jsonObject[val.name]=val.value;
+			});
+			var data = JSON.stringify(jsonObject);
+			console.log(data);
+			/* end of getting the data after form submission*/
+			
+			/*	appending to do item list*/
+			$(".to_do_list").hide();
+			$(".no-event").hide();
+			$.get(contextPath+"/dashboard/partials/to_do_task_list.jsp", function( data ) {
+				console.log(data);
+				 $( ".to_do_items" ).html( data );
+				
+				});
+		    
 		});
 		
-		/*end of validation*/
-		
-		
-		
+		/*	start of scheduled task form validation*/
 	});
+
+
+/*on click closes view more card*/
+function onCloseClick(){
+	$( ".third_main_container_behind" ).hide();
+	$('.third_main_container').show();
+$('.showmore_close').hide();
+}
+
+/*on click view more it shows more card*/
+function view_more_ongoing_task(){
+	$('.showmore_close').show();
+$( ".third_main_container_behind" ).empty();
+for(var i =0;i<4;i++){
+$.get(contextPath+"/dashboard/partials/ongoing_task_card.jsp", function( data ) {
+	  $( ".third_main_container_behind" ).append( data );
+	  $( ".third_main_container_behind" ).show();
+		$('.third_main_container').hide();
+
+	});
+}
+};
+
+/* click on view more to display list of resolve task card */
+function view_more_resolve_task(){
+	$('.showmore_close').show();
+	$( ".third_main_container_behind" ).empty();
+	for(var i =0;i<4;i++){
+	$.get(contextPath+"/dashboard/partials/raise_issue_card.jsp", function( data ) {
+		  $( ".third_main_container_behind" ).append( data );
+		  $( ".third_main_container_behind" ).show();
+			$('.third_main_container').hide();
+
+		});
+	}
+
+};
 
 function loadResolveModal(){
 	$('.resolvecardmodal').unbind().click(function (e){
@@ -274,17 +269,14 @@ function loadOngoingTaskDetail(){
 	});
 }
 function modalFormSetup(){
-	
-
-	 if(localStorage.getItem('notes')){
+		 if(localStorage.getItem('notes')){
 	 $('#summernote').summernote({
 	        placeholder: 'Hello bootstrap 4',
 	        tabsize: 2,
 	        height: 800,
 	        callbacks: {
 	            onChange: function(contents, $editable) {
-	            	localStorage.setItem("notes", $('#summernote').summernote('code'))	            	
-	            
+	            	localStorage.setItem("notes", $('#summernote').summernote('code'))	            	           
 	            }
 	        }
 	      });
@@ -300,8 +292,7 @@ function modalFormSetup(){
 			showContent : false,
 			sanitizeFn: function (domNodes) {
 			    return DOMPurify.sanitize(domNodes)
-			  }
-			
+			  }		
 		});
 
 	var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time 
@@ -323,12 +314,9 @@ function modalFormSetup(){
 	$('#schedule_task_time').wickedpicker(options);
 	$('#schedule_task_date').datepicker({autoclose:true})
 }
-
 function scheduleEvent(){
 	$('.sales_ken_popover').popover('hide')
-	$('#createEventModalCenter').modal('show')
-	
-	
+	$('#createEventModalCenter').modal('show')	
 }
 
 function scheduleTask(){
@@ -351,10 +339,6 @@ function opennotes(){
       });
 }
 
-function showList(){
-	$('.taskitem').show();
-	$('.no-event').hide();
-}
 /*here we are setting first column of dashboard height equal to second column of dashboard*/
 
 function lefttocenterheight(){
@@ -364,5 +348,56 @@ function lefttocenterheight(){
 
 }
 /*End of setting first column of dashboard height equal to second column of dashboard*/
+function create_event_reset(){
+    $("#createTaskFrom").trigger("reset");
+    $('#eventtype').html('select here');
+};
+function scheduled_task_reset(){
+    $('#activity').html('select here');
+    $('#task_by').html('select here');
+    $('#Select_States').html('select here');
+};
+
+
+/*$.each(serializedForm, function (item,val) {
+	console.log(item);
+	console.log(val);
+});*/
+function create_event_changecontent(elem){
+	$('#eventType').html($(elem).html());
+	$('#event_type').val($(elem).html());
+}
+function scheduled_task_changecontent(elem){
+	$('#task_by').html($(elem).html());
+	$('#scheduled_task_by').val($(elem).html());
+}
+
+function scheduled_task_type_changecontent(elem){
+
+	$('#activity').html($(elem).text());
+	$('#scheduled_task_type').val($(elem).text());
+	
+}
+function addToDoList(){
+	obj={
+		title:"Hello",
+		time:"4:20 AM",
+		imageList:["https://storage.googleapis.com/istar-user-images/files/s.png","https://storage.googleapis.com/istar-user-images/files/s.png"]
+	}
+	
+}
+
+$(function () {
+    $('select[multiple].active.3col').multiselect({
+        columns: 1,
+        placeholder: 'Select States',
+        search: true,
+        showCheckbox : false,
+        searchOptions: {
+            'default': 'Search States'
+        },
+        selectAll: true
+    });
+});
 
 

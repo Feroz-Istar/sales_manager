@@ -119,15 +119,15 @@
 		id="navbarNavDropdown">
 		<ul class="salesken navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link f-14"
-				href="dashboard.jsp"> <div class="d-flex align-item-center"> <i class="salesken_navicon dashboard"></i> Dashboard </div><span class="sr-only">(current)</span></a></li>
+				href="../dashboard/dashboard.jsp"> <div class="d-flex align-item-center"> <i class="salesken_navicon dashboard"></i> Dashboard </div><span class="sr-only">(current)</span></a></li>
 			<li class="nav-item taskdetail"><a class="nav-link f-14" id="task-detail-nav"
-				href="taskDetail.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon taskdetail"></i> Task Details </div><span class="sr-only">(current)</span></a></li>
+				href="../taskDetails/taskDetail.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon taskdetail"></i> Task Details </div><span class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14"
-				href="pipeline.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="report.jsp">
+				href="../pipeline/pipeline.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link f-14" href="../report/report.jsp">
 					<div class="d-flex align-item-center"> <i class="salesken_navicon reports"></i> Reports </div><span class="sr-only">(current)</span>
 			</a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="leads.jsp">
+			<li class="nav-item"><a class="nav-link f-14" href="../leads/leads.jsp">
 					 <div class="d-flex align-item-center"> <i class="salesken_navicon leads"></i> Leads </div><span class="sr-only">(current)</span>
 			</a></li>
 
