@@ -27,7 +27,7 @@
 
 </head>
 <body data-base-url="<%=baseURL%>" onload="load()">
-	<jsp:include page="../navbar/nav.jsp"></jsp:include>
+	<jsp:include page="/navbar/nav.jsp"></jsp:include>
 
 	<main role="main">
 	<div class="container-fluid salesken_container">

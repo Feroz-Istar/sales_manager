@@ -8,7 +8,7 @@
 
 <nav
 	class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
-	<a class="navbar-brand f-15 p-0 pr-3" href="/landing/dashboard.jsp">
+	<a class="navbar-brand f-15 p-0 pr-3" href="/dashboard/dashboard.jsp">
 		<img class="appicon img-thumbnail p-0 mr-1 border-0" alt="salesken_logo"
 		src="<%=baseURL%>assets/image/nav_icon.png" />
 	</a>

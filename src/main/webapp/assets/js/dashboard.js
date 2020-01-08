@@ -269,12 +269,9 @@ function loadResolveModal(){
 
 function loadOngoingTaskDetail(){
 	
-	
 	$('.ongoingtaskcard').unbind().click(function (){
 		//window.location.href = location.href + 'landing/task_lead_detail.jsp'
-		
 		window.location.replace("ongoingJoined.jsp");
-
 	});
 }
 function modalFormSetup(){
@@ -370,11 +367,6 @@ function scheduled_task_reset(){
 };
 /*end of reset function*/
 
-
-/*$.each(serializedForm, function (item,val) {
-	console.log(item);
-	console.log(val);
-});*/
 
 /*start of selecting dropdown data*/
 function create_event_changecontent(elem){

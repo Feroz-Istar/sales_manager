@@ -70,7 +70,7 @@
 							<span class="sr-only">Toggle Dropdown</span>NEW TASK <img src="<%=baseURL%>/assets/image/toggle_white.svg" alt="call" class="h-17 text-white ">
 						</button>
 						<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="dashboard_activity">
-							<button class="dropdown-item" type="button" onclick="window.location.href = 'dashboardCreateTask.jsp'">
+							<button class="dropdown-item" type="button" onclick="window.location.href='partials/'+'dashboardCreateTask.jsp'">
 								<img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
 							</button>
 							<button class="dropdown-item" type="button">
