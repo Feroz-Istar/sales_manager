@@ -35,7 +35,7 @@
 			class="row grey-white-bg align-items-center theme_solid_border_bottom justify-content-between m-0 pl-40 pt-20 pb-20">
 			<div class="col-md-6 col-12 d-flex align-items-center p-0">
 				<i class="fas fa-arrow-left black f-20 cursor-pointer pr-20"
-					onclick="window.location.href = 'dashboard.jsp'"></i>
+					onclick="window.location.href = '../dashboard.jsp'"></i>
 				<div
 					class="display-1 black f-20 border-right-separation fw-500 pr-20">Call
 					Task</div>

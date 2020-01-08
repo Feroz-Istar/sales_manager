@@ -219,13 +219,13 @@
 					<div class="third_main_container">
 					
 						<!-- Start of Associate Join now/Listen card-->
-						<div class="" id="ongoing_task_card"></div>
+						<div class="" id="ongoing_task_card" onclick="window.location.href = '/taskDetails/partials/task_lead_detail.jsp'"></div>
 						<!-- End of Associate Join now/Listen card-->
 						<!-- Start of issue resolve card-->
 						<div class="" id="raise_issue_card"></div>
 						<!-- End of issue resolve card-->
 						<!-- Start of chat now card-->
-						<div class="" id="chat_card"></div>
+						<div class="" id="chat_card" onclick="window.location.href = '/taskDetails/partials/task_lead_detail.jsp'"></div>
 						<!-- End of chat now card-->
 						<!-- Start of accepting incoming call by Associate card-->
 						<div class="" id="upcoming_meeting"></div>

@@ -21,9 +21,9 @@
 						</div>
 						<div class="modal-body p-30"></div>
 						<div class="modal-footer pt-30 pb-30 pr-30">
-							<button type="button" class="btn  f-14 theme_color bg-transparent font-weight-bold" data-dismiss="modal">Reset</button>
+							<button type="button" class="btn  f-14 theme_color bg-transparent font-weight-bold" onclick=" loadResolveModal_reset()" >Reset</button>
 
-							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold" id="resolve">RESOLVE</button>
+							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold" data-dismiss="modal" id="resolve">RESOLVE</button>
 						</div>
 					</div>
 				</div>

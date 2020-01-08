@@ -258,13 +258,17 @@ function view_more_resolve_task(){
 
 };
 
+/*start of resolve issue modal*/
 function loadResolveModal(){
-	$('.resolvecardmodal').unbind().click(function (e){
-		  e.preventDefault();
-
-		  $('#resolvecardmodal').modal('show').find('.modal-body').load($(this).attr('href'));
-	});
+	 $('#resolvecardmodal').modal('show').find('.modal-body').empty();
+$.get(contextPath+"/dashboard/modal/resolvetask.jsp", function( data ) {
+	  $('#resolvecardmodal').modal('show').find('.modal-body').append(data);
+		});
 }
+function loadResolveModal_reset(){
+	$('#resolvedescription').val('');
+}
+/*end of resolve issue modal*/
 
 function loadOngoingTaskDetail(){
 	
@@ -357,7 +361,7 @@ function lefttocenterheight(){
 /*start of reset function*/
 function create_event_reset(){
     $("#createTaskFrom").trigger("reset");
-    $('#eventType').html('select here');
+    $('#eventType').html('type here');
 };
 function scheduled_task_reset(){
     $('#activity').html('select here');
