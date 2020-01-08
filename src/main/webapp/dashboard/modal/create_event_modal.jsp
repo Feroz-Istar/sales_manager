@@ -37,11 +37,11 @@
 										</div>
 										<div class="col-md-6 p-0 pl-7_5">
 											<label class="f-14 fw-500 pb-10 m-0">Type</label>
-										<input type="hidden" id="event_type" name="event_type" />
+										<input type="hidden" id="event_type" name="event_type" value="Call Task"/>
 											<div class="dropdown istar-dropdown">
 												<button class="custom-modal-input select_focus w-100 pl-2 d-flex h-35" style="justify-content: space-between;" id="eventType" data-toggle="dropdown" aria-haspopup="true"
 													data-display="static" aria-expanded="false">
-													<span id="">Select here</span><i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
+													<span id=""> Call Task</span><i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
 												</button>
 													<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100" id="scheduleTaskType">
 													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">

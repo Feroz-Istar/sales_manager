@@ -53,11 +53,11 @@
 									<div class="row  pt-20 m-0">
 										<div class="col-md-6  p-0 pr-7_5">
 											<label class="f-14 fw-500 pb-10 black m-0">Task Type</label>
-											<input type="hidden" id="scheduled_task_type" name="scheduled_task_type" />
+											<input type="hidden" id="scheduled_task_type" name="scheduled_task_type" value="Call Task"/>
 											<div class="dropdown istar-dropdown">
 												<button class="custom-modal-input w-100 pl-2 d-flex " style="justify-content: space-between;" id="activity" data-toggle="dropdown" aria-haspopup="true" data-display="static"
 													aria-expanded="false">
-													Select here <i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
+													 Call Task <i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
 												</button>
 												<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100" id="scheduleTaskType">
 													<button class="dropdown-item" type="button" onclick="scheduled_task_type_changecontent(this)">
