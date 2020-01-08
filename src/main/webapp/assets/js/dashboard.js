@@ -3,8 +3,7 @@ var contextPath=$('body').data('baseurl');
 $(document).ready(function() {
 	
 	/*hiding page loader afer one seconds*/
-	addToDoList()
-
+	
 	jQuery.validator.setDefaults({
 		errorPlacement : function(error, element) {
 			error.addClass('invalid-feedback');
@@ -386,16 +385,9 @@ function scheduled_task_type_changecontent(elem){
 }
 /*end of selecting dropdown data*/
 
-function addToDoList(){
-	obj={
-		title:"Hello",
-		time:"4:20 AM",
-		imageList:["https://storage.googleapis.com/istar-user-images/files/s.png","https://storage.googleapis.com/istar-user-images/files/s.png"]
-	}
-	
-}
 
-/*start of multi-select of lead name in scheduled task*/
+
+/*start of multi-select of lead name in scheduled task modal*/
 $(function () {
     $('select[multiple].active.3col').multiselect({
         columns: 1,
@@ -409,4 +401,4 @@ $(function () {
     });
 });
 
-/*end of multi-select of lead name in scheduled task*/
+/*end of multi-select of lead name in scheduled task modal*/

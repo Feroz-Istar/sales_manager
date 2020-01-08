@@ -1,9 +1,20 @@
+	<%@page import="org.apache.commons.io.IOUtils"%>
+<%@page import="com.google.gson.GsonBuilder"%>
+<%@page import="com.google.gson.Gson"%>
+<%@page import="pojos.TaskItemList"%>
+	<%
+	
+	String userdata = IOUtils.toString(request.getReader());
+	Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();
+	TaskItemList taskItem = gson.fromJson(userdata, TaskItemList.class);
+	
+	
+	%>
+	
 	<!-- Start of creation to do items card -->
-						<%for(int k=0;k<5;k++){ %>
 							<div class="taskitem  pt-20 pb-20" style="">
 								<div class="d-flex flex-row align-items-center ">
-									<div class="font-weight-bold f-14 bblack">Meeting with
-										Sales Team</div>
+									<div class="font-weight-bold f-14 bblack"><%=taskItem.getTitle() %></div>
 									<div class="dropdown ml-auto istar-dropdown dropleft f-12 brown-grey">
 										<button class="dropdown-icon-btn " type="button"
 											id="dropdownMenuButton" data-display="static"
@@ -46,5 +57,4 @@
 										+05</div>
 								</div>
 							</div>
-							<%} %>
 							<!-- start of no-data for todo list -->

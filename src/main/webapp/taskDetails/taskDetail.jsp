@@ -671,7 +671,6 @@
 																</button>
 															</div>
 														</div>
-														
 														<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 														
 														<%for(int i=0; i<20;i++){ %>
