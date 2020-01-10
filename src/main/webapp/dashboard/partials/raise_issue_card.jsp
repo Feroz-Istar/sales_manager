@@ -11,7 +11,7 @@
 								<div class="f-18 pt-20 greyish-brown text-truncate font-weight-bold" title="Martin Franklin">Martin Franklin</div>
 								<div class="f-16 brownish-grey text-truncate" title="Infogen Consulting Pvt.">Infogen Consulting Pvt. Ltd</div>
 								<div class="pt-25">
-									<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold resolvecardmodal" href="/modals/resolvetask.jsp" onclick="loadResolveModal()" >RESOLVE</button>
+									<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold resolvecardmodal"  onclick="loadResolveModal()" >RESOLVE</button>
 								</div>
 							</div>
 							<div class="card-footer cream_white p-0 pt-10 pb-10">

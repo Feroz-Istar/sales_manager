@@ -4,8 +4,6 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 %>
-<style>
-</style>
 <div class="row h-100 m-0">
 	<div class="col-md-11 p-0">
 		<div class="row justify-content-between m-0 pl-45 pr-45 pt-15 pb-10">
@@ -20,15 +18,15 @@
 					<button class="btn p-0">
 						<div style="background-image: url(<%=baseURL%>assets/image/heart.svg); height: 24px; width: 24px;" class="mr-15 fav"></div>
 					</button>
-					<div class=" dropdown " id="completed_call_comment">
+					<div class=" dropdown " id="completed_webinar_comment">
 						<button class="btn p-0 dropdown-toggle"
-							id="completed_call_comment" data-toggle="dropdown"
+							id="completed_webinar_comment" data-toggle="dropdown"
 							aria-haspopup="true" aria-expanded="true" data-display="static">
 							<div style="background-image: url(<%=baseURL%>assets/image/message.svg); height: 24px; width: 24px;" class="mr-15 comment"></div>
 						</button>
 						<div
 							class="dropdown-menu dropdown-menu-right   istar-dropdown-task-menu p-0"
-							aria-labelledby="completed_call_comment" style="right: -67px;">
+							aria-labelledby="completed_webinar_comment" style="right: -67px;">
 
 							<div class="card p-20 border-0" style="width: 500px;">
 								<div class="card-header p-0 border-bottom-0 bg-white">
@@ -54,7 +52,7 @@
 									<div class="row d-flex justify-content-end m-0">
 										<button type="button"
 											class="btn join_btn  istar-btn-hover f-12 "
-											id="completed_call_comment_submit">Submit</button>
+											id="completed_call_reply_submit">Submit</button>
 									</div>
 								</div>
 							</div>
@@ -62,19 +60,19 @@
 					</div>
 
 					<div class=" dropdown">
-						<button class="btn  p-0 dropdown-toggle" id="completed_call_reply"
+						<button class="btn  p-0 dropdown-toggle" id="completed_webinar_reply"
 							data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"
 							data-display="static">
 							<div style="background-image: url(<%=baseURL%>assets/image/reply.svg); height: 24px; width: 24px;" class="mr-15 share"></div>
 						</button>
 						<div
 							class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu p-20  p-0 share-menu"
-							aria-labelledby="completed_call_reply" style="right: -18px;">
+							aria-labelledby="completed_webinar_reply" style="right: -18px;">
 
 							<div class="input-group position-relative pb-20">
 								<img src="<%=baseURL%>assets/image/search.svg"
 									alt="edit" class=" searchBox"> <input
-									id="completed_call_reply_search"
+									id="completed_webinar_reply_search"
 									class="form-control  custom-taskborder brown-grey  f-14 search_height minw-237"
 									type="search" placeholder="Search" style="padding-right: 30px">
 							</div>
@@ -84,9 +82,9 @@
 								%>
 								<div class="d-flex align-items-center pb-10 ">
 									<input class="istar-checkbox agentcheckbox " data-id="0"
-										id="completed_call_reply-checkbox<%=i%>" type="checkbox">
+										id="completed_webinar_reply-checkbox<%=i%>" type="checkbox">
 									<label class="istar-checkbox-style"
-										for="completed_call_reply-checkbox<%=i%>"></label> <img
+										for="completed_webinar_reply-checkbox<%=i%>"></label> <img
 										alt="user-img"
 										src="<%=baseURL%>assets/image/11.png"
 										class="rounded-circle ml-3 mr-2 hw-40">
@@ -102,14 +100,14 @@
 							</div>
 							<button type="button"
 								class="btn btn-block big_button rounded-0 font-weight-bold f-12 mt-30"
-								id="completed_call_reply_submit"  data-toggle="modal" data-target="#shareTaskModal">Submit</button>
+								id="completed_webinar_reply_submit">Submit</button>
 
 						</div>
 					</div>
 					<div
-						class="f-14 font-weight-bold dark_theme_color cursor-pointer align-self-center"
-						onclick="window.location.href = 'task_lead_detail.jsp'">
-						View More <i class="fas fa-chevron-circle-right ml-1 "></i>
+						class="f-14 font-weight-bold theme_color cursor-pointer align-self-center"
+						onclick="window.location.href = 'partials/task_lead_detail.jsp'">
+						View More <i class="fas fa-chevron-circle-right ml-1 pr-2"></i>
 					</div>
 				</div>
 			</div>
@@ -136,7 +134,7 @@
 		<div class="row m-0 pl-45 pr-45 pt-20 ">
 			<div class="col p-0">
 				<ul
-					class="nav nav-tabs nav-mytabs p-0 d-flex align-items-end"
+					class="nav nav-tabs nav-mytabs p-0 pt-20 d-flex align-items-end"
 					id="agent-details" role="tablist">
 					<li class="nav-item"><a class="nav-item nav-link active"
 						id="whatsright-tab" data-toggle="tab" href="#whatsright"
@@ -146,7 +144,7 @@
 						id="whatswrong-tab" data-toggle="tab" href="#whatswrong"
 						role="tab" aria-controls="whatswrong" aria-selected="false">Whats
 							Wrong?</a></li>
-					<li class="nav-item"><a class="nav-item nav-link" id="all-tab"  style="min-width:132px;"	
+					<li class="nav-item"><a class="nav-item nav-link" id="all-tab"  style="min-width:132px;"
 						data-toggle="tab" href="#all" role="tab" aria-controls="all"
 						aria-selected="false">All</a></li>
 				</ul>
@@ -165,29 +163,20 @@
 		</div>
 
 
-		<div class="row m-0 pb-30">
-			<div class="col p-0 d-flex flex-row justify-content-center">
+		<div class="row m-0 pb-30 pl-45">
+			<div class="col p-0 d-flex flex-row ">
 
 				<div class="d-flex flex-row align-items-center">
 					<img src="<%=baseURL%>assets/image/man.jpg" alt="person"
 						data-toggle="tooltip" data-placement="bottom" title="Lead Name"
-						class="rounded-circle hw-60 task-image-right"> <div class="rounded-circle hw-40 task-icon soft_blue_bg text-white font-weight-bold f-12 p-2">50%</div>
+						class="rounded-circle hw-60 task-image-right"> <div class="rounded-circle hw-40 task-icon theme_bg text-white font-weight-bold f-12 p-2">50%</div>
 
 				</div>
-				<button class="btn p-0 ml-40">
-					<i class="fas fa-backward dark_gray"></i>
-				</button>
-				<button class="btn hw-64 border rounded-circle p-0	ml-25 mr-25 ">
-					<i class="fas fa-play dark_gray"></i>
-				</button>
-
-				<button class="btn p-0 mr-40">
-					<i class="fas fa-forward dark_gray"></i>
-				</button>
-				<div class="d-flex flex-row align-items-center">
+				
+				<div class="d-flex flex-row align-items-center pl-90">
 					<img src="<%=baseURL%>assets/image/layer.png" alt="layer"
 						data-toggle="tooltip" data-placement="bottom" title="Agent Name"
-						class="rounded-circle hw-60 task-image-right"><div class="rounded-circle hw-40 task-icon theme_bg text-white font-weight-bold f-12 p-2">50%</div>
+						class="rounded-circle hw-60 task-image-right"> <div class="rounded-circle hw-40 task-icon soft_blue_bg text-white font-weight-bold f-12 p-2">50%</div>
 
 				</div>
 
@@ -237,19 +226,28 @@
 
 					</div>
 					<div class="col-md-8 p-0">
+						<div class="row  m-0 pl-10 pt-10 pb-20 pr-45">
+							<div class="col p-0 ">
+								<video class="w-100" controls="">
+									<source
+										src="https://www.radiantmediaplayer.com/media/bbb-360p.mp4"
+										type="video/mp4">
 
-					<div class="row m-0 pl-20 pr-20 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
-
+								</video>
+							</div>
+						</div>
+						<div class="row m-0 pl-60 pr-45 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
 							<div class="col p-0">
 								<div id="carouselExampleIndicators"
 									class="carousel slide theme_solid_border_bottom "
 									data-ride="carousel">
 									<ol class="carousel-indicators m-0 pb-20">
-										<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+										<li data-target="#carouselExampleIndicators" data-slide-to="0"
+											class="active"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
 										<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
 									</ol>
-									<div class="carousel-inner" style="box-shadow: 0 .5rem 1rem #eee !important;">
+									<div class="carousel-inner ">
 
 										<%
 											for (int h = 0; h < 4; h++) {
@@ -288,20 +286,20 @@
 							</div>
 						</div>
 						<div class="row m-0   theme_solid_border_top_2px mr-40">
-							<div class="col p-0 pt-30  ">
-								<h3 class="black fw-500 f-16 mb-0 pl-40 pb-30">Transcript</h3>
+							<div class="col p-0 pt-25  ">
+								<h3 class="black fw-500 f-16 mb-0 pl-40 pb-25">Transcript</h3>
 								<div class="transcript_container  "
 									style="max-height: 520px; overflow-x: hidden; overflow-y: auto;">
 									<%
 										for (int j = 0; j < 20; j++) {
 									%>
-									<div class="d-flex flex-column pl-40 pb-25">
+									<div class="d-flex flex-column pl-40  pb-25">
 										<p class="f-14 bblack pb-10 m-0">
 											<small class="f-12 brown-grey pr-20 ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card "
-											style="border-radius: 0px 20px 20px 20px; box-shadow: 0 .5rem 1rem #eee !important;">
+										<div class="card shadow "
+											style="border-radius: 0px 20px 20px 20px">
 											<div class="card-body">
 												<p class="card-text f-14 blue-black m-0">Some quick
 													example text to build on the card title and make up the
@@ -311,12 +309,12 @@
 									</div>
 
 
-									<div class="d-flex flex-column pl-40 pb-25">
+									<div class="d-flex flex-column pl-40  pb-25">
 										<p class="f-14 bblack align-self-end pb-10 mb-0">
 											<small class="f-12 brown-grey  pr-20  ">00:20.</small> Jamie
 											Vargas
 										</p>
-										<div class="card align-self-end very-light-pink-bg"
+										<div class="card shadow align-self-end very-light-pink-bg"
 											style="border-radius: 20px 0px 20px 20px">
 											<div class="card-body">
 												<p class="card-text blue-black f-14 mb-0">Some quick
@@ -348,9 +346,9 @@
 		<div class=" dropleft">
 			<button type="button" class="btn btn-secondary dropdown-toggle"
 				data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-				style="display: none" id="completed_call_task_content">Dropleft</button>
-			<div class="dropdown-menu completed_call_task_content m-0"
-				aria-labelledby="completed_call_task_content">
+				style="display: none" id="completed_webinar_task_content">Dropleft</button>
+			<div class="dropdown-menu completed_webinar_task_content m-0"
+				aria-labelledby="completed_webinar_task_content">
 				<!-- Dropdown menu links -->
 			</div>
 		</div>
@@ -358,36 +356,32 @@
 
 
 			<li class="notesdropdown list-group-item p-0 pt-10 pb-10">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-80 "
-					data-dropdown_id="completed_call_task_content">
+				<div class=" d-flex flex-column justify-content-center align-items-center minh-80 "
+					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/notes.svg" alt="notes" />
 					<div class="f-12 pt-1 greyish-brown">Notes</div>
 
 				</div>
 			</li>
-			<li class=" cuesdropdown list-group-item p-0  pt-10 pb-10">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-80"
-					data-dropdown_id="completed_call_task_content">
+			<li class=" cuesdropdown list-group-item p-0 pt-10 pb-10">
+				<div class=" d-flex flex-column justify-content-center align-items-center minh-80"
+					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/cues.svg" alt="cues" />
 					<div class="f-12 pt-1 greyish-brown">Cues</div>
 
 				</div>
 			</li>
-			<li class="crmdropdown list-group-item p-0  pt-10 pb-10">
-				<div
-					class=" d-flex flex-column justify-content-center align-items-center minh-80"
-					data-dropdown_id="completed_call_task_content">
+			<li class="crmdropdown list-group-item p-0 pt-10 pb-10">
+				<div class=" d-flex flex-column justify-content-center align-items-center minh-80"
+					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/crm.svg" alt="crm" />
 					<div class="f-12 pt-1 greyish-brown">CRM</div>
 
 				</div>
 			</li>
-			<li class="chatdropdown list-group-item  p-0  pt-10 pb-10 ">
-				<div
-					class="  d-flex flex-column justify-content-center align-items-center minh-80"
-					data-dropdown_id="completed_call_task_content">
+			<li class="chatdropdown list-group-item  p-0 pt-10 pb-10 ">
+				<div class="  d-flex flex-column justify-content-center align-items-center minh-80"
+					data-dropdown_id="completed_webinar_task_content">
 					<img src="<%=baseURL%>assets/image/chat.svg"
 						alt="presentation" />
 					<div class="f-12 pt-1 greyish-brown">Chat</div>
@@ -396,8 +390,7 @@
 			</li>
 
 
-			<li
-				class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
+			<li class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100"
 				style="height: calc(100% - 80px);"></li>
 
 
@@ -406,43 +399,39 @@
 </div>
 
 <script>
-	$(document).ready(function(){
-		attachTaskRelatedData();
-		$(function () {
-			  $('[data-toggle="tooltip"]').tooltip()
-			});
-		$('.share-menu.dropdown-menu').click(function(e) {
-			e.stopPropagation();
-		});
-
-		$('#completed_call_reply_submit').click(function(){
-			$('#completed_call_reply').dropdown('hide');
-			$('#shareTaskModal').modal('show');
-			$(".share").removeClass('active');
-		});
-		
-		  $(".fav").click(function(){
-			  $( this ).toggleClass( "active" );
-			});
-		  $(".comment").click(function(){
-			  $( this ).toggleClass( "active" );
-			});
-		  $(".share").click(function(){
-			  $( this ).toggleClass( "active" );
-			});
-		  $('#completed_call_comment').on('show.bs.dropdown', function () {
-			  $(".comment").addClass('active');
-			});
-		 $('#completed_call_comment').on('hidden.bs.dropdown', function () {
-		  		$(".comment").removeClass('active');
-			});
-		 $('#completed_call_reply').on('show.bs.dropdown', function () {
-			  $(".share").addClass('active');
-			});
-		 $('#completed_call_reply').on('hidden.bs.dropdown', function () {
-		  		$(".share").removeClass('active');
-			});
+	attachTaskRelatedData();
+	$(function() {
+		$('[data-toggle="tooltip"]').tooltip()
 	});
+	$('.share-menu.dropdown-menu').click(function(e) {
+		e.stopPropagation();
+	});
+	$('#completed_webinar_reply_submit').click(function(){
+		$('#completed_webinar_reply').dropdown('hide');
+		$(".share").removeClass('active');
+		$('#shareTaskModal').modal('show');
+	});
+	  $(".fav").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $(".comment").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $(".share").click(function(){
+		  $( this ).toggleClass( "active" );
+		});
+	  $('#completed_webinar_comment').on('show.bs.dropdown', function () {
+		  $(".comment").addClass('active');
+		});
+	 $('#completed_webinar_comment').on('hidden.bs.dropdown', function () {
+	  		$(".comment").removeClass('active');
+		});
+	 $('#completed_webinar_reply').on('show.bs.dropdown', function () {
+		  $(".share").addClass('active');
+		});
+	 $('#completed_webinar_reply').on('hidden.bs.dropdown', function () {
+		$(".share").removeClass('active');
+		});
 </script>
 
 

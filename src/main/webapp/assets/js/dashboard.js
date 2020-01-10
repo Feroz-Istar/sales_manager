@@ -255,7 +255,6 @@ function view_more_resolve_task(){
 
 		});
 	}
-
 };
 
 /*start of resolve issue modal*/

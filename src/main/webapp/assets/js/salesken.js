@@ -20,14 +20,8 @@ $( document ).ready(function() {
     	sanitize:false,html:true
     	});
     }); 
-    
- 
-	
-  
-	
-	
 		
-try{
+/*try{
 
 jQuery.validator.setDefaults({
 		
@@ -44,7 +38,7 @@ jQuery.validator.setDefaults({
 }catch(error){
 	console.log(error)
 }
-
+*/
 
 });
 
@@ -176,6 +170,3 @@ function load(){
 	    }
 	  }
 	}
-	
-	
-		

@@ -1835,18 +1835,18 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 }
 
 /* start of task detail vertical tab */
-#taskdetail-tab-list {
+.taskdetail-tab-list {
 	background-color: #f9f9f9 !important;
 }
 
-#taskdetail-tab-list>.nav-link {
+.taskdetail-tab-list>.nav-link {
 	color: #4d4f5c;
 	font-size: 13px;
 	background: transparent;
 	min-width: 140px;
 }
 
-#taskdetail-tab-list>.active {
+.taskdetail-tab-list>.active {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
 	box-shadow: -18px 14px 21px #e6e6e6 !important;
@@ -1862,7 +1862,7 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 	margin-right: -4px;
 }
 
-#taskdetail-tab-list>.nav-link:hover {
+.taskdetail-tab-list>.nav-link:hover {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
 	/*  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;  	  */
