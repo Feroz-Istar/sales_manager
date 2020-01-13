@@ -92,17 +92,26 @@
 								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="ongoing_reset" data-type="ongoing" onclick="resetFilters(this)">Reset</button>
 							</div>
 						</div>
-						<div class="row very-light-pink-grey-bg m-0 " id="ongoing_tab_content_row">
-							<!-- start of ongoing tab   -->
-							<div class="col-md-3 p-0 border-right pl-20">
-								<div class="nav flex-column nav-pills taskdetail-tab-list" id="ongoing_tab" role="tablist" aria-orientation="vertical"></div>
-							</div>
-							<!-- end of ongoing tab   -->
-							<!-- start of ongoing tab  content -->
-							<div class="col-md-9 bg-white p-0 position-relative" id="">
-								<div class="tab-content" id="ongoing_tab_content"></div>
-							</div>
-							<!-- end of ongoing tab  content -->
+						<div class="row very-light-pink-grey-bg m-0 " id="ongoing_tab_content_row" style="min-height:590px">
+								<div class="col-md-12 p-0  " id="ongoing_no_data " style="display:none">
+									<div class="d-flex justify-content-center h-100 align-items-center">
+										<div class=" d-flex flex-column text-center">
+											<img src="<%=baseURL%>assets/image/timer.svg" alt="lost" class="pb-25 pt-25">
+											<div class="f-20 fw-500 brownish-grey">No data yet</div>
+											<div class="f-14 brown-grey">Update the PersonaCharacteristics</div>
+										</div>
+									</div>
+								</div>
+						<!-- 	start of ongoing tab   -->
+						<div class="col-md-3 p-0 border-right pl-20">
+							<div class="nav flex-column nav-pills taskdetail-tab-list" id="ongoing_tab" role="tablist" aria-orientation="vertical"></div> 
+							</div> 
+						<!--  end of ongoing tab    -->
+						<!-- start of ongoing tab  content  -->
+ 							<div class="col-md-9 bg-white p-0 position-relative" id=""> 
+								<div class="tab-content h-100" id="ongoing_tab_content"></div>
+ 							</div>
+<!-- 							end of ongoing tab  content -->
 						</div>
 					</div>
 					<!-- end of main ongoing tab  -->
@@ -122,13 +131,22 @@
 							</div>
 						</div>
 						<div class="row very-light-pink-grey-bg m-0" id="upcoming_tab_content_row">
+						<div class="col-md-12 p-0  " id="upcoming_no_data " style="display:none">
+									<div class="d-flex justify-content-center h-100 align-items-center">
+										<div class=" d-flex flex-column text-center">
+											<img src="<%=baseURL%>assets/image/timer.svg" alt="lost" class="pb-25 pt-25">
+											<div class="f-20 fw-500 brownish-grey">No data yet</div>
+											<div class="f-14 brown-grey">Update the PersonaCharacteristics</div>
+										</div>
+									</div>
+								</div>
 							<!-- start of upcoming tab   -->
 							<div class="col-md-3 p-0 border-right pl-20" id="">
 								<div class="nav flex-column nav-pills  taskdetail-tab-list" id="upcoming_tab" role="tablist" aria-orientation="vertical"></div>
 							</div>
 							<!-- end of upcoming tab   -->
 							<div class="col-md-9 bg-white p-0">
-								<div class="tab-content" id="upcoming_tab_content"></div>
+								<div class="tab-content h-100" id="upcoming_tab_content"></div>
 							</div>
 							<!-- start of upcoming tab content  -->
 						</div>
@@ -150,6 +168,15 @@
 							</div>
 						</div>
 						<div class="row very-light-pink-grey-bg m-0" id="completed_tab_content_row">
+							<div class="col-md-12 p-0  " id="completed_no_data " style="display:none">
+									<div class="d-flex justify-content-center h-100 align-items-center">
+										<div class=" d-flex flex-column text-center">
+											<img src="<%=baseURL%>assets/image/timer.svg" alt="lost" class="pb-25 pt-25">
+											<div class="f-20 fw-500 brownish-grey">No data yet</div>
+											<div class="f-14 brown-grey">Update the PersonaCharacteristics</div>
+										</div>
+									</div>
+								</div>
 							<!-- start of completed tab  -->
 							<div class="col-md-3 p-0 border-right pl-20" id="">
 								<div class="nav flex-column nav-pills taskdetail-tab-list" id="completed_tab" role="tablist" aria-orientation="vertical"></div>
@@ -157,7 +184,7 @@
 							<!-- end of completed tab  -->
 							<!-- start of completed tab content  -->
 							<div class="col-md-9 bg-white p-0">
-								<div class="tab-content " id="completed_tab_content"></div>
+								<div class="tab-content h-100 " id="completed_tab_content"></div>
 							</div>
 							<!-- end of completed tab content  -->
 						</div>
