@@ -114,7 +114,7 @@
 						<div class="modal-footer p-0 pt-30 pb-30 pr-30 pl-30">
 							<button type="button" class="btn theme_color f-14 font-weight-bold" onclick="scheduled_task_reset()">Reset</button>
 
-							<button type="button" class="btn big_button modal-submit-btn rounded-0 f-14 font-weight-bold" id="schedule" data-dismiss="modal" >SCHEDULE</button>
+							<button type="button" class="btn big_button modal-submit-btn rounded-0 f-14 font-weight-bold" id="schedule" onclick="scheduled_task_submit()" >SCHEDULE</button>
 
 						</div>
 					</div>

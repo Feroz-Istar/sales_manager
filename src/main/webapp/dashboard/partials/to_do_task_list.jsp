@@ -14,7 +14,7 @@
 	<!-- Start of creation to do items card -->
 							<div class="taskitem  pt-20 pb-20" style="">
 								<div class="d-flex flex-row align-items-center ">
-									<div class="font-weight-bold f-14 bblack"><%=taskItem.getTitle() %></div>
+									<div class="font-weight-bold f-14 bblack">Title</div>
 									<div class="dropdown ml-auto istar-dropdown dropleft f-12 brown-grey">
 										<button class="dropdown-icon-btn " type="button"
 											id="dropdownMenuButton" data-display="static"

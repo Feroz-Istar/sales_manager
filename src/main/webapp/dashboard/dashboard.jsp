@@ -219,7 +219,7 @@
 					<div class="third_main_container">
 					
 						<!-- Start of Associate Join now/Listen card-->
-						<div class="" id="ongoing_task_card" onclick="window.location.href = '/taskDetails/partials/task_lead_detail.jsp'"></div>
+						<div class="" id="ongoing_task_card" ></div>
 						<!-- End of Associate Join now/Listen card-->
 						<!-- Start of issue resolve card-->
 						<div class="" id="raise_issue_card"></div>
@@ -254,7 +254,9 @@
 	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
-	<script src="<%=baseURL%>assets/js/dashboard.js"></script>
+	<script src="<%=baseURL%>assets/js/dashboard_left.js"></script>
+	<script src="<%=baseURL%>assets/js/dashboard_right.js"></script>
+	<script src="<%=baseURL%>assets/js/dashboard_center.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>

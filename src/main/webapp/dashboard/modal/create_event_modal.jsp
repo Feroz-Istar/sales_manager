@@ -44,16 +44,16 @@
 													<span id=""> Call Task</span><i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
 												</button>
 													<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100" id="scheduleTaskType">
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+													<button class="dropdown-item" type="button" onclick="create_event_select_task_type(this)">
 														<img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
 													</button>
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+													<button class="dropdown-item" type="button" onclick="create_event_select_task_type(this)">
 														<img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
 													</button>
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+													<button class="dropdown-item" type="button" onclick="create_event_select_task_type(this)">
 														<img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
 													</button>
-													<button class="dropdown-item" type="button" onclick="create_event_changecontent(this)">
+													<button class="dropdown-item" type="button" onclick="create_event_select_task_type(this)">
 														<img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
 													</button>
 												</div>
@@ -96,7 +96,7 @@
 						</div>
 						<div class="modal-footer p-0 pt-30 pb-30 pl-30	pr-30">
 							<button type="submit" class="btn theme_color f-14 font-weight-bold m-0 pr-20" onclick="create_event_reset()">Reset All</button>
-							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" id="create"  >CREATE</button>
+							<button type="button" class="btn big_button rounded-0 f-14 font-weight-bold m-0" onclick="create_event_submit()" >CREATE</button>
 						</div>
 					</div>
 				</div>
