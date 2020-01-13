@@ -5,9 +5,36 @@
 		$('#upcoming_tab_content').empty();
 		$('#completed_tab').empty();
 		$('#completed_tab_content').empty();
+		$('#ongoing_filter_selections').find('.col-md-10.d-flex').empty();
+		$('#ongoing_filter_selections').hide();
+		var deal_value = $('#ongoing_deal').attr('data-name');
+		var deal_value_id = $('#ongoing_deal').attr('data-id');
+		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
+			$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(deal_value,deal_value_id,"ongoing_deal_value"));
+			$('#ongoing_filter_selections').show();
+		}
 		
+		var stage = $('#ongoing_stage').attr('data-name');
+		var stage_id = $('#ongoing_stage').attr('data-id');
+		if(stage!="" && stage!= undefined && stage_id!="" && stage_id != undefined){
+			$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(stage,stage_id,"ongoing_stage"));
+			$('#ongoing_filter_selections').show();
+		}
 		
+		var activity = $('#ongoing_activity').attr('data-name');
+		var activity_id = $('#ongoing_activity').attr('data-id');
+		if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
+			$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(activity,activity_id,"ongoing_activity"));
+			$('#ongoing_filter_selections').show();
+		}
 		
+		var status = $('#ongoing_status').attr('data-name');
+		var status_id = $('#ongoing_status').attr('data-id');
+		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
+			$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(status,status_id,"ongoing_status"));
+			$('#ongoing_filter_selections').show();
+		}
+	
 		
 		var ongoingTask_array=[];
 		for(var i =0;i<4;i++){
@@ -55,6 +82,8 @@
 				 var id =  $(e.target).data('id');
 				 populateOngoingTabContent(id);
 				});
+			
+			 
 		});	
 	}
 	
@@ -79,4 +108,7 @@
 	/* end of  js function for Ongoing Tab*/
 	
 	
-	
+	function getfilterhtml(filter, id, filter_type){
+		return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
+				'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removeOngoingFilter(this)"></i> </button>'
+	}
