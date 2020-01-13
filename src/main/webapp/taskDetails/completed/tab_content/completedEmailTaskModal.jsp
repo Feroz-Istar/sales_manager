@@ -280,5 +280,5 @@
 		</div>
 	</div>
 
-<script src="<%=baseURL%>assets/js/taskdetail/completed_email.js"> </script>
+<script src="<%=baseURL%>assets/js/taskdetail/completed/completed_email.js"> </script>
 

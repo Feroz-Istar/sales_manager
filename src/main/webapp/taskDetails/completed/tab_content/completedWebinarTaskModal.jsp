@@ -398,7 +398,7 @@
 	</div>
 </div>
 
-<script src="<%=baseURL%>assets/js/taskdetail/completed_webinar.js"> </script>
+<script src="<%=baseURL%>assets/js/taskdetail/completed/completed_webinar.js"> </script>
 
 
 

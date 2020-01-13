@@ -405,7 +405,7 @@
 	</div>
 </div>
 
-<script src="<%=baseURL%>assets/js/taskdetail/completed_call.js"> </script>
+<script src="<%=baseURL%>assets/js/taskdetail/completed/completed_call.js"> </script>
 
 
 
