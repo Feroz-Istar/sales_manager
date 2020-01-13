@@ -30,6 +30,10 @@ $(document).ready(function() {
 		$('#upcoming_tab_content').empty();
 		$('#completed_tab').empty();
 		$('#completed_tab_content').empty();
+		
+		
+		
+		
 		var ongoingTask_array=[];
 		for(var i =0;i<4;i++){
 			var ongoingTask={};
@@ -72,7 +76,7 @@ $(document).ready(function() {
 			populateOngoingTabContent(first_ongoing_id);
 			/*ongoing tab change event*/
 			 $('#ongoing_tab').on('shown.bs.tab', function (e) {
-				 console.log( e.target) // newly activated tab
+				
 				 var id =  $(e.target).data('id');
 				 populateOngoingTabContent(id);
 				});
@@ -91,10 +95,10 @@ $(document).ready(function() {
 	}
 	
 	function fetchOngoingTab(ongoingTask){
-		return $.post(contextPath+"taskDetails/tabs/ongoing_tab.jsp",JSON.stringify(ongoingTask));
+		return $.post(contextPath+"taskDetails/ongoing/tab/ongoing_tab.jsp",JSON.stringify(ongoingTask));
 	}	
 	function fetchOngoingTabContent(ongoingTask){
-		return $.post(contextPath+"taskDetails/tabcontent/ongoing_tab_contents/ongoing_tab_content.jsp",JSON.stringify(ongoingTask));
+		return $.post(contextPath+"taskDetails/ongoing/tab_content/ongoing_tab_content.jsp",JSON.stringify(ongoingTask));
 	}
 	
 	/* end of  js function for Ongoing Tab*/
@@ -149,7 +153,7 @@ $(document).ready(function() {
 			populateCompletedTabContent(first_completed_id);
 			/*completed tab change event*/
 			 $('#completed_tab').on('shown.bs.tab', function (e) {
-				 console.log( e.target) // newly activated tab
+				
 				 var id =  $(e.target).data('id');
 				 var tasktype =  $(e.target).data('tasktype');
 				 populateCompletedTabContent(id,tasktype);
@@ -168,18 +172,18 @@ $(document).ready(function() {
 	}
 	
 	function fetchCompletedTab(completedTask){
-		return $.post(contextPath+"taskDetails/tabs/completed_tab.jsp",JSON.stringify(completedTask));
+		return $.post(contextPath+"taskDetails/completed/tab/completed_tab.jsp",JSON.stringify(completedTask));
 	}	
 	function  fetchCompletedTabContent(completedTask){
 		switch(completedTask.tasktype){
 		case "SALES_CALL_TASK":
-		return $.post(contextPath+"taskDetails/tabcontent/completed_tab_contents/completedCallTaskModal.jsp",JSON.stringify(completedTask));
+		return $.post(contextPath+"taskDetails/completed/tab_content/completedCallTaskModal.jsp",JSON.stringify(completedTask));
 		case "SALES_EMAIL_TASK":
-		return $.post(contextPath+"taskDetails/tabcontent/completed_tab_contents/completedEmailTaskModal.jsp",JSON.stringify(completedTask));
+		return $.post(contextPath+"taskDetails/completed/tab_content/completedEmailTaskModal.jsp",JSON.stringify(completedTask));
 		case "SALES_WEBINAR_TASK":
-		return $.post(contextPath+"taskDetails/tabcontent/completed_tab_contents/completedWebinarTaskModal.jsp",JSON.stringify(completedTask));
+		return $.post(contextPath+"taskDetails/completed/tab_content/completedWebinarTaskModal.jsp",JSON.stringify(completedTask));
 		default:
-			return $.post(contextPath+"taskDetails/tabcontent/completed_tab_contents/completedCallTaskModal.jsp",JSON.stringify(completedTask));
+			return $.post(contextPath+"taskDetails/completed/tab_content/completedCallTaskModal.jsp",JSON.stringify(completedTask));
 		}
 	
 	}
@@ -217,7 +221,7 @@ function loadUpcomingTab(){
 		populateUpcomingTabContent(first_upcoming_id);
 		/*upcoming tab change event*/
 		 $('#upcoming_tab').on('shown.bs.tab', function (e) {
-			 console.log( e.target) // newly activated tab
+			 
 			 var id =  $(e.target).data('id');
 			 populateUpcomingTabContent(id);
 
@@ -234,10 +238,10 @@ function populateUpcomingTabContent(first_upcoming_id){
 });
 }
 function fetchUpcomingTab(upcomingTask){
-	return $.post(contextPath+"taskDetails/tabs/upcoming_tab.jsp",JSON.stringify(upcomingTask));
+	return $.post(contextPath+"taskDetails/upcoming/tab/upcoming_tab.jsp",JSON.stringify(upcomingTask));
 }	
 function fetchUpcomingTabContent(upcomingTask){
-	return $.post(contextPath+"taskDetails/tabcontent/upcoming_tab_contents/upcoming_tab_content.jsp",JSON.stringify(upcomingTask));
+	return $.post(contextPath+"taskDetails/upcoming/tab_content/upcoming_tab_content.jsp",JSON.stringify(upcomingTask));
 }
 /* end of  js function for upcoming Tab*/	
 
@@ -453,7 +457,9 @@ function fetchUpcomingTabContent(upcomingTask){
 	
 	/*	start of agent filter drop down for each main tab*/ 
 	$.get(contextPath+"taskDetails/partials/upcoming_agent_filter_drop_down.jsp", function( data ) {
-		  $( "#upcomingTab-tabContent" ).html( data );
+	console.log(data)
+		 /* $( "#upcomingTab-tabContent" ).html( data );*/
+	$('#upcomingTab-tabContent').html(data)
 		});
 	
 	$.get(contextPath+"taskDetails/partials/ongoing_agent_filter_drop_down.jsp", function( data ) {
@@ -461,6 +467,7 @@ function fetchUpcomingTabContent(upcomingTask){
 		});
 	
 	$.get(contextPath+"taskDetails/partials/complete_agent_filter_drop_down.jsp", function( data ) {
+		
 		  $( "#completedTabContent" ).html( data );
 		});
 	/*	end of agent filter drop down for each main tab*/ 

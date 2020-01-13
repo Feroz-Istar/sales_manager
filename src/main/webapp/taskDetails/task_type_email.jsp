@@ -22,7 +22,7 @@
 <style type="text/css">
 
 .templete_shadow{
-box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.2);
+box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.2);
 }
 </style>
 
@@ -42,41 +42,43 @@ box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.2);
 		<div class="container-fluid salesken_container">
 			<div class="row grey-white-bg align-items-center m-0 theme_solid_border_bottom pl-40 pr-40 pt-10 pb-10">
 				<div class="col-md-6 col-12 d-flex align-items-center p-0">
-					<i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = '../taskDetail.jsp'"></i>
+					<i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = 'taskDetail.jsp'"></i>
 					<div class="display-1 black f-20 border-right-separation pr-20  fw-500 pl-20">Donquadtech Pvt. Ltd.</div>
 					<div class="f-12 brown-grey pl-20">Dashboard</div>
 					<i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>
 					<div class="f-12 brown-grey ">Donquadtech Pvt. Ltd.</div>
 				</div>
 			</div>
-			<div class="row m-0 bg-white " style="min-height:650px">
+			<div class="row m-0 bg-white " style="min-height: 650px">
 				<div class="col-md-9 p-0 border-right pl-40 pr-30 pt-30">
-					
-							<div class="form-group ">
-								<input type="text" class="form-control  border-top-0  border-right-0 border-left-0 rounded-0 removefocus" id="recipients" placeholder="Recipients" aria-label="recipients">
-							</div>
-							<div class="form-group ">
-								<input type="text" class="form-control  border-top-0  border-right-0 border-left-0 rounded-0  removefocus" id="subject" placeholder="Subject" aria-label="recipients">
-							</div>
-							<div id="summernote"></div>
+					<div class="form-group ">
+						<input type="text" class="form-control  border-top-0  border-right-0 border-left-0 rounded-0 removefocus" id="recipients" placeholder="Recipients" aria-label="recipients">
+					</div>
+					<div class="form-group ">
+						<input type="text" class="form-control  border-top-0  border-right-0 border-left-0 rounded-0  removefocus" id="subject" placeholder="Subject" aria-label="recipients">
+					</div>
+					<div id="summernote"></div>
 				</div>
 				<div class="col-md-2 p-0 pl-15 pt-15 pr-45 ">
-						<div class="input-group position-relative theme_solid_border_bottom_2px pb-20 mb-10  " >
-                   				  <img src="<%=baseURL %>assets/image/search.svg" alt="edit" class=" searchBox"> <input id="taskdetail_search" class="form-control  custom-taskborder brown-grey  f-14  custom-result-selects" type="search" placeholder="Search Manual Cues" style="padding-right: 30px;height:35px !important">
-                  		</div>
-                  		<div class="f-16 greyish-brown fw-500 pb-10">Templete 01</div>
-                  		<%for(int i=0;i<3;i++){ %>
-                  		<div class="theme_solid_border p-10 d-flex mb-10 align-items-center cursor-pointer templete_card" id="templete_card<%=i%> " onclick="templete_card(this)"style="width: 245px;height: 80px;border-radius: 10px; ">
-                  			<div class="hw-60 theme_solid_border d-flex align-items-center justify-content-center" style="  border-radius: 10px;background: #eeeeee">
-                  			<img src="<%=baseURL %>assets/image/camera.svg" alt="edit" class="hw-50">
-                  			</div> 
-                  		<div class="d-flex flex-column pl-10">
-                  		<div class="f-14 black font-weight-bold">Template 01</div>
-                  		<div class="f-14 brown-grey">Lorem ipsum dolor sit </div>
-                  		</div>
-                  		</div>
-                  		<%} %>
+					<div class="input-group position-relative theme_solid_border_bottom_2px pb-20 mb-10  ">
+						<img src="<%=baseURL %>assets/image/search.svg" alt="edit" class=" searchBox" style="top: 7px !important"> <input id="taskdetail_search"
+							class="form-control  custom-taskborder brown-grey  f-14  custom-result-selects" type="search" placeholder="Search Manual Cues" style="padding-right: 30px; height: 35px !important">
+					</div>
+					<div class="f-16 greyish-brown fw-500 pb-10">Templete 01</div>
+					<%for(int i=1;i<4;i++){ %>
+					<div class="theme_solid_border p-10 d-flex mb-10 align-items-center cursor-pointer templete_card" id="templete_card<%=i %>" onclick="templete_card(this)"
+						style="width: 245px; height: 80px; border-radius: 10px;">
+						<div class="hw-60 theme_solid_border d-flex align-items-center justify-content-center" style="border-radius: 10px; background: #eeeeee">
+							<img src="<%=baseURL %>assets/image/camera.svg" alt="edit" class="hw-50">
 						</div>
+						<div class="d-flex flex-column pl-10">
+							<div class="f-14 black font-weight-bold">
+								Template 0<%=i %></div>
+							<div class="f-14 brown-grey">Lorem ipsum dolor sit</div>
+						</div>
+					</div>
+					<%} %>
+				</div>
 				<div class="col-md-1 p-0">
 					<div class=" dropleft">
 						<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="display: none" id="completed_call_task_content">Dropleft</button>
@@ -122,22 +124,23 @@ box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.2);
 
 					</ul>
 				</div>
-				
+
 			</div>
-			<div class=" templet_1" style="display:none">
-			
-			<p>Hi Jane,
-			<br>
-			<br>
-			Congratulations on your new role at ABC Inc
-			<br>
-			<br>
-			As you get your strategic plans in place for your new role at ABC Inc. we thought it would be an important time to consider how you’re instrumenting the team for the success
-			<br>
-			<br>
-			Best,<br>Salesken Pvt. Ltd.</p>
+			<div class="templet_1 " style="display: none">
+
+				<p>
+					Hi Jane, <br> <br> Congratulations on your new role at ABC Inc <br> <br> As you get your strategic plans in place for your new role at ABC Inc. we thought it would be an
+					important time to consider how you’re instrumenting the team for the success <br> <br> Best,<br>Salesken Pvt. Ltd.
+				</p>
 			</div>
 
+			<div class="templet_2" style="display: none">
+
+				<p>
+					Hi Jack, <br> <br> As you put in place your plans for XYZ Inc.’s sales sales initiative for the next year, I was wondering if you would be<br> interested in considering a strategic
+					initiative to boost your pipeline conversion rates by up to 30%?  <br> <br> Best,<br>Salesken Pvt. Ltd.
+				</p>
+			</div>
 		</div>
 
 	</main>
@@ -155,43 +158,35 @@ box-shadow:0 3px 10px 0 rgba(0, 0, 0, 0.2);
         callbacks: {
             onChange: function(contents, $editable) {
             	localStorage.setItem("notes", $('#summernote').summernote('code'))	            	
-            
             }
         }
       });
-	/* $('.templete_card').click(function(){
-		 
-		$(".templete_shadow").each(function(){
-		    $(this).removeClass('templete_shadow');
-		  });
-	
-	$(this).toggleClass("templete_shadow")
-		
-	});*/
 	$('.note-toolbar').prepend('<div class="note-btn-group btn-group note-view"><button type="button" class="btn btn-primary">Send</button></div>')  
 	$('.note-toolbar').css("top","490px");
 	$('.note-editing-area').css("top","-64px");
 	$('.note-statusbar').hide();
 	
 	function templete_card(elem){
-		/* switch(console.log($(elem).attr('id')))
+		var ids=$(elem).attr('id');
+		$('.note-editable').children().empty()
+		 switch(ids)
 		{
-		case "templete_card1 ":
-			$('.note-editable').hide();
+		case 'templete_card1':
+			$('.note-placeholder').hide();
+			$('.note-editable').children().addClass("brownish-grey");
+			$('.note-editable').children().append($('.templet_2').html());
 			break;
-		case "templete_card2 ":
-			alert('ki');
-		break;
-			default:
-			
-		} */
+		default:
+			$('.note-placeholder').hide();
+		$('.note-editable').children().addClass("brownish-grey");
+			$('.note-editable').children().append($('.templet_1').html());
+	
+		} 
 		$(".templete_shadow").each(function(){
 		    $(this).removeClass('templete_shadow');
 		  });
-	
 		$(elem).toggleClass("templete_shadow");
 	}
 	</script>
-
 </body>
 </html>
