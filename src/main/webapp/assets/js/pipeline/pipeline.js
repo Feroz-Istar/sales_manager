@@ -84,10 +84,20 @@
 	/*start of pipeline filters drop down*/
 	function pipeline_deal_value(elem){
 		$('#pipeline_deal_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#pipeline_deal_value').attr('data-id',filter_id);
+		$('#pipeline_deal_value').attr('data-name',filter);
+		pipelineTab();
 	};
 	
 	function pipeline_status(elem){
 		$('#pipeline_status_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#pipeline_status').attr('data-id',filter_id);
+		$('#pipeline_status').attr('data-name',filter);
+		pipelineTab();
 	};
 	
 	/*end of pipeline filters drop down*/
@@ -96,6 +106,22 @@
 		/* start of  js function for pipeline Tab*/
 	function pipelineTab(){
 		//empty upcoming tab & completedTab
+		
+		$('#pipeline_filter_selections').find('.col-md-10.d-flex').empty();
+		$('#pipeline_filter_selections').hide();
+		var deal_value = $('#pipeline_deal_value').attr('data-name');
+		var deal_value_id = $('#pipeline_deal_value').attr('data-id');
+		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
+			$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(deal_value,deal_value_id,"pipeline_deal_value"));
+			$('#pipeline_filter_selections').show();
+		}
+		
+		var status = $('#pipeline_status').attr('data-name');
+		var status_id = $('#pipeline_status').attr('data-id');
+		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
+			$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(status,status_id,"pipeline_status"));
+			$('#pipeline_filter_selections').show();
+		}
 		var pipeline_array=[];
 		for(var i =0;i<5;i++){
 			var pipelineStage={};
@@ -126,6 +152,7 @@
 		});	
 	}
 	
+	
 function populatePipelineTabContent(first_pipeline_id){
 		var pipelineDetails={};
 		pipelineDetails.id= first_pipeline_id;
@@ -140,10 +167,40 @@ function populatePipelineTabContent(first_pipeline_id){
 		return $.post(contextPath+"pipeline/tab/pipeline_tab.jsp",JSON.stringify(pipelineStage));
 	}	
 	function fetchPipelineTabContent(pipelineDetails){
+		
 		return $.post(contextPath+"pipeline/tab_content/pipeline_tab_content.jsp",JSON.stringify(pipelineDetails));
 	}
 	
 	/* end of  js function for pipeline Tab*/
 	
+	function getpipelinefilterhtml(filter, id, filter_type){
+		return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
+				'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removePipelineFilter(this)"></i> </button>'
+	}
 	
-	
+	function resetFilters(button){
+	var stage = $(button).data('stage');
+	switch(stage){
+	case 0:
+		$('#pipeline_filter_selections').hide();
+	default:
+		 $('#pipeline_filter_selections').hide();
+		break;
+	}
+}
+		function removePipelineFilter(button){
+		var type = $(button).data('type');
+		var filter;
+		switch(type){
+			case "pipeline_deal_value":
+				filter = $('#pipeline_deal_value')
+				break;
+			case "pipeline_status":
+				filter = $('#pipeline_status')
+				break;
+		}
+		filter.attr('data-id',"");
+		filter.attr('data-name',"");
+		pipelineTab();
+		
+	}

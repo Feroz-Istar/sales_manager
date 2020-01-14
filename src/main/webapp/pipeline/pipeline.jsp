@@ -74,22 +74,24 @@
          <div
             class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40" id="pipeline_filters">
          </div>
-         <div
-            class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10"
-            id='pipeline_filter'>
-            <div class="col-md-10 d-flex p-0">
-               <button
-                  class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
-               2 BHK Flats <i
-                  class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
-               </button>
-            </div>
-            <div class="col-md-2 text-right p-0">
-               <button type="submit"
-                  class="btn theme_color f-14 font-weight-bold p-0"
-                  id='pipeline_reset'>Reset</button>
-            </div>
-         </div>
+        <div class="col-md-12 p-0  " id="ongoing_no_data " style="display:none;">
+									<div class="d-flex justify-content-center h-100 align-items-center">
+										<div class=" d-flex flex-column text-center">
+											<img src="<%=baseURL %>assets/image/timer.svg" alt="lost" class="pb-25 pt-25">
+											<div class="f-20 fw-500 brownish-grey">No data yet</div>
+											<div class="f-14 brown-grey">Update the PersonaCharacteristics</div>
+										</div>
+									</div>
+								</div>
+        	<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="pipeline_filter_selections">
+							<div class="col-md-10 d-flex p-0">
+								
+							</div>
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="pipeline_reset" data-stage="0" onclick="resetFilters(this)">Reset</button>
+							</div>
+			</div>
+
          <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-15 pb-15" id="pipelineCard">
          </div>
          <div class="row very-light-pink-grey-bg m-0" id="pipelineTab">

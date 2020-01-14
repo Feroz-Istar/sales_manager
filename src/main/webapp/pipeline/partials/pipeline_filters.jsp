@@ -27,8 +27,8 @@
 					<div
 						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static"
 						aria-labelledby="pipeline_deal_value">
-						<button class="dropdown-item" type="button" onclick="pipeline_deal_value(this)">$1000</button>
-						<button class="dropdown-item" type="button" onclick="pipeline_deal_value(this)">$5000</button>
+						<button class="dropdown-item" type="button" data-id="1000" onclick="pipeline_deal_value(this)">1000</button>
+						<button class="dropdown-item" type="button"  data-id="5000" onclick="pipeline_deal_value(this)">5000</button>
 					</div>
 				</div>
 
@@ -43,8 +43,8 @@
 					<div
 						class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static"
 						aria-labelledby="pipeline_status">
-						<button class="dropdown-item" type="button" onclick="pipeline_status(this)">Won</button>
-						<button class="dropdown-item" type="button" onclick="pipeline_status(this)">Lost</button>
+						<button class="dropdown-item" type="button" data-id="Won" onclick="pipeline_status(this)">Won</button>
+						<button class="dropdown-item" type="button"  data-id="Lost" onclick="pipeline_status(this)">Lost</button>
 					</div>
 				</div>
 
