@@ -103,12 +103,18 @@
 	/*end of pipeline filters drop down*/
 	
 	
+	$("#pipeline_search").keyup(function(){
+		console.log($('#pipeline_search').val());
+		 pipelineTab();
+	}); 
+	
 		/* start of  js function for pipeline Tab*/
 	function pipelineTab(){
 		//empty upcoming tab & completedTab
-		
 		$('#pipeline_filter_selections').find('.col-md-10.d-flex').empty();
 		$('#pipeline_filter_selections').hide();
+		
+	/*	start of pipeline deal value filtering*/
 		var deal_value = $('#pipeline_deal_value').attr('data-name');
 		var deal_value_id = $('#pipeline_deal_value').attr('data-id');
 		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
@@ -116,6 +122,7 @@
 			$('#pipeline_filter_selections').show();
 		}
 		
+	/*	start of pipeline stage filtering*/
 		var status = $('#pipeline_status').attr('data-name');
 		var status_id = $('#pipeline_status').attr('data-id');
 		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
@@ -152,8 +159,8 @@
 		});	
 	}
 	
-	
-function populatePipelineTabContent(first_pipeline_id){
+/*	start of pipeline tab content populate*/
+	function populatePipelineTabContent(first_pipeline_id){
 		var pipelineDetails={};
 		pipelineDetails.id= first_pipeline_id;
 		var vv = fetchPipelineTabContent(pipelineDetails);
@@ -162,10 +169,12 @@ function populatePipelineTabContent(first_pipeline_id){
 			$('#piplelinestage-tabContent').append(data);
 		});
 	}
-	
+				/*	start of pipeline tab fetching*/
 	function fetchpipelineTab(pipelineStage){
 		return $.post(contextPath+"pipeline/tab/pipeline_tab.jsp",JSON.stringify(pipelineStage));
 	}	
+	
+				/*	start of pipeline tab content fetching*/
 	function fetchPipelineTabContent(pipelineDetails){
 		
 		return $.post(contextPath+"pipeline/tab_content/pipeline_tab_content.jsp",JSON.stringify(pipelineDetails));
@@ -173,11 +182,13 @@ function populatePipelineTabContent(first_pipeline_id){
 	
 	/* end of  js function for pipeline Tab*/
 	
+/*	start of  pipeline filter button label*/	
 	function getpipelinefilterhtml(filter, id, filter_type){
 		return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
 				'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removePipelineFilter(this)"></i> </button>'
 	}
 	
+	/*	start of reset pipeline filter button label*/
 	function resetFilters(button){
 	var stage = $(button).data('stage');
 	switch(stage){
@@ -188,7 +199,9 @@ function populatePipelineTabContent(first_pipeline_id){
 		break;
 	}
 }
-		function removePipelineFilter(button){
+	/*	start of remove pipeline filter button label*/
+
+	function removePipelineFilter(button){
 		var type = $(button).data('type');
 		var filter;
 		switch(type){
@@ -204,3 +217,5 @@ function populatePipelineTabContent(first_pipeline_id){
 		pipelineTab();
 		
 	}
+		
+		
