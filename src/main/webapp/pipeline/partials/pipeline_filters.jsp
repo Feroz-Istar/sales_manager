@@ -79,21 +79,9 @@
 										</div>
 									</div>
 									
-									<div class="agent-team-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
+									<div class="pipeline-agent-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
 									
-									<%for(int i=0; i<10;i++){ %>
-                                    <div class="d-flex align-items-center pt-3">
-                                    
-                                    
-				<input class="istar-checkbox pipelineagentcheckbox" data-id="<%=i %>" id="pipeline_associate-checkbox<%=i %>" type="checkbox">
-                                        <label class="istar-checkbox-style" for="pipeline_associate-checkbox<%=i %>"></label>
-						<img alt="Lead Image" title="Lead Name" src ="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-					  <div>
-                                        	<div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-                                        	<div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-                                        </div>
-					</div>
-					<%} %>
+						
                                     </div>
                                     
                                      		
@@ -110,14 +98,8 @@
 										</div>
 									</div>
 									
-									<div class="mb-2 agent-team-list" style="overflow-x: hidden; overflow-y:auto;">
-									<%for(int j=0; j<10;j++){ %>
-									<div class="d-flex align-items-center pt-3">
-                                        <input class="istar-checkbox pipelineteamcheckbox" data-id="<%=j %>" id="pipeline_team-checkbox<%=j %>" type="checkbox">
-                                        <label class="istar-checkbox-style" for="pipeline_team-checkbox<%=j%>"></label>
-                                        <div class="f-12 ml-2 brownish-grey">Team -0<%=j%></div>
-                                    </div>
-                                    <%} %>
+									<div class="mb-2 pipeline-team-list" style="overflow-x: hidden; overflow-y:auto;">
+									
                                     </div>
                                     
                                      	

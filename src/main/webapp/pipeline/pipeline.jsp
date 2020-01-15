@@ -72,7 +72,8 @@
             </div>
          </div>
          <div
-            class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40" id="pipeline_filters">
+            class="row align-items-center bg-white theme_solid_border_bottom m-0  pl-40 pt-15 pb-15 pr-40" id="pipeline-filter-row">
+            <jsp:include page="partials/pipeline_filters.jsp"></jsp:include>
          </div>
         <div class="col-md-12 p-0  " id="ongoing_no_data " style="display:none;">
 									<div class="d-flex justify-content-center h-100 align-items-center">
