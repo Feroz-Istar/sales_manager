@@ -104,15 +104,18 @@
                <div class="tab-content" id="piplelinestage-tabContent">
                </div>
             </div>
-            <!-- start of change stage modal -->
-            <jsp:include page="modals/change_stage_modal.jsp"></jsp:include>
-            <!-- end of change stage modal -->
-            <!-- start of change owner modal -->
-            <jsp:include page="modals/change_owner_modal.jsp"></jsp:include>
-            <!-- end of change owner modal -->
+           
+           
          </div>
          </div>
       </main>
+      
+       <!-- start of change owner modal -->
+            <jsp:include page="modals/change_owner_modal.jsp"></jsp:include>
+            <!-- end of change owner modal -->
+       <!-- start of change stage modal -->
+            <jsp:include page="modals/change_stage_modal.jsp"></jsp:include>
+            <!-- end of change stage modal -->
       <script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
       <script src="<%=baseURL%>assets/js/popper.min.js"></script>
       <script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
