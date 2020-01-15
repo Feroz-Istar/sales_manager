@@ -382,22 +382,22 @@ function removeAllDataAttributes(elem){
 		var userList=[{
 			id:1,
 			name:"Nice",
-			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			image:contextPath+"/assets/image/11.png",
 			teamName:"Team - 01"
 		},{
 			id:2,
 			name:"wassup???",
-			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			image:contextPath+"/assets/image/11.png",
 			teamName:"Team - 02"
 		},{
 			id:6,
 			name:"Meet",
-			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			image:contextPath+"/assets/image/11.png",
 			teamName:"Team - 03"
 		},{
 			id:192,
 			name:"You",
-			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			image:contextPath+"/assets/image/11.png",
 			teamName:"Team - 04"
 		}]
 		populateAgentListDropDown(userList,"upcoming")
