@@ -5,15 +5,27 @@ $(document).ready(function() {
 	$($('.salesken.navbar-nav>li')[1]).addClass('active');		
 	
 	loadOngoingTab();
+	loadAllAgentFilterTab();
+	loadAllTeamFilterTab();
 	
+	$('.filtertabs>li>.nav-link').click(function(e) {
+		$($(this).attr('href') + '-tab').tab('show')
+	});	
 	$('#mainTask-tabs>li>a').on('shown.bs.tab', function(e) {
 
 		var target = $(e.target).html(); // activated tab
 		console.log(target);
+		$('.filter-menu.dropdown-menu').click(function(e) {
+		    e.stopPropagation();
+		});
+		$('.filtertabs>li>.nav-link').click(function(e) {
+			$($(this).attr('href') + '-tab').tab('show')
+		});	
+				
 		switch (target) {
 		case "Upcoming":
 			loadUpcomingTab();
-		break;
+			break;
 		case "Completed":
 			loadCompletedTab();
 			break;
@@ -23,34 +35,43 @@ $(document).ready(function() {
 		}
 	});
 	
-	$('.filtertabs>li>.nav-link').click(
-		function(e) {
-			$($(this).attr('href') + '-tab').tab('show')
-		});
+	
 	$('#upcoming_datepicker').datepicker({
-		autoclose : true
+		autoclose : true,
+	})
+	$('#upcoming_datepicker').change(function(){
+		$('#upcoming_datepicker').attr('data-id',this.value)
+		$('#upcoming_datepicker').attr('data-name',this.value)
+		loadUpcomingTab();
 	})
 	$('#completed_datepicker').datepicker({
-		autoclose : true
+		autoclose : true,
+		
 	})
+	$('#completed_datepicker').change(function(dateText) {
+		$('#completed_datepicker').attr('data-id',this.value)
+		$('#completed_datepicker').attr('data-name',this.value)
+		loadCompletedTab();
+    });
 
+	
 			
-								
 								
 								
 								
 	$('#ongoing_team_submit').click(function(e) {
 		var agent_array=[];
+		var agent_name=[];
 		var team_array=[];
 		
 		$('.ongoingagentcheckbox').each(function(){
 			if($(this).prop('checked')===true){
-				agent_array.push($(this).data('id'));
+				agent_array.push($(this).data('user'));
 			}
 		});
 		$('.ongoingteamcheckbox').each(function(){
 			if($(this).prop('checked')===true){
-				team_array.push($(this).data('id'));
+				team_array.push($(this).data('team'));
 			}
 		});
 		if(agent_array.length==0 && team_array.length==0){
@@ -58,8 +79,21 @@ $(document).ready(function() {
 		}else{
 			$('#ongoing_dropdown').dropdown('hide');
 		}
-		console.log(agent_array)
-		console.log(team_array)
+		$('#ongoing_dropdown').attr('data-agents',JSON.stringify(agent_array));
+		$('#ongoing_dropdown').attr('data-teams',JSON.stringify(team_array));
+		
+		$('.ongoingagentcheckbox').each(function(){
+			if($(this).prop('checked')===true){
+				$(this).prop("checked", false);
+			}
+		});
+		$('.ongoingteamcheckbox').each(function(){
+			if($(this).prop('checked')===true){
+				$(this).prop("checked", false);
+			}
+		});
+		loadOngoingTab();
+		
 	});
 	
 	
@@ -69,12 +103,12 @@ $(document).ready(function() {
 		
 		$('.upcomingagentcheckbox').each(function(){
 			if($(this).prop('checked')===true){
-				agent_array.push($(this).data('id'));
+				agent_array.push($(this).data('user'));
 			}
 		});
 		$('.upcomingteamcheckbox').each(function(){
 			if($(this).prop('checked')===true){
-				team_array.push($(this).data('id'));
+				team_array.push($(this).data('team'));
 			}
 		});
 		
@@ -83,8 +117,20 @@ $(document).ready(function() {
 		}else{
 			$('#upcoming_dropdown').dropdown('hide');
 		}
-		console.log(agent_array)
-		console.log(team_array)
+		$('#upcoming_dropdown').attr('data-agents',JSON.stringify(agent_array));
+		$('#upcoming_dropdown').attr('data-teams',JSON.stringify(team_array));
+		
+		$('.upcomingagentcheckbox').each(function(){
+			if($(this).prop('checked')===true){
+				$(this).prop("checked", false);
+			}
+		});
+		$('.upcomingteamcheckbox').each(function(){
+			if($(this).prop('checked')===true){
+				$(this).prop("checked", false);
+			}
+		});
+		loadUpcomingTab();
 
 	});
 	
@@ -96,12 +142,12 @@ $(document).ready(function() {
 			
 			$('.completedagentcheckbox').each(function(){
 				if($(this).prop('checked')===true){
-					agent_array.push($(this).data('id'));
+					agent_array.push($(this).data('user'));
 				}
 			});
 			$('.completedteamcheckbox').each(function(){
 				if($(this).prop('checked')===true){
-					team_array.push($(this).data('id'));
+					team_array.push($(this).data('team'));
 				}
 			});
 			
@@ -110,8 +156,20 @@ $(document).ready(function() {
 			}else{
 				$('#completed_dropdown').dropdown('hide');
 			}
-			console.log(agent_array)
-			console.log(team_array)
+			$('#completed_dropdown').attr('data-agents',JSON.stringify(agent_array));
+			$('#completed_dropdown').attr('data-teams',JSON.stringify(team_array));
+			
+			$('.completedagentcheckbox').each(function(){
+				if($(this).prop('checked')===true){
+					$(this).prop("checked", false);
+				}
+			});
+			$('.completedteamcheckbox').each(function(){
+				if($(this).prop('checked')===true){
+					$(this).prop("checked", false);
+				}
+			});
+			loadCompletedTab()
 		});
 		$('#ongoing-filter').on('show.bs.dropdown', function () {
 			var new_height= $('#ongoing_filter_selections').outerHeight() + $('#taskdetail-tab-listContent').outerHeight() ;
@@ -144,20 +202,49 @@ $('.filter-menu.dropdown-menu').click(function(e) {
 	e.stopPropagation();
 });
 
+
+//<---------------------------RESET FILTERS LOGIC
+//common function to reset each tab's filter
 function resetFilters(button){
 	var tab = $(button).data('type');
 	switch(tab){
 	case "upcoming":
-		$('#upcoming_filter_selections').hide();
+			$('#upcoming_filter_selections').hide();
+			$('#nav-upcoming').find('.select_focus').each(function(){
+				removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+			});
+			removeAllDataAttributes($("#upcoming_dropdown"));
+			removeAllDataAttributes($("#upcoming_datepicker"));
+			loadUpcomingTab();
 		break;
 	case "completed":
-		$('#completed_filter_selections').hide();
+			$('#completed_filter_selections').hide();
+			$('#nav-completed').find('.select_focus').each(function(){
+				removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+			});
+			removeAllDataAttributes($("#completed_dropdown"));
+			removeAllDataAttributes($("#completed_datepicker"));
+			loadCompletedTab();
 		break;
 	default:
-		 $('#ongoing_filter_selections').hide();
+		 	$('#ongoing_filter_selections').hide();
+			$('#nav-ongoing').find('.select_focus').each(function(){
+				removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+			});
+			removeAllDataAttributes($("#ongoing_dropdown"));
+			loadOngoingTab();
 		break;
 	}
 }
+//remove given data attributes from the element given
+function removeAllDataAttributes(elem){
+		elem.attr('data-id',"");
+		elem.attr('data-name',"");
+		elem.attr('data-agents',null);
+		elem.attr('data-teams',null);
+}
+//------------------------------------------------------>
+
 
 	/*	start of filter drop down*/ 
 	function ongoing_deal_dropdown(elem){
@@ -193,68 +280,173 @@ function resetFilters(button){
 	};
 	
 	function upcoming_stage_dropdown(elem){
-		$('#upcoming_stage_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#upcoming_stage').attr('data-id',filter_id);
+		$('#upcoming_stage').attr('data-name',filter);
+		loadUpcomingTab();
 	};
 	function upcoming_activity_dropdown(elem){
-		$('#upcoming_activity_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#upcoming_activity').attr('data-id',filter_id);
+		$('#upcoming_activity').attr('data-name',filter);
+		loadUpcomingTab();
 	};
 	function upcoming_status_dropdown(elem){
-		$('#upcoming_status_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#upcoming_status').attr('data-id',filter_id);
+		$('#upcoming_status').attr('data-name',filter);
+		loadUpcomingTab();
 	};
 	
 	
 	function completed_stage_dropdown(elem){
-		$('#completed_stage_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#completed_stage').attr('data-id',filter_id);
+		$('#completed_stage').attr('data-name',filter);
+		loadCompletedTab();
 	};
 	
 	function completed_activity_dropdown(elem){
-		$('#completed_activity_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#completed_activity').attr('data-id',filter_id);
+		$('#completed_activity').attr('data-name',filter);
+		loadCompletedTab();
 	};
 	
 	function completed_status_dropown(elem){
-		$('#completed_status_drop').html($(elem).text());
+		var filter = $(elem).text();
+		var filter_id = $(elem).data('id');
+		$('#completed_status').attr('data-id',filter_id);
+		$('#completed_status').attr('data-name',filter);
+		loadCompletedTab();
 	};
 	
 	function removeOngoingFilter(button){
 		var type = $(button).data('type');
+		var tabType=type.split('_')[0];
+		var id=$(button).parent().data('id')
 		var filter;
 		switch(type){
-			case "ongoing_deal_value":
-				filter = $('#ongoing_deal')
+			case tabType+"_deal_value":
+				filter = $('#'+tabType+'_deal')
 				break;
-			case "ongoing_stage":
-				filter = $('#ongoing_stage')
+			case tabType+"_stage":
+				filter = $('#'+tabType+'_stage')
 				break;
-			case "ongoing_activity":
-				filter = $('#ongoing_activity')
+			case tabType+"_activity":
+				filter = $('#'+tabType+'_activity')
 				break;
-			case "ongoing_status":
-				filter = $('#ongoing_status')
+			case tabType+"_status":
+				filter = $('#'+tabType+'_status')
 				break;
+			case tabType+"_time":
+				filter = $('#'+tabType+'_datepicker')
+				break;
+			case tabType+"_agents":
+				filter = $('#'+tabType+'_dropdown')
+				var agents = JSON.parse($('#'+tabType+'_dropdown').attr('data-agents'));
+				agents=agents.filter(function(agent){return agent.id!==id;})
+				filter.attr('data-agents',JSON.stringify(agents))
+				break;
+			case tabType+"_teams":
+				filter = $('#'+tabType+'_dropdown')
+				var teams = JSON.parse($('#'+tabType+'_dropdown').attr('data-teams'));
+				teams=teams.filter(function(team){return team.id!==id;})
+				filter.attr('data-teams',JSON.stringify(teams))
+				break;
+				
 		}
 		filter.attr('data-id',"");
 		filter.attr('data-name',"");
-		loadOngoingTab();
+		switch(tabType){
+			case "ongoing":
+				loadOngoingTab();
+				break;
+			case "upcoming":
+				loadUpcomingTab();
+				break;
+			case "completed":
+				loadCompletedTab();
+				break;
+		}
+		
 	}
-	
+//<------------------------AGENT TEAM FILTER DROP DOWN POPULATE
+	//populate agents in all filters
+	function loadAllAgentFilterTab(){
+		var userList=[{
+			id:1,
+			name:"Nice",
+			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			teamName:"Team - 01"
+		},{
+			id:2,
+			name:"wassup???",
+			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			teamName:"Team - 02"
+		},{
+			id:6,
+			name:"Meet",
+			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			teamName:"Team - 03"
+		},{
+			id:192,
+			name:"You",
+			image:"http://localhost:8080/salesken_v2//assets/image/11.png",
+			teamName:"Team - 04"
+		}]
+		populateAgentListDropDown(userList,"upcoming")
+		populateAgentListDropDown(userList,"ongoing")
+		populateAgentListDropDown(userList,"completed")
+	}
+	//populate teams in all filters
+	function loadAllTeamFilterTab(){
+		var teamList=[{
+			id:1,
+			name:"Team - 01"
+		},{
+			id:12,
+			name:"Team - 02"
+		},{
+			id:62,
+			name:"Team - 03"
+		},{
+			id:162,
+			name:"Team - 04"
+		}]
+		populateTeamListDropDown(teamList,"upcoming")
+		populateTeamListDropDown(teamList,"ongoing")
+		populateTeamListDropDown(teamList,"completed")
+	}
+	//Common function to populate Agents in Drop down for all tabs
+	function populateAgentListDropDown(userList,tabName){
+		 for(var i=0;i<userList.length;i++){
+			 	
+				var html='<div class="d-flex align-items-center pt-3">'+
+					'<input class="istar-checkbox '+tabName+'agentcheckbox" data-user=\''+JSON.stringify(userList[i])+'\'data-id="'+userList[i].id+'" id="'+tabName+'_associate-checkbox'+userList[i].id+'" type="checkbox">'+
+					'<label class="istar-checkbox-style" for="'+tabName+'_associate-checkbox'+userList[i].id+'"></label>'+
+					'<img alt="Agent Image" title="Agent Name" src ="'+userList[i].image+'" class="rounded-circle ml-3 mr-2 hw-40"> <div>'+
+					'<div class="f-14 font-weight-bold greyish-brown text-truncate" title="'+userList[i].name+'">'+userList[i].name+'</div>'+
+					'<div class="f-12  brownish-grey text-truncate" title="team">'+userList[i].teamName+'</div> </div></div>';
+				$('.'+tabName+'-agent-list').append(html);
+			}
+	}
+	//Common function to populate Team in Drop down for all tabs
+	function populateTeamListDropDown(teamList,tabName){
+		 for(var i=0;i<teamList.length;i++){
+				var html='<div class="d-flex align-items-center pt-3">'+
+					'<input class="istar-checkbox '+tabName+'teamcheckbox" data-team=\''+JSON.stringify(teamList[i])+'\' data-id="'+teamList[i].id+'" id="'+tabName+'_team-checkbox'+teamList[i].id+'" type="checkbox">'+
+					'<label class="istar-checkbox-style" for="'+tabName+'_team-checkbox'+teamList[i].id+'"></label><div class="f-12 ml-2 brownish-grey">'+teamList[i].name+'</div></div>';
+				$('.'+tabName+'-team-list').append(html);
+			}
+	}	
+//---------------------------------------------->
 	/*	end of filter drop down*/ 
 	
-	/*	start of agent filter drop down for each main tab*/ 
-	$.get(contextPath+"taskDetails/partials/upcoming_agent_filter_drop_down.jsp", function( data ) {
-		console.log(data)
-		 /* $( "#upcomingTab-tabContent" ).html( data );*/
-		$('#upcomingTab-tabContent').html(data)
-	});
 	
-	$.get(contextPath+"taskDetails/partials/ongoing_agent_filter_drop_down.jsp", function( data ) {
-		  $( "#ongoingTab-tabContent" ).html( data );
-	});
 	
-	$.get(contextPath+"taskDetails/partials/complete_agent_filter_drop_down.jsp", function( data ) {
-		  $( "#completedTabContent" ).html( data );
-	});
-	/*	end of agent filter drop down for each main tab*/ 
-	
-	$.get(contextPath+"taskDetails/partials/upcoming_filters.jsp", function( data ) {
-		  $( "#upcoming-results-found" ).html( data );
-	});

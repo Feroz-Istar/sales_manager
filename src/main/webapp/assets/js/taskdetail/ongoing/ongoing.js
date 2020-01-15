@@ -7,6 +7,8 @@
 		$('#completed_tab_content').empty();
 		$('#ongoing_filter_selections').find('.col-md-10.d-flex').empty();
 		$('#ongoing_filter_selections').hide();
+		
+		
 		var deal_value = $('#ongoing_deal').attr('data-name');
 		var deal_value_id = $('#ongoing_deal').attr('data-id');
 		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
@@ -34,6 +36,35 @@
 			$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(status,status_id,"ongoing_status"));
 			$('#ongoing_filter_selections').show();
 		}
+		
+		if( $('#ongoing_dropdown').attr('data-agents')!=null){
+			var agents = JSON.parse($('#ongoing_dropdown').attr('data-agents'));
+			if(agents!=null){
+				for(var i=0;i<agents.length;i++){
+					var activity_id=agents[i].id;
+					var activity=agents[i].name;
+					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
+						$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(activity,activity_id,"ongoing_agents"));
+						$('#ongoing_filter_selections').show();
+					}
+				}
+			}
+		}
+		
+		if( $('#ongoing_dropdown').attr('data-teams')!=null){
+			var teams = JSON.parse($('#ongoing_dropdown').attr('data-teams'));
+			if(teams!=null){
+				for(var i=0;i<teams.length;i++){
+					var activity_id=teams[i].id;
+					var activity=teams[i].name;
+					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
+						$('#ongoing_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(activity,activity_id,"ongoing_teams"));
+						$('#ongoing_filter_selections').show();
+					}
+				}
+			}
+		}
+		
 	
 		
 		var ongoingTask_array=[];
@@ -53,7 +84,7 @@
 				ongoingTask.taskType="SALES_WEBINAR_TASK";
 				break;
 			default:
-					ongoingTask.taskType="SALES_PRESENTATION_TASK";
+				ongoingTask.taskType="SALES_PRESENTATION_TASK";
 			}
 			ongoingTask_array.push(ongoingTask);
 		}
