@@ -12,6 +12,9 @@ function loadUpcomingTab(){
 	$('#upcoming_filter_selections').hide();
 	var filterObj={}
 	
+	/*Global Search*/
+	filterObj.search=$('#taskdetail_search').val()
+	
 	/*Selection of date filter*/
 	var time_value = $('#upcoming_datepicker').attr('data-name');
 	var time_value_id = $('#upcoming_datepicker').attr('data-id');

@@ -12,6 +12,9 @@
 		$('#completed_filter_selections').hide();
 		var filterObj={}
 		
+		/*Global Search*/
+		filterObj.search=$('#taskdetail_search').val()
+		
 		/*Selection of date filter*/
 		var time_value = $('#completed_datepicker').attr('data-name');
 		var time_value_id = $('#completed_datepicker').attr('data-id');

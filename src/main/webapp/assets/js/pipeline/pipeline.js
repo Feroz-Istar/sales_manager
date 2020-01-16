@@ -4,41 +4,40 @@
 		$('#pipeline_filter_selections').find('.filters-inside-selection').empty();
 		$('#pipeline_filter_selections').hide();
 		
+		var filterObj={}
+		
+		/*Global Search*/
+		filterObj.search=$('#pipeline_search').val()
+		
 	/*	start of pipeline deal value filtering*/
 		var deal_value = $('#pipeline_deal_value').attr('data-name');
 		var deal_value_id = $('#pipeline_deal_value').attr('data-id');
-		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
-			$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(deal_value,deal_value_id,"pipeline_deal_value"));
-			$('#pipeline_filter_selections').show();
-		}
+		filterObj.deal={};
+		addFilterSelections("pipeline","deal",deal_value,deal_value_id,filterObj.deal)
 		
 	/*	start of pipeline stage filtering*/
 		var status = $('#pipeline_status').attr('data-name');
 		var status_id = $('#pipeline_status').attr('data-id');
-		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
-			$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(status,status_id,"pipeline_status"));
-			$('#pipeline_filter_selections').show();
-		}
+		filterObj.status={};
+		addFilterSelections("pipeline","deal",status,status_id,filterObj.status)
 		
 	/*	start of Date filtering*/
 		var time_value = $('#pipeline_datepicker').attr('data-name');
 		var time_value_id = $('#pipeline_datepicker').attr('data-id');
-		if(time_value!="" && time_value!= undefined && time_value_id!="" && time_value_id != undefined){
-			$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(time_value,time_value_id,"upcoming_time"));
-			$('#pipeline_filter_selections').show();
-		}
+		filterObj.time={};
+		addFilterSelections("pipeline","time",time_value,time_value_id,filterObj.time)
 		
 	/*	start of All Agents->Individual filtering*/
 		if( $('#pipeline_dropdown').attr('data-agents')!=null){
 			var agents = JSON.parse($('#pipeline_dropdown').attr('data-agents'));
+			filterObj.agents=[]
 			if(agents!=null){
 				for(var i=0;i<agents.length;i++){
-					var activity_id=agents[i].id;
-					var activity=agents[i].name;
-					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(activity,activity_id,"pipeline_agents"));
-						$('#pipeline_filter_selections').show();
-					}
+					var agent_id=agents[i].id;
+					var agent_name=agents[i].name;
+					var agent={}
+					addFilterSelections("pipeline","agents",agent_name,agent_id,agent)
+					filterObj.agents.push(agent)
 				}
 			}
 		}
@@ -46,17 +45,20 @@
 	/*	start of All Agents->Teams filtering*/
 		if( $('#pipeline_dropdown').attr('data-teams')!=null){
 			var teams = JSON.parse($('#pipeline_dropdown').attr('data-teams'));
+			filterObj.teams=[]
 			if(teams!=null){
 				for(var i=0;i<teams.length;i++){
-					var activity_id=teams[i].id;
-					var activity=teams[i].name;
-					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(activity,activity_id,"pipeline_teams"));
-						$('#pipeline_filter_selections').show();
-					}
+					var team_id=teams[i].id;
+					var team_name=teams[i].name;
+					var team={}
+					addFilterSelections("pipeline","teams",team_name,team_id,team)
+					filterObj.teams.push(team)
 				}
 			}
 		}
+		
+		/*The Filter Object*/
+		console.log(filterObj)
 		
 	/*	start of pipeline Card population*/
 		 $( "#pipelineCard" ).empty();
@@ -221,7 +223,6 @@ $(document).ready(function() {
 	function populatePipelineTabContent(first_pipeline_id){
 		var pipelineDetails={};
 		pipelineDetails.id= first_pipeline_id;
-		console.log(pipelineDetails)
 		var vv = fetchPipelineTabContent(pipelineDetails);
 		vv.done(function(data){
 			$('#piplelinestage-tabContent').empty();
@@ -246,7 +247,15 @@ $(document).ready(function() {
 		return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
 				'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removePipelineFilter(this)"></i> </button>'
 	}
-	
+	function addFilterSelections(tab,filter,name,id,obj){
+		
+		if(name!="" && name!= undefined && id!="" && id != undefined){
+			obj.name=name;
+			obj.id=id;
+			$('#'+tab+'_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(name,id,tab+'_'+filter));
+			$('#'+tab+'_filter_selections').show();
+		}
+	}
 	/*	start of reset pipeline filter button label*/
 	function resetFilters(button){
 
@@ -270,11 +279,14 @@ $(document).ready(function() {
 		var id=$(button).parent().data('id')
 		var filter;
 		switch(type){
-			case "pipeline_deal_value":
+			case "pipeline_deal":
 				filter = $('#pipeline_deal_value')
 				break;
 			case "pipeline_status":
 				filter = $('#pipeline_status')
+				break;
+			case "pipeline_time":
+				filter = $('#pipeline_datepicker')
 				break;
 			case "pipeline_agents":
 				filter = $('#pipeline_dropdown')

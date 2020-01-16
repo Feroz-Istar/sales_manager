@@ -12,11 +12,14 @@
 		$('#ongoing_filter_selections').hide();
 		var filterObj={}
 		
+		/*Global Search*/
+		filterObj.search=$('#taskdetail_search').val()
+		
 		/*Selection of deal filter*/
 		var deal_value = $('#ongoing_deal').attr('data-name');
 		var deal_value_id = $('#ongoing_deal').attr('data-id');
 		filterObj.deal={};
-		addFilterSelections("ongoing","time",deal_value,deal_value_id,filterObj.deal)
+		addFilterSelections("ongoing","deal",deal_value,deal_value_id,filterObj.deal)
 		
 		/*Selection of stage filter*/
 		var stage = $('#ongoing_stage').attr('data-name');

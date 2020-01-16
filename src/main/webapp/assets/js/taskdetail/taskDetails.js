@@ -346,7 +346,7 @@ function removeAllDataAttributes(elem){
 		var id=$(button).parent().data('id')
 		var filter;
 		switch(type){
-			case tabType+"_deal_value":
+			case tabType+"_deal":
 				filter = $('#'+tabType+'_deal')
 				break;
 			case tabType+"_stage":
