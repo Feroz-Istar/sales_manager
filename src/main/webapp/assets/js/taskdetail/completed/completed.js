@@ -6,65 +6,69 @@
 		$('#upcoming_tab_content').empty();
 		$('#ongoing_tab').empty();
 		$('#ongoing_tab_content').empty();
+		
+		//<------------------COMPLETED TAB FILTER SELECTIONS
 		$('#completed_filter_selections').find('.filters-inside-selection').empty();
 		$('#completed_filter_selections').hide();
+		var filterObj={}
 		
+		/*Selection of date filter*/
 		var time_value = $('#completed_datepicker').attr('data-name');
 		var time_value_id = $('#completed_datepicker').attr('data-id');
-		if(time_value!="" && time_value!= undefined && time_value_id!="" && time_value_id != undefined){
-			$('#completed_filter_selections').find('.filters-inside-selection').append(getfilterhtml(time_value,time_value_id,"completed_time"));
-			$('#completed_filter_selections').show();
-		}
+		filterObj.time={};
+		addFilterSelections("completed","time",time_value,time_value_id,filterObj.time)
 		
+		/*Selection of stage filter*/
 		var stage = $('#completed_stage').attr('data-name');
 		var stage_id = $('#completed_stage').attr('data-id');
-		if(stage!="" && stage!= undefined && stage_id!="" && stage_id != undefined){
-			$('#completed_filter_selections').find('.filters-inside-selection').append(getfilterhtml(stage,stage_id,"completed_stage"));
-			$('#completed_filter_selections').show();
-		}
+		filterObj.stage={};
+		addFilterSelections("completed","stage",stage,stage_id,filterObj.stage)
 		
+		/*Selection of activity filter*/
 		var activity = $('#completed_activity').attr('data-name');
 		var activity_id = $('#completed_activity').attr('data-id');
-		if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-			$('#completed_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"completed_activity"));
-			$('#completed_filter_selections').show();
-		}
+		filterObj.activity={};
+		addFilterSelections("completed","activity",activity,activity_id,filterObj.activity)
 		
+		/*Selection of All Agents->Individual filter*/
 		var status = $('#completed_status').attr('data-name');
 		var status_id = $('#completed_status').attr('data-id');
-		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
-			$('#completed_filter_selections').find('.filters-inside-selection').append(getfilterhtml(status,status_id,"completed_status"));
-			$('#completed_filter_selections').show();
-		}
+		filterObj.status={};
+		addFilterSelections("completed","status",status,status_id,filterObj.status)
 		
 		if( $('#completed_dropdown').attr('data-agents')!=null){
 			var agents = JSON.parse($('#completed_dropdown').attr('data-agents'));
+			filterObj.agents=[]
 			if(agents!=null){
 				for(var i=0;i<agents.length;i++){
-					var activity_id=agents[i].id;
-					var activity=agents[i].name;
-					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#completed_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"completed_agents"));
-						$('#completed_filter_selections').show();
-					}
+					var agent_id=agents[i].id;
+					var agent_name=agents[i].name;
+					var agent={}
+					addFilterSelections("completed","agents",agent_name,agent_id,agent)
+					filterObj.agents.push(agent)
 				}
 			}
 		}
 		
+		/*Selection of All Agents->Team filter*/
 		if( $('#completed_dropdown').attr('data-teams')!=null){
 			var teams = JSON.parse($('#completed_dropdown').attr('data-teams'));
+			filterObj.teams=[]
 			if(teams!=null){
 				for(var i=0;i<teams.length;i++){
-					var activity_id=teams[i].id;
-					var activity=teams[i].name;
-					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#completed_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"completed_teams"));
-						$('#completed_filter_selections').show();
-					}
+					var team_id=teams[i].id;
+					var team_name=teams[i].name;
+					var team={}
+					addFilterSelections("completed","teams",team_name,team_id,team)
+					filterObj.teams.push(team)
 				}
 			}
 		}
 		
+		/*The Filter Object*/
+		console.log(filterObj)
+		//---------------------------------------->
+
 		var completedTask_array=[];
 		for(var i =0;i<4;i++){
 			var completedTask={};

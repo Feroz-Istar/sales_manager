@@ -5,64 +5,70 @@ function loadUpcomingTab(){
 	$('#ongoing_tab_content').empty();
 	$('#completed_tab').empty();
 	$('#completed_tab_content').empty();
+	
+	
+	//<------------------UPCOMING TAB FILTER SELECTIONS
 	$('#upcoming_filter_selections').find('.filters-inside-selection').empty();
 	$('#upcoming_filter_selections').hide();
+	var filterObj={}
 	
+	/*Selection of date filter*/
 	var time_value = $('#upcoming_datepicker').attr('data-name');
 	var time_value_id = $('#upcoming_datepicker').attr('data-id');
-	if(time_value!="" && time_value!= undefined && time_value_id!="" && time_value_id != undefined){
-		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(time_value,time_value_id,"upcoming_time"));
-		$('#upcoming_filter_selections').show();
-	}
+	filterObj.time={};
+	addFilterSelections("upcoming","time",time_value,time_value_id,filterObj.time)
 	
+	/*Selection of stage filter*/
 	var stage = $('#upcoming_stage').attr('data-name');
 	var stage_id = $('#upcoming_stage').attr('data-id');
-	if(stage!="" && stage!= undefined && stage_id!="" && stage_id != undefined){
-		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(stage,stage_id,"upcoming_stage"));
-		$('#upcoming_filter_selections').show();
-	}
+	filterObj.stage={};
+	addFilterSelections("upcoming","stage",stage,stage_id,filterObj.stage)
 	
+	/*Selection of activity filter*/
 	var activity = $('#upcoming_activity').attr('data-name');
 	var activity_id = $('#upcoming_activity').attr('data-id');
-	if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"upcoming_activity"));
-		$('#upcoming_filter_selections').show();
-	}
+	filterObj.activity={};
+	addFilterSelections("upcoming","activity",activity,activity_id,filterObj.activity)
 	
+	/*Selection of status filter*/
 	var status = $('#upcoming_status').attr('data-name');
 	var status_id = $('#upcoming_status').attr('data-id');
-	if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
-		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(status,status_id,"upcoming_status"));
-		$('#upcoming_filter_selections').show();
-	}
+	filterObj.status={};
+	addFilterSelections("upcoming","status",status,status_id,filterObj.status)
 	
+	/*Selection of All Agents->Individual filter*/
 	if( $('#upcoming_dropdown').attr('data-agents')!=null){
 		var agents = JSON.parse($('#upcoming_dropdown').attr('data-agents'));
+		filterObj.agents=[]
 		if(agents!=null){
 			for(var i=0;i<agents.length;i++){
-				var activity_id=agents[i].id;
-				var activity=agents[i].name;
-				if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-					$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"upcoming_agents"));
-					$('#upcoming_filter_selections').show();
-				}
+				var agent_id=agents[i].id;
+				var agent_name=agents[i].name;
+				var agent={}
+				addFilterSelections("upcoming","agents",agent_name,agent_id,agent)
+				filterObj.agents.push(agent)
 			}
 		}
 	}
 	
+	/*Selection of All Agents->Team filter*/
 	if( $('#upcoming_dropdown').attr('data-teams')!=null){
 		var teams = JSON.parse($('#upcoming_dropdown').attr('data-teams'));
+		filterObj.teams=[]
 		if(teams!=null){
 			for(var i=0;i<teams.length;i++){
-				var activity_id=teams[i].id;
-				var activity=teams[i].name;
-				if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-					$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"upcoming_teams"));
-					$('#upcoming_filter_selections').show();
-				}
+				var team_id=teams[i].id;
+				var team_name=teams[i].name;
+				var team={}
+				addFilterSelections("upcoming","teams",team_name,team_id,team)
+				filterObj.teams.push(team)
 			}
 		}
 	}
+	
+	/*The Filter Object*/
+	console.log(filterObj)
+	//----------------------------->
 	
 	var upcomingTask_array=[];
 	for(var i =0;i<4;i++){

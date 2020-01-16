@@ -201,7 +201,21 @@ function showcompletedCalendar() {
 $('.filter-menu.dropdown-menu').click(function(e) {
 	e.stopPropagation();
 });
-
+//<---------------GLOBAL FUNCTIONS FOR EACH TAB TO ADD FILTER TAGS
+function getfilterhtml(filter, id, filter_type){
+	return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
+			'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removeOngoingFilter(this)"></i> </button>'
+}
+function addFilterSelections(tab,filter,name,id,obj){
+	
+	if(name!="" && name!= undefined && id!="" && id != undefined){
+		obj.name=name;
+		obj.id=id;
+		$('#'+tab+'_filter_selections').find('.filters-inside-selection').append(getfilterhtml(name,id,tab+'_'+filter));
+		$('#'+tab+'_filter_selections').show();
+	}
+}
+//--------------------------------------------->
 
 //<---------------------------RESET FILTERS LOGIC
 //common function to reset each tab's filter

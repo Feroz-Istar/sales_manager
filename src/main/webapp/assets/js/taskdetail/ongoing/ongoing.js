@@ -5,66 +5,70 @@
 		$('#upcoming_tab_content').empty();
 		$('#completed_tab').empty();
 		$('#completed_tab_content').empty();
+		
+		
+		//<------------------UPCOMING TAB FILTER SELECTIONS
 		$('#ongoing_filter_selections').find('.filters-inside-selection').empty();
 		$('#ongoing_filter_selections').hide();
+		var filterObj={}
 		
-		
+		/*Selection of deal filter*/
 		var deal_value = $('#ongoing_deal').attr('data-name');
 		var deal_value_id = $('#ongoing_deal').attr('data-id');
-		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
-			$('#ongoing_filter_selections').find('.filters-inside-selection').append(getfilterhtml(deal_value,deal_value_id,"ongoing_deal_value"));
-			$('#ongoing_filter_selections').show();
-		}
+		filterObj.deal={};
+		addFilterSelections("ongoing","time",deal_value,deal_value_id,filterObj.deal)
 		
+		/*Selection of stage filter*/
 		var stage = $('#ongoing_stage').attr('data-name');
 		var stage_id = $('#ongoing_stage').attr('data-id');
-		if(stage!="" && stage!= undefined && stage_id!="" && stage_id != undefined){
-			$('#ongoing_filter_selections').find('.filters-inside-selection').append(getfilterhtml(stage,stage_id,"ongoing_stage"));
-			$('#ongoing_filter_selections').show();
-		}
+		filterObj.stage={};
+		addFilterSelections("ongoing","stage",stage,stage_id,filterObj.stage)
 		
+		/*Selection of activity filter*/
 		var activity = $('#ongoing_activity').attr('data-name');
 		var activity_id = $('#ongoing_activity').attr('data-id');
-		if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-			$('#ongoing_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"ongoing_activity"));
-			$('#ongoing_filter_selections').show();
-		}
+		filterObj.activity={};
+		addFilterSelections("ongoing","activity",activity,activity_id,filterObj.activity)
 		
+		/*Selection of status filter*/
 		var status = $('#ongoing_status').attr('data-name');
 		var status_id = $('#ongoing_status').attr('data-id');
-		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
-			$('#ongoing_filter_selections').find('.filters-inside-selection').append(getfilterhtml(status,status_id,"ongoing_status"));
-			$('#ongoing_filter_selections').show();
-		}
+		filterObj.status={};
+		addFilterSelections("ongoing","status",status,status_id,filterObj.status)
 		
+		/*Selection of All Agents->Individual filter*/
 		if( $('#ongoing_dropdown').attr('data-agents')!=null){
 			var agents = JSON.parse($('#ongoing_dropdown').attr('data-agents'));
+			filterObj.agents=[]
 			if(agents!=null){
 				for(var i=0;i<agents.length;i++){
-					var activity_id=agents[i].id;
-					var activity=agents[i].name;
-					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#ongoing_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"ongoing_agents"));
-						$('#ongoing_filter_selections').show();
-					}
+					var agent_id=agents[i].id;
+					var agent_name=agents[i].name;
+					var agent={}
+					addFilterSelections("ongoing","agents",agent_name,agent_id,agent)
+					filterObj.agents.push(agent)
 				}
 			}
 		}
 		
+		/*Selection of All Agents->Team filter*/
 		if( $('#ongoing_dropdown').attr('data-teams')!=null){
 			var teams = JSON.parse($('#ongoing_dropdown').attr('data-teams'));
+			filterObj.teams=[]
 			if(teams!=null){
 				for(var i=0;i<teams.length;i++){
-					var activity_id=teams[i].id;
-					var activity=teams[i].name;
-					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#ongoing_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"ongoing_teams"));
-						$('#ongoing_filter_selections').show();
-					}
+					var team_id=teams[i].id;
+					var team_name=teams[i].name;
+					var team={}
+					addFilterSelections("ongoing","teams",team_name,team_id,team)
+					filterObj.teams.push(team)
 				}
 			}
 		}
 		
+		/*The Filter Object*/
+		console.log(filterObj)
+		//----------------------------->
 	
 		
 		var ongoingTask_array=[];
@@ -139,7 +143,4 @@
 	/* end of  js function for Ongoing Tab*/
 	
 	
-	function getfilterhtml(filter, id, filter_type){
-		return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
-				'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removeOngoingFilter(this)"></i> </button>'
-	}
+	

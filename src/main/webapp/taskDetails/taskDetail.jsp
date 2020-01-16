@@ -232,10 +232,11 @@
 		<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
 		<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
 		<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
+		<script src="<%=baseURL%>assets/js/taskdetail/taskDetails.js"></script>
 		<script src="<%=baseURL%>assets/js/taskdetail/ongoing/ongoing.js"></script>
 		<script src="<%=baseURL%>assets/js/taskdetail/upcoming/upcoming.js"></script>
 		<script src="<%=baseURL%>assets/js/taskdetail/completed/completed.js"></script>
-		<script src="<%=baseURL%>assets/js/taskdetail/taskDetails.js"></script>
+		
 		<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	</div>
 	</main>
