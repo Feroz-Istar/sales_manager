@@ -8,7 +8,7 @@
 
 <nav
 	class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
-	<a class="navbar-brand f-15 p-0 pr-3" href="/dashboard/dashboard.jsp">
+	<a class="navbar-brand f-15 p-0 pr-3" href="<%=baseURL%>/dashboard/dashboard.jsp">
 		<img class="appicon img-thumbnail p-0 mr-1 border-0" alt="salesken_logo"
 		src="<%=baseURL%>assets/image/nav_icon.png" />
 	</a>
@@ -119,15 +119,15 @@
 		id="navbarNavDropdown">
 		<ul class="salesken navbar-nav mr-auto">
 			<li class="nav-item active"><a class="nav-link f-14"
-				href="/dashboard/dashboard.jsp"> <div class="d-flex align-item-center"> <i class="salesken_navicon dashboard"></i> Dashboard </div><span class="sr-only">(current)</span></a></li>
+				href="<%=baseURL%>dashboard/dashboard.jsp"> <div class="d-flex align-item-center"> <i class="salesken_navicon dashboard"></i> Dashboard </div><span class="sr-only">(current)</span></a></li>
 			<li class="nav-item "><a class="nav-link f-14" 
-				href="/taskDetails/taskDetail.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon taskdetail"></i> Task Details </div><span class="sr-only">(current)</span></a></li>
+				href="<%=baseURL%>taskDetails/taskDetail.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon taskdetail"></i> Task Details </div><span class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14"
-				href="/pipeline/pipeline.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="/report/report.jsp">
+				href="<%=baseURL%>pipeline/pipeline.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
+			<li class="nav-item"><a class="nav-link f-14" href="<%=baseURL%>report/report.jsp">
 					<div class="d-flex align-item-center"> <i class="salesken_navicon reports"></i> Reports </div><span class="sr-only">(current)</span>
 			</a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="/leads/leads.jsp">
+			<li class="nav-item"><a class="nav-link f-14" href="<%=baseURL%>leads/leads.jsp">
 					 <div class="d-flex align-item-center"> <i class="salesken_navicon leads"></i> Leads </div><span class="sr-only">(current)</span>
 			</a></li>
 

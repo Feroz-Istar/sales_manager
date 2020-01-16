@@ -9,11 +9,11 @@ $( document ).ready(function() {
     console.log( "ready!" );
     
     $('.account').click(function(){
-    	location.href=location.origin+"/landing/accountSetting.jsp";
+    	location.href=contextPath+"landing/accountSetting.jsp";
     });
     
     $('.signout').click(function(){
-    	location.href=location.origin;
+    	location.href=contextPath;
     });
     $( ".sales_ken_popover" ).each(function() {
     	$(this).popover({
