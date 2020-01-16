@@ -148,8 +148,6 @@ $(document).ready(function() {
 					team_array.push($(this).data('team'));
 				}
 			});
-			console.log(agent_array.length==0)
-			console.log(team_array)
 			if(agent_array.length==0 && team_array.length==0){
 				//alert("Please select atleast one");
 			}else{
@@ -223,6 +221,7 @@ $(document).ready(function() {
 	function populatePipelineTabContent(first_pipeline_id){
 		var pipelineDetails={};
 		pipelineDetails.id= first_pipeline_id;
+		console.log(pipelineDetails)
 		var vv = fetchPipelineTabContent(pipelineDetails);
 		vv.done(function(data){
 			$('#piplelinestage-tabContent').empty();
@@ -231,6 +230,7 @@ $(document).ready(function() {
 	}
 				/*	start of pipeline tab fetching*/
 	function fetchpipelineTab(pipelineStage){
+		console.log(pipelineStage)
 		return $.post(contextPath+"pipeline/tab/pipeline_tab.jsp",JSON.stringify(pipelineStage));
 	}	
 	
@@ -268,6 +268,7 @@ $(document).ready(function() {
 
 	function removePipelineFilter(button){
 		var type = $(button).data('type');
+		var id=$(button).parent().data('id')
 		var filter;
 		switch(type){
 			case "pipeline_deal_value":
@@ -275,6 +276,18 @@ $(document).ready(function() {
 				break;
 			case "pipeline_status":
 				filter = $('#pipeline_status')
+				break;
+			case "pipeline_agents":
+				filter = $('#pipeline_dropdown')
+				var agents = JSON.parse($('#pipeline_dropdown').attr('data-agents'));
+				agents=agents.filter(function(agent){return agent.id!==id;})
+				filter.attr('data-agents',JSON.stringify(agents))
+				break;
+			case "pipeline_teams":
+				filter = $('#pipeline_dropdown')
+				var teams = JSON.parse($('#pipeline_dropdown').attr('data-teams'));
+				teams=teams.filter(function(team){return team.id!==id;})
+				filter.attr('data-teams',JSON.stringify(teams))
 				break;
 		}
 		filter.attr('data-id',"");
