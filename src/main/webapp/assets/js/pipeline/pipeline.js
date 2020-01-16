@@ -19,7 +19,7 @@
 		var status = $('#pipeline_status').attr('data-name');
 		var status_id = $('#pipeline_status').attr('data-id');
 		filterObj.status={};
-		addFilterSelections("pipeline","deal",status,status_id,filterObj.status)
+		addFilterSelections("pipeline","status",status,status_id,filterObj.status)
 		
 	/*	start of Date filtering*/
 		var time_value = $('#pipeline_datepicker').attr('data-name');
