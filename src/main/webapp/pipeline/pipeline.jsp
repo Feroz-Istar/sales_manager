@@ -85,7 +85,7 @@
 									</div>
 								</div>
         	<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="pipeline_filter_selections">
-							<div class="col-md-10 d-flex p-0">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
 								
 							</div>
 							<div class="col-md-2 text-right p-0">

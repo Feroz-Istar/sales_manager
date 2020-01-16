@@ -5,34 +5,34 @@ function loadUpcomingTab(){
 	$('#ongoing_tab_content').empty();
 	$('#completed_tab').empty();
 	$('#completed_tab_content').empty();
-	$('#upcoming_filter_selections').find('.col-md-10.d-flex').empty();
+	$('#upcoming_filter_selections').find('.filters-inside-selection').empty();
 	$('#upcoming_filter_selections').hide();
 	
 	var time_value = $('#upcoming_datepicker').attr('data-name');
 	var time_value_id = $('#upcoming_datepicker').attr('data-id');
 	if(time_value!="" && time_value!= undefined && time_value_id!="" && time_value_id != undefined){
-		$('#upcoming_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(time_value,time_value_id,"upcoming_time"));
+		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(time_value,time_value_id,"upcoming_time"));
 		$('#upcoming_filter_selections').show();
 	}
 	
 	var stage = $('#upcoming_stage').attr('data-name');
 	var stage_id = $('#upcoming_stage').attr('data-id');
 	if(stage!="" && stage!= undefined && stage_id!="" && stage_id != undefined){
-		$('#upcoming_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(stage,stage_id,"upcoming_stage"));
+		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(stage,stage_id,"upcoming_stage"));
 		$('#upcoming_filter_selections').show();
 	}
 	
 	var activity = $('#upcoming_activity').attr('data-name');
 	var activity_id = $('#upcoming_activity').attr('data-id');
 	if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-		$('#upcoming_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(activity,activity_id,"upcoming_activity"));
+		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"upcoming_activity"));
 		$('#upcoming_filter_selections').show();
 	}
 	
 	var status = $('#upcoming_status').attr('data-name');
 	var status_id = $('#upcoming_status').attr('data-id');
 	if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
-		$('#upcoming_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(status,status_id,"upcoming_status"));
+		$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(status,status_id,"upcoming_status"));
 		$('#upcoming_filter_selections').show();
 	}
 	
@@ -43,7 +43,7 @@ function loadUpcomingTab(){
 				var activity_id=agents[i].id;
 				var activity=agents[i].name;
 				if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-					$('#upcoming_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(activity,activity_id,"upcoming_agents"));
+					$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"upcoming_agents"));
 					$('#upcoming_filter_selections').show();
 				}
 			}
@@ -57,7 +57,7 @@ function loadUpcomingTab(){
 				var activity_id=teams[i].id;
 				var activity=teams[i].name;
 				if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-					$('#upcoming_filter_selections').find('.col-md-10.d-flex').append(getfilterhtml(activity,activity_id,"upcoming_teams"));
+					$('#upcoming_filter_selections').find('.filters-inside-selection').append(getfilterhtml(activity,activity_id,"upcoming_teams"));
 					$('#upcoming_filter_selections').show();
 				}
 			}

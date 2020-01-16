@@ -83,7 +83,7 @@
 							<jsp:include page="partials/ongoing_filters.jsp"></jsp:include>
 						</div>
 						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="ongoing_filter_selections">
-							<div class="col-md-10 d-flex p-0">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
 								
 							</div>
 							<div class="col-md-2 text-right p-0">
@@ -119,7 +119,7 @@
 							<jsp:include page="partials/upcoming_filters.jsp"></jsp:include>
 						</div>
 						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="upcoming_filter_selections">
-							<div class="col-md-10 d-flex p-0">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
 								<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
 									Filter 1 <i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
 								</button>
@@ -156,7 +156,7 @@
 							<jsp:include page="partials/completed_filters.jsp"></jsp:include>
 						</div>
 						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="completed_filter_selections">
-							<div class="col-md-10 d-flex p-0">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
 								<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
 									Filter 1 <i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
 								</button>

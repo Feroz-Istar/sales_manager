@@ -1,14 +1,14 @@
 	/* start of  js function for pipeline Tab*/
 	function pipelineTab(){
 		//empty upcoming tab & completedTab
-		$('#pipeline_filter_selections').find('.col-md-10.d-flex').empty();
+		$('#pipeline_filter_selections').find('.filters-inside-selection').empty();
 		$('#pipeline_filter_selections').hide();
 		
 	/*	start of pipeline deal value filtering*/
 		var deal_value = $('#pipeline_deal_value').attr('data-name');
 		var deal_value_id = $('#pipeline_deal_value').attr('data-id');
 		if(deal_value!="" && deal_value!= undefined && deal_value_id!="" && deal_value_id != undefined){
-			$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(deal_value,deal_value_id,"pipeline_deal_value"));
+			$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(deal_value,deal_value_id,"pipeline_deal_value"));
 			$('#pipeline_filter_selections').show();
 		}
 		
@@ -16,7 +16,7 @@
 		var status = $('#pipeline_status').attr('data-name');
 		var status_id = $('#pipeline_status').attr('data-id');
 		if(status!="" && status!= undefined && status_id!="" && status_id != undefined){
-			$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(status,status_id,"pipeline_status"));
+			$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(status,status_id,"pipeline_status"));
 			$('#pipeline_filter_selections').show();
 		}
 		
@@ -24,7 +24,7 @@
 		var time_value = $('#pipeline_datepicker').attr('data-name');
 		var time_value_id = $('#pipeline_datepicker').attr('data-id');
 		if(time_value!="" && time_value!= undefined && time_value_id!="" && time_value_id != undefined){
-			$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(time_value,time_value_id,"upcoming_time"));
+			$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(time_value,time_value_id,"upcoming_time"));
 			$('#pipeline_filter_selections').show();
 		}
 		
@@ -36,7 +36,7 @@
 					var activity_id=agents[i].id;
 					var activity=agents[i].name;
 					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(activity,activity_id,"pipeline_agents"));
+						$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(activity,activity_id,"pipeline_agents"));
 						$('#pipeline_filter_selections').show();
 					}
 				}
@@ -51,7 +51,7 @@
 					var activity_id=teams[i].id;
 					var activity=teams[i].name;
 					if(activity!="" && activity!= undefined && activity_id!="" && activity_id != undefined){
-						$('#pipeline_filter_selections').find('.col-md-10.d-flex').append(getpipelinefilterhtml(activity,activity_id,"pipeline_teams"));
+						$('#pipeline_filter_selections').find('.filters-inside-selection').append(getpipelinefilterhtml(activity,activity_id,"pipeline_teams"));
 						$('#pipeline_filter_selections').show();
 					}
 				}
@@ -230,7 +230,6 @@ $(document).ready(function() {
 	}
 				/*	start of pipeline tab fetching*/
 	function fetchpipelineTab(pipelineStage){
-		console.log(pipelineStage)
 		return $.post(contextPath+"pipeline/tab/pipeline_tab.jsp",JSON.stringify(pipelineStage));
 	}	
 	
