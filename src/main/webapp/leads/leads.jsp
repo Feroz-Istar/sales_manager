@@ -44,7 +44,7 @@
                </div>
                <div class="col-md-6 col-12 d-lg-flex justify-content-md-end p-0">
                   <div class="input-group position-relative search_width ">
-                     <img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox"> <input id="" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
+                     <img src="<%=baseURL%>assets/image/search.svg" alt="edit" class=" searchBox"> <input id="leads_search" class="form-control  custom-taskborder brown-grey  f-14 search_height custom-result-selects"
                         type="search" placeholder="Search" style="padding-right: 30px">
                   </div>
                   <button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold ml-10" data-toggle="modal" data-target="#addLeadModalCenter">UPLOAD NEW</button>
@@ -66,30 +66,30 @@
                               <strong class="number-of-results ">504</strong> Result Found
                            </div>
                            <div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
-                              <div class="istar-dropdown-task select_focus mr-10">
-                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
+                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="targetSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                                  <span class="sr-only">Toggle Dropdown</span>All Source type<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="targetSourceType">
-                                    <button class="dropdown-item" type="button">1000</button>
-                                    <button class="dropdown-item" type="button">2000</button>
+                                    <button class="dropdown-item" type="button" onclick="target_sourcetype_dropdown(this)" data-id="1000">1000</button>
+                                    <button class="dropdown-item" type="button" onclick="target_sourcetype_dropdown(this)" data-id="2000">2000</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="target_activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span> All Activities <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="target_activity">
-                                    <button class="dropdown-item" type="button">
+                                    <button class="dropdown-item" type="button" onclick="target_activity_dropdown(this)" data-id="Call Task">
                                     <img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
                                     </button>
-                                    <button class="dropdown-item" type="button">
-                                    <img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown"> Email Task
+                                    <button class="dropdown-item" type="button" onclick="target_activity_dropdown(this)" data-id="Email Task">
+                                    <img src="<%=baseURL%>assets/image/emailtask.svg" alt="email" class="task-dropdown" > Email Task
                                     </button>
-                                    <button class="dropdown-item" type="button">
+                                    <button class="dropdown-item" type="button" onclick="target_activity_dropdown(this)" data-id="Webinar Task">
                                     <img src="<%=baseURL%>assets/image/webinartask.svg" alt="webinar" class="task-dropdown"> Webinar Task
                                     </button>
-                                    <button class="dropdown-item" type="button">
+                                    <button class="dropdown-item" type="button"  onclick="target_activity_dropdown(this)" data-id="Presentation">
                                     <img src="<%=baseURL%>assets/image/presentation.svg" alt="presentation" class="task-dropdown"> Presentation
                                     </button>
                                  </div>
@@ -115,17 +115,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int i=0; i<20;i++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox targetagentcheckbox" data-id="<%=i %>" id="target_associate-checkbox<%=i %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="target_associate-checkbox<%=i %>"></label> <img alt="Agent Image" title="Agent Name" src="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-                                                <div>
-                                                   <div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-                                                   <div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="target-agent-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                            
                                           </div>
                                        </div>
                                        <div class="tab-pane fade px-4 py-3" id="target_team" role="tabpanel" aria-labelledby="target_team-tab">
@@ -138,16 +129,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="mb-2 agent-team-list" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int j=0; j<20;j++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox targetteamcheckbox" data-id="<%=j %>" id="target_team-checkbox<%=j %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="target_team-checkbox<%=j%>"></label>
-                                                <div class="f-12 ml-2 brownish-grey">
-                                                   Team -0<%=j%>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="mb-2 target-team-list" style="overflow-x: hidden; overflow-y: auto;">
+                                         
                                           </div>
                                        </div>
                                     </div>
@@ -158,16 +141,15 @@
                               </div>
                            </div>
                         </div>
-                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id='target_filter'>
-                           <div class="col-md-10 d-flex p-0">
-                              <button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
-                              2 BHK Flats <i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
-                              </button>
-                           </div>
-                           <div class="col-md-2 text-right p-0">
-                              <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='target_reset'>Reset</button>
-                           </div>
-                        </div>
+                    
+                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="target_filter">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
+								
+							</div>
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="target_reset" data-type="target" onclick="resetFilters(this)">Reset</button>
+							</div>
+						</div>
                         <!----------------------------------------------start of target leads card and contents --------------------------------------------------- -->                      
                         <div class="" id="target_tab_contnet_card"></div>
                         <div class="" id="target_tab_contnet"></div>
@@ -189,40 +171,40 @@
                            </div>
                            <div class="col-md-9 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40 ">
                               <div class="input-group date custom-calendar mr-10">
-                                 <input type="text" id="lead_qualified_datepicker" placeholder="Calendar" class="form-control  custom-dateselect" value="12-02-2012">
+                                 <input type="text" id="qualified_datepicker" placeholder="Calendar" class="form-control  custom-dateselect" value="12-02-2012">
                                  <div class="input-group-addon px-1" onclick="showqualifiedCalendar()">
                                     <img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar" />
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="qualified_deal_value" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static" aria-labelledby="qualified_deal_value">
-                                    <button class="dropdown-item" type="button">$1000</button>
-                                    <button class="dropdown-item" type="button">$5000</button>
+                                    <button class="dropdown-item" type="button" onclick="qualified_deal_dropdown(this)" data-id="1000">$1000</button>
+                                    <button class="dropdown-item" type="button" onclick="qualified_deal_dropdown(this)" data-id="2000">$5000</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="qualified_stage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" data-display="static" aria-labelledby="qualified_stage">
-                                    <button class="dropdown-item" type="button">Stage 1</button>
-                                    <button class="dropdown-item" type="button">stage 2</button>
+                                    <button class="dropdown-item" type="button" onclick="qualified_stage_dropdown(this)" data-id="Stage 1">Stage 1</button>
+                                    <button class="dropdown-item" type="button" onclick="qualified_stage_dropdown(this)" data-id="Stage 2">stage 2</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
-                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="qualified_source_type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
+                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="qualifiedSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
-                                 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualified_source_type">
-                                    <button class="dropdown-item" type="button">Manual</button>
-                                    <button class="dropdown-item" type="button">Offline</button>
-                                    <button class="dropdown-item" type="button">Outbound</button>
+                                 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="qualifiedSourceType">
+                                    <button class="dropdown-item" type="button" onclick="qualified_sourcetype_dropdown(this)" data-id="Manual">Manual</button>
+                                    <button class="dropdown-item" type="button" onclick="qualified_sourcetype_dropdown(this)" data-id="Offline">Offline</button>
+                                    <button class="dropdown-item" type="button" onclick="qualified_sourcetype_dropdown(this)" data-id="Outbound">Outbound</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task dropdown select_focus " id="qualified-filter">
+                              <div class="istar-dropdown-task dropdown select_focus select_focus" id="qualified-filter">
                                  <button class="istar-dropdown-arrow " data-display="static" id="qualified_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
@@ -243,17 +225,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int i=0; i<20;i++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox qualifiedagentcheckbox" data-id="<%=i %>" id="qualified_associate-checkbox<%=i %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="qualified_associate-checkbox<%=i %>"></label> <img alt="Lead Image" title="Lead Name" src="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-                                                <div>
-                                                   <div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-                                                   <div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="qualified-agent-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                            
                                           </div>
                                        </div>
                                        <div class="tab-pane fade px-4 py-3" id="qualified_team" role="tabpanel" aria-labelledby="qualified_team-tab">
@@ -266,16 +239,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int j=0; j<20;j++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox qualifiedteamcheckbox" data-id="<%=j %>" id="qualified_team-checkbox<%=j %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="qualified_team-checkbox<%=j%>"></label>
-                                                <div class="f-12 ml-2 brownish-grey">
-                                                   Team -0<%=j%>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="qualified-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                            
                                           </div>
                                        </div>
                                     </div>
@@ -286,16 +251,14 @@
                               </div>
                            </div>
                         </div>
-                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id='qualified_filter'>
-                           <div class="col-md-10 d-flex p-0">
-                              <button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
-                              2 BHK Flats <i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
-                              </button>
-                           </div>
-                           <div class="col-md-2 text-right p-0">
-                              <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='qualified_reset'>Reset</button>
-                           </div>
-                        </div>
+                       <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="qualified_filter">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
+								
+							</div>
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="qualified_reset" data-type="qualified" onclick="resetFilters(this)">Reset</button>
+							</div>
+						</div>
                         <!----------------------------------------------start of qualified leads card and contents --------------------------------------------------- -->                      
                         <div class="" id="qualified_tab_content_card"></div>
                         <div class="" id="qualified_tab_content"></div>
@@ -317,49 +280,49 @@
                            </div>
                            <div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
                               <div class="input-group date custom-calendar mr-10">
-                                 <input type="text" id="lead_lost_datepicker" placeholder="Calendar" class="form-control  custom-dateselect" value="12-02-2012">
+                                 <input type="text" id="lost_datepicker" placeholder="Calendar" class="form-control  custom-dateselect" value="12-02-2012">
                                  <div class="input-group-addon px-1" onclick="showlostCalendar()">
                                     <img src="<%=baseURL%>/assets/image/calendar.svg" />
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="lost_causes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Causes <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_causes">
-                                    <button class="dropdown-item" type="button">reason 1</button>
-                                    <button class="dropdown-item" type="button">reason 2</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_cause_dropdown(this)" data-id="reason 1">reason 1</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_cause_dropdown(this)" data-id="reason 2">reason 2</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="lost_deal_value" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_deal_value">
-                                    <button class="dropdown-item" type="button">$1000</button>
-                                    <button class="dropdown-item" type="button">$5000</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_deal_dropdown(this)" data-id="1000">$1000</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_deal_dropdown(this)" data-id="5000">$5000</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="lost_stage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_stage">
-                                    <button class="dropdown-item" type="button">Stage 1</button>
-                                    <button class="dropdown-item" type="button">Stage 2</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_stage_dropdown(this)" data-id="Stage 1">Stage 1</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_stage_dropdown(this)" data-id="Stage 2">Stage 2</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
-                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="lost_source_type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
+                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="lostSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
-                                 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lost_source_type">
-                                    <button class="dropdown-item" type="button">Manual</button>
-                                    <button class="dropdown-item" type="button">Offline</button>
-                                    <button class="dropdown-item" type="button">Outbound</button>
+                                 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="lostSourceType">
+                                    <button class="dropdown-item" type="button" onclick="lost_sourcetype_dropdown(this)" data-id="Manual" >Manual</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_sourcetype_dropdown(this)" data-id="Offline">Offline</button>
+                                    <button class="dropdown-item" type="button" onclick="lost_sourcetype_dropdown(this)" data-id="Outbound">Outbound</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task dropdown select_focus" id="lost-filter">
+                              <div class="istar-dropdown-task dropdown select_focus select_focus" id="lost-filter">
                                  <button class="istar-dropdown-arrow " data-display="static" id="lost_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
@@ -380,17 +343,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int i=0; i<20;i++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox lostagentcheckbox" data-id="<%=i %>" id="lost_associate-checkbox<%=i %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="lost_associate-checkbox<%=i %>"></label> <img alt="Lead Image" title="Lead Name" src="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-                                                <div>
-                                                   <div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-                                                   <div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="lost-agent-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                             
                                           </div>
                                        </div>
                                        <div class="tab-pane fade px-4 py-3" id="lost_team" role="tabpanel" aria-labelledby="lost_team-tab">
@@ -403,16 +357,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int j=0; j<20;j++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox lostteamcheckbox" data-id="<%=j %>" id="lost_team-checkbox<%=j %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="lost_team-checkbox<%=j%>"></label>
-                                                <div class="f-12 ml-2 brownish-grey">
-                                                   Team -0<%=j%>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="lost-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                             
                                           </div>
                                        </div>
                                     </div>
@@ -423,16 +369,14 @@
                               </div>
                            </div>
                         </div>
-                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id='lost_filter'>
-                           <div class="col-md-10 d-flex p-0">
-                              <button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
-                              2 BHK Flats <i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
-                              </button>
-                           </div>
-                           <div class="col-md-2 text-right p-0">
-                              <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='lost_reset'>Reset</button>
-                           </div>
-                        </div>
+                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="lost_filter">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
+								
+							</div>
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="lost_reset" data-type="lost" onclick="resetFilters(this)">Reset</button>
+							</div>
+						</div>
                         <!-- -----------------------start of lost lead card  and content------------------------------------------------>
                         <div id="lost_leads_content_card"></div>
                         <div id="lost_leads_content"></div>
@@ -454,49 +398,49 @@
                            </div>
                            <div class="col-md-10 d-md-flex justify-content-end p-0 mt-10 mb-10 pr-40">
                               <div class="input-group date custom-calendar mr-10">
-                                 <input type="text" id="lead_won_datepicker" placeholder="Calendar" class="form-control  custom-dateselect" value="12-02-2012">
+                                 <input type="text" id="won_datepicker" placeholder="Calendar" class="form-control  custom-dateselect" value="12-02-2012">
                                  <div class="input-group-addon px-1" onclick="showwonCalendar()">
                                     <img src="<%=baseURL%>/assets/image/calendar.svg" />
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="won_causes" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Causes <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_causes">
-                                    <button class="dropdown-item" type="button">reason 1</button>
-                                    <button class="dropdown-item" type="button">reason 2</button>
+                                    <button class="dropdown-item" type="button" onclick="won_cause_dropdown(this)" data-id="reason 1">reason 1</button>
+                                    <button class="dropdown-item" type="button" onclick="won_cause_dropdown(this)" data-id="reason 2">reason 2</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="won_deal_value" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Deal Value <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_deal_value">
-                                    <button class="dropdown-item" type="button">$1000</button>
-                                    <button class="dropdown-item" type="button">$5000</button>
+                                    <button class="dropdown-item" type="button" onclick="won_deal_dropdown(this)" data-id="1000">$1000</button>
+                                    <button class="dropdown-item" type="button" onclick="won_deal_dropdown(this)" data-id="5000">$5000</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
                                  <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="won_stage" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Stages <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
                                  <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_stage">
-                                    <button class="dropdown-item" type="button">Stage 1</button>
-                                    <button class="dropdown-item" type="button">Stage 2</button>
+                                    <button class="dropdown-item" type="button" onclick="won_stage_dropdown(this)" data-id="Stage 1">Stage 1</button>
+                                    <button class="dropdown-item" type="button" onclick="won_stage_dropdown(this)" data-id="Stage 2">Stage 2</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task select_focus mr-10">
-                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="won_source_type" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <div class="istar-dropdown-task select_focus mr-10 select_focus">
+                                 <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="wonSourceType" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span>All Source Type <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
-                                 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="won_source_type">
-                                    <button class="dropdown-item" type="button">Manual</button>
-                                    <button class="dropdown-item" type="button">Offline</button>
-                                    <button class="dropdown-item" type="button">Outbound</button>
+                                 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="wonSourceType">
+                                    <button class="dropdown-item" type="button" onclick="won_sourcetype_dropdown(this)" data-id="Manual">Manual</button>
+                                    <button class="dropdown-item" type="button"  onclick="won_sourcetype_dropdown(this)" data-id="Offline">Offline</button>
+                                    <button class="dropdown-item" type="button" onclick="won_sourcetype_dropdown(this)" data-id="Outbound">Outbound</button>
                                  </div>
                               </div>
-                              <div class="istar-dropdown-task dropdown select_focus" id="won-filter">
+                              <div class="istar-dropdown-task dropdown select_focus select_focus" id="won-filter">
                                  <button class="istar-dropdown-arrow " data-display="static" id="won_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                  <span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
                                  </button>
@@ -517,17 +461,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int i=0; i<20;i++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox wonagentcheckbox" data-id="<%=i %>" id="won_associate-checkbox<%=i %>" type="checkbox"> <label class="istar-checkbox-style"
-                                                   for="won_associate-checkbox<%=i %>"></label> <img alt="Lead Image" title="Lead Name" src="<%=baseURL%>/assets/image/11.png" class="rounded-circle ml-3 mr-2 hw-40">
-                                                <div>
-                                                   <div class="f-14 font-weight-bold greyish-brown text-truncate" title="Robert Garcia">Robert Garcia</div>
-                                                   <div class="f-12  brownish-grey text-truncate" title="team">Team -02</div>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="won-agent-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                     
                                           </div>
                                        </div>
                                        <div class="tab-pane fade px-4 py-3" id="won_team" role="tabpanel" aria-labelledby="won_team-tab">
@@ -540,15 +475,8 @@
                                                 </button>
                                              </div>
                                           </div>
-                                          <div class="agent-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
-                                             <%for(int j=0; j<20;j++){ %>
-                                             <div class="d-flex align-items-center pt-3">
-                                                <input class="istar-checkbox wonteamcheckbox" data-id="<%=j %>" id="won_team-checkbox<%=j %>" type="checkbox"> <label class="istar-checkbox-style" for="won_team-checkbox<%=j%>"></label>
-                                                <div class="f-12 ml-2 brownish-grey">
-                                                   Team -0<%=j%>
-                                                </div>
-                                             </div>
-                                             <%} %>
+                                          <div class="won-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;">
+                                      
                                           </div>
                                        </div>
                                     </div>
@@ -559,16 +487,14 @@
                               </div>
                            </div>
                         </div>
-                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id='won_filter'>
-                           <div class="col-md-10 d-flex p-0">
-                              <button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter">
-                              2 BHK Flats <i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
-                              </button>
-                           </div>
-                           <div class="col-md-2 text-right p-0">
-                              <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id='won_reset'>Reset</button>
-                           </div>
-                        </div>
+                        <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="won_filter">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection">
+								
+							</div>
+							<div class="col-md-2 text-right p-0">
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="won_reset" data-type="won" onclick="resetFilters(this)">Reset</button>
+							</div>
+						</div>
                         <!----------------------------------------------start of won leads card and contents --------------------------------------------------- -->                      
                         <div id="won_lead_content_card"></div>
                         <div id="won_lead_content"></div>
@@ -615,5 +541,9 @@
       <script src="<%=baseURL%>assets/js/alertify.min.js"></script>
       <script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
       <script src="<%=baseURL%>assets/js/leads/lead.js"></script>
+      <script src="<%=baseURL%>assets/js/leads/lostjs/lost.js"></script>
+      <script src="<%=baseURL%>assets/js/leads/wonjs/won.js"></script>
+      <script src="<%=baseURL%>assets/js/leads/qualifiedjs/qualified.js"></script>
+      <script src="<%=baseURL%>assets/js/leads/targetjs/target.js"></script>
    </body>
 </html>
