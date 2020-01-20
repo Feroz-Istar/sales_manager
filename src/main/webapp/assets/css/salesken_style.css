@@ -1865,16 +1865,17 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
 .taskdetail-tab-list>.nav-link:hover {
 	background: #ffffff !important;
 	color: #4d4f5c !important;
-	/*  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;  	  */
+	box-shadow: -18px 14px 21px #e6e6e6 !important;
+
 	border-radius: 0;
 	opacity: 2;
 	/* 	transition : all 0.1s ease-in-out;
  */
 	transform: scale(1.09);
-	-webkit-transform: scale(1.09); /* Safari and Chrome */
-	-moz-transform: scale(1.09); /* Firefox */
-	-ms-transform: scale(1.09); /* IE 9 */
-	-o-transform: scale(1.09); /* Opera */
+	-webkit-transform: scale(1); /* Safari and Chrome */
+	-moz-transform: scale(1); /* Firefox */
+	-ms-transform: scale(1); /* IE 9 */
+	-o-transform: scale(1); /* Opera */
 }
 
 /* end of  task detail vertical tab */
