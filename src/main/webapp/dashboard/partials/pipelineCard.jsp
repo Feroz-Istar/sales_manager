@@ -131,8 +131,8 @@
 								<div class="col-md-6 p-0 pl-15">
 									<div class="fw-500 f-16 black pb-10">Playbook Stats</div>
 
-									<div class="f-12 brownish-grey text-break font-weight-bold pb-10">
-										Strong <i class="fal fa-info-circle soft-blue f-14"></i>
+									<div class="f-12 brownish-grey text-break d-flex align-items-center font-weight-bold pb-10">
+										<div>Strong</div> <i class="fal fa-info-circle soft-blue f-18 pl-5"></i>
 									</div>
 									<div class="strong-signal w-100 d-flex flex-wrap">
 										<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
@@ -146,8 +146,8 @@
 
 
 									<div
-										class="f-12 brownish-grey text-break font-weight-bold pt-20  pb-10">
-										Weak <i class="fal fa-info-circle soft-blue  f-14"></i>
+										class="f-12 brownish-grey text-break d-flex align-items-center font-weight-bold pt-20  pb-10">
+										Weak <i class="fal fa-info-circle soft-blue  f-18 pl-5"></i>
 									</div>
 
 									<div class="weak-signal w-100 d-flex flex-wrap">
@@ -178,56 +178,5 @@
 	</div>
 </div>
 
-<script type="text/javascript">
-	$(document).ready(
-			function() {
-
-				var pipelineCount = $('.pipeline-container').length;
-				var pipelineShowing = 0;
-				$('.pipeline-container').hide();
-				$('.pipeline-container').eq(pipelineShowing).show();
-				
-				if (pipelineCount == 0) {
-					$('.pipeline-card').hide();
-				}
-				if (pipelineCount > 1) {
-					$('#pipeline-right').click(
-							function() {
-								$('.pipeline-container').hide();
-								if (pipelineShowing < pipelineCount - 1) {
-									pipelineShowing++;
-									$('.pipeline-container')
-											.eq(pipelineShowing).show();
-									$('#pipeline-left').addClass('active');
-								}
-								if (pipelineShowing == pipelineCount - 1) {
-									$('.pipeline-container').eq(
-											pipelineCount - 1).show();
-									$('#pipeline-right').removeClass('active');
-								}
-
-							})
-
-					$('#pipeline-left').click(
-							function() {
-								$('.pipeline-container').hide();
-								if (pipelineShowing > 0) {
-									pipelineShowing--;
-									$('.pipeline-container')
-											.eq(pipelineShowing).show();
-									$('#pipeline-right').addClass('active');
-								}
-								if (pipelineShowing == 0) {
-									$('.pipeline-container').eq(0).show();
-									$('#pipeline-left').removeClass('active');
-								}
-								
-							})
-				} else {
-					$('#pipeline-right').removeClass('active');
-					$('#pipeline-left').removeClass('active');
-				}
-			});
-</script>
 
 

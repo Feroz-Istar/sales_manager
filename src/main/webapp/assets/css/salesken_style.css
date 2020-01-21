@@ -884,6 +884,9 @@ Modifying the scroll bar across the whole application
 .rosy-pink {
 	color: #f7657d !important;
 }
+.gray_text_color {
+	color: #eeeeee !important;
+}
 
 /* end of color */
 
@@ -938,6 +941,9 @@ Modifying the scroll bar across the whole application
 }
 .green-bg{
 	background-color:#22bfa9 !important;
+}
+.light_blue-bg{
+	background-color:#ecf2fc !important;
 }
 /* end of background Color */
 
@@ -2902,4 +2908,7 @@ input[type=number] {
 	background-image: url(../image/editcolor.svg); 
 	height: 24px; 
 	width: 24px;
+}
+.ongoing_call_bar{
+	 background: linear-gradient(to bottom, #258d54 0%, #57b280 100%);border-bottom:solid 2px #258d54;position: fixed;top: 61px;z-index: 1;right: 15px;padding-bottom: 20px;
 }

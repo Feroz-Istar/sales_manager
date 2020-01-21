@@ -79,19 +79,22 @@
 			var ongoingTask={};
 			ongoingTask.id= i;
 			ongoingTask.name="name"+i;
-			ongoingTask.image = contextPath+"assets/image/37.jpg";
 			switch(i){
 			case 0:
 				ongoingTask.taskType="SALES_CALL_TASK";
+				ongoingTask.image = contextPath+"assets/image/calltask.svg";
 				break;
 			case 1:
-				ongoingTask.taskType="SALES_EMAIL_TASK";
+				ongoingTask.taskType="SALES_WEBINAR_TASK";
+				ongoingTask.image = contextPath+"assets/image/webinartask.svg";
 				break;
 			case 2:
-				ongoingTask.taskType="SALES_WEBINAR_TASK";
+				ongoingTask.taskType="SALES_PRESENTATION_TASK";
+				ongoingTask.image = contextPath+"assets/image/presentation.svg";
 				break;
 			default:
-				ongoingTask.taskType="SALES_PRESENTATION_TASK";
+				ongoingTask.taskType="SALES_CALL_TASK";
+			ongoingTask.image = contextPath+"assets/image/calltask.svg";
 			}
 			ongoingTask_array.push(ongoingTask);
 		}

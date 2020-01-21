@@ -1,4 +1,6 @@
 $(document).ready(function(){
+	
+
 		attachTaskRelatedData();
 		$(function () {
 			  $('[data-toggle="tooltip"]').tooltip()

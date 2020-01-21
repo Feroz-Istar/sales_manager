@@ -112,7 +112,13 @@
 
 					</div>
 				</li>
+					<li class="chatdropdown list-group-item  p-0  pt-10 pb-10 ">
+					<div class="  d-flex flex-column justify-content-center align-items-center minh-80" data-dropdown_id="upcoming_task_content">
+						<img src="<%=baseURL%>assets/image/document.svg" alt="" />
+						<div class="f-12 pt-1 greyish-brown">Document</div>
 
+					</div>
+				</li>	
 
 				<li class=" flex-grow list-group-item d-flex flex-column justify-content-center align-items-center minh-100" style="height: calc(100% - 80px);"></li>
 

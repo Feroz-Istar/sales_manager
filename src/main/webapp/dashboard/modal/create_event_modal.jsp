@@ -39,9 +39,9 @@
 											<label class="f-14 fw-500 pb-10 m-0">Type</label>
 										<input type="hidden" id="event_type" name="event_type" value="Call Task"/>
 											<div class="dropdown istar-dropdown">
-												<button class="custom-modal-input select_focus w-100 pl-2 d-flex h-35" style="justify-content: space-between;" id="eventType" data-toggle="dropdown" aria-haspopup="true"
+												<button class="custom-modal-input select_focus w-100 pl-2 d-flex h-35" style="justify-content: space-between;" id="" data-toggle="dropdown" aria-haspopup="true"
 													data-display="static" aria-expanded="false">
-													<span id=""> Call Task</span><i class="fas fa-chevron-down very-light-pink f-12 align-self-center"></i>
+													<span id="eventType"> Call Task</span><img src="<%=baseURL %>assets/image/dropdown_right.svg" alt="call" class=" float-right">
 												</button>
 													<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu w-100" id="scheduleTaskType">
 													<button class="dropdown-item" type="button" onclick="create_event_select_task_type(this)">

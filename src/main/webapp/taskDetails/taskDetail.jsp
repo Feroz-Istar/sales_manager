@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/taskDetail.css">
+<link rel="stylesheet" href="<%=baseURL%>assets/css/report.css">
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww" rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">

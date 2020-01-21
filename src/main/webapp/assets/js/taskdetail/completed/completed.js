@@ -81,15 +81,23 @@
 			switch(i){ 
 			case 0:
 				completedTask.taskType="SALES_CALL_TASK";
+				completedTask.image = contextPath+"assets/image/calltask.svg";
 				break;
 			case 1:
 				completedTask.taskType="SALES_EMAIL_TASK";
+				completedTask.image = contextPath+"assets/image/emailtask.svg";
 				break;
 			case 2:
 				completedTask.taskType="SALES_WEBINAR_TASK";
+				completedTask.image = contextPath+"assets/image/webinartask.svg";
+				break;
+			case 3:
+				completedTask.taskType="SALES_PRESENTATION_TASK";
+				completedTask.image = contextPath+"assets/image/presentation.svg";
 				break;
 			default:
 				completedTask.taskType="SALES_PRESENTATION_TASK";
+			completedTask.image = contextPath+"assets/image/call.svg";
 			}
 			completedTask_array.push(completedTask);
 		}

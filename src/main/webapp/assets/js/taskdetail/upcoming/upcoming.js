@@ -78,8 +78,24 @@ function loadUpcomingTab(){
 		var upcomingTask={};
 		upcomingTask.id= i;
 		upcomingTask.name="name"+i;
-		upcomingTask.image = contextPath+"assets/image/37.jpg";
 		upcomingTask_array.push(upcomingTask);
+		switch(i){
+		case 0:
+			upcomingTask.image = contextPath+"assets/image/calltask.svg";
+		break;
+		case 1:
+			upcomingTask.image = contextPath+"assets/image/webinartask.svg";
+		break;
+		case 2:
+			upcomingTask.image = contextPath+"assets/image/presentation.svg";
+		break;
+		case 3:
+			upcomingTask.image = contextPath+"assets/image/emailtask.svg";
+		break;
+		default:
+			upcomingTask.image = contextPath+"assets/image/calltask.svg";
+		break;
+		}
 	}
 	var upcoming_promises = [];
 	for(var upcomingTask of upcomingTask_array){
@@ -125,11 +141,8 @@ function fetchUpcomingTabContent(upcomingTask){
 /*	start of rescheduled modal*/
 function rescheduledModal(){
 	  $('#rescheduleCenter').modal('show');
-
 }
-
 $('#reschedule_date').datepicker({autoclose:true})
-
 var options = { now: "12:35", //hh:mm 24 hour format only, defaults to current time 
 		twentyFour: false, //Display 24 hour format, defaults to false 
 		upArrow: 'wickedpicker__controls__control-up', //The up arrow class selector to use, for custom CSS 

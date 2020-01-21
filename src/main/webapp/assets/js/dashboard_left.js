@@ -268,7 +268,7 @@ function create_event_reset(){
 };
 //On Select "Task Type" dropdown in create event modal
 function create_event_select_task_type(elem){
-	$('#eventType').html($(elem).text());
+	$('#eventType').text($(elem).text());
 	$('#event_type').val($(elem).text());
 }
 //Create Event Form submit click / CREATE on click
