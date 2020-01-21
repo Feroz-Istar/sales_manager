@@ -56,9 +56,19 @@
 		</div>
 	</div>
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
+	<div class="w-100 row pr-30 pl-25 pt-10 pb-10 ongoing_call_bar " style="display:none ;">
+			<div class="col-md-6 p-0 d-flex align-items-center">
+				<img src="<%=baseURL %>assets/image/call_white.svg" alt="call" class="task-dropdown">
+				<div class="gray_text_color f-14 pl-15">You are on call with <span class="font-weight-bold">(043)-335-4103 </span> &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;<span class="f-12">00:30</span> </div>
+			</div>
+			<div class="col-md-6 p-0 gray_text_color  font-weight-bold f-14  d-flex align-items-center justify-content-end">
+			Tab to Return<i class="fas fa-chevron-circle-right pl-2 pr-2 f-14 gray_text_color "></i>
+			</div>
+			</div>
 	<main role="main">
-		<div class="container-fluid salesken_container">
+		<div class="container-fluid  salesken_container">
 			<!-- Start of dashboard header div with dashboard title and New task -->
+			
 			<div class="row pb-3" id="incoming_date" data-input_date="<%=incomingDate%>">
 				<div class="col-md-6 col-6 p-0 m-0 d-flex align-items-center">
 					<h1 class="display-1 black f-20 fw-500 mb-0">Dashboard</h1>
@@ -107,9 +117,9 @@
 							<div class="task-item-container bg-white  pl-20 pt-20 pr-20 pb-40">
 								<div class="d-flex flex-row align-items-center  istar-dropdown pb-10 to_do_list">
 									<div class="bblack f-18 fw-500 pb-5">To-Do List</div>
-									<div class="istar-dropdown-task border-0">
-										<button class="btn rounded-circle bg-white shadow hw-30 d-flex justify-content-center align-items-center ml-20 mr-10 theme_color todo-btn" id="todolist" data-toggle="dropdown"
-											data-display="static" aria-haspopup="true" aria-expanded="false">
+									<div class="istar-dropdown-task border-0 pb-5">
+										<button class="btn rounded-circle bg-white  hw-30 d-flex justify-content-center align-items-center ml-20 mr-10 theme_color todo-btn" id="todolist" data-toggle="dropdown"
+											data-display="static" aria-haspopup="true" aria-expanded="false" style="border:1px solid #eeeeee">
 											<i class="fal fa-plus "></i>
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-right" style="min-width: 150px !important; max-width: 150px !important;" aria-labelledby="todolist">
@@ -126,7 +136,7 @@
 									<div class="fw-500 f-16 greyish-brown mb-2 text-center">Track your tasks</div>
 									<div class="fw-500 f-12 brownish-grey  mx-4 px-4 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 								</div>
-								<!-- end of no-data for todo list -->
+							<!-- end of no-data for todo list -->
 								<!-- Start of creation to do items card -->
 								<div class="to_do_items">
 								
@@ -156,6 +166,7 @@
 				<!-- start of center container/second column of dashboard  -->
 				<div class="col-md-6 p-0 m-0 center_container ">
 					<!-- Start of Pipeline and Stages card-->
+						<div class="d-flex align-items-center pt-10 pb-10 shadow pl-30 mb-10 light_blue-bg pr-30" style="display:none"><i class="fal fa-info-circle soft-blue f-18 pr-5"></i> <em class="soft-blue font-weight-bold f-12">Information <span class="fw-300 ">:  The date cannot be in the future !</span> </em></div>
 					<div class="pipeline-card"></div>
 					<!-- End of Pipeline and Stages card-->
 					<!-- Start of Signal and its count card -->
@@ -172,9 +183,7 @@
 				<!-- Start of right container/third column of dashboard  -->
 				<div class="col-md-3 p-0 pl-md-3 pr-md-3">
 				<div>
-				
 				</div>
-				
 					<!-- Start of ongoing task list 
                      initially it will be hidden   
                      We will display this container on click of view more click
@@ -257,6 +266,8 @@
 	<script src="<%=baseURL%>assets/js/dashboard_left.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_right.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_center.js"></script>
+	<script src="<%=baseURL%>assets/js/dashboard_pipeline_card.js"></script>
+	<script src="<%=baseURL%>assets/js/dashboard_team_card.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
 	<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>

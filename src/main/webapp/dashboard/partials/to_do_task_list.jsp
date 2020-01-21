@@ -17,19 +17,19 @@
 									<div class="font-weight-bold f-14 bblack">Title</div>
 									<div class="dropdown ml-auto istar-dropdown dropleft f-12 brown-grey">
 										<button class="dropdown-icon-btn " type="button"
-											id="dropdownMenuButton" data-display="static"
+											id="to_do_dropdownMenuButton" data-display="static"
 											data-toggle="dropdown" aria-haspopup="true"
 											aria-expanded="false">
 											<i class="fas fa-ellipsis-v f-12 brown-grey"></i>
 										</button>
 										<div
 											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-top:-8px;"
-											aria-labelledby="dropdownMenuButton">
+											aria-labelledby="to_do_dropdownMenuButton">
 
-											<button class="dropdown-item" href="#">
+											<button class="dropdown-item" href="#" id="to_do_edit">
 												<div class="mr-2 dropdown-icon edit"></div>Edit
 											</button>
-											<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal">
+											<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal" id="to_do_delete">
 												<div class="mr-2 dropdown-icon delete"></div>Delete
 											</button>
 

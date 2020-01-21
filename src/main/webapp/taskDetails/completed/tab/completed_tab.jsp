@@ -25,7 +25,7 @@
 		</div>
 		<div class="col-md-4 p-0">
 			<div class="d-flex flex-row align-items-center justify-content-end">
-				<img src="<%=baseURL%>assets/image/calltask.svg" alt="taskicon" class="rounded-circle hw-30 task-icon"> <img src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip"
+				<img src="<%=completedTask.getImage() %>" alt="taskicon" class="rounded-circle hw-30 task-icon"> <img src="<%=baseURL%>assets/image/37.jpg" data-toggle="tooltip"
 					data-placement="bottom" title="" class="rounded-circle hw-40 task-image" alt="task-image" data-original-title="Agent name">
 			</div>
 		</div>
