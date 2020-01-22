@@ -38,6 +38,8 @@
 /*-----------------------------------end of agent and team filter submit-------------------------*/
 
 /*	-------------------------------------start of Won Leads function--------------------------*/
+	
+var prevWonfilterObj={}
 	function loadWonLeads() {
 	$('#qualified_tab_content_card').empty();
 	$('#qualified_tab_content').empty()
@@ -60,8 +62,8 @@
 	 /*Selection of causes filter*/
 		var causes = $('#won_causes').attr('data-name');
 		var causes_id = $('#won_causes').attr('data-id');
-		filterObj.deal={};
-		addFilterSelections("won","causes",causes,causes_id,filterObj.deal)
+		filterObj.causes={};
+		addFilterSelections("won","causes",causes,causes_id,filterObj.causes)
 		
 	/*Selection of deal filter*/
 	var deal_value = $('#won_deal_value').attr('data-name');
@@ -78,8 +80,8 @@
 	/*Selection of source type filter*/
 		var source_type = $('#wonSourceType').attr('data-name');
 		var source_type_id = $('#wonSourceType').attr('data-id');
-		filterObj.deal={};
-		addFilterSelections("won","sourcetype",source_type,source_type_id,filterObj.deal)
+		filterObj.source={};
+		addFilterSelections("won","sourcetype",source_type,source_type_id,filterObj.source)
 	
 		/*Selection of All Agents->Individual filter*/
 		if( $('#won_dropdown').attr('data-agents')!=null){
@@ -114,7 +116,28 @@
 		/*The Filter Object*/
 		console.log(filterObj)
 	
+		//<--------------------PAGINATION LOGIC
+		if(JSON.stringify(filterObj)!=JSON.stringify(prevWonfilterObj)){
+			$('.won-number-of-results').attr('data-page',1)
+		}
 		
+		var page_no= $('.won-number-of-results').attr('data-page')
+		
+		$('.won-pagination').empty();
+		$('.won-pagination').html('<div class="page"><ul class="salesken pagination m-0 pt-30 pb-40 pr-40"></ul></div>')
+		
+		$('.won-pagination>.page').bootpag({
+	        total: 25,
+	        page: page_no,
+	        maxVisible: 5,
+	        next: 'next',
+	        prev: 'prev',
+	        leaps: false
+	    }).on("page", function(event, /* page number here */ num){
+	         $('.won-number-of-results').attr('data-page',num)
+	         loadWonLeads();
+	    });
+		//---------------------------->
 		
 		showWonContentCard();
 		var wonlead_array = [];
@@ -138,6 +161,8 @@
 			}
 		
 		});
+		prevWonfilterObj=filterObj
+		
 	}
 	function showWonContentCard() {
 		var vv = fetchWonContentCard();

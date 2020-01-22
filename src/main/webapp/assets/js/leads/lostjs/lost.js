@@ -40,6 +40,8 @@
 
 
 /*	-------------------------------------start of lost Leads function--------------------------*/
+	
+var prevLostfilterObj={} 
 	function loadLostLeads() {
 	$('#qualified_tab_content_card').empty();
 	$('#qualified_tab_content').empty()
@@ -61,8 +63,8 @@
 	 /*Selection of causes filter*/
 		var causes = $('#lost_causes').attr('data-name');
 		var causes_id = $('#lost_causes').attr('data-id');
-		filterObj.deal={};
-		addFilterSelections("lost","causes",causes,causes_id,filterObj.deal)
+		filterObj.causes={};
+		addFilterSelections("lost","causes",causes,causes_id,filterObj.causes)
 		
 	/*Selection of deal filter*/
 	var deal_value = $('#lost_deal_value').attr('data-name');
@@ -79,8 +81,8 @@
 	/*Selection of source type filter*/
 		var source_type = $('#lostSourceType').attr('data-name');
 		var source_type_id = $('#lostSourceType').attr('data-id');
-		filterObj.deal={};
-		addFilterSelections("lost","sourcetype",source_type,source_type_id,filterObj.deal)
+		filterObj.source={};
+		addFilterSelections("lost","sourcetype",source_type,source_type_id,filterObj.source)
 	
 		/*Selection of All Agents->Individual filter*/
 		if( $('#lost_dropdown').attr('data-agents')!=null){
@@ -112,16 +114,40 @@
 			}
 		}
 		
+		
 		/*The Filter Object*/
 		console.log(filterObj)
-	
+		
+		//<--------------------PAGINATION LOGIC
+		if(JSON.stringify(filterObj)!=JSON.stringify(prevLostfilterObj)){
+			$('.lost-number-of-results').attr('data-page',1)
+		}
+		
+		var page_no= $('.lost-number-of-results').attr('data-page')
+		
+		$('.lost-pagination').empty();
+		$('.lost-pagination').html('<div class="page"><ul class="salesken pagination m-0 pt-30 pb-40 pr-40"></ul></div>')
+		
+		$('.lost-pagination>.page').bootpag({
+	        total: 25,
+	        page: page_no,
+	        maxVisible: 5,
+	        next: 'next',
+	        prev: 'prev',
+	        leaps: false
+	    }).on("page", function(event, /* page number here */ num){
+	         $('.lost-number-of-results').attr('data-page',num)
+	         loadLostLeads();
+	    });
+		//---------------------------->
+		
 		showLostLeadContentCard();
 		var lostlead_array = [];
 		for (var i = 0; i <4; i++) {
 			var lostlead = {};
 			lostlead_array.push(lostlead);
 		}
-
+	
 		var lostlead_promises = [];
 		for (var lostlead of lostlead_array) {
 			lostlead_promises.push(fetchLostLeadContent());
@@ -137,7 +163,13 @@
 			}
 		
 		});
+		prevLostfilterObj=filterObj
+		
 	}
+	
+	
+	
+
 	function showLostLeadContentCard() {
 		var vv = fetchLostLeadContentCard();
 		vv.done(function (data) {

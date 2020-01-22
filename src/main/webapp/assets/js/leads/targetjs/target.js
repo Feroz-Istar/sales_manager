@@ -39,6 +39,7 @@ $('#target_team_submit').click(function(e) {
 	/*-----------------------------------end of agent and team filter submit-------------------------*/
 
 /*	-------------------------------------start of target function--------------------------*/
+var prevTargetfilterObj={}
 	function loadLeadTarget() {
 		$('#qualified_tab_content_card').empty();
 		$('#qualified_tab_content').empty()
@@ -53,8 +54,8 @@ $('#target_team_submit').click(function(e) {
 		/*Selection of source type filter*/
 		var source_type = $('#targetSourceType').attr('data-name');
 		var source_type_id = $('#targetSourceType').attr('data-id');
-		filterObj.deal={};
-		addFilterSelections("target","sourcetype",source_type,source_type_id,filterObj.deal)
+		filterObj.source={};
+		addFilterSelections("target","sourcetype",source_type,source_type_id,filterObj.source)
 		
 		/*Selection of activity filter*/
 		var activity = $('#target_activity').attr('data-name');
@@ -96,6 +97,29 @@ $('#target_team_submit').click(function(e) {
 		/*The Filter Object*/
 		console.log(filterObj)
 		
+		//<--------------------PAGINATION LOGIC
+		if(JSON.stringify(filterObj)!=JSON.stringify(prevTargetfilterObj)){
+			$('.target-number-of-results').attr('data-page',1)
+		}
+		
+		var page_no= $('.target-number-of-results').attr('data-page')
+		
+		$('.target-pagination').empty();
+		$('.target-pagination').html('<div class="page"><ul class="salesken pagination m-0 pt-30 pb-40 pr-40"></ul></div>')
+		
+		$('.target-pagination>.page').bootpag({
+	        total: 25,
+	        page: page_no,
+	        maxVisible: 5,
+	        next: 'next',
+	        prev: 'prev',
+	        leaps: false
+	    }).on("page", function(event, /* page number here */ num){
+	         $('.target-number-of-results').attr('data-page',num)
+	         loadLeadTarget();
+	    });
+		//---------------------------->
+		
 		showTargetContentCard();
 		var leadtarget_array = [];
 		for (var i = 0; i <5; i++) {
@@ -119,6 +143,8 @@ $('#target_team_submit').click(function(e) {
 			}
 		
 		});
+		prevTargetfilterObj=filterObj
+		
 	}
 	function showTargetContentCard() {
 		var vv = fetchTargetContentCard();

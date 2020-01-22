@@ -42,6 +42,8 @@ $('#qualified_team_submit').click(function(e) {
 
 
 /*	-------------------------------------start of qualified function--------------------------*/
+
+var prevQualifiedfilterObj={}
 	function loadLeadQualified() {
 	$('#target_tab_contnet_card').empty();
 	$('#target_tab_contnet').empty()
@@ -77,8 +79,8 @@ $('#qualified_team_submit').click(function(e) {
 	/*Selection of source type filter*/
 		var source_type = $('#qualifiedSourceType').attr('data-name');
 		var source_type_id = $('#qualifiedSourceType').attr('data-id');
-		filterObj.deal={};
-		addFilterSelections("qualified","sourcetype",source_type,source_type_id,filterObj.deal)
+		filterObj.source={};
+		addFilterSelections("qualified","sourcetype",source_type,source_type_id,filterObj.source)
 	
 		/*Selection of All Agents->Individual filter*/
 		if( $('#qualified_dropdown').attr('data-agents')!=null){
@@ -113,6 +115,29 @@ $('#qualified_team_submit').click(function(e) {
 		/*The Filter Object*/
 		console.log(filterObj)
 		
+		//<--------------------PAGINATION LOGIC
+		if(JSON.stringify(filterObj)!=JSON.stringify(prevQualifiedfilterObj)){
+			$('.qualified-number-of-results').attr('data-page',1)
+		}
+		
+		var page_no= $('.qualified-number-of-results').attr('data-page')
+		
+		$('.qualified-pagination').empty();
+		$('.qualified-pagination').html('<div class="page"><ul class="salesken pagination m-0 pt-30 pb-40 pr-40"></ul></div>')
+		
+		$('.qualified-pagination>.page').bootpag({
+	        total: 25,
+	        page: page_no,
+	        maxVisible: 5,
+	        next: 'next',
+	        prev: 'prev',
+	        leaps: false
+	    }).on("page", function(event, /* page number here */ num){
+	         $('.qualified-number-of-results').attr('data-page',num)
+	         loadLeadQualified();
+	    });
+		//---------------------------->
+		
 		
 		showQualifiedContentCard();
 		var leadqualified_array = [];
@@ -136,6 +161,8 @@ $('#qualified_team_submit').click(function(e) {
 			}
 		
 		});
+		prevQualifiedfilterObj=filterObj
+		
 	}
 	function showQualifiedContentCard() {
 		var vv = fetchQualifiedContentCard();
