@@ -1,9 +1,13 @@
 var contextPath=$('body').data('baseurl');
+
+
 $(document).ready(function() {
 	
 	$('.salesken.navbar-nav>li').removeClass('active');
 	$($('.salesken.navbar-nav>li')[1]).addClass('active');		
-	
+	$('#taskdetail_search').keyup(function() {
+			loadOngoingTab();
+	});
 	loadOngoingTab();
 	loadAllAgentFilterTab();
 	loadAllTeamFilterTab();
@@ -33,7 +37,22 @@ $(document).ready(function() {
 			/*Ongoing*/
 			loadOngoingTab();
 		}
+		$('#taskdetail_search').keyup(function() {
+		
+			switch (target) {
+			case "Upcoming":
+				loadUpcomingTab();
+				break;
+			case "Completed":
+				loadCompletedTab();
+				break;
+			default:
+				/*Ongoing*/
+				loadOngoingTab();
+			}
+		});
 	});
+	
 	
 	
 	$('#upcoming_datepicker').datepicker({

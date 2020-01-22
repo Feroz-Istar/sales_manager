@@ -55,7 +55,7 @@
 		<button class="istar-dropdown-arrow " data-display="static" id="completed_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 			<span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
 		</button>
-		<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4" aria-labelledby="completed_dropdown" style="width: 350px;">
+		<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4" aria-labelledby="completed_dropdown" style="width: 350px;height:660px">
 			<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="completedTab" role="tablist">
 				<li class="nav-item"><a class="nav-link active" id="completed_individual-tab" data-toggle="tab" href="#completed_individual" role="tab" aria-controls="completed_individual" aria-selected="true">Individual</a></li>
 				<li class="nav-item"><a class="nav-link" id="completed_team-tab" data-toggle="tab" href="#completed_team" role="tab" aria-controls="completed_team" aria-selected="false">Team</a></li>
