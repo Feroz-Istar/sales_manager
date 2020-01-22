@@ -1232,50 +1232,6 @@ Modifying the scroll bar across the whole application
 	}
 }
 
-/* start of pagination  */
-.salesken.pagination>.page-item>.page-link:focus {
-	box-shadow: none;
-}
-
-.shadow-bottom {
-	box-shadow: 0 4px 13px -9px #dddddd;
-}
-
-.salesken.pagination>.page-item>.page-link {
-	border: none;
-	border-radius: 10px;
-	color: #999999;
-	font-size: 12px;
-	font-weight: 400;
-	background-color: transparent;
-}
-
-.salesken.pagination>.page-item.active .page-link {
-	background-color: #ed4d67;
-	color: #fff !important;
-	font-weight: bold;
-}
-
-.salesken.pagination>.page-item.active .page-link:hover {
-	background-color: #ed4d67;
-	color: #fff !important;
-}
-
-.salesken.pagination>.page-item>.page-link:hover {
-	z-index: 1;
-	color: #222222 !important;
-	text-decoration: none;
-	background-color: transparent;
-	border-color: transparent;
-}
-
-.salesken.pagination>.page-item>#page-next {
-	color: #ed4d67;
-	font-weight: bold;
-	padding-right: 0 !important;
-}
-
-/* end of pagination */
 
 /* start of vertical tab */
 #piplelinestage-tab>.nav-link {
@@ -2912,3 +2868,48 @@ input[type=number] {
 .ongoing_call_bar{
 	 background: linear-gradient(to bottom, #258d54 0%, #57b280 100%);border-bottom:solid 2px #258d54;position: fixed;top: 61px;z-index: 1;right: 15px;padding-bottom: 20px;
 }
+
+/* start of bootpag pagination */
+.page-link{
+	border:none !important;
+	color: #999999 !important;
+	font-size: 14px !important;
+}
+
+.page-item.active .page-link{
+	color: #fff !important;
+    background-color: #ed4d67 !important;
+    border-color: #ed4d67 !important;
+    border-radius: 10px;
+    font-weight:bold;
+}
+
+.page-link:hover{
+	color: #ed4d67 !important;
+	background-color: #fff !important;
+	border-radius: 10px;
+} 
+
+.page-item:last-child .page-link{
+	color: #ed4d67 !important;
+	text-transform: uppercase;
+	font-weight:bold;
+}
+.page-item:last-child .page-link:hover{
+	color: #bf263f !important;	
+}
+.page-item:last-child .page-link:active{
+	color: #f7657d !important;	
+}
+ 
+.page-item:first-child .page-link {
+	text-transform: uppercase;
+}
+
+.page-link:focus{
+	outline: 0;
+    box-shadow: none !important;
+} 
+
+/* end of bootpag pagination */
+
