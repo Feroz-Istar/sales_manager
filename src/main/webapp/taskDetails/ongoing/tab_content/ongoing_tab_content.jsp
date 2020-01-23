@@ -22,7 +22,7 @@
 
 						<div class="f-18 font-weight-bold greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation. Inc.">Globex Corporation. Inc.</div>
 					</div>
-					<div class="col-md-6 p-0 text-right" onclick="window.location.href = 'partials/task_lead_detail.jsp'">
+					<div class="col-md-6 p-0 text-right" onclick="window.location.href = 'task_lead_detail/task_lead_detail.jsp'">
 						<div class="f-14 font-weight-bold   dark_theme_color ">
 							<span class="cursor-pointer">View More <i class="fas fa-chevron-circle-right"></i></span>
 						</div>

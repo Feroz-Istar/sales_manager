@@ -259,6 +259,15 @@ function resetFilters(button){
 			removeAllDataAttributes($("#completed_datepicker"));
 			loadCompletedTab();
 		break;
+	case "completedCallAdherence":
+		$('#completedcall_filter_selections').hide();
+		$('#completedCallTab+#completedCallTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#completedcall_adherence_dropdown"));
+		removeAllDataAttributes($("#completedcall_timeline_datepicker"));
+		loadCalltaskAdherence();
+	break;
 	default:
 		 	$('#ongoing_filter_selections').hide();
 			$('#nav-ongoing').find('.select_focus').each(function(){
@@ -359,14 +368,20 @@ function removeAllDataAttributes(elem){
 		loadCompletedTab();
 	};
 	
+	
+	
 	function removeOngoingFilter(button){
 		var type = $(button).data('type');
 		var tabType=type.split('_')[0];
 		var id=$(button).parent().data('id')
+		console.log(id);
 		var filter;
 		switch(type){
 			case tabType+"_deal":
 				filter = $('#'+tabType+'_deal')
+				break;
+			case tabType+"_Adherence_success":
+				filter = $('#'+tabType+'Adherence_success')
 				break;
 			case tabType+"_stage":
 				filter = $('#'+tabType+'_stage')
@@ -405,6 +420,8 @@ function removeAllDataAttributes(elem){
 				break;
 			case "completed":
 				loadCompletedTab();
+			case "completedcall":
+				loadCalltaskAdherence();
 				break;
 		}
 		

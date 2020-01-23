@@ -22,7 +22,7 @@
 						<div class=" f-18 font-weight-bold greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Opentech Pvt. Ltd.">Opentech Pvt. Ltd.</div>
 					</div>
 					<div class="col-md-6 p-0">
-						<div class=" f-14 font-weight-bold d-flex justify-content-end align-items-center dark_theme_color " onclick="window.location.href = 'partials/task_lead_detail.jsp'">
+						<div class=" f-14 font-weight-bold d-flex justify-content-end align-items-center dark_theme_color " onclick="window.location.href = 'task_lead_detail/task_lead_detail.jsp'">
 							<span class="cursor-pointer">View More <i class="fas fa-chevron-circle-right ml-1 "></i></span>
 						</div>
 					</div>

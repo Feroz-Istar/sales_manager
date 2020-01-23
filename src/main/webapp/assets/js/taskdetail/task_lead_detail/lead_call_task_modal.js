@@ -1,4 +1,83 @@
- $('.dropdown-menu').click(function(e) {
+$(document).ready(function(){	
+	
+loadWhatsRightContent();
+	$('#leadTab>li>a').on('shown.bs.tab', function(e) {
+
+		var target = $(e.target).html(); // activated tab
+		console.log(target);
+		
+		switch (target) {
+		case "Whats Right?":
+			loadWhatsRightContent();
+			break;
+		case "Whats Wrong?":
+			loadWhatsWrongContent();
+			break;
+		case "Timeline":
+			loadCalltaskTimeline();
+			break;
+		case "Adherence":
+			loadCalltaskAdherence();
+			break;
+		default:
+			/*Ongoing*/
+			taskDetailTab();
+		}
+	});
+	});
+
+function  loadWhatsRightContent(){
+	$('#leadwhatswrong').empty();
+	$('#lead_timeline').empty();
+	$('#lead_adherence').empty();
+	$.get(contextPath+"taskDetails/task_lead_detail/task_lead_details_content/lead_call_task_tab_content/lead_whatsright_sub_tab_content.jsp", function(data) {
+		$('#leadwhatsright').html(data);
+	});
+}
+
+function  loadWhatsWrongContent(){
+	$('#leadwhatsright').empty();
+	$('#lead_adherence').empty();
+	$('#lead_timeline').empty();
+	$.get(contextPath+"taskDetails/task_lead_detail/task_lead_details_content/lead_call_task_tab_content/lead_whatswrong_sub_tab_content.jsp", function(data) {
+		$('#leadwhatswrong').html(data);
+	});
+}
+function  loadCalltaskTimeline(){
+	$('#leadwhatswrong').empty();
+	$('#leadwhatsright').empty();
+	$('#lead_adherence').empty();
+	$.get(contextPath+"taskDetails/task_lead_detail/task_lead_details_content/lead_call_task_tab_content/lead_timeline_sub_tab_content.jsp", function(data) {
+		$('#lead_timeline').html(data);
+		stopFilterPropagation();
+		
+	});
+	
+}
+function  loadCalltaskAdherence(){
+	$('#leadwhatsright').empty();
+	$('#lead_timeline').empty();
+	$('#leadwhatswrong').empty();
+	$.get(contextPath+"taskDetails/task_lead_detail/task_lead_details_content/lead_call_task_tab_content/lead_adherence_sub_tab_content.jsp", function(data) {
+		$('#lead_adherence').html(data);
+		stopFilterPropagation();
+	});
+}
+
+function stopFilterPropagation(){
+	$('.filter-menu.dropdown-menu').click(function(e) {
+	    e.stopPropagation();
+	});
+	$('.filtertabs>li>.nav-link').click(function(e) {
+		$($(this).attr('href') + '-tab').tab('show')
+	});
+}
+function showCompletedCallCalendar() {
+	$('#completedcall_timeline_datepicker').datepicker('show')
+}
+
+
+$('.dropdown-menu').click(function(e) {
    	e.stopPropagation();
    });
    
@@ -44,3 +123,4 @@
     $('#lead_call_reply').on('hidden.bs.dropdown', function () {
    		$(".share").removeClass('active');
    	});
+	

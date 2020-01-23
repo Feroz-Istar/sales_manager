@@ -7,15 +7,7 @@
 				<strong class="number-of-results">04</strong> Result Found
 			</div>
 			<div class="col-md-9 d-md-flex justify-content-end p-0 ">
-				<div class="input-group date custom-calendar">
-					<input type="text" id="pipeline_datepicker"
-						class="form-control  custom-dateselect" value="12-02-2012"
-						placeholder="Calendar">
-					<div class="input-group-addon" onclick="showCalendar()">
-						<img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar"
-							class="pr-1 hw-24">
-					</div>
-				</div>
+				
 				<div class="istar-dropdown-task select_focus mr-10">
 					<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
 						id="pipeline_deal_value" data-toggle="dropdown"
@@ -48,7 +40,6 @@
 					</div>
 				</div>
 
-
 				<div class="istar-dropdown-task dropdown select_focus" id="pipeline-filter">
 					<button class="istar-dropdown-arrow " data-display="static"
 					id="pipeline_dropdown" data-toggle="dropdown" aria-haspopup="true"
@@ -57,7 +48,7 @@
 							class=" float-right">
 					</button>
 					<div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
-					aria-labelledby="pipeline_dropdown" style="width: 350px;">
+					aria-labelledby="pipeline_dropdown" style="width: 350px;height:992px">
 								
 							<ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="pipelinefilterTab" role="tablist">
 							  <li class="nav-item">
@@ -79,10 +70,7 @@
 										</div>
 									</div>
 									
-									<div class="pipeline-agent-list mb-2"  style="overflow-x: hidden; overflow-y:auto;">
-									
-						
-                                    </div>
+									<div class="pipeline-agent-list mb-2"  style="overflow-x: hidden; overflow-y:auto;"></div>
                                     
                                      		
                                  </div>
