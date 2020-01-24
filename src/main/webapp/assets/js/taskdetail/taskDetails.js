@@ -228,6 +228,7 @@ function getfilterhtml(filter, id, filter_type){
 function addFilterSelections(tab,filter,name,id,obj){
 	
 	if(name!="" && name!= undefined && id!="" && id != undefined){
+		
 		obj.name=name;
 		obj.id=id;
 		$('#'+tab+'_filter_selections').find('.filters-inside-selection').append(getfilterhtml(name,id,tab+'_'+filter));
@@ -264,9 +265,18 @@ function resetFilters(button){
 		$('#completedCallTab+#completedCallTabContent').find('.select_focus').each(function(){
 			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
 		});
-		removeAllDataAttributes($("#completedcall_adherence_dropdown"));
-		removeAllDataAttributes($("#completedcall_timeline_datepicker"));
+		removeAllDataAttributes($("#completedcallAdherence_dropdown"));
+		removeAllDataAttributes($("#completedcall_adher_datepicker"));
 		loadCalltaskAdherence();
+	break;
+	case "completedCallTimeline":
+		$('#completedcallTimeline_filter_selections').hide();
+		$('#completedCallTab+#completedCallTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#completedcallTimeline_dropdown"));
+		removeAllDataAttributes($("#completedcallTimeline_datepicker"));
+		loadCalltaskTimeline();
 	break;
 	default:
 		 	$('#ongoing_filter_selections').hide();
@@ -374,7 +384,7 @@ function removeAllDataAttributes(elem){
 		var type = $(button).data('type');
 		var tabType=type.split('_')[0];
 		var id=$(button).parent().data('id')
-		console.log(id);
+		console.log(tabType);
 		var filter;
 		switch(type){
 			case tabType+"_deal":
@@ -382,6 +392,12 @@ function removeAllDataAttributes(elem){
 				break;
 			case tabType+"_Adherence_success":
 				filter = $('#'+tabType+'Adherence_success')
+				break;
+			case tabType+"_success":
+				filter = $('#'+tabType+'_success')
+				break;
+			case tabType+"_persona":
+				filter = $('#'+tabType+'_persona')
 				break;
 			case tabType+"_stage":
 				filter = $('#'+tabType+'_stage')
@@ -395,6 +411,12 @@ function removeAllDataAttributes(elem){
 			case tabType+"_time":
 				filter = $('#'+tabType+'_datepicker')
 				break;
+			case tabType+"_timelinedate":
+				filter = $('#'+tabType+'_datepicker')
+				break;
+			case tabType+"_adherdate":
+				filter = $('#'+tabType+'_adher_datepicker')
+				break;
 			case tabType+"_agents":
 				filter = $('#'+tabType+'_dropdown')
 				var agents = JSON.parse($('#'+tabType+'_dropdown').attr('data-agents'));
@@ -407,6 +429,32 @@ function removeAllDataAttributes(elem){
 				teams=teams.filter(function(team){return team.id!==id;})
 				filter.attr('data-teams',JSON.stringify(teams))
 				break;
+			case tabType+"_Adherence_Agents":
+				filter = $('#'+tabType+'Adherence_dropdown')
+				var agents = JSON.parse($('#'+tabType+'Adherence_dropdown').attr('data-agents'));
+				agents=agents.filter(function(agent){return agent.id!==id;})
+				filter.attr('data-agents',JSON.stringify(agents))
+				break;
+			case tabType+"_Adherence_Teams":
+				filter = $('#'+tabType+'Adherence_dropdown')
+				var teams = JSON.parse($('#'+tabType+'Adherence_dropdown').attr('data-teams'));
+				teams=teams.filter(function(team){return team.id!==id;})
+				filter.attr('data-teams',JSON.stringify(teams))
+				break
+			case tabType+"_Timeline_Agents":
+				filter = $('#'+tabType+'_dropdown')
+				var agents = JSON.parse($('#'+tabType+'_dropdown').attr('data-agents'));
+				agents=agents.filter(function(agent){return agent.id!==id;})
+				filter.attr('data-agents',JSON.stringify(agents))
+				break;
+			case tabType+"_Timeline_Teams":
+				filter = $('#'+tabType+'_dropdown')
+				var teams = JSON.parse($('#'+tabType+'_dropdown').attr('data-teams'));
+				teams=teams.filter(function(team){return team.id!==id;})
+				filter.attr('data-teams',JSON.stringify(teams))
+				break;	
+			
+			
 				
 		}
 		filter.attr('data-id',"");
@@ -422,6 +470,9 @@ function removeAllDataAttributes(elem){
 				loadCompletedTab();
 			case "completedcall":
 				loadCalltaskAdherence();
+				break;
+			case "completedcallTimeline":
+				loadCalltaskTimeline();
 				break;
 		}
 		
@@ -453,6 +504,8 @@ function removeAllDataAttributes(elem){
 		populateAgentListDropDown(userList,"upcoming")
 		populateAgentListDropDown(userList,"ongoing")
 		populateAgentListDropDown(userList,"completed")
+		populateAgentListDropDown(userList,"completedCallAdher")
+		populateAgentListDropDown(userList,"completedCallTimeline")
 	}
 	//populate teams in all filters
 	function loadAllTeamFilterTab(){
@@ -472,6 +525,8 @@ function removeAllDataAttributes(elem){
 		populateTeamListDropDown(teamList,"upcoming")
 		populateTeamListDropDown(teamList,"ongoing")
 		populateTeamListDropDown(teamList,"completed")
+		populateTeamListDropDown(teamList,"completedCallAdher")
+		populateTeamListDropDown(teamList,"completedCallTimeline")
 	}
 	//Common function to populate Agents in Drop down for all tabs
 	function populateAgentListDropDown(userList,tabName){
@@ -484,6 +539,7 @@ function removeAllDataAttributes(elem){
 					'<div class="f-14 font-weight-bold greyish-brown text-truncate" title="'+userList[i].name+'">'+userList[i].name+'</div>'+
 					'<div class="f-12  brownish-grey text-truncate" title="team">'+userList[i].teamName+'</div> </div></div>';
 				$('.'+tabName+'-agent-list').append(html);
+				console.log('.'+tabName+'-agent-list')
 			}
 	}
 	//Common function to populate Team in Drop down for all tabs

@@ -3,7 +3,7 @@
    String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
    		+ request.getContextPath() + "/";
    %>
-<div class="card-body theme_solid_border_bottom p-0 pt-20 pb-20	">
+<div class="card-body theme_solid_border_bottom p-0  pb-20	">
                      <div class="d-flex flex-row">
                         <div class="d-flex">
                            <div class="pl-40">
