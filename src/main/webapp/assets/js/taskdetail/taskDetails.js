@@ -269,6 +269,15 @@ function resetFilters(button){
 		removeAllDataAttributes($("#completedcall_adher_datepicker"));
 		loadCalltaskAdherence();
 	break;
+	case "completedWebAdherence":
+		$('#completedweb_filter_selections').hide();
+		$('#completedWebinarTab+#completedWebinarTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#completedwebAdherence_dropdown"));
+		removeAllDataAttributes($("#completedweb_adher_datepicker"));
+		loadWebtaskAdherence();
+	break;
 	case "completedCallTimeline":
 		$('#completedcallTimeline_filter_selections').hide();
 		$('#completedCallTab+#completedCallTabContent').find('.select_focus').each(function(){
@@ -277,6 +286,15 @@ function resetFilters(button){
 		removeAllDataAttributes($("#completedcallTimeline_dropdown"));
 		removeAllDataAttributes($("#completedcallTimeline_datepicker"));
 		loadCalltaskTimeline();
+	break;
+	case "completedWebTimeline":
+		$('#completedwebTimeline_filter_selections').hide();
+		$('#completedWebinarTab+#completedWebinarTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#completedwebTimeline_dropdown"));
+		removeAllDataAttributes($("#completedwebTimeline_datepicker"));
+		loadWebtaskTimeline();
 	break;
 	default:
 		 	$('#ongoing_filter_selections').hide();
@@ -471,8 +489,14 @@ function removeAllDataAttributes(elem){
 			case "completedcall":
 				loadCalltaskAdherence();
 				break;
+			case "completedweb":
+				loadWebtaskAdherence();
+				break;
 			case "completedcallTimeline":
 				loadCalltaskTimeline();
+				break;
+			case "completedwebTimeline":
+				loadWebtaskTimeline();
 				break;
 		}
 		
@@ -506,6 +530,8 @@ function removeAllDataAttributes(elem){
 		populateAgentListDropDown(userList,"completed")
 		populateAgentListDropDown(userList,"completedCallAdher")
 		populateAgentListDropDown(userList,"completedCallTimeline")
+		populateAgentListDropDown(userList,"completedWebAdher")
+		populateAgentListDropDown(userList,"completedWebTimeline")
 	}
 	//populate teams in all filters
 	function loadAllTeamFilterTab(){
@@ -527,6 +553,8 @@ function removeAllDataAttributes(elem){
 		populateTeamListDropDown(teamList,"completed")
 		populateTeamListDropDown(teamList,"completedCallAdher")
 		populateTeamListDropDown(teamList,"completedCallTimeline")
+		populateTeamListDropDown(teamList,"completedWebAdher")
+		populateTeamListDropDown(teamList,"completedWebTimeline")
 	}
 	//Common function to populate Agents in Drop down for all tabs
 	function populateAgentListDropDown(userList,tabName){

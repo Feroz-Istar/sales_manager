@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	loadWhatsRightContent();
+	loadCallWhatsRight();
 	loadAllAgentFilterTab();
 	loadAllTeamFilterTab();
 	$('#completedCallTab>li>a').on('shown.bs.tab', function(e) {
@@ -9,10 +9,10 @@ $(document).ready(function(){
 		
 		switch (target) {
 		case "Whats Right?":
-			loadWhatsRightContent();
+			loadCallWhatsRight();
 			break;
 		case "Whats Wrong?":
-			loadWhatsWrongContent();
+			loadCallWhatsWrong();
 			break;
 		case "Timeline":
 			loadCalltaskTimeline();
@@ -21,8 +21,8 @@ $(document).ready(function(){
 			loadCalltaskAdherence();
 			break;
 		default:
-			/*Ongoing*/
-			taskDetailTab();
+			
+			loadCallWhatsRight();
 		}
 	});				
 
@@ -63,8 +63,8 @@ $(document).ready(function(){
 		  		$(".share").removeClass('active');
 			});
 	});
-
-function  loadWhatsRightContent(){
+/*----------------------------------------start of load completed call task sub-tab "right" content--------------------------------*/
+function  loadCallWhatsRight(){
 	$('#completedcall_whatswrong').empty();
 	$('#completedcall_timeline_section').empty();
 	$('#completedcall_adherence_section').empty();
@@ -73,8 +73,10 @@ function  loadWhatsRightContent(){
 	});
 
 }
+/*----------------------------------------start of load completed call task sub-tab "right" content--------------------------------*/
 
-function  loadWhatsWrongContent(){
+/*----------------------------------------start of load completed call task sub-tab "Wrong" content--------------------------------*/
+function  loadCallWhatsWrong(){
 	$('#completedcall_whatsright').empty();
 	$('#completedcall_adherence_section').empty();
 	$('#completedcall_timeline_section').empty();
@@ -82,7 +84,7 @@ function  loadWhatsWrongContent(){
 		$('#completedcall_whatswrong').html(data);
 	});
 }
-
+/*----------------------------------------start of load completed call task sub-tab "Wrong" content--------------------------------*/
 /*----------------------------------------start of load completed call task sub-tab "Timeline" content--------------------------------*/
 function completedcall_timeline_success(elem){
 	var filter = $(elem).text();

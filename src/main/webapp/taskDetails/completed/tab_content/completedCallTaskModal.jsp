@@ -250,7 +250,7 @@
                            <span class="sr-only">Toggle Dropdown</span><span id="completedcall_adherence_drop">Filter by Success</span> <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
                               class=" float-right">
                            </button>
-                           <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="completedcall_adherence_success">
+                           <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="completedcallAdherence_success">
                               <button class="dropdown-item" type="button" onclick="completedcall_adherence_success(this)" data-id="Lead 1">Lead 1</button>
                               <button class="dropdown-item" type="button" onclick="completedcall_adherence_success(this)" data-id="Lead 2">Lead 2</button>
                            </div>

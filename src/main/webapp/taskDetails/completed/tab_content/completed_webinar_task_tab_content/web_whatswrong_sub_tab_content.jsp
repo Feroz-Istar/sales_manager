@@ -70,6 +70,13 @@
                                  %>
                            </div>
                            <div class="col-md-8 p-0">
+                           <div class="row  m-0 pl-10 pt-10 pb-20 pr-45">
+                                 <div class="col p-0 ">
+                                    <video class="w-100" controls="">
+                                       <source src="https://www.radiantmediaplayer.com/media/bbb-360p.mp4" type="video/mp4">
+                                    </video>
+                                 </div>
+                              </div>
                               <div class="row m-0 pl-20 pr-20 pt-20 pb-20 very-light-pink-grey-bg mr-40 theme_solid_border_right_2px">
                                  <div class="col p-0">
                                     <div id="carouselExampleIndicators"
