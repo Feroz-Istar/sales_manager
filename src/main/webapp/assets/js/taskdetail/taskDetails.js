@@ -269,6 +269,15 @@ function resetFilters(button){
 		removeAllDataAttributes($("#completedcall_adher_datepicker"));
 		loadCalltaskAdherence();
 	break;
+	case "leadCallAdherence":
+		$('#leadcall_filter_selections').hide();
+		$('#leadTab+#leadTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#leadcallAdherence_dropdown"));
+		removeAllDataAttributes($("#leadcall_adher_datepicker"));
+		loadLtaskAdherence();
+	break;
 	case "completedWebAdherence":
 		$('#completedweb_filter_selections').hide();
 		$('#completedWebinarTab+#completedWebinarTabContent').find('.select_focus').each(function(){
@@ -277,6 +286,15 @@ function resetFilters(button){
 		removeAllDataAttributes($("#completedwebAdherence_dropdown"));
 		removeAllDataAttributes($("#completedweb_adher_datepicker"));
 		loadWebtaskAdherence();
+	break;
+	case "leadWebAdherence":
+		$('#leadweb_filter_selections').hide();
+		$('#leadWebinarTab+#leadWebinarTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#leadwebAdherence_dropdown"));
+		removeAllDataAttributes($("#leadweb_adher_datepicker"));
+		loadLeadWebtaskAdherence();
 	break;
 	case "completedCallTimeline":
 		$('#completedcallTimeline_filter_selections').hide();
@@ -287,6 +305,15 @@ function resetFilters(button){
 		removeAllDataAttributes($("#completedcallTimeline_datepicker"));
 		loadCalltaskTimeline();
 	break;
+	case "leadCallTimeline":
+		$('#leadcallTimeline_filter_selections').hide();
+		$('#leadTab+#leadTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#leadcallTimeline_dropdown"));
+		removeAllDataAttributes($("#leadcallTimeline_datepicker"));
+		loadLeadtaskTimeline();
+	break;
 	case "completedWebTimeline":
 		$('#completedwebTimeline_filter_selections').hide();
 		$('#completedWebinarTab+#completedWebinarTabContent').find('.select_focus').each(function(){
@@ -295,6 +322,15 @@ function resetFilters(button){
 		removeAllDataAttributes($("#completedwebTimeline_dropdown"));
 		removeAllDataAttributes($("#completedwebTimeline_datepicker"));
 		loadWebtaskTimeline();
+	break;
+	case "leadWebTimeline":
+		$('#leadwebTimeline_filter_selections').hide();
+		$('#leadWebinarTab+#leadWebinarTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#leadwebTimeline_dropdown"));
+		removeAllDataAttributes($("#leadwebTimeline_datepicker"));
+		loadLeadWebtaskTimeline();
 	break;
 	default:
 		 	$('#ongoing_filter_selections').hide();
@@ -492,11 +528,26 @@ function removeAllDataAttributes(elem){
 			case "completedweb":
 				loadWebtaskAdherence();
 				break;
+			case "leadweb":
+				loadLeadWebtaskAdherence();
+				break;
 			case "completedcallTimeline":
 				loadCalltaskTimeline();
 				break;
 			case "completedwebTimeline":
 				loadWebtaskTimeline();
+				break;
+			case "leadwebTimeline_success":
+				loadLeadWebtaskTimeline();
+				break;
+			case "leadcall":
+				loadLeadtaskAdherence();
+				break;
+			case "leadwebTimeline":
+				loadLeadWebtaskTimeline();
+				break;
+			case "leadcallTimeline":
+				loadLeadtaskTimeline();
 				break;
 		}
 		
@@ -532,6 +583,10 @@ function removeAllDataAttributes(elem){
 		populateAgentListDropDown(userList,"completedCallTimeline")
 		populateAgentListDropDown(userList,"completedWebAdher")
 		populateAgentListDropDown(userList,"completedWebTimeline")
+		populateAgentListDropDown(userList,"leadCallAdher")
+		populateAgentListDropDown(userList,"leadCallTimeline")
+		populateAgentListDropDown(userList,"leadWebAdher")
+		populateAgentListDropDown(userList,"leadWebTimeline")
 	}
 	//populate teams in all filters
 	function loadAllTeamFilterTab(){
@@ -555,6 +610,10 @@ function removeAllDataAttributes(elem){
 		populateTeamListDropDown(teamList,"completedCallTimeline")
 		populateTeamListDropDown(teamList,"completedWebAdher")
 		populateTeamListDropDown(teamList,"completedWebTimeline")
+		populateTeamListDropDown(teamList,"leadCallAdher")
+		populateTeamListDropDown(teamList,"leadCallTimeline")
+		populateTeamListDropDown(teamList,"leadWebAdher")
+		populateTeamListDropDown(teamList,"leadWebTimeline")
 	}
 	//Common function to populate Agents in Drop down for all tabs
 	function populateAgentListDropDown(userList,tabName){

@@ -136,8 +136,8 @@
                   id="leadwhatswrong-tab" data-toggle="tab" href="#leadwhatswrong"
                   role="tab" aria-controls="leadwhatswrong" aria-selected="false">Whats Wrong?</a></li>
                <li class="nav-item"><a class="nav-item nav-link"
-                  id="leadtimeline-tab" data-toggle="tab" href="#lead_timeline"
-                  role="tab" aria-controls="#lead_timeline" aria-selected="false">Timeline</a></li>
+                  id="leadcall_timeline-tab" data-toggle="tab" href="#leadcall_timeline"
+                  role="tab" aria-controls="leadcall_timeline" aria-selected="false">Timeline</a></li>
                <li class="nav-item"><a class="nav-item nav-link"
                   id="leadadherence-tab" data-toggle="tab" href="#lead_adherence"
                   role="tab" aria-controls="lead_adherenc" aria-selected="false">Adherence</a></li>
@@ -149,17 +149,180 @@
                   aria-labelledby="leadwhatsright-tab">
                  
                </div>
-                <div class="tab-pane fade show " id="leadwhatswrong"
+                <div class="tab-pane fade " id="leadwhatswrong"
                   role="tabpanel" aria-labelledby="leadwhatswrong-tab">
                  
                </div>
-               <div class="tab-pane fade  " id="lead_timeline" role="tabpanel" aria-labelledby="lead_timeline-tab">
+               <div class="tab-pane fade  " id="leadcall_timeline" role="tabpanel" aria-labelledby="leadcall_timeline-tab">
+	               <div class="card border-0 card-shadow-bottom" id="lead_timeline_card">
+	              
+	               </div>
+	               <div class="row m-0 theme_dashed_border_bottom   pt-20 pb-20" id="">
+                     <div class="col-md-1 p-0 "></div>
+                     <div class="col-md-11 d-flex  p-0">
+                        <div class="input-group date custom-calendar mr-10">
+                           <input type="text" id="leadcallTimeline_datepicker" class="form-control  custom-dateselect" value="12-02-2012" placeholder="Calendar">
+                           <div class="input-group-addon" onclick="showLeadCallTimelineCalendar()">
+                              <img src="<%=baseURL%>/assets/image/calendar.svg" alt="calendar" class="pr-1 hw-24">
+                           </div>
+                        </div>
+                        <div class="istar-dropdown-task select_focus mr-10">
+                           <button class="istar-dropdown-arrow dropdown-toggle" data-display="static" id="leadcallTimeline_persona" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="sr-only">Toggle Dropdown</span> <span id="lead_timeline_drop">All Persona</span> <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
+                           </button>
+                           <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="leadcallTimeline_persona" id="">
+                              <button class="dropdown-item" type="button" onclick="leadcall_timeline_persona(this)" data-id="Persona 1">Persona 1</button>
+                              <button class="dropdown-item" type="button" onclick="leadcall_timeline_persona(this)" data-id="Persona 2">Persona 2</button>
+                           </div>
+                           
+                        </div>
+                        <div class="istar-dropdown-task select_focus mr-10 ">
+                           <button class="istar-dropdown-arrow dropdown-toggle " data-display="static" id="leadcallTimeline_success" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="sr-only">Toggle Dropdown</span><span id="lead_timeline_success_drop">Filter by Success</span> <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+                              class=" float-right">
+                           </button>
+                           <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="leadcallTimeline_success">
+                              <button class="dropdown-item" type="button" onclick="leadcall_timeline_success(this)" data-id="Lead 1">Lead 1</button>
+                              <button class="dropdown-item" type="button" onclick="leadcall_timeline_success(this)" data-id="Lead 2">Lead 2</button>
+                           </div>
+                        </div>
+                        <div class="istar-dropdown-task dropdown select_focus" id="">
+                           <button class="istar-dropdown-arrow " data-display="static" id="leadcallTimeline_dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call" class=" float-right">
+                           </button>
+                           <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4" aria-labelledby="leadcallTimeline_dropdown"
+                              style="width: 350px;">
+                              <ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="lead_timelineTab" role="tablist">
+                                 <li class="nav-item"><a class="nav-link active" id="lead_timeline_individual-tab" data-toggle="tab" href="#lead_timeline_individual" role="tab"
+                                    aria-controls="lead_timeline_individual" aria-selected="true">Individual</a></li>
+                                 <li class="nav-item"><a class="nav-link" id="lead_timeline_team-tab" data-toggle="tab" href="#lead_timeline_team" role="tab" aria-controls="lead_timeline_team"
+                                    aria-selected="false">Team</a></li>
+                              </ul>
+                              <div class="tab-content" id="lead_timelineTabContent">
+                                 <div class="tab-pane fade show active px-4 py-3" id="lead_timeline_individual" role="tabpanel" aria-labelledby="lead_timeline_individual-tab">
+                                    <div class="input-group py-2">
+                                       <input id="lead_timeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search"
+                                          style="border-right: none !important;">
+                                       <div class="input-group-append">
+                                          <button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+                                          <i class="fa fa-search f-12 brown-grey"></i>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <div class="leadCallTimeline-agent-list mb-2" style="overflow-x: hidden; overflow-y: auto;"></div>
+                                 </div>
+                                 <div class="tab-pane fade px-4 py-3" id="lead_timeline_team" role="tabpanel" aria-labelledby="lead_timeline_team-tab">
+                                    <div class="input-group py-2">
+                                       <input id="lead_timeline_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search"
+                                          style="border-right: none !important;">
+                                       <div class="input-group-append">
+                                          <button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+                                          <i class="fa fa-search f-12 brown-grey"></i>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <div class="leadCallTimeline-team-list mb-2" style="overflow-x: hidden; overflow-y: auto;"></div>
+                                 </div>
+                              </div>
+                              <div class="w-100 text-center">
+                                 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width: 200px;" id="leadcall_timeline_team_submit">Submit</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="leadcallTimeline_filter_selections" style="">
+                     <div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
+                     <div class="col-md-2 text-right p-0">
+                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadCallTimeline" id="leadCallTimeline_reset" onclick="resetFilters(this)">Reset</button>
+                     </div>
+                  </div>
+	               <span id="lead_timeline_section"></span>
               
                </div>
                <div class="tab-pane fade  " id="lead_adherence" role="tabpanel" aria-labelledby="lead_adherence-tab">
-                  <div class="card border-0 card-shadow-bottom">
+                  <div class="card border-0 card-shadow-bottom" id="lead_adhere_card">
               
                </div>
+                 <div class="row m-0 theme_dashed_border_bottom  pt-20 pb-20" id="lead_adherence_filter">
+                     <div class="col-md-1 p-0 "> </div>
+                     <div class="col-md-11 d-flex justify-content-center p-0">
+                        <div class="input-group date custom-calendar mr-10">
+                           <input type="text" id="leadcall_adher_datepicker" class="form-control  custom-dateselect"
+                              value="12-02-2012" placeholder="Calendar">
+                           <div class="input-group-addon" onclick="showLeadAdhereCalendar()">
+                              <img src ="<%=baseURL%>/assets/image/calendar.svg"  alt="calendar" class="pr-1 hw-24">
+                           </div>
+                        </div>
+                        <div class="istar-dropdown-task select_focus mr-10">
+                           <button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
+                              id="leadcallAdherence_success" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                           <span class="sr-only">Toggle Dropdown</span ><span id="lead_adherence_drop">Filter by Success</span>
+                           <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+                              class=" float-right">
+                           </button>
+                           <div
+                              class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="leadcallAdherence_success">
+                              <button class="dropdown-item" type="button" onclick="leadcall_adherence_success(this)" data-id="Lead 1">Lead 1</button>
+                              <button class="dropdown-item" type="button" onclick="leadcall_adherence_success(this)" data-id="Lead 2">Lead 2</button>
+                           </div>
+                        </div>
+                        <div class="istar-dropdown-task dropdown select_focus" id="">
+                           <button class="istar-dropdown-arrow " data-display="static"
+                              id="leadcallAdherence_dropdown" data-toggle="dropdown" aria-haspopup="true"
+                              aria-expanded="false">
+                           <span class="sr-only">Toggle Dropdown</span> All Agents <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
+                              class=" float-right">
+                           </button>
+                           <div class="dropdown-menu filter-menu dropdown-menu-right istar-dropdown-task-menu  dropdown-menu-lg-right position-absolute px-4"
+                              aria-labelledby="leadcallAdherence_dropdown" style="width: 350px; ">
+                              <ul class="dropdown-nav nav nav-tabs nav-mytabs filtertabs pt-2 d-flex align-items-end" id="lead_adherenceTab" role="tablist">
+                                 <li class="nav-item">
+                                    <a class="nav-link active" id="lead_adherence_individual-tab" data-toggle="tab" href="#lead_adherence_individual" role="tab" aria-controls="lead_adherence_individual" aria-selected="true">Individual</a>
+                                 </li>
+                                 <li class="nav-item">
+                                    <a class="nav-link" id="lead_adherence_team-tab" data-toggle="tab" href="#lead_adherence_team" role="tab" aria-controls="lead_adherence_team" aria-selected="false">Team</a>
+                                 </li>
+                              </ul>
+                              <div class="tab-content" id="lead_adherenceTabContent">
+                                 <div class="tab-pane fade show active px-4 py-3" id="lead_adherence_individual" role="tabpanel" aria-labelledby="lead_adherence_individual-tab">
+                                    <div class="input-group py-2">
+                                       <input id="lead_adherence_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+                                       <div class="input-group-append">
+                                          <button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+                                          <i class="fa fa-search f-12 brown-grey"></i>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <div class="leadCallAdher-agent-list mb-2"  style=" overflow-x: hidden; overflow-y:auto;"></div>
+                                 </div>
+                                 <div class="tab-pane fade px-4 py-3" id="lead_adherence_team" role="tabpanel" aria-labelledby="lead_adherence_team-tab">
+                                    <div class="input-group py-2">
+                                       <input id="lead_adherence_individual_search" class="form-control  custom-taskborder brown-grey  removefocus f-14 search_height" type="search" placeholder="Search" style="border-right: none !important;">
+                                       <div class="input-group-append">
+                                          <button class="btn removefocus border_except_left search_height d-flex justify-content-center align-items-center" type="button" style="">
+                                          <i class="fa fa-search f-12 brown-grey"></i>
+                                          </button>
+                                       </div>
+                                    </div>
+                                    <div class="leadCallAdher-team-list mb-2" style="overflow-x: hidden; overflow-y:auto;"></div>
+                                 </div>
+                              </div>
+                              <div class="w-100 text-center">
+                                 <button class="btn  rounded-0 theme_bg text-white f-14 font-weight-bold  mb-3 text-center px-3" style="min-width:200px;" id="leadcall_adherence_team_submit">Submit</button>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="leadcall_filter_selections" style="">
+                     <div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
+                     <div class="col-md-2 text-right p-0">
+                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadCallAdherence" id="leadCallAdherence_reset" onclick="resetFilters(this)">Reset</button>
+                     </div>
+                  </div>
+               <span id="lead_adherence_section"></span>
             </div>
          </div>
       </div>

@@ -28,8 +28,11 @@ $(document).ready(function(){
 });
 
 function  loadWebWhatsRight(){
+	$('#completedWebinar_adhere_card').empty();
+	$('#completedweb_adherence_section').empty();
 	$('#completedweb_adherence_section').empty();
 	$('#completedWebinarwhatswrong').empty();
+	$('#completedWebinar_timeline_card').empty();
 	$('#completedweb_timeline_section').empty();
 	
 	$.get(contextPath+"taskDetails/completed/tab_content/completed_webinar_task_tab_content/web_whatsright_sub_tab_content.jsp", function(data) {
@@ -38,8 +41,11 @@ function  loadWebWhatsRight(){
 }
 
 function  loadWebWhatsWrong(){
+	$('#completedWebinar_adhere_card').empty();
+	$('#completedweb_adherence_section').empty();
 	$('#completedWebinarwhatsright').empty();
 	$('#completedweb_adherence_section').empty();
+	$('#completedWebinar_timeline_card').empty();
 	$('#completedweb_timeline_section').empty();
 	$.get(contextPath+"taskDetails/completed/tab_content/completed_webinar_task_tab_content/web_whatswrong_sub_tab_content.jsp", function(data) {
 		$('#completedWebinarwhatswrong').html(data);
@@ -69,6 +75,7 @@ $('#completedwebTimeline_datepicker').change(function(){
 	loadWebtaskTimeline();
 })
 function  loadWebtaskTimeline(){
+	$('#completedWebinar_adhere_card').empty();
 	$('#completedweb_adherence_section').empty();
 	$('#completedWebinarwhatswrong').empty();
 	$('#completedWebinarwhatsright').empty();
@@ -188,6 +195,7 @@ function completedweb_adherence_success(elem){
 };
 function  loadWebtaskAdherence(){
 	$('#completedWebinarwhatsright').empty();
+	$('#completedWebinar_timeline_card').empty();
 	$('#completedweb_timeline_section').empty();
 	$('#completedWebinarwhatswrong').empty();
 	$('#completedweb_filter_selections').find('.filters-inside-selection').empty();

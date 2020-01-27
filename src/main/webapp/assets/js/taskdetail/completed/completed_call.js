@@ -111,6 +111,7 @@ $('#completedcallTimeline_datepicker').change(function(){
 function  loadCalltaskTimeline(){
 	$('#completedcall_whatsright').empty();
 	$('#completedcall_adherence_section').empty();
+	$('#adherence_sub_tab_card').empty();
 	$('#completedcall_whatswrong').empty();
 	$('#completedcallTimeline_filter_selections').find('.filters-inside-selection').empty();
 	$('#completedcallTimeline_filter_selections').hide();
@@ -232,6 +233,7 @@ function  loadCalltaskAdherence(){
 	
 	$('#completedcall_whatsright').empty();
 	$('#completedcall_timeline_section').empty();
+	$('#callTimeline_sub_tab_card').empty();
 	$('#completedcall_whatswrong').empty();
 	$('#completedcall_filter_selections').find('.filters-inside-selection').empty();
 	$('#completedcall_filter_selections').hide();
