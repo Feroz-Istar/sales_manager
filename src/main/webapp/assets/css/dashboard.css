@@ -81,13 +81,7 @@ width: 130px;
 .istar_badge{
 	width: 80px; height: 25px; border-radius: 14px; line-height: 20px; background: #e84c4c !important;
 }
-.pipeline-container{
-	display:none;
-}
 
-.pipeline-container.active{
-	display:block;
-}
 
 .todo-btn:hover{
 	background-color: #ed4d67 !important;

@@ -34,7 +34,7 @@
 <link href="<%=baseURL%>assets/css/bootstrap-select.min.css" rel="stylesheet">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 <link rel="stylesheet" href="<%=baseURL%>assets/css/multiselect.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
+	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
 	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 
 </head>
@@ -167,7 +167,25 @@
 				<div class="col-md-6 p-0 m-0 center_container ">
 					<!-- Start of Pipeline and Stages card-->
 						<div class="d-flex align-items-center pt-10 pb-10 shadow pl-30 mb-10 light_blue-bg pr-30" style="display:none"><i class="fal fa-info-circle soft-blue f-18 pr-5"></i> <em class="soft-blue font-weight-bold f-12">Information <span class="fw-300 ">:  The date cannot be in the future !</span> </em></div>
-					<div class="pipeline-card"></div>
+					<div class="pipeline-card">
+						<div class="card shadow mb-2 rounded-0" style="min-height: 322px;" >
+							<div class="card-body p-0">
+								<div class="salesken_caurosel position-relative overflow-hidden">
+
+									<button type="button" class="istar-btn-icon  previous p-0" id="pipeline-left" onclick="pipeline_prev(this)">
+										<i class="fal fa-chevron-left"></i>
+									</button>
+									<button type="button" class="istar-btn-icon  active next p-0" id="pipeline-right" onclick="pipeline_next(this)">
+										<i class="fal fa-chevron-right"></i>
+									</button>
+									<div id="pipeline-card" ></div>
+								</div>
+							</div>
+						</div>
+
+
+
+					</div>
 					<!-- End of Pipeline and Stages card-->
 					<!-- Start of Signal and its count card -->
 					<div id="carouselExampleIndicators" class="carousel slide mb-2" data-ride="carousel"></div>
@@ -266,7 +284,6 @@
 	<script src="<%=baseURL%>assets/js/dashboard_left.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_right.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_center.js"></script>
-	<script src="<%=baseURL%>assets/js/dashboard_pipeline_card.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_team_card.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
 	<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>

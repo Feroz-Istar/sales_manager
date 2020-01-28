@@ -141,12 +141,15 @@ html, body {
 	right: 68px;
 	position: absolute;
 	top: 28px;
+	z-index:5;
 }
 
 .istar-btn-icon.next {
 	right: 31px;
 	position: absolute;
 	top: 28px;
+		z-index:5;
+	
 }
 
 .istar-btn-icon.active:active {

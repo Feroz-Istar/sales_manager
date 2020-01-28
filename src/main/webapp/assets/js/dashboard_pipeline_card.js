@@ -1,4 +1,4 @@
-$(document).ready(
+/*$(document).ready(
 			function() {
 
 				var pipelineCount = $('.pipeline-container').length;
@@ -46,4 +46,5 @@ $(document).ready(
 					$('#pipeline-right').removeClass('active');
 					$('#pipeline-left').removeClass('active');
 				}
-			});
+			});*/
+
