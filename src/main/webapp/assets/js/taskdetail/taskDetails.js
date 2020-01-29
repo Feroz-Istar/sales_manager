@@ -5,9 +5,7 @@ $(document).ready(function() {
 	
 	$('.salesken.navbar-nav>li').removeClass('active');
 	$($('.salesken.navbar-nav>li')[1]).addClass('active');		
-	$('#taskdetail_search').keyup(function() {
-			loadOngoingTab();
-	});
+	
 	loadOngoingTab();
 	loadAllAgentFilterTab();
 	loadAllTeamFilterTab();
@@ -494,7 +492,7 @@ function removeAllDataAttributes(elem){
 				var teams = JSON.parse($('#'+tabType+'Adherence_dropdown').attr('data-teams'));
 				teams=teams.filter(function(team){return team.id!==id;})
 				filter.attr('data-teams',JSON.stringify(teams))
-				break
+				break;
 			case tabType+"_Timeline_Agents":
 				filter = $('#'+tabType+'_dropdown')
 				var agents = JSON.parse($('#'+tabType+'_dropdown').attr('data-agents'));

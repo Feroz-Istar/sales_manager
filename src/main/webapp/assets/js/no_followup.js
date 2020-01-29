@@ -28,25 +28,25 @@
 		var filterObj={}
 		
 	
-		/*Selection of date filter*/
+		/* Selection of date filter */
 		var time_value = $('#nofollowup_datepicker').attr('data-name');
 		var time_value_id = $('#nofollowup_datepicker').attr('data-id');
 		filterObj.time={};
 		addFilterSelections("nofollowup","time",time_value,time_value_id,filterObj.time)
 		
-		/*Selection of stage filter*/
+		/* Selection of stage filter */
 		var stage = $('#nofollowup_stage').attr('data-name');
 		var stage_id = $('#nofollowup_stage').attr('data-id');
 		filterObj.stage={};
 		addFilterSelections("nofollowup","stage",stage,stage_id,filterObj.stage)
 		
-		/*Selection of activity filter*/
+		/* Selection of activity filter */
 		var activity = $('#nofollowup_activity').attr('data-name');
 		var activity_id = $('#nofollowup_activity').attr('data-id');
 		filterObj.activity={};
 		addFilterSelections("nofollowup","activity",activity,activity_id,filterObj.activity)		
 		
-		/*Selection of status filter*/
+		/* Selection of status filter */
 		var status = $('#nofollowup_status').attr('data-name');
 		var status_id = $('#nofollowup_status').attr('data-id');
 		filterObj.status={};
@@ -129,7 +129,7 @@
     			return $.post(contextPath+"report/no_follow_up/tab_content/playbookCallTaskModal.jsp",JSON.stringify(nofollowupReport));
     		}
   	}
-   /////////////////////////////////////////////////////////////////////////////////////////
+   // ///////////////////////////////////////////////////////////////////////////////////////
       /*--------- Global function for reset-----------------------------------*/
       
       function resetReportFilters(button){
@@ -182,7 +182,7 @@
 	}
 	
 }
- //remove given data attributes from the element given
+ // remove given data attributes from the element given
    function removeAllDataAttributes(elem){
    		elem.attr('data-id',"");
    		elem.attr('data-name',"");
@@ -301,7 +301,7 @@
 		$('#nofollowup_datepicker').attr('data-name',this.value)
 		loadNofollowUpTab();
     });
-	//<---------------GLOBAL FUNCTIONS FOR EACH TAB TO ADD FILTER TAGS
+	// <---------------GLOBAL FUNCTIONS FOR EACH TAB TO ADD FILTER TAGS
 	function getfilterhtml(filter, id, filter_type){
 		return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
 				'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removeReportFilter(this)"></i> </button>'
@@ -316,9 +316,9 @@
 			$('#'+tab+'_filter_selections').show();
 		}
 	}
-	//--------------------------------------------->
-	//<------------------------AGENT TEAM FILTER DROP DOWN POPULATE
-	//populate agents in all filters
+	// --------------------------------------------->
+	// <------------------------AGENT TEAM FILTER DROP DOWN POPULATE
+	// populate agents in all filters
 	function loadReportAllAgentFilterTab(){
 		var userList=[{
 			id:1,
@@ -346,7 +346,7 @@
 		populateReportAgentListDropDown(userList,"nofollowupWebTimeline")
 		populateReportAgentListDropDown(userList,"nofollowupWebAdher")
 	}
-	//populate teams in all filters
+	// populate teams in all filters
 	function loadReportAllTeamFilterTab(){
 		var teamList=[{
 			id:1,
@@ -366,7 +366,7 @@
 		populateReportTeamListDropDown(teamList,"nofollowupWebTimeline")
 		populateReportTeamListDropDown(teamList,"nofollowupWebAdher")
 	}
-	//Common function to populate Agents in Drop down for all tabs
+	// Common function to populate Agents in Drop down for all tabs
 	function populateReportAgentListDropDown(userList,tabName){
 		 for(var i=0;i<userList.length;i++){
 			 	
@@ -379,7 +379,7 @@
 				$('.'+tabName+'-agent-list').append(html);
 			}
 	}
-	//Common function to populate Team in Drop down for all tabs
+	// Common function to populate Team in Drop down for all tabs
 	function populateReportTeamListDropDown(teamList,tabName){
 		 for(var i=0;i<teamList.length;i++){
 				var html='<div class="d-flex align-items-center pt-3">'+
@@ -388,6 +388,6 @@
 				$('.'+tabName+'-team-list').append(html);
 			}
 	}	
-//---------------------------------------------->
-	/*	end of filter drop down*/ 
+// ---------------------------------------------->
+	/* end of filter drop down */ 
 	
