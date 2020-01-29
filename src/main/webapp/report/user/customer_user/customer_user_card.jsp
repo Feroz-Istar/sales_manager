@@ -3,7 +3,7 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 	%>
-	<div class="card mb-10 mr-40 ml-40 cursor-pointer" onclick="window.location.href = 'userDetail.jsp'" style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);">
+	<div class="card mb-10 mr-40 ml-40 cursor-pointer" onclick="window.location.href = '../../../report/user/customer_user/user_detail/userDetail.jsp'" style="box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.1);">
                   
                
 <div class="card-body p-0">

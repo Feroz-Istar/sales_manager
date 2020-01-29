@@ -27,7 +27,7 @@
 <link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
 
 </head>
-<body data-base-url="<%=baseURL%>" onload="load()">
+<body data-baseurl="<%=baseURL%>" onload="load()">
 <!-- start of circular progress bar for page loading -->
 	<div class="salesken_progress h-100 w-100 " style="display:none">
 		<div
@@ -38,7 +38,7 @@
 		</div>
 	</div>
 	<!-- end of circular progress bar for page loading -->
-<jsp:include page="../navbar/nav.jsp"></jsp:include>
+<jsp:include page="../../../../navbar/nav.jsp"></jsp:include>
 <main role="main">
 	<div class="container-fluid salesken_container">
 	
@@ -88,7 +88,7 @@
 							</div>
 							<div class="col-md-9 d-md-flex justify-content-end p-0 ">
 								<div class="input-group date custom-calendar mr-10">
-									<input type="text" id="task_datepicker" class="form-control  custom-dateselect"
+									<input type="text" id="userDetail_datepicker" class="form-control  custom-dateselect"
 										value="12-02-2012">
 									<div class="input-group-addon" onclick="showCalendar()">
 										<img src ="<%=baseURL%>/assets/image/calendar.svg" class="pr-1 hw-24" alt="calendar">
@@ -96,42 +96,38 @@
 								</div>	
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
-										id="user_stage" data-toggle="dropdown" aria-haspopup="true"
+										id="userDetail_stage" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Stages
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_stage" data-display="static">
-										<button class="dropdown-item" type="button">
-											Stage 1
-										</button>
-										<button class="dropdown-item" type="button">
-											 Stage 2
-										</button>
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="userDetail_stage" data-display="static">
+										<button class="dropdown-item" type="button" onclick="userDetail_stage_dropdown(this)" data-id="Stage 1">Stage 1</button>
+										<button class="dropdown-item" type="button" onclick="userDetail_stage_dropdown(this)" data-id="Stage 2">Stage 2</button>
 									</div>
 								</div> 	
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button
 										class="istar-dropdown-arrow dropdown-toggle" data-display="static"
-										id="activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+										id="userDetail_activity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
 										<span class="sr-only">Toggle Dropdown</span>
    										All Activities <img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
-									 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu">
-									    <button class="dropdown-item" type="button">
+									 <div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="userDetail_activity">
+									    <button class="dropdown-item" type="button" onclick="userDetail_activity_dropdown(this)" data-id="Call Task">
 									    <img src="<%=baseURL%>assets/image/calltask.svg" class="task-dropdown" alt="call">
 									    Call Task</button>
-									    <button class="dropdown-item" type="button">
+									    <button class="dropdown-item" type="button" onclick="userDetail_activity_dropdown(this)" data-id="Email Task">
 									    <img src="<%=baseURL%>assets/image/emailtask.svg" class="task-dropdown" alt="email">
 									    Email Task</button>
-									    <button class="dropdown-item" type="button">
+									    <button class="dropdown-item" type="button" onclick="userDetail_activity_dropdown(this)" data-id=" Webinar Task">
 									    <img src="<%=baseURL%>assets/image/webinartask.svg" class="task-dropdown" alt="webinar">
 									    Webinar Task
 									    </button>
-									    <button class="dropdown-item" type="button">
+									    <button class="dropdown-item" type="button" onclick="userDetail_activity_dropdown(this)" data-id="Presentation">
 									    <img src="<%=baseURL%>assets/image/presentation.svg" class="task-dropdown" alt="presentation">
 									    Presentation
 									    </button>
@@ -140,121 +136,54 @@
 								</div> 
 								<div class="istar-dropdown-task select_focus mr-10">
 									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
-										id="user_status" data-toggle="dropdown" aria-haspopup="true"
+										id="userDetail_status" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Status
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_status">
-										<button class="dropdown-item" type="button">
-											Status 1
-										</button>
-										<button class="dropdown-item" type="button">
-											 Status 2
-										</button>
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="userDetail_status">
+										<button class="dropdown-item" type="button" onclick=" userDetail_status_dropdown(this)" data-id="Status 1">Status 1</button>
+										<button class="dropdown-item" type="button" onclick=" userDetail_status_dropdown(this)" data-id="Status 2">Status 2</button>
 									</div>
 								</div> 	
 								<div class="istar-dropdown-task select_focus">
 									<button class="istar-dropdown-arrow dropdown-toggle" data-display="static"
-										id="user_leads" data-toggle="dropdown" aria-haspopup="true"
+										id="userDetail_leads" data-toggle="dropdown" aria-haspopup="true"
 										aria-expanded="false">
 										<span class="sr-only">Toggle Dropdown</span>All Leads
 										<img src="<%=baseURL%>assets/image/dropdown_right.svg" alt="call"
 												class=" float-right">
 									</button>
 									<div
-										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="user_leads">
-										<button class="dropdown-item" type="button">
-											Lead 1
-										</button>
-										<button class="dropdown-item" type="button">
-											 Lead 2
-										</button>
+										class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="userDetail_leads">
+										<button class="dropdown-item" type="button" onclick=" userDetail_leads_dropdown(this)">Lead 1</button>
+										<button class="dropdown-item" type="button" onclick=" userDetail_leads_dropdown(this)">Lead 2</button>
 									</div>
 								</div> 
 							</div>
 						</div>
 						
-						<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="agent_filters">
-							<div class="col-md-10 d-flex p-0">
-									<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter" >Filter 1
-									<i class="fas fa-times-circle brown-grey f-14 cross-btn"></i>
-									</button>
-							</div>
-							
+					<div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="userDetail_filter_selections" style="">
+							<div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
 							<div class="col-md-2 text-right p-0">
-								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="agent_reset">Reset</button>
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="userDetail_reset" data-type="ongoing" onclick="resetuserDetailFilters(this)">Reset</button>
 							</div>
 						</div>
 						
 						<div class="row very-light-pink-grey-bg m-0">
 							<div class="col-md-3 p-0 pl-20">
-								<div class="nav flex-column nav-pills" id="taskdetail-tab-list"
+								<div class="nav flex-column nav-pills taskdetail-tab-list" id="user_detail-tab"
 									role="tablist" aria-orientation="vertical">
-									<%
-										for (int i = 0; i < 4; i++) {
-											String isactive = "";
-											String tasktype="call";
-											if (i == 0) {
-												isactive = "active";
-											}
-											if (i ==1) {
-												tasktype = "email";
-											}
-											if (i == 2) {
-												tasktype = "webinar";
-											}
-											
-									%>
-									<div class="nav-link <%=isactive%> border-bottom-separation p-0" id="v-pills-<%=i%>-tabs" data-toggle="pill"
-										href="#v-pills-<%=i%>" role="tab"
-										aria-controls="v-pills-<%=i%>" aria-selected="true" data-task_type="<%=tasktype%>">
-										<div class="row align-items-center m-0 p-20">
-											<div class="col-md-2 p-0">
-												<div class="d-flex flex-row align-items-center">
-													<img src="<%=baseURL%>assets/image/calltask.svg"
-														alt="callicon" class="rounded-circle hw-30 task-icon">
-													<img src="<%=baseURL%>assets/image/37.jpg"
-														title="Agent Name" alt="user-img"
-														class="rounded-circle hw-40 task-image">
-												</div>
-											</div>
-											<div class="col-md-10 pl-15 p-0">
-												<p class="soft-blue f-12 font-weight-bold m-0">Confident</p>
-												<h1 class="black f-16 fw-500 m-0 text-truncate"
-													title="Robert Wolken">Marry Vasquez</h1>
-												<p class="brown-grey f-12 m-0">June 26, 2019</p>
-											</div>
-
-										</div>
-									</div>
-
-									<%
-										}
-									%>
+									
 								</div>
 							</div>
 
 
 							<div class="col-md-9 bg-white p-0">
-								<div class="tab-content h-100" id="taskdetail-tab-listContent">
-									<%
-										for (int i = 0; i < 4; i++) {
-											String isactive = "";
-											if (i == 0) {
-												isactive = "active";
-											}
-									%>
-									<div class="tab-pane h-100 fade show <%=isactive%>"
-										id="v-pills-<%=i%>" role="tabpanel"
-										aria-labelledby="v-pills-<%=i%>-tabs">
-										
-									</div>
-									<%
-										}
-									%>
+								<div class="tab-content h-100" id="user_detail-tabTabContent">
+							
 								</div>
 							</div>
 						</div>
@@ -506,10 +435,10 @@
 <script src="<%=baseURL%>assets/js/userDetail.js"></script>
 
 <script>
-	$( document ).ready(function() {
-		$('#task_datepicker').datepicker({autoclose:true});
-		$('.salesken.navbar-nav>li').removeClass('active');
 
+var contextPath=$('body').data('baseurl');
+	$( document ).ready(function() {
+		userDetailTab();
 		/* start of rating bar js code */
 		$(".rateYo").each(function(index) {
 			console.log(typeof $(this).attr('data-rating'))
@@ -523,59 +452,181 @@
 				'starSvg': '<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24">     <defs>         <style>             .cls-1{fill:none}.cls-2{clip-path:url(#clip-path)}      </style>         <clipPath id="clip-path">             <path d="M0 0h24v24H0z" class="cls-1"/>         </clipPath>     </defs>     <g id="Component" class="cls-2">         <path id="Rectangle_936" d="M0 0h24v24H0z" class="cls-1" data-name="Rectangle 936"/>         <path id="Path_59" d="M965.57 1814.81a.846.846 0 0 1-.461-.136l-4.78-3.1-4.78 3.1a.848.848 0 0 1-1.277-.942l1.5-5.3-4.467-3.776a.848.848 0 0 1 .487-1.494l5.359-.385 2.412-5.276a.848.848 0 0 1 1.543 0l2.412 5.276 5.359.385a.848.848 0 0 1 .487 1.494l-4.468 3.776 1.5 5.3a.848.848 0 0 1-.816 1.078zm-5.241-5.092a.847.847 0 0 1 .461.136l3.353 2.172-1.034-3.664a.848.848 0 0 1 .269-.878l3.294-2.785-3.783-.272a.848.848 0 0 1-.711-.493l-1.849-4.046-1.849 4.046a.848.848 0 0 1-.711.493l-3.783.272 3.294 2.785a.848.848 0 0 1 .269.878l-1.034 3.664 3.353-2.172a.847.847 0 0 1 .461-.136z" class="cls-3" data-name="Path 59" transform="translate(-948 -1794)"/>     </g> </svg> '
 			});
 		});
+	});
 		/* end of rating bar js code */
 		
-		 $.get(location.origin+'/tabcontent/userCallTaskModal.jsp', function( data ) {
-        
-			var tabid= $('#taskdetail-tab-list>.nav-link').attr('href').replace('#','')
-        	$('#'+tabid).html(data);
-    		});
-	    
-	    $('#taskdetail-tab-list>.nav-link').on('show.bs.tab', function (e) {
-	    	var tabid= $(e.target).attr('href').replace('#','');
-	    	 // newly activated tab
-			var url=location.origin;
+
+	///**************************************************
+		function userDetailTab(){
+			$('#userDetail_filter_selections').find('.filters-inside-selection').empty();
+			$('#userDetail_filter_selections').hide();
 			
-	    	switch($(e.target).data('task_type')){
-	    	case 'call':
-		    	  url=url+ '/tabcontent/userCallTaskModal.jsp';
-		    	  break;
-	    	case 'email':
-	    		url=url+ '/tabcontent/userEmailTaskModal.jsp';
-		    	  break;
-	    	case 'webinar':
-	    		url=url+ '/tabcontent/userWebinarTaskModal.jsp';
-		    	  break;
-		    default: url=url+ '/tabcontent/userCallTaskModal.jsp';
-	    			 break;
-	    	}
-	    	
-	    	$.get(url, function( data ) {
-	        	//console.log(data);
-	        	//console.log(selectedTab);
+			var filterObj={}
+			/*Selection of date filter*/
+			var time_value = $('#userDetail_datepicker').attr('data-name');
+			var time_value_id = $('#userDetail_datepicker').attr('data-id');
+			filterObj.time={};
+			addFilterSelections("userDetail","time",time_value,time_value_id,filterObj.time)
+			
+			
+			/*Selection of stage filter*/
+			var stage = $('#userDetail_stage').attr('data-name');
+			var stage_id = $('#userDetail_stage').attr('data-id');
+			filterObj.stage={};
+			addFilterSelections("userDetail","stage",stage,stage_id,filterObj.stage)
+			
+			/*Selection of activity filter*/
+			var activity = $('#userDetail_activity').attr('data-name');
+			var activity_id = $('#userDetail_activity').attr('data-id');
+			filterObj.activity={};
+			addFilterSelections("userDetail","activity",activity,activity_id,filterObj.activity)
+			
+			/*Selection of status filter*/
+			var status = $('#userDetail_status').attr('data-name');
+			var status_id = $('#userDetail_status').attr('data-id');
+			filterObj.status={};
+			addFilterSelections("userDetail","status",status,status_id,filterObj.status)
+			
+			/*Selection of leads filter*/
+			var status = $('#userDetail_leads').attr('data-name');
+			var status_id = $('#userDetail_leads').attr('data-id');
+			filterObj.status={};
+			addFilterSelections("userDetail","leads",status,status_id,filterObj.status)
+			
+		var userDetail_array=[];
+			for(var i =0;i<4;i++){
+				var userDetail={};
+				userDetail.id= i;
+				userDetail.name="name"+i;
+				switch(i){ 
+				case 0:
+					userDetail.taskType="SALES_CALL_TASK";
+					userDetail.image = contextPath+"assets/image/calltask.svg";
+					break;
+				case 1:
+					userDetail.taskType="SALES_EMAIL_TASK";
+					userDetail.image = contextPath+"assets/image/emailtask.svg";
+					break;
+				case 2:
+					userDetail.taskType="SALES_WEBINAR_TASK";
+					userDetail.image = contextPath+"assets/image/webinartask.svg";
+					break;
+				case 3:
+					userDetail.taskType="SALES_PRESENTATION_TASK";
+					userDetail.image = contextPath+"assets/image/presentation.svg";
+					break;
+				default:
+					userDetail.taskType="SALES_PRESENTATION_TASK";
+					userDetail.image = contextPath+"assets/image/call.svg";
+				}
+				userDetail_array.push(userDetail);
+			}
+			
+			var userDetail_promises = [];
+			for(var  userDetail of userDetail_array){
+				userDetail_promises.push(fetchuserDetailTab(userDetail));
+			}
+			$( "#user_detail-tab" ).empty();
+			var fetchAllCall = Promise.all(userDetail_promises.map(p => p.catch(error => { console.log(error); return null; })));
+			fetchAllCall.then((results) =>{
+				for(var userDetailTabHtml of results){
+					  $( "#user_detail-tab" ).append( userDetailTabHtml );
 
-	        	$('#'+tabid).html(data);
-	    		//  alert( "Load was performed." );Lawrence Lynch
-	    		});
-	    	  console.log($(e.target).data('task_type')) // newly activated tab
-		    
-	    	  //close popover on tab change
-	    	 
-	    	  $('.popover').popover('hide');
+				}
+				var first_user_detail_id = $($( "#user_detail-tab" ).children()[0]).data('id');
+				var user_detail_tasktype= $($( "#user_detail-tab" ).children()[0]).data('tasktype');
+				console.log(first_user_detail_id);
+				 $('#user_detail_'+first_user_detail_id+'-tabs').tab('show')
 
-	    	});
-	    
-	    $('.nav-tabs>.nav-item').on('show.bs.tab', function (e) {
-	    	  $('.popover').popover('hide');
-  		});
-	    $('#agent_reset').click(function(){
-			 $('#agent_filters').hide();
-		 });
-	    
-	});
-	function showCalendar(){
-		$('#task_datepicker').datepicker('show')
-	}
+				 populateuserdetailTabContent(first_user_detail_id);
+				//taskdetail tab change event
+				 $('#user_detail-tab').on('shown.bs.tab', function (e) {
+					
+					 var id =  $(e.target).data('id');
+					 var tasktype =  $(e.target).data('tasktype');
+					 populateuserdetailTabContent(id,tasktype);
+					}); 
+			});	
+		}
+		function populateuserdetailTabContent(first_user_detail_id,userdetail_tasktype){
+			var userdetail={};
+			userdetail.id= first_user_detail_id;
+			userdetail.tasktype=userdetail_tasktype;
+			var vv = fetchuserdetailTabContent(userdetail);
+			vv.done(function(data){
+				$('#user_detail-tabTabContent').empty();
+				$('#user_detail-tabTabContent').append(data);
+			});
+		}
+
+		function fetchuserDetailTab(userDetail){
+			return $.post(contextPath+"report/user/customer_user/user_detail/user_detail_tab.jsp",JSON.stringify(userDetail));
+		}	
+		function  fetchuserdetailTabContent(userdetail){
+			switch(userdetail.tasktype){
+			case "SALES_CALL_TASK":
+			return $.post(contextPath+"report/user/customer_user/user_detail/user_detail_tabcontent/userCallTaskModal.jsp",JSON.stringify(userdetail));
+			case "SALES_EMAIL_TASK":
+			return $.post(contextPath+"report/user/customer_user/user_detail/user_detail_tabcontent/userEmailTaskModal.jsp",JSON.stringify(userdetail));
+			case "SALES_WEBINAR_TASK":
+			return $.post(contextPath+"report/user/customer_user/user_detail/user_detail_tabcontent/userWebinarTaskModal.jsp",JSON.stringify(userdetail));
+			default:
+				return $.post(contextPath+"report/user/customer_user/user_detail/user_detail_tabcontent/userCallTaskModal.jsp",JSON.stringify(userdetail));
+			}
+
+		}
+	 
+		
+		/*	start of filter drop down*/ 
+		function userDetail_leads_dropdown(elem){
+			var filter = $(elem).text();
+			var filter_id = $(elem).data('id');
+			$('#userDetail_leads').attr('data-id',filter_id);
+			$('#userDetail_leads').attr('data-name',filter);
+			userDetailTab();
+		};
+		function userDetail_stage_dropdown(elem){
+			var filter = $(elem).text();
+			var filter_id = $(elem).data('id');
+			$('#userDetail_stage').attr('data-id',filter_id);
+			$('#userDetail_stage').attr('data-name',filter);
+			userDetailTab();
+		};
+		
+		function userDetail_activity_dropdown(elem){
+			var filter = $(elem).text();
+			var filter_id = $(elem).data('id');
+			$('#userDetail_activity').attr('data-id',filter_id);
+			$('#userDetail_activity').attr('data-name',filter);
+			userDetailTab();
+			
+		};
+		function userDetail_status_dropdown(elem){
+			var filter = $(elem).text();
+			var filter_id = $(elem).data('id');
+			$('#userDetail_status').attr('data-id',filter_id);
+			$('#userDetail_status').attr('data-name',filter);
+			userDetailTab();
+			
+		};
+		
+		//<---------------GLOBAL FUNCTIONS FOR EACH TAB TO ADD FILTER TAGS
+		function getfilterhtml(filter, id, filter_type){
+			return '<button class="theme_solid_border bg-white brown-grey rounded f-12 position-relative search-filter ml-10" data-id="'+id+'">'+filter+
+					'<i class="fas fa-times-circle brown-grey bg-white rounded-circle f-14 cross-btn" data-type="'+filter_type+'" onclick="removeOngoingFilter(this)"></i> </button>'
+		}
+		function addFilterSelections(tab,filter,name,id,obj){
+			
+			if(name!="" && name!= undefined && id!="" && id != undefined){
+				
+				obj.name=name;
+				obj.id=id;
+				$('#'+tab+'_filter_selections').find('.filters-inside-selection').append(getfilterhtml(name,id,tab+'_'+filter));
+				$('#'+tab+'_filter_selections').show();
+			}
+		}
+		//--------------------------------------------->
+
 </script>
 </body>
 </html>
