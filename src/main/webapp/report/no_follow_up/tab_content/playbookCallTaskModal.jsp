@@ -431,8 +431,10 @@
     /*----------------------------------------start of load nofollowup call task sub-tab "right" content--------------------------------*/
     function  loadNoFollowUpCallRight(){
     	$('#nofollowupcall_whatswrong').empty();
-    	$('#completedcall_timeline_section').empty();
-    	$('#completedcall_adherence_section').empty();
+    	$('#nofollowupTimeline_card').empty()
+    	$('#nofollowup_timeline_section').empty()
+    	   $('#nofollowupcall_adherence_card').empty()
+    		$('#nofollowup_adhere_section').empty()
     	$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_call_right_report.jsp", function(data) {
     		$('#nofollowupcall_whatsright').html(data);
     	});
@@ -442,8 +444,10 @@
    /*----------------------------------------start of load nofollowup call task sub-tab "Wrong" content--------------------------------*/
     function  loadNoFollowUpCallWrong(){
     $('#nofollowupcall_whatsright').empty();
-    	$('#completedcall_timeline_section').empty();
-    	$('#completedcall_adherence_section').empty();
+    $('#nofollowupTimeline_card').empty()
+	$('#nofollowup_timeline_section').empty()
+	   $('#nofollowupcall_adherence_card').empty()
+		$('#nofollowup_adhere_section').empty()
     	$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_call_right_report.jsp", function(data) {
     		$('#nofollowupcall_whatswrong').html(data);
     	});
@@ -473,7 +477,10 @@
    loadNoFollowUpCallTimeline();
    })
     function  loadNoFollowUpCallTimeline(){
-   
+	   $('#nofollowupcall_whatsright').empty()
+	    $('#nofollowupcall_whatswrong').empty()
+	   $('#nofollowupcall_adherence_card').empty()
+		$('#nofollowup_adhere_section').empty()
    $('#nofollowupcallTimeline_filter_selections').find('.filters-inside-selection').empty();
    $('#nofollowupcallTimeline_filter_selections').hide();
     
@@ -591,6 +598,10 @@
 	   });
    
     	function  loadNoFollowUpCallAdherence(){
+    		$('#nofollowupcall_whatsright').empty()
+    	    $('#nofollowupcall_whatswrong').empty()
+    		$('#nofollowupTimeline_card').empty()
+    		$('#nofollowup_timeline_section').empty()
     		$('#nofollowupcall_filter_selections').find('.filters-inside-selection').empty();
     	$('#nofollowupcall_filter_selections').hide();
     		var filterObj={}

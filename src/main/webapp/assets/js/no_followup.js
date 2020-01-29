@@ -152,6 +152,15 @@
 		removeAllDataAttributes($("#nofollowupcall_adher_datepicker"));
 		loadNoFollowUpCallAdherence();
 		break;
+	case "nofollowupWebAdherence":
+		$('#nofollowupweb_filter_selections').hide();
+		$('#nofollowupWebinarTab+#nofollowupWebinarTabContent').find('.select_focus').each(function(){
+			removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#nofollowupwebAdherence_dropdown"));
+		removeAllDataAttributes($("#nofollowupweb_adher_datepicker"));
+		loadReportWebtaskAdherence();
+		break;
 	case "nofollowupCallTimeline":
 		$('#nofollowupcallTimeline_filter_selections').hide();
 		$('#nofollowupCallReport+#nofollowupCallReportTabContent').find('.select_focus').each(function(){
@@ -160,7 +169,18 @@
 		removeAllDataAttributes($("#nofollowupcallTimeline_dropdown"));
 		removeAllDataAttributes($("#nofollowupcallTimeline_datepicker"));
 		loadNoFollowUpCallTimeline();
+		break;
+	case "nofollowupWebTimeline":
+		$('#nofollowupwebTimeline_filter_selections').hide();
+		$('#nofollowupWebinarTab+#nofollowupWebinarTabContent').find('.select_focus').each(function(){
+		removeAllDataAttributes($(this).find('.istar-dropdown-arrow.dropdown-toggle'));
+		});
+		removeAllDataAttributes($("#nofollowupwebTimeline_dropdown"));
+		removeAllDataAttributes($("#nofollowupwebTimeline_datepicker"));
+		loadReportWebtaskTimeline();
+	
 	}
+	
 }
  //remove given data attributes from the element given
    function removeAllDataAttributes(elem){
@@ -243,6 +263,12 @@
 			case "nofollowupcallTimeline":
 				loadNoFollowUpCallTimeline();
 				break;
+			case "nofollowupwebTimeline":
+				loadReportWebtaskTimeline();
+			break;
+			case "nofollowupweb":
+				loadReportWebtaskAdherence();
+			break;
 		}
 		
 	}
@@ -317,6 +343,8 @@
 		}]
 		populateReportAgentListDropDown(userList,"nofollowupCallAdhere")
 		populateReportAgentListDropDown(userList,"nofollowupCallTimeline")
+		populateReportAgentListDropDown(userList,"nofollowupWebTimeline")
+		populateReportAgentListDropDown(userList,"nofollowupWebAdher")
 	}
 	//populate teams in all filters
 	function loadReportAllTeamFilterTab(){
@@ -335,6 +363,8 @@
 		}]
 		populateReportTeamListDropDown(teamList,"nofollowupCallAdhere")
 		populateReportTeamListDropDown(teamList,"nofollowupCallTimeline")
+		populateReportTeamListDropDown(teamList,"nofollowupWebTimeline")
+		populateReportTeamListDropDown(teamList,"nofollowupWebAdher")
 	}
 	//Common function to populate Agents in Drop down for all tabs
 	function populateReportAgentListDropDown(userList,tabName){
