@@ -3,7 +3,7 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 %>
-							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center objections cursor-pointer minh-200" >
+							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center objections cursor-pointer minh-200"  onclick="window.location.href = 'customer/customer_objection/customerobjection.jsp'" >
 							<div class=" w-100 d-flex align-items-center">
 								<div class="col-md-8 p-0 pl-15">
 								<div class="font-weight-bold f-42 greyish-brown"> 05</div>
@@ -14,7 +14,7 @@
 								</div>
 								</div>
 							</div>
-							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center cursor-pointer minh-200"  onclick="window.location.href = 'customerfeedback.jsp'" >
+							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center cursor-pointer minh-200"  onclick="window.location.href = 'customer/customer_feedback/customerfeedback.jsp'" >
 							<div class=" w-100 d-flex align-items-center">
 								<div class="col-md-8 p-0 pl-15">
 								<div class="font-weight-bold f-42 greyish-brown"> 05</div>
@@ -25,7 +25,7 @@
 								</div>
 								</div>
 							</div>
-							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center cursor-pointer minh-200"  onclick="window.location.href = 'customerNeedsConcern.jsp'" >
+							<div class="col-md-3 col_bordering4 p-0 m-0 d-md-flex align-items-center cursor-pointer minh-200"  onclick="window.location.href = 'customer/needs_concern/customerNeedsConcern.jsp'" >
 							<div class=" w-100 d-flex align-items-center">
 								<div class="col-md-8 p-0 pl-15">
 								<div class="font-weight-bold f-42 greyish-brown"> 05</div>

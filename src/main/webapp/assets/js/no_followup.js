@@ -115,18 +115,18 @@
 	}  
      
       function fetchNofollowUpTab(nofollowupTask){
-  		return $.post(contextPath+"report/no_follow_up/tab/no_follow_up_tab.jsp",JSON.stringify(nofollowupTask));
+  		return $.post(contextPath+"/report/playbook_insight/no_follow_up/tab/no_follow_up_tab.jsp",JSON.stringify(nofollowupTask));
   	}
       function fetchNoFollowUpTabContent(nofollowupReport){
     		switch(nofollowupReport.tasktype){
     		case "SALES_CALL_TASK":
-    		return $.post(contextPath+"report/no_follow_up/tab_content/playbookCallTaskModal.jsp",JSON.stringify(nofollowupReport));
+    		return $.post(contextPath+"report/playbook_insight/no_follow_up/tab_content/playbookCallTaskModal.jsp",JSON.stringify(nofollowupReport));
     		case "SALES_EMAIL_TASK":
-    		return $.post(contextPath+"report/no_follow_up/tab_content/playbookEmailTaskModal.jsp",JSON.stringify(nofollowupReport));
+    		return $.post(contextPath+"report/playbook_insight/no_follow_up/tab_content/playbookEmailTaskModal.jsp",JSON.stringify(nofollowupReport));
     		case "SALES_WEBINAR_TASK":
-    		return $.post(contextPath+"report/no_follow_up/tab_content/playbookWebinarTaskModal.jsp",JSON.stringify(nofollowupReport));
+    		return $.post(contextPath+"report/playbook_insight/no_follow_up/tab_content/playbookWebinarTaskModal.jsp",JSON.stringify(nofollowupReport));
     		default:
-    			return $.post(contextPath+"report/no_follow_up/tab_content/playbookCallTaskModal.jsp",JSON.stringify(nofollowupReport));
+    			return $.post(contextPath+"report/playbook_insight/no_follow_up/tab_content/playbookCallTaskModal.jsp",JSON.stringify(nofollowupReport));
     		}
   	}
    // ///////////////////////////////////////////////////////////////////////////////////////

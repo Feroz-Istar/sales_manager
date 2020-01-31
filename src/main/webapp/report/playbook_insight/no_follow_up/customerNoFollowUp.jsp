@@ -35,12 +35,12 @@
             </div>
          </div>
       </div>
-      <jsp:include page="../../navbar/nav.jsp"></jsp:include>
+      <jsp:include page="../../../navbar/nav.jsp"></jsp:include>
       <main role="main">
          <div class="container-fluid salesken_container">
             <div class="row grey-white-bg align-items-center m-0 theme_solid_border_bottom pl-40 pr-40 pt-10 pb-10">
                <div class="col-md-6 col-12 d-flex align-items-center p-0">
-                  <i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = '../report.jsp'"></i>
+                  <i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = '../../report.jsp'"></i>
                   <div class="display-1 black f-20 border-right-separation pr-20  fw-500 pl-20">No Follow - Ups</div>
                   <div class="f-12 brown-grey pl-20">Dashboard</div>
                   <i class="fas fa-chevron-circle-right pl-2 pr-2 f-12 very-light-pink"></i>

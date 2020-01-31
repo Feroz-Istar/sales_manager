@@ -24,12 +24,12 @@
       <link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
    </head>
    <body onload="load()" data-baseurl="<%=baseURL%>" >
-      <jsp:include page="../../../navbar/nav.jsp"></jsp:include>
+     <jsp:include page="../../../navbar/nav.jsp"></jsp:include>
       <main role="main">
          <div class="container-fluid salesken_container">
             <div class="row grey-white-bg theme_solid_border_bottom align-items-center m-0 pt-15 pb-15 pl-40 pr-40">
                <div class="col-md-6 col-12 d-flex align-items-center mb-4 mb-md-0 p-0">
-                  <i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = 'report.jsp'"></i>
+                  <i class="fas fa-arrow-left black f-20 cursor-pointer" onclick="window.location.href = '../../report.jsp'"></i>
                   <div class="display-1 black f-20 border-right-separation pr-20 pl-20 fw-500">Objections</div>
                   <div class=" f-12 brown-grey pl-20">Dashboard</div>
                   <i class="fas fa-chevron-circle-right f-12 brown-grey pl-2 pr-2"></i>
@@ -147,11 +147,11 @@
   	}
       
       function fetchCostumerObjTab(customerObj){
-    		return $.post(contextPath+"report/no_objection/customer_obj_tab.jsp",JSON.stringify(customerObj));
+    		return $.post(contextPath+"report/customer/customer_objection/customer_obj_tab.jsp",JSON.stringify(customerObj));
       }
       
       function fetchObjectionTabContent(customerObj){
-  		return $.post(contextPath+"report/no_objection/customer_obj_tabcontent.jsp",JSON.stringify(customerObj));
+  		return $.post(contextPath+"report/customer/customer_objection/customer_obj_tabcontent.jsp",JSON.stringify(customerObj));
   	}
  
       </script>

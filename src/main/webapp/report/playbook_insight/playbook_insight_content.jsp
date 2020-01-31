@@ -6,7 +6,7 @@
 
 	
 %>
-<div class="col-md-4 d-flex align-items-center col_bordering minh-200 p-0 cursor-pointer" onclick="window.location.href = 'no_follow_up/customerNoFollowUp.jsp'">
+<div class="col-md-4 d-flex align-items-center col_bordering minh-200 p-0 cursor-pointer" onclick="window.location.href = 'playbook_insight/no_follow_up/customerNoFollowUp.jsp'">
 	<div class="row w-100 m-0">
 		<div class="col-md-8 p-0 pl-20 pr-20 align-self-center">
 			<div>

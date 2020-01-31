@@ -435,7 +435,7 @@
     	$('#nofollowup_timeline_section').empty()
     	   $('#nofollowupcall_adherence_card').empty()
     		$('#nofollowup_adhere_section').empty()
-    	$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_call_right_report.jsp", function(data) {
+    	$.get(contextPath+"report/playbook_insight/no_follow_up/tab_content/callsub_tab_content/nofollowup_call_right_report.jsp", function(data) {
     		$('#nofollowupcall_whatsright').html(data);
     	});
    
@@ -448,7 +448,7 @@
 	$('#nofollowup_timeline_section').empty()
 	   $('#nofollowupcall_adherence_card').empty()
 		$('#nofollowup_adhere_section').empty()
-    	$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_call_right_report.jsp", function(data) {
+    	$.get(contextPath+"report/playbook_insight/no_follow_up/tab_content/callsub_tab_content/nofollowup_call_right_report.jsp", function(data) {
     		$('#nofollowupcall_whatswrong').html(data);
     	});
     }
@@ -533,11 +533,11 @@
     		}
     	}
     	
-   	 $.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_timeline_card.jsp", function(data) {
+   	 $.get(contextPath+"report/playbook_insight/no_follow_up/tab_content/callsub_tab_content/nofollowup_timeline_card.jsp", function(data) {
    			$('#nofollowupTimeline_card').html(data);
    		});
    		
-   		$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_timeline_content.jsp", function(data) {
+   		$.get(contextPath+"report/playbook_insight/no_follow_up/tab_content/callsub_tab_content/nofollowup_timeline_content.jsp", function(data) {
    			$('#nofollowup_timeline_section').html(data);
    			stopFilterPropagation();
    		});
@@ -648,11 +648,11 @@
     		}
    
     		
-    		$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_adherence_call_card.jsp", function(data) {
+    		$.get(contextPath+"report/playbook_insight/no_follow_up/tab_content/callsub_tab_content/nofollowup_adherence_call_card.jsp", function(data) {
     			$('#nofollowupcall_adherence_card').html(data);
     		
     		});
-    		$.get(contextPath+"report/no_follow_up/tab_content/callsub_tab_content/nofollowup_adherence_content.jsp", function(data) {
+    		$.get(contextPath+"report/playbook_insight/no_follow_up/tab_content/callsub_tab_content/nofollowup_adherence_content.jsp", function(data) {
     			$('#nofollowup_adhere_section').html(data);
     			stopFilterPropagation();
     		});
