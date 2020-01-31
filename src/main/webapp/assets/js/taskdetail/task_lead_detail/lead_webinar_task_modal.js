@@ -33,8 +33,8 @@ $(document).ready(function(){
 $(document).ready(function(){	
 	
 loadLeadWebWhatsRight();
-loadAllAgentFilterTab();
-loadAllTeamFilterTab(); 	
+loadLeadAllAgentFilterTab();
+loadLeadAllTeamFilterTab(); 	
 	$('#leadWebinarTab>li>a').on('shown.bs.tab', function(e) {
 
 		var target = $(e.target).html(); // activated tab

@@ -1,7 +1,7 @@
 $(document).ready(function(){	
 	loadLeadWhatsRight();
-	loadAllAgentFilterTab();
-	loadAllTeamFilterTab();
+	loadLeadAllAgentFilterTab();
+	loadLeadAllTeamFilterTab();
 
 	$('#leadTab>li>a').on('shown.bs.tab', function(e) {
 

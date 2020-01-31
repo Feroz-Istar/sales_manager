@@ -141,7 +141,6 @@
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
-	<script src="<%=baseURL%>assets/js/taskdetail/taskDetails.js"></script>
 	<script src="<%=baseURL%>assets/js/taskdetail/task_lead_detail/task_lead_detail.js"></script>
 	<script src="<%=baseURL%>assets/js/taskdetail/task_lead_detail/lead_call_task_modal.js"></script>
 	<script src="<%=baseURL%>assets/js/taskdetail/task_lead_detail/lead_email_task_modal.js"></script>

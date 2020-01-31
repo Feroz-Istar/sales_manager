@@ -234,7 +234,7 @@
                   <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="leadcallTimeline_filter_selections" style="">
                      <div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
                      <div class="col-md-2 text-right p-0">
-                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadCallTimeline" id="leadCallTimeline_reset" onclick="resetFilters(this)">Reset</button>
+                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadCallTimeline" id="leadCallTimeline_reset" onclick="resetLeadFilters(this)">Reset</button>
                      </div>
                   </div>
 	               <span id="lead_timeline_section"></span>
@@ -319,7 +319,7 @@
                   <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="leadcall_filter_selections" style="">
                      <div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
                      <div class="col-md-2 text-right p-0">
-                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadCallAdherence" id="leadCallAdherence_reset" onclick="resetFilters(this)">Reset</button>
+                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadCallAdherence" id="leadCallAdherence_reset" onclick="resetLeadFilters(this)">Reset</button>
                      </div>
                   </div>
                <span id="lead_adherence_section"></span>

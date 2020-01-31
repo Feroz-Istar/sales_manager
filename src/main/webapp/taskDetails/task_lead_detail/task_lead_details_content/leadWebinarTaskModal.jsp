@@ -238,7 +238,7 @@
                   <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="leadwebTimeline_filter_selections" style="">
 							<div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
 							<div class="col-md-2 text-right p-0">
-								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="completedWebTimeline_reset" data-type="completedWebTimeline" onclick="resetFilters(this)">Reset</button>
+								<button type="submit" class="btn theme_color f-14 font-weight-bold p-0" id="leadWebTimeline_reset" data-type="leadWebTimeline" onclick="resetLeadFilters(this)">Reset</button>
 							</div>
 						</div>
                   <span id="leadwebinartimeline_section"></span>
@@ -322,7 +322,7 @@
                   <div class="row cream_white m-0 theme_solid_border_bottom justify-content-between align-items-center pl-40 pr-40 pt-10 pb-10" id="leadweb_filter_selections" style="">
                      <div class="col-md-10 d-flex p-0 filters-inside-selection"></div>
                      <div class="col-md-2 text-right p-0">
-                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadWebAdherence" id="leadwebAdherence_reset" onclick="resetFilters(this)">Reset</button>
+                        <button type="submit" class="btn theme_color f-14 font-weight-bold p-0" data-type="leadWebAdherence" id="leadwebAdherence_reset" onclick="resetLeadFilters(this)">Reset</button>
                      </div>
                   </div>
                  <span id="leadwebinar_adherence_section"></span>
