@@ -56,7 +56,7 @@
 
 		<div class="row very-light-pink-grey-bg pl-4">
 			<div
-				class="col-md-3 col-12 pr-0 tabcol flex-grow-1 border-right pb-5 minh-650">
+				class="col-md-3 col-12 pr-0 tabcol flex-grow-1 border-right pb-5 minh-650 " style="border-right: 2px solid #dee2e6!important;">
 				<div class="nav flex-column nav-pills h-100  taskdetail-tab-list" id="feedback-tab"
 					role="tablist" aria-orientation="vertical">
 					
