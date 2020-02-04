@@ -443,6 +443,7 @@ $( document ).ready(function() {
 		});
 		loadNeedsDetailsTab();
 		
+		
 	});
 	
 	//<---------------------------RESET FILTERS LOGIC
