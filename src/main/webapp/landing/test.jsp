@@ -31,138 +31,101 @@
 
 <link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww"
 	rel="stylesheet">
+	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript"
+		src="http://botmonster.com/jquery-bootpag/jquery.bootpag.js"></script>	
+	
+		
+
 </head>
-<body onload="load()">
+<body >
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
 	<div class="container-fluid salesken_container">
+<div class="position-relative">
+<canvas class="" id="myCanvas" width=" 1500px" height="900px" style="border:1px solid #d3d3d3;    ">
+Your browser does not support the HTML5 canvas tag.</canvas>
+<canvas class="position-relative" id="circleCanvas" width=" 1500px" height="80px" style="border:1px solid #d3d3d3;bottom: 500px;  z-index:999 ">
+Your browser does not support the HTML5 canvas tag.</canvas>
+</div>
+</div>
 
-	<div class="row m-0">
-		<div class="col-md-3"></div>
-		<div class="col-md-6 p-0">
-		
-			<%-- <div class="card  rounded-0 shadow mb-20">
-			<div class="card-body ongoingtaskcard cursor-pointer p-0 p-30">
-				<div class=" font-weight-bold f-18 black pb-20">Rockstars</div>
+<script>
+$.get('https://gist.githubusercontent.com/riyaistar/47e45a6499a7729e07c2499bcb9c53f1/raw/37b0d333b585f46534c41bbbaa6ce2f42fa232b2/ccccc', function(data) {
 
-				<div class="w-100 d-flex theme_dashed_border_bottom ">
-					<%
-						for (int h = 0; h < 5; h++) {
-					%>
-					<div class="div">
+	var json = JSON.parse(data);
+	console.log(json)
+	console.log(json.agent)
+    var c = document.getElementById("myCanvas");
+    var canvasHeight=c.height;
+    var canvasWidth=c.width;
+    
+    var widthRatio=canvasWidth/json.total_time;
+    
+    var count = parseInt("8")
+    var yCordinate=canvasHeight/2;
+    var x_axis=0;
+    var y_axis=yCordinate/2;
+    for(var i=0;i<json.snippets.length;i++)
+    	{
+    		var snippetsWidth=(json.snippets[i].to-json.snippets[i].from)*widthRatio;
+    		x_axis=(json.snippets[i].from*widthRatio);
+    				var ctx = c.getContext("2d");
+    				if(json.snippets[i].speaker=="Agent")
+    					{
+    					ctx.fillStyle ="red";
+    					}else{
+    						ctx.fillStyle ="blue";
+    					}
+    				ctx.beginPath();
+    				ctx.fillRect( x_axis,yCordinate-40,snippetsWidth, 80);
+    				ctx.stroke();
+    				
+    	}	
+    //////////////////////////////
+    
+    var circle = document.getElementById("circleCanvas");
+    var ctxCircle = circle.getContext("2d");
+    ctxCircle.beginPath();
 
-						<div class="d-flex flex-column">
-							<div class="border-right-dashed-separation pr-15">
-								<img alt=""
-									src="https://res.cloudinary.com/demo/image/upload/q_60/sample.jpg"
-									class="hw-60 align-self-center rounded-circle"
-									style="position: relative; top: 5px; z-index: 1; left: 18px;">
+    elemLeft = circle.offsetLeft,
+    elemTop = circle.offsetTop,
+    circle.addEventListener('click', function(event) {
+    	ctxCircle.clearRect(0, 0, circle.width, circle.height);
+    	ctxCircle.beginPath();
+        var x = event.pageX - elemLeft,
+            y = event.pageY - elemTop;
+   
+		if(x>=(canvasWidth-40))
+			{
+				x=canvasWidth; 
+			}else if(x<=80){
+			x=80;
+			}
+  	
+    	var cavaswidth2=circle.width;
+		var y_axis=x_axis=radius=circle.height/2;
+		ctxCircle.beginPath();
+		ctxCircle.arc(x-40,y_axis,radius, 0, 2 * Math.PI);
+		ctxCircle.fillStyle = 'white';
+		ctxCircle.fill();
+		ctxCircle.lineWidth = 1;
+		ctxCircle.strokeStyle = '#003300';
+		ctxCircle.stroke();
+		ctxCircle.globalAlpha = .7;
+		ctxCircle.fillStyle ="yellow";
+		ctxCircle.fillRect(x,0,cavaswidth2-radius*2, 80);
+		ctxCircle.globalAlpha = 1.0;
+    }, false);
 
-								<div class="btn-group d-flex justify-content-center  "
-									role="group" aria-label="Basic example">
-									<button type="button"
-										class="bg-white  removefocus d-flex align-items-center"
-										style="border: 1px solid #cccccc; height: 25px; width: 45px;">
-										<img alt="Heart" style="width: 14.6px; height: 12.8px;"
-											src="<%=baseURL%>assets/image/heart.svg">
-									</button>
-									<button type="button"
-										class="bg-white  removefocus d-flex align-items-center "
-										style="border: 1px solid #cccccc; height: 25px; width: 45px;">
-										<img alt="Heart" style="width: 14.6px; height: 12.8px;"
-											src="<%=baseURL%>assets/image/message.svg">
-									</button>
-
-								</div>
-							</div>
-							<div class="f-14 greyish-brown align-self-center pb-20">Stanley
-								Howard</div>
-						</div>
-					</div>
-					<%
-						}
-					%>
-
-
-				</div>
-
-
-
-			</div>
-
-		</div> --%>
-		
-		<div class="card  rounded-0 shadow mb-20">
-			<div class="card-body ongoingtaskcard cursor-pointer p-0 pl-30 pr-30">
-			
-				<%for(int i=0;i<4; i++){ %>
-				<div class=" font-weight-bold f-18 black pt-30 pb-20">Rockstars</div>
-
-				<div class="w-100 d-flex justify-content-between theme_dashed_border_bottom ">
-					<%
-						for (int h = 0; h < 5; h++) {
-							String border="border-right-dashed-separation";
-							if(h==4){
-								border="d-none";
-							}
-					%>
-					
-							<div class="div w-20" >
-							
-								<div class="d-flex flex-column ">
-										<img alt="associate"
-											src="<%=baseURL%>assets/image/11.png"
-											class="hw-60 align-self-center rounded-circle"
-											style="position: relative; top: 13px; z-index: 1;">
-		
-										<div class="btn-group d-flex  "
-											role="group" aria-label="Basic example">
-											<button type="button"
-												class="bg-white pl-15 pr-20 justify-content-center removefocus d-flex align-items-center rounded-left"
-												style="border: 1px solid #cccccc;">
-												<img alt="Heart"
-													src="<%=baseURL%>assets/image/heart.svg">
-											</button>
-											<button type="button"
-												class="bg-white pl-20 pr-15 rounded-right	 justify-content-center removefocus d-flex align-items-center "
-												style="border: 1px solid #cccccc;">
-												<img alt="Heart"
-													src="<%=baseURL%>assets/image/message.svg">
-											</button>
-		
-										</div>
-																		
-										
-									<div class="f-14 greyish-brown text-center pt-10 pb-20">Stanley
-										Howard</div>
-								</div>
-								
-								
-							</div>
-
-														<div class="<%=border%>" style="margin-bottom: 45px;margin-top: 10px;">
-					</div>
-					
-					<%} %>
-				</div>
-				
-				<%} %>
-				
-			</div>
-		</div>
-		
-		
-		
-		</div>
-		<div class="col-md-3"></div>
-	</div>
+})
 
 
 
-		
+</script> 
 
 
-	</div>
+	
 	</main>
 
 
@@ -178,17 +141,6 @@
 	<script src="<%=baseURL%>assets/js/exporting.js"></script>
 	<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
 
-	<script>
-		$(document).ready(function() {
-			$('#page').Pagination({ // id to initial draw and use pagination
-				size : 87, // size of list input
-				pageShow : 5, // 5 page-item per page
-				page : 1, // current page (default)
-				limit : 10, // current limit show perpage (default)
-			}, function(obj) { // callback function, you can use it to re-draw table or something
-				console.log(obj)
-			});
-		});
-	</script>
+	
 </body>
 </html>

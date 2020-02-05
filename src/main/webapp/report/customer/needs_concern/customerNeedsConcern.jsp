@@ -97,7 +97,7 @@
 							isshow="d-none";
 						}
 					%>
-					<div class="col-md-3 p-0 col_bordering4_blank minh-200">
+					<div class="col-md-3 p-0 col_bordering4_blank minh-200 cursor-pointer	" onclick="window.location.href = 'needs_concern_detail/need_concern_details.jsp'">
 							<div class="">
 							<div class="row m-0 align-items-center pt-30 pb-30 pr-15 pl-15 <%=isshow%>">
 								<div class="col-md-3 pr-20 p-0 text-center" >
