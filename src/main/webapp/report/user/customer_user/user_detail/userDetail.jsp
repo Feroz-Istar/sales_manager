@@ -207,27 +207,8 @@
 				  	<div class="row m-0">
 				  		<div class="col-md-8 p-0">
 				  			<div class="f-16 fw-500 black pt-30 pl-40 pb-10">	Playbook Stats</div>
-				  			<div class="row border-bottom-dashed-separation m-0 pl-40 pr-40 pb-40">
-				  				<div class="col-md-6 p-0">
-		      						<div class="f-12 font-weight-bold brownish-grey mb-1 d-flex align-items-center">Strong  <i class="fal fa-info-circle soft-blue f-16 pl-1"></i></div>
-		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
-		      					</div>
-		      					<div class="col-md-6 p-0">
-		      						<div class="f-12 font-weight-bold brownish-grey mb-1 d-flex align-items-center">Weak <i class="fal fa-info-circle soft-blue f-16 pl-1"></i></div>
-		      						<img src="<%=baseURL %>assets/image/introduction_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/softSkill_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/nxt_step_signal.svg" class="pr-2 pb-2">
-										<img src="<%=baseURL %>assets/image/solution_signal.svg" class="pr-2 pb-2">
-		      					</div>
+				  			<div class="row border-bottom-dashed-separation m-0 pl-40 pr-40 pb-40" id="playbook_status">
+				  				
 				  			</div>
 				  			<div class="row m-0 pt-40 pl-40">
 				  				<div class="col-md-6 fw-500 f-16 black p-0">Targeting Activities</div>
@@ -293,12 +274,9 @@
 				  			
 				  		<div class="col-md-4 cream_white theme_solid_border_left p-0 pl-40 pr-40 pt-30 pb-30 ">
 				  			<div class="f-16 fw-500 black">Comments</div>
+				  			<div id="comment_section">
 				  			
-				  			<%for(int i=0;i<3;i++){ %>
-				  			<div class="f-12 brown-grey pt-30">June 22, 2019</div>
-				  			<div class="f-14 greyish-brown fw-500 pb-10 text-truncate" title="Lawrence">Lawrence Lynch</div>
-				  			<div class="f-14 blue-black border-bottom-dashed-separation pb-20 text-break">Cras eget elementum arcu, vel malesuada felis. Nulla fringilla viverra justo a imperdiet. Etiam vitae tempor enim, sed aliquet ante. Maecenas eu vehicula diam.</div>
-				  			<%} %>
+				  			</div>
 				  		</div>				  		
 				  	</div>				  	
 				 
@@ -819,6 +797,12 @@ function populateTeamListDropDown(teamList,tabName){
 	
 	$.get(contextPath+"report/user/customer_user/user_detail/agent_detail_tab_content.jsp", function(data) {
 		$('#agent_details').html(data);
+	});
+	$.get(contextPath+"report/user/customer_user/user_detail/agent_playbook_status.jsp", function(data) {
+		$('#playbook_status').html(data);
+	});
+	$.get(contextPath+"report/user/customer_user/user_detail/agent_comments.jsp", function(data) {
+		$('#comment_section').html(data);
 	});
 
 
