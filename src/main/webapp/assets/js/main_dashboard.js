@@ -96,7 +96,7 @@ $(document).ready(function(){
 
 // On hash change call Navigation Service
 window.onhashchange = function(){
-	var locationList=['#dashboard','#taskDetails','#ongoingJoined','#taskLeadDetail','#newCallTask','#pipeline','#report','#leads','']
+	var locationList=['#dashboard','#taskDetails','#ongoingJoined','#taskLeadDetail','#newCallTask','#pipeline','#report','#leads','#accountsetting']
 	if(locationList.includes(window.location.hash)||window.location.hash==null){
 		NavigationService()
 	}
@@ -133,6 +133,9 @@ function NavigationService(params){
 		break;
 	case '#leads':
 		NavigateToOnHash('leads/leads.jsp','Salesken - Leads','leads');
+		break;
+	case '#accountsetting':
+		NavigateToOnHash('landing/accountSetting.jsp','Salesken - My Account','accountsetting');
 		break;
 	default:
 		NavigateToOnHash('dashboard/dashboard.jsp','Salesken Dashboard','dashboard');

@@ -93,7 +93,8 @@
 							<div>Switch to Admin</div>
 						</button>
 						<button
-							class="list-group-item border-0 d-flex flex-row cursor-pointer account dropdown-item greyish-brown p-0">
+							class="list-group-item border-0 d-flex flex-row cursor-pointer account dropdown-item greyish-brown p-0"
+							 onclick="NavigateTo('accountsetting')">
 							<div class="mr-2 dropdown-icon setting"></div>
 							<div>My Account</div>
 						</button>

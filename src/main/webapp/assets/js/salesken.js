@@ -7,10 +7,7 @@ $( document ).ready(function() {
 	setTimeout(function(){ $('.salesken_progress').hide() }, 1000);
 	
     console.log( "ready!" );
-    
-    $('.account').click(function(){
-    	location.href=contextPath+"landing/accountSetting.jsp";
-    });
+  
     
     $('.signout').click(function(){
     	location.href=contextPath;
