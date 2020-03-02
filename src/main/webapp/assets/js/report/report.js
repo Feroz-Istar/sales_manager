@@ -10,6 +10,7 @@ $(document).ready(function () {
 	loadAllTeamFilterTab();
 	$('.filtertabs>li>.nav-link').click(function(e) {
 		$($(this).attr('href') + '-tab').tab('show')
+		e.preventDefault();
 	});	
 	$('.filter-menu.dropdown-menu').click(function(e) {
 	    e.stopPropagation();

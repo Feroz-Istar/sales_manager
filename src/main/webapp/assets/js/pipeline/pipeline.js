@@ -131,6 +131,7 @@ $(document).ready(function() {
 		});
 
 		$('.filtertabs>li>.nav-link').click(function(e) {
+			e.preventDefault();
 			$($(this).attr('href') + '-tab').tab('show')
 		});
 		$('.agentteamsubmit').click(function(e) {

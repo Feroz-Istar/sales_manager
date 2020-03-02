@@ -45,7 +45,8 @@ var contextPath = $('body').data('baseurl');
 		});
 			
 $('.filtertabs>li>.nav-link').click(function(e) {
-			
+	e.preventDefault();
+
 			$($(this).attr('href')+'-tab').tab('show')
 
 		});

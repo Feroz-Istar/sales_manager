@@ -11,6 +11,8 @@ $(document).ready(function() {
 	loadAllTeamFilterTab();
 	
 	$('.filtertabs>li>.nav-link').click(function(e) {
+		e.preventDefault();
+
 		$($(this).attr('href') + '-tab').tab('show')
 	});	
 	$('#mainTask-tabs>li>a').on('shown.bs.tab', function(e) {
