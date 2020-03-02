@@ -15,31 +15,9 @@
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
 			+ request.getContextPath() + "/";
 %>
-<link rel="icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
 
-<link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww" rel="stylesheet">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/dashboard.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/alertify.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/jquery.rateyo.css">
-<link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww" rel="stylesheet">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/wickedpicker.min.css">
-<link href="<%=baseURL%>assets/css/summernote-bs4.css" rel="stylesheet">
-<link href="<%=baseURL%>assets/css/bootstrap-select.min.css" rel="stylesheet">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/multiselect.css">
-<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/taskDetail.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/createTask.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/report.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/createTask.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/pipeline.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/report.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/leads.css">
 
+	<jsp:include page="headercss.jsp"></jsp:include>
 
 
 
@@ -62,7 +40,9 @@
 		</div>
 	</div>
 	<jsp:include page="navbar/nav.jsp"></jsp:include>
-	<div class="w-100 row pr-30 pl-25 pt-10 pb-10 ongoing_call_bar " style="display: flex;">
+	
+	<main role="main">
+	<div class="w-100 row pr-30 pl-25 pt-10 pb-10 ongoing_call_bar m-0">
 		<div class="col-md-6 p-0 d-flex align-items-center">
 			<img src="<%=baseURL%>assets/image/call_white.svg" alt="call" class="task-dropdown">
 			<div class="gray_text_color f-14 pl-15">
@@ -73,30 +53,12 @@
 			Tab to Return<i class="fas fa-chevron-circle-right pl-2 pr-2 f-14 gray_text_color "></i>
 		</div>
 	</div>
-	<main role="main">
 		<div class="container-fluid salesken_container"></div>
 	</main>
 
 </body>
-<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
-<script src="<%=baseURL%>assets/js/popper.min.js"></script>
-<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
-<script src="<%=baseURL%>assets/js/jquery.bootpag.js"></script>
-<script src="<%=baseURL%>assets/js/alertify.min.js"></script>
-<script src="<%=baseURL%>assets/js/twilio.js"></script>
-<script src="<%=baseURL%>assets/js/salesken.js"></script>
-<script src="<%=baseURL%>assets/js/highcharts.js"></script>
-<script src="<%=baseURL%>assets/js/exporting.js"></script>
-<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
-<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
-<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
-<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
-<script src="<%=baseURL%>assets/js/main_dashboard.js"></script>
-<script src="<%=baseURL%>assets/js/multiselect.js"></script>
-<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
-<script src="<%=baseURL%>assets/js/pagination.min.js"></script>
-<script src="<%=baseURL%>assets/js/dropzone.min.js"></script>
+
+	<jsp:include page="headerjs.jsp"></jsp:include>
 
 
 
