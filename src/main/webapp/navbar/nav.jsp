@@ -126,10 +126,10 @@
 				<span class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14"
 				onclick="NavigateTo('pipeline')"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="<%=baseURL%>report/report.jsp">
+			<li class="nav-item"><a class="nav-link f-14" onclick="NavigateTo('report')">
 					<div class="d-flex align-item-center"> <i class="salesken_navicon reports"></i> Reports </div><span class="sr-only">(current)</span>
 			</a></li>
-			<li class="nav-item"><a class="nav-link f-14" href="<%=baseURL%>leads/leads.jsp">
+			<li class="nav-item"><a class="nav-link f-14" onclick="NavigateTo('leads')">
 					 <div class="d-flex align-item-center"> <i class="salesken_navicon leads"></i> Leads </div><span class="sr-only">(current)</span>
 			</a></li>
 

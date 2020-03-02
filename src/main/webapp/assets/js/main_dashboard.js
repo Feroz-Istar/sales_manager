@@ -5,7 +5,6 @@ var checkChangesEnabled = true;
 
 
 $(document).ready(function(){
-	alert('dashboard')
 	NavigationService()
 	device = new Twilio.Device();
 	
@@ -97,7 +96,7 @@ $(document).ready(function(){
 
 // On hash change call Navigation Service
 window.onhashchange = function(){
-	var locationList=['#dashboard','#taskDetails','#ongoingJoined','#taskLeadDetail','#newCallTask','#pipeline','']
+	var locationList=['#dashboard','#taskDetails','#ongoingJoined','#taskLeadDetail','#newCallTask','#pipeline','#report','#leads','']
 	if(locationList.includes(window.location.hash)||window.location.hash==null){
 		NavigationService()
 	}
@@ -129,6 +128,12 @@ function NavigationService(params){
 	case '#pipeline':
 		NavigateToOnHash("pipeline/pipeline.jsp","Salesken - Pipeline","pipeline");
 		break;
+	case '#report':
+		NavigateToOnHash('report/report.jsp','Salesken - Reports','report');
+		break;
+	case '#leads':
+		NavigateToOnHash('leads/leads.jsp','Salesken - Leads','leads');
+		break;
 	default:
 		NavigateToOnHash('dashboard/dashboard.jsp','Salesken Dashboard','dashboard');
 		navigator.mediaDevices.getUserMedia({ audio: true })
@@ -159,14 +164,12 @@ function NavigateToOnHash(pageURL,title,hash){
 // For e.g. instead of
 // window.location.href='taskDetails/partials/ongoingJoined.jsp' simply replace
 // it with NavigateTo('ongoingJoined') and add
-// another case in Navigation service if not already there with the hash as case
-// and call NavigateToOnHash with Url ,title , hash as parameters
+// another case in Navigation service if not already there with the hash as a switch case
 function NavigateTo(hash){
 	if(('#'+hash)==window.location.hash){
 		NavigationService()
 	}
-		window.location.hash=hash
-			
+	window.location.hash=hash
 }
 
 

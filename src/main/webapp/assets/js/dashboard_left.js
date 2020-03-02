@@ -4,8 +4,7 @@ var contextPath = $('body').data('baseurl');
 // JAVA SCRIPT FOR LEFT ELEMENTS IN DASHBOARD PAGE
 
 $(document).ready(function() {
-	
-	
+		
 	/* hiding page loader afer one seconds */
 
 	jQuery.validator.setDefaults({
