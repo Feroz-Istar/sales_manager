@@ -30,11 +30,11 @@
 </head>
 <body style="background: #ffffff !important" onload="load()" data-baseurl="<%=baseURL%>">
 	<main role="main" class="h-100">
-	<div class="container   h-100">
+	<div class="container-fluid  no-padding  h-100 ">
 		<div class="row h-100  ">
 			<div
-				class="col-md-5 p-0 d-flex justify-content-end h-100 align-items-center ">
-				<div class="card  pr-115 border-0 pt-60 pb-60 shadow_right">
+				class="col-md-4 p-0 d-flex justify-content-end h-100 align-items-center ">
+				<div class="card  pr-115 border-0 pt-60 pb-60 ">
 					<div class="card-body p-0 ">
 						<img class=" text-center saleskenlogo" alt="salesken_logo" src="<%=baseURL%>assets/image/nav_icon.png" />
 						<!-- start of error message -->
@@ -84,14 +84,20 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-7 p-0  h-100 d-flex align-items-center">
-				<div class="text-break">
-						<p class="black f-24 mb-0 pl-90">Unparalleled Visibility</p>
+			<div class="col-md-8 p-0  h-100 d-flex align-items-center" >
+	
+  <div class="row m-0 position-relative w-100 h-100" id="" >
+  		  <img alt="" src="<%=baseURL%>assets/image/login_background.svg" style="width:100%;height: 100%;  object-fit: cover;
+  ">
 
-						<h1 class=" f-38  mb-0	pl-90 fw-900 black">Improved Performance</h1>
-						<p class="brown-grey f-16 mb-0 pb-90 pt-40 pl-90" style="max-width: 534px;">Salesken allows your sales reps to dramatically improve their quota performance by providing deep insights into what works and intelligence to assist their sales pitch</p>
-						<img class="login_background pl-30" alt="login_background" src="<%=baseURL%>assets/image/login_background.svg" />
-					</div>
+  	
+  <div class="text-break" style="position: absolute;top :40%;left:10%;">
+						<p class="black f-24 mb-0 pl-90 text-white">Unparalleled Visibility</p>
+
+						<h1 class=" f-38  mb-0	pl-90 fw-900 text-white">Improved Performance</h1>
+						<p class="text-white f-16 mb-0 pb-90 pt-40 pl-90" style="max-width: 534px;">Salesken allows your sales reps to dramatically improve their quota performance by providing deep insights into what works and intelligence to assist their sales pitch</p>
+						</div>
+</div>
 			</div>
 		</div>
 
@@ -119,6 +125,8 @@
 	<script>
 	var contextPath=$('body').data('baseurl');
 		$(document).ready(function() {
+			
+			$('#login_background').css('height',screen.height-200+' !important')
 
 			jQuery.validator.setDefaults({
 				debug : true,

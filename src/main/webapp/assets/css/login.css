@@ -33,3 +33,15 @@ color:white;
 	
 	color:#262626!important;
 }
+
+.container-fluid,.col-md-7,.row {
+	height:100%;
+}
+
+#login_background{
+	 background: url('../image/login_background.svg');
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: center;
+      width: 100%;
+}
