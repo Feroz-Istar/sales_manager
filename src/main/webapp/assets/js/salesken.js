@@ -53,8 +53,9 @@ function attachTaskRelatedData (){
     	closeCRM(dropdown_id);
     	closeChat(dropdown_id);
     	$(this).addClass('show');
+    	console.log(contextPath+"popover/notescontent.jsp")
     	var new_height= $(this).parent().height()-18	;
-    	 $.get( "../popover/notescontent.jsp", function( data ) {
+    	 $.get( contextPath+"popover/notescontent.jsp", function( data ) {
     		 $( "."+dropdown_id ).html( data );
     		 $( "."+dropdown_id ).height(new_height);
     	  	$('#'+dropdown_id).dropdown('show')	;
@@ -75,7 +76,7 @@ function attachTaskRelatedData (){
     	closeChat(dropdown_id);
 	  	 $(this).addClass('show');
 	  	var new_height= $(this).parent().height()-18	;
-    	 $.get( "../popover/cuescontent.jsp", function( data ) {
+    	 $.get( contextPath+"popover/cuescontent.jsp", function( data ) {
     		 $( "."+dropdown_id ).html( data );
     		 $( "."+dropdown_id ).height(new_height);
      	  	$('#'+dropdown_id).dropdown('show')	;
@@ -95,7 +96,7 @@ function attachTaskRelatedData (){
     	$(this).addClass('show');
 	  	var new_height= $(this).parent().height()-18	;
 
-   	 $.get( "../popover/crmcontent.jsp", function( data ) {
+   	 $.get( contextPath+"popover/crmcontent.jsp", function( data ) {
    		 $( "."+dropdown_id ).html( data );
 		 $( "."+dropdown_id ).height(new_height);
   	  	$('#'+dropdown_id).dropdown('show');
@@ -114,7 +115,7 @@ function attachTaskRelatedData (){
     	closeChat(dropdown_id);
 	  	 $(this).addClass('show');
 		 var new_height= $(this).parent().height()-18	;
-  	 $.get( "../popover/chatcontent.jsp", function( data ) {
+  	 $.get( contextPath+"popover/chatcontent.jsp", function( data ) {
   		 $( "."+dropdown_id ).html( data );
    	  	$('#'+dropdown_id).dropdown('show');
 		 $( "."+dropdown_id ).height(new_height);

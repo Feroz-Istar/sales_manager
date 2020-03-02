@@ -20,7 +20,6 @@ $(document).ready(function() {
 	//Upcoming Meeting Card
 	$.get(contextPath+"/dashboard/partials/upcoming_meeting_card.jsp", function( data ) {
 		  $( "#upcoming_meeting" ).html( data );
-		
 		});
 //---------------------->
 });
@@ -61,11 +60,9 @@ function view_more_resolve_task(){
 };
 
 function loadOngoingTaskDetail(){
-	
-	$('.ongoingtaskcard').unbind().click(function (){
-		//window.location.href = location.href + 'landing/task_lead_detail.jsp'
-		window.location.replace("ongoingJoined.jsp");
-	});
+	 event.stopPropagation();
+
+		NavigateTo("ongoingJoined");
 }
 
 

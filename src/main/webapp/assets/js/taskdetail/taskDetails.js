@@ -2,7 +2,7 @@ var contextPath=$('body').data('baseurl');
 
 
 $(document).ready(function() {
-	
+		
 	$('.salesken.navbar-nav>li').removeClass('active');
 	$($('.salesken.navbar-nav>li')[1]).addClass('active');		
 	
@@ -77,6 +77,7 @@ $(document).ready(function() {
 								
 								
 	$('#ongoing_team_submit').click(function(e) {
+		console.log('yoyoy')
 		var agent_array=[];
 		var agent_name=[];
 		var team_array=[];
@@ -559,8 +560,10 @@ function removeAllDataAttributes(elem){
 		populateTeamListDropDown(teamList,"completedWebTimeline")
 	
 	}
+	
 	//Common function to populate Agents in Drop down for all tabs
 	function populateAgentListDropDown(userList,tabName){
+		$('.'+tabName+'-agent-list').empty();
 		 for(var i=0;i<userList.length;i++){
 			 	
 				var html='<div class="d-flex align-items-center pt-3">'+
@@ -570,11 +573,11 @@ function removeAllDataAttributes(elem){
 					'<div class="f-14 font-weight-bold greyish-brown text-truncate" title="'+userList[i].name+'">'+userList[i].name+'</div>'+
 					'<div class="f-12  brownish-grey text-truncate" title="team">'+userList[i].teamName+'</div> </div></div>';
 				$('.'+tabName+'-agent-list').append(html);
-				console.log('.'+tabName+'-agent-list')
 			}
 	}
 	//Common function to populate Team in Drop down for all tabs
 	function populateTeamListDropDown(teamList,tabName){
+		$('.'+tabName+'-team-list').empty();
 		 for(var i=0;i<teamList.length;i++){
 				var html='<div class="d-flex align-items-center pt-3">'+
 					'<input class="istar-checkbox '+tabName+'teamcheckbox" data-team=\''+JSON.stringify(teamList[i])+'\' data-id="'+teamList[i].id+'" id="'+tabName+'_team-checkbox'+teamList[i].id+'" type="checkbox">'+

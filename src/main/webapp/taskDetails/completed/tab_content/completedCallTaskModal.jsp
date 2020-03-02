@@ -102,7 +102,7 @@
                </div>
                <div
                   class="f-14 font-weight-bold dark_theme_color cursor-pointer align-self-center"
-                  onclick="window.location.href = 'task_lead_detail/task_lead_detail.jsp'">
+                  onclick='NavigateTo("taskLeadDetail")'>
                   View More <i class="fas fa-chevron-circle-right ml-1 "></i>
                </div>
             </div>

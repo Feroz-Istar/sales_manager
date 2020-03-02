@@ -86,8 +86,11 @@
 				  $( "#piplelinestage-tab" ).append( pipelineTabHtml );
 			}
 			
-			
 			var first_pipeline_id = $($( "#piplelinestage-tab" ).children()[0]).data('id');
+			if($( "#piplelinestage-tab" ).data('stageid')!=null){
+				first_pipeline_id=$( "#piplelinestage-tab" ).data('stageid')
+			}
+			
 			$('#stage-'+first_pipeline_id+'-tab').tab('show');
 			populatePipelineTabContent(first_pipeline_id);
 			//pipeline tab change event
@@ -96,6 +99,8 @@
 				 populatePipelineTabContent(id);
 				});
 		});	
+		
+		
 	}
 
 $(document).ready(function() {
@@ -178,6 +183,8 @@ $(document).ready(function() {
 			$('#pipeline_dropdown + .dropdown-menu').height(new_height-8);
 			$('.agent-team-list').height(new_height - 200);
 		});
+		
+		
 			
 	});
 

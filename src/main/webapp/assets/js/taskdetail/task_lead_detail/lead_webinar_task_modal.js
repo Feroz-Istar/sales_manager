@@ -69,7 +69,6 @@ function  loadLeadWebWhatsRight(){
 	$('#leadwebinar_adherence_section').empty();
 	$('#web_lead_adhere_card').empty();
 	$.get(contextPath+"taskDetails/task_lead_detail/task_lead_details_content/lead_webinar_task_tab_content/web_lead_whatsright_sub_tab_content.jsp", function(data) {
-		console.log(data);
 		$('#leadwebinarwhatsright').html(data);
 	});
 }

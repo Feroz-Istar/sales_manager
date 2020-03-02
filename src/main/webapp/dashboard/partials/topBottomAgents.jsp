@@ -44,12 +44,12 @@
 							style="position: relative; top: 5px; z-index: 2; left: 0px;">
 						<div class="btn-group " role="group" aria-label="Basic example">
 							<button type="button"
-								class="btn btn-secondary d-flex justify-content-center bg-white p-0  removefocus d-flex align-items-center theme_solid_border">
+								data-toggled="false" class="btn btn-secondary d-flex justify-content-center bg-white p-0  removefocus d-flex align-items-center theme_solid_border" onclick="toggleLike(this)">
 								<img alt="Heart" style="width: 21px; height: 21px;"
 									src="<%=baseURL%>assets/image/heart.svg">
 							</button>
 							<button type="button"
-								class="btn btn-secondary d-flex justify-content-center btn btn-secondary theme_solid_border bg-white p-0  removefocus d-flex align-items-center ">
+								data-toggled="false" onclick="toggleMessage(this)"class="btn btn-secondary d-flex justify-content-center btn btn-secondary theme_solid_border bg-white p-0  removefocus d-flex align-items-center ">
 								<img alt="Heart" style="width: 21px; height: 21px;"
 									src="<%=baseURL%>assets/image/message.svg">
 							</button>

@@ -11,7 +11,7 @@
 	 Gson gson = new GsonBuilder().setDateFormat("yyyy-MM-dd HH:mm:ss").create();	
 	 Pipeline pipelineDetails = gson.fromJson(pipelinedetails, Pipeline.class);
 %>
-					<a
+					<a 
 						class="nav-link pt-15 pb-15 pl-20 pr-20  text-truncate"
 						title="Stage 0<%=pipelineDetails.getId()%>"  data-id="<%=pipelineDetails.getId() %>" id="stage-<%=pipelineDetails.getId()%>-tab" data-toggle="pill"
 						href="#stage-<%=pipelineDetails.getId()%>" role="tab" aria-controls="stage-<%=pipelineDetails.getId()%>"

@@ -1,7 +1,11 @@
 var contextPath = $('body').data('baseurl');
 
 $(document).ready(function () {
-	loadplaybookInsight();
+	var url=window.location.href;
+	var tab=url.split('#')[1];
+	console.log(tab)
+
+	loadplaybookInsight()
 	loadAllAgentFilterTab();
 	loadAllTeamFilterTab();
 	$('.filtertabs>li>.nav-link').click(function(e) {

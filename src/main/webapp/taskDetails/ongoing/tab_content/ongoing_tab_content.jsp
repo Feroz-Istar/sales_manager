@@ -22,7 +22,7 @@
 
 						<div class="f-18 font-weight-bold greyish-brown text-truncate d-inline" data-toggle="tooltip" data-placement="bottom" title="Globex Corporation. Inc.">Globex Corporation. Inc.</div>
 					</div>
-					<div class="col-md-6 p-0 text-right" onclick="window.location.href = 'task_lead_detail/task_lead_detail.jsp'">
+					<div class="col-md-6 p-0 text-right" onclick="NavigateTo('taskLeadDetail')">
 						<div class="f-14 font-weight-bold   dark_theme_color ">
 							<span class="cursor-pointer">View More <i class="fas fa-chevron-circle-right"></i></span>
 						</div>
@@ -42,7 +42,7 @@
 
 					<div class="col-md-6 p-0 d-flex justify-content-end">
 
-						<button type="button" onclick="window.location.href = 'partials/ongoingJoined.jsp'" class="btn small_button rounded-0 font-weight-bold mr-10 f-12" id="outgoing_join">JOIN NOW</button>
+						<button type="button" onclick='NavigateTo("ongoingJoined")' class="btn small_button rounded-0 font-weight-bold mr-10 f-12" id="outgoing_join">JOIN NOW</button>
 						<button type="button" class="btn small_outline_button font-weight-bold rounded-0 f-12" id="outgoing_listen">LISTEN</button>
 
 					</div>

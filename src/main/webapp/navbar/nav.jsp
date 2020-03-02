@@ -8,7 +8,7 @@
 
 <nav
 	class="salesken navbar navbar-expand-lg navbar-light bg-white  fixed-top pr-0 shadow">
-	<a class="navbar-brand f-15 p-0 pr-3" href="<%=baseURL%>/dashboard/dashboard.jsp">
+	<a class="navbar-brand f-15 p-0 pr-3 cursor-pointer" onclick="NavigateTo('dashboard')">
 		<img class="appicon img-thumbnail p-0 mr-1 border-0" alt="salesken_logo"
 		src="<%=baseURL%>assets/image/nav_icon.png" />
 	</a>
@@ -117,13 +117,15 @@
 	</div>
 	<div class="collapse navbar-collapse order-3 order-lg-2"
 		id="navbarNavDropdown">
-		<ul class="salesken navbar-nav mr-auto">
-			<li class="nav-item active"><a class="nav-link f-14"
-				href="<%=baseURL%>dashboard/dashboard.jsp"> <div class="d-flex align-item-center"> <i class="salesken_navicon dashboard"></i> Dashboard </div><span class="sr-only">(current)</span></a></li>
-			<li class="nav-item "><a class="nav-link f-14" 
-				href="<%=baseURL%>taskDetails/taskDetail.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon taskdetail"></i> Task Details </div><span class="sr-only">(current)</span></a></li>
+		<ul class="salesken navbar-nav mr-auto salesken-main-navbar cursor-pointer">
+			<li class="nav-item active nav-item-dashboard "><a class="nav-link f-14"
+				onclick="NavigateTo('dashboard')"> <div class="d-flex align-item-center"> <i class="salesken_navicon dashboard"></i> Dashboard </div><span class="sr-only">(current)</span></a></li>
+			<li class="nav-item nav-item-taskDetails"><a class="nav-link f-14" 
+				onclick="NavigateTo('taskDetails')"><div class="d-flex align-item-center"> 
+				<i class="salesken_navicon taskdetail"></i> Task Details </div>
+				<span class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14"
-				href="<%=baseURL%>pipeline/pipeline.jsp"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
+				onclick="NavigateTo('pipeline')"><div class="d-flex align-item-center"> <i class="salesken_navicon pipeline"></i> Pipeline </div><span class="sr-only">(current)</span></a></li>
 			<li class="nav-item"><a class="nav-link f-14" href="<%=baseURL%>report/report.jsp">
 					<div class="d-flex align-item-center"> <i class="salesken_navicon reports"></i> Reports </div><span class="sr-only">(current)</span>
 			</a></li>

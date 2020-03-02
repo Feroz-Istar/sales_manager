@@ -5,7 +5,7 @@
 			+ request.getContextPath() + "/";
 %>
 <div class="card  rounded-0 shadow mb-10" id="">
-	<div class="card-body ongoingtaskcard bg-white cursor-pointer p-0 p-20" onclick="window.location.href = '/salesken_v2/taskDetails/partials/task_lead_detail.jsp'">
+	<div class="card-body ongoingtaskcard bg-white cursor-pointer p-0 p-20" onclick='NavigateTo("taskLeadDetail")'>
 		<div class="d-flex pb-10">
 			<div class="mr-auto  bd-highlight theme_color f-20 font-weight-bold">$ 250</div>
 
@@ -46,9 +46,9 @@
 		<div class="d-flex">
 
 			<div class=" pr-10">
-				<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold" style="min-width: 100px;">JOIN</button>
+				<button type="button" class="btn small_button rounded-0 f-12 font-weight-bold" onclick="loadOngoingTaskDetail()" style="min-width: 100px;">JOIN</button>
 			</div>
-			<button type="button" class="btn small_outline_button rounded-0 f-12 font-weight-bold greyish-brown">LISTEN</button>
+			<button type="button" onclick="loadOngoingTaskDetail()" class="btn small_outline_button rounded-0 f-12 font-weight-bold greyish-brown">LISTEN</button>
 
 		</div>
 	</div>

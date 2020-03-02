@@ -162,7 +162,7 @@
 	 	
 			function dashboard(){
 				if($("#loginform").valid()){
-					location.href=contextPath+"dashboard/dashboard.jsp";
+					location.href=contextPath+"mainDashboard.jsp#dashboard";
 				}else{
 					$('#error_alert').show();
 				}

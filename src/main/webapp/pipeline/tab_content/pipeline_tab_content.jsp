@@ -158,10 +158,10 @@
 											<div
 												class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-right: -0.425rem; margin-top: 3px !important;"
 												aria-labelledby="dropdownMenuButton">
-												<button class="dropdown-item" href="#">
+												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#wonLeadModalCenter">
 													<div class="mr-2 dropdown-icon won"></div>Won
 												</button>
-												<button class="dropdown-item" href="#">
+												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#lostLeadModalCenter">
 													<div class="mr-2 dropdown-icon lost"></div>Lose
 												</button>
 												<button class="dropdown-item" href="#" data-toggle="modal" data-target="#changeStageModal">

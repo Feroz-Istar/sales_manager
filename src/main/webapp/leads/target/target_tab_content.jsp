@@ -55,7 +55,7 @@
 												<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal">
 													<div class="mr-2 dropdown-icon delete"></div>Delete
 												</button>
-												<button class="dropdown-item"  onclick="window.location.href = '../landing/userDetail.jsp'">
+												<button class="dropdown-item"  onclick="window.location.href = '<%=baseURL%>taskDetails/task_lead_detail/task_lead_detail.jsp'">
 													<div class="mr-2 dropdown-icon details"></div>Details
 												</button>
 											</div>

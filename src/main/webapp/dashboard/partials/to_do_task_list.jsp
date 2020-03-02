@@ -26,7 +26,7 @@
 											class="dropdown-menu dropdown-menu-right istar-dropdown-menu arrow-left" style="margin-top:-8px;"
 											aria-labelledby="to_do_dropdownMenuButton">
 
-											<button class="dropdown-item" href="#" id="to_do_edit">
+											<button class="dropdown-item" href="#" id="to_do_edit" onclick="editEvent()">
 												<div class="mr-2 dropdown-icon edit"></div>Edit
 											</button>
 											<button class="dropdown-item" href="#"  data-toggle="modal" data-target="#deleteModal" id="to_do_delete">

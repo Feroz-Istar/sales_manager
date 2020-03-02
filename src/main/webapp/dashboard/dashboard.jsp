@@ -1,14 +1,10 @@
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.text.SimpleDateFormat"%>
 <%@page import="java.util.Date"%>
+<%@page import="java.lang.System"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
-<!DOCTYPE html lang="en" class="h-100">
-<html>
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
-<meta name="description" content="">
-<title>Salesken Dashboard</title>
+
+
 <%
 	String url = request.getRequestURL().toString();
 	String baseURL = url.substring(0, url.length() - request.getRequestURI().length())
@@ -20,67 +16,21 @@
 	String today_date = sdf.format(new Date());
 	int size = 0;
 %>
-<link rel="icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
-<link rel="shortcut icon" href="<%=baseURL%>favicon.ico" type="image/x-icon" />
-<link rel="stylesheet" href="<%=baseURL%>assets/css/bootstrap.min.css">
-<link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww" rel="stylesheet">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/dashboard.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/all.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/jquery.rateyo.css">
-<link href="<%=baseURL%>assets/css/bootstrap-datepicker3.min.css?xsww" rel="stylesheet">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/wickedpicker.min.css">
-<link href="<%=baseURL%>assets/css/summernote-bs4.css" rel="stylesheet">
-<link href="<%=baseURL%>assets/css/bootstrap-select.min.css" rel="stylesheet">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/salesken_style_media_query.css">
-<link rel="stylesheet" href="<%=baseURL%>assets/css/multiselect.css">
-	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
-	<script src="<%=baseURL%>assets/js/jquery-3.4.1.min.js"></script>
 
-</head>
-<body data-baseurl="<%=baseURL%>" onload="load()">
-	<!-- start of circular progress bar for page loading -->
-	<div class="salesken_progress h-100 w-100 " style="display: none">
-		<div class="d-flex align-items-center justify-content-center  h-100 w-100">
-			<div class="spinner-border text-danger" role="status">
-				<span class="sr-only">Loading...</span>
-			</div>
-		</div>
-	</div>
-	<!-- end of circular progress bar for page loading -->
-	<div class="loader-div d-none">
-		<div class="inner-circle-div d-flex align-items-center justify-content-center">
-			<div class="spinner-border  text-danger">
-				<span class="sr-only">Loading...</span>
-			</div>
-		</div>
-	</div>
-	<jsp:include page="../navbar/nav.jsp"></jsp:include>
-	<div class="w-100 row pr-30 pl-25 pt-10 pb-10 ongoing_call_bar " style="display:none ;">
-			<div class="col-md-6 p-0 d-flex align-items-center">
-				<img src="<%=baseURL %>assets/image/call_white.svg" alt="call" class="task-dropdown">
-				<div class="gray_text_color f-14 pl-15">You are on call with <span class="font-weight-bold">(043)-335-4103 </span> &nbsp; &nbsp; &nbsp;|&nbsp; &nbsp; &nbsp;<span class="f-12">00:30</span> </div>
-			</div>
-			<div class="col-md-6 p-0 gray_text_color  font-weight-bold f-14  d-flex align-items-center justify-content-end">
-			Tab to Return<i class="fas fa-chevron-circle-right pl-2 pr-2 f-14 gray_text_color "></i>
-			</div>
-			</div>
-	<main role="main">
-		<div class="container-fluid  salesken_container">
+
 			<!-- Start of dashboard header div with dashboard title and New task -->
-			
+
 			<div class="row pb-3" id="incoming_date" data-input_date="<%=incomingDate%>">
 				<div class="col-md-6 col-6 p-0 m-0 d-flex align-items-center">
 					<h1 class="display-1 black f-20 fw-500 mb-0">Dashboard</h1>
 				</div>
 				<div class="col-md-6 col-6 d-flex justify-content-end ">
 					<div class="dropdown">
-						<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold " data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew"
-							id="dashboard_activity" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
+						<button class="btn small_button rounded-0 f-12 dropdown-toggle font-weight-bold " data-hover="dropdown" data-animations="fadeInDownNew fadeInRightNew fadeInUpNew fadeInLeftNew" id="dashboard_activity" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false">
 							<span class="sr-only">Toggle Dropdown</span>NEW TASK <img src="<%=baseURL%>/assets/image/toggle_white.svg" alt="call" class="h-17 text-white ">
 						</button>
 						<div class="dropdown-menu dropdown-menu-right istar-dropdown-task-menu" aria-labelledby="dashboard_activity">
-							<button class="dropdown-item" type="button" onclick="window.location.href='partials/'+'dashboardCreateTask.jsp'">
+							<button class="dropdown-item" type="button" onclick="NavigateTo('newCallTask')">
 								<img src="<%=baseURL%>assets/image/calltask.svg" alt="call" class="task-dropdown"> Call Task
 							</button>
 							<button class="dropdown-item" type="button">
@@ -118,8 +68,7 @@
 								<div class="d-flex flex-row align-items-center  istar-dropdown pb-10 to_do_list">
 									<div class="bblack f-18 fw-500 pb-5">To-Do List</div>
 									<div class="istar-dropdown-task border-0 pb-5">
-										<button class="btn rounded-circle bg-white  hw-30 d-flex justify-content-center align-items-center ml-20 mr-10 theme_color todo-btn" id="todolist" data-toggle="dropdown"
-											data-display="static" aria-haspopup="true" aria-expanded="false" style="border:1px solid #eeeeee">
+										<button class="btn rounded-circle bg-white  hw-30 d-flex justify-content-center align-items-center ml-20 mr-10 theme_color todo-btn" id="todolist" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false" style="border: 1px solid #eeeeee">
 											<i class="fal fa-plus "></i>
 										</button>
 										<div class="dropdown-menu istar-dropdown-task-menu  dropdown-menu-right dropdown-menu-lg-right" style="min-width: 150px !important; max-width: 150px !important;" aria-labelledby="todolist">
@@ -128,7 +77,7 @@
 										</div>
 									</div>
 								</div>
-							<!-- start of no-data for todo list -->
+								<!-- start of no-data for todo list -->
 								<div class="no-event">
 									<div class="w-100 mt-4 pt-4 text-center">
 										<img src="<%=baseURL%>assets/image/08.svg" alt="no-event-data" srcset="" class="mr-2 mb-3">
@@ -136,11 +85,9 @@
 									<div class="fw-500 f-16 greyish-brown mb-2 text-center">Track your tasks</div>
 									<div class="fw-500 f-12 brownish-grey  mx-4 px-4 text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</div>
 								</div>
-							<!-- end of no-data for todo list -->
+								<!-- end of no-data for todo list -->
 								<!-- Start of creation to do items card -->
-								<div class="to_do_items">
-								
-								</div>
+								<div class="to_do_items"></div>
 								<!-- End of creation to do items card -->
 							</div>
 						</div>
@@ -166,9 +113,12 @@
 				<!-- start of center container/second column of dashboard  -->
 				<div class="col-md-6 p-0 m-0 center_container ">
 					<!-- Start of Pipeline and Stages card-->
-						<div class="d-flex align-items-center pt-10 pb-10 shadow pl-30 mb-10 light_blue-bg pr-30" style="display:none"><i class="fal fa-info-circle soft-blue f-18 pr-5"></i> <em class="soft-blue font-weight-bold f-12">Information <span class="fw-300 ">:  The date cannot be in the future !</span> </em></div>
+					<div class="align-items-center pt-10 pb-10 shadow pl-30 mb-10 light_blue-bg pr-30" style="display: none">
+						<i class="fal fa-info-circle soft-blue f-18 pr-5"></i> <em class="soft-blue font-weight-bold f-12">Information <span class="fw-300 ">: The date cannot be in the future !</span>
+						</em>
+					</div>
 					<div class="pipeline-card">
-						<div class="card shadow mb-2 rounded-0" style="min-height: 322px;" >
+						<div class="card shadow mb-2 rounded-0" style="min-height: 322px;">
 							<div class="card-body p-0">
 								<div class="salesken_caurosel position-relative overflow-hidden">
 
@@ -178,7 +128,7 @@
 									<button type="button" class="istar-btn-icon  active next p-0" id="pipeline-right" onclick="pipeline_next(this)">
 										<i class="fal fa-chevron-right"></i>
 									</button>
-									<div id="pipeline-card" ></div>
+									<div id="pipeline-card"></div>
 								</div>
 							</div>
 						</div>
@@ -191,7 +141,20 @@
 					<div id="carouselExampleIndicators" class="carousel slide mb-2" data-ride="carousel"></div>
 					<!-- End of Signal and its count card -->
 					<!-- Start of Teams card-->
-					<div class="team-card pb-10"></div>
+					<div class="team-card pb-10">
+						<div class="card shadow p-0 rounded-0">
+							<div class="card-body p-0 position-relative overflow-hidden">
+								<button type="button" class="istar-btn-icon previous p-0 cursor-hand" onclick="team_prev(this)" style="position: absolute; z-index: 5;" id="team-left">
+									<i class="fal fa-chevron-left"></i>
+								</button>
+								<button type="button" class="istar-btn-icon  active next p-0 cursor-hand" onclick="team_next(this)" style="position: absolute; z-index: 5;" id="team-right">
+									<i class="fal fa-chevron-right"></i>
+								</button>
+								<div class="salesken_caurosel position-relative " data-index="0" data-child="team-container"></div>
+								<div id="team-card"></div>
+							</div>
+						</div>
+					</div>  
 					<!-- End of Teams card-->
 					<!-- Start of Top/Bottom 5 Agent card-->
 					<div class="top-bottom-agent-card"></div>
@@ -200,8 +163,7 @@
 				<!-- End of center container/second column of dashboard  -->
 				<!-- Start of right container/third column of dashboard  -->
 				<div class="col-md-3 p-0 pl-md-3 pr-md-3">
-				<div>
-				</div>
+					<div></div>
 					<!-- Start of ongoing task list 
                      initially it will be hidden   
                      We will display this container on click of view more click
@@ -238,21 +200,23 @@
 						<div class="task_resolve_content"></div>
 					</div>
 					<!-- End of ongoing task list (view more click on ongoing task card) -->
-										<button type="button" onclick="onCloseClick()" class="btn p-0 mb-2 showmore_close" style="display:none"><img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="border-0 hw-24 task-icon"></button>
-					
+					<button type="button" onclick="onCloseClick()" class="btn p-0 mb-2 showmore_close" style="display: none">
+						<img src="<%=baseURL%>assets/image/close.svg" alt="taskicon" class="border-0 hw-24 task-icon">
+					</button>
+
 					<div class="third_main_container_behind"></div>
-					
-					
+
+
 					<div class="third_main_container">
-					
+
 						<!-- Start of Associate Join now/Listen card-->
-						<div class="" id="ongoing_task_card" ></div>
+						<div class="" id="ongoing_task_card"></div>
 						<!-- End of Associate Join now/Listen card-->
 						<!-- Start of issue resolve card-->
 						<div class="" id="raise_issue_card"></div>
 						<!-- End of issue resolve card-->
 						<!-- Start of chat now card-->
-						<div class="" id="chat_card" onclick="window.location.href = '/taskDetails/partials/task_lead_detail.jsp'"></div>
+						<div class="" id="chat_card" onclick='NavigateTo("taskLeadDetail")'></div>
 						<!-- End of chat now card-->
 						<!-- Start of accepting incoming call by Associate card-->
 						<div class="" id="upcoming_meeting"></div>
@@ -274,23 +238,11 @@
 			<!-- start of delete modal -->
 			<jsp:include page="../dashboard/modal/delete_modal.jsp"></jsp:include>
 			<!-- end of delete modal -->
-		</div>
-	</main>
 
-	<script src="<%=baseURL%>assets/js/popper.min.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap.min.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap-datepicker.min.js"></script>
-	<script src="<%=baseURL%>assets/js/jquery.rateyo.min.js"></script>
+
 	<script src="<%=baseURL%>assets/js/dashboard_left.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_right.js"></script>
 	<script src="<%=baseURL%>assets/js/dashboard_center.js"></script>
-	<script src="<%=baseURL%>assets/js/dashboard_team_card.js"></script>
 	<script src="<%=baseURL%>assets/js/salesken.js"></script>
-	<script src="<%=baseURL%>assets/js/wickedpicker.min.js"></script>
-	<script src="<%=baseURL%>assets/js/summernote-bs4.js"></script>
-	<script src="<%=baseURL%>assets/js/bootstrap-select.min.js"></script>
 	
-	<script src="<%=baseURL%>assets/js/multiselect.js"></script>
-	<script src="<%=baseURL%>assets/js/jquery.validate.min.js"></script>
-</body>
-</html>
+

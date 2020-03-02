@@ -5,6 +5,7 @@ var contextPath = $('body').data('baseurl');
 
 $(document).ready(function() {
 	
+	
 	/* hiding page loader afer one seconds */
 
 	jQuery.validator.setDefaults({
@@ -61,7 +62,8 @@ $(document).ready(function() {
 	/*calendar date change event which will append a parameter named var in current url & reload the page */
 	$('#datepicker').on('changeDate', function() {
 		console.log($('#datepicker').datepicker('getFormattedDate'));
-		window.location.href = window.location.pathname + "?var=" + $('#datepicker').datepicker('getFormattedDate');
+		NavigationService({name:'var',value:$('#datepicker').datepicker('getFormattedDate')})
+		//window.location.href = window.location.pathname + "?var=" + $('#datepicker').datepicker('getFormattedDate');
 	/*	 var redirectWindow = window.open( window.location.pathname + "?var=" + $('#datepicker').datepicker('getFormattedDate'), '_blank');
 		    redirectWindow.location;*/
 	});
@@ -138,7 +140,12 @@ $(document).ready(function() {
 	
 modalFormSetup();
 });
-
+$('#ongoing_team_submit').click(function(e){
+	console.log('another one')
+})
+	function testDashboardinf(){
+		console.log('yo')
+	}
 
 function modalFormSetup(){
 	 if(localStorage.getItem('notes')){
@@ -247,12 +254,13 @@ function scheduled_task_submit(){
 	$(".to_do_list").hide();
 	$(".no-event").hide();
 	$.get(contextPath+"/dashboard/partials/to_do_task_list.jsp", function( data ) {
-		console.log(data);
-		 $( ".to_do_items" ).html( data );
+		 $( ".to_do_items" ).append( data );
 		 $(".to_do_list").show();
 		});
 	/*	end of appending to do item list*/
+	
 	scheduled_task_reset();
+	$('#scheduleTaskModalCenter').modal('hide');
 }
 //-------------------------------------------------->
 
@@ -291,12 +299,24 @@ function create_event_submit(){
 			$('#addGuest').removeClass("is-valid");
 			$('#eventdescription').removeClass("is-valid");
 		}
-			
+		$(".to_do_list").hide();
+		$(".no-event").hide();
+		$.get(contextPath+"/dashboard/partials/to_do_task_list.jsp", function( data ) {
+			 $( ".to_do_items" ).append( data );
+			 $(".to_do_list").show();
+			});
 	}
+	
 }
 //------------------------------------>
 
 
+//<----------------EDITING TO DO LIST-----------
+function editEvent(){
+	$('.sales_ken_popover').popover('hide')
+	$('#createEventModalCenter').modal('show')	
+}
+//------------------------------>
 
 
 

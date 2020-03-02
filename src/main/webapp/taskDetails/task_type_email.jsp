@@ -61,7 +61,7 @@ box-shadow:0 2px 10px 0 rgba(0, 0, 0, 0.2);
 				</div>
 				<div class="col-md-2 p-0 pl-15 pt-15 pr-45 ">
 					<div class="input-group position-relative theme_solid_border_bottom_2px pb-20 mb-10  ">
-						<img src="<%=baseURL %>assets/image/search.svg" alt="edit" class=" searchBox" style="top: 7px !important"> <input id="taskdetail_search"
+						<img src="<%=baseURL %>assets/image/search.svg" alt="edit" class=" searchBox" style="top: 7px !important"> <input id="manual_cues_search"
 							class="form-control  custom-taskborder brown-grey  f-14  custom-result-selects" type="search" placeholder="Search Manual Cues" style="padding-right: 30px; height: 35px !important">
 					</div>
 					<div class="f-16 greyish-brown fw-500 pb-10">Templete 01</div>
