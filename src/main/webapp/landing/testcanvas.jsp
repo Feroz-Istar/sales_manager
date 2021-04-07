@@ -45,28 +45,50 @@
 <div class="position-relative">
 <canvas class="" id="myCanvas" width=" 900px" height="300px" style="border:1px solid #d3d3d3;    ">
 Your browser does not support the HTML5 canvas tag.</canvas>
-<canvas class="position-absolute" id="circleCanvas" width=" 900px" height="30px" style="left:0;top:47%;z-index:999 ">
+<canvas class="position-absolute" id="circleCanvas" width=" 900px" height="30px" style="left:0;top:47%;z-index:999;cursor: pointer; ">
 Your browser does not support the HTML5 canvas tag.</canvas>
+
+
+
+</div>
+
+<div class="row">
+<div class="col-md-12">
+
+<button type="button" onclick="backward()">Backward 10x</button>
+
+<button type="button" onclick="play()" id="play">Play</button>
+
+<button type="button" onclick="foward()">Forward 10x</button>
+
+</div>
 </div>
 </div>
 
 <script>
 var json;
-
+var audio = new Audio();
+var widthRatio;
 $.get('https://gist.githubusercontent.com/riyaistar/47e45a6499a7729e07c2499bcb9c53f1/raw/37b0d333b585f46534c41bbbaa6ce2f42fa232b2/ccccc', function(data) {
- json = JSON.parse(data);
-console.log(json)
+json = JSON.parse(data);
+console.log(json);
+audio.src = json.audio_url;
+audio.addEventListener('error', () => {
+	  console.error(`Error loading: ${videoSrc}`);
+	});
+audio.load();
+
+
+audio.ontimeupdate = function () { audioUpdateTime() };
 var c = document.getElementById("myCanvas");
 var canvasHeight=c.height;
 var canvasWidth=c.width;
-
-var widthRatio=canvasWidth/json.total_time;
+widthRatio=canvasWidth/json.total_time;
 var circle = document.getElementById("circleCanvas");
 var ctxCircle = circle.getContext("2d");
 var circlecanvasHeight=circle.height;
 var circlecanvasWidth=circle.width;
 ctxCircle.beginPath();
-
 CanvasRenderingContext2D.prototype.roundRect = function (x, y, width, height, radius) {
   if (width < 2 * radius) radius = width / 2;
   if (height < 2 * radius) radius = height / 2;
@@ -82,22 +104,13 @@ CanvasRenderingContext2D.prototype.roundRect = function (x, y, width, height, ra
 drawSnippet();
 drawCircle(20,15);
 drawSignal();
-
-
-
 circle.addEventListener('click', function(e) {
 	ctxCircle.clearRect(0, 0, circlecanvasWidth,circlecanvasHeight);
 	 var x = e.offsetX;
-	 var y = e.offsetY;
-	 
+	 var y = e.offsetY;	 
 	 drawSnippet();
 	 drawCircle(x,15);
-
 });
-
-
-
-
 });
 
 
@@ -110,29 +123,22 @@ function drawCircle(x,y){
 	var circlecanvasWidth=circle.width;
 	var widthRatio=circlecanvasWidth/json.total_time;
 	ctxCircle.beginPath();
+	ctxCircle.fillStyle = "#ffffff";
+	ctxCircle.globalAlpha = 0.6;
+	ctxCircle.fillRect(0,circlecanvasHeight/2.5, x-14, 10);
+	ctxCircle.fill();
+	ctxCircle.beginPath();
 	ctxCircle.arc(x, y, 12, 0, 2 * Math.PI);
     ctxCircle.fillStyle = '#ffffff';
-
+	ctxCircle.globalAlpha = 1.0;
     ctxCircle.fill();
-
-	ctxCircle.lineWidth = 1;
-	ctxCircle.strokeStyle = '#000000';
+	ctxCircle.lineWidth = 0.8;
+	ctxCircle.strokeStyle = '#222222';
 	/* ctxCircle.shadowColor = "#ffffff";
 	ctxCircle.shadowOffsetX = 0;
 	ctxCircle.shadowOffsetY = 0;
 	ctxCircle.shadowBlur = 7; */
     ctxCircle.stroke();
-	
-	
-	
-	ctxCircle.beginPath();
-	ctxCircle.fillStyle = "#ffffff";
-	ctxCircle.globalAlpha = 0.6;
-
-
-	ctxCircle.fillRect(0, 0, x-14, circlecanvasHeight);
-	ctxCircle.fill();
-	
 }
 
 
@@ -202,6 +208,47 @@ function drawSignal(){
 	
 }
 
+
+
+function play(){
+	if (audio.duration > 0 && !audio.paused) {
+		audio.pause()
+		$('#play').html("Play")
+	    //Its playing...do your job
+
+	} else {
+		audio.play()
+		$('#play').html("Pause")
+
+	    //Not playing...maybe paused, stopped or never played.
+
+	}
+
+}
+
+
+function backward(){
+	if(audio.currentTime>10)
+	audio.currentTime=	audio.currentTime-10;
+
+}
+
+function forward(){
+	audio.currentTime=	audio.currentTime+10;
+}
+
+
+function audioUpdateTime(){
+	console.log(audio.currentTime);
+	var circle = document.getElementById("circleCanvas");
+	var ctxCircle = circle.getContext("2d");
+	var circlecanvasHeight=circle.height;
+	var circlecanvasWidth=circle.width;
+	ctxCircle.clearRect(0, 0, circlecanvasWidth,circlecanvasHeight);
+	 var x = audio.currentTime*widthRatio;
+	 drawSnippet();
+	 drawCircle(x,15);
+}
 
 </script> 
 
