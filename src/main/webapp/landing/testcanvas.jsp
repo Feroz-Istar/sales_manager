@@ -41,29 +41,29 @@
 <body >
 	<jsp:include page="../navbar/nav.jsp"></jsp:include>
 	<main role="main">
-	<div class="container-fluid salesken_container">
-<div class="position-relative">
-<canvas class="" id="myCanvas" width=" 900px" height="300px" style="border:1px solid #d3d3d3;    ">
-Your browser does not support the HTML5 canvas tag.</canvas>
-<canvas class="position-absolute" id="circleCanvas" width=" 900px" height="30px" style="left:0;top:47%;z-index:999;cursor: pointer; ">
-Your browser does not support the HTML5 canvas tag.</canvas>
-
-
-
-</div>
-
-<div class="row">
-<div class="col-md-12">
-
-<button type="button" onclick="backward()" style="display:none" id="backward">Backward 10x</button>
-
-<button type="button" onclick="play()" id="play">Play</button>
-
-<button type="button" onclick="foward()" style="display:none" id="forward">Forward 10x</button>
-
-</div>
-</div>
-</div>
+		<div class="container-fluid salesken_container">
+	<div class="position-relative">
+	<canvas class="" id="myCanvas" width=" 900px" height="300px" style="border:1px solid #d3d3d3;    ">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	<canvas class="position-absolute" id="circleCanvas" width=" 900px" height="30px" style="left:0;top:47%;z-index:999;cursor: pointer; ">
+	Your browser does not support the HTML5 canvas tag.</canvas>
+	
+	
+	
+	</div>
+	
+	<div class="row">
+	<div class="col-md-12">
+	
+	<button type="button" onclick="backward()" style="display:none" id="backward">Backward 10x</button>
+	
+	<button type="button" onclick="play()" id="play">Play</button>
+	
+	<button type="button" onclick="foward()" style="display:none" id="forward">Forward 10x</button>
+	
+	</div>
+	</div>
+	</div>
 
 <script>
 var json;
