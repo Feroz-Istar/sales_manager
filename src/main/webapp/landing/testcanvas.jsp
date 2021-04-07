@@ -55,11 +55,11 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 <div class="row">
 <div class="col-md-12">
 
-<button type="button" onclick="backward()">Backward 10x</button>
+<button type="button" onclick="backward()" style="display:none" id="backward">Backward 10x</button>
 
 <button type="button" onclick="play()" id="play">Play</button>
 
-<button type="button" onclick="foward()">Forward 10x</button>
+<button type="button" onclick="foward()" style="display:none" id="forward">Forward 10x</button>
 
 </div>
 </div>
@@ -69,6 +69,7 @@ Your browser does not support the HTML5 canvas tag.</canvas>
 var json;
 var audio = new Audio();
 var widthRatio;
+var isAudioLoaded= false;
 $.get('https://gist.githubusercontent.com/riyaistar/47e45a6499a7729e07c2499bcb9c53f1/raw/37b0d333b585f46534c41bbbaa6ce2f42fa232b2/ccccc', function(data) {
 json = JSON.parse(data);
 console.log(json);
@@ -76,6 +77,15 @@ audio.src = json.audio_url;
 audio.addEventListener('error', () => {
 	  console.error(`Error loading: ${videoSrc}`);
 	});
+audio.addEventListener('loadeddata', function() {
+
+	  if(audio.readyState >= 2) {
+			console.log('audio loadeded...');
+			isAudioLoaded = true;
+	  }
+
+	});
+
 audio.load();
 
 
@@ -110,6 +120,11 @@ circle.addEventListener('click', function(e) {
 	 var y = e.offsetY;	 
 	 drawSnippet();
 	 drawCircle(x,15);
+	 console.log(x+' ---xxx ')
+	 if(isAudioLoaded){
+			audio.currentTime=x/widthRatio;
+			console.log('audio.currentTime '+audio.currentTime)
+	 }
 });
 });
 
@@ -152,16 +167,16 @@ function drawSnippet(){
 	ctxCircle.globalAlpha = 1;
 
 	for(var snippet of json.snippets){
-		console.log(snippet);
+		//console.log(snippet);
 		var snippetsWidth=(snippet.to-snippet.from)*widthRatio;
 		if(snippet.speaker=="Agent")
 		{
-			ctxCircle.fillStyle ="red";
+			ctxCircle.fillStyle ="#ed4d67";
 		}else{
-			ctxCircle.fillStyle ="blue";
+			ctxCircle.fillStyle ="#6297f6";
 		}
 		ctxCircle.beginPath();
-		ctxCircle.roundRect(snippet.from * widthRatio,circlecanvasHeight/2.5,snippetsWidth, 10,3);
+		ctxCircle.roundRect(snippet.from * widthRatio,circlecanvasHeight/2.5,snippetsWidth, 10,1.5);
 		ctxCircle.fill();	
 	}
 	
@@ -217,7 +232,9 @@ function play(){
 	    //Its playing...do your job
 
 	} else {
-		audio.play()
+		audio.play();
+		$('#forward').show();
+		$('#backward').show();
 		$('#play').html("Pause")
 
 	    //Not playing...maybe paused, stopped or never played.
